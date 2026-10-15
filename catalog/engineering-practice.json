@@ -1,0 +1,2251 @@
+{
+  "domain": "engineering-practice",
+  "packages": [
+    {
+      "name": "test-strategy-doc",
+      "kind": "skill",
+      "purpose": "Write a test strategy document for a system: scope, risks, levels, environments, ownership and exit criteria."
+    },
+    {
+      "name": "test-pyramid-planning",
+      "kind": "skill",
+      "purpose": "Choose the unit/integration/e2e balance for a codebase from its architecture and failure history, and flag inverted pyramids."
+    },
+    {
+      "name": "risk-based-test-selection",
+      "kind": "skill",
+      "purpose": "Rank features by likelihood and impact of failure and map each risk to the cheapest test level that catches it."
+    },
+    {
+      "name": "test-coverage-analysis",
+      "kind": "skill",
+      "purpose": "Read line/branch coverage reports critically: find untested risky paths, ignore vanity percentages, set sensible thresholds."
+    },
+    {
+      "name": "test-environments-planning",
+      "kind": "skill",
+      "purpose": "Plan test environments (local, ephemeral preview, staging) with data, config parity and teardown rules."
+    },
+    {
+      "name": "tdd-red-green-refactor",
+      "kind": "skill",
+      "purpose": "Drive code with the red-green-refactor loop in small steps, with rules for when to write the next failing test."
+    },
+    {
+      "name": "tdd-test-list",
+      "kind": "skill",
+      "purpose": "Turn a requirement into an ordered test list (simplest case first, then edge cases) before writing any code."
+    },
+    {
+      "name": "tdd-outside-in",
+      "kind": "skill",
+      "purpose": "Outside-in (London-school) TDD: start from an acceptance test and discover collaborators through mocks."
+    },
+    {
+      "name": "tdd-triangulation",
+      "kind": "skill",
+      "purpose": "Use triangulation, fake-it and obvious-implementation strategies to choose how big each TDD step should be."
+    },
+    {
+      "name": "test-naming-conventions",
+      "kind": "skill",
+      "purpose": "Name tests as behaviour specifications (given/when/then, should_x_when_y) so failures read as broken requirements."
+    },
+    {
+      "name": "pbt-property-design",
+      "kind": "skill",
+      "purpose": "Find properties worth testing: invariants, round-trips, idempotence, commutativity, oracles and metamorphic relations."
+    },
+    {
+      "name": "pbt-generators-shrinking",
+      "kind": "skill",
+      "purpose": "Write custom generators for domain data, constrain them without filtering away coverage, and get useful shrinks."
+    },
+    {
+      "name": "pbt-stateful-testing",
+      "kind": "skill",
+      "purpose": "Model-based stateful property tests: define a model, commands and postconditions to test stateful APIs and data structures."
+    },
+    {
+      "name": "pbt-failure-replay",
+      "kind": "skill",
+      "purpose": "Reproduce and pin property-test failures with seeds and regression examples, and keep CI runs fast but meaningful."
+    },
+    {
+      "name": "playwright-test-authoring",
+      "kind": "skill",
+      "purpose": "Write Playwright tests with web-first assertions, auto-waiting and page objects that stay readable as suites grow."
+    },
+    {
+      "name": "playwright-locators",
+      "kind": "skill",
+      "purpose": "Choose resilient Playwright locators (role, label, test id) and avoid brittle CSS/XPath selectors."
+    },
+    {
+      "name": "playwright-auth-fixtures",
+      "kind": "skill",
+      "purpose": "Set up Playwright fixtures and storage-state reuse for logged-in users, roles and per-worker test data."
+    },
+    {
+      "name": "playwright-visual-regression",
+      "kind": "skill",
+      "purpose": "Add screenshot comparisons in Playwright with masking, thresholds and baseline update workflow."
+    },
+    {
+      "name": "playwright-trace-debugging",
+      "kind": "skill",
+      "purpose": "Debug failing Playwright tests from traces, videos and the UI mode; distinguish app bugs from test bugs."
+    },
+    {
+      "name": "playwright-ci-sharding",
+      "kind": "skill",
+      "purpose": "Run Playwright in CI with sharding, retries, browser caching and merged HTML reports."
+    },
+    {
+      "name": "cypress-test-authoring",
+      "kind": "skill",
+      "purpose": "Write Cypress tests that respect its command queue, retry-ability and avoid arbitrary waits."
+    },
+    {
+      "name": "cypress-custom-commands",
+      "kind": "skill",
+      "purpose": "Build Cypress custom commands, selectors via data-cy attributes, and session caching with cy.session."
+    },
+    {
+      "name": "cypress-network-stubbing",
+      "kind": "skill",
+      "purpose": "Stub and assert network traffic with cy.intercept, fixtures and aliases for deterministic tests."
+    },
+    {
+      "name": "cypress-component-testing",
+      "kind": "skill",
+      "purpose": "Mount and test UI components in isolation with Cypress component testing."
+    },
+    {
+      "name": "cypress-ci-parallel",
+      "kind": "skill",
+      "purpose": "Run Cypress suites in CI with parallelisation, artifacts on failure and flake retries kept visible."
+    },
+    {
+      "name": "integration-test-boundaries",
+      "kind": "skill",
+      "purpose": "Decide what an integration test covers, which dependencies are real vs faked, and how to keep it fast."
+    },
+    {
+      "name": "testcontainers-patterns",
+      "kind": "skill",
+      "purpose": "Use Testcontainers to start real databases, brokers and services per test run with reuse and cleanup."
+    },
+    {
+      "name": "test-db-isolation",
+      "kind": "skill",
+      "purpose": "Isolate database state between tests via transactions, per-test schemas or truncation, and pick the right one."
+    },
+    {
+      "name": "consumer-contract-testing",
+      "kind": "skill",
+      "purpose": "Consumer-driven contract tests (Pact-style): write consumer expectations, verify providers, manage a broker."
+    },
+    {
+      "name": "service-virtualization",
+      "kind": "skill",
+      "purpose": "Fake third-party HTTP services with recorded or programmable stubs (WireMock-style) for reliable tests."
+    },
+    {
+      "name": "snapshot-test-hygiene",
+      "kind": "skill",
+      "purpose": "Keep snapshot tests useful: small focused snapshots, reviewing diffs, avoiding blind updates and volatile fields."
+    },
+    {
+      "name": "golden-file-testing",
+      "kind": "skill",
+      "purpose": "Test generators, compilers and formatters against golden files with an explicit regenerate flag and diff review."
+    },
+    {
+      "name": "approval-testing-workflow",
+      "kind": "skill",
+      "purpose": "Use approval tests (ApprovalTests-style) for complex outputs: received vs approved files, scrubbers and reporters."
+    },
+    {
+      "name": "unit-test-structure",
+      "kind": "skill",
+      "purpose": "Structure unit tests with arrange-act-assert, one behaviour per test and minimal shared setup."
+    },
+    {
+      "name": "test-doubles-guide",
+      "kind": "skill",
+      "purpose": "Choose between stubs, mocks, fakes and spies, and avoid over-mocking that couples tests to implementation."
+    },
+    {
+      "name": "test-smell-detection",
+      "kind": "skill",
+      "purpose": "Spot test smells (mystery guests, eager tests, assertion roulette, logic in tests) and fix them."
+    },
+    {
+      "name": "parameterized-test-design",
+      "kind": "skill",
+      "purpose": "Turn repetitive tests into table-driven or parameterised tests with readable case names."
+    },
+    {
+      "name": "mutation-testing-setup",
+      "kind": "skill",
+      "purpose": "Set up mutation testing (Stryker, PIT, mutmut, cargo-mutants) incrementally on changed code only."
+    },
+    {
+      "name": "mutation-survivor-analysis",
+      "kind": "skill",
+      "purpose": "Triage surviving mutants: write the missing assertion, or mark equivalent mutants with justification."
+    },
+    {
+      "name": "flaky-test-triage",
+      "kind": "skill",
+      "purpose": "Detect and classify flaky tests from CI history (timing, ordering, shared state, environment) and assign fixes."
+    },
+    {
+      "name": "test-quarantine-workflow",
+      "kind": "skill",
+      "purpose": "Quarantine flaky tests with an owner, ticket and expiry so they leave the merge gate but not the backlog."
+    },
+    {
+      "name": "test-determinism-fixes",
+      "kind": "skill",
+      "purpose": "Remove nondeterminism from tests: control clocks, random seeds, ordering, network and async waits."
+    },
+    {
+      "name": "load-test-planning",
+      "kind": "skill",
+      "purpose": "Plan load, stress, soak and spike tests from traffic models and SLO targets, with clear pass/fail criteria."
+    },
+    {
+      "name": "k6-load-scripts",
+      "kind": "skill",
+      "purpose": "Write k6 scripts with scenarios, thresholds, checks and realistic data parameterisation."
+    },
+    {
+      "name": "load-test-analysis",
+      "kind": "skill",
+      "purpose": "Analyse load test results: percentiles, saturation points, error onset, and write the findings up."
+    },
+    {
+      "name": "benchmark-methodology",
+      "kind": "skill",
+      "purpose": "Run fair micro- and macro-benchmarks: warmup, repetitions, noise control, statistical comparison."
+    },
+    {
+      "name": "test-suite-profiling",
+      "kind": "skill",
+      "purpose": "Find the slowest tests and setup hotspots in a suite and estimate the payoff of fixing each."
+    },
+    {
+      "name": "test-parallelization",
+      "kind": "skill",
+      "purpose": "Make a test suite safe to run in parallel: isolate shared resources, ports, files and databases."
+    },
+    {
+      "name": "test-impact-analysis",
+      "kind": "skill",
+      "purpose": "Select only the tests affected by a change using dependency graphs or coverage maps, with a safety net run."
+    },
+    {
+      "name": "ci-test-sharding",
+      "kind": "skill",
+      "purpose": "Split tests across CI workers by historical timing and rebalance shards automatically."
+    },
+    {
+      "name": "test-case-design-techniques",
+      "kind": "skill",
+      "purpose": "Derive test cases with equivalence partitioning, boundary values, decision tables and state transitions."
+    },
+    {
+      "name": "exploratory-testing-charters",
+      "kind": "skill",
+      "purpose": "Write and run exploratory testing charters with time boxes, heuristics and session notes."
+    },
+    {
+      "name": "bug-report-writing",
+      "kind": "skill",
+      "purpose": "Write bug reports with minimal steps, expected vs actual, environment, evidence and severity."
+    },
+    {
+      "name": "acceptance-criteria-to-tests",
+      "kind": "skill",
+      "purpose": "Turn user-story acceptance criteria into concrete test cases and spot ambiguous or missing criteria."
+    },
+    {
+      "name": "gherkin-scenario-writing",
+      "kind": "skill",
+      "purpose": "Write declarative Gherkin scenarios in business language, avoiding UI-scripted steps."
+    },
+    {
+      "name": "bdd-example-mapping",
+      "kind": "skill",
+      "purpose": "Run example mapping sessions (rules, examples, questions) to agree behaviour before coding."
+    },
+    {
+      "name": "cucumber-step-definitions",
+      "kind": "skill",
+      "purpose": "Implement reusable, parameterised step definitions and keep step libraries small and coherent."
+    },
+    {
+      "name": "living-documentation",
+      "kind": "skill",
+      "purpose": "Publish executable specifications as living documentation that stays in sync with the code."
+    },
+    {
+      "name": "test-data-builders",
+      "kind": "skill",
+      "purpose": "Use test data builders and object mothers to create valid domain objects with only relevant fields set."
+    },
+    {
+      "name": "fixture-factories",
+      "kind": "skill",
+      "purpose": "Design fixture factories (factory_bot/Factory Boy style) with traits, sequences and associations."
+    },
+    {
+      "name": "test-data-management",
+      "kind": "skill",
+      "purpose": "Manage shared test datasets: seeding, versioning, refresh and isolation across environments."
+    },
+    {
+      "name": "synthetic-test-data",
+      "kind": "skill",
+      "purpose": "Generate realistic synthetic or masked test data instead of copying production records."
+    },
+    {
+      "name": "code-review-checklist",
+      "kind": "skill",
+      "purpose": "Review a diff in passes: intent, correctness, edge cases, tests, readability, then nits; with a checklist per pass."
+    },
+    {
+      "name": "review-comment-writing",
+      "kind": "skill",
+      "purpose": "Write review comments that are specific, kind and actionable, labelled as blocking, suggestion or nit."
+    },
+    {
+      "name": "review-risk-triage",
+      "kind": "skill",
+      "purpose": "Decide review depth from change risk (blast radius, reversibility, test coverage) and pick reviewers accordingly."
+    },
+    {
+      "name": "team-review-guidelines",
+      "kind": "skill",
+      "purpose": "Write a team code review policy: turnaround targets, approval rules, ownership and conflict resolution."
+    },
+    {
+      "name": "codeowners-design",
+      "kind": "skill",
+      "purpose": "Design CODEOWNERS rules that route reviews to the right people without bottlenecking on a few."
+    },
+    {
+      "name": "pr-description-writing",
+      "kind": "skill",
+      "purpose": "Write pull request descriptions with context, what changed, how it was tested, risk and rollout notes."
+    },
+    {
+      "name": "pr-size-splitting",
+      "kind": "skill",
+      "purpose": "Split a large change into a sequence of small, independently reviewable and mergeable pull requests."
+    },
+    {
+      "name": "stacked-prs",
+      "kind": "skill",
+      "purpose": "Work with stacked pull requests: branch layout, rebasing the stack, and landing in order."
+    },
+    {
+      "name": "commit-message-writing",
+      "kind": "skill",
+      "purpose": "Write commit messages with an imperative subject, the why in the body and references, one logical change per commit."
+    },
+    {
+      "name": "self-review-before-pr",
+      "kind": "skill",
+      "purpose": "Self-review a diff before requesting review: debug leftovers, missing tests, naming, scope creep."
+    },
+    {
+      "name": "refactoring-catalog",
+      "kind": "skill",
+      "purpose": "Apply named refactorings (extract, inline, move, rename, replace conditional with polymorphism) step by step."
+    },
+    {
+      "name": "code-smell-detection",
+      "kind": "skill",
+      "purpose": "Recognise code smells (long method, feature envy, shotgun surgery, primitive obsession) and the refactoring for each."
+    },
+    {
+      "name": "safe-refactor-steps",
+      "kind": "skill",
+      "purpose": "Refactor in tiny behaviour-preserving steps with tests green after each, and separate refactor commits from feature commits."
+    },
+    {
+      "name": "parallel-change",
+      "kind": "skill",
+      "purpose": "Use expand/migrate/contract (parallel change) to change interfaces without breaking callers."
+    },
+    {
+      "name": "characterization-tests",
+      "kind": "skill",
+      "purpose": "Pin down current behaviour of untested legacy code with characterization and approval/golden-file tests."
+    },
+    {
+      "name": "seam-finding",
+      "kind": "skill",
+      "purpose": "Find and create seams in legacy code to break dependencies and get code under test."
+    },
+    {
+      "name": "legacy-code-mapping",
+      "kind": "skill",
+      "purpose": "Map an unfamiliar legacy system: entry points, data stores, hot spots and dangerous areas."
+    },
+    {
+      "name": "dead-code-removal",
+      "kind": "skill",
+      "purpose": "Find dead code with static analysis and runtime evidence and remove it safely."
+    },
+    {
+      "name": "strangler-fig-migration",
+      "kind": "skill",
+      "purpose": "Incrementally replace a legacy system with the strangler fig pattern, routing traffic slice by slice."
+    },
+    {
+      "name": "modernisation-assessment",
+      "kind": "skill",
+      "purpose": "Assess a legacy application for rehost/refactor/rebuild/replace with cost, risk and value per option."
+    },
+    {
+      "name": "monolith-decomposition",
+      "kind": "skill",
+      "purpose": "Identify extraction candidates in a monolith by domain seams and data ownership, and order the extractions."
+    },
+    {
+      "name": "branch-by-abstraction",
+      "kind": "skill",
+      "purpose": "Swap a large component behind an abstraction layer on trunk without long-lived branches."
+    },
+    {
+      "name": "feature-parity-verification",
+      "kind": "skill",
+      "purpose": "Verify a rewrite matches the old system with parity checklists, shadow traffic and output diffing."
+    },
+    {
+      "name": "codemod-authoring",
+      "kind": "skill",
+      "purpose": "Write codemods (jscodeshift, LibCST, OpenRewrite, Comby) that transform code safely with tests on fixtures."
+    },
+    {
+      "name": "ast-grep-rewrites",
+      "kind": "skill",
+      "purpose": "Use structural search-and-replace (ast-grep, semgrep autofix) for repo-wide mechanical changes."
+    },
+    {
+      "name": "rename-at-scale",
+      "kind": "skill",
+      "purpose": "Rename widely used symbols, modules or packages across a large codebase in reviewable batches."
+    },
+    {
+      "name": "lsc-rollout-planning",
+      "kind": "skill",
+      "purpose": "Plan a large-scale change: sharding by owner, automated PRs, tracking dashboard and stragglers."
+    },
+    {
+      "name": "tech-debt-inventory",
+      "kind": "skill",
+      "purpose": "Build a tech debt register with location, symptom, cost of delay and owner from code and team input."
+    },
+    {
+      "name": "tech-debt-prioritization",
+      "kind": "skill",
+      "purpose": "Prioritise tech debt by interest paid (friction, incidents, slowdowns) versus cost to fix."
+    },
+    {
+      "name": "complexity-hotspot-analysis",
+      "kind": "skill",
+      "purpose": "Combine git churn with complexity metrics to find hotspots where refactoring pays off most."
+    },
+    {
+      "name": "debt-paydown-proposals",
+      "kind": "skill",
+      "purpose": "Write a debt paydown proposal that makes the business case with evidence, scope and milestones."
+    },
+    {
+      "name": "ddd-bounded-contexts",
+      "kind": "skill",
+      "purpose": "Identify bounded contexts and their boundaries from language, teams and data ownership."
+    },
+    {
+      "name": "ddd-aggregates",
+      "kind": "skill",
+      "purpose": "Design aggregates, entities and value objects with consistency boundaries and invariants."
+    },
+    {
+      "name": "ddd-ubiquitous-language",
+      "kind": "skill",
+      "purpose": "Build and maintain a ubiquitous language glossary and reflect it in code names."
+    },
+    {
+      "name": "event-storming",
+      "kind": "skill",
+      "purpose": "Run big-picture and design-level event storming sessions and turn the output into models."
+    },
+    {
+      "name": "ddd-context-mapping",
+      "kind": "skill",
+      "purpose": "Draw context maps (shared kernel, customer/supplier, anti-corruption layer) and choose integration patterns."
+    },
+    {
+      "name": "adr-writing",
+      "kind": "skill",
+      "purpose": "Write architecture decision records (context, options, decision, consequences) in Nygard or MADR format."
+    },
+    {
+      "name": "adr-lifecycle",
+      "kind": "skill",
+      "purpose": "Manage ADRs over time: numbering, status, superseding, and linking decisions to code."
+    },
+    {
+      "name": "tradeoff-analysis-matrix",
+      "kind": "skill",
+      "purpose": "Compare design options with weighted criteria, explicit assumptions and reversibility."
+    },
+    {
+      "name": "architecture-principles",
+      "kind": "skill",
+      "purpose": "Define a small set of architecture principles with rationale and implications teams can apply."
+    },
+    {
+      "name": "design-doc-writing",
+      "kind": "skill",
+      "purpose": "Write a technical design doc: goals, non-goals, proposed design, alternatives, risks and rollout."
+    },
+    {
+      "name": "rfc-process",
+      "kind": "skill",
+      "purpose": "Run a lightweight RFC process: when an RFC is needed, review stages, decision owner and archive."
+    },
+    {
+      "name": "design-doc-review",
+      "kind": "skill",
+      "purpose": "Review a design doc for unstated assumptions, missing failure modes, scale limits and simpler alternatives."
+    },
+    {
+      "name": "system-design-framework",
+      "kind": "skill",
+      "purpose": "Work a system design from requirements to API, data model, components, scaling and failure handling."
+    },
+    {
+      "name": "capacity-estimation",
+      "kind": "skill",
+      "purpose": "Do back-of-envelope estimates for traffic, storage, bandwidth and cost from user numbers."
+    },
+    {
+      "name": "scalability-patterns",
+      "kind": "skill",
+      "purpose": "Apply sharding, replication, partitioning, queues and caching patterns with their trade-offs."
+    },
+    {
+      "name": "data-consistency-patterns",
+      "kind": "skill",
+      "purpose": "Choose consistency models and patterns (transactions, idempotency keys, sagas, CRDTs) for distributed data."
+    },
+    {
+      "name": "caching-strategy-design",
+      "kind": "skill",
+      "purpose": "Design caches: placement, keys, TTLs, invalidation, stampede protection and consistency."
+    },
+    {
+      "name": "event-driven-design",
+      "kind": "skill",
+      "purpose": "Design event-driven systems: event types, choreography vs orchestration, and when not to use events."
+    },
+    {
+      "name": "event-schema-versioning",
+      "kind": "skill",
+      "purpose": "Version event schemas with compatibility rules and evolve them without breaking consumers."
+    },
+    {
+      "name": "saga-patterns",
+      "kind": "skill",
+      "purpose": "Implement long-running workflows with sagas and compensating actions."
+    },
+    {
+      "name": "transactional-outbox",
+      "kind": "skill",
+      "purpose": "Publish events reliably with the transactional outbox and inbox patterns."
+    },
+    {
+      "name": "idempotent-consumers",
+      "kind": "skill",
+      "purpose": "Make message consumers idempotent and handle duplicates, ordering and poison messages."
+    },
+    {
+      "name": "cqrs-event-sourcing",
+      "kind": "skill",
+      "purpose": "Apply CQRS and event sourcing where they fit: projections, snapshots and replay."
+    },
+    {
+      "name": "hexagonal-architecture",
+      "kind": "skill",
+      "purpose": "Structure code with ports and adapters so domain logic is independent of frameworks and I/O."
+    },
+    {
+      "name": "modular-monolith-design",
+      "kind": "skill",
+      "purpose": "Build a modular monolith with explicit module APIs, owned data and enforced boundaries."
+    },
+    {
+      "name": "dependency-rule-enforcement",
+      "kind": "skill",
+      "purpose": "Enforce layering and module rules in CI with tools like ArchUnit, dependency-cruiser or import-linter."
+    },
+    {
+      "name": "architecture-fitness-functions",
+      "kind": "skill",
+      "purpose": "Write automated fitness functions that guard architecture qualities (coupling, latency, size) over time."
+    },
+    {
+      "name": "coupling-cohesion-metrics",
+      "kind": "skill",
+      "purpose": "Measure coupling and cohesion (afferent/efferent coupling, instability) and act on the results."
+    },
+    {
+      "name": "service-boundary-design",
+      "kind": "skill",
+      "purpose": "Draw service boundaries around business capabilities and data ownership, avoiding distributed monoliths."
+    },
+    {
+      "name": "distributed-failure-modes",
+      "kind": "skill",
+      "purpose": "Enumerate failure modes in distributed calls (timeouts, partial failure, retries, cascading) and mitigations."
+    },
+    {
+      "name": "resilience-patterns",
+      "kind": "skill",
+      "purpose": "Apply timeouts, retries with backoff and jitter, circuit breakers, bulkheads and fallbacks correctly."
+    },
+    {
+      "name": "inter-service-communication",
+      "kind": "skill",
+      "purpose": "Choose sync vs async communication between services and design for versioning and backpressure."
+    },
+    {
+      "name": "c4-model-diagrams",
+      "kind": "skill",
+      "purpose": "Draw C4 context, container and component diagrams that match the actual system."
+    },
+    {
+      "name": "arc42-documentation",
+      "kind": "skill",
+      "purpose": "Document an architecture with the arc42 template, filling only the sections that earn their keep."
+    },
+    {
+      "name": "diagrams-as-code",
+      "kind": "skill",
+      "purpose": "Produce maintainable diagrams with Mermaid, PlantUML or Structurizr kept next to the code."
+    },
+    {
+      "name": "architecture-overview-writing",
+      "kind": "skill",
+      "purpose": "Write a one-page architecture overview a new engineer can read in ten minutes."
+    },
+    {
+      "name": "trunk-based-development",
+      "kind": "skill",
+      "purpose": "Practise trunk-based development: short-lived branches, small commits, feature flags and green main."
+    },
+    {
+      "name": "git-branching-strategy",
+      "kind": "skill",
+      "purpose": "Choose a branching model (trunk, GitHub flow, release branches) for a team’s release cadence."
+    },
+    {
+      "name": "conventional-commits",
+      "kind": "skill",
+      "purpose": "Use Conventional Commits types and scopes so history drives versioning and changelogs."
+    },
+    {
+      "name": "git-rebase-workflow",
+      "kind": "skill",
+      "purpose": "Keep history clean with rebase, autosquash fixups and when to merge instead of rebase."
+    },
+    {
+      "name": "git-bisect-debugging",
+      "kind": "skill",
+      "purpose": "Find the commit that introduced a bug with git bisect, including automated bisect run scripts."
+    },
+    {
+      "name": "git-reflog-recovery",
+      "kind": "skill",
+      "purpose": "Recover lost commits, branches and stashes with reflog, fsck and safe reset strategies."
+    },
+    {
+      "name": "git-conflict-resolution",
+      "kind": "skill",
+      "purpose": "Resolve merge and rebase conflicts systematically, with rerere and verification after resolution."
+    },
+    {
+      "name": "git-worktrees",
+      "kind": "skill",
+      "purpose": "Use git worktrees to work on several branches at once without stashing."
+    },
+    {
+      "name": "git-history-rewriting",
+      "kind": "skill",
+      "purpose": "Rewrite history safely: split, squash and reorder commits, and purge files with filter-repo."
+    },
+    {
+      "name": "git-large-files",
+      "kind": "skill",
+      "purpose": "Handle large and binary files with Git LFS, .gitattributes and repository size audits."
+    },
+    {
+      "name": "monorepo-structure",
+      "kind": "skill",
+      "purpose": "Lay out a monorepo (apps, packages, tooling), naming and dependency rules between projects."
+    },
+    {
+      "name": "monorepo-affected-builds",
+      "kind": "skill",
+      "purpose": "Build and test only affected projects using the task graph and remote caching."
+    },
+    {
+      "name": "monorepo-versioning",
+      "kind": "skill",
+      "purpose": "Version and publish packages from a monorepo with fixed or independent versioning."
+    },
+    {
+      "name": "monorepo-migration",
+      "kind": "skill",
+      "purpose": "Merge several repos into a monorepo preserving history, CI and ownership."
+    },
+    {
+      "name": "nx-turborepo-pipelines",
+      "kind": "skill",
+      "purpose": "Configure Nx or Turborepo task pipelines, caching and boundaries for JS/TS monorepos."
+    },
+    {
+      "name": "bazel-build-basics",
+      "kind": "skill",
+      "purpose": "Model a polyglot monorepo with Bazel targets, visibility and hermetic builds."
+    },
+    {
+      "name": "tech-writing-style",
+      "kind": "skill",
+      "purpose": "Write clear technical prose: short sentences, active voice, consistent terms, one idea per paragraph."
+    },
+    {
+      "name": "diataxis-framework",
+      "kind": "skill",
+      "purpose": "Organise docs into tutorials, how-to guides, reference and explanation, and classify existing pages."
+    },
+    {
+      "name": "docs-editing-pass",
+      "kind": "skill",
+      "purpose": "Edit a technical draft for accuracy, structure, concision and audience fit in ordered passes."
+    },
+    {
+      "name": "plain-language-rewrite",
+      "kind": "skill",
+      "purpose": "Rewrite jargon-heavy technical text for a wider audience without losing precision."
+    },
+    {
+      "name": "docs-information-architecture",
+      "kind": "skill",
+      "purpose": "Design docs navigation, page hierarchy and naming so readers find answers fast."
+    },
+    {
+      "name": "readme-writing",
+      "kind": "skill",
+      "purpose": "Write a README with what it is, quickstart, usage, configuration and where to get help."
+    },
+    {
+      "name": "contributing-guide-writing",
+      "kind": "skill",
+      "purpose": "Write CONTRIBUTING docs: dev setup, workflow, coding standards, tests and review expectations."
+    },
+    {
+      "name": "quickstart-tutorial-writing",
+      "kind": "skill",
+      "purpose": "Write a quickstart that gets a newcomer to a working result in minutes, tested end to end."
+    },
+    {
+      "name": "code-comment-standards",
+      "kind": "skill",
+      "purpose": "Write comments that explain why, document public APIs, and remove comments that restate code."
+    },
+    {
+      "name": "troubleshooting-guide-writing",
+      "kind": "skill",
+      "purpose": "Write troubleshooting guides as symptom, cause, fix entries built from real support questions."
+    },
+    {
+      "name": "api-reference-docs-writing",
+      "kind": "skill",
+      "purpose": "Write API reference docs from OpenAPI/GraphQL schemas with complete parameter, error and auth descriptions."
+    },
+    {
+      "name": "api-docs-examples",
+      "kind": "skill",
+      "purpose": "Add runnable request/response and SDK examples in several languages, tested in CI."
+    },
+    {
+      "name": "sdk-docs-writing",
+      "kind": "skill",
+      "purpose": "Document client SDKs: installation, auth, common tasks, pagination, errors and retries."
+    },
+    {
+      "name": "api-changelog-writing",
+      "kind": "skill",
+      "purpose": "Write API changelogs and migration notes that flag breaking changes and deprecation dates."
+    },
+    {
+      "name": "api-guides-writing",
+      "kind": "skill",
+      "purpose": "Write task-based API guides (authenticate, first call, webhooks) that complement the reference."
+    },
+    {
+      "name": "docs-as-code-pipeline",
+      "kind": "skill",
+      "purpose": "Treat docs as code: docs in the repo, PR review, preview builds and publish on merge."
+    },
+    {
+      "name": "docs-site-generators",
+      "kind": "skill",
+      "purpose": "Set up and structure docs sites with Docusaurus, MkDocs Material or Starlight."
+    },
+    {
+      "name": "docs-prose-linting",
+      "kind": "skill",
+      "purpose": "Lint documentation prose with Vale and markdownlint using a house style."
+    },
+    {
+      "name": "docs-link-checking",
+      "kind": "skill",
+      "purpose": "Check docs for broken links, stale code samples and orphaned pages in CI."
+    },
+    {
+      "name": "docs-versioning",
+      "kind": "skill",
+      "purpose": "Version documentation alongside product releases and manage deprecated versions."
+    },
+    {
+      "name": "debugging-scientific-method",
+      "kind": "skill",
+      "purpose": "Debug by hypothesis: observe, hypothesise, predict, test, and keep a debugging log."
+    },
+    {
+      "name": "minimal-repro-building",
+      "kind": "skill",
+      "purpose": "Reduce a bug to a minimal reproducible example by delta-debugging inputs and code."
+    },
+    {
+      "name": "log-driven-debugging",
+      "kind": "skill",
+      "purpose": "Add targeted logging and tracing to narrow a bug, then remove or keep it deliberately."
+    },
+    {
+      "name": "debugger-techniques",
+      "kind": "skill",
+      "purpose": "Use breakpoints, conditional breakpoints, watchpoints and stepping effectively in any debugger."
+    },
+    {
+      "name": "race-condition-debugging",
+      "kind": "skill",
+      "purpose": "Find concurrency bugs: reproduce under stress, add instrumentation, use race detectors and reason about interleavings."
+    },
+    {
+      "name": "intermittent-failure-diagnosis",
+      "kind": "skill",
+      "purpose": "Diagnose bugs that only happen sometimes by collecting failure data and correlating conditions."
+    },
+    {
+      "name": "production-bug-forensics",
+      "kind": "skill",
+      "purpose": "Investigate production-only bugs from logs, traces, core dumps and request replays without disrupting users."
+    },
+    {
+      "name": "crash-dump-triage",
+      "kind": "skill",
+      "purpose": "Triage crashes from stack traces and core dumps: symbolicate, group by signature and find the trigger."
+    },
+    {
+      "name": "cpu-profiling-flamegraphs",
+      "kind": "skill",
+      "purpose": "Profile CPU usage with sampling profilers and read flame graphs to find hot paths."
+    },
+    {
+      "name": "memory-profiling-leaks",
+      "kind": "skill",
+      "purpose": "Find memory leaks and bloat with heap snapshots, allocation tracking and retention paths."
+    },
+    {
+      "name": "perf-regression-detection",
+      "kind": "skill",
+      "purpose": "Catch performance regressions in CI with benchmarks, baselines and noise-aware thresholds."
+    },
+    {
+      "name": "latency-analysis",
+      "kind": "skill",
+      "purpose": "Analyse latency distributions and tail percentiles and attribute time across a request path."
+    },
+    {
+      "name": "perf-optimization-playbook",
+      "kind": "skill",
+      "purpose": "Optimise in order: measure, find the bottleneck, fix the algorithm or I/O pattern, re-measure."
+    },
+    {
+      "name": "dependency-upgrade-planning",
+      "kind": "skill",
+      "purpose": "Plan dependency upgrades: inventory outdated packages, group by risk and schedule batches."
+    },
+    {
+      "name": "breaking-change-triage",
+      "kind": "skill",
+      "purpose": "Read release notes and changelogs to list breaking changes that actually affect this codebase."
+    },
+    {
+      "name": "lockfile-hygiene",
+      "kind": "skill",
+      "purpose": "Keep lockfiles healthy: deduplicate, resolve conflicts, and understand transitive version resolution."
+    },
+    {
+      "name": "dep-update-bot-config",
+      "kind": "skill",
+      "purpose": "Configure Renovate or Dependabot grouping, schedules, automerge rules and noise limits."
+    },
+    {
+      "name": "framework-upgrade-playbook",
+      "kind": "skill",
+      "purpose": "Upgrade a major framework version: read migration guides, run codemods, fix deprecations, verify."
+    },
+    {
+      "name": "deprecation-cleanup",
+      "kind": "skill",
+      "purpose": "Find and remove uses of deprecated APIs ahead of the version that drops them."
+    },
+    {
+      "name": "oss-issue-triage",
+      "kind": "skill",
+      "purpose": "Triage issues in an open source project: labels, reproduction requests, duplicates and closing politely."
+    },
+    {
+      "name": "oss-contributor-onboarding",
+      "kind": "skill",
+      "purpose": "Grow contributors with good-first-issues, mentoring notes and fast first-PR feedback."
+    },
+    {
+      "name": "oss-governance-docs",
+      "kind": "skill",
+      "purpose": "Write GOVERNANCE, MAINTAINERS and decision-making docs for an open source project."
+    },
+    {
+      "name": "oss-maintainer-sustainability",
+      "kind": "skill",
+      "purpose": "Protect maintainer time: saying no, scope statements, saved replies, sponsorship and handoff."
+    },
+    {
+      "name": "oss-license-selection",
+      "kind": "skill",
+      "purpose": "Choose an open source license and apply it correctly (LICENSE file, headers, third-party notices); not legal advice."
+    },
+    {
+      "name": "oss-repo-scaffolding",
+      "kind": "skill",
+      "purpose": "Set up an open source repo: README, CONTRIBUTING, CODE_OF_CONDUCT, SECURITY.md and templates."
+    },
+    {
+      "name": "issue-pr-templates",
+      "kind": "skill",
+      "purpose": "Write issue forms and pull request templates that collect what maintainers need."
+    },
+    {
+      "name": "release-checklist",
+      "kind": "skill",
+      "purpose": "Run releases from a checklist: freeze, verify, tag, publish, announce and monitor."
+    },
+    {
+      "name": "release-branching",
+      "kind": "skill",
+      "purpose": "Manage release branches, cherry-picks and backports for supported versions."
+    },
+    {
+      "name": "hotfix-process",
+      "kind": "skill",
+      "purpose": "Ship an urgent fix: branch from the release tag, minimal change, fast verification, forward-port."
+    },
+    {
+      "name": "release-train-planning",
+      "kind": "skill",
+      "purpose": "Run a fixed-cadence release train: cut dates, what makes the train, and slip rules."
+    },
+    {
+      "name": "semver-policy",
+      "kind": "skill",
+      "purpose": "Apply semantic versioning: what counts as breaking, pre-releases, and a written versioning policy."
+    },
+    {
+      "name": "changelog-writing",
+      "kind": "skill",
+      "purpose": "Write a human changelog (Keep a Changelog style) grouped by added, changed, fixed, removed."
+    },
+    {
+      "name": "changelog-automation",
+      "kind": "skill",
+      "purpose": "Automate versions and changelogs with Changesets, release-please or semantic-release."
+    },
+    {
+      "name": "release-notes-writing",
+      "kind": "skill",
+      "purpose": "Write user-facing release notes that lead with impact, upgrade steps and known issues."
+    },
+    {
+      "name": "deprecation-policy",
+      "kind": "skill",
+      "purpose": "Write and apply a deprecation policy: notice periods, warnings, migration paths and removal."
+    },
+    {
+      "name": "codebase-tour-mapping",
+      "kind": "skill",
+      "purpose": "Produce a guided tour of a codebase: main modules, request lifecycle and where to start reading."
+    },
+    {
+      "name": "architecture-discovery",
+      "kind": "skill",
+      "purpose": "Reverse-engineer an architecture from code, config and infra definitions into a diagram and notes."
+    },
+    {
+      "name": "onboarding-doc-writing",
+      "kind": "skill",
+      "purpose": "Write an engineering onboarding guide: setup, first tasks, people, glossary and norms."
+    },
+    {
+      "name": "domain-glossary-building",
+      "kind": "skill",
+      "purpose": "Extract domain terms from code and docs into a glossary that maps business words to code."
+    },
+    {
+      "name": "git-history-archaeology",
+      "kind": "skill",
+      "purpose": "Use blame, log -S/-G and PR history to learn why code is the way it is."
+    },
+    {
+      "name": "call-graph-tracing",
+      "kind": "skill",
+      "purpose": "Trace who calls what across a codebase with code search and language servers to scope a change."
+    },
+    {
+      "name": "data-flow-tracing",
+      "kind": "skill",
+      "purpose": "Follow a piece of data from input to storage and output to find every place it is transformed."
+    },
+    {
+      "name": "code-ownership-mapping",
+      "kind": "skill",
+      "purpose": "Map code ownership from commit history and CODEOWNERS to find experts and orphaned areas."
+    },
+    {
+      "name": "eng-one-on-one-prep",
+      "kind": "skill",
+      "purpose": "Prepare engineering 1:1s: agenda from recent work, open threads, growth topics and follow-ups."
+    },
+    {
+      "name": "eng-feedback-delivery",
+      "kind": "skill",
+      "purpose": "Give engineers specific feedback with the SBI model, for both praise and course correction."
+    },
+    {
+      "name": "eng-career-conversations",
+      "kind": "skill",
+      "purpose": "Run career conversations against an engineering ladder and turn them into growth plans."
+    },
+    {
+      "name": "eng-delegation",
+      "kind": "skill",
+      "purpose": "Delegate technical work with clear outcomes, context and check-in points to grow engineers."
+    },
+    {
+      "name": "eng-estimation-techniques",
+      "kind": "skill",
+      "purpose": "Estimate engineering work with ranges, reference-class comparison and explicit uncertainty."
+    },
+    {
+      "name": "story-splitting",
+      "kind": "skill",
+      "purpose": "Split epics and stories vertically into small, valuable, independently shippable slices."
+    },
+    {
+      "name": "eng-sprint-planning",
+      "kind": "skill",
+      "purpose": "Run sprint or cycle planning from capacity, priorities and carry-over with a clear commitment."
+    },
+    {
+      "name": "monte-carlo-forecasting",
+      "kind": "skill",
+      "purpose": "Forecast delivery dates from throughput history with Monte Carlo simulation instead of points."
+    },
+    {
+      "name": "eng-dora-metrics",
+      "kind": "skill",
+      "purpose": "Measure DORA metrics (deploy frequency, lead time, change failure rate, recovery time) and read them honestly."
+    },
+    {
+      "name": "pr-cycle-time-analysis",
+      "kind": "skill",
+      "purpose": "Break PR cycle time into coding, pickup, review and merge time and find the bottleneck."
+    },
+    {
+      "name": "flow-metrics",
+      "kind": "skill",
+      "purpose": "Track WIP, throughput, flow efficiency and aging work items to improve delivery flow."
+    },
+    {
+      "name": "devex-surveys",
+      "kind": "skill",
+      "purpose": "Design and analyse developer experience surveys and connect them to system metrics."
+    },
+    {
+      "name": "technical-roadmap-writing",
+      "kind": "skill",
+      "purpose": "Write a technical roadmap linking engineering investments to product and reliability goals."
+    },
+    {
+      "name": "eng-status-updates",
+      "kind": "skill",
+      "purpose": "Write concise engineering status updates: progress, risks, decisions needed, next steps."
+    },
+    {
+      "name": "quarterly-eng-planning",
+      "kind": "skill",
+      "purpose": "Plan an engineering quarter: themes, capacity split (features/debt/KTLO) and commitments."
+    },
+    {
+      "name": "project-kickoff-docs",
+      "kind": "skill",
+      "purpose": "Write a project kickoff doc: problem, scope, milestones, owners, risks and communication plan."
+    },
+    {
+      "name": "eng-retrospectives",
+      "kind": "skill",
+      "purpose": "Facilitate engineering retrospectives with varied formats and actions that get followed up."
+    },
+    {
+      "name": "team-working-agreements",
+      "kind": "skill",
+      "purpose": "Draft team working agreements: hours, review norms, on-call etiquette, meetings and decisions."
+    },
+    {
+      "name": "standup-formats",
+      "kind": "skill",
+      "purpose": "Run short, useful standups (walk the board, blockers first) or replace them with async updates."
+    },
+    {
+      "name": "team-health-checks",
+      "kind": "skill",
+      "purpose": "Run team health checks and turn trends into improvement experiments."
+    },
+    {
+      "name": "dev-environment-setup",
+      "kind": "skill",
+      "purpose": "Make local setup one command: version managers, bootstrap scripts and a doctor check."
+    },
+    {
+      "name": "devcontainer-setup",
+      "kind": "skill",
+      "purpose": "Define reproducible dev environments with devcontainers or Nix shells for local and cloud IDEs."
+    },
+    {
+      "name": "task-runner-design",
+      "kind": "skill",
+      "purpose": "Expose common tasks via make, just or npm scripts with self-documenting help output."
+    },
+    {
+      "name": "precommit-hook-setup",
+      "kind": "skill",
+      "purpose": "Set up fast pre-commit hooks for formatting, linting and secrets checks without annoying developers."
+    },
+    {
+      "name": "linter-config-strategy",
+      "kind": "skill",
+      "purpose": "Choose and configure linters and formatters, adopt rules gradually and suppress responsibly."
+    },
+    {
+      "name": "static-analysis-adoption",
+      "kind": "skill",
+      "purpose": "Introduce static analysis into an existing codebase with baselines so only new issues fail CI."
+    },
+    {
+      "name": "code-complexity-limits",
+      "kind": "skill",
+      "purpose": "Set complexity, file size and function length limits that catch problems without gaming."
+    },
+    {
+      "name": "ci-quality-gates",
+      "kind": "skill",
+      "purpose": "Define which checks block merge (tests, coverage on diff, lint, types) and keep the gate fast."
+    },
+    {
+      "name": "feature-flag-lifecycle",
+      "kind": "skill",
+      "purpose": "Manage feature flags from creation to removal: naming, ownership, expiry and cleanup."
+    },
+    {
+      "name": "progressive-rollouts",
+      "kind": "skill",
+      "purpose": "Roll features out progressively by cohort and percentage with kill switches and metrics to watch."
+    },
+    {
+      "name": "flag-debt-cleanup",
+      "kind": "skill",
+      "purpose": "Find stale feature flags and remove them with their dead branches safely."
+    },
+    {
+      "name": "error-handling-patterns",
+      "kind": "skill",
+      "purpose": "Design error handling: error types, propagation, where to catch, and failing fast versus recovering."
+    },
+    {
+      "name": "error-message-writing",
+      "kind": "skill",
+      "purpose": "Write error messages that say what happened, why and what to do next."
+    },
+    {
+      "name": "retry-backoff-design",
+      "kind": "skill",
+      "purpose": "Design retries with backoff, jitter, budgets and idempotency so they help instead of amplify outages."
+    },
+    {
+      "name": "defensive-programming",
+      "kind": "skill",
+      "purpose": "Validate inputs at boundaries, assert invariants and handle the impossible case explicitly."
+    },
+    {
+      "name": "naming-conventions",
+      "kind": "skill",
+      "purpose": "Choose names that reveal intent, match the domain and stay consistent across a codebase."
+    },
+    {
+      "name": "function-design",
+      "kind": "skill",
+      "purpose": "Keep functions small, single-purpose, with few parameters and no hidden side effects."
+    },
+    {
+      "name": "simple-design-rules",
+      "kind": "skill",
+      "purpose": "Apply the four rules of simple design and YAGNI to avoid speculative abstraction."
+    },
+    {
+      "name": "cognitive-complexity-reduction",
+      "kind": "skill",
+      "purpose": "Reduce nesting and branching with guard clauses, early returns and lookup tables."
+    },
+    {
+      "name": "technical-spec-writing",
+      "kind": "skill",
+      "purpose": "Turn product requirements into an engineering spec: behaviour, interfaces, data and edge cases."
+    },
+    {
+      "name": "acceptance-criteria-writing",
+      "kind": "skill",
+      "purpose": "Write testable acceptance criteria that remove ambiguity before work starts."
+    },
+    {
+      "name": "edge-case-enumeration",
+      "kind": "skill",
+      "purpose": "Systematically enumerate edge cases (empty, max, concurrent, failure, permission) for a feature."
+    },
+    {
+      "name": "spec-review",
+      "kind": "skill",
+      "purpose": "Review a spec for gaps, contradictions, untestable statements and hidden scope."
+    },
+    {
+      "name": "coding-style-guide-writing",
+      "kind": "skill",
+      "purpose": "Write a team coding style guide that records only decisions tools cannot enforce."
+    },
+    {
+      "name": "engineering-handbook",
+      "kind": "skill",
+      "purpose": "Structure an engineering handbook: how we build, ship, review, operate and decide."
+    },
+    {
+      "name": "tech-radar",
+      "kind": "skill",
+      "purpose": "Run a technology radar (adopt, trial, assess, hold) to steer technology choices."
+    },
+    {
+      "name": "agents-md-authoring",
+      "kind": "skill",
+      "purpose": "Write AGENTS.md / CLAUDE.md project instructions: commands, conventions, boundaries and gotchas."
+    },
+    {
+      "name": "agentic-task-briefs",
+      "kind": "skill",
+      "purpose": "Write task briefs for coding agents with goal, constraints, acceptance checks and files to touch."
+    },
+    {
+      "name": "agentic-verification-loop",
+      "kind": "skill",
+      "purpose": "Make coding agents prove their work: run tests, type checks and the app before declaring done."
+    },
+    {
+      "name": "ai-generated-code-review",
+      "kind": "skill",
+      "purpose": "Review AI-generated diffs for hallucinated APIs, silent behaviour changes and unnecessary churn."
+    },
+    {
+      "name": "unit-test-writer-agent",
+      "kind": "agent",
+      "purpose": "Writes focused unit tests for a given module or diff, matching the repo’s test style, and runs them.",
+      "skills": [
+        "unit-test-structure",
+        "test-doubles-guide",
+        "test-naming-conventions"
+      ]
+    },
+    {
+      "name": "integration-test-writer-agent",
+      "kind": "agent",
+      "purpose": "Writes integration tests against real dependencies (containers, test DBs) for an endpoint or workflow.",
+      "skills": [
+        "integration-test-boundaries",
+        "testcontainers-patterns",
+        "test-db-isolation"
+      ]
+    },
+    {
+      "name": "property-test-writer-agent",
+      "kind": "agent",
+      "purpose": "Proposes properties for a function or module and writes property-based tests with good generators.",
+      "skills": [
+        "pbt-property-design",
+        "pbt-generators-shrinking"
+      ]
+    },
+    {
+      "name": "test-data-builder-agent",
+      "kind": "agent",
+      "purpose": "Creates test data builders and factories for domain types and refactors tests to use them.",
+      "skills": [
+        "test-data-builders",
+        "fixture-factories"
+      ]
+    },
+    {
+      "name": "playwright-test-generator",
+      "kind": "agent",
+      "purpose": "Explores a web flow and writes a Playwright test with resilient locators and fixtures.",
+      "skills": [
+        "playwright-test-authoring",
+        "playwright-locators",
+        "playwright-auth-fixtures"
+      ]
+    },
+    {
+      "name": "e2e-failure-triager",
+      "kind": "agent",
+      "purpose": "Reads failing e2e runs (traces, screenshots, logs) and classifies each as app bug, test bug, flake or environment.",
+      "skills": [
+        "playwright-trace-debugging",
+        "flaky-test-triage"
+      ]
+    },
+    {
+      "name": "e2e-flow-mapper",
+      "kind": "agent",
+      "purpose": "Maps an app’s critical user journeys and proposes which ones deserve e2e coverage.",
+      "skills": [
+        "risk-based-test-selection",
+        "test-pyramid-planning"
+      ]
+    },
+    {
+      "name": "cypress-to-playwright-migrator",
+      "kind": "agent",
+      "purpose": "Migrates Cypress specs to Playwright, translating commands, intercepts and custom commands.",
+      "skills": [
+        "cypress-test-authoring",
+        "playwright-test-authoring",
+        "playwright-locators"
+      ]
+    },
+    {
+      "name": "tdd-test-first-agent",
+      "kind": "agent",
+      "purpose": "Writes the next failing test from a test list and stops; never writes production code.",
+      "skills": [
+        "tdd-test-list",
+        "tdd-red-green-refactor",
+        "test-naming-conventions"
+      ]
+    },
+    {
+      "name": "tdd-implementer-agent",
+      "kind": "agent",
+      "purpose": "Writes the minimal production code to make the current failing test pass, nothing more.",
+      "skills": [
+        "tdd-red-green-refactor",
+        "tdd-triangulation"
+      ]
+    },
+    {
+      "name": "tdd-refactor-agent",
+      "kind": "agent",
+      "purpose": "Refactors code and tests while green, in small steps, running the suite after each.",
+      "skills": [
+        "safe-refactor-steps",
+        "refactoring-catalog"
+      ]
+    },
+    {
+      "name": "diff-correctness-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews a diff for logic errors, edge cases, error handling and concurrency issues; returns blocking findings with line refs.",
+      "skills": [
+        "code-review-checklist",
+        "edge-case-enumeration",
+        "review-comment-writing"
+      ]
+    },
+    {
+      "name": "readability-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews a diff for naming, structure, duplication and comments; returns suggestions labelled by severity.",
+      "skills": [
+        "naming-conventions",
+        "function-design",
+        "code-smell-detection"
+      ]
+    },
+    {
+      "name": "test-adequacy-reviewer",
+      "kind": "agent",
+      "purpose": "Checks whether a diff’s tests actually cover the changed behaviour and lists missing cases.",
+      "skills": [
+        "test-coverage-analysis",
+        "test-smell-detection"
+      ]
+    },
+    {
+      "name": "pr-risk-assessor",
+      "kind": "agent",
+      "purpose": "Scores a pull request’s risk (blast radius, reversibility, coverage) and recommends review depth and reviewers.",
+      "skills": [
+        "review-risk-triage",
+        "codeowners-design"
+      ]
+    },
+    {
+      "name": "review-summary-writer",
+      "kind": "agent",
+      "purpose": "Merges findings from several reviewers into one deduplicated, prioritised review.",
+      "skills": [
+        "review-comment-writing"
+      ]
+    },
+    {
+      "name": "pr-description-writer-agent",
+      "kind": "agent",
+      "purpose": "Writes a pull request description from the diff and linked issue: context, changes, testing, risk.",
+      "skills": [
+        "pr-description-writing"
+      ]
+    },
+    {
+      "name": "pr-splitter-agent",
+      "kind": "agent",
+      "purpose": "Proposes how to split a large branch into a sequence of small PRs and prepares the branches.",
+      "skills": [
+        "pr-size-splitting",
+        "stacked-prs"
+      ]
+    },
+    {
+      "name": "commit-message-agent",
+      "kind": "agent",
+      "purpose": "Writes commit messages from staged changes following the repo’s conventions.",
+      "skills": [
+        "commit-message-writing",
+        "conventional-commits"
+      ]
+    },
+    {
+      "name": "review-feedback-resolver",
+      "kind": "agent",
+      "purpose": "Works through review comments on a PR: applies agreed fixes, drafts replies, flags disagreements.",
+      "skills": [
+        "review-comment-writing",
+        "self-review-before-pr"
+      ]
+    },
+    {
+      "name": "code-smell-scanner",
+      "kind": "agent",
+      "purpose": "Scans a module for code smells and returns a ranked list with the suggested refactoring for each.",
+      "skills": [
+        "code-smell-detection",
+        "complexity-hotspot-analysis"
+      ]
+    },
+    {
+      "name": "refactoring-planner",
+      "kind": "agent",
+      "purpose": "Plans a refactoring as a sequence of safe, separately committable steps with tests to run.",
+      "skills": [
+        "refactoring-catalog",
+        "parallel-change",
+        "safe-refactor-steps"
+      ]
+    },
+    {
+      "name": "refactoring-executor",
+      "kind": "agent",
+      "purpose": "Carries out a planned refactoring step by step, keeping tests green and committing each step.",
+      "skills": [
+        "safe-refactor-steps",
+        "refactoring-catalog"
+      ]
+    },
+    {
+      "name": "dead-code-hunter",
+      "kind": "agent",
+      "purpose": "Finds unused functions, files, flags and dependencies and prepares their safe removal.",
+      "skills": [
+        "dead-code-removal",
+        "flag-debt-cleanup"
+      ]
+    },
+    {
+      "name": "legacy-system-mapper",
+      "kind": "agent",
+      "purpose": "Maps an unfamiliar legacy system into a report of components, data flows, risks and test gaps.",
+      "skills": [
+        "legacy-code-mapping",
+        "architecture-discovery"
+      ]
+    },
+    {
+      "name": "characterization-test-agent",
+      "kind": "agent",
+      "purpose": "Writes characterization tests that pin current behaviour of legacy code before changes.",
+      "skills": [
+        "characterization-tests",
+        "seam-finding"
+      ]
+    },
+    {
+      "name": "strangler-migration-planner",
+      "kind": "agent",
+      "purpose": "Plans a strangler-fig migration: slices, routing, parity checks and decommission steps.",
+      "skills": [
+        "strangler-fig-migration",
+        "branch-by-abstraction",
+        "feature-parity-verification"
+      ]
+    },
+    {
+      "name": "modernisation-assessor",
+      "kind": "agent",
+      "purpose": "Assesses a legacy application and recommends rehost/refactor/rebuild/replace with reasoning.",
+      "skills": [
+        "modernisation-assessment",
+        "tech-debt-prioritization"
+      ]
+    },
+    {
+      "name": "architecture-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews a codebase or proposal against stated architecture principles and returns risks and violations.",
+      "skills": [
+        "architecture-principles",
+        "dependency-rule-enforcement",
+        "coupling-cohesion-metrics"
+      ]
+    },
+    {
+      "name": "design-doc-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews a design doc for gaps, failure modes, scale limits and simpler alternatives.",
+      "skills": [
+        "design-doc-review",
+        "distributed-failure-modes"
+      ]
+    },
+    {
+      "name": "adr-author-agent",
+      "kind": "agent",
+      "purpose": "Drafts an ADR from a discussion or PR thread, listing options considered and consequences.",
+      "skills": [
+        "adr-writing",
+        "adr-lifecycle"
+      ]
+    },
+    {
+      "name": "tradeoff-analyst",
+      "kind": "agent",
+      "purpose": "Compares candidate designs or technologies with a weighted matrix and states the recommendation and its assumptions.",
+      "skills": [
+        "tradeoff-analysis-matrix"
+      ]
+    },
+    {
+      "name": "domain-modeler",
+      "kind": "agent",
+      "purpose": "Turns domain descriptions into aggregates, entities, value objects and invariants, with code sketches.",
+      "skills": [
+        "ddd-aggregates",
+        "ddd-ubiquitous-language"
+      ]
+    },
+    {
+      "name": "event-storming-facilitator",
+      "kind": "agent",
+      "purpose": "Guides an event storming session in text: events, commands, actors, policies and hot spots.",
+      "skills": [
+        "event-storming"
+      ]
+    },
+    {
+      "name": "bounded-context-mapper",
+      "kind": "agent",
+      "purpose": "Proposes bounded contexts and a context map for a system from its code and domain language.",
+      "skills": [
+        "ddd-bounded-contexts",
+        "ddd-context-mapping"
+      ]
+    },
+    {
+      "name": "system-design-planner",
+      "kind": "agent",
+      "purpose": "Produces a system design from requirements: components, data model, APIs, scaling and failure handling.",
+      "skills": [
+        "system-design-framework",
+        "scalability-patterns",
+        "caching-strategy-design"
+      ]
+    },
+    {
+      "name": "capacity-estimator",
+      "kind": "agent",
+      "purpose": "Produces back-of-envelope capacity and cost estimates with stated assumptions.",
+      "skills": [
+        "capacity-estimation"
+      ]
+    },
+    {
+      "name": "failure-mode-analyst",
+      "kind": "agent",
+      "purpose": "Walks a design and lists failure modes, their effects and mitigations (FMEA-style).",
+      "skills": [
+        "distributed-failure-modes",
+        "resilience-patterns"
+      ]
+    },
+    {
+      "name": "consistency-advisor",
+      "kind": "agent",
+      "purpose": "Recommends consistency models and transactional patterns for a distributed data flow.",
+      "skills": [
+        "data-consistency-patterns",
+        "transactional-outbox"
+      ]
+    },
+    {
+      "name": "bug-reproducer",
+      "kind": "agent",
+      "purpose": "Turns a bug report into a minimal failing test or script that reproduces it.",
+      "skills": [
+        "minimal-repro-building",
+        "bug-report-writing"
+      ]
+    },
+    {
+      "name": "bug-root-cause-investigator",
+      "kind": "agent",
+      "purpose": "Investigates a reproduced bug by hypothesis testing and returns the root cause with evidence.",
+      "skills": [
+        "debugging-scientific-method",
+        "log-driven-debugging",
+        "git-history-archaeology"
+      ]
+    },
+    {
+      "name": "git-bisect-runner",
+      "kind": "agent",
+      "purpose": "Automates git bisect with a test script to find the commit that introduced a regression.",
+      "skills": [
+        "git-bisect-debugging"
+      ]
+    },
+    {
+      "name": "fix-verifier",
+      "kind": "agent",
+      "purpose": "Verifies a bug fix: the repro now passes, a regression test exists and nearby behaviour is unchanged.",
+      "skills": [
+        "characterization-tests",
+        "edge-case-enumeration"
+      ]
+    },
+    {
+      "name": "profiling-analyst",
+      "kind": "agent",
+      "purpose": "Runs or reads CPU and memory profiles and explains where time and memory go.",
+      "skills": [
+        "cpu-profiling-flamegraphs",
+        "memory-profiling-leaks"
+      ]
+    },
+    {
+      "name": "benchmark-runner-agent",
+      "kind": "agent",
+      "purpose": "Writes and runs benchmarks for a hot path and reports statistically sound comparisons.",
+      "skills": [
+        "benchmark-methodology"
+      ]
+    },
+    {
+      "name": "perf-regression-investigator",
+      "kind": "agent",
+      "purpose": "Finds the cause of a performance regression across commits using benchmarks and profiles.",
+      "skills": [
+        "perf-regression-detection",
+        "git-bisect-debugging",
+        "cpu-profiling-flamegraphs"
+      ]
+    },
+    {
+      "name": "hot-path-optimizer",
+      "kind": "agent",
+      "purpose": "Proposes and applies optimisations to a measured hot path, re-measuring after each change.",
+      "skills": [
+        "perf-optimization-playbook",
+        "latency-analysis"
+      ]
+    },
+    {
+      "name": "dependency-upgrade-planner",
+      "kind": "agent",
+      "purpose": "Inventories outdated dependencies and produces a batched upgrade plan ordered by risk.",
+      "skills": [
+        "dependency-upgrade-planning",
+        "lockfile-hygiene"
+      ]
+    },
+    {
+      "name": "breaking-change-analyst",
+      "kind": "agent",
+      "purpose": "Reads upstream changelogs and searches the codebase to list breaking changes that affect it.",
+      "skills": [
+        "breaking-change-triage",
+        "call-graph-tracing"
+      ]
+    },
+    {
+      "name": "upgrade-executor",
+      "kind": "agent",
+      "purpose": "Performs a dependency or framework upgrade, applies codemods, fixes breakages and runs tests.",
+      "skills": [
+        "framework-upgrade-playbook",
+        "deprecation-cleanup",
+        "codemod-authoring"
+      ]
+    },
+    {
+      "name": "docs-writer-agent",
+      "kind": "agent",
+      "purpose": "Writes or updates documentation pages from code and specs, in the right Diátaxis category.",
+      "skills": [
+        "tech-writing-style",
+        "diataxis-framework"
+      ]
+    },
+    {
+      "name": "docs-editor-agent",
+      "kind": "agent",
+      "purpose": "Edits technical drafts for clarity, accuracy, structure and house style.",
+      "skills": [
+        "docs-editing-pass",
+        "tech-writing-style",
+        "plain-language-rewrite"
+      ]
+    },
+    {
+      "name": "docs-gap-auditor",
+      "kind": "agent",
+      "purpose": "Audits a docs site against the code and support questions and lists missing, stale or misplaced pages.",
+      "skills": [
+        "diataxis-framework",
+        "docs-information-architecture",
+        "docs-link-checking"
+      ]
+    },
+    {
+      "name": "readme-writer-agent",
+      "kind": "agent",
+      "purpose": "Writes or overhauls a project README and quickstart by reading the repo and running its setup.",
+      "skills": [
+        "readme-writing",
+        "quickstart-tutorial-writing"
+      ]
+    },
+    {
+      "name": "api-reference-writer",
+      "kind": "agent",
+      "purpose": "Fills gaps in API reference docs from schemas and handlers: descriptions, errors, auth.",
+      "skills": [
+        "api-reference-docs-writing"
+      ]
+    },
+    {
+      "name": "api-example-generator",
+      "kind": "agent",
+      "purpose": "Generates runnable API and SDK examples for endpoints and checks they execute.",
+      "skills": [
+        "api-docs-examples",
+        "sdk-docs-writing"
+      ]
+    },
+    {
+      "name": "api-docs-drift-checker",
+      "kind": "agent",
+      "purpose": "Compares API docs with the implementation and schema and reports drift.",
+      "skills": [
+        "api-reference-docs-writing",
+        "api-changelog-writing"
+      ]
+    },
+    {
+      "name": "release-notes-writer-agent",
+      "kind": "agent",
+      "purpose": "Drafts release notes from merged PRs and commits, grouped by user impact.",
+      "skills": [
+        "release-notes-writing",
+        "changelog-writing"
+      ]
+    },
+    {
+      "name": "changelog-curator",
+      "kind": "agent",
+      "purpose": "Keeps CHANGELOG.md accurate: classifies entries, flags breaking changes and suggests the version bump.",
+      "skills": [
+        "changelog-writing",
+        "semver-policy",
+        "conventional-commits"
+      ]
+    },
+    {
+      "name": "release-readiness-checker",
+      "kind": "agent",
+      "purpose": "Runs the release checklist against a release candidate and reports go/no-go with blockers.",
+      "skills": [
+        "release-checklist"
+      ]
+    },
+    {
+      "name": "backport-agent",
+      "kind": "agent",
+      "purpose": "Cherry-picks fixes onto supported release branches, resolves conflicts and opens backport PRs.",
+      "skills": [
+        "release-branching",
+        "git-conflict-resolution",
+        "hotfix-process"
+      ]
+    },
+    {
+      "name": "oss-issue-triager",
+      "kind": "agent",
+      "purpose": "Triages new issues in an open source repo: labels, duplicates, missing info requests and priority.",
+      "skills": [
+        "oss-issue-triage",
+        "bug-report-writing"
+      ]
+    },
+    {
+      "name": "oss-pr-first-reviewer",
+      "kind": "agent",
+      "purpose": "Gives first-pass, welcoming review on outside contributions: checks CLA/templates, tests and scope.",
+      "skills": [
+        "oss-contributor-onboarding",
+        "review-comment-writing"
+      ]
+    },
+    {
+      "name": "oss-stale-sweeper",
+      "kind": "agent",
+      "purpose": "Finds stale issues and PRs and drafts polite nudges or closures following project policy.",
+      "skills": [
+        "oss-maintainer-sustainability",
+        "oss-issue-triage"
+      ]
+    },
+    {
+      "name": "codebase-explorer",
+      "kind": "agent",
+      "purpose": "Explores an unfamiliar repo and returns a map of modules, entry points, data flow and conventions.",
+      "skills": [
+        "codebase-tour-mapping",
+        "call-graph-tracing",
+        "data-flow-tracing"
+      ]
+    },
+    {
+      "name": "onboarding-guide-writer",
+      "kind": "agent",
+      "purpose": "Writes an onboarding guide and first-week task list for a codebase from exploring it.",
+      "skills": [
+        "onboarding-doc-writing",
+        "domain-glossary-building"
+      ]
+    },
+    {
+      "name": "codebase-question-answerer",
+      "kind": "agent",
+      "purpose": "Answers “where/why/how” questions about a codebase with file references and history context.",
+      "skills": [
+        "call-graph-tracing",
+        "git-history-archaeology",
+        "code-ownership-mapping"
+      ]
+    },
+    {
+      "name": "architecture-diagrammer",
+      "kind": "agent",
+      "purpose": "Generates C4 and sequence diagrams as code from the actual codebase.",
+      "skills": [
+        "c4-model-diagrams",
+        "diagrams-as-code",
+        "architecture-discovery"
+      ]
+    },
+    {
+      "name": "monorepo-dependency-auditor",
+      "kind": "agent",
+      "purpose": "Audits project dependencies inside a monorepo for cycles, boundary violations and version drift.",
+      "skills": [
+        "monorepo-structure",
+        "dependency-rule-enforcement"
+      ]
+    },
+    {
+      "name": "monorepo-migration-planner",
+      "kind": "agent",
+      "purpose": "Plans moving several repos into a monorepo: layout, history import, CI and ownership.",
+      "skills": [
+        "monorepo-migration",
+        "monorepo-structure",
+        "codeowners-design"
+      ]
+    },
+    {
+      "name": "affected-scope-analyzer",
+      "kind": "agent",
+      "purpose": "Determines which projects, tests and owners a change affects in a monorepo.",
+      "skills": [
+        "monorepo-affected-builds",
+        "test-impact-analysis"
+      ]
+    },
+    {
+      "name": "merge-conflict-resolver",
+      "kind": "agent",
+      "purpose": "Resolves merge or rebase conflicts by reading both sides’ intent and verifies with tests.",
+      "skills": [
+        "git-conflict-resolution"
+      ]
+    },
+    {
+      "name": "git-history-cleaner",
+      "kind": "agent",
+      "purpose": "Tidies a branch’s history before merge: squashes fixups, splits mixed commits, rewrites messages.",
+      "skills": [
+        "git-history-rewriting",
+        "git-rebase-workflow",
+        "commit-message-writing"
+      ]
+    },
+    {
+      "name": "branch-hygiene-agent",
+      "kind": "agent",
+      "purpose": "Finds merged, stale and abandoned branches and proposes cleanup and owner pings.",
+      "skills": [
+        "git-branching-strategy",
+        "trunk-based-development"
+      ]
+    },
+    {
+      "name": "tech-debt-auditor",
+      "kind": "agent",
+      "purpose": "Audits a codebase and produces a tech debt register with evidence and estimated interest.",
+      "skills": [
+        "tech-debt-inventory",
+        "complexity-hotspot-analysis"
+      ]
+    },
+    {
+      "name": "debt-paydown-planner",
+      "kind": "agent",
+      "purpose": "Turns a debt register into a prioritised paydown plan and a proposal for leadership.",
+      "skills": [
+        "tech-debt-prioritization",
+        "debt-paydown-proposals"
+      ]
+    },
+    {
+      "name": "one-on-one-prep-agent",
+      "kind": "agent",
+      "purpose": "Prepares a manager’s 1:1 agenda from recent PRs, tickets and previous notes.",
+      "skills": [
+        "eng-one-on-one-prep",
+        "eng-feedback-delivery"
+      ]
+    },
+    {
+      "name": "sprint-planning-assistant",
+      "kind": "agent",
+      "purpose": "Proposes a sprint plan from backlog, capacity and carry-over, flagging over-commitment.",
+      "skills": [
+        "eng-sprint-planning",
+        "story-splitting"
+      ]
+    },
+    {
+      "name": "estimation-assistant",
+      "kind": "agent",
+      "purpose": "Breaks a feature into tasks and gives range estimates with explicit uncertainty and risks.",
+      "skills": [
+        "eng-estimation-techniques",
+        "story-splitting"
+      ]
+    },
+    {
+      "name": "eng-status-reporter",
+      "kind": "agent",
+      "purpose": "Writes weekly engineering status updates from tickets, PRs and incidents.",
+      "skills": [
+        "eng-status-updates"
+      ]
+    },
+    {
+      "name": "delivery-metrics-analyst",
+      "kind": "agent",
+      "purpose": "Computes DORA and flow metrics from repo and CI data and explains trends and bottlenecks.",
+      "skills": [
+        "eng-dora-metrics",
+        "flow-metrics",
+        "pr-cycle-time-analysis"
+      ]
+    },
+    {
+      "name": "delivery-forecaster",
+      "kind": "agent",
+      "purpose": "Forecasts completion dates for a backlog using throughput history and Monte Carlo simulation.",
+      "skills": [
+        "monte-carlo-forecasting"
+      ]
+    },
+    {
+      "name": "devex-survey-analyst",
+      "kind": "agent",
+      "purpose": "Analyses developer experience survey results and links them to friction in tooling and process.",
+      "skills": [
+        "devex-surveys"
+      ]
+    },
+    {
+      "name": "dev-env-doctor",
+      "kind": "agent",
+      "purpose": "Diagnoses broken local dev setups (versions, env vars, services) and fixes or documents them.",
+      "skills": [
+        "dev-environment-setup",
+        "devcontainer-setup"
+      ]
+    },
+    {
+      "name": "dx-friction-auditor",
+      "kind": "agent",
+      "purpose": "Walks the inner loop (clone, build, test, run) and reports the slowest and most error-prone steps.",
+      "skills": [
+        "dev-environment-setup",
+        "task-runner-design",
+        "test-suite-profiling"
+      ]
+    },
+    {
+      "name": "ci-speedup-agent",
+      "kind": "agent",
+      "purpose": "Finds why CI is slow and proposes caching, sharding and test selection changes with expected gains.",
+      "skills": [
+        "test-suite-profiling",
+        "ci-test-sharding",
+        "test-impact-analysis"
+      ]
+    },
+    {
+      "name": "codemod-writer-agent",
+      "kind": "agent",
+      "purpose": "Writes and tests a codemod for a described mechanical change and runs it on a sample.",
+      "skills": [
+        "codemod-authoring",
+        "ast-grep-rewrites"
+      ]
+    },
+    {
+      "name": "lsc-rollout-coordinator",
+      "kind": "agent",
+      "purpose": "Shards a large-scale change by owner, generates PRs and tracks their progress.",
+      "skills": [
+        "lsc-rollout-planning",
+        "rename-at-scale",
+        "code-ownership-mapping"
+      ]
+    },
+    {
+      "name": "test-gap-finder",
+      "kind": "agent",
+      "purpose": "Finds untested risky code paths using coverage and change history and proposes tests to add.",
+      "skills": [
+        "test-coverage-analysis",
+        "risk-based-test-selection"
+      ]
+    },
+    {
+      "name": "mutation-survivor-analyst",
+      "kind": "agent",
+      "purpose": "Runs mutation testing on changed code and writes assertions that kill surviving mutants.",
+      "skills": [
+        "mutation-testing-setup",
+        "mutation-survivor-analysis"
+      ]
+    },
+    {
+      "name": "test-smell-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews a test suite for smells and brittle patterns and proposes concrete fixes.",
+      "skills": [
+        "test-smell-detection",
+        "test-doubles-guide"
+      ]
+    },
+    {
+      "name": "flaky-test-investigator",
+      "kind": "agent",
+      "purpose": "Investigates a flaky test from CI history, reproduces the flake and proposes a deterministic fix.",
+      "skills": [
+        "flaky-test-triage",
+        "test-determinism-fixes"
+      ]
+    },
+    {
+      "name": "spec-writer-agent",
+      "kind": "agent",
+      "purpose": "Turns a product brief into an engineering spec with interfaces, data and edge cases.",
+      "skills": [
+        "technical-spec-writing",
+        "edge-case-enumeration"
+      ]
+    },
+    {
+      "name": "acceptance-criteria-agent",
+      "kind": "agent",
+      "purpose": "Writes testable acceptance criteria and Gherkin scenarios for a user story.",
+      "skills": [
+        "acceptance-criteria-writing",
+        "gherkin-scenario-writing"
+      ]
+    },
+    {
+      "name": "spec-reviewer-agent",
+      "kind": "agent",
+      "purpose": "Reviews specs for ambiguity, contradictions and missing cases and returns questions for the author.",
+      "skills": [
+        "spec-review",
+        "edge-case-enumeration"
+      ]
+    },
+    {
+      "name": "exploratory-test-planner",
+      "kind": "agent",
+      "purpose": "Writes exploratory testing charters for a feature and summarises session findings.",
+      "skills": [
+        "exploratory-testing-charters",
+        "test-case-design-techniques"
+      ]
+    },
+    {
+      "name": "regression-test-selector",
+      "kind": "agent",
+      "purpose": "Chooses the regression tests to run for a release from what changed and past defects.",
+      "skills": [
+        "test-impact-analysis",
+        "risk-based-test-selection"
+      ]
+    },
+    {
+      "name": "test-plan-writer",
+      "kind": "agent",
+      "purpose": "Writes a test plan for a feature or release: scope, cases by technique, environments and exit criteria.",
+      "skills": [
+        "test-strategy-doc",
+        "test-case-design-techniques"
+      ]
+    },
+    {
+      "name": "bug-report-writer-agent",
+      "kind": "agent",
+      "purpose": "Turns raw observations, logs and screenshots into clear, reproducible bug reports.",
+      "skills": [
+        "bug-report-writing"
+      ]
+    },
+    {
+      "name": "event-schema-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews event schema changes for compatibility, naming and versioning problems.",
+      "skills": [
+        "event-schema-versioning"
+      ]
+    },
+    {
+      "name": "saga-designer",
+      "kind": "agent",
+      "purpose": "Designs a saga for a multi-step business process with compensations, timeouts and idempotency.",
+      "skills": [
+        "saga-patterns",
+        "idempotent-consumers"
+      ]
+    },
+    {
+      "name": "event-flow-mapper",
+      "kind": "agent",
+      "purpose": "Maps producers, consumers and topics from code into an event flow diagram and catalogue.",
+      "skills": [
+        "event-driven-design",
+        "diagrams-as-code"
+      ]
+    },
+    {
+      "name": "implementation-planner",
+      "kind": "agent",
+      "purpose": "Turns a feature request into an ordered implementation plan with files to change and checks per step.",
+      "skills": [
+        "agentic-task-briefs",
+        "technical-spec-writing"
+      ]
+    },
+    {
+      "name": "agents-md-maintainer",
+      "kind": "agent",
+      "purpose": "Creates and updates AGENTS.md/CLAUDE.md from the repo’s real commands, conventions and recurring agent mistakes.",
+      "skills": [
+        "agents-md-authoring"
+      ]
+    },
+    {
+      "name": "ai-diff-verifier",
+      "kind": "agent",
+      "purpose": "Verifies an AI-written change: runs checks, looks for invented APIs and unrequested changes, and reports.",
+      "skills": [
+        "ai-generated-code-review",
+        "agentic-verification-loop"
+      ]
+    }
+  ]
+}

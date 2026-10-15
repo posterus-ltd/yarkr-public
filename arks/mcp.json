@@ -1,0 +1,3429 @@
+{
+  "domain": "mcp",
+  "arks": [
+    {
+      "name": "github-dev-mcp",
+      "type": "mcp",
+      "topic": "github development",
+      "description": "For developers whose code lives on GitHub: GitHub's official server for issues, PRs and Actions plus local git, scoped filesystem access and up-to-date library docs, so an agent can go from issue to reviewed pull request.",
+      "items": [
+        {
+          "package": "github",
+          "required": true
+        },
+        {
+          "package": "git",
+          "required": true
+        },
+        {
+          "package": "filesystem",
+          "required": false
+        },
+        {
+          "package": "context7",
+          "required": false
+        },
+        {
+          "package": "deepwiki",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "gitlab-dev-mcp",
+      "type": "mcp",
+      "topic": "gitlab development",
+      "description": "For teams on GitLab: GitLab's official server for issues, merge requests and pipelines, with local git, filesystem access and library docs lookup for day-to-day coding agents.",
+      "items": [
+        {
+          "package": "gitlab",
+          "required": true
+        },
+        {
+          "package": "git",
+          "required": true
+        },
+        {
+          "package": "filesystem",
+          "required": false
+        },
+        {
+          "package": "context7",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "jira-engineering-mcp",
+      "type": "mcp",
+      "topic": "jira-driven engineering",
+      "description": "For engineering teams planning in Jira and Confluence: Atlassian's Rovo server alongside GitHub and Sentry, so an agent can read the ticket, find the failing error and open the fix.",
+      "items": [
+        {
+          "package": "atlassian",
+          "required": true
+        },
+        {
+          "package": "github",
+          "required": true
+        },
+        {
+          "package": "sentry",
+          "required": false
+        },
+        {
+          "package": "git",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "azure-devops-mcp",
+      "type": "mcp",
+      "topic": "azure devops",
+      "description": "For teams on Azure DevOps and Azure: work items, repos and pipelines from Microsoft's Azure DevOps server, Azure resource management and Microsoft Learn docs grounding.",
+      "items": [
+        {
+          "package": "azure-devops",
+          "required": true
+        },
+        {
+          "package": "azure",
+          "required": true
+        },
+        {
+          "package": "microsoft-learn",
+          "required": false
+        },
+        {
+          "package": "git",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "linear-product-eng-mcp",
+      "type": "mcp",
+      "topic": "linear product engineering",
+      "description": "For product engineering teams running on Linear: Linear issues and projects, GitHub code, Sentry errors, Figma designs and Slack threads in one agent toolbox.",
+      "items": [
+        {
+          "package": "linear",
+          "required": true
+        },
+        {
+          "package": "github",
+          "required": true
+        },
+        {
+          "package": "sentry",
+          "required": false
+        },
+        {
+          "package": "figma",
+          "required": false
+        },
+        {
+          "package": "slack",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "reference-servers-mcp",
+      "type": "mcp",
+      "topic": "mcp reference servers",
+      "description": "For anyone setting up a local agent: the official MCP reference servers for filesystem, git, web fetch, knowledge-graph memory, sequential thinking and time zones, all keyless.",
+      "items": [
+        {
+          "package": "filesystem",
+          "required": true
+        },
+        {
+          "package": "git",
+          "required": true
+        },
+        {
+          "package": "fetch",
+          "required": true
+        },
+        {
+          "package": "memory",
+          "required": false
+        },
+        {
+          "package": "sequential-thinking",
+          "required": false
+        },
+        {
+          "package": "time",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "docs-grounding-mcp",
+      "type": "mcp",
+      "topic": "docs grounding for coding agents",
+      "description": "For developers who want agents to stop hallucinating APIs: live library docs (Context7), repo wikis (DeepWiki) and the official doc servers for Microsoft, AWS, Cloudflare and Claude.",
+      "items": [
+        {
+          "package": "context7",
+          "required": true
+        },
+        {
+          "package": "deepwiki",
+          "required": true
+        },
+        {
+          "package": "microsoft-learn",
+          "required": false
+        },
+        {
+          "package": "aws-documentation",
+          "required": false
+        },
+        {
+          "package": "cloudflare-docs",
+          "required": false
+        },
+        {
+          "package": "claude-platform-docs",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "browser-testing-mcp",
+      "type": "mcp",
+      "topic": "browser testing",
+      "description": "For QA and frontend engineers: Playwright and Chrome DevTools for driving and debugging pages locally, Cypress Cloud results, cross-browser clouds (BrowserStack, LambdaTest) and TestSprite test generation.",
+      "items": [
+        {
+          "package": "playwright",
+          "required": true
+        },
+        {
+          "package": "chrome-devtools",
+          "required": true
+        },
+        {
+          "package": "cypress",
+          "required": false
+        },
+        {
+          "package": "browserstack",
+          "required": false
+        },
+        {
+          "package": "lambdatest",
+          "required": false
+        },
+        {
+          "package": "testsprite",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "web-scraping-mcp",
+      "type": "mcp",
+      "topic": "web scraping and automation",
+      "description": "For data and growth engineers who collect web data: hosted browsers (Browserbase), crawling to markdown (Firecrawl), ready-made scrapers (Apify), proxy-backed scraping (Bright Data) and local Playwright.",
+      "items": [
+        {
+          "package": "firecrawl",
+          "required": true
+        },
+        {
+          "package": "browserbase",
+          "required": true
+        },
+        {
+          "package": "apify",
+          "required": false
+        },
+        {
+          "package": "bright-data",
+          "required": false
+        },
+        {
+          "package": "playwright",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "frontend-ui-mcp",
+      "type": "mcp",
+      "topic": "frontend ui building",
+      "description": "For React and Next.js developers: Next.js DevTools, shadcn/ui registry, 21st.dev Magic components, Figma designs and Chrome DevTools for checking the result.",
+      "items": [
+        {
+          "package": "next-devtools",
+          "required": true
+        },
+        {
+          "package": "shadcn",
+          "required": true
+        },
+        {
+          "package": "21st-magic",
+          "required": false
+        },
+        {
+          "package": "figma",
+          "required": false
+        },
+        {
+          "package": "chrome-devtools",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "js-framework-tooling-mcp",
+      "type": "mcp",
+      "topic": "javascript framework tooling",
+      "description": "For frontend platform teams across frameworks: the official servers for Nx monorepos, Angular CLI, Svelte docs and Next.js DevTools, so agents follow each framework's current conventions.",
+      "items": [
+        {
+          "package": "nx",
+          "required": true
+        },
+        {
+          "package": "angular-cli",
+          "required": true
+        },
+        {
+          "package": "svelte",
+          "required": false
+        },
+        {
+          "package": "next-devtools",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "mobile-app-mcp",
+      "type": "mcp",
+      "topic": "mobile app development",
+      "description": "For React Native and Expo developers: Expo's server for builds and docs, Firebase backend, Sentry crash reports, BrowserStack real devices and Figma designs.",
+      "items": [
+        {
+          "package": "expo",
+          "required": true
+        },
+        {
+          "package": "firebase",
+          "required": true
+        },
+        {
+          "package": "sentry",
+          "required": false
+        },
+        {
+          "package": "browserstack",
+          "required": false
+        },
+        {
+          "package": "figma",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ci-pipelines-mcp",
+      "type": "mcp",
+      "topic": "ci/cd pipelines",
+      "description": "For DevOps and build engineers: read and debug CI from CircleCI, Buildkite and Harness, alongside the GitHub and GitLab servers for workflows and pipelines.",
+      "items": [
+        {
+          "package": "circleci",
+          "required": true
+        },
+        {
+          "package": "buildkite",
+          "required": true
+        },
+        {
+          "package": "harness",
+          "required": false
+        },
+        {
+          "package": "github",
+          "required": false
+        },
+        {
+          "package": "gitlab",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "feature-flags-mcp",
+      "type": "mcp",
+      "topic": "feature flags and experiments",
+      "description": "For product engineers shipping behind flags: LaunchDarkly and Statsig flag management plus PostHog and Amplitude to read experiment and rollout impact.",
+      "items": [
+        {
+          "package": "launchdarkly",
+          "required": true
+        },
+        {
+          "package": "statsig",
+          "required": true
+        },
+        {
+          "package": "posthog",
+          "required": false
+        },
+        {
+          "package": "amplitude",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "api-development-mcp",
+      "type": "mcp",
+      "topic": "api development",
+      "description": "For backend and API developers: Postman collections and environments, Apollo's GraphQL MCP server, raw HTTP fetch and current library docs.",
+      "items": [
+        {
+          "package": "postman",
+          "required": true
+        },
+        {
+          "package": "apollo-mcp-server",
+          "required": true
+        },
+        {
+          "package": "fetch",
+          "required": false
+        },
+        {
+          "package": "context7",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "code-quality-mcp",
+      "type": "mcp",
+      "topic": "code quality and static analysis",
+      "description": "For teams enforcing quality gates: SonarQube, Codacy, Semgrep and Snyk Code findings available to agents so they fix issues before review.",
+      "items": [
+        {
+          "package": "sonarqube",
+          "required": true
+        },
+        {
+          "package": "semgrep",
+          "required": true
+        },
+        {
+          "package": "codacy",
+          "required": false
+        },
+        {
+          "package": "snyk",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "self-hosted-devstack-mcp",
+      "type": "mcp",
+      "topic": "self-hosted dev stack",
+      "description": "For teams running their own forge and artifact store: Gitea repos and issues, JFrog Artifactory/Xray, SonarQube and local git.",
+      "items": [
+        {
+          "package": "gitea",
+          "required": true
+        },
+        {
+          "package": "jfrog",
+          "required": true
+        },
+        {
+          "package": "sonarqube",
+          "required": false
+        },
+        {
+          "package": "git",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "shopify-app-dev-mcp",
+      "type": "mcp",
+      "topic": "shopify app development",
+      "description": "For Shopify app and theme developers: Shopify Dev MCP for docs and GraphQL schema validation, the store admin connector, the Storefront MCP endpoint and GitHub.",
+      "items": [
+        {
+          "package": "shopify-dev",
+          "required": true
+        },
+        {
+          "package": "shopify",
+          "required": true
+        },
+        {
+          "package": "shopify-storefront",
+          "required": false
+        },
+        {
+          "package": "github",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "salesforce-dev-mcp",
+      "type": "mcp",
+      "topic": "salesforce development",
+      "description": "For Salesforce developers and admins: Salesforce DX server for orgs, metadata, Apex tests and SOQL, plus git and GitHub for source-driven development.",
+      "items": [
+        {
+          "package": "salesforce-dx",
+          "required": true
+        },
+        {
+          "package": "git",
+          "required": false
+        },
+        {
+          "package": "github",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aws-core-mcp",
+      "type": "mcp",
+      "topic": "aws essentials",
+      "description": "For engineers working in AWS: AWS Knowledge and Documentation servers, the AWS API server for any CLI call, IAM inspection, pricing lookups and the managed AWS MCP server.",
+      "items": [
+        {
+          "package": "aws-api",
+          "required": true
+        },
+        {
+          "package": "aws-knowledge",
+          "required": true
+        },
+        {
+          "package": "aws-documentation",
+          "required": false
+        },
+        {
+          "package": "aws-iam",
+          "required": false
+        },
+        {
+          "package": "aws-pricing",
+          "required": false
+        },
+        {
+          "package": "aws-mcp",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aws-containers-mcp",
+      "type": "mcp",
+      "topic": "aws containers",
+      "description": "For platform teams running containers on AWS: AWS Labs EKS and ECS servers, a Kubernetes server for kubeconfig work and CloudWatch for logs and metrics.",
+      "items": [
+        {
+          "package": "aws-eks",
+          "required": true
+        },
+        {
+          "package": "aws-ecs",
+          "required": true
+        },
+        {
+          "package": "kubernetes",
+          "required": false
+        },
+        {
+          "package": "aws-cloudwatch",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aws-serverless-mcp",
+      "type": "mcp",
+      "topic": "aws serverless",
+      "description": "For serverless developers on AWS: SAM/Lambda serverless server, DynamoDB, CloudWatch troubleshooting, the AWS IaC server and AWS docs.",
+      "items": [
+        {
+          "package": "aws-serverless",
+          "required": true
+        },
+        {
+          "package": "aws-dynamodb",
+          "required": true
+        },
+        {
+          "package": "aws-cloudwatch",
+          "required": false
+        },
+        {
+          "package": "aws-iac",
+          "required": false
+        },
+        {
+          "package": "aws-documentation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aws-iac-mcp",
+      "type": "mcp",
+      "topic": "aws infrastructure as code",
+      "description": "For infra engineers codifying AWS: the AWS IaC server (CDK and CloudFormation), HashiCorp Terraform registry server, AWS docs and pricing to sanity-check designs.",
+      "items": [
+        {
+          "package": "aws-iac",
+          "required": true
+        },
+        {
+          "package": "terraform",
+          "required": true
+        },
+        {
+          "package": "aws-documentation",
+          "required": false
+        },
+        {
+          "package": "aws-pricing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aws-finops-mcp",
+      "type": "mcp",
+      "topic": "aws cost management",
+      "description": "For FinOps and engineering leads: AWS Billing and Cost Management, the Pricing API, CloudWatch utilisation and the AWS API server to trace spend back to resources.",
+      "items": [
+        {
+          "package": "aws-billing-cost-management",
+          "required": true
+        },
+        {
+          "package": "aws-pricing",
+          "required": true
+        },
+        {
+          "package": "aws-cloudwatch",
+          "required": false
+        },
+        {
+          "package": "aws-api",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aws-databases-mcp",
+      "type": "mcp",
+      "topic": "aws databases",
+      "description": "For developers using AWS-managed databases: DynamoDB and Aurora PostgreSQL servers, with the AWS API and docs for configuration questions.",
+      "items": [
+        {
+          "package": "aws-dynamodb",
+          "required": true
+        },
+        {
+          "package": "aws-aurora-postgres",
+          "required": true
+        },
+        {
+          "package": "aws-api",
+          "required": false
+        },
+        {
+          "package": "aws-documentation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aws-bedrock-rag-mcp",
+      "type": "mcp",
+      "topic": "rag on aws bedrock",
+      "description": "For teams building RAG on AWS: query Bedrock Knowledge Bases, ground answers in AWS Knowledge and docs, and inspect resources through the AWS API server.",
+      "items": [
+        {
+          "package": "aws-bedrock-kb-retrieval",
+          "required": true
+        },
+        {
+          "package": "aws-knowledge",
+          "required": true
+        },
+        {
+          "package": "aws-documentation",
+          "required": false
+        },
+        {
+          "package": "aws-api",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aws-observability-mcp",
+      "type": "mcp",
+      "topic": "aws observability",
+      "description": "For SREs on AWS: CloudWatch metrics, logs and alarms, the AWS API server, Grafana dashboards and PagerDuty incidents.",
+      "items": [
+        {
+          "package": "aws-cloudwatch",
+          "required": true
+        },
+        {
+          "package": "aws-api",
+          "required": true
+        },
+        {
+          "package": "grafana",
+          "required": false
+        },
+        {
+          "package": "pagerduty",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "azure-platform-mcp",
+      "type": "mcp",
+      "topic": "azure platform",
+      "description": "For engineers building on Azure: the Azure MCP server for resources and services, Microsoft Learn docs, Azure DevOps and GitHub.",
+      "items": [
+        {
+          "package": "azure",
+          "required": true
+        },
+        {
+          "package": "microsoft-learn",
+          "required": true
+        },
+        {
+          "package": "azure-devops",
+          "required": false
+        },
+        {
+          "package": "github",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "gcp-platform-mcp",
+      "type": "mcp",
+      "topic": "google cloud platform",
+      "description": "For engineers on Google Cloud: gcloud CLI server, Cloud Run deploys, Cloud Observability, and Google's remote GKE, Compute Engine and BigQuery endpoints.",
+      "items": [
+        {
+          "package": "gcloud",
+          "required": true
+        },
+        {
+          "package": "google-cloud-run",
+          "required": true
+        },
+        {
+          "package": "google-cloud-observability",
+          "required": false
+        },
+        {
+          "package": "google-gke",
+          "required": false
+        },
+        {
+          "package": "google-compute-engine",
+          "required": false
+        },
+        {
+          "package": "google-bigquery",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "firebase-app-mcp",
+      "type": "mcp",
+      "topic": "firebase apps",
+      "description": "For web and mobile developers on Firebase: the Firebase CLI MCP server for Auth, Firestore and Hosting, gcloud, Google Analytics and Sentry.",
+      "items": [
+        {
+          "package": "firebase",
+          "required": true
+        },
+        {
+          "package": "gcloud",
+          "required": true
+        },
+        {
+          "package": "google-analytics",
+          "required": false
+        },
+        {
+          "package": "sentry",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cloudflare-mcp",
+      "type": "mcp",
+      "topic": "cloudflare developer platform",
+      "description": "For developers on Cloudflare: Cloudflare's API, docs, Workers bindings (KV, R2, D1), observability, Workers Builds and Browser Rendering servers.",
+      "items": [
+        {
+          "package": "cloudflare-api",
+          "required": true
+        },
+        {
+          "package": "cloudflare-workers-bindings",
+          "required": true
+        },
+        {
+          "package": "cloudflare-docs",
+          "required": false
+        },
+        {
+          "package": "cloudflare-observability",
+          "required": false
+        },
+        {
+          "package": "cloudflare-builds",
+          "required": false
+        },
+        {
+          "package": "cloudflare-browser",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "frontend-deploy-mcp",
+      "type": "mcp",
+      "topic": "frontend deployment",
+      "description": "For frontend teams shipping to the edge: Vercel and Netlify deploys and logs, Cloudflare Workers, GitHub and Sentry for post-deploy errors.",
+      "items": [
+        {
+          "package": "vercel",
+          "required": true
+        },
+        {
+          "package": "netlify",
+          "required": true
+        },
+        {
+          "package": "cloudflare-workers-bindings",
+          "required": false
+        },
+        {
+          "package": "github",
+          "required": false
+        },
+        {
+          "package": "sentry",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "paas-hosting-mcp",
+      "type": "mcp",
+      "topic": "paas app hosting",
+      "description": "For small teams hosting apps on PaaS: Heroku, Render, Railway and DigitalOcean servers for deploys, logs, databases and scaling.",
+      "items": [
+        {
+          "package": "heroku",
+          "required": true
+        },
+        {
+          "package": "render",
+          "required": true
+        },
+        {
+          "package": "railway",
+          "required": false
+        },
+        {
+          "package": "digitalocean",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kubernetes-ops-mcp",
+      "type": "mcp",
+      "topic": "kubernetes operations",
+      "description": "For platform engineers running Kubernetes: a kubeconfig-based Kubernetes server, Argo CD for GitOps sync state, Prometheus metrics and Grafana dashboards.",
+      "items": [
+        {
+          "package": "kubernetes",
+          "required": true
+        },
+        {
+          "package": "argocd",
+          "required": true
+        },
+        {
+          "package": "prometheus",
+          "required": false
+        },
+        {
+          "package": "grafana",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "terraform-iac-mcp",
+      "type": "mcp",
+      "topic": "terraform and opentofu",
+      "description": "For infra engineers using Terraform or OpenTofu: HashiCorp's Terraform registry server, the OpenTofu registry, Spacelift stacks and runs, and GitHub.",
+      "items": [
+        {
+          "package": "terraform",
+          "required": true
+        },
+        {
+          "package": "opentofu",
+          "required": true
+        },
+        {
+          "package": "spacelift",
+          "required": false
+        },
+        {
+          "package": "github",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "pulumi-multicloud-mcp",
+      "type": "mcp",
+      "topic": "pulumi multicloud",
+      "description": "For teams writing infrastructure in Pulumi: Pulumi Cloud's server for stacks and resources with the AWS docs, Azure and gcloud servers for provider details.",
+      "items": [
+        {
+          "package": "pulumi",
+          "required": true
+        },
+        {
+          "package": "aws-documentation",
+          "required": false
+        },
+        {
+          "package": "azure",
+          "required": false
+        },
+        {
+          "package": "gcloud",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "multicloud-ops-mcp",
+      "type": "mcp",
+      "topic": "multicloud operations",
+      "description": "For platform teams spanning several clouds: AWS API, Azure, gcloud, Oracle OCI and DigitalOcean servers so one agent can inspect resources everywhere.",
+      "items": [
+        {
+          "package": "aws-api",
+          "required": true
+        },
+        {
+          "package": "azure",
+          "required": true
+        },
+        {
+          "package": "gcloud",
+          "required": true
+        },
+        {
+          "package": "oracle-oci",
+          "required": false
+        },
+        {
+          "package": "digitalocean",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "nix-dev-mcp",
+      "type": "mcp",
+      "topic": "nix and nixos",
+      "description": "For Nix users: the mcp-nixos server for NixOS options, packages and Home Manager, plus git and GitHub for flake repos.",
+      "items": [
+        {
+          "package": "nixos",
+          "required": true
+        },
+        {
+          "package": "git",
+          "required": false
+        },
+        {
+          "package": "github",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "serverless-app-stack-mcp",
+      "type": "mcp",
+      "topic": "serverless app stack",
+      "description": "For indie developers building on serverless services: Vercel, Neon Postgres, Upstash Redis/QStash and Cloudflare Workers bindings.",
+      "items": [
+        {
+          "package": "vercel",
+          "required": true
+        },
+        {
+          "package": "neon",
+          "required": true
+        },
+        {
+          "package": "upstash",
+          "required": false
+        },
+        {
+          "package": "cloudflare-workers-bindings",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "postgres-dev-mcp",
+      "type": "mcp",
+      "topic": "postgres development",
+      "description": "For application developers on Postgres: Postgres MCP Pro for schema, EXPLAIN and index tuning, Neon and Supabase project servers, Prisma Postgres and Tiger Data's Postgres guidance.",
+      "items": [
+        {
+          "package": "postgres",
+          "required": true
+        },
+        {
+          "package": "neon",
+          "required": true
+        },
+        {
+          "package": "supabase",
+          "required": false
+        },
+        {
+          "package": "prisma",
+          "required": false
+        },
+        {
+          "package": "tiger-pg-aiguide",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "supabase-saas-mcp",
+      "type": "mcp",
+      "topic": "supabase saas stack",
+      "description": "For founders building SaaS on Supabase: Supabase for database, auth and edge functions, Vercel hosting, Stripe billing, Resend email and PostHog analytics.",
+      "items": [
+        {
+          "package": "supabase",
+          "required": true
+        },
+        {
+          "package": "stripe",
+          "required": true
+        },
+        {
+          "package": "vercel",
+          "required": false
+        },
+        {
+          "package": "resend",
+          "required": false
+        },
+        {
+          "package": "posthog",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "mysql-dev-mcp",
+      "type": "mcp",
+      "topic": "mysql development",
+      "description": "For developers on MySQL-compatible databases: MySQL via Google's MCP Toolbox, PlanetScale, SingleStore and Apache Doris servers.",
+      "items": [
+        {
+          "package": "mysql",
+          "required": true
+        },
+        {
+          "package": "planetscale",
+          "required": true
+        },
+        {
+          "package": "singlestore",
+          "required": false
+        },
+        {
+          "package": "apache-doris",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "nosql-mcp",
+      "type": "mcp",
+      "topic": "nosql databases",
+      "description": "For developers on document and key-value stores: MongoDB, Couchbase, DataStax Astra DB, DynamoDB and Redis servers.",
+      "items": [
+        {
+          "package": "mongodb",
+          "required": true
+        },
+        {
+          "package": "redis",
+          "required": true
+        },
+        {
+          "package": "couchbase",
+          "required": false
+        },
+        {
+          "package": "astra-db",
+          "required": false
+        },
+        {
+          "package": "aws-dynamodb",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "redis-caching-mcp",
+      "type": "mcp",
+      "topic": "redis and caching",
+      "description": "For backend developers using Redis: Redis's official server, Upstash serverless Redis and Aiven managed services.",
+      "items": [
+        {
+          "package": "redis",
+          "required": true
+        },
+        {
+          "package": "upstash",
+          "required": true
+        },
+        {
+          "package": "aiven",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "local-analytics-mcp",
+      "type": "mcp",
+      "topic": "local analytics",
+      "description": "For analysts working on files and laptops: DuckDB and MotherDuck, SQLite via MCP Toolbox and Jupyter notebooks for exploration.",
+      "items": [
+        {
+          "package": "duckdb",
+          "required": true
+        },
+        {
+          "package": "motherduck",
+          "required": true
+        },
+        {
+          "package": "sqlite",
+          "required": false
+        },
+        {
+          "package": "jupyter",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "snowflake-analytics-mcp",
+      "type": "mcp",
+      "topic": "snowflake analytics",
+      "description": "For analytics teams on Snowflake: Snowflake's managed server for Cortex and SQL, dbt models, Atlan catalog, Monte Carlo data observability and Hex notebooks.",
+      "items": [
+        {
+          "package": "snowflake",
+          "required": true
+        },
+        {
+          "package": "dbt",
+          "required": true
+        },
+        {
+          "package": "atlan",
+          "required": false
+        },
+        {
+          "package": "monte-carlo",
+          "required": false
+        },
+        {
+          "package": "hex",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "bigquery-analytics-mcp",
+      "type": "mcp",
+      "topic": "bigquery analytics",
+      "description": "For analytics teams on Google Cloud: BigQuery remote server, Google MCP Toolbox for databases, Looker, dbt and Google Analytics data.",
+      "items": [
+        {
+          "package": "google-bigquery",
+          "required": true
+        },
+        {
+          "package": "google-mcp-toolbox",
+          "required": true
+        },
+        {
+          "package": "looker",
+          "required": false
+        },
+        {
+          "package": "dbt",
+          "required": false
+        },
+        {
+          "package": "google-analytics",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "databricks-lakehouse-mcp",
+      "type": "mcp",
+      "topic": "databricks lakehouse",
+      "description": "For data teams on Databricks: Databricks managed MCP (Genie, Unity Catalog functions, vector search), dbt, DataHub lineage and Power BI.",
+      "items": [
+        {
+          "package": "databricks",
+          "required": true
+        },
+        {
+          "package": "dbt",
+          "required": false
+        },
+        {
+          "package": "datahub",
+          "required": false
+        },
+        {
+          "package": "power-bi",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "realtime-olap-mcp",
+      "type": "mcp",
+      "topic": "real-time olap",
+      "description": "For engineers building real-time analytics: ClickHouse Cloud and self-hosted ClickHouse, StarRocks, Apache Doris and Firebolt servers.",
+      "items": [
+        {
+          "package": "clickhouse-cloud",
+          "required": true
+        },
+        {
+          "package": "clickhouse",
+          "required": true
+        },
+        {
+          "package": "starrocks",
+          "required": false
+        },
+        {
+          "package": "apache-doris",
+          "required": false
+        },
+        {
+          "package": "firebolt",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dbt-analytics-engineering-mcp",
+      "type": "mcp",
+      "topic": "dbt analytics engineering",
+      "description": "For analytics engineers: dbt's remote and local servers for models, lineage and the Semantic Layer, with Monte Carlo data quality and DataHub context.",
+      "items": [
+        {
+          "package": "dbt",
+          "required": true
+        },
+        {
+          "package": "dbt-local",
+          "required": true
+        },
+        {
+          "package": "monte-carlo",
+          "required": false
+        },
+        {
+          "package": "datahub",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "data-governance-mcp",
+      "type": "mcp",
+      "topic": "data catalog and governance",
+      "description": "For data governance and platform teams: DataHub (cloud and self-hosted), Atlan and Monte Carlo for lineage, ownership, glossary and incident context.",
+      "items": [
+        {
+          "package": "datahub",
+          "required": true
+        },
+        {
+          "package": "atlan",
+          "required": true
+        },
+        {
+          "package": "datahub-local",
+          "required": false
+        },
+        {
+          "package": "monte-carlo",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "bi-dashboards-mcp",
+      "type": "mcp",
+      "topic": "bi and dashboards",
+      "description": "For BI developers and analysts: Tableau, Power BI, Looker, Metabase and Hex servers to query semantic models and inspect dashboards.",
+      "items": [
+        {
+          "package": "tableau",
+          "required": true
+        },
+        {
+          "package": "power-bi",
+          "required": true
+        },
+        {
+          "package": "looker",
+          "required": false
+        },
+        {
+          "package": "metabase",
+          "required": false
+        },
+        {
+          "package": "hex",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kafka-streaming-mcp",
+      "type": "mcp",
+      "topic": "kafka and streaming",
+      "description": "For streaming engineers: Confluent Cloud remote and local servers for topics, connectors and Flink SQL, Aiven-managed Kafka and ClickHouse as a sink.",
+      "items": [
+        {
+          "package": "confluent",
+          "required": true
+        },
+        {
+          "package": "confluent-local",
+          "required": true
+        },
+        {
+          "package": "aiven",
+          "required": false
+        },
+        {
+          "package": "clickhouse",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "timeseries-mcp",
+      "type": "mcp",
+      "topic": "time-series data",
+      "description": "For IoT and metrics engineers: InfluxDB, Tiger Data (TimescaleDB) Postgres guidance, ClickHouse and Grafana for dashboards.",
+      "items": [
+        {
+          "package": "influxdb",
+          "required": true
+        },
+        {
+          "package": "tiger-pg-aiguide",
+          "required": true
+        },
+        {
+          "package": "clickhouse",
+          "required": false
+        },
+        {
+          "package": "grafana",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "elt-pipelines-mcp",
+      "type": "mcp",
+      "topic": "elt pipelines",
+      "description": "For data engineers moving data: Airbyte connections and syncs, dbt transformations and the Snowflake and BigQuery warehouses they land in.",
+      "items": [
+        {
+          "package": "airbyte",
+          "required": true
+        },
+        {
+          "package": "dbt",
+          "required": true
+        },
+        {
+          "package": "snowflake",
+          "required": false
+        },
+        {
+          "package": "google-bigquery",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "vector-db-mcp",
+      "type": "mcp",
+      "topic": "vector databases",
+      "description": "For AI engineers storing embeddings: Pinecone, Qdrant, Chroma, Weaviate and Astra DB servers for collections, upserts and similarity search.",
+      "items": [
+        {
+          "package": "pinecone",
+          "required": true
+        },
+        {
+          "package": "qdrant",
+          "required": true
+        },
+        {
+          "package": "chroma",
+          "required": false
+        },
+        {
+          "package": "weaviate",
+          "required": false
+        },
+        {
+          "package": "astra-db",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "agent-memory-mcp",
+      "type": "mcp",
+      "topic": "agent memory",
+      "description": "For agent builders adding long-term memory: Mem0 managed memory, the reference knowledge-graph memory server, Neo4j graphs and Chroma vectors.",
+      "items": [
+        {
+          "package": "mem0",
+          "required": true
+        },
+        {
+          "package": "memory",
+          "required": true
+        },
+        {
+          "package": "neo4j",
+          "required": false
+        },
+        {
+          "package": "chroma",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "convex-fullstack-mcp",
+      "type": "mcp",
+      "topic": "convex full-stack apps",
+      "description": "For developers building on Convex: Convex deployments and data, Clerk auth, Vercel hosting and Resend email.",
+      "items": [
+        {
+          "package": "convex",
+          "required": true
+        },
+        {
+          "package": "clerk",
+          "required": true
+        },
+        {
+          "package": "vercel",
+          "required": false
+        },
+        {
+          "package": "resend",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "distributed-sql-mcp",
+      "type": "mcp",
+      "topic": "distributed sql",
+      "description": "For teams running distributed SQL: CockroachDB Cloud, SingleStore, PlanetScale and Aiven servers for clusters, schemas and queries.",
+      "items": [
+        {
+          "package": "cockroachdb",
+          "required": true
+        },
+        {
+          "package": "singlestore",
+          "required": true
+        },
+        {
+          "package": "planetscale",
+          "required": false
+        },
+        {
+          "package": "aiven",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "observability-mcp",
+      "type": "mcp",
+      "topic": "observability",
+      "description": "For on-call engineers: Sentry errors, Datadog metrics and logs, Grafana dashboards, Honeycomb traces and PagerDuty incidents in one agent toolbox.",
+      "items": [
+        {
+          "package": "sentry",
+          "required": true
+        },
+        {
+          "package": "datadog",
+          "required": true
+        },
+        {
+          "package": "grafana",
+          "required": true
+        },
+        {
+          "package": "honeycomb",
+          "required": false
+        },
+        {
+          "package": "pagerduty",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "oss-observability-mcp",
+      "type": "mcp",
+      "topic": "open-source observability",
+      "description": "For teams on an open-source stack: Grafana, Prometheus, SigNoz and InfluxDB servers for dashboards, PromQL and OpenTelemetry data.",
+      "items": [
+        {
+          "package": "grafana",
+          "required": true
+        },
+        {
+          "package": "prometheus",
+          "required": true
+        },
+        {
+          "package": "signoz",
+          "required": false
+        },
+        {
+          "package": "influxdb",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "enterprise-apm-mcp",
+      "type": "mcp",
+      "topic": "enterprise apm",
+      "description": "For SREs at larger companies: Datadog, New Relic, Dynatrace, Splunk, Chronosphere and Coralogix servers to query telemetry where it already lives.",
+      "items": [
+        {
+          "package": "datadog",
+          "required": true
+        },
+        {
+          "package": "new-relic",
+          "required": true
+        },
+        {
+          "package": "dynatrace",
+          "required": true
+        },
+        {
+          "package": "splunk",
+          "required": false
+        },
+        {
+          "package": "chronosphere",
+          "required": false
+        },
+        {
+          "package": "coralogix",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "tracing-events-mcp",
+      "type": "mcp",
+      "topic": "tracing and wide events",
+      "description": "For engineers debugging with traces: Honeycomb, Pydantic Logfire, Axiom, Last9 and SigNoz servers for OpenTelemetry traces and wide events.",
+      "items": [
+        {
+          "package": "honeycomb",
+          "required": true
+        },
+        {
+          "package": "logfire",
+          "required": true
+        },
+        {
+          "package": "axiom",
+          "required": false
+        },
+        {
+          "package": "last9",
+          "required": false
+        },
+        {
+          "package": "signoz",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "error-tracking-mcp",
+      "type": "mcp",
+      "topic": "error tracking",
+      "description": "For developers triaging production errors: Sentry, Rollbar, Raygun and BugSnag servers for issues, stack traces and releases.",
+      "items": [
+        {
+          "package": "sentry",
+          "required": true
+        },
+        {
+          "package": "rollbar",
+          "required": true
+        },
+        {
+          "package": "raygun",
+          "required": false
+        },
+        {
+          "package": "bugsnag",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "incident-response-mcp",
+      "type": "mcp",
+      "topic": "incident response",
+      "description": "For incident commanders and on-call teams: PagerDuty, incident.io, Rootly and FireHydrant for incidents and on-call, and Slack for the incident channel.",
+      "items": [
+        {
+          "package": "pagerduty",
+          "required": true
+        },
+        {
+          "package": "incident-io",
+          "required": true
+        },
+        {
+          "package": "rootly",
+          "required": false
+        },
+        {
+          "package": "firehydrant",
+          "required": false
+        },
+        {
+          "package": "slack",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "uptime-monitoring-mcp",
+      "type": "mcp",
+      "topic": "uptime and synthetic monitoring",
+      "description": "For teams watching availability: Checkly synthetic checks, Better Stack uptime and logs, Playwright to reproduce failures and PagerDuty alerts.",
+      "items": [
+        {
+          "package": "checkly",
+          "required": true
+        },
+        {
+          "package": "better-stack",
+          "required": true
+        },
+        {
+          "package": "playwright",
+          "required": false
+        },
+        {
+          "package": "pagerduty",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "log-analytics-mcp",
+      "type": "mcp",
+      "topic": "log analytics",
+      "description": "For engineers who live in logs: Axiom, Better Stack, Splunk, Elasticsearch, Amazon OpenSearch and Coralogix servers for log search and analysis.",
+      "items": [
+        {
+          "package": "axiom",
+          "required": true
+        },
+        {
+          "package": "splunk",
+          "required": true
+        },
+        {
+          "package": "better-stack",
+          "required": false
+        },
+        {
+          "package": "elasticsearch",
+          "required": false
+        },
+        {
+          "package": "opensearch",
+          "required": false
+        },
+        {
+          "package": "coralogix",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "web-app-monitoring-mcp",
+      "type": "mcp",
+      "topic": "web app monitoring",
+      "description": "For product engineers watching real users: Sentry errors and replays, PostHog analytics and session data, FullStory sessions and Checkly synthetics.",
+      "items": [
+        {
+          "package": "sentry",
+          "required": true
+        },
+        {
+          "package": "posthog",
+          "required": true
+        },
+        {
+          "package": "fullstory",
+          "required": false
+        },
+        {
+          "package": "checkly",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "appsec-scanning-mcp",
+      "type": "mcp",
+      "topic": "application security scanning",
+      "description": "For AppSec and dev teams: Semgrep, Snyk, SonarQube, GitGuardian, Checkmarx and Aikido servers so agents scan and fix code, secrets and dependencies.",
+      "items": [
+        {
+          "package": "semgrep",
+          "required": true
+        },
+        {
+          "package": "snyk",
+          "required": true
+        },
+        {
+          "package": "sonarqube",
+          "required": false
+        },
+        {
+          "package": "gitguardian",
+          "required": false
+        },
+        {
+          "package": "checkmarx",
+          "required": false
+        },
+        {
+          "package": "aikido",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "supply-chain-security-mcp",
+      "type": "mcp",
+      "topic": "software supply chain security",
+      "description": "For teams defending their dependencies: Socket, Snyk, Endor Labs, JFrog Xray and Cycode servers for package risk, SBOM and reachability.",
+      "items": [
+        {
+          "package": "socket",
+          "required": true
+        },
+        {
+          "package": "endor-labs",
+          "required": true
+        },
+        {
+          "package": "snyk",
+          "required": false
+        },
+        {
+          "package": "jfrog",
+          "required": false
+        },
+        {
+          "package": "cycode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cloud-security-posture-mcp",
+      "type": "mcp",
+      "topic": "cloud security posture",
+      "description": "For cloud security engineers: Orca, Google Security Command Center, AWS IAM and Cycode servers for misconfigurations, identities and risk findings.",
+      "items": [
+        {
+          "package": "orca",
+          "required": true
+        },
+        {
+          "package": "google-scc",
+          "required": true
+        },
+        {
+          "package": "aws-iam",
+          "required": false
+        },
+        {
+          "package": "cycode",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "soc-detection-mcp",
+      "type": "mcp",
+      "topic": "soc and detection engineering",
+      "description": "For SOC analysts and detection engineers: Google SecOps, Microsoft Sentinel, Panther, Splunk and CrowdStrike Falcon for alerts, hunts and detections, plus Google Threat Intelligence.",
+      "items": [
+        {
+          "package": "google-secops",
+          "required": true
+        },
+        {
+          "package": "microsoft-sentinel",
+          "required": true
+        },
+        {
+          "package": "panther",
+          "required": false
+        },
+        {
+          "package": "splunk",
+          "required": false
+        },
+        {
+          "package": "crowdstrike",
+          "required": false
+        },
+        {
+          "package": "google-threat-intelligence",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "threat-intel-mcp",
+      "type": "mcp",
+      "topic": "threat intelligence",
+      "description": "For threat intel analysts: Google Threat Intelligence (incl. VirusTotal), CrowdStrike Falcon intel, Cloudflare Radar internet trends and Google SecOps context.",
+      "items": [
+        {
+          "package": "google-threat-intelligence",
+          "required": true
+        },
+        {
+          "package": "crowdstrike",
+          "required": true
+        },
+        {
+          "package": "cloudflare-radar",
+          "required": false
+        },
+        {
+          "package": "google-secops",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "compliance-grc-mcp",
+      "type": "mcp",
+      "topic": "compliance and grc",
+      "description": "For compliance and GRC leads: Vanta and Drata for controls, tests and evidence, Jira/Confluence for remediation tickets and Notion for policies.",
+      "items": [
+        {
+          "package": "vanta",
+          "required": true
+        },
+        {
+          "package": "drata",
+          "required": true
+        },
+        {
+          "package": "atlassian",
+          "required": false
+        },
+        {
+          "package": "notion",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "identity-auth-mcp",
+      "type": "mcp",
+      "topic": "identity and auth",
+      "description": "For engineers and IT admins managing identity: Okta, Auth0, Clerk, Stytch and WorkOS servers for users, apps, orgs and auth configuration.",
+      "items": [
+        {
+          "package": "okta",
+          "required": true
+        },
+        {
+          "package": "auth0",
+          "required": true
+        },
+        {
+          "package": "clerk",
+          "required": false
+        },
+        {
+          "package": "stytch",
+          "required": false
+        },
+        {
+          "package": "workos",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "secrets-management-mcp",
+      "type": "mcp",
+      "topic": "secrets management",
+      "description": "For platform security teams: HashiCorp Vault for secrets and mounts, GitGuardian for leaked-secret incidents and AWS IAM for access review.",
+      "items": [
+        {
+          "package": "hashicorp-vault",
+          "required": true
+        },
+        {
+          "package": "gitguardian",
+          "required": true
+        },
+        {
+          "package": "aws-iam",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-evals-observability-mcp",
+      "type": "mcp",
+      "topic": "llm evals and tracing",
+      "description": "For LLM app teams: Langfuse, LangSmith, Braintrust, Arize Phoenix and Weights & Biases servers for traces, datasets, prompts and eval results.",
+      "items": [
+        {
+          "package": "langfuse",
+          "required": true
+        },
+        {
+          "package": "braintrust",
+          "required": true
+        },
+        {
+          "package": "langsmith",
+          "required": false
+        },
+        {
+          "package": "arize-phoenix",
+          "required": false
+        },
+        {
+          "package": "wandb",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "model-hub-mcp",
+      "type": "mcp",
+      "topic": "model hubs and inference",
+      "description": "For AI engineers picking and calling models: Hugging Face Hub, Replicate, fal and OpenRouter servers for model search and inference.",
+      "items": [
+        {
+          "package": "hugging-face",
+          "required": true
+        },
+        {
+          "package": "replicate",
+          "required": true
+        },
+        {
+          "package": "fal",
+          "required": false
+        },
+        {
+          "package": "openrouter",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "generative-media-mcp",
+      "type": "mcp",
+      "topic": "generative media",
+      "description": "For creators and media teams: fal, Runway, Replicate and ElevenLabs for image, video and voice generation, with Mux to host the results.",
+      "items": [
+        {
+          "package": "fal",
+          "required": true
+        },
+        {
+          "package": "runway",
+          "required": true
+        },
+        {
+          "package": "replicate",
+          "required": false
+        },
+        {
+          "package": "elevenlabs",
+          "required": false
+        },
+        {
+          "package": "mux",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "voice-agents-mcp",
+      "type": "mcp",
+      "topic": "voice agents",
+      "description": "For teams building phone and voice agents: Vapi and Retell for voice agents and calls, ElevenLabs voices and Twilio telephony.",
+      "items": [
+        {
+          "package": "vapi",
+          "required": true
+        },
+        {
+          "package": "retell",
+          "required": true
+        },
+        {
+          "package": "elevenlabs",
+          "required": false
+        },
+        {
+          "package": "twilio",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "rag-ingestion-mcp",
+      "type": "mcp",
+      "topic": "rag ingestion",
+      "description": "For engineers building RAG pipelines: Firecrawl and Jina to fetch and clean web content, Apify for site crawls, Pinecone for vectors and Langfuse to trace retrieval.",
+      "items": [
+        {
+          "package": "firecrawl",
+          "required": true
+        },
+        {
+          "package": "pinecone",
+          "required": true
+        },
+        {
+          "package": "jina",
+          "required": false
+        },
+        {
+          "package": "apify",
+          "required": false
+        },
+        {
+          "package": "langfuse",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "web-research-mcp",
+      "type": "mcp",
+      "topic": "web search apis",
+      "description": "For researchers and agent builders: Exa, Tavily, Brave Search, Perplexity, Kagi and SerpApi search servers for grounded web answers.",
+      "items": [
+        {
+          "package": "exa",
+          "required": true
+        },
+        {
+          "package": "tavily",
+          "required": true
+        },
+        {
+          "package": "brave-search",
+          "required": true
+        },
+        {
+          "package": "perplexity",
+          "required": false
+        },
+        {
+          "package": "kagi",
+          "required": false
+        },
+        {
+          "package": "serpapi",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "claude-agent-dev-mcp",
+      "type": "mcp",
+      "topic": "claude agent development",
+      "description": "For developers building on Claude: Claude Platform docs, Context7 library docs, Braintrust evals, Langfuse tracing and Mem0 memory.",
+      "items": [
+        {
+          "package": "claude-platform-docs",
+          "required": true
+        },
+        {
+          "package": "context7",
+          "required": true
+        },
+        {
+          "package": "braintrust",
+          "required": false
+        },
+        {
+          "package": "langfuse",
+          "required": false
+        },
+        {
+          "package": "mem0",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ml-research-mcp",
+      "type": "mcp",
+      "topic": "ml research",
+      "description": "For ML researchers: Weights & Biases runs, Hugging Face models and datasets, Jupyter notebooks and arXiv and paper search.",
+      "items": [
+        {
+          "package": "wandb",
+          "required": true
+        },
+        {
+          "package": "hugging-face",
+          "required": true
+        },
+        {
+          "package": "jupyter",
+          "required": false
+        },
+        {
+          "package": "arxiv",
+          "required": false
+        },
+        {
+          "package": "paper-search",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "google-workspace-mcp",
+      "type": "mcp",
+      "topic": "google workspace",
+      "description": "For teams on Google Workspace: Gmail, Drive, Calendar, Docs, Sheets and Chat servers so an agent can read and draft across the suite.",
+      "items": [
+        {
+          "package": "gmail",
+          "required": true
+        },
+        {
+          "package": "google-drive",
+          "required": true
+        },
+        {
+          "package": "google-calendar",
+          "required": true
+        },
+        {
+          "package": "google-docs",
+          "required": false
+        },
+        {
+          "package": "google-sheets",
+          "required": false
+        },
+        {
+          "package": "google-chat",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "microsoft-work-mcp",
+      "type": "mcp",
+      "topic": "microsoft 365 work",
+      "description": "For organisations on Microsoft 365: Work IQ for mail, meetings and files, Power BI, Azure DevOps and Microsoft Learn.",
+      "items": [
+        {
+          "package": "microsoft-work-iq",
+          "required": true
+        },
+        {
+          "package": "power-bi",
+          "required": false
+        },
+        {
+          "package": "azure-devops",
+          "required": false
+        },
+        {
+          "package": "microsoft-learn",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "project-management-mcp",
+      "type": "mcp",
+      "topic": "project management",
+      "description": "For project and program managers: Asana, monday.com, ClickUp, Wrike, Smartsheet and Linear servers for tasks, projects and status.",
+      "items": [
+        {
+          "package": "asana",
+          "required": true
+        },
+        {
+          "package": "monday",
+          "required": true
+        },
+        {
+          "package": "clickup",
+          "required": false
+        },
+        {
+          "package": "wrike",
+          "required": false
+        },
+        {
+          "package": "smartsheet",
+          "required": false
+        },
+        {
+          "package": "linear",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "personal-productivity-mcp",
+      "type": "mcp",
+      "topic": "personal productivity",
+      "description": "For individuals managing their own day: Todoist tasks, Gmail, Google Calendar, Readwise highlights and Notion notes.",
+      "items": [
+        {
+          "package": "todoist",
+          "required": true
+        },
+        {
+          "package": "google-calendar",
+          "required": true
+        },
+        {
+          "package": "gmail",
+          "required": false
+        },
+        {
+          "package": "readwise",
+          "required": false
+        },
+        {
+          "package": "notion",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "meetings-mcp",
+      "type": "mcp",
+      "topic": "meetings and scheduling",
+      "description": "For people who live in meetings: Granola and Fireflies notes and transcripts, Zoom, Calendly and Cal.com scheduling and Google Calendar.",
+      "items": [
+        {
+          "package": "granola",
+          "required": true
+        },
+        {
+          "package": "fireflies",
+          "required": true
+        },
+        {
+          "package": "zoom",
+          "required": false
+        },
+        {
+          "package": "calendly",
+          "required": false
+        },
+        {
+          "package": "cal-com",
+          "required": false
+        },
+        {
+          "package": "google-calendar",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "team-wiki-mcp",
+      "type": "mcp",
+      "topic": "team knowledge base",
+      "description": "For teams keeping internal knowledge: Notion, Confluence (Atlassian), Guru and Coda servers for searching and updating docs.",
+      "items": [
+        {
+          "package": "notion",
+          "required": true
+        },
+        {
+          "package": "atlassian",
+          "required": true
+        },
+        {
+          "package": "guru",
+          "required": false
+        },
+        {
+          "package": "coda",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "file-storage-mcp",
+      "type": "mcp",
+      "topic": "cloud file storage",
+      "description": "For anyone working across file stores: Box, Dropbox, Google Drive and the local filesystem server.",
+      "items": [
+        {
+          "package": "box",
+          "required": true
+        },
+        {
+          "package": "dropbox",
+          "required": true
+        },
+        {
+          "package": "google-drive",
+          "required": false
+        },
+        {
+          "package": "filesystem",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "workflow-automation-mcp",
+      "type": "mcp",
+      "topic": "workflow automation",
+      "description": "For ops and automation builders: Zapier, Make, n8n and Pipedream for triggering workflows, plus Airtable as the data layer.",
+      "items": [
+        {
+          "package": "zapier",
+          "required": true
+        },
+        {
+          "package": "make",
+          "required": true
+        },
+        {
+          "package": "n8n",
+          "required": false
+        },
+        {
+          "package": "pipedream",
+          "required": false
+        },
+        {
+          "package": "airtable",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "visual-collaboration-mcp",
+      "type": "mcp",
+      "topic": "whiteboards and diagrams",
+      "description": "For teams thinking visually: Miro boards, Lucid diagrams, Figma files and Notion pages.",
+      "items": [
+        {
+          "package": "miro",
+          "required": true
+        },
+        {
+          "package": "lucid",
+          "required": true
+        },
+        {
+          "package": "figma",
+          "required": false
+        },
+        {
+          "package": "notion",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "contracts-esign-mcp",
+      "type": "mcp",
+      "topic": "contracts and e-signature",
+      "description": "For legal ops and sales ops: DocuSign and PandaDoc agreements, with Box and Google Drive for the source documents.",
+      "items": [
+        {
+          "package": "docusign",
+          "required": true
+        },
+        {
+          "package": "pandadoc",
+          "required": true
+        },
+        {
+          "package": "box",
+          "required": false
+        },
+        {
+          "package": "google-drive",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "payments-mcp",
+      "type": "mcp",
+      "topic": "payments",
+      "description": "For payments engineers and ops: Stripe, PayPal, Square, Adyen and the Plaid Dashboard servers for payments, refunds, disputes and bank-link debugging.",
+      "items": [
+        {
+          "package": "stripe",
+          "required": true
+        },
+        {
+          "package": "paypal",
+          "required": true
+        },
+        {
+          "package": "square",
+          "required": false
+        },
+        {
+          "package": "adyen",
+          "required": false
+        },
+        {
+          "package": "plaid-dashboard",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "saas-billing-mcp",
+      "type": "mcp",
+      "topic": "saas billing",
+      "description": "For SaaS founders and billing engineers: Stripe, Paddle and Polar for subscriptions and invoices, and Avalara AvaTax for sales tax.",
+      "items": [
+        {
+          "package": "stripe",
+          "required": true
+        },
+        {
+          "package": "paddle",
+          "required": true
+        },
+        {
+          "package": "polar",
+          "required": false
+        },
+        {
+          "package": "avalara-avatax",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "finance-ops-mcp",
+      "type": "mcp",
+      "topic": "finance operations",
+      "description": "For finance and accounting teams: Xero, Ramp, Brex, Mercury and BILL servers for ledgers, cards, spend, banking and payables, plus AvaTax for tax.",
+      "items": [
+        {
+          "package": "xero",
+          "required": true
+        },
+        {
+          "package": "ramp",
+          "required": true
+        },
+        {
+          "package": "brex",
+          "required": false
+        },
+        {
+          "package": "mercury",
+          "required": false
+        },
+        {
+          "package": "bill-docs",
+          "required": false
+        },
+        {
+          "package": "avalara-avatax",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "market-data-mcp",
+      "type": "mcp",
+      "topic": "financial market data",
+      "description": "For analysts and quants: Alpha Vantage, Financial Datasets and Massive (Polygon) market data plus SEC EDGAR filings.",
+      "items": [
+        {
+          "package": "alpha-vantage",
+          "required": true
+        },
+        {
+          "package": "financial-datasets",
+          "required": true
+        },
+        {
+          "package": "massive",
+          "required": false
+        },
+        {
+          "package": "sec-edgar",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "people-ops-mcp",
+      "type": "mcp",
+      "topic": "people operations",
+      "description": "For HR and people ops: Gusto payroll and Deel global hiring, DocuSign for offers and Slack for employee comms.",
+      "items": [
+        {
+          "package": "gusto",
+          "required": true
+        },
+        {
+          "package": "deel",
+          "required": true
+        },
+        {
+          "package": "docusign",
+          "required": false
+        },
+        {
+          "package": "slack",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "venture-investing-mcp",
+      "type": "mcp",
+      "topic": "venture investing",
+      "description": "For VC and investor relations teams: Carta CRM for deal flow, SEC EDGAR filings, Financial Datasets and Exa for company research.",
+      "items": [
+        {
+          "package": "carta-crm",
+          "required": true
+        },
+        {
+          "package": "sec-edgar",
+          "required": true
+        },
+        {
+          "package": "financial-datasets",
+          "required": false
+        },
+        {
+          "package": "exa",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "sales-crm-mcp",
+      "type": "mcp",
+      "topic": "sales crm",
+      "description": "For sales reps and RevOps: HubSpot, Attio, Close and Pipedrive CRMs with Apollo and ZoomInfo for contact data.",
+      "items": [
+        {
+          "package": "hubspot",
+          "required": true
+        },
+        {
+          "package": "attio",
+          "required": true
+        },
+        {
+          "package": "close",
+          "required": false
+        },
+        {
+          "package": "pipedrive",
+          "required": false
+        },
+        {
+          "package": "apollo",
+          "required": false
+        },
+        {
+          "package": "zoominfo",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "sales-intelligence-mcp",
+      "type": "mcp",
+      "topic": "sales intelligence",
+      "description": "For sales managers and AEs: Gong call insights, ZoomInfo and Apollo prospect data, Fireflies notes and HubSpot deals.",
+      "items": [
+        {
+          "package": "gong",
+          "required": true
+        },
+        {
+          "package": "zoominfo",
+          "required": true
+        },
+        {
+          "package": "apollo",
+          "required": false
+        },
+        {
+          "package": "fireflies",
+          "required": false
+        },
+        {
+          "package": "hubspot",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "support-desk-mcp",
+      "type": "mcp",
+      "topic": "customer support",
+      "description": "For support teams: Intercom, Front and Gorgias conversations, Guru answers and Slack escalations.",
+      "items": [
+        {
+          "package": "intercom",
+          "required": true
+        },
+        {
+          "package": "front",
+          "required": true
+        },
+        {
+          "package": "gorgias",
+          "required": false
+        },
+        {
+          "package": "guru",
+          "required": false
+        },
+        {
+          "package": "slack",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dtc-ecommerce-mcp",
+      "type": "mcp",
+      "topic": "dtc e-commerce operations",
+      "description": "For DTC brand operators: Shopify store admin, Klaviyo flows, Gorgias support, Shippo shipping and Stripe payments.",
+      "items": [
+        {
+          "package": "shopify",
+          "required": true
+        },
+        {
+          "package": "klaviyo",
+          "required": true
+        },
+        {
+          "package": "gorgias",
+          "required": false
+        },
+        {
+          "package": "shippo",
+          "required": false
+        },
+        {
+          "package": "stripe",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "email-marketing-mcp",
+      "type": "mcp",
+      "topic": "email marketing",
+      "description": "For lifecycle marketers: Klaviyo (hosted and local), Brevo and HubSpot for campaigns, lists and performance, plus Resend for sends.",
+      "items": [
+        {
+          "package": "klaviyo",
+          "required": true
+        },
+        {
+          "package": "brevo",
+          "required": true
+        },
+        {
+          "package": "hubspot",
+          "required": false
+        },
+        {
+          "package": "resend",
+          "required": false
+        },
+        {
+          "package": "klaviyo-local",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "transactional-messaging-mcp",
+      "type": "mcp",
+      "topic": "transactional email and sms",
+      "description": "For developers sending product email and SMS: Resend (hosted and local), Twilio and its docs server, and Brevo.",
+      "items": [
+        {
+          "package": "resend",
+          "required": true
+        },
+        {
+          "package": "twilio",
+          "required": true
+        },
+        {
+          "package": "resend-local",
+          "required": false
+        },
+        {
+          "package": "twilio-docs",
+          "required": false
+        },
+        {
+          "package": "brevo",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "seo-mcp",
+      "type": "mcp",
+      "topic": "seo",
+      "description": "For SEO specialists and content marketers: Ahrefs, Semrush and Similarweb data, Google Analytics traffic and Firecrawl for on-page audits.",
+      "items": [
+        {
+          "package": "ahrefs",
+          "required": true
+        },
+        {
+          "package": "semrush",
+          "required": true
+        },
+        {
+          "package": "similarweb",
+          "required": false
+        },
+        {
+          "package": "google-analytics",
+          "required": false
+        },
+        {
+          "package": "firecrawl",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "paid-ads-mcp",
+      "type": "mcp",
+      "topic": "paid advertising",
+      "description": "For performance marketers: Google Ads and Meta Ads accounts with Google Analytics conversions and Semrush competitive data.",
+      "items": [
+        {
+          "package": "google-ads",
+          "required": true
+        },
+        {
+          "package": "meta-ads",
+          "required": true
+        },
+        {
+          "package": "google-analytics",
+          "required": false
+        },
+        {
+          "package": "semrush",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "product-analytics-mcp",
+      "type": "mcp",
+      "topic": "product analytics",
+      "description": "For product managers and analysts: Amplitude, Mixpanel, PostHog, Pendo and FullStory servers for funnels, retention and session insight.",
+      "items": [
+        {
+          "package": "amplitude",
+          "required": true
+        },
+        {
+          "package": "mixpanel",
+          "required": true
+        },
+        {
+          "package": "posthog",
+          "required": false
+        },
+        {
+          "package": "pendo",
+          "required": false
+        },
+        {
+          "package": "fullstory",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "headless-cms-mcp",
+      "type": "mcp",
+      "topic": "headless cms",
+      "description": "For content and web teams on a headless CMS: Sanity, Contentful and Storyblok content, Webflow sites and Cloudinary media.",
+      "items": [
+        {
+          "package": "sanity",
+          "required": true
+        },
+        {
+          "package": "contentful",
+          "required": true
+        },
+        {
+          "package": "storyblok",
+          "required": false
+        },
+        {
+          "package": "webflow",
+          "required": false
+        },
+        {
+          "package": "cloudinary",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "website-builder-mcp",
+      "type": "mcp",
+      "topic": "no-code websites",
+      "description": "For marketers running no-code sites: Webflow and Wix site editing, Unsplash imagery and Google Analytics traffic.",
+      "items": [
+        {
+          "package": "webflow",
+          "required": true
+        },
+        {
+          "package": "wix",
+          "required": true
+        },
+        {
+          "package": "unsplash",
+          "required": false
+        },
+        {
+          "package": "google-analytics",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "design-handoff-mcp",
+      "type": "mcp",
+      "topic": "design to code handoff",
+      "description": "For designers and frontend devs: Figma's Dev Mode server, Penpot, the shadcn/ui registry and 21st.dev Magic components so agents turn designs into matching code.",
+      "items": [
+        {
+          "package": "figma",
+          "required": true
+        },
+        {
+          "package": "penpot",
+          "required": false
+        },
+        {
+          "package": "shadcn",
+          "required": false
+        },
+        {
+          "package": "21st-magic",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "marketing-design-mcp",
+      "type": "mcp",
+      "topic": "marketing design",
+      "description": "For marketing and brand teams: Canva designs and brand kits, Figma, Unsplash photos and Cloudinary asset delivery.",
+      "items": [
+        {
+          "package": "canva",
+          "required": true
+        },
+        {
+          "package": "figma",
+          "required": true
+        },
+        {
+          "package": "unsplash",
+          "required": false
+        },
+        {
+          "package": "cloudinary",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "market-research-mcp",
+      "type": "mcp",
+      "topic": "market research",
+      "description": "For product marketers and strategists: Similarweb traffic, Semrush competitors, Exa and Perplexity research, and Financial Datasets for public companies.",
+      "items": [
+        {
+          "package": "similarweb",
+          "required": true
+        },
+        {
+          "package": "exa",
+          "required": true
+        },
+        {
+          "package": "perplexity",
+          "required": false
+        },
+        {
+          "package": "semrush",
+          "required": false
+        },
+        {
+          "package": "financial-datasets",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "customer-success-mcp",
+      "type": "mcp",
+      "topic": "customer success",
+      "description": "For CSMs: HubSpot accounts, Intercom conversations, Gong calls, Amplitude usage and Pendo adoption to spot risk and expansion.",
+      "items": [
+        {
+          "package": "hubspot",
+          "required": true
+        },
+        {
+          "package": "intercom",
+          "required": true
+        },
+        {
+          "package": "gong",
+          "required": false
+        },
+        {
+          "package": "amplitude",
+          "required": false
+        },
+        {
+          "package": "pendo",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "canva-apps-dev-mcp",
+      "type": "mcp",
+      "topic": "canva app development",
+      "description": "For developers building Canva apps and integrations: Canva's dev MCP server for SDK docs, the Canva connector to test against real designs, and Figma for source assets.",
+      "items": [
+        {
+          "package": "canva-dev",
+          "required": true
+        },
+        {
+          "package": "canva",
+          "required": true
+        },
+        {
+          "package": "figma",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "localization-mcp",
+      "type": "mcp",
+      "topic": "translation and localisation",
+      "description": "For localisation managers and developers: DeepL translation with Lokalise, Crowdin and Phrase translation management.",
+      "items": [
+        {
+          "package": "deepl",
+          "required": true
+        },
+        {
+          "package": "lokalise",
+          "required": true
+        },
+        {
+          "package": "crowdin",
+          "required": false
+        },
+        {
+          "package": "phrase",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "video-production-mcp",
+      "type": "mcp",
+      "topic": "video production",
+      "description": "For video producers: Mux hosting and analytics, Descript editing, Runway generation, ElevenLabs voiceover and Cloudinary media.",
+      "items": [
+        {
+          "package": "mux",
+          "required": true
+        },
+        {
+          "package": "descript",
+          "required": true
+        },
+        {
+          "package": "runway",
+          "required": false
+        },
+        {
+          "package": "elevenlabs",
+          "required": false
+        },
+        {
+          "package": "cloudinary",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "music-production-mcp",
+      "type": "mcp",
+      "topic": "music production",
+      "description": "For musicians and producers: Ableton Live control, Spotify catalog and playback, and ElevenLabs audio generation.",
+      "items": [
+        {
+          "package": "ableton",
+          "required": true
+        },
+        {
+          "package": "spotify",
+          "required": false
+        },
+        {
+          "package": "elevenlabs",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "game-dev-mcp",
+      "type": "mcp",
+      "topic": "game development",
+      "description": "For indie game developers: Godot editor control, Blender 3D scenes, fal for asset generation, ElevenLabs for sound and GitHub.",
+      "items": [
+        {
+          "package": "godot",
+          "required": true
+        },
+        {
+          "package": "blender",
+          "required": true
+        },
+        {
+          "package": "fal",
+          "required": false
+        },
+        {
+          "package": "elevenlabs",
+          "required": false
+        },
+        {
+          "package": "github",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "biomedical-research-mcp",
+      "type": "mcp",
+      "topic": "biomedical research",
+      "description": "For biomedical researchers: PubMed, bioRxiv, Open Targets, ChEMBL and BioMCP for literature, preprints, targets and compounds.",
+      "items": [
+        {
+          "package": "pubmed",
+          "required": true
+        },
+        {
+          "package": "open-targets",
+          "required": true
+        },
+        {
+          "package": "biorxiv",
+          "required": false
+        },
+        {
+          "package": "chembl",
+          "required": false
+        },
+        {
+          "package": "biomcp",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "drug-discovery-mcp",
+      "type": "mcp",
+      "topic": "drug discovery",
+      "description": "For discovery scientists: ChEMBL bioactivity, Open Targets evidence, Benchling notebooks and registry, Owkin pathology/biology AI and BioRender figures.",
+      "items": [
+        {
+          "package": "chembl",
+          "required": true
+        },
+        {
+          "package": "benchling",
+          "required": true
+        },
+        {
+          "package": "open-targets",
+          "required": false
+        },
+        {
+          "package": "owkin",
+          "required": false
+        },
+        {
+          "package": "biorender",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "clinical-evidence-mcp",
+      "type": "mcp",
+      "topic": "clinical evidence",
+      "description": "For clinical researchers and medical writers: ClinicalTrials.gov, PubMed, Consensus and Wiley Scholar Gateway, plus Medplum FHIR data for health app teams; outputs need clinician review.",
+      "items": [
+        {
+          "package": "clinicaltrials-gov",
+          "required": true
+        },
+        {
+          "package": "pubmed",
+          "required": true
+        },
+        {
+          "package": "consensus",
+          "required": false
+        },
+        {
+          "package": "scholar-gateway",
+          "required": false
+        },
+        {
+          "package": "medplum",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "academic-research-mcp",
+      "type": "mcp",
+      "topic": "academic research",
+      "description": "For academics and grad students: arXiv, paper search, Consensus, Elicit, Wiley Scholar Gateway and a Zotero library.",
+      "items": [
+        {
+          "package": "arxiv",
+          "required": true
+        },
+        {
+          "package": "zotero",
+          "required": true
+        },
+        {
+          "package": "paper-search",
+          "required": false
+        },
+        {
+          "package": "consensus",
+          "required": false
+        },
+        {
+          "package": "elicit",
+          "required": false
+        },
+        {
+          "package": "scholar-gateway",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "scientific-computing-mcp",
+      "type": "mcp",
+      "topic": "scientific computing",
+      "description": "For scientists and engineers doing calculations: Wolfram|Alpha, Jupyter notebooks, Google Data Commons statistics and Hugging Face datasets.",
+      "items": [
+        {
+          "package": "wolfram",
+          "required": true
+        },
+        {
+          "package": "jupyter",
+          "required": true
+        },
+        {
+          "package": "data-commons",
+          "required": false
+        },
+        {
+          "package": "hugging-face",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "legal-research-mcp",
+      "type": "mcp",
+      "topic": "legal research",
+      "description": "For lawyers and legal ops: CourtListener case law, Harvey, SEC EDGAR filings and Box documents; drafting aid only, with attorney review.",
+      "items": [
+        {
+          "package": "courtlistener",
+          "required": true
+        },
+        {
+          "package": "harvey",
+          "required": true
+        },
+        {
+          "package": "sec-edgar",
+          "required": false
+        },
+        {
+          "package": "box",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "travel-planning-mcp",
+      "type": "mcp",
+      "topic": "travel planning",
+      "description": "For travellers and travel agents: Kiwi.com flights, Expedia and Booking.com stays, Tripadvisor reviews, Airbnb listings and Google Maps.",
+      "items": [
+        {
+          "package": "kiwi-com",
+          "required": true
+        },
+        {
+          "package": "expedia",
+          "required": true
+        },
+        {
+          "package": "booking-com",
+          "required": false
+        },
+        {
+          "package": "tripadvisor",
+          "required": false
+        },
+        {
+          "package": "airbnb",
+          "required": false
+        },
+        {
+          "package": "google-maps",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "geospatial-dev-mcp",
+      "type": "mcp",
+      "topic": "geospatial and maps",
+      "description": "For developers building location features: Mapbox and Google Maps servers, HERE developer docs and DuckDB for spatial queries.",
+      "items": [
+        {
+          "package": "mapbox",
+          "required": true
+        },
+        {
+          "package": "google-maps",
+          "required": true
+        },
+        {
+          "package": "here-docs",
+          "required": false
+        },
+        {
+          "package": "duckdb",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "logistics-shipping-mcp",
+      "type": "mcp",
+      "topic": "logistics and shipping",
+      "description": "For e-commerce and supply chain ops: Shippo labels and tracking, Flexport freight, Shopify orders and Google Maps routing.",
+      "items": [
+        {
+          "package": "shippo",
+          "required": true
+        },
+        {
+          "package": "flexport",
+          "required": true
+        },
+        {
+          "package": "shopify",
+          "required": false
+        },
+        {
+          "package": "google-maps",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "journalism-research-mcp",
+      "type": "mcp",
+      "topic": "journalism and public records",
+      "description": "For journalists and fact-checkers: Wikipedia, CourtListener court records, SEC EDGAR filings, Google Data Commons statistics and Brave Search.",
+      "items": [
+        {
+          "package": "wikipedia",
+          "required": true
+        },
+        {
+          "package": "courtlistener",
+          "required": true
+        },
+        {
+          "package": "sec-edgar",
+          "required": false
+        },
+        {
+          "package": "data-commons",
+          "required": false
+        },
+        {
+          "package": "brave-search",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

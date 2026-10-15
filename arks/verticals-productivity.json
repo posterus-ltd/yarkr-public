@@ -1,0 +1,2181 @@
+{
+  "domain": "verticals-productivity",
+  "arks": [
+    {
+      "name": "clinical-documentation",
+      "type": "skill",
+      "topic": "clinical documentation aids",
+      "description": "For clinicians and clinical informatics teams: skills to draft SOAP notes, discharge summaries and SBAR handoffs, reconcile med lists and catch unsafe abbreviations, all as drafts for clinician sign-off.",
+      "items": [
+        {
+          "package": "soap-note-drafting",
+          "required": true
+        },
+        {
+          "package": "discharge-summary-drafting",
+          "required": true
+        },
+        {
+          "package": "clinical-handoff-sbar",
+          "required": true
+        },
+        {
+          "package": "medication-list-reconciliation",
+          "required": false
+        },
+        {
+          "package": "clinical-abbreviation-hygiene",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "medical-coding-support",
+      "type": "skill",
+      "topic": "medical coding support",
+      "description": "For coders and CDI specialists: skills that suggest ICD-10-CM and CPT codes with documentation evidence, check HCC support and draft compliant provider queries, for certified coder verification.",
+      "items": [
+        {
+          "package": "icd10-coding-support",
+          "required": true
+        },
+        {
+          "package": "cpt-coding-support",
+          "required": true
+        },
+        {
+          "package": "coding-documentation-gap-check",
+          "required": true
+        },
+        {
+          "package": "hcc-risk-adjustment-review",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "patient-education-materials",
+      "type": "skill",
+      "topic": "patient education materials",
+      "description": "For care teams and health communicators: skills to write plain-language leaflets, discharge instructions and consent forms and to score them for readability and health literacy.",
+      "items": [
+        {
+          "package": "patient-leaflet-plain-language",
+          "required": true
+        },
+        {
+          "package": "health-literacy-readability",
+          "required": true
+        },
+        {
+          "package": "discharge-instructions-patient",
+          "required": true
+        },
+        {
+          "package": "consent-form-plain-language",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "clinical-trial-documents",
+      "type": "skill",
+      "topic": "clinical trial documentation",
+      "description": "For clinical research coordinators and investigators: skills to draft SPIRIT-aligned protocols, informed consent documents, case report forms and adverse event narratives for IRB and sponsor review.",
+      "items": [
+        {
+          "package": "clinical-trial-protocol-drafting",
+          "required": true
+        },
+        {
+          "package": "trial-informed-consent-drafting",
+          "required": true
+        },
+        {
+          "package": "case-report-form-design",
+          "required": true
+        },
+        {
+          "package": "adverse-event-narrative",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "clinical-documentation-agents",
+      "type": "agent",
+      "topic": "clinical documentation agents",
+      "description": "For clinical teams: agents that draft notes and summaries, audit documentation quality and produce plain-language patient materials, each returning drafts flagged for clinician sign-off.",
+      "items": [
+        {
+          "package": "clinical-note-drafter",
+          "required": true
+        },
+        {
+          "package": "clinical-doc-quality-auditor",
+          "required": true
+        },
+        {
+          "package": "patient-materials-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "medical-coding-agents",
+      "type": "agent",
+      "topic": "medical coding agents",
+      "description": "For revenue-cycle and CDI teams: agents that propose codes with evidence, draft documentation queries and run coding accuracy audits, leaving final code assignment to certified coders.",
+      "items": [
+        {
+          "package": "medical-coding-assistant",
+          "required": true
+        },
+        {
+          "package": "cdi-query-drafter",
+          "required": true
+        },
+        {
+          "package": "coding-audit-sampler",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "lesson-planning",
+      "type": "skill",
+      "topic": "lesson planning",
+      "description": "For K-12 and adult-ed teachers: skills to write measurable objectives, plan units backward from assessments, build timed lesson plans and differentiate for diverse learners.",
+      "items": [
+        {
+          "package": "lesson-plan-builder",
+          "required": true
+        },
+        {
+          "package": "learning-objectives-blooms",
+          "required": true
+        },
+        {
+          "package": "unit-plan-backward-design",
+          "required": true
+        },
+        {
+          "package": "differentiated-instruction",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "assessment-design",
+      "type": "skill",
+      "topic": "assessment design",
+      "description": "For teachers and instructional designers: skills to write sound quiz items, design rubrics, check assessment-objective alignment and produce explained answer keys.",
+      "items": [
+        {
+          "package": "quiz-item-writing",
+          "required": true
+        },
+        {
+          "package": "edu-rubric-design",
+          "required": true
+        },
+        {
+          "package": "assessment-alignment-check",
+          "required": true
+        },
+        {
+          "package": "answer-key-explanations",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "tutoring",
+      "type": "skill",
+      "topic": "tutoring",
+      "description": "For tutors and learning-app builders: skills for Socratic questioning, worked-example teaching, misconception diagnosis and leveled practice generation.",
+      "items": [
+        {
+          "package": "socratic-tutoring",
+          "required": true
+        },
+        {
+          "package": "misconception-diagnosis",
+          "required": true
+        },
+        {
+          "package": "worked-example-tutoring",
+          "required": true
+        },
+        {
+          "package": "practice-problem-generator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "course-design",
+      "type": "skill",
+      "topic": "higher-ed and online course design",
+      "description": "For faculty and instructional designers: skills to draft syllabi, design online modules and discussion prompts and write measurable course outcomes.",
+      "items": [
+        {
+          "package": "syllabus-drafting",
+          "required": true
+        },
+        {
+          "package": "online-course-module-design",
+          "required": true
+        },
+        {
+          "package": "learning-objectives-blooms",
+          "required": true
+        },
+        {
+          "package": "discussion-prompt-design",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "teacher-communication",
+      "type": "skill",
+      "topic": "teacher feedback and communication",
+      "description": "For classroom teachers: skills to write student writing feedback, report-card comments, parent emails and draft IEP goals for team review.",
+      "items": [
+        {
+          "package": "student-writing-feedback",
+          "required": true
+        },
+        {
+          "package": "report-card-comments",
+          "required": true
+        },
+        {
+          "package": "parent-teacher-communication",
+          "required": true
+        },
+        {
+          "package": "iep-goal-drafting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "lesson-planning-agents",
+      "type": "agent",
+      "topic": "lesson planning agents",
+      "description": "For teachers and curriculum teams: agents that design lessons and units, write aligned assessments and review curriculum coverage against standards.",
+      "items": [
+        {
+          "package": "lesson-plan-designer",
+          "required": true
+        },
+        {
+          "package": "assessment-item-writer",
+          "required": true
+        },
+        {
+          "package": "curriculum-alignment-reviewer",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "tutoring-agents",
+      "type": "agent",
+      "topic": "tutoring agents",
+      "description": "For tutors and edtech teams: agents that tutor Socratically, grade work against rubrics with feedback, and generate targeted practice sets.",
+      "items": [
+        {
+          "package": "socratic-tutor",
+          "required": true
+        },
+        {
+          "package": "practice-set-generator",
+          "required": true
+        },
+        {
+          "package": "homework-feedback-grader",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "product-catalog-ops",
+      "type": "skill",
+      "topic": "product catalog operations",
+      "description": "For e-commerce catalog managers: skills to normalize attributes, map taxonomies, model variants and validate product feeds before they hit channels.",
+      "items": [
+        {
+          "package": "product-attribute-normalization",
+          "required": true
+        },
+        {
+          "package": "product-taxonomy-mapping",
+          "required": true
+        },
+        {
+          "package": "catalog-feed-validation",
+          "required": true
+        },
+        {
+          "package": "product-variant-modeling",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "marketplace-listings",
+      "type": "skill",
+      "topic": "marketplace listings",
+      "description": "For marketplace sellers: skills to write Amazon and Etsy listings and webstore product descriptions and check them for policy and claim compliance.",
+      "items": [
+        {
+          "package": "amazon-listing-optimization",
+          "required": true
+        },
+        {
+          "package": "ecom-product-description",
+          "required": true
+        },
+        {
+          "package": "marketplace-listing-compliance",
+          "required": true
+        },
+        {
+          "package": "etsy-listing-writing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "order-fulfilment",
+      "type": "skill",
+      "topic": "order fulfilment",
+      "description": "For e-commerce ops teams: skills to design pick-pack-ship workflows, handle order exceptions, process returns and pick carriers and services.",
+      "items": [
+        {
+          "package": "order-fulfilment-workflow",
+          "required": true
+        },
+        {
+          "package": "order-exception-handling",
+          "required": true
+        },
+        {
+          "package": "returns-rma-processing",
+          "required": true
+        },
+        {
+          "package": "shipping-rate-selection",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ecommerce-inventory",
+      "type": "skill",
+      "topic": "e-commerce inventory",
+      "description": "For online retailers: skills to set reorder points, catch stockouts and overstock, sync inventory across channels and run cycle counts.",
+      "items": [
+        {
+          "package": "sku-reorder-planning",
+          "required": true
+        },
+        {
+          "package": "stockout-overstock-review",
+          "required": true
+        },
+        {
+          "package": "multichannel-inventory-sync",
+          "required": true
+        },
+        {
+          "package": "inventory-cycle-count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "product-catalog-agents",
+      "type": "agent",
+      "topic": "product catalog agents",
+      "description": "For e-commerce teams: agents that enrich supplier data into clean catalog records, write marketplace listings and audit feeds for disapprovals.",
+      "items": [
+        {
+          "package": "catalog-enrichment-agent",
+          "required": true
+        },
+        {
+          "package": "marketplace-listing-writer",
+          "required": true
+        },
+        {
+          "package": "catalog-feed-auditor",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "ecommerce-ops-agents",
+      "type": "agent",
+      "topic": "e-commerce fulfilment and inventory agents",
+      "description": "For e-commerce ops: agents that triage order exceptions, plan inventory replenishment and analyze shipping costs and carrier mix.",
+      "items": [
+        {
+          "package": "order-exception-triager",
+          "required": true
+        },
+        {
+          "package": "inventory-replenishment-planner",
+          "required": true
+        },
+        {
+          "package": "shipping-cost-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "literature-review",
+      "type": "skill",
+      "topic": "literature review",
+      "description": "For researchers and grad students: skills to build reproducible searches, screen with PRISMA, synthesize evidence in a matrix and manage citations.",
+      "items": [
+        {
+          "package": "systematic-literature-search",
+          "required": true
+        },
+        {
+          "package": "prisma-screening",
+          "required": true
+        },
+        {
+          "package": "literature-synthesis-matrix",
+          "required": true
+        },
+        {
+          "package": "citation-management",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "academic-paper-writing",
+      "type": "skill",
+      "topic": "academic paper writing",
+      "description": "For academics: skills to draft IMRaD papers and abstracts, edit academic prose, write figure captions and prepare journal submissions.",
+      "items": [
+        {
+          "package": "imrad-paper-drafting",
+          "required": true
+        },
+        {
+          "package": "academic-abstract-writing",
+          "required": true
+        },
+        {
+          "package": "academic-style-editing",
+          "required": true
+        },
+        {
+          "package": "research-figure-captions",
+          "required": false
+        },
+        {
+          "package": "journal-submission-prep",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "research-grant-proposals",
+      "type": "skill",
+      "topic": "research grant proposals",
+      "description": "For principal investigators and research offices: skills to write specific aims, structure proposals to funder criteria, justify budgets and draft data management plans.",
+      "items": [
+        {
+          "package": "specific-aims-page",
+          "required": true
+        },
+        {
+          "package": "research-proposal-structure",
+          "required": true
+        },
+        {
+          "package": "research-budget-justification",
+          "required": true
+        },
+        {
+          "package": "data-management-plan",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "academic-peer-review",
+      "type": "skill",
+      "topic": "academic peer review",
+      "description": "For reviewers and authors: skills to write referee reports, critique methods, check reproducibility and respond to reviewers point by point.",
+      "items": [
+        {
+          "package": "manuscript-peer-review",
+          "required": true
+        },
+        {
+          "package": "research-methods-critique",
+          "required": true
+        },
+        {
+          "package": "reviewer-response-letter",
+          "required": true
+        },
+        {
+          "package": "reproducibility-checklist",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "qualitative-research",
+      "type": "skill",
+      "topic": "qualitative research analysis",
+      "description": "For social and health researchers: skills to build codebooks, code interview transcripts, run thematic analysis and keep analytic memos.",
+      "items": [
+        {
+          "package": "qualitative-codebook-development",
+          "required": true
+        },
+        {
+          "package": "interview-transcript-coding",
+          "required": true
+        },
+        {
+          "package": "thematic-analysis",
+          "required": true
+        },
+        {
+          "package": "qualitative-memo-writing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "literature-review-agents",
+      "type": "agent",
+      "topic": "literature review agents",
+      "description": "For research teams running reviews: agents that design searches, screen papers with reasons, synthesize evidence and verify citations.",
+      "items": [
+        {
+          "package": "literature-searcher",
+          "required": true
+        },
+        {
+          "package": "paper-screener",
+          "required": true
+        },
+        {
+          "package": "evidence-synthesizer",
+          "required": true
+        },
+        {
+          "package": "citation-verifier",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "academic-writing-agents",
+      "type": "agent",
+      "topic": "academic writing agents",
+      "description": "For academics preparing papers: agents that draft manuscript sections, copyedit, check journal guidelines and draft reviewer responses.",
+      "items": [
+        {
+          "package": "manuscript-drafter",
+          "required": true
+        },
+        {
+          "package": "academic-copyeditor",
+          "required": true
+        },
+        {
+          "package": "journal-submission-checker",
+          "required": true
+        },
+        {
+          "package": "reviewer-response-drafter",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "peer-review-agents",
+      "type": "agent",
+      "topic": "peer review agents",
+      "description": "For editors, reviewers and authors self-checking: agents that review methods, statistics and reproducibility and return structured referee reports.",
+      "items": [
+        {
+          "package": "methods-peer-reviewer",
+          "required": true
+        },
+        {
+          "package": "research-statistics-reviewer",
+          "required": true
+        },
+        {
+          "package": "reproducibility-auditor",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "news-writing",
+      "type": "skill",
+      "topic": "news writing and editing",
+      "description": "For reporters and editors: skills to structure stories, write ledes and headlines, and copyedit to AP style.",
+      "items": [
+        {
+          "package": "news-story-structure",
+          "required": true
+        },
+        {
+          "package": "news-lede-writing",
+          "required": true
+        },
+        {
+          "package": "ap-style-editing",
+          "required": true
+        },
+        {
+          "package": "news-headline-writing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "fact-checking",
+      "type": "skill",
+      "topic": "fact-checking and verification",
+      "description": "For fact-checkers and newsrooms: skills to verify claims against primary sources, check attribution and quotes, and verify images and video provenance.",
+      "items": [
+        {
+          "package": "claim-verification",
+          "required": true
+        },
+        {
+          "package": "source-attribution-check",
+          "required": true
+        },
+        {
+          "package": "image-provenance-check",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "investigative-reporting",
+      "type": "skill",
+      "topic": "investigative and data journalism",
+      "description": "For investigative and data reporters: skills to file records requests, analyze document troves, build data stories and prepare interviews.",
+      "items": [
+        {
+          "package": "public-records-requests",
+          "required": true
+        },
+        {
+          "package": "document-trove-analysis",
+          "required": true
+        },
+        {
+          "package": "data-journalism-story",
+          "required": true
+        },
+        {
+          "package": "journalism-interview-prep",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "newsroom-agents",
+      "type": "agent",
+      "topic": "newsroom agents",
+      "description": "For newsrooms: agents that draft stories from notes, copyedit and headline them, fact-check claims and dig through document troves.",
+      "items": [
+        {
+          "package": "news-story-writer",
+          "required": true
+        },
+        {
+          "package": "news-copy-editor",
+          "required": true
+        },
+        {
+          "package": "news-fact-checker",
+          "required": true
+        },
+        {
+          "package": "investigative-docs-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "bioinformatics-ngs-analysis",
+      "type": "skill",
+      "topic": "NGS bioinformatics analysis",
+      "description": "For bioinformaticians: skills for read alignment and QC, variant calling, bulk RNA-seq differential expression and single-cell analysis.",
+      "items": [
+        {
+          "package": "sequence-alignment-workflows",
+          "required": true
+        },
+        {
+          "package": "variant-calling-pipeline",
+          "required": true
+        },
+        {
+          "package": "rnaseq-differential-expression",
+          "required": true
+        },
+        {
+          "package": "single-cell-rnaseq-analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "bioinformatics-pipelines",
+      "type": "skill",
+      "topic": "bioinformatics workflow engineering",
+      "description": "For bioinformatics engineers: skills to write Nextflow and Snakemake pipelines, handle genomic file formats correctly and use Bioconductor idiomatically.",
+      "items": [
+        {
+          "package": "nextflow-pipeline-authoring",
+          "required": true
+        },
+        {
+          "package": "snakemake-workflow-authoring",
+          "required": true
+        },
+        {
+          "package": "genomic-file-formats",
+          "required": true
+        },
+        {
+          "package": "bioconductor-analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "wet-lab-protocols",
+      "type": "skill",
+      "topic": "wet-lab protocols and notebooks",
+      "description": "For bench scientists: skills to write reproducible protocols and ELN entries, calculate reagents and plan experiments with proper controls and replicates.",
+      "items": [
+        {
+          "package": "lab-protocol-writing",
+          "required": true
+        },
+        {
+          "package": "eln-entry-writing",
+          "required": true
+        },
+        {
+          "package": "reagent-solution-calculations",
+          "required": true
+        },
+        {
+          "package": "experiment-design-replicates",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "bioinformatics-agents",
+      "type": "agent",
+      "topic": "bioinformatics agents",
+      "description": "For genomics labs: agents that build sequencing pipelines, run RNA-seq analyses and review QC outputs for problem samples.",
+      "items": [
+        {
+          "package": "bioinformatics-pipeline-builder",
+          "required": true
+        },
+        {
+          "package": "rnaseq-analyst",
+          "required": true
+        },
+        {
+          "package": "genomics-qc-reviewer",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "lab-science-agents",
+      "type": "agent",
+      "topic": "lab science agents",
+      "description": "For wet-lab teams: agents that write protocols and ELN entries, plan experiments with controls, and check chemistry calculations.",
+      "items": [
+        {
+          "package": "lab-protocol-writer",
+          "required": true
+        },
+        {
+          "package": "experiment-design-planner",
+          "required": true
+        },
+        {
+          "package": "chemistry-calc-checker",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "computational-chemistry",
+      "type": "skill",
+      "topic": "computational chemistry and cheminformatics",
+      "description": "For computational chemists: skills for RDKit cheminformatics, descriptor and drug-likeness calculation, structure format handling and quantum chemistry input prep.",
+      "items": [
+        {
+          "package": "rdkit-cheminformatics",
+          "required": true
+        },
+        {
+          "package": "chemical-structure-formats",
+          "required": true
+        },
+        {
+          "package": "molecular-descriptor-calc",
+          "required": true
+        },
+        {
+          "package": "quantum-chem-input-prep",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "chemistry-lab-calculations",
+      "type": "skill",
+      "topic": "chemistry lab calculations",
+      "description": "For bench chemists and students: skills for stoichiometry, solution prep, yield analysis and SDS-based safety summaries.",
+      "items": [
+        {
+          "package": "stoichiometry-calculations",
+          "required": true
+        },
+        {
+          "package": "reagent-solution-calculations",
+          "required": true
+        },
+        {
+          "package": "reaction-yield-analysis",
+          "required": true
+        },
+        {
+          "package": "chemical-safety-sds-review",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "engineering-calculations",
+      "type": "skill",
+      "topic": "engineering calculation practice",
+      "description": "For engineers and physics students: skills to lay out checkable calc sheets, enforce unit consistency, propagate uncertainty and use dimensional analysis.",
+      "items": [
+        {
+          "package": "engineering-calc-sheet",
+          "required": true
+        },
+        {
+          "package": "unit-consistency-check",
+          "required": true
+        },
+        {
+          "package": "uncertainty-propagation",
+          "required": true
+        },
+        {
+          "package": "dimensional-analysis",
+          "required": false
+        },
+        {
+          "package": "numerical-ode-solving",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "mechanical-engineering-calcs",
+      "type": "skill",
+      "topic": "mechanical and thermal-fluid calculations",
+      "description": "For mechanical engineers: skills for beam stress and deflection, fatigue and safety factors, heat transfer and pipe flow calculations.",
+      "items": [
+        {
+          "package": "beam-stress-calculations",
+          "required": true
+        },
+        {
+          "package": "heat-transfer-calculations",
+          "required": true
+        },
+        {
+          "package": "pipe-flow-calculations",
+          "required": true
+        },
+        {
+          "package": "fatigue-safety-factor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "electrical-engineering-calcs",
+      "type": "skill",
+      "topic": "electrical engineering calculations",
+      "description": "For electrical engineers: skills for circuit analysis, cable and protection sizing and analog filter design.",
+      "items": [
+        {
+          "package": "circuit-analysis-calculations",
+          "required": true
+        },
+        {
+          "package": "cable-sizing-calculations",
+          "required": true
+        },
+        {
+          "package": "analog-filter-design",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "engineering-calc-agents",
+      "type": "agent",
+      "topic": "engineering calculation review agents",
+      "description": "For engineering teams: agents that independently check calc sheets, review mechanical/thermal-fluid work and review electrical calculations before sign-off.",
+      "items": [
+        {
+          "package": "engineering-calc-checker",
+          "required": true
+        },
+        {
+          "package": "mechanical-calc-reviewer",
+          "required": true
+        },
+        {
+          "package": "electrical-calc-reviewer",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "email-productivity",
+      "type": "skill",
+      "topic": "email productivity",
+      "description": "For busy professionals: skills to triage an inbox, draft replies in your voice, summarize long threads and track follow-ups.",
+      "items": [
+        {
+          "package": "inbox-triage-rules",
+          "required": true
+        },
+        {
+          "package": "inbox-reply-drafting",
+          "required": true
+        },
+        {
+          "package": "email-thread-summary",
+          "required": true
+        },
+        {
+          "package": "follow-up-tracking",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "meeting-productivity",
+      "type": "skill",
+      "topic": "meeting productivity",
+      "description": "For anyone running meetings: skills to build outcome-driven agendas, turn notes into actions, send recaps and keep a decision log.",
+      "items": [
+        {
+          "package": "meeting-agenda-builder",
+          "required": true
+        },
+        {
+          "package": "meeting-notes-to-actions",
+          "required": true
+        },
+        {
+          "package": "meeting-recap-email",
+          "required": true
+        },
+        {
+          "package": "meeting-decision-log",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "getting-things-done",
+      "type": "skill",
+      "topic": "GTD personal workflow",
+      "description": "For people practising Getting Things Done: skills to clarify captured items, keep next-action lists, outline projects and run the weekly review.",
+      "items": [
+        {
+          "package": "gtd-capture-clarify",
+          "required": true
+        },
+        {
+          "package": "next-action-lists",
+          "required": true
+        },
+        {
+          "package": "gtd-weekly-review",
+          "required": true
+        },
+        {
+          "package": "personal-project-outline",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "personal-knowledge-notes",
+      "type": "skill",
+      "topic": "note-taking and personal knowledge management",
+      "description": "For note-takers and knowledge workers: skills for Zettelkasten notes, PARA organization, progressive summarization and daily journaling.",
+      "items": [
+        {
+          "package": "zettelkasten-notes",
+          "required": true
+        },
+        {
+          "package": "para-note-organization",
+          "required": true
+        },
+        {
+          "package": "note-summarization",
+          "required": true
+        },
+        {
+          "package": "daily-journal-notes",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "time-planning",
+      "type": "skill",
+      "topic": "time and priority planning",
+      "description": "For individuals planning their days and quarters: skills for daily planning, time blocking, prioritization matrices and personal OKRs.",
+      "items": [
+        {
+          "package": "daily-planning",
+          "required": true
+        },
+        {
+          "package": "time-blocking",
+          "required": true
+        },
+        {
+          "package": "priority-matrix",
+          "required": true
+        },
+        {
+          "package": "personal-goal-okrs",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "inbox-meeting-agents",
+      "type": "agent",
+      "topic": "email and meeting assistant agents",
+      "description": "For busy professionals: agents that triage the inbox with draft replies, brief you before meetings and turn transcripts into actions and recaps.",
+      "items": [
+        {
+          "package": "inbox-triager",
+          "required": true
+        },
+        {
+          "package": "meeting-prep-briefer",
+          "required": true
+        },
+        {
+          "package": "meeting-notes-taker",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "personal-planning-agents",
+      "type": "agent",
+      "topic": "personal planning agents",
+      "description": "For individuals: agents that process GTD captures, plan each day and coach a weekly review against your goals.",
+      "items": [
+        {
+          "package": "gtd-inbox-processor",
+          "required": true
+        },
+        {
+          "package": "daily-plan-agent",
+          "required": true
+        },
+        {
+          "package": "weekly-review-coach",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "fiction-craft",
+      "type": "skill",
+      "topic": "fiction writing craft",
+      "description": "For novelists and short-story writers: skills to outline structure, develop characters, write scenes and dialogue, and keep POV and tense consistent.",
+      "items": [
+        {
+          "package": "story-structure-outline",
+          "required": true
+        },
+        {
+          "package": "character-development",
+          "required": true
+        },
+        {
+          "package": "scene-writing",
+          "required": true
+        },
+        {
+          "package": "dialogue-craft",
+          "required": true
+        },
+        {
+          "package": "pov-tense-consistency",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "manuscript-editing",
+      "type": "skill",
+      "topic": "manuscript editing",
+      "description": "For editors and authors revising: skills for developmental edits, line edits, Chicago copyediting with style sheets, and continuity checks.",
+      "items": [
+        {
+          "package": "developmental-editing",
+          "required": true
+        },
+        {
+          "package": "fiction-line-editing",
+          "required": true
+        },
+        {
+          "package": "copyediting-style-sheet",
+          "required": true
+        },
+        {
+          "package": "manuscript-continuity-check",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "screenwriting",
+      "type": "skill",
+      "topic": "screenwriting",
+      "description": "For screenwriters: skills to format scripts, build beat sheets, write loglines and synopses and produce script coverage.",
+      "items": [
+        {
+          "package": "screenplay-format",
+          "required": true
+        },
+        {
+          "package": "screenplay-beat-sheet",
+          "required": true
+        },
+        {
+          "package": "logline-synopsis-writing",
+          "required": true
+        },
+        {
+          "package": "script-coverage",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "book-publishing-prep",
+      "type": "skill",
+      "topic": "book submission and publishing",
+      "description": "For authors heading to market: skills to write query letters, synopses and blurbs and prepare self-publishing metadata and files.",
+      "items": [
+        {
+          "package": "query-letter-writing",
+          "required": true
+        },
+        {
+          "package": "book-blurb-writing",
+          "required": true
+        },
+        {
+          "package": "self-publishing-prep",
+          "required": true
+        },
+        {
+          "package": "logline-synopsis-writing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "fiction-editing-agents",
+      "type": "agent",
+      "topic": "fiction editing agents",
+      "description": "For authors and editors: agents that give developmental feedback, line edit chapters, check continuity and beta-read as a genre reader.",
+      "items": [
+        {
+          "package": "developmental-editor",
+          "required": true
+        },
+        {
+          "package": "fiction-line-editor",
+          "required": true
+        },
+        {
+          "package": "continuity-checker",
+          "required": true
+        },
+        {
+          "package": "beta-reader",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "screenwriting-agents",
+      "type": "agent",
+      "topic": "screenwriting agents",
+      "description": "For screenwriters and development execs: agents that write script coverage and polish screenplay drafts.",
+      "items": [
+        {
+          "package": "script-coverage-reader",
+          "required": true
+        },
+        {
+          "package": "screenplay-doctor",
+          "required": true
+        },
+        {
+          "package": "beta-reader",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "translation-quality",
+      "type": "skill",
+      "topic": "translation quality",
+      "description": "For translators and LSP reviewers: skills to QA translations, annotate errors with MQM, manage termbases and write locale style guides.",
+      "items": [
+        {
+          "package": "translation-qa-check",
+          "required": true
+        },
+        {
+          "package": "translation-termbase",
+          "required": true
+        },
+        {
+          "package": "mqm-error-annotation",
+          "required": true
+        },
+        {
+          "package": "translation-style-guide",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "localization-review",
+      "type": "skill",
+      "topic": "localization content review",
+      "description": "For localization managers: skills to review UI strings for translatability, check locale formats, use pseudo-localization and transcreate marketing copy.",
+      "items": [
+        {
+          "package": "localization-string-review",
+          "required": true
+        },
+        {
+          "package": "locale-format-check",
+          "required": true
+        },
+        {
+          "package": "pseudo-localization-review",
+          "required": true
+        },
+        {
+          "package": "transcreation-marketing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "translation-agents",
+      "type": "agent",
+      "topic": "translation and localization agents",
+      "description": "For localization teams: agents that translate with a termbase, review translations with MQM scoring, extract terminology and QA localized UI.",
+      "items": [
+        {
+          "package": "document-translator",
+          "required": true
+        },
+        {
+          "package": "translation-reviewer",
+          "required": true
+        },
+        {
+          "package": "localization-qa-agent",
+          "required": true
+        },
+        {
+          "package": "terminology-extractor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "grant-writing",
+      "type": "skill",
+      "topic": "nonprofit grant writing",
+      "description": "For nonprofit development staff: skills to research funders, write need statements, logic models and budget narratives, check RFP compliance and report to funders.",
+      "items": [
+        {
+          "package": "grant-need-statement",
+          "required": true
+        },
+        {
+          "package": "logic-model-builder",
+          "required": true
+        },
+        {
+          "package": "grant-budget-narrative",
+          "required": true
+        },
+        {
+          "package": "grant-compliance-checklist",
+          "required": true
+        },
+        {
+          "package": "funder-prospect-research",
+          "required": false
+        },
+        {
+          "package": "grant-report-writing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "nonprofit-fundraising-impact",
+      "type": "skill",
+      "topic": "nonprofit fundraising and impact",
+      "description": "For small nonprofit teams: skills to write donor appeals, steward donors, measure program impact and run volunteer programs.",
+      "items": [
+        {
+          "package": "donor-appeal-writing",
+          "required": true
+        },
+        {
+          "package": "donor-stewardship",
+          "required": true
+        },
+        {
+          "package": "nonprofit-impact-measurement",
+          "required": true
+        },
+        {
+          "package": "volunteer-program-management",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "grant-writing-agents",
+      "type": "agent",
+      "topic": "grant writing agents",
+      "description": "For nonprofits and grant consultants: agents that research funders, draft proposals, check RFP compliance and write funder reports.",
+      "items": [
+        {
+          "package": "grant-prospect-researcher",
+          "required": true
+        },
+        {
+          "package": "grant-proposal-writer",
+          "required": true
+        },
+        {
+          "package": "grant-compliance-checker",
+          "required": true
+        },
+        {
+          "package": "grant-report-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "manufacturing-quality",
+      "type": "skill",
+      "topic": "manufacturing quality",
+      "description": "For quality engineers: skills for 8D root cause, process FMEA, SPC and capability analysis, and NCR/CAPA writing.",
+      "items": [
+        {
+          "package": "eight-d-problem-solving",
+          "required": true
+        },
+        {
+          "package": "process-fmea",
+          "required": true
+        },
+        {
+          "package": "spc-control-charts",
+          "required": true
+        },
+        {
+          "package": "ncr-capa-writing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "lean-manufacturing",
+      "type": "skill",
+      "topic": "lean manufacturing",
+      "description": "For CI and operations engineers: skills for value stream mapping, OEE, kaizen events and standard work instructions.",
+      "items": [
+        {
+          "package": "manufacturing-value-stream-map",
+          "required": true
+        },
+        {
+          "package": "oee-calculation",
+          "required": true
+        },
+        {
+          "package": "kaizen-event-planning",
+          "required": true
+        },
+        {
+          "package": "standard-work-instructions",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "production-planning",
+      "type": "skill",
+      "topic": "production planning",
+      "description": "For production planners: skills for MRP, capacity planning, BOM management and finite-capacity scheduling.",
+      "items": [
+        {
+          "package": "mrp-planning",
+          "required": true
+        },
+        {
+          "package": "production-capacity-planning",
+          "required": true
+        },
+        {
+          "package": "production-scheduling",
+          "required": true
+        },
+        {
+          "package": "bom-management",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "manufacturing-quality-agents",
+      "type": "agent",
+      "topic": "manufacturing quality agents",
+      "description": "For plant quality teams: agents that lead 8D root-cause investigations, facilitate FMEAs and analyze SPC data.",
+      "items": [
+        {
+          "package": "manufacturing-8d-investigator",
+          "required": true
+        },
+        {
+          "package": "fmea-facilitator",
+          "required": true
+        },
+        {
+          "package": "spc-analyst",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "manufacturing-ops-agents",
+      "type": "agent",
+      "topic": "manufacturing operations agents",
+      "description": "For plant operations: agents that coach lean improvement from OEE and value-stream data and build production and capacity plans.",
+      "items": [
+        {
+          "package": "lean-improvement-coach",
+          "required": true
+        },
+        {
+          "package": "production-planner",
+          "required": true
+        },
+        {
+          "package": "spc-analyst",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "supply-chain-planning",
+      "type": "skill",
+      "topic": "supply chain planning",
+      "description": "For supply planners: skills for S&OP, safety stock, supplier lead-time analysis and supply risk mitigation.",
+      "items": [
+        {
+          "package": "sales-operations-planning",
+          "required": true
+        },
+        {
+          "package": "safety-stock-calculation",
+          "required": true
+        },
+        {
+          "package": "supplier-lead-time-analysis",
+          "required": true
+        },
+        {
+          "package": "supply-risk-assessment",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "freight-and-trade",
+      "type": "skill",
+      "topic": "freight transport and international trade",
+      "description": "For logistics coordinators: skills to pick freight modes, plan routes, select Incoterms and prepare customs documents for broker review.",
+      "items": [
+        {
+          "package": "freight-mode-selection",
+          "required": true
+        },
+        {
+          "package": "route-planning-logistics",
+          "required": true
+        },
+        {
+          "package": "incoterms-selection",
+          "required": true
+        },
+        {
+          "package": "customs-documentation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "warehouse-operations",
+      "type": "skill",
+      "topic": "warehouse operations",
+      "description": "For warehouse managers: skills for slotting, pick-path design, receiving and putaway, and cycle counting.",
+      "items": [
+        {
+          "package": "warehouse-slotting",
+          "required": true
+        },
+        {
+          "package": "pick-path-optimization",
+          "required": true
+        },
+        {
+          "package": "receiving-putaway",
+          "required": true
+        },
+        {
+          "package": "inventory-cycle-count",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "supply-chain-agents",
+      "type": "agent",
+      "topic": "supply chain and logistics agents",
+      "description": "For supply chain teams: agents that prepare S&OP packs, monitor supply risk, optimize freight, draft trade documents and analyze warehouse layouts.",
+      "items": [
+        {
+          "package": "demand-supply-planner",
+          "required": true
+        },
+        {
+          "package": "supply-risk-monitor",
+          "required": true
+        },
+        {
+          "package": "logistics-optimizer",
+          "required": true
+        },
+        {
+          "package": "trade-docs-preparer",
+          "required": false
+        },
+        {
+          "package": "warehouse-layout-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "energy-agents",
+      "type": "agent",
+      "topic": "energy analysis agents",
+      "description": "For energy managers and renewable installers: agents that audit buildings, size solar and storage, and verify energy savings against normalized baselines.",
+      "items": [
+        {
+          "package": "energy-audit-analyst",
+          "required": true
+        },
+        {
+          "package": "solar-storage-sizer",
+          "required": true
+        },
+        {
+          "package": "energy-savings-verifier",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "building-energy-efficiency",
+      "type": "skill",
+      "topic": "building energy efficiency",
+      "description": "For energy managers and auditors: skills for building energy audits, utility bill analysis and weather-normalized savings baselines.",
+      "items": [
+        {
+          "package": "building-energy-audit",
+          "required": true
+        },
+        {
+          "package": "utility-bill-analysis",
+          "required": true
+        },
+        {
+          "package": "energy-baseline-regression",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "solar-and-storage",
+      "type": "skill",
+      "topic": "solar and battery storage sizing",
+      "description": "For renewable energy developers and installers: skills to analyze load profiles and size solar PV and battery storage with savings estimates.",
+      "items": [
+        {
+          "package": "solar-pv-sizing",
+          "required": true
+        },
+        {
+          "package": "battery-storage-sizing",
+          "required": true
+        },
+        {
+          "package": "load-profile-analysis",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "farm-management",
+      "type": "skill",
+      "topic": "farm and crop management",
+      "description": "For farmers and agronomists: skills for crop rotation, soil test interpretation, irrigation scheduling, IPM and livestock rations.",
+      "items": [
+        {
+          "package": "crop-rotation-planning",
+          "required": true
+        },
+        {
+          "package": "soil-test-interpretation",
+          "required": true
+        },
+        {
+          "package": "irrigation-scheduling",
+          "required": true
+        },
+        {
+          "package": "integrated-pest-management",
+          "required": true
+        },
+        {
+          "package": "livestock-feed-ration",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "agriculture-agents",
+      "type": "agent",
+      "topic": "agriculture advisory agents",
+      "description": "For farms and agronomy advisers: agents that build season crop plans, turn scouting into IPM recommendations and formulate livestock rations, for expert sign-off.",
+      "items": [
+        {
+          "package": "crop-plan-advisor",
+          "required": true
+        },
+        {
+          "package": "pest-scouting-advisor",
+          "required": true
+        },
+        {
+          "package": "livestock-nutrition-assistant",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "real-estate-analysis",
+      "type": "skill",
+      "topic": "real estate listings and valuation",
+      "description": "For agents and investors: skills to write compliant listings, build CMAs and analyze rental property returns.",
+      "items": [
+        {
+          "package": "property-listing-writing",
+          "required": true
+        },
+        {
+          "package": "comparable-market-analysis",
+          "required": true
+        },
+        {
+          "package": "rental-property-analysis",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "property-management",
+      "type": "skill",
+      "topic": "property management",
+      "description": "For property managers: skills to abstract leases, communicate with tenants, triage maintenance and review rent rolls.",
+      "items": [
+        {
+          "package": "tenant-communication",
+          "required": true
+        },
+        {
+          "package": "maintenance-request-triage",
+          "required": true
+        },
+        {
+          "package": "commercial-lease-abstraction",
+          "required": true
+        },
+        {
+          "package": "rent-roll-review",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "real-estate-agents",
+      "type": "agent",
+      "topic": "real estate agents",
+      "description": "For brokerages and property managers: agents that write listings, build CMAs, abstract leases and triage tenant requests.",
+      "items": [
+        {
+          "package": "real-estate-listing-writer",
+          "required": true
+        },
+        {
+          "package": "cma-analyst",
+          "required": true
+        },
+        {
+          "package": "lease-abstractor",
+          "required": true
+        },
+        {
+          "package": "tenant-request-triager",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "travel-planning",
+      "type": "skill",
+      "topic": "travel planning",
+      "description": "For travellers and travel agents: skills to build itineraries, plan budgets, check entry requirements and prepare packing lists.",
+      "items": [
+        {
+          "package": "travel-itinerary-builder",
+          "required": true
+        },
+        {
+          "package": "travel-budget-planner",
+          "required": true
+        },
+        {
+          "package": "travel-entry-requirements",
+          "required": true
+        },
+        {
+          "package": "trip-packing-list",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "hospitality-operations",
+      "type": "skill",
+      "topic": "hospitality operations",
+      "description": "For hotel and restaurant operators: skills for review responses, revenue management, menu costing and service SOPs.",
+      "items": [
+        {
+          "package": "guest-review-response",
+          "required": true
+        },
+        {
+          "package": "hotel-revenue-management",
+          "required": true
+        },
+        {
+          "package": "menu-costing",
+          "required": true
+        },
+        {
+          "package": "hospitality-sop-writing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "hospitality-agents",
+      "type": "agent",
+      "topic": "hospitality and travel agents",
+      "description": "For hotels, restaurants and travel planners: agents that respond to guest reviews, manage hotel rates, cost menus and plan trips.",
+      "items": [
+        {
+          "package": "guest-review-responder",
+          "required": true
+        },
+        {
+          "package": "hotel-revenue-analyst",
+          "required": true
+        },
+        {
+          "package": "menu-cost-analyst",
+          "required": true
+        },
+        {
+          "package": "trip-planner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "game-design",
+      "type": "skill",
+      "topic": "game design",
+      "description": "For game designers: skills to write GDDs, balance economies and combat, design levels and quests, and analyze playtests.",
+      "items": [
+        {
+          "package": "game-design-document",
+          "required": true
+        },
+        {
+          "package": "game-balance-tuning",
+          "required": true
+        },
+        {
+          "package": "level-design-principles",
+          "required": true
+        },
+        {
+          "package": "narrative-quest-design",
+          "required": false
+        },
+        {
+          "package": "playtest-analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "unity-gamedev",
+      "type": "skill",
+      "topic": "Unity game development",
+      "description": "For Unity developers: skills for gameplay C# patterns, project structure and builds, and performance profiling.",
+      "items": [
+        {
+          "package": "unity-csharp-gameplay",
+          "required": true
+        },
+        {
+          "package": "unity-project-structure",
+          "required": true
+        },
+        {
+          "package": "unity-performance",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "godot-gamedev",
+      "type": "skill",
+      "topic": "Godot game development",
+      "description": "For Godot developers: skills for idiomatic GDScript, scene architecture and export/CI builds.",
+      "items": [
+        {
+          "package": "godot-gdscript-patterns",
+          "required": true
+        },
+        {
+          "package": "godot-scene-architecture",
+          "required": true
+        },
+        {
+          "package": "godot-export-builds",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "unreal-gamedev",
+      "type": "skill",
+      "topic": "Unreal Engine development",
+      "description": "For Unreal developers: skills for C++ gameplay, maintainable Blueprints and performance profiling.",
+      "items": [
+        {
+          "package": "unreal-cpp-gameplay",
+          "required": true
+        },
+        {
+          "package": "unreal-blueprints",
+          "required": true
+        },
+        {
+          "package": "unreal-performance",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "game-design-agents",
+      "type": "agent",
+      "topic": "game design agents",
+      "description": "For game studios and indie devs: agents that write GDDs, tune game balance and review level design.",
+      "items": [
+        {
+          "package": "game-design-doc-writer",
+          "required": true
+        },
+        {
+          "package": "game-balance-analyst",
+          "required": true
+        },
+        {
+          "package": "level-design-reviewer",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "game-engine-review-agents",
+      "type": "agent",
+      "topic": "game engine code review agents",
+      "description": "For game programmers: reviewer agents for Unity, Godot and Unreal projects that catch engine-specific bugs and performance problems.",
+      "items": [
+        {
+          "package": "unity-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "godot-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "unreal-code-reviewer",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "video-production",
+      "type": "skill",
+      "topic": "video production",
+      "description": "For video creators and producers: skills to write scripts, plan shots, run an edit workflow and transcode deliverables with ffmpeg.",
+      "items": [
+        {
+          "package": "video-script-writing",
+          "required": true
+        },
+        {
+          "package": "shot-list-storyboard",
+          "required": true
+        },
+        {
+          "package": "video-editing-workflow",
+          "required": true
+        },
+        {
+          "package": "ffmpeg-video-transcoding",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "podcast-production",
+      "type": "skill",
+      "topic": "podcast production",
+      "description": "For podcasters: skills to plan episodes, clean up dialogue audio, hit loudness targets and write show notes.",
+      "items": [
+        {
+          "package": "podcast-episode-planning",
+          "required": true
+        },
+        {
+          "package": "audio-cleanup-workflow",
+          "required": true
+        },
+        {
+          "package": "loudness-normalization",
+          "required": true
+        },
+        {
+          "package": "podcast-show-notes",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "subtitles-captions",
+      "type": "skill",
+      "topic": "subtitles and captions",
+      "description": "For video teams and accessibility leads: skills to create SRT/VTT subtitles, write accessible captions and clean transcripts.",
+      "items": [
+        {
+          "package": "subtitle-srt-vtt",
+          "required": true
+        },
+        {
+          "package": "caption-accessibility",
+          "required": true
+        },
+        {
+          "package": "transcript-cleanup",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "media-production-agents",
+      "type": "agent",
+      "topic": "audio and video production agents",
+      "description": "For creators and media teams: agents that write video scripts, plan post-production, edit subtitles and produce podcast episodes.",
+      "items": [
+        {
+          "package": "video-scriptwriter",
+          "required": true
+        },
+        {
+          "package": "post-production-assistant",
+          "required": true
+        },
+        {
+          "package": "subtitle-editor",
+          "required": true
+        },
+        {
+          "package": "podcast-producer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "policy-analysis",
+      "type": "skill",
+      "topic": "public policy analysis",
+      "description": "For policy analysts and civil servants: skills to write policy briefs, regulatory impact assessments and bill summaries and analyze public comments.",
+      "items": [
+        {
+          "package": "policy-brief-writing",
+          "required": true
+        },
+        {
+          "package": "regulatory-impact-assessment",
+          "required": true
+        },
+        {
+          "package": "legislative-bill-summary",
+          "required": true
+        },
+        {
+          "package": "public-comment-analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "public-sector-communications",
+      "type": "skill",
+      "topic": "government communications and services",
+      "description": "For government content and service teams: skills for plain-language rewriting, FOIA response drafting and public service design.",
+      "items": [
+        {
+          "package": "plain-language-government",
+          "required": true
+        },
+        {
+          "package": "foia-response-drafting",
+          "required": true
+        },
+        {
+          "package": "public-service-design",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "policy-analysis-agents",
+      "type": "agent",
+      "topic": "policy analysis agents",
+      "description": "For policy and regulatory teams: agents that draft policy briefs, analyze public comments, build impact assessments and rewrite content in plain language.",
+      "items": [
+        {
+          "package": "policy-brief-writer",
+          "required": true
+        },
+        {
+          "package": "public-comment-analyzer",
+          "required": true
+        },
+        {
+          "package": "regulatory-impact-analyst",
+          "required": true
+        },
+        {
+          "package": "plain-language-rewriter",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2457 @@
+{
+  "domain": "web-mobile",
+  "arks": [
+    {
+      "name": "react-core",
+      "type": "skill",
+      "topic": "react fundamentals",
+      "description": "For React developers: hook rules, component composition, state placement, data fetching and render-performance patterns so agents write idiomatic modern React.",
+      "items": [
+        {
+          "package": "react-hooks-patterns",
+          "required": true
+        },
+        {
+          "package": "react-component-design",
+          "required": true
+        },
+        {
+          "package": "react-state-placement",
+          "required": true
+        },
+        {
+          "package": "react-render-performance",
+          "required": true
+        },
+        {
+          "package": "react-error-boundaries",
+          "required": false
+        },
+        {
+          "package": "react-19-features",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "react-testing",
+      "type": "skill",
+      "topic": "react testing",
+      "description": "For React teams: Testing Library queries, user-event interactions, MSW network mocking and hook tests so agents write behaviour-focused, non-flaky component tests.",
+      "items": [
+        {
+          "package": "react-testing-library",
+          "required": true
+        },
+        {
+          "package": "react-msw-mocking",
+          "required": true
+        },
+        {
+          "package": "react-hook-testing",
+          "required": true
+        },
+        {
+          "package": "react-vitest-setup",
+          "required": false
+        },
+        {
+          "package": "storybook-interaction-tests",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "react-forms",
+      "type": "skill",
+      "topic": "react forms",
+      "description": "For React developers building forms: React Hook Form with Zod schemas, accessible error messaging, multi-step flows and file inputs that validate on client and server.",
+      "items": [
+        {
+          "package": "react-hook-form-zod",
+          "required": true
+        },
+        {
+          "package": "web-form-validation-ux",
+          "required": true
+        },
+        {
+          "package": "react-multi-step-forms",
+          "required": true
+        },
+        {
+          "package": "react-file-input-uploads",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "react-router-framework",
+      "type": "skill",
+      "topic": "react router framework mode",
+      "description": "For teams on React Router v7 or Remix: route modules, loaders and actions, nested error boundaries and SSR deployment so agents build data-driven routes correctly.",
+      "items": [
+        {
+          "package": "rr7-loaders-actions",
+          "required": true
+        },
+        {
+          "package": "rr7-route-modules",
+          "required": true
+        },
+        {
+          "package": "rr7-errors-pending-ui",
+          "required": true
+        },
+        {
+          "package": "remix-to-rr7-upgrade",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "nextjs-app-router",
+      "type": "skill",
+      "topic": "next.js app router",
+      "description": "For Next.js developers: App Router layouts, Server Components boundaries, Server Actions, caching and revalidation, middleware and route handlers explained as concrete rules agents can follow.",
+      "items": [
+        {
+          "package": "nextjs-app-router-structure",
+          "required": true
+        },
+        {
+          "package": "nextjs-server-components",
+          "required": true
+        },
+        {
+          "package": "nextjs-server-actions",
+          "required": true
+        },
+        {
+          "package": "nextjs-caching-revalidation",
+          "required": true
+        },
+        {
+          "package": "nextjs-middleware-routing",
+          "required": false
+        },
+        {
+          "package": "nextjs-route-handlers",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "nextjs-production",
+      "type": "skill",
+      "topic": "next.js production readiness",
+      "description": "For teams shipping Next.js to production: image and font optimisation, metadata and SEO tags, bundle analysis, environment config and error monitoring set up correctly.",
+      "items": [
+        {
+          "package": "nextjs-image-font-optimization",
+          "required": true
+        },
+        {
+          "package": "nextjs-metadata-seo",
+          "required": true
+        },
+        {
+          "package": "nextjs-bundle-analysis",
+          "required": true
+        },
+        {
+          "package": "nextjs-env-config",
+          "required": false
+        },
+        {
+          "package": "nextjs-observability",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "vue-core",
+      "type": "skill",
+      "topic": "vue 3",
+      "description": "For Vue 3 developers: Composition API and composables, Pinia stores, Vue Router patterns and reactivity pitfalls so agents produce clean, typed Vue code.",
+      "items": [
+        {
+          "package": "vue-composition-api",
+          "required": true
+        },
+        {
+          "package": "vue-pinia-stores",
+          "required": true
+        },
+        {
+          "package": "vue-router-patterns",
+          "required": true
+        },
+        {
+          "package": "vue-reactivity-pitfalls",
+          "required": true
+        },
+        {
+          "package": "vue-testing-utils",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "nuxt",
+      "type": "skill",
+      "topic": "nuxt",
+      "description": "For Nuxt 3/4 developers: data fetching with useFetch/useAsyncData, Nitro server routes, rendering modes per route and module configuration done the Nuxt way.",
+      "items": [
+        {
+          "package": "nuxt-data-fetching",
+          "required": true
+        },
+        {
+          "package": "nuxt-server-routes",
+          "required": true
+        },
+        {
+          "package": "nuxt-rendering-modes",
+          "required": true
+        },
+        {
+          "package": "nuxt-modules-config",
+          "required": false
+        },
+        {
+          "package": "nuxt-seo-head",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "sveltekit",
+      "type": "skill",
+      "topic": "svelte and sveltekit",
+      "description": "For Svelte developers: Svelte 5 runes, SvelteKit load functions, form actions and hooks so agents write current Svelte rather than Svelte 4 idioms.",
+      "items": [
+        {
+          "package": "svelte5-runes",
+          "required": true
+        },
+        {
+          "package": "sveltekit-load-functions",
+          "required": true
+        },
+        {
+          "package": "sveltekit-form-actions",
+          "required": true
+        },
+        {
+          "package": "sveltekit-hooks-auth",
+          "required": false
+        },
+        {
+          "package": "sveltekit-adapters",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "angular",
+      "type": "skill",
+      "topic": "angular",
+      "description": "For Angular developers: signals, standalone components, dependency injection, RxJS interop, reactive forms and router guards for modern Angular (v17+) apps.",
+      "items": [
+        {
+          "package": "angular-signals",
+          "required": true
+        },
+        {
+          "package": "angular-standalone-components",
+          "required": true
+        },
+        {
+          "package": "angular-rxjs-patterns",
+          "required": true
+        },
+        {
+          "package": "angular-dependency-injection",
+          "required": true
+        },
+        {
+          "package": "angular-reactive-forms",
+          "required": false
+        },
+        {
+          "package": "angular-router-interceptors",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "astro",
+      "type": "skill",
+      "topic": "astro",
+      "description": "For content-site builders using Astro: islands and client directives, content collections, view transitions and SSR adapters so pages stay fast with minimal JS.",
+      "items": [
+        {
+          "package": "astro-islands",
+          "required": true
+        },
+        {
+          "package": "astro-content-collections",
+          "required": true
+        },
+        {
+          "package": "astro-view-transitions",
+          "required": true
+        },
+        {
+          "package": "astro-ssr-adapters",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "solidjs",
+      "type": "skill",
+      "topic": "solidjs",
+      "description": "For SolidJS developers: fine-grained signals and stores, resources with Suspense and SolidStart routing, plus the React habits that break in Solid.",
+      "items": [
+        {
+          "package": "solid-signals-stores",
+          "required": true
+        },
+        {
+          "package": "solid-resources-suspense",
+          "required": true
+        },
+        {
+          "package": "solidstart-routing",
+          "required": true
+        },
+        {
+          "package": "solid-for-react-devs",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "htmx",
+      "type": "skill",
+      "topic": "htmx",
+      "description": "For server-rendered app developers adopting htmx: attribute patterns, partial templates on the server, Alpine.js for local interactivity and progressive enhancement.",
+      "items": [
+        {
+          "package": "htmx-attribute-patterns",
+          "required": true
+        },
+        {
+          "package": "htmx-server-partials",
+          "required": true
+        },
+        {
+          "package": "htmx-progressive-enhancement",
+          "required": true
+        },
+        {
+          "package": "alpinejs-interactivity",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "tailwind-css",
+      "type": "skill",
+      "topic": "tailwind css",
+      "description": "For developers styling with Tailwind: v4 configuration and theme tokens, responsive and dark-mode patterns, and when to extract components so class lists stay maintainable.",
+      "items": [
+        {
+          "package": "tailwind-v4-config",
+          "required": true
+        },
+        {
+          "package": "tailwind-utility-patterns",
+          "required": true
+        },
+        {
+          "package": "tailwind-responsive-dark-mode",
+          "required": true
+        },
+        {
+          "package": "tailwind-component-extraction",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "modern-css",
+      "type": "skill",
+      "topic": "modern css layout",
+      "description": "For frontend developers writing plain CSS: grid and flexbox layouts, container queries, custom properties, cascade layers and :has() used where they fit.",
+      "items": [
+        {
+          "package": "css-grid-flexbox-layouts",
+          "required": true
+        },
+        {
+          "package": "css-container-queries",
+          "required": true
+        },
+        {
+          "package": "css-custom-properties-theming",
+          "required": true
+        },
+        {
+          "package": "css-cascade-layers",
+          "required": true
+        },
+        {
+          "package": "css-modern-selectors",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "web-accessibility",
+      "type": "skill",
+      "topic": "web accessibility",
+      "description": "For frontend teams meeting WCAG 2.2 AA: semantic HTML, correct ARIA, keyboard and focus management, contrast and screen-reader testing applied to real pages.",
+      "items": [
+        {
+          "package": "a11y-semantic-html",
+          "required": true
+        },
+        {
+          "package": "a11y-aria-usage",
+          "required": true
+        },
+        {
+          "package": "a11y-keyboard-focus",
+          "required": true
+        },
+        {
+          "package": "a11y-forms-errors",
+          "required": true
+        },
+        {
+          "package": "a11y-color-contrast",
+          "required": false
+        },
+        {
+          "package": "a11y-screen-reader-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "accessible-components",
+      "type": "skill",
+      "topic": "accessible ui components",
+      "description": "For component library authors: accessible dialogs, comboboxes, menus, tabs, data tables and live regions built to the ARIA Authoring Practices patterns.",
+      "items": [
+        {
+          "package": "a11y-dialog-pattern",
+          "required": true
+        },
+        {
+          "package": "a11y-combobox-pattern",
+          "required": true
+        },
+        {
+          "package": "a11y-menu-tabs-pattern",
+          "required": true
+        },
+        {
+          "package": "a11y-data-tables",
+          "required": true
+        },
+        {
+          "package": "a11y-live-regions",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "core-web-vitals",
+      "type": "skill",
+      "topic": "core web vitals",
+      "description": "For engineers improving page speed: diagnose and fix LCP, INP and CLS using field data and lab traces, with image, font and resource-hint techniques.",
+      "items": [
+        {
+          "package": "cwv-lcp-optimization",
+          "required": true
+        },
+        {
+          "package": "cwv-inp-optimization",
+          "required": true
+        },
+        {
+          "package": "cwv-cls-prevention",
+          "required": true
+        },
+        {
+          "package": "web-image-optimization",
+          "required": true
+        },
+        {
+          "package": "web-font-loading",
+          "required": false
+        },
+        {
+          "package": "web-rum-measurement",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "js-bundle-optimization",
+      "type": "skill",
+      "topic": "javascript bundle optimisation",
+      "description": "For frontend engineers shipping less JavaScript: code splitting, tree shaking, bundle budgets in CI, Vite build tuning and third-party script control.",
+      "items": [
+        {
+          "package": "bundle-code-splitting",
+          "required": true
+        },
+        {
+          "package": "bundle-tree-shaking",
+          "required": true
+        },
+        {
+          "package": "bundle-size-budgets",
+          "required": true
+        },
+        {
+          "package": "vite-build-tuning",
+          "required": false
+        },
+        {
+          "package": "third-party-script-control",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "client-state-management",
+      "type": "skill",
+      "topic": "client and server state in react",
+      "description": "For React apps juggling data: TanStack Query for server state, Zustand or Redux Toolkit for client state, optimistic updates and cache invalidation done safely.",
+      "items": [
+        {
+          "package": "tanstack-query-patterns",
+          "required": true
+        },
+        {
+          "package": "zustand-store-patterns",
+          "required": true
+        },
+        {
+          "package": "redux-toolkit-rtk-query",
+          "required": true
+        },
+        {
+          "package": "optimistic-ui-updates",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "pwa",
+      "type": "skill",
+      "topic": "progressive web apps",
+      "description": "For teams turning web apps into PWAs: service worker caching strategies, manifest and install UX, offline-first data and web push that works across browsers.",
+      "items": [
+        {
+          "package": "pwa-service-worker-caching",
+          "required": true
+        },
+        {
+          "package": "pwa-web-app-manifest",
+          "required": true
+        },
+        {
+          "package": "pwa-offline-first-data",
+          "required": true
+        },
+        {
+          "package": "pwa-web-push",
+          "required": false
+        },
+        {
+          "package": "workbox-recipes",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "web-i18n",
+      "type": "skill",
+      "topic": "web internationalisation",
+      "description": "For product teams localising web apps: ICU message format, i18next or FormatJS setup, locale routing, Intl formatting, RTL layouts and string extraction workflows.",
+      "items": [
+        {
+          "package": "i18n-icu-messages",
+          "required": true
+        },
+        {
+          "package": "i18n-frontend-libraries",
+          "required": true
+        },
+        {
+          "package": "i18n-locale-routing",
+          "required": true
+        },
+        {
+          "package": "i18n-intl-formatting",
+          "required": true
+        },
+        {
+          "package": "i18n-rtl-layout",
+          "required": false
+        },
+        {
+          "package": "i18n-string-extraction",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "django",
+      "type": "skill",
+      "topic": "django",
+      "description": "For Django developers: models and ORM, views and URLs, forms and admin, query optimisation and settings management following current Django practice.",
+      "items": [
+        {
+          "package": "django-models-orm",
+          "required": true
+        },
+        {
+          "package": "django-views-urls",
+          "required": true
+        },
+        {
+          "package": "django-query-optimization",
+          "required": true
+        },
+        {
+          "package": "django-forms-admin",
+          "required": true
+        },
+        {
+          "package": "django-settings-config",
+          "required": false
+        },
+        {
+          "package": "django-async-tasks",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "django-rest-framework",
+      "type": "skill",
+      "topic": "django rest framework",
+      "description": "For teams building APIs with Django REST Framework: serializers, viewsets and routers, permissions and auth, pagination and filtering, and API tests.",
+      "items": [
+        {
+          "package": "drf-serializers",
+          "required": true
+        },
+        {
+          "package": "drf-viewsets-routers",
+          "required": true
+        },
+        {
+          "package": "drf-permissions-auth",
+          "required": true
+        },
+        {
+          "package": "drf-pagination-filtering",
+          "required": false
+        },
+        {
+          "package": "drf-api-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "fastapi",
+      "type": "skill",
+      "topic": "fastapi",
+      "description": "For Python API developers on FastAPI: routing and dependencies, Pydantic v2 models, async SQLAlchemy, auth, background tasks and testing with httpx.",
+      "items": [
+        {
+          "package": "fastapi-routing-dependencies",
+          "required": true
+        },
+        {
+          "package": "fastapi-pydantic-models",
+          "required": true
+        },
+        {
+          "package": "fastapi-async-sqlalchemy",
+          "required": true
+        },
+        {
+          "package": "fastapi-auth-security",
+          "required": true
+        },
+        {
+          "package": "fastapi-testing",
+          "required": false
+        },
+        {
+          "package": "fastapi-background-work",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "flask",
+      "type": "skill",
+      "topic": "flask",
+      "description": "For Flask developers: application factory and blueprints, Flask-SQLAlchemy, extension configuration and testing for maintainable Flask services.",
+      "items": [
+        {
+          "package": "flask-app-factory-blueprints",
+          "required": true
+        },
+        {
+          "package": "flask-sqlalchemy-patterns",
+          "required": true
+        },
+        {
+          "package": "flask-extensions-config",
+          "required": true
+        },
+        {
+          "package": "flask-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "rails",
+      "type": "skill",
+      "topic": "ruby on rails",
+      "description": "For Rails developers: Active Record, controllers and routing, Hotwire (Turbo and Stimulus), Active Job, safe migrations and RSpec tests in the Rails way.",
+      "items": [
+        {
+          "package": "rails-active-record",
+          "required": true
+        },
+        {
+          "package": "rails-controllers-routing",
+          "required": true
+        },
+        {
+          "package": "rails-hotwire",
+          "required": true
+        },
+        {
+          "package": "rails-safe-migrations",
+          "required": true
+        },
+        {
+          "package": "rails-active-job",
+          "required": false
+        },
+        {
+          "package": "rails-rspec-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "laravel",
+      "type": "skill",
+      "topic": "laravel",
+      "description": "For Laravel developers: Eloquent, routing and controllers, form requests, queues, Livewire and Pest tests following Laravel conventions.",
+      "items": [
+        {
+          "package": "laravel-eloquent",
+          "required": true
+        },
+        {
+          "package": "laravel-routing-controllers",
+          "required": true
+        },
+        {
+          "package": "laravel-validation-requests",
+          "required": true
+        },
+        {
+          "package": "laravel-queues-jobs",
+          "required": true
+        },
+        {
+          "package": "laravel-livewire",
+          "required": false
+        },
+        {
+          "package": "laravel-pest-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "spring-boot",
+      "type": "skill",
+      "topic": "spring boot",
+      "description": "For Java/Kotlin backend teams on Spring Boot 3: REST controllers, Spring Data JPA, Spring Security, configuration profiles, Actuator and slice tests.",
+      "items": [
+        {
+          "package": "spring-boot-rest-controllers",
+          "required": true
+        },
+        {
+          "package": "spring-data-jpa",
+          "required": true
+        },
+        {
+          "package": "spring-security-config",
+          "required": true
+        },
+        {
+          "package": "spring-boot-testing",
+          "required": true
+        },
+        {
+          "package": "spring-boot-configuration",
+          "required": false
+        },
+        {
+          "package": "spring-boot-actuator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "express",
+      "type": "skill",
+      "topic": "express.js",
+      "description": "For Node.js developers maintaining Express APIs: middleware ordering, async error handling, request validation, project structure and security headers.",
+      "items": [
+        {
+          "package": "express-middleware-patterns",
+          "required": true
+        },
+        {
+          "package": "express-error-handling",
+          "required": true
+        },
+        {
+          "package": "express-request-validation",
+          "required": true
+        },
+        {
+          "package": "express-app-structure",
+          "required": false
+        },
+        {
+          "package": "express-security-middleware",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "nestjs",
+      "type": "skill",
+      "topic": "nestjs",
+      "description": "For TypeScript backend teams on NestJS: modules and providers, guards and interceptors, DTO validation, ORM integration and testing.",
+      "items": [
+        {
+          "package": "nestjs-modules-providers",
+          "required": true
+        },
+        {
+          "package": "nestjs-guards-interceptors",
+          "required": true
+        },
+        {
+          "package": "nestjs-dto-validation",
+          "required": true
+        },
+        {
+          "package": "nestjs-orm-integration",
+          "required": false
+        },
+        {
+          "package": "nestjs-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aspnet-core",
+      "type": "skill",
+      "topic": "asp.net core",
+      "description": "For .NET web developers: minimal APIs and controllers, EF Core, middleware and DI, ASP.NET Core Identity and integration tests with WebApplicationFactory.",
+      "items": [
+        {
+          "package": "aspnet-minimal-apis",
+          "required": true
+        },
+        {
+          "package": "aspnet-ef-core",
+          "required": true
+        },
+        {
+          "package": "aspnet-middleware-di",
+          "required": true
+        },
+        {
+          "package": "aspnet-identity-auth",
+          "required": false
+        },
+        {
+          "package": "aspnet-integration-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "phoenix",
+      "type": "skill",
+      "topic": "phoenix framework",
+      "description": "For Elixir web developers: Phoenix contexts and Ecto, LiveView components and events, Channels and PubSub, and ConnCase/LiveView tests.",
+      "items": [
+        {
+          "package": "phoenix-contexts-ecto",
+          "required": true
+        },
+        {
+          "package": "phoenix-liveview",
+          "required": true
+        },
+        {
+          "package": "phoenix-channels-pubsub",
+          "required": true
+        },
+        {
+          "package": "phoenix-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "rest-api-design",
+      "type": "skill",
+      "topic": "rest api design",
+      "description": "For backend engineers designing HTTP APIs: resource modelling, pagination and filtering, RFC 9457 error responses, versioning, idempotency keys and HTTP caching.",
+      "items": [
+        {
+          "package": "rest-resource-modeling",
+          "required": true
+        },
+        {
+          "package": "rest-pagination-filtering",
+          "required": true
+        },
+        {
+          "package": "rest-error-responses",
+          "required": true
+        },
+        {
+          "package": "rest-api-versioning",
+          "required": true
+        },
+        {
+          "package": "rest-idempotency-keys",
+          "required": false
+        },
+        {
+          "package": "http-caching-headers",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "openapi",
+      "type": "skill",
+      "topic": "openapi",
+      "description": "For API teams going spec-first: write OpenAPI 3.1 documents, lint them with Spectral, generate typed clients and servers, and catch breaking changes in CI.",
+      "items": [
+        {
+          "package": "openapi-spec-authoring",
+          "required": true
+        },
+        {
+          "package": "openapi-linting",
+          "required": true
+        },
+        {
+          "package": "openapi-codegen",
+          "required": true
+        },
+        {
+          "package": "openapi-breaking-changes",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "graphql",
+      "type": "skill",
+      "topic": "graphql",
+      "description": "For teams running GraphQL: schema design, resolvers with DataLoader, connection pagination, error modelling, query cost limits, federation and typed client codegen.",
+      "items": [
+        {
+          "package": "graphql-schema-design",
+          "required": true
+        },
+        {
+          "package": "graphql-dataloader-resolvers",
+          "required": true
+        },
+        {
+          "package": "graphql-pagination-connections",
+          "required": true
+        },
+        {
+          "package": "graphql-errors-modeling",
+          "required": true
+        },
+        {
+          "package": "graphql-query-limits",
+          "required": false
+        },
+        {
+          "package": "graphql-federation",
+          "required": false
+        },
+        {
+          "package": "graphql-client-codegen",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "grpc",
+      "type": "skill",
+      "topic": "grpc and protobuf",
+      "description": "For service teams using gRPC: protobuf API design, Buf linting and breaking checks, status codes and error details, streaming, and gRPC-Gateway transcoding.",
+      "items": [
+        {
+          "package": "grpc-protobuf-design",
+          "required": true
+        },
+        {
+          "package": "grpc-buf-tooling",
+          "required": true
+        },
+        {
+          "package": "grpc-errors-deadlines",
+          "required": true
+        },
+        {
+          "package": "grpc-streaming",
+          "required": false
+        },
+        {
+          "package": "grpc-gateway-transcoding",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "webhooks",
+      "type": "skill",
+      "topic": "webhooks",
+      "description": "For developers sending or receiving webhooks: signature verification, retries and idempotent handlers, delivery design and local testing.",
+      "items": [
+        {
+          "package": "webhook-signature-verification",
+          "required": true
+        },
+        {
+          "package": "webhook-idempotent-handlers",
+          "required": true
+        },
+        {
+          "package": "webhook-delivery-design",
+          "required": true
+        },
+        {
+          "package": "webhook-local-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "realtime-web",
+      "type": "skill",
+      "topic": "realtime web",
+      "description": "For developers adding live features: WebSockets, Server-Sent Events, presence and sync, and scaling realtime connections behind load balancers.",
+      "items": [
+        {
+          "package": "websocket-server-patterns",
+          "required": true
+        },
+        {
+          "package": "server-sent-events",
+          "required": true
+        },
+        {
+          "package": "realtime-presence-sync",
+          "required": true
+        },
+        {
+          "package": "realtime-scaling-pubsub",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "typesafe-apis",
+      "type": "skill",
+      "topic": "end-to-end type-safe apis",
+      "description": "For TypeScript full-stack teams: tRPC routers, Zod contracts, ts-rest and shared types so frontend and backend never drift.",
+      "items": [
+        {
+          "package": "trpc-routers-procedures",
+          "required": true
+        },
+        {
+          "package": "zod-api-contracts",
+          "required": true
+        },
+        {
+          "package": "ts-rest-contracts",
+          "required": true
+        },
+        {
+          "package": "typesafe-api-boundaries",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "file-uploads",
+      "type": "skill",
+      "topic": "file uploads",
+      "description": "For web developers handling user files: direct-to-storage presigned uploads, resumable uploads, validation and scanning hooks, and image processing pipelines.",
+      "items": [
+        {
+          "package": "presigned-url-uploads",
+          "required": true
+        },
+        {
+          "package": "resumable-uploads",
+          "required": true
+        },
+        {
+          "package": "upload-validation",
+          "required": true
+        },
+        {
+          "package": "image-processing-pipeline",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "oauth-oidc",
+      "type": "skill",
+      "topic": "oauth and openid connect",
+      "description": "For developers implementing login and API access: authorization code with PKCE, ID token validation, refresh token rotation, client credentials and provider integration.",
+      "items": [
+        {
+          "package": "oauth-auth-code-pkce",
+          "required": true
+        },
+        {
+          "package": "oidc-token-validation",
+          "required": true
+        },
+        {
+          "package": "oauth-refresh-rotation",
+          "required": true
+        },
+        {
+          "package": "oauth-client-credentials",
+          "required": false
+        },
+        {
+          "package": "oidc-bff-pattern",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "web-auth-implementation",
+      "type": "skill",
+      "topic": "web authentication implementation",
+      "description": "For app developers building their own login: secure session cookies, CSRF protection, password hashing, TOTP MFA, passkeys and account recovery flows.",
+      "items": [
+        {
+          "package": "web-session-cookies",
+          "required": true
+        },
+        {
+          "package": "web-csrf-protection",
+          "required": true
+        },
+        {
+          "package": "web-password-storage",
+          "required": true
+        },
+        {
+          "package": "web-passkeys-webauthn",
+          "required": true
+        },
+        {
+          "package": "web-totp-mfa",
+          "required": false
+        },
+        {
+          "package": "web-account-recovery",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "auth-providers",
+      "type": "skill",
+      "topic": "hosted auth providers",
+      "description": "For teams integrating a hosted identity provider: Auth.js, Clerk, Auth0 and Keycloak wired into web apps with sessions, roles and protected routes.",
+      "items": [
+        {
+          "package": "authjs-setup",
+          "required": true
+        },
+        {
+          "package": "clerk-integration",
+          "required": true
+        },
+        {
+          "package": "auth0-integration",
+          "required": true
+        },
+        {
+          "package": "keycloak-oidc-setup",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "app-authorization",
+      "type": "skill",
+      "topic": "application authorization",
+      "description": "For backend developers enforcing who can do what: role-based and attribute-based checks, multi-tenant isolation, policy engines and API key scopes.",
+      "items": [
+        {
+          "package": "rbac-implementation",
+          "required": true
+        },
+        {
+          "package": "abac-policy-engines",
+          "required": true
+        },
+        {
+          "package": "multi-tenant-isolation",
+          "required": true
+        },
+        {
+          "package": "api-key-scopes",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "stripe-payments",
+      "type": "skill",
+      "topic": "stripe payments",
+      "description": "For developers integrating Stripe: Checkout and Payment Element, webhooks, Billing subscriptions, customer portal and test clocks with idempotent server code.",
+      "items": [
+        {
+          "package": "stripe-checkout-elements",
+          "required": true
+        },
+        {
+          "package": "stripe-webhook-handling",
+          "required": true
+        },
+        {
+          "package": "stripe-billing-subscriptions",
+          "required": true
+        },
+        {
+          "package": "stripe-testing",
+          "required": false
+        },
+        {
+          "package": "stripe-connect-payouts",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "payments-integration",
+      "type": "skill",
+      "topic": "payments integration",
+      "description": "For engineers building checkout flows with any provider: idempotent payment state machines, SCA/3DS, refunds and disputes, wallets and multi-currency handling.",
+      "items": [
+        {
+          "package": "payment-state-machine",
+          "required": true
+        },
+        {
+          "package": "payment-sca-3ds",
+          "required": true
+        },
+        {
+          "package": "payment-refunds-disputes",
+          "required": true
+        },
+        {
+          "package": "wallet-payments-web",
+          "required": false
+        },
+        {
+          "package": "multi-currency-pricing",
+          "required": false
+        },
+        {
+          "package": "paypal-checkout",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "mobile-in-app-purchases",
+      "type": "skill",
+      "topic": "mobile in-app purchases",
+      "description": "For mobile developers selling digital goods: StoreKit 2, Google Play Billing, RevenueCat and server-side receipt and notification handling.",
+      "items": [
+        {
+          "package": "storekit2-iap",
+          "required": true
+        },
+        {
+          "package": "play-billing-library",
+          "required": true
+        },
+        {
+          "package": "iap-server-verification",
+          "required": true
+        },
+        {
+          "package": "revenuecat-integration",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "swiftui",
+      "type": "skill",
+      "topic": "swiftui",
+      "description": "For iOS developers building with SwiftUI: view composition, Observation-based state, NavigationStack, list performance, animations and previews.",
+      "items": [
+        {
+          "package": "swiftui-view-composition",
+          "required": true
+        },
+        {
+          "package": "swiftui-state-observation",
+          "required": true
+        },
+        {
+          "package": "swiftui-navigation",
+          "required": true
+        },
+        {
+          "package": "swiftui-lists-performance",
+          "required": true
+        },
+        {
+          "package": "swiftui-animations",
+          "required": false
+        },
+        {
+          "package": "swiftui-previews-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ios-app-architecture",
+      "type": "skill",
+      "topic": "ios app architecture",
+      "description": "For iOS teams beyond the UI layer: SwiftData persistence, async networking, Swift concurrency with MainActor, push notifications, background work and Keychain storage.",
+      "items": [
+        {
+          "package": "ios-swiftdata",
+          "required": true
+        },
+        {
+          "package": "ios-networking",
+          "required": true
+        },
+        {
+          "package": "ios-swift-concurrency-ui",
+          "required": true
+        },
+        {
+          "package": "ios-push-notifications",
+          "required": true
+        },
+        {
+          "package": "ios-background-tasks",
+          "required": false
+        },
+        {
+          "package": "ios-keychain-storage",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ios-shipping",
+      "type": "skill",
+      "topic": "shipping ios apps",
+      "description": "For iOS developers releasing apps: code signing and provisioning, XCTest UI tests, fastlane lanes, TestFlight distribution and App Store review guidelines.",
+      "items": [
+        {
+          "package": "ios-code-signing",
+          "required": true
+        },
+        {
+          "package": "ios-testflight-release",
+          "required": true
+        },
+        {
+          "package": "ios-app-review-guidelines",
+          "required": true
+        },
+        {
+          "package": "fastlane-ios",
+          "required": false
+        },
+        {
+          "package": "ios-xcuitest",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "jetpack-compose",
+      "type": "skill",
+      "topic": "jetpack compose",
+      "description": "For Android developers building UI with Jetpack Compose: state hoisting, layouts and modifiers, navigation, recomposition performance, Material 3 theming and UI tests.",
+      "items": [
+        {
+          "package": "compose-state-hoisting",
+          "required": true
+        },
+        {
+          "package": "compose-layouts-modifiers",
+          "required": true
+        },
+        {
+          "package": "compose-navigation",
+          "required": true
+        },
+        {
+          "package": "compose-recomposition-performance",
+          "required": true
+        },
+        {
+          "package": "compose-material3-theming",
+          "required": false
+        },
+        {
+          "package": "compose-ui-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "android-architecture",
+      "type": "skill",
+      "topic": "android app architecture",
+      "description": "For Android teams structuring apps: ViewModel with Flow, Room, Hilt DI, WorkManager, Retrofit networking and runtime permissions following Google's architecture guidance.",
+      "items": [
+        {
+          "package": "android-viewmodel-flow",
+          "required": true
+        },
+        {
+          "package": "android-room-database",
+          "required": true
+        },
+        {
+          "package": "android-hilt-di",
+          "required": true
+        },
+        {
+          "package": "android-retrofit-networking",
+          "required": true
+        },
+        {
+          "package": "android-workmanager",
+          "required": false
+        },
+        {
+          "package": "android-runtime-permissions",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "android-release",
+      "type": "skill",
+      "topic": "shipping android apps",
+      "description": "For Android developers releasing apps: Gradle build configuration, app bundle signing, R8 shrinking, Play Console tracks and fastlane automation.",
+      "items": [
+        {
+          "package": "android-gradle-config",
+          "required": true
+        },
+        {
+          "package": "android-app-signing",
+          "required": true
+        },
+        {
+          "package": "android-r8-shrinking",
+          "required": true
+        },
+        {
+          "package": "play-console-release",
+          "required": true
+        },
+        {
+          "package": "fastlane-android",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "react-native",
+      "type": "skill",
+      "topic": "react native",
+      "description": "For React Native developers: Expo Router navigation, list performance, styling and layout, native modules, offline storage and the new architecture.",
+      "items": [
+        {
+          "package": "rn-expo-router",
+          "required": true
+        },
+        {
+          "package": "rn-list-performance",
+          "required": true
+        },
+        {
+          "package": "rn-styling-layout",
+          "required": true
+        },
+        {
+          "package": "rn-native-modules",
+          "required": true
+        },
+        {
+          "package": "rn-offline-storage",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "expo-delivery",
+      "type": "skill",
+      "topic": "expo build and delivery",
+      "description": "For React Native teams on Expo: EAS Build profiles, EAS Update OTA releases, push notifications, deep linking and upgrading Expo SDK versions.",
+      "items": [
+        {
+          "package": "expo-eas-build",
+          "required": true
+        },
+        {
+          "package": "expo-eas-update",
+          "required": true
+        },
+        {
+          "package": "expo-notifications",
+          "required": true
+        },
+        {
+          "package": "expo-sdk-upgrades",
+          "required": false
+        },
+        {
+          "package": "mobile-deep-links",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "flutter",
+      "type": "skill",
+      "topic": "flutter",
+      "description": "For Flutter developers: widget composition, Riverpod or BLoC state, go_router navigation, platform channels, flavors and widget tests.",
+      "items": [
+        {
+          "package": "flutter-widget-composition",
+          "required": true
+        },
+        {
+          "package": "flutter-riverpod-state",
+          "required": true
+        },
+        {
+          "package": "flutter-bloc-pattern",
+          "required": true
+        },
+        {
+          "package": "flutter-go-router",
+          "required": true
+        },
+        {
+          "package": "flutter-platform-channels",
+          "required": false
+        },
+        {
+          "package": "flutter-flavors-release",
+          "required": false
+        },
+        {
+          "package": "flutter-widget-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "mobile-app-essentials",
+      "type": "skill",
+      "topic": "cross-platform mobile essentials",
+      "description": "For mobile developers on any stack: deep links, offline sync, push strategy, crash reporting and mobile accessibility that every production app needs.",
+      "items": [
+        {
+          "package": "mobile-deep-links",
+          "required": true
+        },
+        {
+          "package": "mobile-offline-sync",
+          "required": true
+        },
+        {
+          "package": "mobile-push-strategy",
+          "required": true
+        },
+        {
+          "package": "mobile-crash-reporting",
+          "required": true
+        },
+        {
+          "package": "mobile-accessibility",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "browser-extensions",
+      "type": "skill",
+      "topic": "browser extensions",
+      "description": "For developers building browser extensions: Manifest V3 service workers, content scripts, messaging and storage, minimal permissions, cross-browser ports and store publishing.",
+      "items": [
+        {
+          "package": "chrome-mv3-extensions",
+          "required": true
+        },
+        {
+          "package": "extension-content-scripts",
+          "required": true
+        },
+        {
+          "package": "extension-messaging-storage",
+          "required": true
+        },
+        {
+          "package": "extension-permissions",
+          "required": true
+        },
+        {
+          "package": "extension-cross-browser",
+          "required": false
+        },
+        {
+          "package": "extension-store-publishing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "electron",
+      "type": "skill",
+      "topic": "electron",
+      "description": "For desktop app developers on Electron: main/renderer process model and IPC, security hardening, packaging and code signing, auto-update and performance.",
+      "items": [
+        {
+          "package": "electron-process-ipc",
+          "required": true
+        },
+        {
+          "package": "electron-security-hardening",
+          "required": true
+        },
+        {
+          "package": "electron-packaging-signing",
+          "required": true
+        },
+        {
+          "package": "electron-auto-update",
+          "required": false
+        },
+        {
+          "package": "electron-performance",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "tauri",
+      "type": "skill",
+      "topic": "tauri",
+      "description": "For desktop and mobile developers using Tauri 2: Rust commands and IPC, capabilities and permissions, plugins, bundling and the updater.",
+      "items": [
+        {
+          "package": "tauri-commands-ipc",
+          "required": true
+        },
+        {
+          "package": "tauri-capabilities",
+          "required": true
+        },
+        {
+          "package": "tauri-plugins",
+          "required": true
+        },
+        {
+          "package": "tauri-bundling-updater",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "react-review-agents",
+      "type": "agent",
+      "topic": "react code review and quality",
+      "description": "For React teams: agents that review React diffs, hunt render-performance problems, write Testing Library tests and refactor tangled components.",
+      "items": [
+        {
+          "package": "react-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "react-perf-investigator",
+          "required": true
+        },
+        {
+          "package": "react-test-writer",
+          "required": true
+        },
+        {
+          "package": "react-component-refactorer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "nextjs-agents",
+      "type": "agent",
+      "topic": "next.js development",
+      "description": "For Next.js teams: agents that migrate Pages Router code to the App Router, audit caching behaviour, scaffold routes and fix build errors.",
+      "items": [
+        {
+          "package": "nextjs-app-router-migrator",
+          "required": true
+        },
+        {
+          "package": "nextjs-caching-auditor",
+          "required": true
+        },
+        {
+          "package": "nextjs-route-builder",
+          "required": true
+        },
+        {
+          "package": "nextjs-build-fixer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "vue-agents",
+      "type": "agent",
+      "topic": "vue and nuxt development",
+      "description": "For Vue and Nuxt teams: agents that review Vue code, migrate Vue 2 / Options API code to Vue 3 Composition API, build Nuxt pages and write component tests.",
+      "items": [
+        {
+          "package": "vue-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "vue3-migrator",
+          "required": true
+        },
+        {
+          "package": "nuxt-page-builder",
+          "required": true
+        },
+        {
+          "package": "vue-test-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "angular-agents",
+      "type": "agent",
+      "topic": "angular development",
+      "description": "For Angular teams: agents that review Angular code, run version upgrades, migrate RxJS-heavy components to signals and write component tests.",
+      "items": [
+        {
+          "package": "angular-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "angular-upgrade-migrator",
+          "required": true
+        },
+        {
+          "package": "angular-signals-migrator",
+          "required": true
+        },
+        {
+          "package": "angular-test-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "svelte-astro-agents",
+      "type": "agent",
+      "topic": "svelte and astro development",
+      "description": "For teams on Svelte or Astro: agents that migrate Svelte 4 to Svelte 5 runes, build SvelteKit routes and convert pages to Astro islands.",
+      "items": [
+        {
+          "package": "svelte5-migrator",
+          "required": true
+        },
+        {
+          "package": "sveltekit-route-builder",
+          "required": true
+        },
+        {
+          "package": "astro-site-builder",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "css-agents",
+      "type": "agent",
+      "topic": "css maintenance",
+      "description": "For frontend teams with messy stylesheets: agents that debug layout bugs, migrate CSS to Tailwind, prune dead CSS and check responsive behaviour.",
+      "items": [
+        {
+          "package": "css-layout-debugger",
+          "required": true
+        },
+        {
+          "package": "css-to-tailwind-migrator",
+          "required": true
+        },
+        {
+          "package": "css-dead-code-pruner",
+          "required": true
+        },
+        {
+          "package": "responsive-layout-checker",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "a11y-agents",
+      "type": "agent",
+      "topic": "accessibility auditing and remediation",
+      "description": "For teams meeting WCAG 2.2 AA: agents that audit pages, review component diffs for accessibility, implement fixes and write audit reports.",
+      "items": [
+        {
+          "package": "web-a11y-auditor",
+          "required": true
+        },
+        {
+          "package": "a11y-component-reviewer",
+          "required": true
+        },
+        {
+          "package": "a11y-remediator",
+          "required": true
+        },
+        {
+          "package": "a11y-report-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "web-perf-agents",
+      "type": "agent",
+      "topic": "web performance",
+      "description": "For teams chasing faster pages: agents that audit Core Web Vitals, analyse bundles, optimise images and fonts, and investigate slow interactions.",
+      "items": [
+        {
+          "package": "web-vitals-auditor",
+          "required": true
+        },
+        {
+          "package": "bundle-size-analyzer",
+          "required": true
+        },
+        {
+          "package": "web-asset-optimizer",
+          "required": true
+        },
+        {
+          "package": "interaction-latency-investigator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "legacy-frontend-agents",
+      "type": "agent",
+      "topic": "frontend modernisation",
+      "description": "For teams with ageing frontends: agents that migrate jQuery, AngularJS, class components and Create React App/webpack setups to modern equivalents.",
+      "items": [
+        {
+          "package": "jquery-to-modern-migrator",
+          "required": true
+        },
+        {
+          "package": "angularjs-migrator",
+          "required": true
+        },
+        {
+          "package": "react-class-to-hooks-migrator",
+          "required": true
+        },
+        {
+          "package": "cra-to-vite-migrator",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "ui-component-agents",
+      "type": "agent",
+      "topic": "ui component building",
+      "description": "For frontend teams building component libraries: agents that implement components from specs, write Storybook stories and build accessible forms.",
+      "items": [
+        {
+          "package": "ui-component-builder",
+          "required": true
+        },
+        {
+          "package": "storybook-story-writer",
+          "required": true
+        },
+        {
+          "package": "form-builder-agent",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "django-agents",
+      "type": "agent",
+      "topic": "django development",
+      "description": "For Django teams: agents that review Django code, check migrations for safety, optimise ORM queries, upgrade Django versions and build DRF endpoints.",
+      "items": [
+        {
+          "package": "django-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "django-query-optimizer",
+          "required": true
+        },
+        {
+          "package": "django-upgrade-migrator",
+          "required": true
+        },
+        {
+          "package": "drf-endpoint-builder",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "python-api-agents",
+      "type": "agent",
+      "topic": "fastapi and flask development",
+      "description": "For Python API teams on FastAPI or Flask: agents that build endpoints, review API code, write tests and migrate Flask services to FastAPI.",
+      "items": [
+        {
+          "package": "fastapi-endpoint-builder",
+          "required": true
+        },
+        {
+          "package": "python-api-reviewer",
+          "required": true
+        },
+        {
+          "package": "flask-to-fastapi-migrator",
+          "required": true
+        },
+        {
+          "package": "python-api-test-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "rails-agents",
+      "type": "agent",
+      "topic": "rails development",
+      "description": "For Rails teams: agents that review Rails code, upgrade Rails versions, hunt N+1 queries and write RSpec specs.",
+      "items": [
+        {
+          "package": "rails-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "rails-upgrade-migrator",
+          "required": true
+        },
+        {
+          "package": "rails-n-plus-one-hunter",
+          "required": true
+        },
+        {
+          "package": "rails-spec-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "laravel-agents",
+      "type": "agent",
+      "topic": "laravel development",
+      "description": "For Laravel teams: agents that review Laravel code, upgrade framework versions, scaffold features end to end and write Pest tests.",
+      "items": [
+        {
+          "package": "laravel-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "laravel-upgrade-migrator",
+          "required": true
+        },
+        {
+          "package": "laravel-feature-scaffolder",
+          "required": true
+        },
+        {
+          "package": "laravel-test-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "spring-boot-agents",
+      "type": "agent",
+      "topic": "spring boot development",
+      "description": "For Spring Boot teams: agents that review services, migrate Spring Boot 2 to 3 (javax to jakarta), build REST endpoints and write slice tests.",
+      "items": [
+        {
+          "package": "spring-boot-reviewer",
+          "required": true
+        },
+        {
+          "package": "spring-boot3-migrator",
+          "required": true
+        },
+        {
+          "package": "spring-endpoint-builder",
+          "required": true
+        },
+        {
+          "package": "spring-test-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "node-backend-agents",
+      "type": "agent",
+      "topic": "node.js backend development",
+      "description": "For Node.js API teams on Express or NestJS: agents that review API code, audit error handling, build NestJS features and write API tests.",
+      "items": [
+        {
+          "package": "node-api-reviewer",
+          "required": true
+        },
+        {
+          "package": "nestjs-feature-builder",
+          "required": true
+        },
+        {
+          "package": "express-hardening-agent",
+          "required": true
+        },
+        {
+          "package": "node-api-test-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dotnet-web-agents",
+      "type": "agent",
+      "topic": "asp.net core development",
+      "description": "For .NET web teams: agents that review ASP.NET Core code, build minimal API endpoints, review EF Core queries and plan .NET Framework to .NET migrations.",
+      "items": [
+        {
+          "package": "aspnet-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "aspnet-endpoint-builder",
+          "required": true
+        },
+        {
+          "package": "ef-core-query-reviewer",
+          "required": true
+        },
+        {
+          "package": "aspnet-framework-migrator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "api-design-agents",
+      "type": "agent",
+      "topic": "api design review",
+      "description": "For API teams: agents that review REST and gRPC designs, write OpenAPI specs from code, catch breaking changes and audit error consistency.",
+      "items": [
+        {
+          "package": "api-design-reviewer",
+          "required": true
+        },
+        {
+          "package": "openapi-spec-writer",
+          "required": true
+        },
+        {
+          "package": "api-breaking-change-checker",
+          "required": true
+        },
+        {
+          "package": "api-error-consistency-auditor",
+          "required": false
+        },
+        {
+          "package": "proto-api-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "graphql-agents",
+      "type": "agent",
+      "topic": "graphql development",
+      "description": "For GraphQL teams: agents that review schema changes, build resolvers, audit query performance and plan REST-to-GraphQL adoption.",
+      "items": [
+        {
+          "package": "graphql-schema-reviewer",
+          "required": true
+        },
+        {
+          "package": "graphql-resolver-builder",
+          "required": true
+        },
+        {
+          "package": "graphql-performance-auditor",
+          "required": true
+        },
+        {
+          "package": "rest-to-graphql-planner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "webhook-agents",
+      "type": "agent",
+      "topic": "webhook integration",
+      "description": "For developers wiring integrations: agents that build webhook handlers, review webhook security and test consumers against recorded events.",
+      "items": [
+        {
+          "package": "webhook-handler-builder",
+          "required": true
+        },
+        {
+          "package": "webhook-security-reviewer",
+          "required": true
+        },
+        {
+          "package": "webhook-consumer-tester",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "auth-agents",
+      "type": "agent",
+      "topic": "authentication implementation",
+      "description": "For teams implementing sign-in: agents that implement OAuth/OIDC flows, review auth code, audit session handling, add passkeys and plan identity provider migrations.",
+      "items": [
+        {
+          "package": "oauth-flow-implementer",
+          "required": true
+        },
+        {
+          "package": "auth-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "session-auth-auditor",
+          "required": true
+        },
+        {
+          "package": "passkey-implementer",
+          "required": false
+        },
+        {
+          "package": "idp-migration-planner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "payments-agents",
+      "type": "agent",
+      "topic": "payments integration",
+      "description": "For teams taking payments: agents that build Stripe integrations, review payment flows for money-losing bugs, audit webhook fulfilment and implement subscriptions.",
+      "items": [
+        {
+          "package": "stripe-integration-builder",
+          "required": true
+        },
+        {
+          "package": "payment-flow-reviewer",
+          "required": true
+        },
+        {
+          "package": "subscription-billing-implementer",
+          "required": true
+        },
+        {
+          "package": "payment-test-scenario-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ios-agents",
+      "type": "agent",
+      "topic": "ios development",
+      "description": "For iOS teams: agents that review SwiftUI code, migrate UIKit screens to SwiftUI, build features, write tests and check submissions against App Store guidelines.",
+      "items": [
+        {
+          "package": "swiftui-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "uikit-to-swiftui-migrator",
+          "required": true
+        },
+        {
+          "package": "ios-feature-builder",
+          "required": true
+        },
+        {
+          "package": "ios-test-writer",
+          "required": false
+        },
+        {
+          "package": "app-store-submission-checker",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "android-agents",
+      "type": "agent",
+      "topic": "android development",
+      "description": "For Android teams: agents that review Compose and Kotlin code, migrate Views to Compose, build features, write tests and run pre-release checks for Play.",
+      "items": [
+        {
+          "package": "compose-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "views-to-compose-migrator",
+          "required": true
+        },
+        {
+          "package": "android-feature-builder",
+          "required": true
+        },
+        {
+          "package": "android-test-writer",
+          "required": false
+        },
+        {
+          "package": "play-release-checker",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "react-native-agents",
+      "type": "agent",
+      "topic": "react native development",
+      "description": "For React Native teams: agents that review RN code, upgrade React Native and Expo versions, investigate performance and build native modules.",
+      "items": [
+        {
+          "package": "rn-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "rn-upgrade-assistant",
+          "required": true
+        },
+        {
+          "package": "rn-perf-investigator",
+          "required": true
+        },
+        {
+          "package": "rn-native-module-builder",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "flutter-agents",
+      "type": "agent",
+      "topic": "flutter development",
+      "description": "For Flutter teams: agents that review Flutter code, build widgets and screens from specs, write widget tests and upgrade Flutter and package versions.",
+      "items": [
+        {
+          "package": "flutter-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "flutter-screen-builder",
+          "required": true
+        },
+        {
+          "package": "flutter-test-writer",
+          "required": true
+        },
+        {
+          "package": "flutter-upgrade-migrator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "browser-extension-agents",
+      "type": "agent",
+      "topic": "browser extension development",
+      "description": "For extension developers: agents that migrate MV2 extensions to MV3, review extension security and permissions, build features and prepare store submissions.",
+      "items": [
+        {
+          "package": "extension-mv3-migrator",
+          "required": true
+        },
+        {
+          "package": "extension-security-reviewer",
+          "required": true
+        },
+        {
+          "package": "extension-feature-builder",
+          "required": true
+        },
+        {
+          "package": "extension-store-submission-checker",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "desktop-app-agents",
+      "type": "agent",
+      "topic": "desktop app development",
+      "description": "For Electron and Tauri teams: agents that audit Electron security, migrate Electron apps to Tauri, set up packaging and auto-update, and build Tauri commands.",
+      "items": [
+        {
+          "package": "electron-security-auditor",
+          "required": true
+        },
+        {
+          "package": "electron-to-tauri-migrator",
+          "required": true
+        },
+        {
+          "package": "desktop-release-builder",
+          "required": true
+        },
+        {
+          "package": "tauri-command-builder",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "pwa-i18n-agents",
+      "type": "agent",
+      "topic": "pwa and localisation readiness",
+      "description": "For teams taking a web app to more users and devices: agents that audit PWA readiness, build service workers, extract strings for i18n and QA localised builds including RTL.",
+      "items": [
+        {
+          "package": "pwa-readiness-auditor",
+          "required": true
+        },
+        {
+          "package": "service-worker-builder",
+          "required": true
+        },
+        {
+          "package": "i18n-string-extractor",
+          "required": true
+        },
+        {
+          "package": "i18n-locale-qa",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "mobile-quality-agents",
+      "type": "agent",
+      "topic": "mobile app quality",
+      "description": "For mobile teams on any stack: agents that triage crash reports, audit app accessibility, verify deep links and review offline sync logic before release.",
+      "items": [
+        {
+          "package": "mobile-crash-triager",
+          "required": true
+        },
+        {
+          "package": "mobile-a11y-auditor",
+          "required": true
+        },
+        {
+          "package": "mobile-deep-link-verifier",
+          "required": true
+        },
+        {
+          "package": "mobile-sync-reviewer",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

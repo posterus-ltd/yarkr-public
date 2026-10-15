@@ -1,0 +1,4798 @@
+{
+  "domain": "mcp",
+  "packages": [
+    {
+      "name": "21st-magic",
+      "kind": "toolset",
+      "purpose": "21st.dev's official MCP server (successor to Magic MCP): generate and discover UI components. Remote HTTP with x-api-key header; legacy @21st-dev/magic npm package is a stdio proxy to it.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://21st.dev/api/mcp",
+        "docs": "https://github.com/21st-dev/magic-mcp",
+        "env": [
+          "API_KEY_21ST"
+        ]
+      }
+    },
+    {
+      "name": "ableton",
+      "kind": "toolset",
+      "purpose": "Community AbletonMCP (3k stars): control Ableton Live via a Remote Script - create tracks/clips, edit MIDI, load instruments and effects, control playback.",
+      "official": false,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "ableton-mcp",
+        "docs": "https://github.com/ahujasid/ableton-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "adyen",
+      "kind": "toolset",
+      "purpose": "Adyen's official MCP server: Checkout sessions and payment links, cancels/refunds, merchant accounts, terminals, webhooks, payment methods and legal entities via Adyen APIs.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@adyen/mcp",
+        "args": [
+          "--env=TEST"
+        ],
+        "docs": "https://github.com/Adyen/adyen-mcp",
+        "env": [
+          "ADYEN_API_KEY"
+        ]
+      }
+    },
+    {
+      "name": "ahrefs",
+      "kind": "toolset",
+      "purpose": "Ahrefs' official remote MCP server (OAuth, Lite plan+): SEO data from the Ahrefs API (backlinks, keywords, site explorer, rank tracking).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.ahrefs.com/mcp/mcp",
+        "docs": "https://docs.ahrefs.com/mcp/docs/introduction",
+        "env": []
+      }
+    },
+    {
+      "name": "aikido",
+      "kind": "toolset",
+      "purpose": "Aikido's official MCP server: run Aikido code (SAST) and secrets scans and return findings to the agent.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@aikidosec/mcp",
+        "args": [
+          "-y",
+          "@aikidosec/mcp"
+        ],
+        "docs": "https://www.npmjs.com/package/@aikidosec/mcp",
+        "env": [
+          "AIKIDO_API_KEY (optional; browser sign-in otherwise)"
+        ]
+      }
+    },
+    {
+      "name": "airbnb",
+      "kind": "toolset",
+      "purpose": "Community OpenBnB Airbnb server: search Airbnb listings and fetch listing details (no API key; add --ignore-robots-txt to bypass robots.txt).",
+      "official": false,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@openbnb/mcp-server-airbnb",
+        "docs": "https://github.com/openbnb-org/mcp-server-airbnb",
+        "env": []
+      }
+    },
+    {
+      "name": "airbyte",
+      "kind": "toolset",
+      "purpose": "Airbyte's official remote MCP server for Airbyte Cloud (OAuth): build, monitor and troubleshoot data pipelines, sources, destinations and connections.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.airbyte.com/mcp",
+        "docs": "https://docs.airbyte.com/platform/airbyte-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "airtable",
+      "kind": "toolset",
+      "purpose": "Airtable's official remote MCP server: query bases, CRUD records, manage schema, comments and automations.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.airtable.com/mcp",
+        "docs": "https://airtable.com/developers/agents/mcp/getting-started",
+        "env": [],
+        "note": "OAuth or personal access token."
+      }
+    },
+    {
+      "name": "aiven",
+      "kind": "toolset",
+      "purpose": "Aiven's official hosted MCP server (OAuth): manage Aiven projects and services (PostgreSQL, Kafka, etc.), query and inspect metrics/logs. Supports ?read_only=true and services_scope params.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.aiven.live/mcp",
+        "docs": "https://github.com/Aiven-Open/mcp-aiven",
+        "env": []
+      }
+    },
+    {
+      "name": "alpha-vantage",
+      "kind": "toolset",
+      "purpose": "Alpha Vantage's official remote MCP server: stock, forex, crypto, commodity, economic indicator and technical-indicator market data (API key as ?apikey= query param, or OAuth).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.alphavantage.co/mcp",
+        "docs": "https://github.com/alphavantage/alpha_vantage_mcp",
+        "env": [
+          "ALPHAVANTAGE_API_KEY"
+        ]
+      }
+    },
+    {
+      "name": "amplitude",
+      "kind": "toolset",
+      "purpose": "Amplitude's official remote MCP server (OAuth): query charts, events, dashboards, experiments and analytics (EU: https://mcp.eu.amplitude.com/mcp).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.amplitude.com/mcp",
+        "docs": "https://amplitude.com/docs/amplitude-ai/amplitude-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "angular-cli",
+      "kind": "toolset",
+      "purpose": "Angular CLI's built-in official MCP server: best practices, docs search, examples, workspace info and modernization/migration tools (--read-only, --local-only flags).",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@angular/cli",
+        "args": [
+          "mcp"
+        ],
+        "docs": "https://angular.dev/ai/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "apache-doris",
+      "kind": "toolset",
+      "purpose": "Apache Doris' official MCP server: SQL execution, metadata exploration, query profiling and data governance/lineage tools for Doris.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "doris-mcp-server",
+        "args": [
+          "--transport",
+          "stdio"
+        ],
+        "docs": "https://github.com/apache/doris-mcp-server",
+        "env": [
+          "DORIS_HOST",
+          "DORIS_PORT",
+          "DORIS_USER",
+          "DORIS_PASSWORD",
+          "DORIS_DATABASE"
+        ]
+      }
+    },
+    {
+      "name": "apify",
+      "kind": "toolset",
+      "purpose": "Apify's official remote MCP server: search and run Apify Actors (scrapers/crawlers) and read datasets and docs.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.apify.com",
+        "docs": "https://docs.apify.com/platform/integrations/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "apollo",
+      "kind": "toolset",
+      "purpose": "Apollo.io's official remote MCP server (OAuth): search people/companies/job postings, enrich records, manage contacts, sequences and email accounts.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.apollo.io/mcp",
+        "docs": "https://docs.apollo.io/docs/apollo-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "apollo-mcp-server",
+      "kind": "toolset",
+      "purpose": "Apollo's official MCP server: expose GraphQL operations from your graph as MCP tools, plus schema introspection (config file mounted at /config.yaml; serves HTTP on port 8000; also available as binary or `rover dev --mcp`).",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "docker",
+        "package": "ghcr.io/apollographql/apollo-mcp-server",
+        "args": [
+          "/config.yaml"
+        ],
+        "docs": "https://www.apollographql.com/docs/apollo-mcp-server/run",
+        "env": []
+      }
+    },
+    {
+      "name": "argocd",
+      "kind": "toolset",
+      "purpose": "Argo CD MCP server from argoproj-labs (originated at Akuity): list and manage Argo CD applications, sync, view resource trees, events and logs.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "argocd-mcp",
+        "args": [
+          "stdio"
+        ],
+        "docs": "https://github.com/argoproj-labs/mcp-for-argocd",
+        "env": [
+          "ARGOCD_BASE_URL",
+          "ARGOCD_API_TOKEN"
+        ]
+      }
+    },
+    {
+      "name": "arize-phoenix",
+      "kind": "toolset",
+      "purpose": "Arize's official Phoenix MCP server: explore projects, traces, spans, sessions, prompts, datasets and experiments in a Phoenix instance.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@arizeai/phoenix-mcp",
+        "args": [
+          "--baseUrl",
+          "<phoenix-url>",
+          "--apiKey",
+          "<api-key>"
+        ],
+        "docs": "https://www.npmjs.com/package/@arizeai/phoenix-mcp",
+        "env": [],
+        "note": "Phoenix >=19 also exposes a built-in MCP endpoint at <phoenix-url>/mcp (OAuth or Bearer API key)."
+      }
+    },
+    {
+      "name": "arxiv",
+      "kind": "toolset",
+      "purpose": "Community arxiv-mcp-server (3k+ stars): search arXiv, download papers locally and read/analyse their content.",
+      "official": false,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "arxiv-mcp-server",
+        "docs": "https://github.com/blazickjp/arxiv-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "asana",
+      "kind": "toolset",
+      "purpose": "Asana's official remote MCP server (v2): search and manage tasks, projects, goals and portfolios.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.asana.com/v2/mcp",
+        "docs": "https://developers.asana.com/docs/using-asanas-mcp-server",
+        "env": [],
+        "note": "OAuth; v1 beta https://mcp.asana.com/sse shut down 2026-05-11."
+      }
+    },
+    {
+      "name": "astra-db",
+      "kind": "toolset",
+      "purpose": "DataStax's official Astra DB MCP server: list/create/delete collections and find, insert, update and delete documents in Astra DB.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@datastax/astra-db-mcp",
+        "docs": "https://github.com/datastax/astra-db-mcp",
+        "env": [
+          "ASTRA_DB_APPLICATION_TOKEN",
+          "ASTRA_DB_API_ENDPOINT"
+        ]
+      }
+    },
+    {
+      "name": "atlan",
+      "kind": "toolset",
+      "purpose": "Atlan's official hosted MCP server (OAuth): asset search, lineage, governance, data quality and data mesh tools over the Atlan catalog. Local server is deprecated.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.atlan.com/mcp",
+        "docs": "https://github.com/atlanhq/agent-toolkit",
+        "env": []
+      }
+    },
+    {
+      "name": "atlassian",
+      "kind": "toolset",
+      "purpose": "Atlassian Rovo official remote MCP server: search, summarize, create and update Jira work items, Confluence pages, JSM, Compass/Goals and Loom content.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.atlassian.com/v2/mcp",
+        "docs": "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/",
+        "env": []
+      }
+    },
+    {
+      "name": "attio",
+      "kind": "toolset",
+      "purpose": "Attio's official remote MCP server (OAuth): 40+ tools for records, lists, notes, tasks, meetings, emails, comments and reporting in Attio CRM.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.attio.com/mcp",
+        "docs": "https://docs.attio.com/mcp/overview",
+        "env": []
+      }
+    },
+    {
+      "name": "auth0",
+      "kind": "toolset",
+      "purpose": "Auth0's official MCP server (beta): manage applications, APIs, actions, logs, forms and resource servers in an Auth0 tenant.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@auth0/auth0-mcp-server",
+        "args": [
+          "-y",
+          "@auth0/auth0-mcp-server",
+          "run"
+        ],
+        "docs": "https://github.com/auth0/auth0-mcp-server",
+        "env": [],
+        "note": "Authenticate first with npx @auth0/auth0-mcp-server init (device flow); credentials stored in OS keychain."
+      }
+    },
+    {
+      "name": "avalara-avatax",
+      "kind": "toolset",
+      "purpose": "Avalara's official AvaTax remote MCP server: calculate tax, transactions, nexus, companies, tax codes and address validation. Other Avalara servers under mcp.avalara.com (elr, returns, etc.).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.avalara.com/avatax",
+        "docs": "https://developer.avalara.com/mcp-servers/avatax/",
+        "env": []
+      }
+    },
+    {
+      "name": "aws-api",
+      "kind": "toolset",
+      "purpose": "AWS Labs' AWS API server: run validated AWS CLI commands across all AWS services and get command suggestions, with security controls.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "awslabs.aws-api-mcp-server",
+        "docs": "https://github.com/awslabs/mcp/tree/main/src/aws-api-mcp-server",
+        "env": [
+          "AWS_PROFILE",
+          "AWS_REGION"
+        ]
+      }
+    },
+    {
+      "name": "aws-aurora-postgres",
+      "kind": "toolset",
+      "purpose": "AWS Labs' Aurora/RDS PostgreSQL server: connect to Aurora PostgreSQL or RDS Postgres (RDS Data API or PG wire) and run SQL; writes need --allow_write_query. Credentials come from Secrets Manager.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "awslabs.postgres-mcp-server",
+        "docs": "https://github.com/awslabs/mcp/tree/main/src/postgres-mcp-server",
+        "env": [
+          "AWS_PROFILE",
+          "AWS_REGION"
+        ]
+      }
+    },
+    {
+      "name": "aws-bedrock-kb-retrieval",
+      "kind": "toolset",
+      "purpose": "AWS Labs' Bedrock Knowledge Bases server: discover knowledge bases and run retrieval queries with citations and optional reranking.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "awslabs.bedrock-kb-retrieval-mcp-server",
+        "docs": "https://github.com/awslabs/mcp/tree/main/src/bedrock-kb-retrieval-mcp-server",
+        "env": [
+          "AWS_PROFILE",
+          "AWS_REGION"
+        ]
+      }
+    },
+    {
+      "name": "aws-billing-cost-management",
+      "kind": "toolset",
+      "purpose": "AWS Labs' Billing and Cost Management server (replaces the retired Cost Explorer server): Cost Explorer queries, budgets, forecasts, Compute Optimizer and savings recommendations.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "awslabs.billing-cost-management-mcp-server",
+        "docs": "https://github.com/awslabs/mcp/tree/main/src/billing-cost-management-mcp-server",
+        "env": [
+          "AWS_PROFILE",
+          "AWS_REGION"
+        ]
+      }
+    },
+    {
+      "name": "aws-cloudwatch",
+      "kind": "toolset",
+      "purpose": "AWS Labs' CloudWatch server: analyse metrics, alarms and CloudWatch Logs (Logs Insights queries) for operational troubleshooting.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "awslabs.cloudwatch-mcp-server",
+        "docs": "https://github.com/awslabs/mcp/tree/main/src/cloudwatch-mcp-server",
+        "env": [
+          "AWS_PROFILE"
+        ]
+      }
+    },
+    {
+      "name": "aws-documentation",
+      "kind": "toolset",
+      "purpose": "AWS Labs' documentation server: search AWS documentation, read doc pages as markdown and get related-content recommendations.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "awslabs.aws-documentation-mcp-server",
+        "docs": "https://github.com/awslabs/mcp/tree/main/src/aws-documentation-mcp-server",
+        "env": [
+          "AWS_DOCUMENTATION_PARTITION (optional: aws or aws-cn)"
+        ]
+      }
+    },
+    {
+      "name": "aws-dynamodb",
+      "kind": "toolset",
+      "purpose": "AWS Labs' DynamoDB server: expert DynamoDB data-modelling guidance and design assistance.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "awslabs.dynamodb-mcp-server",
+        "docs": "https://github.com/awslabs/mcp/tree/main/src/dynamodb-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "aws-ecs",
+      "kind": "toolset",
+      "purpose": "AWS Labs' ECS server: containerise apps and deploy them to ECS Fargate, inspect services and troubleshoot deployments. Docs launch it as `uvx --from awslabs-ecs-mcp-server ecs-mcp-server` (the console script is ecs-mcp-server).",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "awslabs.ecs-mcp-server",
+        "args": [
+          "--from",
+          "awslabs-ecs-mcp-server",
+          "ecs-mcp-server"
+        ],
+        "docs": "https://github.com/awslabs/mcp/tree/main/src/ecs-mcp-server",
+        "env": [
+          "AWS_PROFILE",
+          "AWS_REGION",
+          "ALLOW_WRITE (optional)",
+          "ALLOW_SENSITIVE_DATA (optional)"
+        ]
+      }
+    },
+    {
+      "name": "aws-eks",
+      "kind": "toolset",
+      "purpose": "AWS Labs' EKS server: create and manage EKS clusters, apply Kubernetes manifests, inspect resources, pods and logs, and troubleshoot. Write and sensitive-data access are opt-in flags.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "awslabs.eks-mcp-server",
+        "args": [
+          "--allow-write",
+          "--allow-sensitive-data-access"
+        ],
+        "docs": "https://github.com/awslabs/mcp/tree/main/src/eks-mcp-server",
+        "env": [
+          "AWS_PROFILE",
+          "AWS_REGION",
+          "EKS_AUTH_MODE (optional: kubeconfig)",
+          "KUBECONFIG (optional)"
+        ]
+      }
+    },
+    {
+      "name": "aws-iac",
+      "kind": "toolset",
+      "purpose": "AWS Labs' Infrastructure-as-Code server (successor to the CDK, CloudFormation and Cloud Control API servers): CloudFormation docs, CDK best practices and construct examples, template validation, security checks and deployment troubleshooting.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "awslabs.aws-iac-mcp-server",
+        "docs": "https://github.com/awslabs/mcp/tree/main/src/aws-iac-mcp-server",
+        "env": [
+          "AWS_PROFILE"
+        ]
+      }
+    },
+    {
+      "name": "aws-iam",
+      "kind": "toolset",
+      "purpose": "AWS Labs' IAM server: manage IAM users, roles, groups, policies and access keys, and simulate policies, with security best practices.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "awslabs.iam-mcp-server",
+        "docs": "https://github.com/awslabs/mcp/tree/main/src/iam-mcp-server",
+        "env": [
+          "AWS_PROFILE",
+          "AWS_REGION"
+        ]
+      }
+    },
+    {
+      "name": "aws-knowledge",
+      "kind": "toolset",
+      "purpose": "AWS's official remote, fully managed MCP server: search and read the latest AWS docs, API references, What's New posts, blogs, architecture references and Well-Architected guidance (no AWS account needed).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://knowledge-mcp.global.api.aws",
+        "docs": "https://github.com/awslabs/mcp/tree/main/src/aws-knowledge-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "aws-mcp",
+      "kind": "toolset",
+      "purpose": "AWS's official managed AWS MCP Server (in preview), reached through the SigV4 proxy mcp-proxy-for-aws: authenticated AWS API calls plus AWS docs and pre-built Agent SOPs.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "mcp-proxy-for-aws",
+        "args": [
+          "https://aws-mcp.us-east-1.api.aws/mcp"
+        ],
+        "docs": "https://docs.aws.amazon.com/aws-mcp/latest/userguide/what-is-mcp-server.html",
+        "env": [
+          "AWS_PROFILE",
+          "AWS_REGION"
+        ]
+      }
+    },
+    {
+      "name": "aws-pricing",
+      "kind": "toolset",
+      "purpose": "AWS Labs' Pricing server: query the AWS Price List API, compare service pricing and generate cost estimates and reports.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "awslabs.aws-pricing-mcp-server",
+        "docs": "https://github.com/awslabs/mcp/tree/main/src/aws-pricing-mcp-server",
+        "env": [
+          "AWS_PROFILE",
+          "AWS_REGION"
+        ]
+      }
+    },
+    {
+      "name": "aws-serverless",
+      "kind": "toolset",
+      "purpose": "AWS Labs' Serverless server: full serverless app lifecycle with SAM CLI (init, build, deploy), Lambda web-app deployment, logs/metrics and serverless guidance. Write access is an opt-in flag.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "awslabs.aws-serverless-mcp-server",
+        "args": [
+          "--allow-write",
+          "--allow-sensitive-data-access"
+        ],
+        "docs": "https://github.com/awslabs/mcp/tree/main/src/aws-serverless-mcp-server",
+        "env": [
+          "AWS_PROFILE",
+          "AWS_REGION"
+        ]
+      }
+    },
+    {
+      "name": "axiom",
+      "kind": "toolset",
+      "purpose": "Axiom's official remote MCP server: run APL queries over datasets, list datasets, and inspect monitors and dashboards.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.axiom.co/mcp",
+        "docs": "https://axiom.co/docs/console/intelligence/mcp-server",
+        "env": [],
+        "note": "OAuth recommended; alternatively headers Authorization: Bearer <PAT> and x-axiom-org-id."
+      }
+    },
+    {
+      "name": "azure",
+      "kind": "toolset",
+      "purpose": "Microsoft's official Azure MCP Server: tools across Azure services (Storage, Cosmos DB, Key Vault, Monitor, AKS, App Configuration, resource groups and more) using your Azure credentials.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@azure/mcp",
+        "args": [
+          "server",
+          "start"
+        ],
+        "docs": "https://github.com/microsoft/mcp/tree/main/servers/Azure.Mcp.Server",
+        "env": []
+      }
+    },
+    {
+      "name": "azure-devops",
+      "kind": "toolset",
+      "purpose": "Microsoft's official Azure DevOps MCP server (remote, per organization): work items, repos, pull requests, pipelines, wikis and test plans. Local alternative: npx -y @azure-devops/mcp <org>.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.dev.azure.com/{organization}",
+        "docs": "https://github.com/microsoft/azure-devops-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "benchling",
+      "kind": "toolset",
+      "purpose": "Benchling's official tenant-hosted MCP server: query notebook entries, registry entities and R&D data in your Benchling tenant (must be enabled by Benchling for the tenant; replace <tenant>).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://<tenant>.mcp.benchling.com/mcp",
+        "docs": "https://help.benchling.com/hc/en-us/articles/40342713479437-Benchling-MCP",
+        "env": []
+      }
+    },
+    {
+      "name": "better-stack",
+      "kind": "toolset",
+      "purpose": "Better Stack's official remote MCP server: query logs and metrics, manage uptime monitors, on-call and incidents.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.betterstack.com",
+        "docs": "https://betterstack.com/docs/getting-started/integrations/mcp/",
+        "env": [],
+        "note": "OAuth recommended; API token as Authorization: Bearer also supported."
+      }
+    },
+    {
+      "name": "bill-docs",
+      "kind": "toolset",
+      "purpose": "BILL's official API documentation MCP server: search and pull BILL API docs into agent context (docs only, no account actions).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://developer.bill.com/mcp",
+        "docs": "https://developer.bill.com/docs/ai-agent-resources",
+        "env": []
+      }
+    },
+    {
+      "name": "biomcp",
+      "kind": "toolset",
+      "purpose": "Community (GenomOncology, open source) BioMCP: one server over ~70 biomedical sources (PubMed/PubTator, ClinicalTrials.gov, variants, genes, drugs, pathways) via `biomcp serve`.",
+      "official": false,
+      "source": {
+        "type": "stdio",
+        "runner": "docker",
+        "package": "ghcr.io/genomoncology/biomcp",
+        "args": [
+          "serve"
+        ],
+        "docs": "https://github.com/genomoncology/biomcp",
+        "env": []
+      }
+    },
+    {
+      "name": "biorender",
+      "kind": "toolset",
+      "purpose": "BioRender's official connector (sign-in): search BioRender's scientific template/icon library and your files, and generate custom scientific figures.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.services.biorender.com/mcp",
+        "docs": "https://claude.com/marketplace/connectors/biorender",
+        "env": []
+      }
+    },
+    {
+      "name": "biorxiv",
+      "kind": "toolset",
+      "purpose": "Anthropic-built bioRxiv/medRxiv connector: search and retrieve life-science and health preprints.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://hcls.mcp.claude.com/biorxiv/mcp",
+        "docs": "https://claude.com/marketplace/connectors/biorxiv",
+        "env": []
+      }
+    },
+    {
+      "name": "blender",
+      "kind": "toolset",
+      "purpose": "Community MCP for Blender (30k+ stars; formerly blender-mcp): control Blender via its add-on - create/modify objects, materials, scenes, run Python, fetch Poly Haven/Sketchfab assets. Requires installing the Blender add-on (uvx mcp-for-blender install-addon).",
+      "official": false,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "mcp-for-blender",
+        "docs": "https://github.com/ahujasid/mcp-for-blender",
+        "env": []
+      }
+    },
+    {
+      "name": "booking-com",
+      "kind": "toolset",
+      "purpose": "Booking.com's official connector: search hotels, apartments and other accommodation with filters (no auth for search; bookings completed on Booking.com).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://demandapi-mcp.booking.com/v1/mcp/8132308",
+        "docs": "https://developers.booking.com/mcp/booking-connector/about",
+        "env": []
+      }
+    },
+    {
+      "name": "box",
+      "kind": "toolset",
+      "purpose": "Box's official remote MCP server: search, read and act on Box files and folders, including Box AI.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.box.com",
+        "docs": "https://developer.box.com/guides/box-mcp/remote",
+        "env": [],
+        "note": "OAuth via a Box app (client ID/secret from Box Admin Console)."
+      }
+    },
+    {
+      "name": "braintrust",
+      "kind": "toolset",
+      "purpose": "Braintrust's official remote MCP server: SQL over logs/experiments, summarize experiments, manage prompts, evaluators, datasets and run evals.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.braintrust.dev/mcp",
+        "docs": "https://www.braintrust.dev/docs/reference/mcp",
+        "env": [],
+        "note": "OAuth (DCR) or Authorization: Bearer <BRAINTRUST_API_KEY>. EU: https://api-eu.braintrust.dev/mcp."
+      }
+    },
+    {
+      "name": "brave-search",
+      "kind": "toolset",
+      "purpose": "Brave's official Brave Search MCP server: web, local, image, video and news search plus AI summarization.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@brave/brave-search-mcp-server",
+        "args": [
+          "--transport",
+          "stdio"
+        ],
+        "docs": "https://github.com/brave/brave-search-mcp-server",
+        "env": [
+          "BRAVE_API_KEY"
+        ]
+      }
+    },
+    {
+      "name": "brevo",
+      "kind": "toolset",
+      "purpose": "Brevo's official remote MCP server: contacts, lists, email/SMS campaigns, transactional email, templates and other Brevo modules. Auth: Authorization: Bearer <MCP token>.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.brevo.com/v1/brevo/mcp",
+        "docs": "https://developers.brevo.com/docs/mcp-protocol",
+        "env": [
+          "BREVO_MCP_TOKEN"
+        ]
+      }
+    },
+    {
+      "name": "brex",
+      "kind": "toolset",
+      "purpose": "Brex's official remote MCP server (OAuth or API key): 50+ tools for expenses, cards, spend limits, banking transactions, bills/vendors, travel and accounting.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.brex.com/mcp",
+        "docs": "https://developer.brex.com/docs/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "bright-data",
+      "kind": "toolset",
+      "purpose": "Bright Data's official remote MCP server: web search, scraping to markdown, structured extractors and browser automation with anti-bot handling.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.brightdata.com/mcp?token=<API_TOKEN>",
+        "docs": "https://docs.brightdata.com/products/mcp-server/remote/quickstart",
+        "env": [
+          "BRIGHTDATA_API_TOKEN"
+        ],
+        "note": "SSE variant: https://mcp.brightdata.com/sse?token=... Local: npx -y @brightdata/mcp with API_TOKEN."
+      }
+    },
+    {
+      "name": "browserbase",
+      "kind": "toolset",
+      "purpose": "Browserbase's official hosted MCP server: cloud browser sessions driven by Stagehand (navigate, act, extract, observe, screenshot). Self-host via npx @browserbasehq/mcp.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.browserbase.com/mcp",
+        "docs": "https://github.com/browserbase/mcp-server-browserbase",
+        "env": []
+      }
+    },
+    {
+      "name": "browserstack",
+      "kind": "toolset",
+      "purpose": "BrowserStack's official remote MCP server: run manual/automated tests on real devices and browsers, accessibility scans, test management and failure debugging (local: npx @browserstack/mcp-server with BROWSERSTACK_USERNAME/ACCESS_KEY).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.browserstack.com/mcp",
+        "docs": "https://github.com/browserstack/mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "bugsnag",
+      "kind": "toolset",
+      "purpose": "SmartBear's official hosted BugSnag MCP server: list and inspect errors, events, releases and stability data in BugSnag.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://bugsnag.mcp.smartbear.com/mcp",
+        "docs": "https://github.com/SmartBear/smartbear-mcp",
+        "env": [],
+        "note": "OAuth browser flow. Local alternative: npx -y @smartbear/mcp@latest with BUGSNAG_AUTH_TOKEN (and optional BUGSNAG_PROJECT_API_KEY)."
+      }
+    },
+    {
+      "name": "buildkite",
+      "kind": "toolset",
+      "purpose": "Buildkite's official remote MCP server: pipelines, builds, jobs, logs, test analytics and annotations (read-only variant at /mcp/readonly; local image buildkite/mcp-server).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.buildkite.com/mcp",
+        "docs": "https://buildkite.com/docs/apis/mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "cal-com",
+      "kind": "toolset",
+      "purpose": "Cal.com's official hosted MCP server: manage bookings, event types, schedules and availability via Cal.com API v2.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.cal.com/mcp",
+        "docs": "https://cal.com/docs/mcp-server",
+        "env": [],
+        "note": "OAuth 2.1. Toolsets filter: ?toolsets=bookings,availability."
+      }
+    },
+    {
+      "name": "calendly",
+      "kind": "toolset",
+      "purpose": "Calendly's official remote MCP server: availability, event types, bookings and single-use scheduling links.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.calendly.com",
+        "docs": "https://developer.calendly.com/calendly-mcp-server",
+        "env": [],
+        "note": "OAuth 2.1 with DCR only."
+      }
+    },
+    {
+      "name": "canva",
+      "kind": "toolset",
+      "purpose": "Canva's official remote MCP server (OAuth): create/edit/search designs, assets, brand templates, export and comment.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.canva.com/mcp",
+        "docs": "https://www.canva.dev/docs/apps/mcp/",
+        "env": []
+      }
+    },
+    {
+      "name": "canva-dev",
+      "kind": "toolset",
+      "purpose": "Canva's official Dev MCP server (local): Canva Apps SDK / Connect API docs and development assistance.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@canva/cli@latest",
+        "args": [
+          "mcp"
+        ],
+        "docs": "https://www.canva.dev/docs/apps/dev-mcp-server/",
+        "env": []
+      }
+    },
+    {
+      "name": "carta-crm",
+      "kind": "toolset",
+      "purpose": "Carta's official CRM MCP server (OAuth): read/write contacts, companies, deals, fundraising opportunities, investors, notes, tasks and reports in Carta CRM.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.app.carta.com/mcp",
+        "docs": "https://docs.carta.com/crm/guides/overview/carta-crm-mcp/",
+        "env": []
+      }
+    },
+    {
+      "name": "checkly",
+      "kind": "toolset",
+      "purpose": "Checkly's official remote MCP server: inspect checks and results, test sessions, run Rocky AI root-cause analysis, trigger deployed checks, manage env vars and status page incidents.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.checklyhq.com/mcp",
+        "docs": "https://www.checklyhq.com/docs/ai/mcp-server/setup/",
+        "env": [],
+        "note": "OAuth (approved clients) recommended; user/service API key via headers for other clients."
+      }
+    },
+    {
+      "name": "checkmarx",
+      "kind": "toolset",
+      "purpose": "Checkmarx One's official MCP server: trigger scans, retrieve findings and query security posture in Checkmarx One.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://<region>.ast.checkmarx.net/api/security-mcp/mcp",
+        "docs": "https://docs.checkmarx.com/en/34965-659697-checkmarx-mcp-server.html",
+        "env": [
+          "CHECKMARX_API_KEY (Authorization header; OAuth also supported)"
+        ],
+        "note": "Base URL depends on tenant region (e.g. https://ast.checkmarx.net for US)."
+      }
+    },
+    {
+      "name": "chembl",
+      "kind": "toolset",
+      "purpose": "Anthropic-built ChEMBL connector: query curated bioactive molecules, drug targets and quantitative bioactivity measurements.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://hcls.mcp.claude.com/chembl/mcp",
+        "docs": "https://claude.com/marketplace/connectors/chembl",
+        "env": []
+      }
+    },
+    {
+      "name": "chroma",
+      "kind": "toolset",
+      "purpose": "Chroma's official MCP server: create/list/modify collections, add, query and filter documents in ephemeral, persistent, HTTP or Chroma Cloud clients.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "chroma-mcp",
+        "args": [
+          "--client-type",
+          "cloud"
+        ],
+        "docs": "https://github.com/chroma-core/chroma-mcp",
+        "env": [
+          "CHROMA_TENANT",
+          "CHROMA_DATABASE",
+          "CHROMA_API_KEY"
+        ]
+      }
+    },
+    {
+      "name": "chrome-devtools",
+      "kind": "toolset",
+      "purpose": "Chrome DevTools team's official MCP server: control and inspect a live Chrome (navigation, input, console, network, performance traces, Lighthouse, heap snapshots).",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "chrome-devtools-mcp",
+        "docs": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "chronosphere",
+      "kind": "toolset",
+      "purpose": "Chronosphere's official read-only MCP server: query metrics, logs, traces and change events, and read dashboards and monitors in your tenant.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://<tenant>.chronosphere.io/api/mcp/mcp",
+        "docs": "https://docs-xcor.paloaltonetworks.com/integrate/mcp-server/authenticate.md",
+        "env": [
+          "CHRONOSPHERE_API_TOKEN (Authorization: Bearer header; omit to use OAuth)"
+        ]
+      }
+    },
+    {
+      "name": "circleci",
+      "kind": "toolset",
+      "purpose": "CircleCI's official hosted MCP server: pipeline/build failure logs, flaky test detection, config validation and rerunning workflows (old npm package @circleci/mcp-server-circleci is deprecated).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.circleci.com/v1/mcp",
+        "docs": "https://circleci.com/docs/guides/toolkit/circleci-mcp-overview/",
+        "env": []
+      }
+    },
+    {
+      "name": "claude-platform-docs",
+      "kind": "toolset",
+      "purpose": "Anthropic's official Claude Platform docs MCP server: search and read Claude API, SDK and Managed Agents documentation.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://platform.claude.com/docs/mcp",
+        "docs": "https://platform.claude.com/llms.txt",
+        "env": []
+      }
+    },
+    {
+      "name": "clerk",
+      "kind": "toolset",
+      "purpose": "Clerk's official remote MCP server (beta): Clerk SDK snippets, implementation guides and framework-specific auth patterns.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.clerk.com/mcp",
+        "docs": "https://clerk.com/docs/guides/ai/mcp/clerk-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "clickhouse",
+      "kind": "toolset",
+      "purpose": "ClickHouse's official self-hosted MCP server: list databases and tables and run SQL queries against any ClickHouse (or chDB) instance.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "mcp-clickhouse",
+        "docs": "https://github.com/ClickHouse/mcp-clickhouse",
+        "env": [
+          "CLICKHOUSE_HOST",
+          "CLICKHOUSE_USER",
+          "CLICKHOUSE_PASSWORD"
+        ]
+      }
+    },
+    {
+      "name": "clickhouse-cloud",
+      "kind": "toolset",
+      "purpose": "ClickHouse Cloud's official remote MCP server (OAuth, or Basic auth with Cloud API key/secret): list databases/tables, inspect schemas and run read-only SELECT queries.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.clickhouse.cloud/mcp",
+        "docs": "https://clickhouse.com/docs/products/cloud/features/ai-ml/mcp/remote-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "clickup",
+      "kind": "toolset",
+      "purpose": "ClickUp's official remote MCP server: tasks, docs, time tracking, reporting and workspace search.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.clickup.com/mcp",
+        "docs": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+        "env": [],
+        "note": "OAuth 2.1 + PKCE only; API keys not supported."
+      }
+    },
+    {
+      "name": "clinicaltrials-gov",
+      "kind": "toolset",
+      "purpose": "Anthropic-built ClinicalTrials.gov connector: search the NIH/NLM registry of clinical studies, inspect trial designs, endpoints and status.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://hcls.mcp.claude.com/clinical_trials/mcp",
+        "docs": "https://claude.com/marketplace/connectors/clinical-trials",
+        "env": []
+      }
+    },
+    {
+      "name": "close",
+      "kind": "toolset",
+      "purpose": "Close CRM's official remote MCP server: leads, contacts, opportunities, activities; OAuth (DCR) or Close-API-Key + Close-Scope headers (mcp.read / mcp.write_safe / mcp.write_destructive).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.close.com/mcp",
+        "docs": "https://developer.close.com/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "cloudflare-api",
+      "kind": "toolset",
+      "purpose": "Cloudflare's official remote API server (recommended): broad access to the whole Cloudflare API via code execution. OAuth.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.cloudflare.com/mcp",
+        "docs": "https://github.com/cloudflare/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "cloudflare-browser",
+      "kind": "toolset",
+      "purpose": "Cloudflare's official remote Browser Run (Browser Rendering) server: fetch web pages, convert them to markdown and take screenshots. OAuth.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://browser.mcp.cloudflare.com/mcp",
+        "docs": "https://github.com/cloudflare/mcp-server-cloudflare",
+        "env": []
+      }
+    },
+    {
+      "name": "cloudflare-builds",
+      "kind": "toolset",
+      "purpose": "Cloudflare's official remote Workers Builds server: inspect and manage Workers Builds and their logs. OAuth.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://builds.mcp.cloudflare.com/mcp",
+        "docs": "https://github.com/cloudflare/mcp-server-cloudflare",
+        "env": []
+      }
+    },
+    {
+      "name": "cloudflare-docs",
+      "kind": "toolset",
+      "purpose": "Cloudflare's official remote documentation server: up-to-date reference information on Cloudflare products.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://docs.mcp.cloudflare.com/mcp",
+        "docs": "https://github.com/cloudflare/mcp-server-cloudflare",
+        "env": []
+      }
+    },
+    {
+      "name": "cloudflare-observability",
+      "kind": "toolset",
+      "purpose": "Cloudflare's official remote Workers Observability server: query Workers logs and analytics to debug applications. OAuth.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://observability.mcp.cloudflare.com/mcp",
+        "docs": "https://github.com/cloudflare/mcp-server-cloudflare",
+        "env": []
+      }
+    },
+    {
+      "name": "cloudflare-radar",
+      "kind": "toolset",
+      "purpose": "Cloudflare's official remote Radar server: internet traffic trends, attacks, URL scans and other Cloudflare Radar insights.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://radar.mcp.cloudflare.com/mcp",
+        "docs": "https://github.com/cloudflare/mcp-server-cloudflare",
+        "env": []
+      }
+    },
+    {
+      "name": "cloudflare-workers-bindings",
+      "kind": "toolset",
+      "purpose": "Cloudflare's official remote Workers Bindings server: build Workers apps with KV, R2, D1, Hyperdrive, AI and other storage/compute primitives. OAuth.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://bindings.mcp.cloudflare.com/mcp",
+        "docs": "https://github.com/cloudflare/mcp-server-cloudflare",
+        "env": []
+      }
+    },
+    {
+      "name": "cloudinary",
+      "kind": "toolset",
+      "purpose": "Cloudinary's official Asset Management remote MCP server (OAuth or API key headers): upload, search, transform and manage media assets. Sibling servers: environment-config, structured-metadata, analysis.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://asset-management.mcp.cloudinary.com/mcp",
+        "docs": "https://cloudinary.com/documentation/cloudinary_llm_mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "cockroachdb",
+      "kind": "toolset",
+      "purpose": "CockroachDB Cloud's managed MCP server (OAuth or Bearer service-account key; optional mcp-cluster-id header): explore live schemas, run queries and (opt-in) write data.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://cockroachlabs.cloud/mcp",
+        "docs": "https://docs.cockroachlabs.com/docs/cockroachcloud/connect-to-the-cockroachdb-cloud-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "coda",
+      "kind": "toolset",
+      "purpose": "Coda's official remote MCP server (beta): search and edit docs, pages, tables, rows, formulas and controls.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://coda.io/apis/mcp",
+        "docs": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+        "env": [],
+        "note": "OAuth2 + PKCE, or personal API token for scoped access. Paid plans."
+      }
+    },
+    {
+      "name": "codacy",
+      "kind": "toolset",
+      "purpose": "Codacy's official MCP server: code quality and security issues, coverage, repository analysis and local CLI analysis via Codacy.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@codacy/codacy-mcp",
+        "docs": "https://github.com/codacy/codacy-mcp-server",
+        "env": [
+          "CODACY_ACCOUNT_TOKEN"
+        ]
+      }
+    },
+    {
+      "name": "confluent",
+      "kind": "toolset",
+      "purpose": "Confluent Cloud's managed MCP server (HTTP Basic auth with base64 Global/Cloud API key:secret): manage Kafka topics, Flink SQL, connectors, Schema Registry and environments.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.confluent.cloud/mcp/v1",
+        "docs": "https://docs.confluent.io/cloud/current/ai/ai-tools/managed-mcp-server.html",
+        "env": [
+          "CONFLUENT_API_KEY",
+          "CONFLUENT_API_SECRET"
+        ]
+      }
+    },
+    {
+      "name": "confluent-local",
+      "kind": "toolset",
+      "purpose": "Confluent's official self-hosted MCP server: Kafka topics and messages, Flink SQL statements, connectors, Schema Registry and Tableflow for Confluent Cloud/Platform, configured via YAML.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@confluentinc/mcp-confluent",
+        "args": [
+          "--config",
+          "./config.yaml"
+        ],
+        "docs": "https://github.com/confluentinc/mcp-confluent",
+        "env": []
+      }
+    },
+    {
+      "name": "consensus",
+      "kind": "toolset",
+      "purpose": "Consensus official MCP: search peer-reviewed research and get evidence-backed answers with citations.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.consensus.app/mcp",
+        "docs": "https://docs.consensus.app/docs/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "contentful",
+      "kind": "toolset",
+      "purpose": "Contentful's official MCP server: manage entries, assets, content types, locales and environments via the Content Management API.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@contentful/mcp-server",
+        "docs": "https://github.com/contentful/contentful-mcp-server",
+        "env": [
+          "CONTENTFUL_MANAGEMENT_ACCESS_TOKEN",
+          "SPACE_ID"
+        ]
+      }
+    },
+    {
+      "name": "context7",
+      "kind": "toolset",
+      "purpose": "Context7's official remote MCP server: up-to-date, version-specific library documentation and code examples (optional API key via Authorization: Bearer for higher limits).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.context7.com/mcp",
+        "docs": "https://github.com/upstash/context7",
+        "env": [
+          "CONTEXT7_API_KEY (optional)"
+        ]
+      }
+    },
+    {
+      "name": "convex",
+      "kind": "toolset",
+      "purpose": "Convex's official MCP server (built into the convex CLI): inspect tables and data, run functions, read logs and manage env vars for Convex deployments (prod read-only by default).",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "convex",
+        "args": [
+          "mcp",
+          "start"
+        ],
+        "docs": "https://docs.convex.dev/ai/convex-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "coralogix",
+      "kind": "toolset",
+      "purpose": "Coralogix's official remote MCP server: query and analyze logs, metrics and traces, and search Coralogix docs.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.<coralogix-domain>/mgmt/api/v1/mcp",
+        "docs": "https://coralogix.com/docs/user-guides/mcp-server/setup/",
+        "env": [
+          "CORALOGIX_API_KEY (Authorization: Bearer header; or OAuth)"
+        ],
+        "note": "Example for EU2: https://api.eu2.coralogix.com/mgmt/api/v1/mcp."
+      }
+    },
+    {
+      "name": "couchbase",
+      "kind": "toolset",
+      "purpose": "Couchbase's official MCP server: cluster health, scopes/collections and schema discovery, document KV operations and SQL++ queries (read-only by default).",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "couchbase-mcp-server",
+        "docs": "https://github.com/couchbase/mcp-server-couchbase",
+        "env": [
+          "CB_CONNECTION_STRING",
+          "CB_USERNAME",
+          "CB_PASSWORD"
+        ]
+      }
+    },
+    {
+      "name": "courtlistener",
+      "kind": "toolset",
+      "purpose": "Free Law Project's official CourtListener MCP (OAuth or API token): search U.S. case law, PACER dockets, judges, oral arguments; extract/verify citations; manage alerts.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.courtlistener.com/",
+        "docs": "https://github.com/freelawproject/courtlistener-api-client/blob/main/MCP_README.md",
+        "env": []
+      }
+    },
+    {
+      "name": "crowdin",
+      "kind": "toolset",
+      "purpose": "Crowdin's official hosted MCP (OAuth or Bearer personal access token): manage projects, files, translations, terminology and reports (Enterprise: https://{org}.mcp.crowdin.com/v2/mcp).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.crowdin.com/v2/mcp",
+        "docs": "https://support.crowdin.com/developer/crowdin-mcp-server/",
+        "env": []
+      }
+    },
+    {
+      "name": "crowdstrike",
+      "kind": "toolset",
+      "purpose": "CrowdStrike's official Falcon MCP server: query detections, incidents, hosts, threat intel, vulnerabilities and other Falcon modules.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "falcon-mcp",
+        "docs": "https://github.com/CrowdStrike/falcon-mcp",
+        "env": [
+          "FALCON_CLIENT_ID",
+          "FALCON_CLIENT_SECRET",
+          "FALCON_BASE_URL"
+        ],
+        "note": "Also Docker: quay.io/crowdstrike/falcon-mcp. Use --modules to limit tool sets."
+      }
+    },
+    {
+      "name": "cycode",
+      "kind": "toolset",
+      "purpose": "Cycode's official MCP server (Cycode CLI): run SAST, SCA, secrets and IaC scans with Cycode.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "cycode",
+        "args": [
+          "mcp"
+        ],
+        "docs": "https://github.com/cycodehq/cycode-cli",
+        "env": [
+          "CYCODE_CLIENT_ID",
+          "CYCODE_CLIENT_SECRET",
+          "CYCODE_API_URL (optional)",
+          "CYCODE_APP_URL (optional)"
+        ]
+      }
+    },
+    {
+      "name": "cypress",
+      "kind": "toolset",
+      "purpose": "Cypress Cloud's official remote MCP server (GA): query recorded runs, failures, flaky tests and Test Replay links (OAuth or MCP personal access token).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.cypress.io/mcp",
+        "docs": "https://docs.cypress.io/cloud/integrations/cloud-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "data-commons",
+      "kind": "toolset",
+      "purpose": "Google Data Commons official hosted MCP: query public statistics (census, economic, health, climate) from the Data Commons knowledge graph (local alternative: uvx datacommons-mcp serve stdio with DC_API_KEY).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.datacommons.org/mcp",
+        "docs": "https://docs.datacommons.org/mcp/run_tools.html",
+        "env": [
+          "DC_API_KEY (X-API-Key header)"
+        ]
+      }
+    },
+    {
+      "name": "databricks",
+      "kind": "toolset",
+      "purpose": "Databricks managed MCP server for Databricks SQL (workspace OAuth, scope sql): run SQL against warehouses. Sibling endpoints exist for Genie spaces, AI/Vector Search and UC functions; new system.ai MCPs use /ai-gateway/mcp-services/<mcp-name>.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://<workspace-hostname>/api/2.0/mcp/sql",
+        "docs": "https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "datadog",
+      "kind": "toolset",
+      "purpose": "Datadog's official remote MCP server: query logs, metrics, traces, dashboards, monitors, incidents and more from your Datadog org.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.datadoghq.com/api/unstable/mcp-server/mcp",
+        "docs": "https://docs.datadoghq.com/bits_ai/mcp_server/setup/",
+        "env": [],
+        "note": "US1 endpoint; other sites use mcp.us3.datadoghq.com, mcp.us5.datadoghq.com, mcp.datadoghq.eu, mcp.ap1.datadoghq.com, mcp.ap2.datadoghq.com with the same path. OAuth recommended; PAT via Authorization: Bearer also supported."
+      }
+    },
+    {
+      "name": "datahub",
+      "kind": "toolset",
+      "purpose": "DataHub Cloud's managed MCP server (v0.3.12+): search the catalog, entity metadata, lineage, queries and documentation. Tenant URL https://<tenant>.acryl.io/mcp also works.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.datahub.com/mcp",
+        "docs": "https://docs.datahub.com/docs/features/feature-guides/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "datahub-local",
+      "kind": "toolset",
+      "purpose": "DataHub's official self-hosted MCP server: search entities, get metadata, lineage and dataset queries from DataHub Core or Cloud.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "mcp-server-datahub",
+        "docs": "https://github.com/acryldata/mcp-server-datahub",
+        "env": [
+          "DATAHUB_GMS_URL",
+          "DATAHUB_GMS_TOKEN"
+        ]
+      }
+    },
+    {
+      "name": "dbt",
+      "kind": "toolset",
+      "purpose": "dbt Labs' official remote MCP server (OAuth or token + x-dbt-prod-environment-id header): Semantic Layer metrics, Discovery API metadata and lineage, and SQL execution. Replace host for multi-cell accounts.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://cloud.getdbt.com/api/ai/v1/mcp/",
+        "docs": "https://docs.getdbt.com/docs/dbt-ai/setup-remote-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "dbt-local",
+      "kind": "toolset",
+      "purpose": "dbt Labs' official self-hosted MCP server: run dbt CLI commands (build, run, test, compile), codegen, plus Semantic Layer, Discovery and Admin API tools.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "dbt-mcp",
+        "docs": "https://docs.getdbt.com/docs/dbt-ai/about-mcp",
+        "env": [
+          "DBT_PROJECT_DIR",
+          "DBT_PATH",
+          "DBT_HOST",
+          "DBT_TOKEN",
+          "DBT_PROD_ENV_ID"
+        ]
+      }
+    },
+    {
+      "name": "deel",
+      "kind": "toolset",
+      "purpose": "Deel's official remote MCP server (OAuth or Bearer token): tools to interact with Deel HR, contracts, people and payroll data.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.letsdeel.com/mcp",
+        "docs": "https://developer.deel.com/mcp/connecting-clients",
+        "env": []
+      }
+    },
+    {
+      "name": "deepl",
+      "kind": "toolset",
+      "purpose": "DeepL's official hosted MCP (OAuth 2.1): translate text/documents and rephrase with DeepL (local alternative: npx deepl-mcp-server with DEEPL_API_KEY).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.deepl.com/v1/mcp",
+        "docs": "https://developers.deepl.com/docs/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "deepwiki",
+      "kind": "toolset",
+      "purpose": "DeepWiki's official free remote MCP server: read wiki structure/contents and ask questions about public GitHub repositories (no auth).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.deepwiki.com/mcp",
+        "docs": "https://docs.devin.ai/work-with-devin/deepwiki-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "descript",
+      "kind": "toolset",
+      "purpose": "Descript's official connector: import media and drive Descript's project agent to edit video/podcasts (clips, cleanup, translation) and track jobs.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.descript.com/v2/mcp/claude",
+        "docs": "https://help.descript.com/hc/en-us/articles/45008080343053-Connect-Descript-to-Claude",
+        "env": []
+      }
+    },
+    {
+      "name": "digitalocean",
+      "kind": "toolset",
+      "purpose": "DigitalOcean's official MCP server: manage App Platform, Droplets, DOKS, databases, networking, Spaces and more. Hosted per-service endpoints with OAuth also exist (e.g. https://apps.mcp.digitalocean.com/mcp).",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@digitalocean/mcp",
+        "args": [
+          "--services",
+          "<comma-separated services, e.g. apps,droplets>"
+        ],
+        "docs": "https://github.com/digitalocean-labs/mcp-digitalocean",
+        "env": [
+          "DIGITALOCEAN_API_TOKEN"
+        ]
+      }
+    },
+    {
+      "name": "docusign",
+      "kind": "toolset",
+      "purpose": "Docusign's official remote MCP server: create/send envelopes, track status, Workflow Builder, Agreement Manager and CLM workflows.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.docusign.com/mcp",
+        "docs": "https://developers.docusign.com/platform/mcp-server/",
+        "env": [],
+        "note": "OAuth. Demo environment: https://mcp-d.docusign.com/mcp."
+      }
+    },
+    {
+      "name": "drata",
+      "kind": "toolset",
+      "purpose": "Drata's official hosted MCP server (beta): access controls, monitors, evidence, personnel and compliance data in Drata.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.drata.com/mcp/",
+        "docs": "https://developers.drata.com/developer-portal/v2/mcp-server",
+        "env": [],
+        "note": "EU: https://mcp-euc1.drata.com/mcp/, APAC: https://mcp-apse2.drata.com/mcp/."
+      }
+    },
+    {
+      "name": "dropbox",
+      "kind": "toolset",
+      "purpose": "Dropbox's official remote MCP server: browse, search, read, create, move and share files and folders, and work with revisions.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.dropbox.com/mcp",
+        "docs": "https://help.dropbox.com/integrations/connect-dropbox-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "duckdb",
+      "kind": "toolset",
+      "purpose": "MotherDuck's official local MCP server for DuckDB and MotherDuck: query local .duckdb files, in-memory DuckDB, S3 data or MotherDuck (md:) with read-only or read-write mode.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "mcp-server-motherduck",
+        "args": [
+          "--db-path",
+          "<path-to.duckdb | :memory: | md:>"
+        ],
+        "docs": "https://github.com/motherduckdb/mcp-server-motherduck",
+        "env": [
+          "motherduck_token"
+        ]
+      }
+    },
+    {
+      "name": "dynatrace",
+      "kind": "toolset",
+      "purpose": "Dynatrace's official remote MCP server (hosted in your tenant): execute and generate DQL, query problems, vulnerabilities, entities and Kubernetes events, run Davis analyzers.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://<environment-id>.apps.dynatrace.com/platform-reserved/mcp-gateway/v0.1/servers/dynatrace-mcp/mcp",
+        "docs": "https://docs.dynatrace.com/docs/dynatrace-intelligence/dynatrace-mcp",
+        "env": [
+          "DT_PLATFORM_TOKEN (Authorization: Bearer header; scopes mcp-gateway:servers:invoke, mcp-gateway:servers:read + tool scopes)"
+        ],
+        "note": "Replaces the deprecated local @dynatrace-oss/dynatrace-mcp-server npm package. OAuth client (authorization code) also supported."
+      }
+    },
+    {
+      "name": "elasticsearch",
+      "kind": "toolset",
+      "purpose": "Elastic Agent Builder's built-in MCP endpoint (Elasticsearch 9.2+/Serverless; API key or OAuth on Serverless): search, ES|QL, index/mapping inspection and custom Agent Builder tools. Replaces the deprecated mcp-server-elasticsearch.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://<kibana-url>/api/agent_builder/mcp",
+        "docs": "https://www.elastic.co/docs/solutions/search/agent-builder/mcp-server",
+        "env": [
+          "ES_API_KEY"
+        ]
+      }
+    },
+    {
+      "name": "elevenlabs",
+      "kind": "toolset",
+      "purpose": "ElevenLabs' official hosted MCP server: text-to-speech, voice cloning/design, transcription, audio isolation, speech-to-speech and music generation.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.elevenlabs.io/v1/mcp",
+        "docs": "https://github.com/elevenlabs/elevenlabs-mcp",
+        "env": [],
+        "note": "OAuth. The local uvx elevenlabs-mcp server (ELEVENLABS_API_KEY) is marked deprecated in favour of this hosted endpoint."
+      }
+    },
+    {
+      "name": "elicit",
+      "kind": "toolset",
+      "purpose": "Elicit official MCP: search academic papers and run Elicit research workflows from your assistant.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://elicit.com/api/mcp",
+        "docs": "https://github.com/elicit/api-examples/blob/main/integrations/mcp/README.md",
+        "env": []
+      }
+    },
+    {
+      "name": "endor-labs",
+      "kind": "toolset",
+      "purpose": "Endor Labs' official MCP server (endorctl): check dependencies for vulnerabilities, look up Endor vulnerability data, and run SCA/secrets/SAST scans.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "endorctl",
+        "args": [
+          "-y",
+          "endorctl",
+          "ai-tools",
+          "mcp-server"
+        ],
+        "docs": "https://docs.endorlabs.com/setup-deployment/mcp/devin.md",
+        "env": [
+          "ENDOR_API_CREDENTIALS_KEY",
+          "ENDOR_API_CREDENTIALS_SECRET",
+          "ENDOR_NAMESPACE"
+        ]
+      }
+    },
+    {
+      "name": "exa",
+      "kind": "toolset",
+      "purpose": "Exa's official remote MCP server: web search, page fetch, advanced filtered search and multi-step research agent.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.exa.ai/mcp",
+        "docs": "https://exa.ai/docs/reference/exa-mcp",
+        "env": [],
+        "note": "Keyless (rate-limited), OAuth (?login), or x-api-key header with EXA_API_KEY. Local: npx -y exa-mcp-server."
+      }
+    },
+    {
+      "name": "expedia",
+      "kind": "toolset",
+      "purpose": "Expedia's official remote server: search flights and hotels worldwide with real-time pricing and availability (search_hotels, search_flights, get_hotel_pdp_offers).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://www.expedia.com/mcp",
+        "docs": "https://claude.com/marketplace/connectors/expedia",
+        "env": []
+      }
+    },
+    {
+      "name": "expo",
+      "kind": "toolset",
+      "purpose": "Expo's official remote MCP server: Expo/EAS docs, SDK package install, EAS builds and workflows, and local app automation (Expo account, OAuth).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.expo.dev/mcp",
+        "docs": "https://docs.expo.dev/eas/ai/mcp/",
+        "env": []
+      }
+    },
+    {
+      "name": "fal",
+      "kind": "toolset",
+      "purpose": "fal's official remote MCP server: discover 1,000+ generative models, check schemas/pricing, upload inputs and run image/video/audio generations.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.fal.ai/mcp-relay",
+        "docs": "https://fal.ai/docs/documentation/setting-up/mcp",
+        "env": [],
+        "note": "OAuth. Also docs MCP https://fal.ai/docs/mcp and platform MCP https://api.fal.ai/v1/mcp/platform."
+      }
+    },
+    {
+      "name": "fetch",
+      "kind": "toolset",
+      "purpose": "Reference fetch server: fetch a URL and convert the page to markdown for the model.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "mcp-server-fetch",
+        "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+        "env": []
+      }
+    },
+    {
+      "name": "figma",
+      "kind": "toolset",
+      "purpose": "Figma's official remote MCP server (OAuth): design context, code generation from frames, variables/components, screenshots, write-to-canvas.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.figma.com/mcp",
+        "docs": "https://developers.figma.com/docs/figma-mcp-server/",
+        "env": []
+      }
+    },
+    {
+      "name": "filesystem",
+      "kind": "toolset",
+      "purpose": "Reference filesystem server: read, write, move, search and list files restricted to the allowed directories passed as args.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@modelcontextprotocol/server-filesystem",
+        "args": [
+          "<allowed-dir>"
+        ],
+        "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+        "env": []
+      }
+    },
+    {
+      "name": "financial-datasets",
+      "kind": "toolset",
+      "purpose": "Financial Datasets' official remote MCP server: stock prices, financial statements, SEC filings, insider/institutional ownership, earnings, macro data and news (OAuth or X-API-KEY header).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.financialdatasets.ai/",
+        "docs": "https://docs.financialdatasets.ai/mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "firebase",
+      "kind": "toolset",
+      "purpose": "Firebase's official MCP server built into firebase-tools: manage projects, Auth users, Firestore, Data Connect, Remote Config, Crashlytics and more using Firebase CLI credentials.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "firebase-tools",
+        "args": [
+          "mcp"
+        ],
+        "docs": "https://firebase.google.com/docs/ai-assistance/mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "firebolt",
+      "kind": "toolset",
+      "purpose": "Firebolt's official MCP server: connect to Firebolt Cloud or Core, browse docs, list engines/databases and run SQL.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "docker",
+        "package": "ghcr.io/firebolt-db/mcp-server:latest",
+        "docs": "https://github.com/firebolt-db/mcp-server",
+        "env": [
+          "FIREBOLT_MCP_CLIENT_ID",
+          "FIREBOLT_MCP_CLIENT_SECRET"
+        ]
+      }
+    },
+    {
+      "name": "firecrawl",
+      "kind": "toolset",
+      "purpose": "Firecrawl's official remote MCP server: scrape, crawl, map, search and extract structured data from websites (API-key variant at /v2/mcp; local npx firecrawl-mcp with FIRECRAWL_API_KEY).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.firecrawl.dev/v2/mcp-oauth",
+        "docs": "https://docs.firecrawl.dev/mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "fireflies",
+      "kind": "toolset",
+      "purpose": "Fireflies' official remote MCP server: search meetings and fetch transcripts, summaries and action items.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.fireflies.ai/mcp",
+        "docs": "https://docs.fireflies.ai/getting-started/mcp-configuration",
+        "env": [],
+        "note": "OAuth, or Authorization: Bearer <FIREFLIES_API_KEY>. Streamable HTTP only."
+      }
+    },
+    {
+      "name": "firehydrant",
+      "kind": "toolset",
+      "purpose": "FireHydrant's official MCP server (Speakeasy-generated): interact with the FireHydrant API for incidents, runbooks, services and retrospectives.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "firehydrant-mcp",
+        "args": [
+          "start",
+          "--api-key",
+          "<api-key>"
+        ],
+        "docs": "https://github.com/firehydrant/firehydrant-mcp",
+        "env": [
+          "FireHydrant API key (passed as --api-key)"
+        ]
+      }
+    },
+    {
+      "name": "flexport",
+      "kind": "toolset",
+      "purpose": "Flexport's official connector: track and browse shipments, search ports/HS codes/addresses, request rates and quotes, and create freight bookings.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.flexport.com/mcp",
+        "docs": "https://claude.com/marketplace/connectors/flexport",
+        "env": []
+      }
+    },
+    {
+      "name": "front",
+      "kind": "toolset",
+      "purpose": "Front's official remote MCP server: read conversations, draft replies, add internal comments and act on Front data as the authorizing teammate. Needs a confidential OAuth client (Front developer app client ID/secret); no DCR.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.frontapp.com/mcp",
+        "docs": "https://dev.frontapp.com/docs/mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "fullstory",
+      "kind": "toolset",
+      "purpose": "Fullstory's official remote MCP server: query sessions, users, events and behavioral analytics (OAuth or API key as Bearer).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.fullstory.com/mcp/fullstory",
+        "docs": "https://developer.fullstory.com/mcp/client-setup/generic/",
+        "env": []
+      }
+    },
+    {
+      "name": "gcloud",
+      "kind": "toolset",
+      "purpose": "Google's official gcloud MCP server: run Google Cloud CLI commands in natural language (requires an installed, authenticated gcloud CLI).",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@google-cloud/gcloud-mcp",
+        "docs": "https://github.com/googleapis/gcloud-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "git",
+      "kind": "toolset",
+      "purpose": "Reference Git server: read, search and manipulate a local Git repository (status, diff, log, commit, branch).",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "mcp-server-git",
+        "args": [
+          "--repository",
+          "<path>"
+        ],
+        "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/git",
+        "env": []
+      }
+    },
+    {
+      "name": "gitea",
+      "kind": "toolset",
+      "purpose": "Gitea's official MCP server: repositories, issues, pull requests, branches, releases and files on a Gitea instance.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "docker",
+        "package": "docker.gitea.com/gitea-mcp-server",
+        "docs": "https://gitea.com/gitea/gitea-mcp",
+        "env": [
+          "GITEA_ACCESS_TOKEN",
+          "GITEA_HOST"
+        ]
+      }
+    },
+    {
+      "name": "gitguardian",
+      "kind": "toolset",
+      "purpose": "GitGuardian's official hosted MCP server: scan for secrets, list and remediate incidents, manage honeytokens.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.gitguardian.com/mcp",
+        "docs": "https://github.com/GitGuardian/ggmcp",
+        "env": [],
+        "note": "EU: https://mcp.eu1.gitguardian.com/mcp. OAuth; self-hosting via ghcr.io/gitguardian/mcp-server with GITGUARDIAN_PERSONAL_ACCESS_TOKEN."
+      }
+    },
+    {
+      "name": "github",
+      "kind": "toolset",
+      "purpose": "GitHub's official remote MCP server: repositories, issues, pull requests, Actions, code security and search on GitHub.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.githubcopilot.com/mcp/",
+        "docs": "https://github.com/github/github-mcp-server",
+        "env": [
+          "GITHUB_PAT"
+        ]
+      }
+    },
+    {
+      "name": "gitlab",
+      "kind": "toolset",
+      "purpose": "GitLab's official built-in MCP server (GA since GitLab 19.5): issues, merge requests, pipelines and project search on gitlab.com or a self-managed instance (replace host for self-managed).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://gitlab.com/api/v4/mcp",
+        "docs": "https://docs.gitlab.com/user/model_context_protocol/mcp_server/",
+        "env": []
+      }
+    },
+    {
+      "name": "gmail",
+      "kind": "toolset",
+      "purpose": "Google's official Gmail MCP server: search and read email, create drafts.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://gmailmcp.googleapis.com/mcp/v1",
+        "docs": "https://developers.google.com/workspace/guides/configure-mcp-servers",
+        "env": [],
+        "note": "OAuth with your own Google Cloud OAuth client; enable Gmail API + Gmail MCP API."
+      }
+    },
+    {
+      "name": "godot",
+      "kind": "toolset",
+      "purpose": "Community godot-mcp (6k stars): launch the Godot editor, run projects, capture debug output, and create/modify scenes and nodes.",
+      "official": false,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@coding-solo/godot-mcp",
+        "docs": "https://github.com/Coding-Solo/godot-mcp",
+        "env": [
+          "GODOT_PATH (optional, path to Godot executable)"
+        ]
+      }
+    },
+    {
+      "name": "gong",
+      "kind": "toolset",
+      "purpose": "Gong's official remote MCP server (read-only): ask_account, ask_deal and generate_brief insights from calls/emails. Requires a Gong admin-created MCP server integration (OAuth client).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.gong.io/mcp",
+        "docs": "https://help.gong.io/docs/create-an-integration-to-connect-to-the-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "google-ads",
+      "kind": "toolset",
+      "purpose": "Google's official Google Ads MCP server (PyPI google-ads-mcp): query Google Ads accounts and campaign performance via the Google Ads API. Docs show 'pipx run google-ads-mcp'; uvx google-ads-mcp is equivalent.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "google-ads-mcp",
+        "docs": "https://github.com/googleads/google-ads-mcp",
+        "env": [
+          "GOOGLE_ADS_DEVELOPER_TOKEN",
+          "GOOGLE_PROJECT_ID",
+          "GOOGLE_APPLICATION_CREDENTIALS"
+        ]
+      }
+    },
+    {
+      "name": "google-analytics",
+      "kind": "toolset",
+      "purpose": "Google's official Google Analytics MCP server: account summaries, property details, Data API reports and realtime reports (uses Application Default Credentials with analytics.readonly scope). Docs show 'pipx run analytics-mcp'; uvx analytics-mcp is equivalent.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "analytics-mcp",
+        "docs": "https://github.com/googleanalytics/google-analytics-mcp",
+        "env": [
+          "GOOGLE_APPLICATION_CREDENTIALS",
+          "GOOGLE_PROJECT_ID"
+        ]
+      }
+    },
+    {
+      "name": "google-bigquery",
+      "kind": "toolset",
+      "purpose": "Google Cloud's official remote BigQuery MCP server (OAuth/IAM, needs roles/mcp.toolUser): list datasets and tables, inspect schemas and run SQL queries.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://bigquery.googleapis.com/mcp",
+        "docs": "https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "google-calendar",
+      "kind": "toolset",
+      "purpose": "Google's official Google Calendar MCP server: list events and schedule meetings.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://calendarmcp.googleapis.com/mcp/v1",
+        "docs": "https://developers.google.com/workspace/guides/configure-mcp-servers",
+        "env": [],
+        "note": "OAuth with your own Google Cloud OAuth client."
+      }
+    },
+    {
+      "name": "google-chat",
+      "kind": "toolset",
+      "purpose": "Google's official Google Chat MCP server: read and send Chat messages in spaces.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://chatmcp.googleapis.com/mcp/v1",
+        "docs": "https://developers.google.com/workspace/guides/configure-mcp-servers",
+        "env": [],
+        "note": "OAuth with your own Google Cloud OAuth client."
+      }
+    },
+    {
+      "name": "google-cloud-observability",
+      "kind": "toolset",
+      "purpose": "Google's official Observability MCP server: query Cloud Logging logs, Cloud Monitoring metrics and alerts, Cloud Trace traces and Error Reporting.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@google-cloud/observability-mcp",
+        "docs": "https://github.com/googleapis/gcloud-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "google-cloud-run",
+      "kind": "toolset",
+      "purpose": "Google's official Cloud Run MCP server: deploy local folders or files to Cloud Run, list services and read service logs. (A remote endpoint https://run.googleapis.com/mcp also exists.)",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@google-cloud/cloud-run-mcp",
+        "docs": "https://github.com/GoogleCloudPlatform/cloud-run-mcp",
+        "env": [
+          "GOOGLE_CLOUD_PROJECT (optional)",
+          "GOOGLE_CLOUD_REGION (optional)",
+          "DEFAULT_SERVICE_NAME (optional)"
+        ]
+      }
+    },
+    {
+      "name": "google-compute-engine",
+      "kind": "toolset",
+      "purpose": "Google Cloud's official remote Compute Engine MCP endpoint (GA): list and manage VM instances and related resources. Authenticates with Google Cloud credentials.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://compute.googleapis.com/mcp",
+        "docs": "https://docs.cloud.google.com/mcp/supported-products",
+        "env": []
+      }
+    },
+    {
+      "name": "google-docs",
+      "kind": "toolset",
+      "purpose": "Google's official Google Docs MCP server: read and edit Docs.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://docsmcp.googleapis.com/mcp/v1",
+        "docs": "https://developers.google.com/workspace/guides/configure-mcp-servers",
+        "env": [],
+        "note": "OAuth with your own Google Cloud OAuth client."
+      }
+    },
+    {
+      "name": "google-drive",
+      "kind": "toolset",
+      "purpose": "Google's official Google Drive MCP server: search, read and upload Drive files.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://drivemcp.googleapis.com/mcp/v1",
+        "docs": "https://developers.google.com/workspace/guides/configure-mcp-servers",
+        "env": [],
+        "note": "OAuth with your own Google Cloud OAuth client; enable Drive API + Drive MCP API."
+      }
+    },
+    {
+      "name": "google-gke",
+      "kind": "toolset",
+      "purpose": "Google Cloud's official remote GKE MCP endpoint (GA): inspect and manage GKE clusters and Kubernetes resources. Authenticates with Google Cloud credentials.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://container.googleapis.com/mcp",
+        "docs": "https://docs.cloud.google.com/mcp/supported-products",
+        "env": []
+      }
+    },
+    {
+      "name": "google-maps",
+      "kind": "toolset",
+      "purpose": "Google Maps Platform 'Maps Grounding Lite' official remote server: search_places, lookup_weather, compute_routes, resolve_names, resolve_maps_urls (API key sent in X-Goog-Api-Key header).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mapstools.googleapis.com/mcp",
+        "docs": "https://developers.google.com/maps/ai/grounding-lite",
+        "env": [
+          "GOOGLE_MAPS_API_KEY (X-Goog-Api-Key header)"
+        ]
+      }
+    },
+    {
+      "name": "google-mcp-toolbox",
+      "kind": "toolset",
+      "purpose": "Google's MCP Toolbox for Databases: open-source server with prebuilt toolsets (--prebuilt=<database>) for Postgres, MySQL, SQL Server, SQLite, AlloyDB, Cloud SQL, Spanner, BigQuery, Firestore, Looker and more.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@toolbox-sdk/server",
+        "args": [
+          "--prebuilt=<database>",
+          "--stdio"
+        ],
+        "docs": "https://github.com/googleapis/genai-toolbox",
+        "env": []
+      }
+    },
+    {
+      "name": "google-scc",
+      "kind": "toolset",
+      "purpose": "Google's official Security Command Center MCP server: list and inspect SCC findings and cloud security posture.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "scc-mcp",
+        "docs": "https://github.com/google/mcp-security",
+        "env": [],
+        "note": "Uses Google Application Default Credentials."
+      }
+    },
+    {
+      "name": "google-secops",
+      "kind": "toolset",
+      "purpose": "Google's official remote MCP server for Google Security Operations (Chronicle): search UDM events, detections, rules, entities and cases.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://chronicle.us.rep.googleapis.com/mcp",
+        "docs": "https://github.com/google/mcp-security/blob/main/docs/remote_server.md",
+        "env": [],
+        "note": "Regional endpoint (chronicle.<region>.rep.googleapis.com). Google OAuth (cloud-platform scope). Local alternative: uvx --from google-secops-mcp secops_mcp with CHRONICLE_PROJECT_ID, CHRONICLE_CUSTOMER_ID, CHRONICLE_REGION."
+      }
+    },
+    {
+      "name": "google-sheets",
+      "kind": "toolset",
+      "purpose": "Google's official Google Sheets MCP server: read and edit spreadsheets.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://sheetsmcp.googleapis.com/mcp/v1",
+        "docs": "https://developers.google.com/workspace/guides/configure-mcp-servers",
+        "env": [],
+        "note": "OAuth with your own Google Cloud OAuth client."
+      }
+    },
+    {
+      "name": "google-threat-intelligence",
+      "kind": "toolset",
+      "purpose": "Google's official Threat Intelligence MCP server (VirusTotal + Mandiant): look up files, URLs, domains, IPs, threat actors, campaigns and vulnerabilities.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "gti-mcp",
+        "docs": "https://github.com/google/mcp-security",
+        "env": [
+          "VT_APIKEY"
+        ]
+      }
+    },
+    {
+      "name": "gorgias",
+      "kind": "toolset",
+      "purpose": "Gorgias's official remote MCP server (beta, OAuth): analyze tickets, audit/tune AI Agent, macros, rules, tags, help center; reply and update tickets.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.gorgias.com/mcp",
+        "docs": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-gorgias-6310546",
+        "env": []
+      }
+    },
+    {
+      "name": "grafana",
+      "kind": "toolset",
+      "purpose": "Grafana's official MCP server: search dashboards, query Prometheus/Loki datasources, manage alerts, incidents, OnCall and Sift investigations.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "mcp-grafana",
+        "docs": "https://github.com/grafana/mcp-grafana",
+        "env": [
+          "GRAFANA_URL",
+          "GRAFANA_SERVICE_ACCOUNT_TOKEN"
+        ],
+        "note": "Also published as Docker image grafana/mcp-grafana."
+      }
+    },
+    {
+      "name": "granola",
+      "kind": "toolset",
+      "purpose": "Granola's official remote MCP server: search meeting notes, browse folders, pull transcripts, action items and decisions.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.granola.ai/mcp",
+        "docs": "https://docs.granola.ai/help-center/sharing/integrations/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "guru",
+      "kind": "toolset",
+      "purpose": "Guru's official remote MCP server: search, retrieve and update verified knowledge via Guru Knowledge Agents.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.api.getguru.com/mcp",
+        "docs": "https://help.getguru.com/docs/connecting-gurus-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "gusto",
+      "kind": "toolset",
+      "purpose": "Gusto's official remote MCP server (read-only, OAuth, admin required): company, employee, contractor, payroll and time-tracking data.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.api.gusto.com/anthropic",
+        "docs": "https://docs.gusto.com/app-integrations/docs/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "harness",
+      "kind": "toolset",
+      "purpose": "Harness's official hosted MCP server: pipelines, executions, services, environments, connectors and other Harness platform resources (OAuth client id mcp-client; local alt: npx harness-mcp-v2 with HARNESS_API_KEY).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.harness.io/mcp",
+        "docs": "https://developer.harness.io/harness-platform/use-harness-ai/connect-with-ai/index/hosted-mcp.md",
+        "env": []
+      }
+    },
+    {
+      "name": "harvey",
+      "kind": "toolset",
+      "purpose": "Harvey's official hosted MCP for legal work: Ask Harvey, query Vault projects and knowledge sources (EU: eu.api.harvey.ai, AU: au.api.harvey.ai endpoints also available).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.harvey.ai/hosted_mcp/mcp",
+        "docs": "https://developers.harvey.ai/guides/harvey_mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "hashicorp-vault",
+      "kind": "toolset",
+      "purpose": "HashiCorp's official Vault MCP server: create/list/delete KV mounts and read, write and delete secrets.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "docker",
+        "package": "hashicorp/vault-mcp-server",
+        "args": [
+          "run",
+          "-i",
+          "--rm",
+          "-e",
+          "VAULT_ADDR",
+          "-e",
+          "VAULT_TOKEN",
+          "hashicorp/vault-mcp-server"
+        ],
+        "docs": "https://github.com/hashicorp/vault-mcp-server",
+        "env": [
+          "VAULT_ADDR",
+          "VAULT_TOKEN",
+          "VAULT_NAMESPACE (optional)"
+        ]
+      }
+    },
+    {
+      "name": "here-docs",
+      "kind": "toolset",
+      "purpose": "HERE's official documentation MCP: search HERE developer guides and API specs (list/get endpoints, search specs, fetch pages) for coding agents.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://docs.here.com/mcp",
+        "docs": "https://www.here.com/developer/blog/announcing-the-here-documentation-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "heroku",
+      "kind": "toolset",
+      "purpose": "Heroku's official Platform MCP server: manage apps, dynos, add-ons, Postgres, pipelines and logs through the Heroku CLI. (Alternative: `heroku mcp:start` with CLI auth.)",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@heroku/mcp-server",
+        "docs": "https://devcenter.heroku.com/articles/heroku-mcp-server",
+        "env": [
+          "HEROKU_API_KEY"
+        ]
+      }
+    },
+    {
+      "name": "hex",
+      "kind": "toolset",
+      "purpose": "Hex's official remote MCP server (OAuth): search and use Hex projects and knowledge, and edit projects (Editor role). Use your org domain for single-tenant/EU/HIPAA.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://app.hex.tech/mcp",
+        "docs": "https://learn.hex.tech/docs/administration/mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "honeycomb",
+      "kind": "toolset",
+      "purpose": "Honeycomb's official hosted MCP server: query datasets, inspect traces, boards, SLOs and triggers in your Honeycomb environment.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.honeycomb.io/mcp",
+        "docs": "https://docs.honeycomb.io/integrations/mcp/configuration-guide/",
+        "env": [],
+        "note": "EU: https://mcp.eu1.honeycomb.io/mcp. OAuth preferred; Management API key as Bearer KEY_ID:SECRET for unattended agents."
+      }
+    },
+    {
+      "name": "hubspot",
+      "kind": "toolset",
+      "purpose": "HubSpot's official remote MCP server: read/search CRM data (contacts, companies, deals, tickets, etc.). OAuth with PKCE via an MCP connector created in HubSpot.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.hubspot.com",
+        "docs": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "hugging-face",
+      "kind": "toolset",
+      "purpose": "Hugging Face's official remote MCP server: search models, datasets, Spaces, papers and docs on the Hub, run jobs/sandboxes and call MCP-enabled Gradio Spaces.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://huggingface.co/mcp",
+        "docs": "https://huggingface.co/docs/hub/en/hf-mcp-server",
+        "env": [],
+        "note": "Sign in or use an HF token; tool selection configured at huggingface.co/settings/mcp."
+      }
+    },
+    {
+      "name": "incident-io",
+      "kind": "toolset",
+      "purpose": "incident.io's official remote MCP server: declare and triage incidents, acknowledge pages, check on-call schedules and track follow-ups.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.incident.io/mcp",
+        "docs": "https://docs.incident.io/ai/remote-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "influxdb",
+      "kind": "toolset",
+      "purpose": "InfluxData's official InfluxDB 3 MCP server: query and write data, manage databases and tokens for Core, Enterprise, Cloud Serverless/Dedicated and Clustered.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@influxdata/influxdb3-mcp-server",
+        "docs": "https://github.com/influxdata/influxdb3_mcp_server",
+        "env": [
+          "INFLUX_DB_INSTANCE_URL",
+          "INFLUX_DB_TOKEN",
+          "INFLUX_DB_PRODUCT_TYPE"
+        ]
+      }
+    },
+    {
+      "name": "intercom",
+      "kind": "toolset",
+      "purpose": "Intercom's official remote MCP server: search and fetch conversations and contacts from your Intercom workspace (EU: https://mcp.eu.intercom.com/mcp).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.intercom.com/mcp",
+        "docs": "https://developers.intercom.com/docs/guides/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "jfrog",
+      "kind": "toolset",
+      "purpose": "JFrog's official SaaS MCP server: work with repositories, packages, builds, Xray security findings and curation on your JFrog Platform.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://<your-instance>.jfrog.io/mcp",
+        "docs": "https://docs.jfrog.com/integrations/docs/jfrog-mcp-server",
+        "env": [],
+        "note": "OAuth; MCP integration must be enabled on the platform. The old jfrog/mcp-jfrog npm server is deprecated."
+      }
+    },
+    {
+      "name": "jina",
+      "kind": "toolset",
+      "purpose": "Jina AI's official remote MCP server: web/arXiv/SSRN/image search, URL and PDF reading, screenshots, reranking and dedup.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.jina.ai/v1",
+        "docs": "https://github.com/jina-ai/MCP",
+        "env": [
+          "JINA_API_KEY"
+        ],
+        "note": "Authorization: Bearer <JINA_API_KEY>; optional for some tools."
+      }
+    },
+    {
+      "name": "jupyter",
+      "kind": "toolset",
+      "purpose": "Datalayer's open-source Jupyter MCP server: connect to a running JupyterLab/Jupyter server to create, edit and execute notebook cells and read outputs.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "jupyter-mcp-server",
+        "docs": "https://github.com/datalayer/jupyter-mcp-server",
+        "env": [
+          "JUPYTER_URL",
+          "JUPYTER_TOKEN"
+        ]
+      }
+    },
+    {
+      "name": "kagi",
+      "kind": "toolset",
+      "purpose": "Kagi's official hosted MCP server: Kagi web/news/video/image search with page extracts, and full-page extraction.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.kagi.com/mcp",
+        "docs": "https://github.com/kagisearch/kagimcp",
+        "env": [
+          "KAGI_API_KEY"
+        ],
+        "note": "Requires Kagi API key. Local: uvx kagimcp."
+      }
+    },
+    {
+      "name": "kiwi-com",
+      "kind": "toolset",
+      "purpose": "Kiwi.com's official remote flight-search server (no auth): one-way/round-trip flight search with flexible dates, passengers and cabin classes.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.kiwi.com/",
+        "docs": "https://claude.com/marketplace/connectors/kiwi-com",
+        "env": []
+      }
+    },
+    {
+      "name": "klaviyo",
+      "kind": "toolset",
+      "purpose": "Klaviyo's official remote MCP server: campaign and flow performance reporting, profiles, lists/segments, and other Klaviyo account data.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.klaviyo.com/mcp",
+        "docs": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+        "env": []
+      }
+    },
+    {
+      "name": "klaviyo-local",
+      "kind": "toolset",
+      "purpose": "Klaviyo's official local MCP server (PyPI, by Klaviyo Developer Experience Team) using a private API key.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "klaviyo-mcp-server",
+        "docs": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+        "env": [
+          "PRIVATE_API_KEY"
+        ]
+      }
+    },
+    {
+      "name": "kubernetes",
+      "kind": "toolset",
+      "purpose": "Community Kubernetes/OpenShift MCP server from the containers org (Go, no kubectl needed): manage pods, deployments, namespaces, events, logs, Helm and generic resources via your kubeconfig.",
+      "official": false,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "kubernetes-mcp-server",
+        "docs": "https://github.com/containers/kubernetes-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "lambdatest",
+      "kind": "toolset",
+      "purpose": "TestMu AI (LambdaTest) official remote MCP server: automation, HyperExecute, SmartUI visual and accessibility testing insights (OAuth).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.lambdatest.com/mcp",
+        "docs": "https://www.lambdatest.com/support/docs/lambdatest-mcp-server/",
+        "env": []
+      }
+    },
+    {
+      "name": "langfuse",
+      "kind": "toolset",
+      "purpose": "Langfuse's official MCP server (built into Langfuse): read and write prompts, traces and other project data in Langfuse Cloud or self-hosted.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://cloud.langfuse.com/api/public/mcp",
+        "docs": "https://langfuse.com/docs/api-and-data-platform/features/mcp-server",
+        "env": [
+          "LANGFUSE_PUBLIC_KEY",
+          "LANGFUSE_SECRET_KEY"
+        ],
+        "note": "Basic auth header (base64 public:secret). Regions: us.cloud.langfuse.com, jp.cloud.langfuse.com, hipaa.cloud.langfuse.com, or <self-hosted>/api/public/mcp."
+      }
+    },
+    {
+      "name": "langsmith",
+      "kind": "toolset",
+      "purpose": "LangChain's official LangSmith MCP server: fetch conversation threads, prompts, traces/runs, datasets, experiments and billing usage from LangSmith.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "langsmith-mcp-server",
+        "docs": "https://github.com/langchain-ai/langsmith-mcp-server",
+        "env": [
+          "LANGSMITH_API_KEY"
+        ],
+        "note": "Optional LANGSMITH_WORKSPACE_ID, LANGSMITH_ENDPOINT."
+      }
+    },
+    {
+      "name": "last9",
+      "kind": "toolset",
+      "purpose": "Last9's official hosted MCP server: query logs, traces, metrics, exceptions and alerts from your Last9 organization.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://app.last9.io/api/v4/organizations/<org_slug>/mcp",
+        "docs": "https://github.com/last9/last9-mcp-server",
+        "env": [],
+        "note": "Local alternative: npx -y @last9/mcp-server@latest with LAST9_REFRESH_TOKEN."
+      }
+    },
+    {
+      "name": "launchdarkly",
+      "kind": "toolset",
+      "purpose": "LaunchDarkly's official MCP server: create, update, target and clean up feature flags, AI configs and environments (hosted server recommended for commercial; this local package targets EU/Federal too).",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@launchdarkly/mcp-server",
+        "args": [
+          "mcp",
+          "start",
+          "--api-key",
+          "<LD_ACCESS_TOKEN>"
+        ],
+        "docs": "https://github.com/launchdarkly/mcp-server",
+        "env": [
+          "LD_ACCESS_TOKEN"
+        ]
+      }
+    },
+    {
+      "name": "linear",
+      "kind": "toolset",
+      "purpose": "Linear's official remote MCP server: find, create and update issues, projects, cycles and comments (SSE endpoint /sse is deprecated).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.linear.app/mcp",
+        "docs": "https://linear.app/docs/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "logfire",
+      "kind": "toolset",
+      "purpose": "Pydantic Logfire's official remote MCP server: query traces/spans and exceptions with SQL, inspect OpenTelemetry data from your Logfire projects.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://logfire-us.pydantic.dev/mcp",
+        "docs": "https://pydantic.dev/docs/logfire/guides/mcp-server/",
+        "env": [],
+        "note": "EU: https://logfire-eu.pydantic.dev/mcp. Browser auth; API key with project:read as Bearer header for headless use. The stdio logfire-mcp package is archived."
+      }
+    },
+    {
+      "name": "lokalise",
+      "kind": "toolset",
+      "purpose": "Lokalise's official hosted MCP (OAuth recommended, or 'apikey' header): project-management toolkit for projects, keys, translations and tasks (a /mcp/software-development toolkit also exists).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.lokalise.com/mcp/project-management",
+        "docs": "https://docs.lokalise.com/en/articles/13547066-setting-up-and-using-the-lokalise-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "looker",
+      "kind": "toolset",
+      "purpose": "Google's Looker MCP via MCP Toolbox prebuilt 'looker' toolset: explore models, explores, dimensions and measures, run queries and manage Looks/dashboards.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@toolbox-sdk/server",
+        "args": [
+          "--prebuilt=looker",
+          "--stdio"
+        ],
+        "docs": "https://docs.cloud.google.com/looker/docs/connect-ide-to-looker-using-mcp-toolbox",
+        "env": [
+          "LOOKER_BASE_URL",
+          "LOOKER_CLIENT_ID",
+          "LOOKER_CLIENT_SECRET",
+          "LOOKER_VERIFY_SSL"
+        ]
+      }
+    },
+    {
+      "name": "lucid",
+      "kind": "toolset",
+      "purpose": "Lucid's official remote MCP server: search, read and create Lucidchart/Lucidspark diagrams and documents.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.lucid.app/mcp",
+        "docs": "https://help.lucid.co/hc/en-us/articles/42578801807508-Integrate-Lucid-with-AI-tools-using-the-Lucid-MCP-server",
+        "env": [],
+        "note": "OAuth. Variants: /mcp/readonly and /mcp/repositories."
+      }
+    },
+    {
+      "name": "make",
+      "kind": "toolset",
+      "purpose": "Make's official hosted MCP server: run Make scenarios as tools and manage scenarios, connections and organization resources.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.make.com",
+        "docs": "https://developers.make.com/mcp-server",
+        "env": [],
+        "note": "OAuth; token alternative https://<MAKE_ZONE>/mcp with Authorization: Bearer <MCP_TOKEN>."
+      }
+    },
+    {
+      "name": "mapbox",
+      "kind": "toolset",
+      "purpose": "Mapbox's official MCP server (hosted): geocoding, POI search, directions, isochrones, matrix and static map images (also available locally as npx @mapbox/mcp-server).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.mapbox.com/mcp",
+        "docs": "https://github.com/mapbox/mcp-server",
+        "env": [
+          "MAPBOX_ACCESS_TOKEN"
+        ]
+      }
+    },
+    {
+      "name": "massive",
+      "kind": "toolset",
+      "purpose": "Massive's official hosted MCP server (OAuth): search_endpoints, call_api and query_data tools covering the whole Massive.com market-data REST API (stocks, options, forex, crypto).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.massive.com/",
+        "docs": "https://massive.com/docs/ai-tools/quickstart",
+        "env": []
+      }
+    },
+    {
+      "name": "medplum",
+      "kind": "toolset",
+      "purpose": "Medplum's official hosted MCP (OAuth): FHIR create/read/update/search on your Medplum healthcare data via the fhir-request tool.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.medplum.com/mcp/stream",
+        "docs": "https://www.medplum.com/docs/ai/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "mem0",
+      "kind": "toolset",
+      "purpose": "Mem0's official remote MCP server: add, search, list, update and delete long-term memories and entities on the Mem0 Platform.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.mem0.ai/mcp",
+        "docs": "https://docs.mem0.ai/platform/mem0-mcp",
+        "env": [],
+        "note": "Browser sign-in, or MEM0_API_KEY as Bearer token for headless clients."
+      }
+    },
+    {
+      "name": "memory",
+      "kind": "toolset",
+      "purpose": "Reference memory server: persistent knowledge-graph memory (entities, relations, observations) stored locally.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@modelcontextprotocol/server-memory",
+        "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+        "env": []
+      }
+    },
+    {
+      "name": "mercury",
+      "kind": "toolset",
+      "purpose": "Mercury's official remote MCP server (beta, OAuth): read accounts, balances, transactions, statements, cards, recipients; request payments/transfers (still need approval in Mercury).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.mercury.com/mcp",
+        "docs": "https://docs.mercury.com/docs/connecting-mercury-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "meta-ads",
+      "kind": "toolset",
+      "purpose": "Meta's official Ads MCP server (open beta, OAuth via Facebook Login for Business): campaign management, insights, catalogs, datasets/pixel diagnostics for Facebook and Instagram ads.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.facebook.com/ads",
+        "docs": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-get-started",
+        "env": []
+      }
+    },
+    {
+      "name": "metabase",
+      "kind": "toolset",
+      "purpose": "Metabase's built-in MCP server (v0.64+, embedded OAuth; admin enables at Admin > AI > MCP): search, explore, query and visualize data scoped to user permissions.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://<your-metabase-host>/api/metabase-mcp",
+        "docs": "https://www.metabase.com/docs/latest/ai/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "microsoft-learn",
+      "kind": "toolset",
+      "purpose": "Microsoft's official remote Learn MCP server: search and fetch Microsoft Learn / Azure documentation and official code samples.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://learn.microsoft.com/api/mcp",
+        "docs": "https://github.com/MicrosoftDocs/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "microsoft-sentinel",
+      "kind": "toolset",
+      "purpose": "Microsoft's official Sentinel MCP server (data exploration collection): search tables and query Sentinel data lake with natural language, plus graph tools.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://sentinel.microsoft.com/mcp/data-exploration",
+        "docs": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-tools-overview",
+        "env": [],
+        "note": "Other collections: https://sentinel.microsoft.com/mcp/triage, https://sentinel.microsoft.com/mcp/security-copilot-agent-creation. Entra ID auth, Security Reader role; requires Sentinel data lake."
+      }
+    },
+    {
+      "name": "microsoft-work-iq",
+      "kind": "toolset",
+      "purpose": "Microsoft's official Work IQ MCP server: natural-language queries over Microsoft 365 Copilot data (mail, meetings, calendar, files).",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@microsoft/workiq",
+        "args": [
+          "mcp"
+        ],
+        "docs": "https://github.com/microsoft/work-iq",
+        "env": [],
+        "note": "Sign-in with Entra ID; tenant admin consent required."
+      }
+    },
+    {
+      "name": "miro",
+      "kind": "toolset",
+      "purpose": "Miro's official remote MCP server: read/summarize boards and create frames, stickies, shapes, docs, tables and diagrams.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.miro.com",
+        "docs": "https://developers.miro.com/docs/connecting-miro-mcp-to-ai-coding-tools",
+        "env": [],
+        "note": "OAuth 2.1 with DCR; Enterprise requires admin enablement."
+      }
+    },
+    {
+      "name": "mixpanel",
+      "kind": "toolset",
+      "purpose": "Mixpanel's official remote MCP server: 70+ tools for queries, dashboards, events/properties, cohorts, session replays, experiments (EU: mcp-eu.mixpanel.com, IN: mcp-in.mixpanel.com).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.mixpanel.com/mcp",
+        "docs": "https://docs.mixpanel.com/docs/features/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "monday",
+      "kind": "toolset",
+      "purpose": "monday.com's official hosted MCP server: read and update boards, items, columns, updates and workspaces.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.monday.com/mcp",
+        "docs": "https://github.com/mondaycom/mcp",
+        "env": [],
+        "note": "OAuth. Local: npx @mondaydotcomorg/monday-api-mcp@latest with MONDAY_TOKEN."
+      }
+    },
+    {
+      "name": "mongodb",
+      "kind": "toolset",
+      "purpose": "MongoDB's official MCP server: query and manage MongoDB databases/collections and administer Atlas clusters, users and access lists via the Atlas API.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "mongodb-mcp-server",
+        "docs": "https://github.com/mongodb-js/mongodb-mcp-server",
+        "env": [
+          "MDB_MCP_CONNECTION_STRING",
+          "MDB_MCP_API_CLIENT_ID",
+          "MDB_MCP_API_CLIENT_SECRET"
+        ]
+      }
+    },
+    {
+      "name": "monte-carlo",
+      "kind": "toolset",
+      "purpose": "Monte Carlo's official remote MCP server (OAuth, or MCP API keys): investigate data observability alerts, explore asset lineage, create monitors and triage incidents.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.getmontecarlo.com/mcp",
+        "docs": "https://docs.getmontecarlo.com/docs/mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "motherduck",
+      "kind": "toolset",
+      "purpose": "MotherDuck's official fully-managed remote MCP server (OAuth, or Bearer motherduck_token): read-write SQL over MotherDuck databases, schema exploration.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.motherduck.com/mcp",
+        "docs": "https://motherduck.com/docs/sql-reference/mcp/",
+        "env": []
+      }
+    },
+    {
+      "name": "mux",
+      "kind": "toolset",
+      "purpose": "Mux's official hosted MCP (OAuth or Basic token auth): Video API (assets, uploads, live streams, playback IDs) and Data API metrics (local alternative: npx @mux/mcp with MUX_TOKEN_ID/MUX_TOKEN_SECRET).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.mux.com",
+        "docs": "https://www.mux.com/docs/integrations/mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "mysql",
+      "kind": "toolset",
+      "purpose": "MySQL via Google's MCP Toolbox prebuilt 'mysql' toolset (no first-party MySQL server): execute SQL, list tables, active queries, missing indexes and fragmentation.",
+      "official": false,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@toolbox-sdk/server",
+        "args": [
+          "--prebuilt=mysql",
+          "--stdio"
+        ],
+        "docs": "https://github.com/googleapis/genai-toolbox",
+        "env": [
+          "MYSQL_HOST",
+          "MYSQL_PORT",
+          "MYSQL_DATABASE",
+          "MYSQL_USER",
+          "MYSQL_PASSWORD"
+        ]
+      }
+    },
+    {
+      "name": "n8n",
+      "kind": "toolset",
+      "purpose": "n8n's built-in instance-level MCP server: search and execute workflows that are enabled for MCP on your n8n instance.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://<your-n8n-host>/mcp-server/http",
+        "docs": "https://docs.n8n.io/advanced-ai/accessing-n8n-mcp-server/",
+        "env": [],
+        "note": "Per-instance URL from Settings > Instance-level MCP. OAuth (recommended) or personal access token as Bearer."
+      }
+    },
+    {
+      "name": "neo4j",
+      "kind": "toolset",
+      "purpose": "Neo4j's official product MCP server: read graph schema and run read/write Cypher queries against Neo4j or Aura.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "neo4j-mcp-server",
+        "docs": "https://github.com/neo4j/mcp",
+        "env": [
+          "NEO4J_MCP_URI",
+          "NEO4J_MCP_USERNAME",
+          "NEO4J_MCP_PASSWORD",
+          "NEO4J_MCP_DATABASE"
+        ]
+      }
+    },
+    {
+      "name": "neon",
+      "kind": "toolset",
+      "purpose": "Neon's official hosted MCP server (OAuth or API key): manage Neon projects and branches, run SQL, and do migrations on branches. Local stdio package is deprecated; legacy /sse endpoint retires Oct 2026.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.neon.tech/mcp",
+        "docs": "https://neon.com/docs/ai/neon-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "netlify",
+      "kind": "toolset",
+      "purpose": "Netlify's official remote MCP server: create projects, build, deploy and manage Netlify sites and resources. (Local alternative: npx -y @netlify/mcp.)",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://netlify-mcp.netlify.app/mcp",
+        "docs": "https://docs.netlify.com/welcome/build-with-ai/netlify-mcp-server/",
+        "env": []
+      }
+    },
+    {
+      "name": "new-relic",
+      "kind": "toolset",
+      "purpose": "New Relic's official remote MCP server: run NRQL, look up entities, investigate alerts and incidents, analyze deployments, logs and golden metrics.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.newrelic.com/mcp/",
+        "docs": "https://docs.newrelic.com/docs/agentic-ai/mcp/setup/",
+        "env": [],
+        "note": "EU accounts: https://mcp.eu.newrelic.com/mcp/. OAuth recommended; User API key (NRAK-...) also supported."
+      }
+    },
+    {
+      "name": "next-devtools",
+      "kind": "toolset",
+      "purpose": "Vercel's official Next.js DevTools MCP server: Next.js docs, runtime errors/routes from the dev server, upgrade and Cache Components helpers, browser testing.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "next-devtools-mcp",
+        "docs": "https://github.com/vercel/next-devtools-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "nixos",
+      "kind": "toolset",
+      "purpose": "Community MCP server for NixOS: search NixOS packages and options, Home Manager and nix-darwin options, and package version history.",
+      "official": false,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "mcp-nixos",
+        "docs": "https://github.com/utensils/mcp-nixos",
+        "env": []
+      }
+    },
+    {
+      "name": "notion",
+      "kind": "toolset",
+      "purpose": "Notion's official remote MCP server: search, read, create and update pages and databases in a Notion workspace.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.notion.com/mcp",
+        "docs": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "nx",
+      "kind": "toolset",
+      "purpose": "Nx's official MCP server: workspace project graph, targets, generators, docs and CI pipeline insights (Nx >= 21.4 can also run `npx nx mcp`).",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "nx-mcp",
+        "docs": "https://nx.dev/docs/reference/nx-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "okta",
+      "kind": "toolset",
+      "purpose": "Okta's official MCP server: manage users, groups, applications, policies, brands and domains in an Okta org.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "okta-mcp-server",
+        "docs": "https://github.com/okta/okta-mcp-server",
+        "env": [
+          "OKTA_ORG_URL",
+          "OKTA_CLIENT_ID",
+          "OKTA_SCOPES",
+          "OKTA_PRIVATE_KEY + OKTA_KEY_ID (optional, for browserless private-key JWT auth)"
+        ]
+      }
+    },
+    {
+      "name": "open-targets",
+      "kind": "toolset",
+      "purpose": "Official Open Targets Platform server (no auth): entity search across targets/diseases/drugs/variants, schema access and custom GraphQL queries against the Platform API.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.platform.opentargets.org/mcp",
+        "docs": "https://platform-docs.opentargets.org/data-access/model-context-protocol",
+        "env": []
+      }
+    },
+    {
+      "name": "openrouter",
+      "kind": "toolset",
+      "purpose": "OpenRouter's official remote MCP server: models, pricing, credits, rankings, docs search, test messages and image generation.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.openrouter.ai/mcp",
+        "docs": "https://openrouter.ai/docs/guides/overview/mcp-server",
+        "env": [],
+        "note": "OAuth issues a dedicated 7-day key with a spend cap."
+      }
+    },
+    {
+      "name": "opensearch",
+      "kind": "toolset",
+      "purpose": "OpenSearch Project's official MCP server: list indices, get mappings, search, cluster health and shard info for OpenSearch and Amazon OpenSearch (basic or AWS IAM auth).",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "opensearch-mcp-server-py",
+        "docs": "https://github.com/opensearch-project/opensearch-mcp-server-py",
+        "env": [
+          "OPENSEARCH_URL",
+          "OPENSEARCH_USERNAME",
+          "OPENSEARCH_PASSWORD"
+        ]
+      }
+    },
+    {
+      "name": "opentofu",
+      "kind": "toolset",
+      "purpose": "OpenTofu's official hosted MCP server: search the OpenTofu Registry for providers, modules, resources and data sources and read their docs.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.opentofu.org/mcp",
+        "docs": "https://github.com/opentofu/opentofu-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "oracle-oci",
+      "kind": "toolset",
+      "purpose": "Oracle's official OCI Cloud MCP server (recommended entry point in oracle/mcp): call OCI services via the OCI Python SDK using your OCI CLI profile. Oracle labels these reference implementations.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "oracle.oci-cloud-mcp-server",
+        "docs": "https://github.com/oracle/mcp",
+        "env": [
+          "OCI_CONFIG_PROFILE"
+        ]
+      }
+    },
+    {
+      "name": "orca",
+      "kind": "toolset",
+      "purpose": "Orca Security's official remote MCP server: query alerts, cloud assets, vulnerabilities, compliance data and Orca docs.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.orcasecurity.io/mcp",
+        "docs": "https://mcp-docs.orca.security/",
+        "env": [],
+        "note": "Regional: api.eu/au/in/sa.orcasecurity.io/mcp. OAuth 2.0 or API token."
+      }
+    },
+    {
+      "name": "owkin",
+      "kind": "toolset",
+      "purpose": "Owkin's official connector (HistoPLUS agent): analyse TCGA H&E histopathology slides - cell types, cohorts, histomics features, spatial tumour microenvironment and survival analysis.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.k.owkin.com/mcp",
+        "docs": "https://claude.com/marketplace/connectors/owkin",
+        "env": []
+      }
+    },
+    {
+      "name": "paddle",
+      "kind": "toolset",
+      "purpose": "Paddle's official MCP server for Paddle Billing: products, prices, customers, transactions, subscriptions, reports (tool sets: all, read-only, non-destructive).",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@paddle/paddle-mcp",
+        "docs": "https://github.com/PaddleHQ/paddle-mcp-server",
+        "env": [
+          "PADDLE_API_KEY",
+          "PADDLE_ENVIRONMENT",
+          "PADDLE_MCP_TOOLS"
+        ]
+      }
+    },
+    {
+      "name": "pagerduty",
+      "kind": "toolset",
+      "purpose": "PagerDuty's official remote MCP server: manage incidents, services, schedules, on-calls, escalation policies and event orchestrations.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.pagerduty.com/mcp",
+        "docs": "https://support.pagerduty.com/main/docs/pagerduty-mcp-server",
+        "env": [],
+        "note": "EU: https://mcp.eu.pagerduty.com/mcp. OAuth or 'Authorization: Token token=<api-key>' header. The local uvx pagerduty-mcp package is deprecated."
+      }
+    },
+    {
+      "name": "pandadoc",
+      "kind": "toolset",
+      "purpose": "PandaDoc's official remote MCP server (OAuth): search, create, send and track documents; explore the PandaDoc API.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.pandadoc.com/v1/mcp",
+        "docs": "https://developers.pandadoc.com/docs/use-pandadoc-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "panther",
+      "kind": "toolset",
+      "purpose": "Panther Labs' official MCP server: write and run detections, query the data lake (SQL), triage alerts and manage rules.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "mcp-panther",
+        "docs": "https://github.com/panther-labs/mcp-panther",
+        "env": [
+          "PANTHER_INSTANCE_URL",
+          "PANTHER_API_TOKEN"
+        ]
+      }
+    },
+    {
+      "name": "paper-search",
+      "kind": "toolset",
+      "purpose": "Community paper-search-mcp: search and download papers across arXiv, PubMed, bioRxiv, Semantic Scholar, OpenAlex, CORE, Google Scholar and more; optional per-source API keys raise limits.",
+      "official": false,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "paper-search-mcp",
+        "docs": "https://github.com/openags/paper-search-mcp",
+        "env": [
+          "PAPER_SEARCH_MCP_SEMANTIC_SCHOLAR_API_KEY (optional)",
+          "PAPER_SEARCH_MCP_CORE_API_KEY (optional)"
+        ]
+      }
+    },
+    {
+      "name": "paypal",
+      "kind": "toolset",
+      "purpose": "PayPal's official remote MCP server: invoices, orders, payments, disputes, shipment tracking, catalog and subscriptions via PayPal APIs (sandbox: https://mcp.sandbox.paypal.com/http).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.paypal.com/http",
+        "docs": "https://developer.paypal.com/tools/mcp-server/",
+        "env": []
+      }
+    },
+    {
+      "name": "pendo",
+      "kind": "toolset",
+      "purpose": "Pendo's official remote MCP server (OAuth): query Pendo product analytics data; URL varies by data center (EU app.eu.pendo.io, US1, JPN, AU).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://app.pendo.io/mcp/v0/shttp",
+        "docs": "https://support.pendo.io/hc/en-us/articles/41102236924955",
+        "env": []
+      }
+    },
+    {
+      "name": "penpot",
+      "kind": "toolset",
+      "purpose": "Penpot's official local MCP server (npm): read/modify Penpot file structure, components, styles, tokens and layers via a companion plugin. A remote server URL with per-user token is also available from Penpot account settings.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@penpot/mcp@stable",
+        "docs": "https://help.penpot.app/mcp/",
+        "env": []
+      }
+    },
+    {
+      "name": "perplexity",
+      "kind": "toolset",
+      "purpose": "Perplexity's official remote MCP server: perplexity_search, perplexity_ask, perplexity_research and perplexity_reason.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.perplexity.ai/mcp",
+        "docs": "https://docs.perplexity.ai/guides/mcp-server",
+        "env": [],
+        "note": "OAuth or API key as Bearer token. Local: npx -y @perplexity-ai/mcp-server with PERPLEXITY_API_KEY."
+      }
+    },
+    {
+      "name": "phrase",
+      "kind": "toolset",
+      "purpose": "Phrase's official hosted MCP (OAuth) for Phrase Strings and Phrase TMS: projects, jobs, keys and translations (EU endpoint; US: https://mcp.us.phrase.com).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.eu.phrase.com",
+        "docs": "https://developers.phrase.com/en/mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "pinecone",
+      "kind": "toolset",
+      "purpose": "Pinecone's official developer MCP server: search Pinecone docs, list/describe/create indexes, upsert and search records, cascading search and reranking (integrated-embedding indexes only).",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@pinecone-database/mcp",
+        "docs": "https://docs.pinecone.io/guides/operations/mcp-server",
+        "env": [
+          "PINECONE_API_KEY"
+        ]
+      }
+    },
+    {
+      "name": "pipedream",
+      "kind": "toolset",
+      "purpose": "Pipedream's official remote MCP server (Connect): tools for 3,000+ APIs with managed user auth, for developers embedding MCP in their apps.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://remote.mcp.pipedream.net/v3",
+        "docs": "https://pipedream.com/docs/connect/mcp/developers",
+        "env": [
+          "PIPEDREAM_CLIENT_ID",
+          "PIPEDREAM_CLIENT_SECRET",
+          "PIPEDREAM_PROJECT_ID",
+          "PIPEDREAM_ENVIRONMENT"
+        ],
+        "note": "Requires Bearer access token plus x-pd-project-id, x-pd-environment, x-pd-external-user-id, x-pd-app-slug headers."
+      }
+    },
+    {
+      "name": "pipedrive",
+      "kind": "toolset",
+      "purpose": "Pipedrive's official remote MCP server (OAuth): search and update deals, contacts, organizations, leads and activities; pipeline insights.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.pipedrive.ai/mcp",
+        "docs": "https://support.pipedrive.com/en/article/mcp-claude",
+        "env": []
+      }
+    },
+    {
+      "name": "plaid-dashboard",
+      "kind": "toolset",
+      "purpose": "Plaid's official remote Dashboard MCP server: debug Items, Link conversion analytics, usage metrics, list teams. Requires an OAuth client-credentials token (scope mcp:dashboard) passed as Bearer.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.dashboard.plaid.com/mcp/",
+        "docs": "https://plaid.com/docs/resources/mcp/",
+        "env": [
+          "PLAID_MCP_ACCESS_TOKEN"
+        ]
+      }
+    },
+    {
+      "name": "planetscale",
+      "kind": "toolset",
+      "purpose": "PlanetScale's official hosted MCP server (OAuth or service token): explore databases, branches and schema, query Insights, and run queries with ephemeral credentials. An insights-only variant lives at /mcp/planetscale-insights-only.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.pscale.dev/mcp/planetscale",
+        "docs": "https://planetscale.com/docs/connect/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "playwright",
+      "kind": "toolset",
+      "purpose": "Microsoft's official Playwright MCP server: drive a real browser via accessibility snapshots (navigate, click, type, screenshot, network, tabs).",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@playwright/mcp",
+        "docs": "https://github.com/microsoft/playwright-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "polar",
+      "kind": "toolset",
+      "purpose": "Polar's official remote MCP server (OAuth): manage products, customers, orders, subscriptions and benefits in your Polar organization (sandbox: https://mcp.polar.sh/mcp/polar-sandbox).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.polar.sh/mcp/polar-mcp",
+        "docs": "https://polar.sh/docs/integrate/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "postgres",
+      "kind": "toolset",
+      "purpose": "Postgres MCP Pro (community, by Crystal DBA): schema exploration, SQL execution with restricted/unrestricted access modes, index tuning, EXPLAIN analysis and database health checks.",
+      "official": false,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "postgres-mcp",
+        "args": [
+          "--access-mode=restricted"
+        ],
+        "docs": "https://github.com/crystaldba/postgres-mcp",
+        "env": [
+          "DATABASE_URI"
+        ]
+      }
+    },
+    {
+      "name": "posthog",
+      "kind": "toolset",
+      "purpose": "PostHog's official remote MCP server: query product analytics (HogQL/insights), manage feature flags, experiments, dashboards and error tracking.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.posthog.com/mcp",
+        "docs": "https://posthog.com/docs/model-context-protocol",
+        "env": [],
+        "note": "Auth server routes to US/EU automatically. Installer: npx @posthog/wizard mcp add."
+      }
+    },
+    {
+      "name": "postman",
+      "kind": "toolset",
+      "purpose": "Postman's official remote MCP server: manage workspaces, collections, environments, specs and mocks (minimal toolset default; /mcp for full, /code for code mode).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.postman.com/minimal",
+        "docs": "https://github.com/postmanlabs/postman-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "power-bi",
+      "kind": "toolset",
+      "purpose": "Microsoft's remote Power BI Consumption MCP server (preview, Entra ID; admin tenant setting required): get semantic model schema and report metadata, generate and execute DAX queries.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.fabric.microsoft.com/v1/mcp/powerbi",
+        "docs": "https://learn.microsoft.com/en-us/power-bi/developer/mcp/remote-mcp-server-get-started",
+        "env": []
+      }
+    },
+    {
+      "name": "prisma",
+      "kind": "toolset",
+      "purpose": "Prisma's official remote MCP server (OAuth): manage Prisma Postgres databases, Prisma Compute apps and Object Storage buckets.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.prisma.io/mcp",
+        "docs": "https://www.prisma.io/docs/postgres/integrations/mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "prometheus",
+      "kind": "toolset",
+      "purpose": "Community Prometheus MCP server: execute PromQL instant/range queries, list metrics, metadata and scrape targets.",
+      "official": false,
+      "source": {
+        "type": "stdio",
+        "runner": "docker",
+        "package": "ghcr.io/pab1it0/prometheus-mcp-server",
+        "args": [
+          "run",
+          "-i",
+          "--rm",
+          "-e",
+          "PROMETHEUS_URL",
+          "ghcr.io/pab1it0/prometheus-mcp-server:latest"
+        ],
+        "docs": "https://github.com/pab1it0/prometheus-mcp-server",
+        "env": [
+          "PROMETHEUS_URL"
+        ]
+      }
+    },
+    {
+      "name": "pubmed",
+      "kind": "toolset",
+      "purpose": "Anthropic-built PubMed connector: search PubMed/PubMed Central biomedical literature, fetch article metadata and full text where available.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://pubmed.mcp.claude.com/mcp",
+        "docs": "https://claude.com/marketplace/connectors/pubmed",
+        "env": []
+      }
+    },
+    {
+      "name": "pulumi",
+      "kind": "toolset",
+      "purpose": "Pulumi's official hosted MCP server: query Pulumi Cloud stacks and resources, registry docs, and drive Pulumi Neo/IaC tasks. Browser auth or Bearer token.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.ai.pulumi.com/mcp",
+        "docs": "https://www.pulumi.com/docs/iac/guides/ai-integration/mcp-server/",
+        "env": [
+          "PULUMI_MCP_TOKEN (optional, Authorization: Bearer header for headless use)"
+        ]
+      }
+    },
+    {
+      "name": "qdrant",
+      "kind": "toolset",
+      "purpose": "Qdrant's official MCP server: semantic memory layer with qdrant-store and qdrant-find tools over a Qdrant collection, embedding via FastEmbed.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "mcp-server-qdrant",
+        "docs": "https://github.com/qdrant/mcp-server-qdrant",
+        "env": [
+          "QDRANT_URL",
+          "QDRANT_API_KEY",
+          "COLLECTION_NAME",
+          "EMBEDDING_MODEL"
+        ]
+      }
+    },
+    {
+      "name": "railway",
+      "kind": "toolset",
+      "purpose": "Railway's official remote MCP server (OAuth): create projects, deploy templates, manage services, environments and variables, and redeploy.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.railway.com",
+        "docs": "https://docs.railway.com/ai/remote-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "ramp",
+      "kind": "toolset",
+      "purpose": "Ramp's official remote MCP server (OAuth, acts as the signed-in user): spend, transactions, reimbursements, cards and bills (demo data: https://demo-mcp.ramp.com/mcp).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.ramp.com/mcp",
+        "docs": "https://agents.ramp.com/docs/getting-started/connect",
+        "env": []
+      }
+    },
+    {
+      "name": "raygun",
+      "kind": "toolset",
+      "purpose": "Raygun's official hosted MCP server: investigate crash reports, RUM, APM, deployments, applications and customers.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.raygun.com/v3/mcp",
+        "docs": "https://raygun.com/documentation/product-guides/raygun-mcp-server/",
+        "env": [],
+        "note": "OAuth recommended; Personal Access Token as Bearer header supported."
+      }
+    },
+    {
+      "name": "readwise",
+      "kind": "toolset",
+      "purpose": "Readwise's official remote MCP server: search and manage Readwise highlights and Reader documents, tags and locations.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp2.readwise.io/mcp",
+        "docs": "https://readwise.io/mcp",
+        "env": [],
+        "note": "Old npm @readwise/readwise-mcp is deprecated."
+      }
+    },
+    {
+      "name": "redis",
+      "kind": "toolset",
+      "purpose": "Redis's official MCP server: natural-language access to Redis data structures (strings, hashes, lists, sets, sorted sets, streams, JSON), vector search and server management.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "redis-mcp-server",
+        "args": [
+          "--url",
+          "<redis-url>"
+        ],
+        "docs": "https://github.com/redis/mcp-redis",
+        "env": [
+          "REDIS_HOST",
+          "REDIS_PORT",
+          "REDIS_PWD"
+        ]
+      }
+    },
+    {
+      "name": "render",
+      "kind": "toolset",
+      "purpose": "Render's official hosted MCP server: manage workspaces, create services, trigger and inspect deploys, query logs and metrics, run read-only Postgres queries. OAuth in supported clients, otherwise an API key as a Bearer header.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.render.com/mcp",
+        "docs": "https://render.com/docs/mcp-server",
+        "env": [
+          "RENDER_API_KEY (Authorization: Bearer header, when not using OAuth)"
+        ]
+      }
+    },
+    {
+      "name": "replicate",
+      "kind": "toolset",
+      "purpose": "Replicate's official remote MCP server: search and run models, manage predictions, deployments and files via the Replicate HTTP API.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.replicate.com/sse",
+        "docs": "https://replicate.com/docs/reference/mcp",
+        "env": [],
+        "note": "SSE endpoint as listed on mcp.replicate.com. Local alternative: npx -y replicate-mcp with REPLICATE_API_TOKEN."
+      }
+    },
+    {
+      "name": "resend",
+      "kind": "toolset",
+      "purpose": "Resend's official remote MCP server: send emails, manage templates, contacts, broadcasts, domains, segments, webhooks and logs (OAuth or API key as Bearer).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.resend.com/mcp",
+        "docs": "https://resend.com/docs/mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "resend-local",
+      "kind": "toolset",
+      "purpose": "Resend's official local MCP server (npm) with the same email/contacts/broadcast tools.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "resend-mcp",
+        "docs": "https://resend.com/docs/mcp-server",
+        "env": [
+          "RESEND_API_KEY"
+        ]
+      }
+    },
+    {
+      "name": "retell",
+      "kind": "toolset",
+      "purpose": "Retell's official remote MCP server: build and manage voice agents, calls, phone numbers, knowledge bases, voices, tests and webhooks.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.retellai.com",
+        "docs": "https://docs.retellai.com/get-started/mcp-server",
+        "env": [
+          "RETELL_API_KEY"
+        ],
+        "note": "Authorization: Bearer <RETELL_API_KEY>."
+      }
+    },
+    {
+      "name": "rollbar",
+      "kind": "toolset",
+      "purpose": "Rollbar's official MCP server: fetch item details, top items, versions and deployments, and update items in Rollbar projects.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@rollbar/mcp-server",
+        "args": [
+          "-y",
+          "@rollbar/mcp-server@latest"
+        ],
+        "docs": "https://github.com/rollbar/rollbar-mcp-server",
+        "env": [
+          "ROLLBAR_ACCESS_TOKEN"
+        ],
+        "note": "Use ROLLBAR_ACCOUNT_ACCESS_TOKEN for multi-project access."
+      }
+    },
+    {
+      "name": "rootly",
+      "kind": "toolset",
+      "purpose": "Rootly's official hosted MCP server: manage incidents, alerts, on-call schedules, workflows and retrospectives in Rootly.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.rootly.com/mcp",
+        "docs": "https://github.com/rootlyhq/rootly-mcp-server",
+        "env": [
+          "ROOTLY_API_TOKEN (Authorization: Bearer header)"
+        ],
+        "note": "SSE alternative: https://mcp.rootly.com/sse. Self-host via uvx rootly-mcp-server."
+      }
+    },
+    {
+      "name": "runway",
+      "kind": "toolset",
+      "purpose": "Runway's official remote MCP server: generate images and videos with Runway and partner models using your Runway credits.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.runwayml.com/mcp",
+        "docs": "https://help.runwayml.com/hc/en-us/articles/51931843164691-Connecting-to-Runway-MCP",
+        "env": [],
+        "note": "Sign in with Runway account (OAuth); no API key."
+      }
+    },
+    {
+      "name": "salesforce-dx",
+      "kind": "toolset",
+      "purpose": "Salesforce's official DX MCP server: orgs, metadata deploy/retrieve, SOQL data queries, users, Apex tests, LWC/code analysis toolsets against pre-authorized orgs.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@salesforce/mcp",
+        "args": [
+          "--orgs",
+          "DEFAULT_TARGET_ORG",
+          "--toolsets",
+          "orgs,metadata,data,users"
+        ],
+        "docs": "https://github.com/salesforcecli/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "sanity",
+      "kind": "toolset",
+      "purpose": "Sanity's official remote MCP server (OAuth or Bearer token): GROQ queries, document patching, releases, asset uploads and schema management.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.sanity.io",
+        "docs": "https://www.sanity.io/docs/ai/mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "scholar-gateway",
+      "kind": "toolset",
+      "purpose": "Wiley Scholar Gateway official connector: search and retrieve peer-reviewed scholarly content with citations.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://connector.scholargateway.ai/v2/mcp",
+        "docs": "https://claude.com/marketplace/connectors/scholar-gateway",
+        "env": []
+      }
+    },
+    {
+      "name": "sec-edgar",
+      "kind": "toolset",
+      "purpose": "Community SEC EDGAR server: company lookup, filings (10-K/10-Q/8-K), XBRL financial statements and insider trading data from SEC EDGAR.",
+      "official": false,
+      "source": {
+        "type": "stdio",
+        "runner": "docker",
+        "package": "stefanoamorelli/sec-edgar-mcp:latest",
+        "docs": "https://github.com/stefanoamorelli/sec-edgar-mcp",
+        "env": [
+          "SEC_EDGAR_USER_AGENT (\"Your Name (email)\")"
+        ]
+      }
+    },
+    {
+      "name": "semgrep",
+      "kind": "toolset",
+      "purpose": "Semgrep's official hosted MCP server (experimental): scan code with Semgrep rules for security issues and query findings.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.semgrep.ai/mcp",
+        "docs": "https://github.com/semgrep/mcp",
+        "env": [],
+        "note": "Hosted server marked experimental. The standalone semgrep-mcp PyPI package is deprecated; local MCP now ships in the semgrep binary."
+      }
+    },
+    {
+      "name": "semrush",
+      "kind": "toolset",
+      "purpose": "Semrush's official remote MCP server: SEO API, Trends API and read-only Projects API data; OAuth or 'Authorization: Apikey <key>' header.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.semrush.com/v2/mcp",
+        "docs": "https://developer.semrush.com/api/basics/semrush-mcp/",
+        "env": []
+      }
+    },
+    {
+      "name": "sentry",
+      "kind": "toolset",
+      "purpose": "Sentry's official remote MCP server: query issues, events, traces, releases and projects, and trigger Seer root-cause analysis.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.sentry.dev/mcp",
+        "docs": "https://github.com/getsentry/sentry-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "sequential-thinking",
+      "kind": "toolset",
+      "purpose": "Reference sequential-thinking server: a structured, revisable step-by-step reasoning tool.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@modelcontextprotocol/server-sequential-thinking",
+        "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking",
+        "env": []
+      }
+    },
+    {
+      "name": "serpapi",
+      "kind": "toolset",
+      "purpose": "SerpApi's official hosted MCP server: one search tool across Google, Bing, Yahoo, DuckDuckGo, YouTube, eBay and other SerpApi engines.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.serpapi.com/mcp",
+        "docs": "https://github.com/serpapi/serpapi-mcp",
+        "env": [
+          "SERPAPI_API_KEY"
+        ],
+        "note": "Authorization: Bearer <key> (recommended) or path form https://mcp.serpapi.com/<key>/mcp."
+      }
+    },
+    {
+      "name": "shadcn",
+      "kind": "toolset",
+      "purpose": "Official shadcn/ui MCP server: browse, search and install components from shadcn and custom registries.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "shadcn@latest",
+        "args": [
+          "mcp"
+        ],
+        "docs": "https://ui.shadcn.com/docs/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "shippo",
+      "kind": "toolset",
+      "purpose": "Shippo's official hosted MCP (OAuth): validate addresses, compare carrier rates, buy labels, track packages, customs and batch shipments (local alternative: npx @shippo/shippo-mcp).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.shippo.com",
+        "docs": "https://docs.goshippo.com/guides/mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "shopify",
+      "kind": "toolset",
+      "purpose": "Shopify's official store connector (OAuth): build, manage and analyse a Shopify store - products, inventory, orders and analytics.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://setup.shopify.com/mcp",
+        "docs": "https://claude.com/marketplace/connectors/shopify",
+        "env": []
+      }
+    },
+    {
+      "name": "shopify-dev",
+      "kind": "toolset",
+      "purpose": "Shopify's official Dev MCP server (local, no auth): search Shopify dev docs, introspect Admin/Storefront GraphQL schemas and validate GraphQL, Liquid and UI extension code.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@shopify/dev-mcp",
+        "docs": "https://shopify.dev/docs/apps/build/devmcp",
+        "env": []
+      }
+    },
+    {
+      "name": "shopify-storefront",
+      "kind": "toolset",
+      "purpose": "Shopify's official per-store Storefront MCP (public, no auth): catalog search, product details, cart management and store policies for a given shop (replace {shop}).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://{shop}.myshopify.com/api/mcp",
+        "docs": "https://shopify.dev/docs/apps/build/storefront-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "signoz",
+      "kind": "toolset",
+      "purpose": "SigNoz's official MCP server (hosted for SigNoz Cloud): query metrics, logs and traces, list services, alerts and dashboards.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.<region>.signoz.cloud/mcp",
+        "docs": "https://github.com/SigNoz/signoz-mcp-server",
+        "env": [],
+        "note": "Region must match your SigNoz Cloud account. Self-hosted SigNoz: run the Go binary with SIGNOZ_URL and SIGNOZ_API_KEY."
+      }
+    },
+    {
+      "name": "similarweb",
+      "kind": "toolset",
+      "purpose": "Similarweb's official remote MCP server: website traffic, engagement, channels, keywords, audience, app and retail intelligence. Auth via 'api-key' header.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.similarweb.com",
+        "docs": "https://developers.similarweb.com/docs/cursor-mcp-integration",
+        "env": [
+          "SIMILARWEB_API_KEY"
+        ]
+      }
+    },
+    {
+      "name": "singlestore",
+      "kind": "toolset",
+      "purpose": "SingleStore's official MCP server (browser OAuth): manage Helios workspaces, run SQL, notebooks and scheduled jobs.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "singlestore-mcp-server",
+        "args": [
+          "start"
+        ],
+        "docs": "https://docs.singlestore.com/cloud/ai/singlestore-mcp-server/",
+        "env": []
+      }
+    },
+    {
+      "name": "slack",
+      "kind": "toolset",
+      "purpose": "Slack's official remote MCP server: search messages/files/users/channels, send and schedule messages, read threads, canvases and lists.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.slack.com/mcp",
+        "docs": "https://docs.slack.dev/ai/slack-mcp-server/",
+        "env": [],
+        "note": "OAuth via a Slack app (confidential client); Streamable HTTP only."
+      }
+    },
+    {
+      "name": "smartsheet",
+      "kind": "toolset",
+      "purpose": "Smartsheet's official remote MCP server: read and update sheets, rows, reports and workspaces.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.smartsheet.com",
+        "docs": "https://help.smartsheet.com/articles/2483656-install-smartsheet-connector-claude",
+        "env": [],
+        "note": "OAuth. EU: https://mcp.smartsheet.eu, AU: https://mcp.smartsheet.au."
+      }
+    },
+    {
+      "name": "snowflake",
+      "kind": "toolset",
+      "purpose": "Snowflake-managed MCP server (Snowflake OAuth): exposes Cortex Analyst, Cortex Search, Cortex Agents, SQL execution and custom tools defined on an MCP SERVER object. Replace account URL, database, schema and server name.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://<account_url>/api/v2/databases/<database>/schemas/<schema>/mcp-servers/<name>",
+        "docs": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "snyk",
+      "kind": "toolset",
+      "purpose": "Snyk's official MCP server (via Snyk CLI): run SCA, SAST (Code), IaC and container scans and return vulnerabilities to the agent.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "snyk",
+        "args": [
+          "-y",
+          "snyk@latest",
+          "mcp",
+          "-t",
+          "stdio"
+        ],
+        "docs": "https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/cline-guide.md",
+        "env": [],
+        "note": "Authenticate with snyk auth (browser) or SNYK_TOKEN."
+      }
+    },
+    {
+      "name": "socket",
+      "kind": "toolset",
+      "purpose": "Socket's official hosted MCP server: get supply-chain security scores and metadata for npm, PyPI, cargo, Maven, Go and other dependencies.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.socket.dev/",
+        "docs": "https://github.com/SocketDev/socket-mcp",
+        "env": [],
+        "note": "Public server uses OAuth. Local alternative: npx @socketsecurity/mcp with SOCKET_API_KEY."
+      }
+    },
+    {
+      "name": "sonarqube",
+      "kind": "toolset",
+      "purpose": "SonarSource's official SonarQube MCP server: analyze code snippets, list issues, hotspots, quality gates and metrics in SonarQube Server or Cloud.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "docker",
+        "package": "sonarsource/sonarqube-mcp",
+        "args": [
+          "run",
+          "--init",
+          "--pull=always",
+          "-i",
+          "--rm",
+          "-e",
+          "SONARQUBE_TOKEN",
+          "-e",
+          "SONARQUBE_ORG",
+          "sonarsource/sonarqube-mcp"
+        ],
+        "docs": "https://github.com/SonarSource/sonarqube-mcp-server",
+        "env": [
+          "SONARQUBE_TOKEN",
+          "SONARQUBE_ORG (Cloud) or SONARQUBE_URL (Server)"
+        ]
+      }
+    },
+    {
+      "name": "spacelift",
+      "kind": "toolset",
+      "purpose": "Spacelift's official remote MCP server, per account (US accounts use <account-name>.app.us.spacelift.io): discover and query/mutate the Spacelift GraphQL API (stacks, runs, policies). OAuth or spacectl bearer token.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://<account-name>.app.spacelift.io/mcp",
+        "docs": "https://docs.spacelift.io/concepts/intelligence/spacelift-mcp/connecting",
+        "env": []
+      }
+    },
+    {
+      "name": "splunk",
+      "kind": "toolset",
+      "purpose": "Splunk's official MCP Server app (Splunkbase 7931): run SPL searches, list indexes and saved searches, and call Splunk AI Assistant tools on your Splunk deployment.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://<splunk-host>:8089/services/mcp",
+        "docs": "https://help.splunk.com/en/splunk-enterprise/mcp-server-for-splunk-platform/1.3/connecting-to-the-mcp-server-and-settings",
+        "env": [
+          "SPLUNK_MCP_ENCRYPTED_TOKEN (Authorization: Bearer header, generated in the Splunk MCP Server app)"
+        ],
+        "note": "Requires installing the Splunk MCP Server app; exact endpoint is shown in the app. Splunk's sample config proxies it via npx mcp-remote <endpoint> --header 'Authorization: Bearer <token>'."
+      }
+    },
+    {
+      "name": "spotify",
+      "kind": "toolset",
+      "purpose": "Spotify's official connector (pilot, Premium sign-in): search music/podcasts/audiobooks, get recommendations, create playlists and manage library. URL is a pilot gateway and may change.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp-gateway-external-pilot.spotify.net/mcp",
+        "docs": "https://claude.com/marketplace/connectors/spotify",
+        "env": []
+      }
+    },
+    {
+      "name": "sqlite",
+      "kind": "toolset",
+      "purpose": "SQLite via Google's MCP Toolbox prebuilt 'sqlite' toolset (reference SQLite server is archived): execute SQL and list tables on a SQLite file.",
+      "official": false,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@toolbox-sdk/server",
+        "args": [
+          "--prebuilt=sqlite",
+          "--stdio"
+        ],
+        "docs": "https://github.com/googleapis/genai-toolbox",
+        "env": [
+          "SQLITE_DATABASE"
+        ]
+      }
+    },
+    {
+      "name": "square",
+      "kind": "toolset",
+      "purpose": "Square's official remote MCP server: access Square APIs for payments, orders, catalog, customers, inventory and more.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.squareup.com/mcp",
+        "docs": "https://developer.squareup.com/docs/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "starrocks",
+      "kind": "toolset",
+      "purpose": "StarRocks' official MCP server: run SQL, explore databases/tables, table overviews and Plotly visualizations against StarRocks.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "mcp-server-starrocks",
+        "docs": "https://github.com/StarRocks/mcp-server-starrocks",
+        "env": [
+          "STARROCKS_HOST",
+          "STARROCKS_PORT",
+          "STARROCKS_USER",
+          "STARROCKS_PASSWORD"
+        ]
+      }
+    },
+    {
+      "name": "statsig",
+      "kind": "toolset",
+      "purpose": "Statsig's official remote MCP server: query and manage feature gates, experiments, dynamic configs and metrics (OAuth, or statsig-api-key header with a Console API key).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://api.statsig.com/v3/mcp",
+        "docs": "https://docs.statsig.com/integrations/mcp/manual-setup",
+        "env": []
+      }
+    },
+    {
+      "name": "storyblok",
+      "kind": "toolset",
+      "purpose": "Storyblok's official hosted MCP server: search, describe and execute Storyblok Management API operations on your spaces.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.storyblok.com/mcp",
+        "docs": "https://www.storyblok.com/docs/libraries/mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "stripe",
+      "kind": "toolset",
+      "purpose": "Stripe's official remote MCP server: search/read/write most of the Stripe API (customers, payments, invoices, subscriptions, refunds), analytics, and search Stripe docs.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.stripe.com",
+        "docs": "https://docs.stripe.com/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "stytch",
+      "kind": "toolset",
+      "purpose": "Stytch's official remote MCP server: manage Stytch projects, environments, redirect URLs, secrets and settings.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.stytch.dev/mcp",
+        "docs": "https://stytch.com/docs/resources/workspace-management/stytch-mcp-server",
+        "env": []
+      }
+    },
+    {
+      "name": "supabase",
+      "kind": "toolset",
+      "purpose": "Supabase's official remote MCP server (OAuth): manage projects, run SQL, apply migrations, inspect logs, deploy Edge Functions and generate types.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.supabase.com/mcp",
+        "docs": "https://supabase.com/docs/guides/getting-started/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "svelte",
+      "kind": "toolset",
+      "purpose": "Svelte team's official remote MCP server: Svelte/SvelteKit docs lookup and an autofixer that analyzes Svelte code (local alternative: npx @sveltejs/mcp).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.svelte.dev/mcp",
+        "docs": "https://svelte.dev/docs/ai/remote-setup",
+        "env": []
+      }
+    },
+    {
+      "name": "tableau",
+      "kind": "toolset",
+      "purpose": "Tableau's official MCP server: list and query published data sources, explore workbooks, views and Pulse metrics via the VizQL Data Service and REST APIs. (A hosted OAuth variant for Tableau Cloud also exists.)",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@tableau/mcp-server",
+        "docs": "https://github.com/tableau/tableau-mcp",
+        "env": [
+          "SERVER",
+          "SITE_NAME",
+          "PAT_NAME",
+          "PAT_VALUE"
+        ]
+      }
+    },
+    {
+      "name": "tavily",
+      "kind": "toolset",
+      "purpose": "Tavily's official remote MCP server: real-time web search, extract, map and crawl.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.tavily.com/mcp/",
+        "docs": "https://docs.tavily.com/documentation/mcp",
+        "env": [],
+        "note": "OAuth, Authorization header, or ?tavilyApiKey=<TAVILY_API_KEY>. Local: npx -y tavily-mcp with TAVILY_API_KEY."
+      }
+    },
+    {
+      "name": "terraform",
+      "kind": "toolset",
+      "purpose": "HashiCorp's official Terraform MCP server: search the Terraform Registry for providers, modules and policies, read provider docs, and (with a token) manage HCP Terraform / TFE workspaces and runs.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "docker",
+        "package": "hashicorp/terraform-mcp-server",
+        "docs": "https://github.com/hashicorp/terraform-mcp-server",
+        "env": [
+          "TFE_TOKEN (optional, for HCP Terraform/TFE)",
+          "TFE_ADDRESS (optional)"
+        ]
+      }
+    },
+    {
+      "name": "testsprite",
+      "kind": "toolset",
+      "purpose": "TestSprite's official MCP server: AI-generated test plans, test code and automated execution/fixing for frontend and backend projects.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@testsprite/testsprite-mcp",
+        "docs": "https://docs.testsprite.com/mcp/getting-started/installation",
+        "env": [
+          "API_KEY"
+        ]
+      }
+    },
+    {
+      "name": "tiger-pg-aiguide",
+      "kind": "toolset",
+      "purpose": "Tiger Data's public pg-aiguide MCP server: version-aware semantic search over PostgreSQL and TimescaleDB docs plus curated Postgres best-practice skills.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.tigerdata.com/docs",
+        "docs": "https://github.com/timescale/pg-aiguide",
+        "env": []
+      }
+    },
+    {
+      "name": "time",
+      "kind": "toolset",
+      "purpose": "Reference time server: current time and timezone conversion using IANA zone names.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "mcp-server-time",
+        "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/time",
+        "env": []
+      }
+    },
+    {
+      "name": "todoist",
+      "kind": "toolset",
+      "purpose": "Todoist's official hosted MCP server: find, add, update and complete tasks, projects, sections and comments.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://ai.todoist.net/mcp",
+        "docs": "https://github.com/Doist/todoist-mcp",
+        "env": [],
+        "note": "OAuth. Local: npx @doist/todoist-mcp with TODOIST_API_KEY (old @doist/todoist-ai is deprecated)."
+      }
+    },
+    {
+      "name": "tripadvisor",
+      "kind": "toolset",
+      "purpose": "Tripadvisor's official hotel connector: search hotels and get details, photos, reviews, pricing and nearby attractions.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://production.ai-mcp-extensibility-prd.tamg.cloud/ogMvjY4De1G7CiHanMOAgddl/mcp",
+        "docs": "https://claude.com/marketplace/connectors/tripadvisor",
+        "env": []
+      }
+    },
+    {
+      "name": "twilio",
+      "kind": "toolset",
+      "purpose": "Twilio's official (Alpha) MCP server exposing Twilio's public APIs as tools; credentials passed as ACCOUNT_SID/API_KEY:API_SECRET argument.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@twilio-alpha/mcp",
+        "args": [
+          "<ACCOUNT_SID>/<API_KEY>:<API_SECRET>"
+        ],
+        "docs": "https://github.com/twilio-labs/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "twilio-docs",
+      "kind": "toolset",
+      "purpose": "Twilio's official hosted docs MCP server (no auth): search Twilio API specs and documentation; does not execute API calls.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.twilio.com/docs",
+        "docs": "https://www.twilio.com/docs/ai/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "unsplash",
+      "kind": "toolset",
+      "purpose": "Unsplash's official connector (sign-in): search and use free high-quality photos, manage collections and bookmarks.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.unsplash.com/mcp",
+        "docs": "https://claude.com/marketplace/connectors/unsplash",
+        "env": []
+      }
+    },
+    {
+      "name": "upstash",
+      "kind": "toolset",
+      "purpose": "Upstash's official remote MCP server (OAuth or email:API_KEY header): manage Redis, QStash, Workflow, Vector, Search, Box and Blob resources.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.upstash.com/mcp",
+        "docs": "https://upstash.com/docs/agent-resources/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "vanta",
+      "kind": "toolset",
+      "purpose": "Vanta's official hosted MCP server: access controls, tests, documents, frameworks, people and vulnerabilities for compliance (SOC 2, ISO 27001, HIPAA...).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.vanta.com/mcp",
+        "docs": "https://developer.vanta.com/docs/vanta-mcp",
+        "env": [],
+        "note": "EU: https://mcp.eu.vanta.com/mcp, AUS: https://mcp.aus.vanta.com/mcp. OAuth. Replaces deprecated @vantasdk/vanta-mcp-server."
+      }
+    },
+    {
+      "name": "vapi",
+      "kind": "toolset",
+      "purpose": "Vapi's official remote MCP server: manage voice assistants, calls, phone numbers and tools.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.vapi.ai/mcp",
+        "docs": "https://docs.vapi.ai/sdk/mcp-server",
+        "env": [
+          "VAPI_TOKEN"
+        ],
+        "note": "Authorization: Bearer <VAPI_TOKEN>. SSE: https://mcp.vapi.ai/sse. Local: npx @vapi-ai/mcp-server."
+      }
+    },
+    {
+      "name": "vercel",
+      "kind": "toolset",
+      "purpose": "Vercel's official remote MCP server (OAuth, Streamable HTTP): search Vercel docs, manage projects and deployments, read deployment logs and query Web Analytics.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.vercel.com",
+        "docs": "https://vercel.com/docs/agent-resources/vercel-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "wandb",
+      "kind": "toolset",
+      "purpose": "W&B's official hosted MCP server: query W&B Models runs/metrics and Weave traces, and create reports.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.withwandb.com/mcp",
+        "docs": "https://docs.coreweave.com/platform/mcp-server",
+        "env": [
+          "WANDB_API_KEY"
+        ],
+        "note": "API key as Bearer token in Authorization header. Dedicated/self-managed: https://<instance>/mcp."
+      }
+    },
+    {
+      "name": "weaviate",
+      "kind": "toolset",
+      "purpose": "Weaviate's built-in MCP server (v1.38+, always on in Weaviate Cloud; self-hosted needs MCP_SERVER_ENABLED=true; Bearer API key): inspect schemas, vector/hybrid search and modify objects.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://<your-cluster-host>/v1/mcp",
+        "docs": "https://docs.weaviate.io/weaviate/mcp/mcp-server",
+        "env": [
+          "WEAVIATE_API_KEY"
+        ]
+      }
+    },
+    {
+      "name": "webflow",
+      "kind": "toolset",
+      "purpose": "Webflow's official remote MCP server (OAuth): sites, pages, CMS collections/items, components and Designer actions.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.webflow.com/mcp",
+        "docs": "https://developers.webflow.com/mcp/reference/getting-started",
+        "env": []
+      }
+    },
+    {
+      "name": "wikipedia",
+      "kind": "toolset",
+      "purpose": "Community wikipedia-mcp: search Wikipedia, fetch articles, summaries, sections, links and related topics, with language/country selection.",
+      "official": false,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "wikipedia-mcp",
+        "docs": "https://github.com/Rudra-ravi/wikipedia-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "wix",
+      "kind": "toolset",
+      "purpose": "Wix's official remote MCP server: build and manage Wix sites, apps, stores, bookings and other Wix business solutions plus Wix docs search.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.wix.com/mcp",
+        "docs": "https://dev.wix.com/docs/sdk/articles/use-the-wix-mcp/about-the-wix-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "wolfram",
+      "kind": "toolset",
+      "purpose": "Wolfram's official free cloud MCP service: Wolfram|Alpha computation, Wolfram Language evaluation and Wolfram Knowledgebase data, no auth required.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://agenttools.wolfram.com/mcp",
+        "docs": "https://www.wolfram.com/artificial-intelligence/mcp-service/",
+        "env": []
+      }
+    },
+    {
+      "name": "workos",
+      "kind": "toolset",
+      "purpose": "WorkOS's official remote MCP server: act on your WorkOS workspace (organizations, users, SSO/directory connections, settings).",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.workos.com/mcp",
+        "docs": "https://workos.com/docs/mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "wrike",
+      "kind": "toolset",
+      "purpose": "Wrike's official remote MCP server (v2): access and update tasks, projects, folders and comments in Wrike.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.wrike.com/v2",
+        "docs": "https://developers.wrike.com/docs/setup-other-mcp-clients-with-wrike-mcp",
+        "env": [],
+        "note": "Streamable HTTP only."
+      }
+    },
+    {
+      "name": "xero",
+      "kind": "toolset",
+      "purpose": "Xero's official MCP server: accounting data (contacts, invoices, accounts, payments, payroll, reports) via the Xero API using a Custom Connection or bearer token.",
+      "official": true,
+      "source": {
+        "type": "stdio",
+        "runner": "npx",
+        "package": "@xeroapi/xero-mcp-server",
+        "docs": "https://github.com/XeroAPI/xero-mcp-server",
+        "env": [
+          "XERO_CLIENT_ID",
+          "XERO_CLIENT_SECRET"
+        ]
+      }
+    },
+    {
+      "name": "zapier",
+      "kind": "toolset",
+      "purpose": "Zapier's official MCP server: run actions across 8,000+ apps connected to your Zapier account.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.zapier.com/api/v1/connect",
+        "docs": "https://docs.zapier.com/mcp/get-started/connect/other",
+        "env": [],
+        "note": "OAuth for supported clients, or a connection token as Bearer header / ?token= (keep secret)."
+      }
+    },
+    {
+      "name": "zoom",
+      "kind": "toolset",
+      "purpose": "Zoom's official Zoom MCP server: meeting search, cross-Zoom search, recordings, meeting assets, Docs and Hub content.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.zoom.us/mcp/zoom/streamable",
+        "docs": "https://github.com/zoom/zoom-plugin-claude/blob/main/CONNECTORS.md",
+        "env": [],
+        "note": "OAuth 2.1 + PKCE. Product servers: /mcp/meeting, /mcp/chat, /mcp/canvas, /mcp/tasks, /mcp/whiteboard, /mcp/revenue_accelerator (each + /streamable). Regional gateways listed at developers.zoom.us/docs/mcp."
+      }
+    },
+    {
+      "name": "zoominfo",
+      "kind": "toolset",
+      "purpose": "ZoomInfo's official remote MCP server (OAuth + PKCE): company/contact search and enrichment and other ZoomInfo API data.",
+      "official": true,
+      "source": {
+        "type": "http",
+        "url": "https://mcp.zoominfo.com/mcp",
+        "docs": "https://docs.zoominfo.com/docs/connect-to-zoominfo-mcp",
+        "env": []
+      }
+    },
+    {
+      "name": "zotero",
+      "kind": "toolset",
+      "purpose": "Community zotero-mcp (5k+ stars): search, read and annotate your Zotero library (items, collections, PDFs, notes), with optional semantic search; local API by default, web API optional.",
+      "official": false,
+      "source": {
+        "type": "stdio",
+        "runner": "uvx",
+        "package": "zotero-mcp-server",
+        "docs": "https://github.com/54yyyu/zotero-mcp",
+        "env": [
+          "ZOTERO_LOCAL=true (local mode)",
+          "ZOTERO_API_KEY + ZOTERO_LIBRARY_ID (web mode, optional)"
+        ],
+        "note": "PyPI package is zotero-mcp-server but the executable is zotero-mcp: run as `uvx --from zotero-mcp-server zotero-mcp` (or `uv tool install zotero-mcp-server` then command `zotero-mcp`)."
+      }
+    }
+  ]
+}

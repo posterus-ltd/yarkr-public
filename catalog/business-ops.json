@@ -1,0 +1,2256 @@
+{
+  "domain": "business-ops",
+  "packages": [
+    {
+      "name": "chart-of-accounts-design",
+      "kind": "skill",
+      "purpose": "Design or restructure a chart of accounts: numbering scheme, account types, departments/classes and mapping to financial statement lines."
+    },
+    {
+      "name": "journal-entry-drafting",
+      "kind": "skill",
+      "purpose": "Draft balanced journal entries with debits, credits, memo, support reference and reversal flags from a described business event."
+    },
+    {
+      "name": "bank-reconciliation",
+      "kind": "skill",
+      "purpose": "Reconcile bank and card statements to the general ledger, classify reconciling items and produce a signed-off reconciliation summary."
+    },
+    {
+      "name": "transaction-categorization",
+      "kind": "skill",
+      "purpose": "Categorise bank and card transactions to GL accounts and classes using vendor rules, memo text and prior coding history."
+    },
+    {
+      "name": "bookkeeping-cleanup",
+      "kind": "skill",
+      "purpose": "Catch up and clean messy books: find uncategorised, duplicate and misposted transactions, fix opening balances and document every adjustment."
+    },
+    {
+      "name": "close-checklist-builder",
+      "kind": "skill",
+      "purpose": "Build a month-end close checklist with owners, due days (WD-3 to WD+5), dependencies and evidence requirements per task."
+    },
+    {
+      "name": "accrual-calculation",
+      "kind": "skill",
+      "purpose": "Calculate and document expense and revenue accruals from POs, contracts and usage data, with reversal entries and support schedules."
+    },
+    {
+      "name": "prepaid-amortization-schedule",
+      "kind": "skill",
+      "purpose": "Build prepaid expense amortisation schedules and the monthly journal entries that release them to expense."
+    },
+    {
+      "name": "balance-sheet-reconciliation",
+      "kind": "skill",
+      "purpose": "Reconcile each balance sheet account to supporting detail, explain variances, age reconciling items and flag stale balances."
+    },
+    {
+      "name": "close-flux-analysis",
+      "kind": "skill",
+      "purpose": "Run month-over-month and budget flux analysis on the trial balance, apply materiality thresholds and write variance explanations."
+    },
+    {
+      "name": "ap-invoice-intake",
+      "kind": "skill",
+      "purpose": "Extract vendor, invoice number, dates, line items, tax and totals from supplier invoices and validate them before entry."
+    },
+    {
+      "name": "three-way-match",
+      "kind": "skill",
+      "purpose": "Match invoices against purchase orders and goods receipts, apply price and quantity tolerances and route exceptions."
+    },
+    {
+      "name": "ap-payment-run-planning",
+      "kind": "skill",
+      "purpose": "Plan AP payment runs: select due invoices, capture early-pay discounts, respect cash limits and produce an approval-ready payment proposal."
+    },
+    {
+      "name": "vendor-statement-reconciliation",
+      "kind": "skill",
+      "purpose": "Reconcile supplier statements to the AP subledger and identify missing invoices, unapplied credits and payment timing differences."
+    },
+    {
+      "name": "duplicate-payment-detection",
+      "kind": "skill",
+      "purpose": "Detect likely duplicate invoices and payments using fuzzy matching on vendor, amount, date and invoice number variants."
+    },
+    {
+      "name": "ar-aging-analysis",
+      "kind": "skill",
+      "purpose": "Produce and interpret AR aging reports by customer and bucket, highlight concentration and deteriorating accounts."
+    },
+    {
+      "name": "collections-dunning-sequences",
+      "kind": "skill",
+      "purpose": "Design tiered dunning sequences and write polite-to-firm collection emails tied to days past due and customer value."
+    },
+    {
+      "name": "cash-application",
+      "kind": "skill",
+      "purpose": "Apply customer receipts to open invoices using remittance data, handle short-pays, overpayments and unidentified cash."
+    },
+    {
+      "name": "customer-credit-review",
+      "kind": "skill",
+      "purpose": "Assess customer creditworthiness from payment history and financials and recommend credit limits and terms."
+    },
+    {
+      "name": "bad-debt-reserve",
+      "kind": "skill",
+      "purpose": "Estimate the allowance for doubtful accounts using aging-based or loss-rate (CECL-style) methods with documented assumptions."
+    },
+    {
+      "name": "invoice-drafting",
+      "kind": "skill",
+      "purpose": "Draft complete, compliant invoices with required legal fields, tax lines, payment terms and remittance details."
+    },
+    {
+      "name": "credit-note-issuing",
+      "kind": "skill",
+      "purpose": "Issue credit notes and rebills correctly, linking to the original invoice and adjusting tax and revenue."
+    },
+    {
+      "name": "recurring-billing-schedules",
+      "kind": "skill",
+      "purpose": "Set up recurring and milestone billing schedules, proration on mid-cycle changes and usage-based true-ups."
+    },
+    {
+      "name": "einvoicing-compliance-check",
+      "kind": "skill",
+      "purpose": "Check invoices against e-invoicing and VAT invoice requirements (Peppol/EN 16931 fields, sequential numbering, tax IDs) per country."
+    },
+    {
+      "name": "asc606-five-step-analysis",
+      "kind": "skill",
+      "purpose": "Walk a customer contract through the ASC 606 / IFRS 15 five steps and document performance obligations and timing."
+    },
+    {
+      "name": "deferred-revenue-waterfall",
+      "kind": "skill",
+      "purpose": "Build deferred revenue roll-forwards and recognition waterfalls from billing and contract data."
+    },
+    {
+      "name": "ssp-allocation",
+      "kind": "skill",
+      "purpose": "Estimate standalone selling prices and allocate transaction price across bundled performance obligations."
+    },
+    {
+      "name": "contract-modification-accounting",
+      "kind": "skill",
+      "purpose": "Determine accounting for contract modifications (separate contract, prospective, cumulative catch-up) with worked entries."
+    },
+    {
+      "name": "technical-accounting-memo",
+      "kind": "skill",
+      "purpose": "Write technical accounting position memos: issue, guidance cited, analysis, alternatives and conclusion, for auditor review."
+    },
+    {
+      "name": "stock-comp-expense",
+      "kind": "skill",
+      "purpose": "Calculate stock-based compensation expense under ASC 718 / IFRS 2: grant-date fair value inputs, vesting schedules and forfeitures."
+    },
+    {
+      "name": "accounting-policy-manual",
+      "kind": "skill",
+      "purpose": "Draft and maintain an accounting policy manual covering capitalisation thresholds, revenue, leases, accruals and close policies."
+    },
+    {
+      "name": "fixed-asset-register",
+      "kind": "skill",
+      "purpose": "Maintain a fixed asset register with tagging, locations, useful lives and reconciliation to the GL."
+    },
+    {
+      "name": "depreciation-schedules",
+      "kind": "skill",
+      "purpose": "Build straight-line and declining-balance depreciation schedules with mid-month conventions and book-tax differences noted."
+    },
+    {
+      "name": "capex-opex-classification",
+      "kind": "skill",
+      "purpose": "Classify spend as capital or operating expense using policy thresholds and capitalisation criteria, including internal-use software."
+    },
+    {
+      "name": "lease-classification",
+      "kind": "skill",
+      "purpose": "Classify leases as finance or operating under ASC 842 / IFRS 16 and document the classification tests."
+    },
+    {
+      "name": "lease-liability-schedule",
+      "kind": "skill",
+      "purpose": "Compute lease liabilities and right-of-use assets, discount rates and monthly amortisation and interest schedules."
+    },
+    {
+      "name": "lease-abstract-extraction",
+      "kind": "skill",
+      "purpose": "Abstract key lease terms (dates, payments, escalations, options, incentives) from lease agreements into a structured record."
+    },
+    {
+      "name": "expense-policy-drafting",
+      "kind": "skill",
+      "purpose": "Draft a travel and expense policy: limits, approvals, receipts, per diem and non-reimbursable items."
+    },
+    {
+      "name": "expense-report-audit",
+      "kind": "skill",
+      "purpose": "Audit expense reports against policy: missing receipts, limit breaches, duplicates, weekend and personal spend patterns."
+    },
+    {
+      "name": "corporate-card-reconciliation",
+      "kind": "skill",
+      "purpose": "Reconcile corporate card statements to receipts and GL coding, chase missing receipts and post accruals for unsubmitted spend."
+    },
+    {
+      "name": "intercompany-reconciliation",
+      "kind": "skill",
+      "purpose": "Reconcile intercompany balances and transactions between entities and resolve mismatches before consolidation."
+    },
+    {
+      "name": "consolidation-eliminations",
+      "kind": "skill",
+      "purpose": "Prepare consolidation workpapers with intercompany eliminations, minority interest and topside entries."
+    },
+    {
+      "name": "fx-translation-remeasurement",
+      "kind": "skill",
+      "purpose": "Apply FX remeasurement and translation (ASC 830 / IAS 21), compute CTA and realised/unrealised gains."
+    },
+    {
+      "name": "transfer-pricing-documentation-support",
+      "kind": "skill",
+      "purpose": "Assemble transfer pricing documentation inputs: intercompany agreements, functional analysis and benchmark data, for adviser sign-off."
+    },
+    {
+      "name": "financial-statement-prep",
+      "kind": "skill",
+      "purpose": "Prepare income statement, balance sheet and indirect-method cash flow statement from a trial balance with tie-out checks."
+    },
+    {
+      "name": "financial-statement-footnotes",
+      "kind": "skill",
+      "purpose": "Draft financial statement footnote disclosures from accounting data and a disclosure checklist."
+    },
+    {
+      "name": "mdna-narrative-drafting",
+      "kind": "skill",
+      "purpose": "Draft management discussion and analysis narratives explaining results, liquidity and key trends from the numbers."
+    },
+    {
+      "name": "audit-pbc-management",
+      "kind": "skill",
+      "purpose": "Organise auditor PBC (prepared-by-client) request lists: owners, due dates, evidence links and status tracking."
+    },
+    {
+      "name": "audit-support-schedules",
+      "kind": "skill",
+      "purpose": "Build audit support schedules and lead sheets that tie to the trial balance with referenced evidence."
+    },
+    {
+      "name": "sox-control-narratives",
+      "kind": "skill",
+      "purpose": "Write SOX/internal control process narratives and risk-control matrices for financial reporting processes."
+    },
+    {
+      "name": "control-testing-workpapers",
+      "kind": "skill",
+      "purpose": "Document test of design and operating effectiveness for financial controls with sample selection and results."
+    },
+    {
+      "name": "annual-budget-build",
+      "kind": "skill",
+      "purpose": "Run the annual budget build: driver assumptions, department templates, consolidation and version control."
+    },
+    {
+      "name": "budget-vs-actual-analysis",
+      "kind": "skill",
+      "purpose": "Produce budget-vs-actual reports with variance decomposition (price, volume, timing) and owner commentary."
+    },
+    {
+      "name": "rolling-forecast",
+      "kind": "skill",
+      "purpose": "Maintain a rolling 12-18 month forecast that rolls actuals in and re-forecasts drivers each period."
+    },
+    {
+      "name": "headcount-planning",
+      "kind": "skill",
+      "purpose": "Plan headcount and fully loaded people cost by role, start date and department, linked to hiring plans."
+    },
+    {
+      "name": "variance-commentary-writing",
+      "kind": "skill",
+      "purpose": "Write concise variance commentary that states the number, the driver and the action, for management and board audiences."
+    },
+    {
+      "name": "three-statement-model",
+      "kind": "skill",
+      "purpose": "Build an integrated three-statement financial model with linked P&L, balance sheet and cash flow that balances."
+    },
+    {
+      "name": "model-structure-conventions",
+      "kind": "skill",
+      "purpose": "Apply spreadsheet modeling conventions: inputs/calcs/outputs separation, colour coding, no hard-codes, consistent timelines."
+    },
+    {
+      "name": "scenario-sensitivity-analysis",
+      "kind": "skill",
+      "purpose": "Add scenario switches, sensitivity tables and tornado charts to a financial model to test key drivers."
+    },
+    {
+      "name": "financial-model-audit",
+      "kind": "skill",
+      "purpose": "Audit a financial model for broken links, hard-coded numbers, circularity, sign errors and balance checks."
+    },
+    {
+      "name": "dcf-valuation",
+      "kind": "skill",
+      "purpose": "Build a discounted cash flow valuation: free cash flow build, WACC, terminal value and sensitivity on key inputs."
+    },
+    {
+      "name": "saas-metrics-definitions",
+      "kind": "skill",
+      "purpose": "Define and calculate SaaS metrics consistently: ARR, MRR movements, gross and net revenue retention, logo churn."
+    },
+    {
+      "name": "unit-economics-cac-ltv",
+      "kind": "skill",
+      "purpose": "Calculate CAC, LTV, payback period and contribution margin by segment with clear formulas and caveats."
+    },
+    {
+      "name": "arr-bridge-analysis",
+      "kind": "skill",
+      "purpose": "Build ARR bridges (new, expansion, contraction, churn) and cohort revenue retention tables from billing data."
+    },
+    {
+      "name": "thirteen-week-cash-flow",
+      "kind": "skill",
+      "purpose": "Build a 13-week direct cash flow forecast from AR, AP, payroll and debt schedules, with weekly variance to actuals."
+    },
+    {
+      "name": "cash-runway-analysis",
+      "kind": "skill",
+      "purpose": "Calculate cash runway and burn multiple under scenarios and identify levers to extend runway."
+    },
+    {
+      "name": "working-capital-optimization",
+      "kind": "skill",
+      "purpose": "Analyse DSO, DPO and DIO and recommend working capital improvements with cash impact estimates."
+    },
+    {
+      "name": "treasury-bank-account-management",
+      "kind": "skill",
+      "purpose": "Maintain a bank account inventory, signatory matrix, cash positioning and idle-cash investment policy."
+    },
+    {
+      "name": "monthly-management-report",
+      "kind": "skill",
+      "purpose": "Assemble a monthly management reporting pack: KPIs, P&L summary, cash, headcount and commentary."
+    },
+    {
+      "name": "kpi-dictionary",
+      "kind": "skill",
+      "purpose": "Maintain a KPI dictionary with definitions, formulas, owners, data sources and calculation caveats."
+    },
+    {
+      "name": "tax-document-checklist",
+      "kind": "skill",
+      "purpose": "Build tax season document checklists and organise source documents for the preparer; drafting aid, adviser signs off."
+    },
+    {
+      "name": "sales-tax-nexus-review",
+      "kind": "skill",
+      "purpose": "Screen US state sales tax nexus exposure from sales by state against economic nexus thresholds, flagging items for a tax adviser."
+    },
+    {
+      "name": "vat-return-prep-support",
+      "kind": "skill",
+      "purpose": "Prepare VAT/GST return working papers from ledger data: output and input tax, reverse charge and reconciliation to the GL."
+    },
+    {
+      "name": "contractor-1099-reporting",
+      "kind": "skill",
+      "purpose": "Identify reportable US contractor payments, check W-9 data and prepare 1099-NEC/MISC filing data for review."
+    },
+    {
+      "name": "tax-provision-workpapers",
+      "kind": "skill",
+      "purpose": "Prepare income tax provision workpapers (current/deferred, rate reconciliation) as inputs for tax adviser review."
+    },
+    {
+      "name": "payroll-run-checklist",
+      "kind": "skill",
+      "purpose": "Run a pre-payroll checklist: new hires, terminations, changes, timesheets, bonuses and approval before submission."
+    },
+    {
+      "name": "payroll-reconciliation",
+      "kind": "skill",
+      "purpose": "Reconcile payroll registers to the GL, bank debits and tax filings, and explain period-over-period variances."
+    },
+    {
+      "name": "payroll-change-processing",
+      "kind": "skill",
+      "purpose": "Process payroll changes (salary, bank details, deductions) with verification steps that guard against fraud."
+    },
+    {
+      "name": "payroll-tax-calendar",
+      "kind": "skill",
+      "purpose": "Maintain a payroll tax filing and payment calendar by jurisdiction with responsibilities and reminders."
+    },
+    {
+      "name": "worker-classification-review",
+      "kind": "skill",
+      "purpose": "Apply employee-vs-contractor classification tests (IRS common-law, ABC test, IR35) and document a recommendation for counsel review."
+    },
+    {
+      "name": "purchase-requisition-workflow",
+      "kind": "skill",
+      "purpose": "Design purchase requisition intake and approval workflows with thresholds, budget checks and category routing."
+    },
+    {
+      "name": "procurement-rfp-drafting",
+      "kind": "skill",
+      "purpose": "Draft buyer-side RFQs and RFPs: requirements, evaluation criteria, timelines and supplier response templates."
+    },
+    {
+      "name": "supplier-bid-evaluation",
+      "kind": "skill",
+      "purpose": "Evaluate and score supplier bids with weighted criteria, normalised pricing and a documented award recommendation."
+    },
+    {
+      "name": "purchase-order-drafting",
+      "kind": "skill",
+      "purpose": "Draft purchase orders with correct line items, delivery terms, payment terms and references to governing contracts."
+    },
+    {
+      "name": "procurement-policy-thresholds",
+      "kind": "skill",
+      "purpose": "Draft procurement policy: spend thresholds, competitive bidding rules, sole-source justification and approvals."
+    },
+    {
+      "name": "procurement-negotiation-planning",
+      "kind": "skill",
+      "purpose": "Prepare supplier negotiations: objectives, BATNA, concession plan, should-cost and benchmark arguments."
+    },
+    {
+      "name": "should-cost-analysis",
+      "kind": "skill",
+      "purpose": "Build should-cost models breaking a supplier price into materials, labour, overhead and margin to support negotiation."
+    },
+    {
+      "name": "vendor-onboarding-due-diligence",
+      "kind": "skill",
+      "purpose": "Run vendor onboarding: W-9/W-8 or tax forms, bank verification, sanctions screening and required documentation."
+    },
+    {
+      "name": "vendor-risk-assessment",
+      "kind": "skill",
+      "purpose": "Tier vendors by criticality and assess financial, operational and compliance risk with mitigation actions."
+    },
+    {
+      "name": "vendor-scorecards",
+      "kind": "skill",
+      "purpose": "Build vendor performance scorecards for quality, delivery, cost and responsiveness and run quarterly reviews."
+    },
+    {
+      "name": "contract-renewal-tracking",
+      "kind": "skill",
+      "purpose": "Track contract renewal and notice dates, auto-renew clauses and price uplifts, with decision deadlines."
+    },
+    {
+      "name": "saas-spend-audit",
+      "kind": "skill",
+      "purpose": "Audit SaaS subscriptions for unused seats, overlapping tools and renewal risk and estimate savings."
+    },
+    {
+      "name": "spend-cube-categorization",
+      "kind": "skill",
+      "purpose": "Classify AP and card spend into a category taxonomy by supplier and cost centre to build a spend cube."
+    },
+    {
+      "name": "contract-clause-review",
+      "kind": "skill",
+      "purpose": "Review contract clauses (liability, indemnity, IP, termination, payment, confidentiality) against a standard position; counsel signs off."
+    },
+    {
+      "name": "contract-redline-drafting",
+      "kind": "skill",
+      "purpose": "Draft redlines and fallback language with short margin comments explaining each change."
+    },
+    {
+      "name": "contract-risk-scoring",
+      "kind": "skill",
+      "purpose": "Score contract risk across clause categories and produce a one-page risk summary for business approvers."
+    },
+    {
+      "name": "legal-playbook-application",
+      "kind": "skill",
+      "purpose": "Apply a negotiation playbook (preferred, acceptable, walk-away positions) to counterparty paper."
+    },
+    {
+      "name": "contract-obligation-extraction",
+      "kind": "skill",
+      "purpose": "Extract obligations, deadlines, renewal terms and key dates from executed contracts into a tracker."
+    },
+    {
+      "name": "nda-drafting",
+      "kind": "skill",
+      "purpose": "Draft mutual or one-way NDAs with appropriate scope, term, exclusions and residuals for the deal context."
+    },
+    {
+      "name": "nda-review-checklist",
+      "kind": "skill",
+      "purpose": "Review incoming NDAs against a checklist: definition breadth, term, non-solicit, residuals, governing law, and route deviations."
+    },
+    {
+      "name": "msa-drafting",
+      "kind": "skill",
+      "purpose": "Draft master services agreements with service scope, payment, IP, warranties, liability caps and termination."
+    },
+    {
+      "name": "services-sow-drafting",
+      "kind": "skill",
+      "purpose": "Draft statements of work under an MSA: deliverables, acceptance criteria, milestones, assumptions and change control."
+    },
+    {
+      "name": "order-form-drafting",
+      "kind": "skill",
+      "purpose": "Draft order forms that reference master terms with products, quantities, pricing, term and special terms."
+    },
+    {
+      "name": "sla-terms-drafting",
+      "kind": "skill",
+      "purpose": "Draft service level terms: metrics, measurement, exclusions, service credits and remedies."
+    },
+    {
+      "name": "contract-amendment-drafting",
+      "kind": "skill",
+      "purpose": "Draft amendments, addenda and renewals that cleanly modify specific clauses of an existing agreement."
+    },
+    {
+      "name": "dpa-contract-review",
+      "kind": "skill",
+      "purpose": "Review data processing agreements for processor obligations, sub-processors, transfer mechanisms and audit rights; counsel signs off."
+    },
+    {
+      "name": "terms-of-service-drafting",
+      "kind": "skill",
+      "purpose": "Draft website and SaaS terms of service and acceptable use policies for counsel review."
+    },
+    {
+      "name": "signature-execution-checklist",
+      "kind": "skill",
+      "purpose": "Prepare contracts for execution: final version check, signatory authority, e-signature routing and filing."
+    },
+    {
+      "name": "contract-repository-metadata",
+      "kind": "skill",
+      "purpose": "Define contract repository metadata (parties, type, value, dates, owner) and normalise records for search and reporting."
+    },
+    {
+      "name": "offer-letter-drafting",
+      "kind": "skill",
+      "purpose": "Draft offer letters with compensation, equity, start date, contingencies and at-will or notice terms by jurisdiction."
+    },
+    {
+      "name": "employment-agreement-review",
+      "kind": "skill",
+      "purpose": "Review employment agreements for restrictive covenants, IP assignment, notice and termination terms; counsel signs off."
+    },
+    {
+      "name": "contractor-agreement-drafting",
+      "kind": "skill",
+      "purpose": "Draft independent contractor agreements with scope, payment, IP assignment and classification-safe terms."
+    },
+    {
+      "name": "separation-agreement-drafting",
+      "kind": "skill",
+      "purpose": "Draft separation agreements: severance, release, return of property, confidentiality, with mandatory review periods noted."
+    },
+    {
+      "name": "board-resolution-drafting",
+      "kind": "skill",
+      "purpose": "Draft board and shareholder resolutions and written consents for common corporate actions."
+    },
+    {
+      "name": "board-minutes-drafting",
+      "kind": "skill",
+      "purpose": "Draft board and committee minutes that record attendance, quorum, decisions and actions without verbatim transcript."
+    },
+    {
+      "name": "delegation-of-authority-matrix",
+      "kind": "skill",
+      "purpose": "Build a delegation of authority matrix setting approval limits by decision type and role."
+    },
+    {
+      "name": "corporate-compliance-calendar",
+      "kind": "skill",
+      "purpose": "Maintain a corporate compliance calendar: annual reports, filings, franchise taxes, AGMs and licence renewals per entity."
+    },
+    {
+      "name": "corporate-records-maintenance",
+      "kind": "skill",
+      "purpose": "Maintain minute books, registers of directors and shareholders and statutory records across entities."
+    },
+    {
+      "name": "entity-formation-checklist",
+      "kind": "skill",
+      "purpose": "Plan entity formation or foreign qualification: jurisdiction choice inputs, filings, registered agent, EIN/tax IDs and banking."
+    },
+    {
+      "name": "board-deck-structure",
+      "kind": "skill",
+      "purpose": "Structure board decks: CEO letter, KPIs, financials, strategic topics, asks, with a consistent quarter-over-quarter format."
+    },
+    {
+      "name": "board-financial-pack",
+      "kind": "skill",
+      "purpose": "Prepare the board financial pack: P&L, balance sheet, cash, budget variance and forecast with crisp commentary."
+    },
+    {
+      "name": "board-pre-read-memo",
+      "kind": "skill",
+      "purpose": "Write board pre-read memos that frame decisions, options, recommendation and risks in two pages or less."
+    },
+    {
+      "name": "board-meeting-agenda",
+      "kind": "skill",
+      "purpose": "Build board meeting agendas with time boxes, consent items, closed sessions and pre-read deadlines."
+    },
+    {
+      "name": "cap-table-maintenance",
+      "kind": "skill",
+      "purpose": "Maintain a cap table: issuances, transfers, option grants and exercises, reconciled to board approvals."
+    },
+    {
+      "name": "equity-grant-administration",
+      "kind": "skill",
+      "purpose": "Administer equity grants: board approval, grant docs, vesting schedules, 409A dates and exercise processing."
+    },
+    {
+      "name": "dilution-waterfall-analysis",
+      "kind": "skill",
+      "purpose": "Model round dilution, option pool top-ups and exit waterfalls with liquidation preferences."
+    },
+    {
+      "name": "job-description-writing",
+      "kind": "skill",
+      "purpose": "Write inclusive job descriptions with outcomes, must-have vs nice-to-have skills, level and pay range."
+    },
+    {
+      "name": "hiring-scorecard-design",
+      "kind": "skill",
+      "purpose": "Design hiring scorecards with competencies, rating anchors and must-pass criteria per role."
+    },
+    {
+      "name": "interview-loop-design",
+      "kind": "skill",
+      "purpose": "Design interview loops: stages, focus areas per interviewer, timing and avoidance of duplicated questioning."
+    },
+    {
+      "name": "hiring-req-intake",
+      "kind": "skill",
+      "purpose": "Run hiring manager intake: role purpose, success at 6/12 months, level, budget approval and timeline."
+    },
+    {
+      "name": "behavioral-interview-questions",
+      "kind": "skill",
+      "purpose": "Write structured behavioural and situational questions with follow-ups and scoring guides per competency."
+    },
+    {
+      "name": "interview-feedback-writing",
+      "kind": "skill",
+      "purpose": "Write evidence-based interview feedback tied to scorecard competencies, free of bias-prone language."
+    },
+    {
+      "name": "hiring-debrief-facilitation",
+      "kind": "skill",
+      "purpose": "Run hiring debriefs: independent ratings first, evidence discussion, decision rules and documented outcome."
+    },
+    {
+      "name": "recruiting-pipeline-metrics",
+      "kind": "skill",
+      "purpose": "Track recruiting funnel metrics: time to fill, pass-through rates, source quality and offer acceptance."
+    },
+    {
+      "name": "ats-hygiene",
+      "kind": "skill",
+      "purpose": "Keep ATS data clean: stage definitions, disposition reasons, stale candidates and required fields."
+    },
+    {
+      "name": "candidate-outreach-messages",
+      "kind": "skill",
+      "purpose": "Write personalised candidate sourcing and outreach messages and follow-up sequences."
+    },
+    {
+      "name": "interview-scheduling-coordination",
+      "kind": "skill",
+      "purpose": "Coordinate interview scheduling across panels and time zones with candidate communications and reschedule handling."
+    },
+    {
+      "name": "offer-approval-workflow",
+      "kind": "skill",
+      "purpose": "Run offer approvals: comp within band, approver chain, exception justification and offer packet assembly."
+    },
+    {
+      "name": "onboarding-plan-30-60-90",
+      "kind": "skill",
+      "purpose": "Build 30-60-90 day onboarding plans with goals, learning milestones and check-ins per role."
+    },
+    {
+      "name": "new-hire-checklist",
+      "kind": "skill",
+      "purpose": "Produce new-hire checklists covering paperwork, equipment, accounts, policies and first-week schedule."
+    },
+    {
+      "name": "onboarding-buddy-program",
+      "kind": "skill",
+      "purpose": "Set up an onboarding buddy programme: buddy matching, expectations and check-in prompts."
+    },
+    {
+      "name": "employee-handbook-drafting",
+      "kind": "skill",
+      "purpose": "Draft and update employee handbooks with jurisdiction-flagged sections for counsel review."
+    },
+    {
+      "name": "performance-review-writing",
+      "kind": "skill",
+      "purpose": "Write balanced performance reviews with specific examples, impact, growth areas and a rating rationale."
+    },
+    {
+      "name": "self-review-guidance",
+      "kind": "skill",
+      "purpose": "Help employees write self-reviews that evidence impact against goals and level expectations."
+    },
+    {
+      "name": "review-calibration",
+      "kind": "skill",
+      "purpose": "Prepare and run performance calibration sessions: rating distributions, evidence checks and bias prompts."
+    },
+    {
+      "name": "performance-improvement-plan",
+      "kind": "skill",
+      "purpose": "Draft fair, measurable performance improvement plans with support, timelines and review points."
+    },
+    {
+      "name": "individual-goal-setting",
+      "kind": "skill",
+      "purpose": "Help managers and employees set measurable individual goals aligned to team objectives."
+    },
+    {
+      "name": "leave-policy-drafting",
+      "kind": "skill",
+      "purpose": "Draft PTO, sick, parental and other leave policies with jurisdiction-specific minimums flagged for counsel."
+    },
+    {
+      "name": "remote-work-policy",
+      "kind": "skill",
+      "purpose": "Draft remote and hybrid work policies: eligibility, location limits, equipment, expenses and security expectations."
+    },
+    {
+      "name": "code-of-conduct-drafting",
+      "kind": "skill",
+      "purpose": "Draft codes of conduct covering behaviour, harassment, conflicts of interest and reporting channels."
+    },
+    {
+      "name": "policy-acknowledgement-tracking",
+      "kind": "skill",
+      "purpose": "Run policy rollouts with acknowledgement tracking, reminders and version history."
+    },
+    {
+      "name": "salary-band-design",
+      "kind": "skill",
+      "purpose": "Design salary bands by level and location with midpoints, spreads and progression rules."
+    },
+    {
+      "name": "compensation-benchmarking",
+      "kind": "skill",
+      "purpose": "Benchmark roles against market survey data, match job levels and position pay against target percentiles."
+    },
+    {
+      "name": "merit-increase-planning",
+      "kind": "skill",
+      "purpose": "Plan merit and promotion cycles: budgets, guidelines by performance and position-in-range, and manager worksheets."
+    },
+    {
+      "name": "pay-equity-analysis",
+      "kind": "skill",
+      "purpose": "Run pay equity analyses by gender and ethnicity controlling for level, role and location, and flag outliers for review."
+    },
+    {
+      "name": "total-rewards-statement",
+      "kind": "skill",
+      "purpose": "Produce total rewards statements combining salary, bonus, equity value and benefits."
+    },
+    {
+      "name": "benefits-enrollment-ops",
+      "kind": "skill",
+      "purpose": "Run open enrolment and new-hire benefits enrolment: communications, deadlines, carrier feeds and audits."
+    },
+    {
+      "name": "benefits-plan-comparison",
+      "kind": "skill",
+      "purpose": "Compare benefits plan options on premiums, deductibles, coverage and employee cost for renewal decisions."
+    },
+    {
+      "name": "leave-of-absence-administration",
+      "kind": "skill",
+      "purpose": "Administer leaves of absence: eligibility, required notices, documentation and return-to-work steps."
+    },
+    {
+      "name": "workplace-investigation-notes",
+      "kind": "skill",
+      "purpose": "Structure workplace investigations: intake, interview plans, neutral notes, findings and recommendations for HR and counsel."
+    },
+    {
+      "name": "disciplinary-documentation",
+      "kind": "skill",
+      "purpose": "Write factual disciplinary documentation: written warnings, expectations and consequences."
+    },
+    {
+      "name": "employee-termination-checklist",
+      "kind": "skill",
+      "purpose": "Run terminations with legal review flags, final pay timing, access removal and communication steps."
+    },
+    {
+      "name": "offboarding-checklist",
+      "kind": "skill",
+      "purpose": "Build offboarding checklists: knowledge transfer, equipment return, access revocation, final pay and exit interview."
+    },
+    {
+      "name": "exit-interview-analysis",
+      "kind": "skill",
+      "purpose": "Analyse exit interview data for attrition themes by team, tenure and manager."
+    },
+    {
+      "name": "attrition-analysis",
+      "kind": "skill",
+      "purpose": "Analyse voluntary and involuntary attrition by cohort, tenure, team and manager and identify drivers."
+    },
+    {
+      "name": "engagement-survey-design",
+      "kind": "skill",
+      "purpose": "Design engagement surveys with validated item types, anonymity thresholds and action-planning hooks."
+    },
+    {
+      "name": "engagement-survey-analysis",
+      "kind": "skill",
+      "purpose": "Analyse engagement survey results: drivers, team heatmaps, comment themes and suggested actions."
+    },
+    {
+      "name": "workforce-planning",
+      "kind": "skill",
+      "purpose": "Build workforce plans linking business goals to role demand, supply, gaps and build/buy/borrow decisions."
+    },
+    {
+      "name": "training-needs-analysis",
+      "kind": "skill",
+      "purpose": "Identify skills gaps from role requirements, performance data and surveys and prioritise training."
+    },
+    {
+      "name": "career-ladder-design",
+      "kind": "skill",
+      "purpose": "Design career ladders and level guides with observable expectations per level and track."
+    },
+    {
+      "name": "manager-training-program",
+      "kind": "skill",
+      "purpose": "Design new-manager training programmes covering 1:1s, feedback, delegation and hiring basics."
+    },
+    {
+      "name": "sop-drafting",
+      "kind": "skill",
+      "purpose": "Draft standard operating procedures with purpose, scope, roles, numbered steps, controls and records."
+    },
+    {
+      "name": "ops-process-mapping",
+      "kind": "skill",
+      "purpose": "Map business processes as swimlane diagrams (Mermaid/BPMN-style) with handoffs, systems and pain points."
+    },
+    {
+      "name": "raci-matrix",
+      "kind": "skill",
+      "purpose": "Build RACI matrices for processes and projects with one accountable owner per activity."
+    },
+    {
+      "name": "work-instruction-writing",
+      "kind": "skill",
+      "purpose": "Write task-level work instructions and checklists for frontline staff with screenshots placeholders and checks."
+    },
+    {
+      "name": "sop-review-cadence",
+      "kind": "skill",
+      "purpose": "Set up SOP version control, review cycles, owners and change logs."
+    },
+    {
+      "name": "lean-waste-analysis",
+      "kind": "skill",
+      "purpose": "Identify the eight lean wastes in a business process and propose countermeasures with expected impact."
+    },
+    {
+      "name": "ops-root-cause-analysis",
+      "kind": "skill",
+      "purpose": "Run root cause analysis on operational failures with 5 Whys and fishbone diagrams and track corrective actions."
+    },
+    {
+      "name": "value-stream-mapping",
+      "kind": "skill",
+      "purpose": "Build current- and future-state value stream maps with cycle time, wait time and process efficiency."
+    },
+    {
+      "name": "process-kpi-design",
+      "kind": "skill",
+      "purpose": "Define process KPIs (throughput, cycle time, error rate, cost per transaction) with targets and data sources."
+    },
+    {
+      "name": "project-charter",
+      "kind": "skill",
+      "purpose": "Write project charters: objectives, scope in/out, success criteria, stakeholders, budget and milestones."
+    },
+    {
+      "name": "pm-work-breakdown-structure",
+      "kind": "skill",
+      "purpose": "Decompose project scope into a work breakdown structure with deliverables and work packages."
+    },
+    {
+      "name": "project-schedule-planning",
+      "kind": "skill",
+      "purpose": "Build project schedules with dependencies, critical path, milestones and buffers."
+    },
+    {
+      "name": "project-status-report",
+      "kind": "skill",
+      "purpose": "Write RAG project status reports: progress, next steps, risks, decisions needed, in one page."
+    },
+    {
+      "name": "raid-log",
+      "kind": "skill",
+      "purpose": "Maintain RAID logs (risks, assumptions, issues, dependencies) with owners, ratings and review dates."
+    },
+    {
+      "name": "project-closeout",
+      "kind": "skill",
+      "purpose": "Close projects: acceptance, handover, lessons learned, budget reconciliation and archive."
+    },
+    {
+      "name": "program-dependency-tracking",
+      "kind": "skill",
+      "purpose": "Track cross-project dependencies and milestones across a programme and flag critical-path conflicts."
+    },
+    {
+      "name": "steering-committee-pack",
+      "kind": "skill",
+      "purpose": "Prepare steering committee packs: programme status, decisions required, escalations and benefits tracking."
+    },
+    {
+      "name": "benefits-realization-tracking",
+      "kind": "skill",
+      "purpose": "Define and track programme benefits with baselines, owners and measurement dates."
+    },
+    {
+      "name": "portfolio-intake-scoring",
+      "kind": "skill",
+      "purpose": "Score and prioritise project intake requests by value, cost, risk and strategic fit for portfolio decisions."
+    },
+    {
+      "name": "resource-capacity-planning",
+      "kind": "skill",
+      "purpose": "Plan team capacity versus project demand and surface overallocation and hiring needs."
+    },
+    {
+      "name": "change-impact-assessment",
+      "kind": "skill",
+      "purpose": "Assess organisational change impact by group: process, systems, roles and readiness."
+    },
+    {
+      "name": "change-stakeholder-analysis",
+      "kind": "skill",
+      "purpose": "Map stakeholders by influence and impact and plan engagement for organisational change."
+    },
+    {
+      "name": "change-communication-plan",
+      "kind": "skill",
+      "purpose": "Plan change communications: audiences, messages, channels, sequence and feedback loops."
+    },
+    {
+      "name": "adoption-tracking",
+      "kind": "skill",
+      "purpose": "Track adoption of new processes or tools with metrics, surveys and reinforcement actions."
+    },
+    {
+      "name": "company-okr-drafting",
+      "kind": "skill",
+      "purpose": "Draft company and team OKRs with measurable key results and alignment checks."
+    },
+    {
+      "name": "annual-operating-plan",
+      "kind": "skill",
+      "purpose": "Assemble an annual operating plan: priorities, targets, budgets and headcount by function."
+    },
+    {
+      "name": "quarterly-business-review-pack",
+      "kind": "skill",
+      "purpose": "Build internal quarterly business review packs: results vs plan, learnings and next-quarter priorities."
+    },
+    {
+      "name": "enterprise-risk-register",
+      "kind": "skill",
+      "purpose": "Build and maintain an enterprise risk register with inherent/residual ratings, owners and treatments."
+    },
+    {
+      "name": "risk-scoring-matrix",
+      "kind": "skill",
+      "purpose": "Define likelihood and impact scales and a risk heat map with consistent scoring guidance."
+    },
+    {
+      "name": "key-risk-indicators",
+      "kind": "skill",
+      "purpose": "Define key risk indicators with thresholds, data sources and escalation triggers."
+    },
+    {
+      "name": "risk-appetite-statement",
+      "kind": "skill",
+      "purpose": "Draft risk appetite and tolerance statements by risk category for board approval."
+    },
+    {
+      "name": "business-impact-analysis",
+      "kind": "skill",
+      "purpose": "Run business impact analyses: critical processes, RTO/RPO, dependencies and impact over time."
+    },
+    {
+      "name": "business-continuity-plan",
+      "kind": "skill",
+      "purpose": "Write business continuity plans: activation criteria, roles, workarounds, communication trees and recovery steps."
+    },
+    {
+      "name": "crisis-communication-plan",
+      "kind": "skill",
+      "purpose": "Draft crisis communication plans with holding statements, spokespeople, approval paths and stakeholder lists."
+    },
+    {
+      "name": "bcp-tabletop-exercise",
+      "kind": "skill",
+      "purpose": "Design and facilitate business continuity tabletop exercises and write after-action reports."
+    },
+    {
+      "name": "insurance-coverage-review",
+      "kind": "skill",
+      "purpose": "Review insurance policies: limits, retentions, exclusions, endorsements and named insureds; broker confirms."
+    },
+    {
+      "name": "insurance-renewal-submission",
+      "kind": "skill",
+      "purpose": "Prepare insurance renewal submissions: exposure data, loss runs, application answers and changes since last year."
+    },
+    {
+      "name": "certificate-of-insurance-tracking",
+      "kind": "skill",
+      "purpose": "Track certificates of insurance from vendors and to customers against contract requirements and expiries."
+    },
+    {
+      "name": "insurance-claim-preparation",
+      "kind": "skill",
+      "purpose": "Prepare insurance claims: notice timing, loss documentation, quantification and correspondence log."
+    },
+    {
+      "name": "coverage-gap-analysis",
+      "kind": "skill",
+      "purpose": "Compare the risk profile and contractual requirements to the insurance programme and list coverage gaps."
+    },
+    {
+      "name": "anti-bribery-policy",
+      "kind": "skill",
+      "purpose": "Draft anti-bribery and corruption policies and third-party intermediary checks (FCPA/UK Bribery Act) for counsel review."
+    },
+    {
+      "name": "whistleblower-procedure",
+      "kind": "skill",
+      "purpose": "Draft whistleblower and speak-up procedures with intake channels, triage, non-retaliation and case handling."
+    },
+    {
+      "name": "conflict-of-interest-disclosures",
+      "kind": "skill",
+      "purpose": "Run conflict of interest disclosure campaigns, review responses and record mitigations."
+    },
+    {
+      "name": "gifts-hospitality-register",
+      "kind": "skill",
+      "purpose": "Maintain gifts and hospitality registers with thresholds, approvals and periodic review."
+    },
+    {
+      "name": "investor-pitch-deck",
+      "kind": "skill",
+      "purpose": "Structure investor pitch decks: problem, solution, market, traction, model, team, ask and use of funds."
+    },
+    {
+      "name": "fundraising-pipeline-tracking",
+      "kind": "skill",
+      "purpose": "Track investor pipelines: target lists, stages, next steps, and close-process timelines."
+    },
+    {
+      "name": "investor-data-room",
+      "kind": "skill",
+      "purpose": "Organise investor data rooms with a standard index, document checklists and access tiers."
+    },
+    {
+      "name": "term-sheet-review",
+      "kind": "skill",
+      "purpose": "Explain and compare venture term sheet terms (valuation, preferences, pro rata, board, protective provisions) for founder and counsel review."
+    },
+    {
+      "name": "safe-convertible-mechanics",
+      "kind": "skill",
+      "purpose": "Model SAFEs and convertible notes: caps, discounts, MFN and conversion into priced rounds."
+    },
+    {
+      "name": "investor-update-letter",
+      "kind": "skill",
+      "purpose": "Write monthly or quarterly investor updates: highlights, metrics, lowlights, asks."
+    },
+    {
+      "name": "earnings-release-drafting",
+      "kind": "skill",
+      "purpose": "Draft earnings releases and accompanying financial tables in a consistent house style for legal review."
+    },
+    {
+      "name": "earnings-call-script",
+      "kind": "skill",
+      "purpose": "Draft earnings call scripts and anticipated analyst Q&A with consistent figures."
+    },
+    {
+      "name": "financial-due-diligence-checklist",
+      "kind": "skill",
+      "purpose": "Build financial due diligence request lists and review quality of earnings adjustments."
+    },
+    {
+      "name": "legal-due-diligence-checklist",
+      "kind": "skill",
+      "purpose": "Build legal due diligence request lists covering corporate, contracts, IP, employment and litigation."
+    },
+    {
+      "name": "diligence-request-tracker",
+      "kind": "skill",
+      "purpose": "Track diligence requests and responses with owners, status and data room cross-references."
+    },
+    {
+      "name": "post-merger-integration-plan",
+      "kind": "skill",
+      "purpose": "Plan post-merger integration: day-one readiness, workstreams, synergy targets and 100-day plan."
+    },
+    {
+      "name": "ghg-emissions-accounting",
+      "kind": "skill",
+      "purpose": "Calculate scope 1, 2 and 3 GHG emissions using the GHG Protocol with activity data and emission factors."
+    },
+    {
+      "name": "esg-framework-mapping",
+      "kind": "skill",
+      "purpose": "Map disclosures to ESG frameworks (GRI, SASB/ISSB, CSRD/ESRS, TCFD) and identify data gaps."
+    },
+    {
+      "name": "esg-data-collection",
+      "kind": "skill",
+      "purpose": "Design ESG data collection templates, owners and controls for environmental, social and governance metrics."
+    },
+    {
+      "name": "sustainability-report-drafting",
+      "kind": "skill",
+      "purpose": "Draft sustainability report sections with metrics, targets and progress, avoiding unsupported claims."
+    },
+    {
+      "name": "esg-materiality-assessment",
+      "kind": "skill",
+      "purpose": "Run double materiality assessments: topic long list, stakeholder input, scoring and matrix."
+    },
+    {
+      "name": "transaction-categorizer",
+      "kind": "agent",
+      "purpose": "Categorises uncoded bank and card transactions to GL accounts and flags low-confidence items for review.",
+      "skills": [
+        "transaction-categorization",
+        "chart-of-accounts-design"
+      ]
+    },
+    {
+      "name": "bank-reconciler",
+      "kind": "agent",
+      "purpose": "Reconciles bank and card statements to the ledger and returns a reconciliation with open items listed.",
+      "skills": [
+        "bank-reconciliation"
+      ]
+    },
+    {
+      "name": "journal-entry-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews proposed journal entries for balance, account choice, support and approval before posting.",
+      "skills": [
+        "journal-entry-drafting",
+        "chart-of-accounts-design"
+      ]
+    },
+    {
+      "name": "books-cleanup-specialist",
+      "kind": "agent",
+      "purpose": "Plans and executes a bookkeeping catch-up, producing an adjustment log and clean trial balance.",
+      "skills": [
+        "bookkeeping-cleanup",
+        "transaction-categorization",
+        "bank-reconciliation"
+      ]
+    },
+    {
+      "name": "close-coordinator",
+      "kind": "agent",
+      "purpose": "Runs the month-end close checklist, tracks task status and dependencies and reports blockers daily.",
+      "skills": [
+        "close-checklist-builder"
+      ]
+    },
+    {
+      "name": "flux-analyst",
+      "kind": "agent",
+      "purpose": "Runs trial balance flux analysis and drafts variance explanations above materiality for controller review.",
+      "skills": [
+        "close-flux-analysis",
+        "variance-commentary-writing"
+      ]
+    },
+    {
+      "name": "account-reconciler",
+      "kind": "agent",
+      "purpose": "Reconciles balance sheet accounts to subledgers and supporting detail and lists unexplained differences.",
+      "skills": [
+        "balance-sheet-reconciliation"
+      ]
+    },
+    {
+      "name": "accrual-preparer",
+      "kind": "agent",
+      "purpose": "Prepares accrual and prepaid schedules and the related journal entries with support references.",
+      "skills": [
+        "accrual-calculation",
+        "prepaid-amortization-schedule",
+        "journal-entry-drafting"
+      ]
+    },
+    {
+      "name": "ap-invoice-processor",
+      "kind": "agent",
+      "purpose": "Extracts and validates supplier invoice data, codes it and prepares it for approval routing.",
+      "skills": [
+        "ap-invoice-intake",
+        "three-way-match"
+      ]
+    },
+    {
+      "name": "match-exception-resolver",
+      "kind": "agent",
+      "purpose": "Investigates three-way match exceptions and proposes resolution: credit request, PO change or approval.",
+      "skills": [
+        "three-way-match"
+      ]
+    },
+    {
+      "name": "duplicate-payment-auditor",
+      "kind": "agent",
+      "purpose": "Scans AP history for duplicate invoices and payments and returns a ranked recovery list.",
+      "skills": [
+        "duplicate-payment-detection"
+      ]
+    },
+    {
+      "name": "payment-run-planner",
+      "kind": "agent",
+      "purpose": "Builds approval-ready payment run proposals balancing due dates, discounts and cash limits.",
+      "skills": [
+        "ap-payment-run-planning",
+        "vendor-statement-reconciliation"
+      ]
+    },
+    {
+      "name": "collections-writer",
+      "kind": "agent",
+      "purpose": "Drafts dunning and collection emails for overdue accounts matched to stage, tone and customer history.",
+      "skills": [
+        "collections-dunning-sequences"
+      ]
+    },
+    {
+      "name": "ar-aging-analyst",
+      "kind": "agent",
+      "purpose": "Analyses AR aging, highlights risky accounts and recommends collection priorities and reserve changes.",
+      "skills": [
+        "ar-aging-analysis",
+        "bad-debt-reserve"
+      ]
+    },
+    {
+      "name": "cash-application-matcher",
+      "kind": "agent",
+      "purpose": "Matches incoming payments and remittances to open invoices and lists unapplied cash with likely matches.",
+      "skills": [
+        "cash-application"
+      ]
+    },
+    {
+      "name": "credit-limit-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews customer credit applications and payment history and recommends limits and terms.",
+      "skills": [
+        "customer-credit-review"
+      ]
+    },
+    {
+      "name": "budget-variance-analyst",
+      "kind": "agent",
+      "purpose": "Produces budget-vs-actual analysis with driver-based explanations and owner follow-up questions.",
+      "skills": [
+        "budget-vs-actual-analysis",
+        "variance-commentary-writing"
+      ]
+    },
+    {
+      "name": "forecast-builder",
+      "kind": "agent",
+      "purpose": "Updates the rolling forecast with latest actuals and driver changes and summarises forecast movements.",
+      "skills": [
+        "rolling-forecast",
+        "headcount-planning"
+      ]
+    },
+    {
+      "name": "management-report-writer",
+      "kind": "agent",
+      "purpose": "Assembles the monthly management report and writes executive commentary from finance data.",
+      "skills": [
+        "monthly-management-report",
+        "kpi-dictionary",
+        "variance-commentary-writing"
+      ]
+    },
+    {
+      "name": "saas-metrics-analyst",
+      "kind": "agent",
+      "purpose": "Calculates ARR bridges, retention and unit economics from billing data and explains the movements.",
+      "skills": [
+        "saas-metrics-definitions",
+        "arr-bridge-analysis",
+        "unit-economics-cac-ltv"
+      ]
+    },
+    {
+      "name": "financial-model-builder",
+      "kind": "agent",
+      "purpose": "Builds integrated three-statement and driver-based models following modeling conventions.",
+      "skills": [
+        "three-statement-model",
+        "model-structure-conventions"
+      ]
+    },
+    {
+      "name": "financial-model-auditor",
+      "kind": "agent",
+      "purpose": "Audits spreadsheets and models for errors, hard-codes and broken logic and returns a findings list by severity.",
+      "skills": [
+        "financial-model-audit",
+        "model-structure-conventions"
+      ]
+    },
+    {
+      "name": "scenario-analyst",
+      "kind": "agent",
+      "purpose": "Adds scenarios and sensitivities to an existing model and reports the drivers that matter most.",
+      "skills": [
+        "scenario-sensitivity-analysis"
+      ]
+    },
+    {
+      "name": "valuation-analyst",
+      "kind": "agent",
+      "purpose": "Builds DCF and comparable-based valuation views with stated assumptions and sensitivity ranges.",
+      "skills": [
+        "dcf-valuation",
+        "scenario-sensitivity-analysis"
+      ]
+    },
+    {
+      "name": "pbc-request-coordinator",
+      "kind": "agent",
+      "purpose": "Tracks auditor PBC requests, assigns owners, chases evidence and reports open items.",
+      "skills": [
+        "audit-pbc-management"
+      ]
+    },
+    {
+      "name": "sox-control-tester",
+      "kind": "agent",
+      "purpose": "Performs and documents control tests from a risk-control matrix with sample selection and conclusions.",
+      "skills": [
+        "control-testing-workpapers",
+        "sox-control-narratives"
+      ]
+    },
+    {
+      "name": "audit-workpaper-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews audit support schedules for tie-outs, referencing and completeness before handing to auditors.",
+      "skills": [
+        "audit-support-schedules"
+      ]
+    },
+    {
+      "name": "technical-accounting-advisor",
+      "kind": "agent",
+      "purpose": "Analyses complex transactions under ASC/IFRS and drafts position memos for controller and auditor review.",
+      "skills": [
+        "technical-accounting-memo",
+        "asc606-five-step-analysis",
+        "lease-classification"
+      ]
+    },
+    {
+      "name": "tax-document-collector",
+      "kind": "agent",
+      "purpose": "Collects and organises tax source documents against a checklist and lists what is missing for the preparer.",
+      "skills": [
+        "tax-document-checklist"
+      ]
+    },
+    {
+      "name": "sales-tax-nexus-reviewer",
+      "kind": "agent",
+      "purpose": "Screens sales data for state nexus exposure and produces an adviser-ready summary with thresholds crossed.",
+      "skills": [
+        "sales-tax-nexus-review"
+      ]
+    },
+    {
+      "name": "vat-return-preparer",
+      "kind": "agent",
+      "purpose": "Prepares VAT/GST return working papers from the ledger and reconciles them to the GL for adviser review.",
+      "skills": [
+        "vat-return-prep-support"
+      ]
+    },
+    {
+      "name": "contractor-1099-reviewer",
+      "kind": "agent",
+      "purpose": "Identifies reportable contractor payments, checks tax form data and prepares filing data for review.",
+      "skills": [
+        "contractor-1099-reporting",
+        "worker-classification-review"
+      ]
+    },
+    {
+      "name": "payroll-run-checker",
+      "kind": "agent",
+      "purpose": "Checks pre-payroll inputs and the draft register for anomalies before approval.",
+      "skills": [
+        "payroll-run-checklist"
+      ]
+    },
+    {
+      "name": "payroll-reconciler",
+      "kind": "agent",
+      "purpose": "Reconciles payroll registers to GL, bank and tax filings and explains variances.",
+      "skills": [
+        "payroll-reconciliation"
+      ]
+    },
+    {
+      "name": "payroll-change-verifier",
+      "kind": "agent",
+      "purpose": "Verifies payroll change requests, especially bank detail changes, against fraud-prevention steps.",
+      "skills": [
+        "payroll-change-processing"
+      ]
+    },
+    {
+      "name": "worker-classification-reviewer",
+      "kind": "agent",
+      "purpose": "Applies classification tests to a contractor relationship and returns a risk rating and counsel questions.",
+      "skills": [
+        "worker-classification-review"
+      ]
+    },
+    {
+      "name": "requisition-triager",
+      "kind": "agent",
+      "purpose": "Triages purchase requests: checks budget, category, thresholds and routes to the right buying path.",
+      "skills": [
+        "purchase-requisition-workflow",
+        "procurement-policy-thresholds"
+      ]
+    },
+    {
+      "name": "procurement-rfp-writer",
+      "kind": "agent",
+      "purpose": "Drafts buyer-side RFPs and RFQs with requirements and weighted evaluation criteria.",
+      "skills": [
+        "procurement-rfp-drafting"
+      ]
+    },
+    {
+      "name": "supplier-bid-evaluator",
+      "kind": "agent",
+      "purpose": "Normalises and scores supplier bids and writes an award recommendation.",
+      "skills": [
+        "supplier-bid-evaluation",
+        "should-cost-analysis"
+      ]
+    },
+    {
+      "name": "negotiation-prep-analyst",
+      "kind": "agent",
+      "purpose": "Prepares negotiation briefs with targets, BATNA, should-cost and concession plans.",
+      "skills": [
+        "procurement-negotiation-planning",
+        "should-cost-analysis"
+      ]
+    },
+    {
+      "name": "vendor-due-diligence-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews new vendor documentation and screening results and returns an onboarding decision with gaps.",
+      "skills": [
+        "vendor-onboarding-due-diligence",
+        "vendor-risk-assessment"
+      ]
+    },
+    {
+      "name": "vendor-performance-reviewer",
+      "kind": "agent",
+      "purpose": "Builds vendor scorecards from performance data and drafts quarterly business review notes.",
+      "skills": [
+        "vendor-scorecards"
+      ]
+    },
+    {
+      "name": "renewal-watchdog",
+      "kind": "agent",
+      "purpose": "Monitors contract renewals and notice windows and drafts renew/renegotiate/cancel recommendations.",
+      "skills": [
+        "contract-renewal-tracking"
+      ]
+    },
+    {
+      "name": "saas-spend-auditor",
+      "kind": "agent",
+      "purpose": "Audits SaaS subscriptions for waste and overlap and returns a savings plan.",
+      "skills": [
+        "saas-spend-audit",
+        "spend-cube-categorization"
+      ]
+    },
+    {
+      "name": "contract-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews third-party contracts against the playbook and returns issues by clause with suggested positions; counsel signs off.",
+      "skills": [
+        "contract-clause-review",
+        "legal-playbook-application"
+      ]
+    },
+    {
+      "name": "contract-redliner",
+      "kind": "agent",
+      "purpose": "Produces redlines and margin comments on counterparty paper per the playbook.",
+      "skills": [
+        "contract-redline-drafting",
+        "legal-playbook-application"
+      ]
+    },
+    {
+      "name": "contract-risk-summarizer",
+      "kind": "agent",
+      "purpose": "Summarises a contract's commercial and legal risks in one page for business approvers.",
+      "skills": [
+        "contract-risk-scoring"
+      ]
+    },
+    {
+      "name": "obligation-extractor",
+      "kind": "agent",
+      "purpose": "Extracts obligations, key dates and renewal terms from executed contracts into tracker rows.",
+      "skills": [
+        "contract-obligation-extraction",
+        "contract-repository-metadata"
+      ]
+    },
+    {
+      "name": "nda-triager",
+      "kind": "agent",
+      "purpose": "Triages incoming NDAs: standard, needs edits or escalate, with the specific deviations listed.",
+      "skills": [
+        "nda-review-checklist"
+      ]
+    },
+    {
+      "name": "nda-drafter",
+      "kind": "agent",
+      "purpose": "Drafts NDAs from a short deal brief using the right template variant.",
+      "skills": [
+        "nda-drafting"
+      ]
+    },
+    {
+      "name": "nda-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews counterparty NDAs and returns redline suggestions and a sign/negotiate recommendation.",
+      "skills": [
+        "nda-review-checklist",
+        "contract-redline-drafting"
+      ]
+    },
+    {
+      "name": "msa-drafter",
+      "kind": "agent",
+      "purpose": "Drafts MSAs and their schedules from a deal summary for counsel review.",
+      "skills": [
+        "msa-drafting",
+        "sla-terms-drafting"
+      ]
+    },
+    {
+      "name": "sow-writer",
+      "kind": "agent",
+      "purpose": "Drafts statements of work with deliverables, acceptance and change control under an existing MSA.",
+      "skills": [
+        "services-sow-drafting"
+      ]
+    },
+    {
+      "name": "contract-amendment-drafter",
+      "kind": "agent",
+      "purpose": "Drafts amendments and renewals that change specific terms of an existing agreement.",
+      "skills": [
+        "contract-amendment-drafting"
+      ]
+    },
+    {
+      "name": "order-form-drafter",
+      "kind": "agent",
+      "purpose": "Drafts order forms aligned to master terms and approved pricing.",
+      "skills": [
+        "order-form-drafting"
+      ]
+    },
+    {
+      "name": "board-minutes-writer",
+      "kind": "agent",
+      "purpose": "Turns board meeting notes into formal minutes and action lists.",
+      "skills": [
+        "board-minutes-drafting"
+      ]
+    },
+    {
+      "name": "board-resolution-drafter",
+      "kind": "agent",
+      "purpose": "Drafts board and shareholder resolutions and written consents for requested corporate actions.",
+      "skills": [
+        "board-resolution-drafting"
+      ]
+    },
+    {
+      "name": "corporate-secretary-assistant",
+      "kind": "agent",
+      "purpose": "Keeps the corporate compliance calendar and statutory records current and flags upcoming filings.",
+      "skills": [
+        "corporate-compliance-calendar",
+        "corporate-records-maintenance"
+      ]
+    },
+    {
+      "name": "authority-matrix-reviewer",
+      "kind": "agent",
+      "purpose": "Checks proposed approvals and spend against the delegation of authority matrix.",
+      "skills": [
+        "delegation-of-authority-matrix"
+      ]
+    },
+    {
+      "name": "board-deck-builder",
+      "kind": "agent",
+      "purpose": "Builds the quarterly board deck from KPIs, financials and strategic updates in house format.",
+      "skills": [
+        "board-deck-structure",
+        "board-meeting-agenda"
+      ]
+    },
+    {
+      "name": "board-financial-pack-preparer",
+      "kind": "agent",
+      "purpose": "Prepares the board financial pack and commentary from management accounts.",
+      "skills": [
+        "board-financial-pack",
+        "variance-commentary-writing"
+      ]
+    },
+    {
+      "name": "board-memo-writer",
+      "kind": "agent",
+      "purpose": "Writes decision-oriented board pre-read memos.",
+      "skills": [
+        "board-pre-read-memo"
+      ]
+    },
+    {
+      "name": "board-qa-prepper",
+      "kind": "agent",
+      "purpose": "Anticipates director questions on the board materials and drafts concise answers with data.",
+      "skills": [
+        "board-deck-structure",
+        "board-financial-pack"
+      ]
+    },
+    {
+      "name": "job-description-writer",
+      "kind": "agent",
+      "purpose": "Writes inclusive job descriptions from hiring manager intake notes.",
+      "skills": [
+        "job-description-writing",
+        "hiring-req-intake"
+      ]
+    },
+    {
+      "name": "interview-loop-planner",
+      "kind": "agent",
+      "purpose": "Designs interview loops, scorecards and question sets for a role.",
+      "skills": [
+        "interview-loop-design",
+        "hiring-scorecard-design",
+        "behavioral-interview-questions"
+      ]
+    },
+    {
+      "name": "interview-feedback-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews interview feedback for evidence, scorecard alignment and bias-prone language.",
+      "skills": [
+        "interview-feedback-writing"
+      ]
+    },
+    {
+      "name": "hiring-debrief-synthesizer",
+      "kind": "agent",
+      "purpose": "Synthesises interviewer feedback into a debrief summary with decision points.",
+      "skills": [
+        "hiring-debrief-facilitation",
+        "interview-feedback-writing"
+      ]
+    },
+    {
+      "name": "candidate-outreach-writer",
+      "kind": "agent",
+      "purpose": "Writes personalised sourcing and follow-up messages for candidates.",
+      "skills": [
+        "candidate-outreach-messages"
+      ]
+    },
+    {
+      "name": "recruiting-funnel-analyst",
+      "kind": "agent",
+      "purpose": "Analyses recruiting funnel metrics and recommends process fixes.",
+      "skills": [
+        "recruiting-pipeline-metrics"
+      ]
+    },
+    {
+      "name": "ats-hygiene-auditor",
+      "kind": "agent",
+      "purpose": "Audits ATS records for stale candidates, missing dispositions and stage misuse.",
+      "skills": [
+        "ats-hygiene"
+      ]
+    },
+    {
+      "name": "offer-packet-preparer",
+      "kind": "agent",
+      "purpose": "Prepares offer packets: comp checks against bands, approvals and offer letter draft.",
+      "skills": [
+        "offer-approval-workflow",
+        "offer-letter-drafting",
+        "salary-band-design"
+      ]
+    },
+    {
+      "name": "interview-scheduling-coordinator",
+      "kind": "agent",
+      "purpose": "Plans interview schedules across panels and time zones and drafts candidate logistics emails.",
+      "skills": [
+        "interview-scheduling-coordination"
+      ]
+    },
+    {
+      "name": "onboarding-plan-builder",
+      "kind": "agent",
+      "purpose": "Builds role-specific 30-60-90 day onboarding plans and first-week schedules.",
+      "skills": [
+        "onboarding-plan-30-60-90",
+        "new-hire-checklist"
+      ]
+    },
+    {
+      "name": "onboarding-coordinator",
+      "kind": "agent",
+      "purpose": "Tracks new-hire checklist tasks across HR, IT and managers and flags misses before day one.",
+      "skills": [
+        "new-hire-checklist"
+      ]
+    },
+    {
+      "name": "handbook-qa-assistant",
+      "kind": "agent",
+      "purpose": "Answers employee questions from the handbook and policies, citing sections and escalating unclear cases to HR.",
+      "skills": [
+        "employee-handbook-drafting"
+      ]
+    },
+    {
+      "name": "onboarding-feedback-analyst",
+      "kind": "agent",
+      "purpose": "Analyses new-hire survey feedback and recommends onboarding improvements.",
+      "skills": [
+        "onboarding-buddy-program"
+      ]
+    },
+    {
+      "name": "performance-review-writer",
+      "kind": "agent",
+      "purpose": "Drafts performance reviews from manager notes, goals and peer feedback.",
+      "skills": [
+        "performance-review-writing"
+      ]
+    },
+    {
+      "name": "calibration-analyst",
+      "kind": "agent",
+      "purpose": "Prepares calibration data, spots rating inconsistencies and drafts discussion prompts.",
+      "skills": [
+        "review-calibration"
+      ]
+    },
+    {
+      "name": "pip-drafter",
+      "kind": "agent",
+      "purpose": "Drafts fair, specific performance improvement plans and check-in templates for HR review.",
+      "skills": [
+        "performance-improvement-plan"
+      ]
+    },
+    {
+      "name": "self-review-coach",
+      "kind": "agent",
+      "purpose": "Coaches employees through writing evidence-based self-reviews.",
+      "skills": [
+        "self-review-guidance",
+        "individual-goal-setting"
+      ]
+    },
+    {
+      "name": "hr-policy-drafter",
+      "kind": "agent",
+      "purpose": "Drafts HR policies from a brief with jurisdiction flags for counsel review.",
+      "skills": [
+        "leave-policy-drafting",
+        "remote-work-policy",
+        "code-of-conduct-drafting"
+      ]
+    },
+    {
+      "name": "handbook-maintainer",
+      "kind": "agent",
+      "purpose": "Keeps the employee handbook current, tracks versions and drives acknowledgements.",
+      "skills": [
+        "employee-handbook-drafting",
+        "policy-acknowledgement-tracking"
+      ]
+    },
+    {
+      "name": "policy-consistency-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews HR policies for contradictions, outdated references and missing required sections.",
+      "skills": [
+        "employee-handbook-drafting"
+      ]
+    },
+    {
+      "name": "comp-benchmark-analyst",
+      "kind": "agent",
+      "purpose": "Benchmarks roles against market data and recommends pay positioning.",
+      "skills": [
+        "compensation-benchmarking"
+      ]
+    },
+    {
+      "name": "salary-band-builder",
+      "kind": "agent",
+      "purpose": "Builds and maintains salary bands by level and geography.",
+      "skills": [
+        "salary-band-design"
+      ]
+    },
+    {
+      "name": "merit-cycle-planner",
+      "kind": "agent",
+      "purpose": "Plans merit and promotion budgets and produces manager worksheets.",
+      "skills": [
+        "merit-increase-planning"
+      ]
+    },
+    {
+      "name": "pay-equity-auditor",
+      "kind": "agent",
+      "purpose": "Runs pay equity analyses and lists outliers with remediation cost estimates.",
+      "skills": [
+        "pay-equity-analysis"
+      ]
+    },
+    {
+      "name": "attrition-risk-analyst",
+      "kind": "agent",
+      "purpose": "Analyses attrition patterns and flags at-risk teams with drivers.",
+      "skills": [
+        "attrition-analysis",
+        "exit-interview-analysis"
+      ]
+    },
+    {
+      "name": "engagement-survey-analyst",
+      "kind": "agent",
+      "purpose": "Analyses engagement survey results and drafts team-level action plans.",
+      "skills": [
+        "engagement-survey-analysis"
+      ]
+    },
+    {
+      "name": "workforce-planner",
+      "kind": "agent",
+      "purpose": "Builds workforce plans linking business targets to hiring and capability needs.",
+      "skills": [
+        "workforce-planning",
+        "headcount-planning"
+      ]
+    },
+    {
+      "name": "sop-writer",
+      "kind": "agent",
+      "purpose": "Writes SOPs and work instructions from process walkthroughs or recordings notes.",
+      "skills": [
+        "sop-drafting",
+        "work-instruction-writing"
+      ]
+    },
+    {
+      "name": "process-mapper",
+      "kind": "agent",
+      "purpose": "Turns process descriptions into swimlane maps with handoffs and pain points.",
+      "skills": [
+        "ops-process-mapping",
+        "raci-matrix"
+      ]
+    },
+    {
+      "name": "sop-auditor",
+      "kind": "agent",
+      "purpose": "Audits SOP libraries for stale, conflicting or missing procedures and owners.",
+      "skills": [
+        "sop-review-cadence",
+        "sop-drafting"
+      ]
+    },
+    {
+      "name": "process-improvement-analyst",
+      "kind": "agent",
+      "purpose": "Analyses a process for waste and root causes and proposes a prioritised improvement plan.",
+      "skills": [
+        "lean-waste-analysis",
+        "ops-root-cause-analysis",
+        "value-stream-mapping"
+      ]
+    },
+    {
+      "name": "project-planner",
+      "kind": "agent",
+      "purpose": "Turns a project brief into a charter, WBS and schedule with milestones.",
+      "skills": [
+        "project-charter",
+        "pm-work-breakdown-structure",
+        "project-schedule-planning"
+      ]
+    },
+    {
+      "name": "project-status-writer",
+      "kind": "agent",
+      "purpose": "Writes weekly RAG status reports from task trackers and notes.",
+      "skills": [
+        "project-status-report"
+      ]
+    },
+    {
+      "name": "raid-log-keeper",
+      "kind": "agent",
+      "purpose": "Maintains the RAID log, updates ratings and flags items needing escalation.",
+      "skills": [
+        "raid-log"
+      ]
+    },
+    {
+      "name": "project-closeout-facilitator",
+      "kind": "agent",
+      "purpose": "Runs project closeout: acceptance, lessons learned and handover documentation.",
+      "skills": [
+        "project-closeout"
+      ]
+    },
+    {
+      "name": "program-dependency-tracker",
+      "kind": "agent",
+      "purpose": "Tracks cross-project dependencies and flags slips that hit the programme critical path.",
+      "skills": [
+        "program-dependency-tracking"
+      ]
+    },
+    {
+      "name": "steering-pack-builder",
+      "kind": "agent",
+      "purpose": "Builds steering committee packs with decisions required and escalations.",
+      "skills": [
+        "steering-committee-pack",
+        "benefits-realization-tracking"
+      ]
+    },
+    {
+      "name": "portfolio-prioritizer",
+      "kind": "agent",
+      "purpose": "Scores project intake requests and recommends portfolio priorities within capacity.",
+      "skills": [
+        "portfolio-intake-scoring",
+        "resource-capacity-planning"
+      ]
+    },
+    {
+      "name": "capacity-planner",
+      "kind": "agent",
+      "purpose": "Compares team capacity to demand and proposes rebalancing or hiring.",
+      "skills": [
+        "resource-capacity-planning"
+      ]
+    },
+    {
+      "name": "risk-register-maintainer",
+      "kind": "agent",
+      "purpose": "Maintains the enterprise risk register, updates ratings and drafts quarterly risk reports.",
+      "skills": [
+        "enterprise-risk-register",
+        "risk-scoring-matrix"
+      ]
+    },
+    {
+      "name": "risk-assessor",
+      "kind": "agent",
+      "purpose": "Assesses new risks with consistent likelihood/impact scoring and proposes treatments.",
+      "skills": [
+        "risk-scoring-matrix",
+        "key-risk-indicators"
+      ]
+    },
+    {
+      "name": "continuity-planner",
+      "kind": "agent",
+      "purpose": "Runs business impact analyses and drafts business continuity plans.",
+      "skills": [
+        "business-impact-analysis",
+        "business-continuity-plan"
+      ]
+    },
+    {
+      "name": "tabletop-facilitator",
+      "kind": "agent",
+      "purpose": "Designs and facilitates BCP and crisis tabletop exercises and writes after-action reports.",
+      "skills": [
+        "bcp-tabletop-exercise",
+        "crisis-communication-plan"
+      ]
+    },
+    {
+      "name": "insurance-policy-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews insurance policies and summarises coverage, exclusions and questions for the broker.",
+      "skills": [
+        "insurance-coverage-review"
+      ]
+    },
+    {
+      "name": "coverage-gap-analyst",
+      "kind": "agent",
+      "purpose": "Compares risks and contract requirements to the insurance programme and lists gaps.",
+      "skills": [
+        "coverage-gap-analysis",
+        "insurance-coverage-review"
+      ]
+    },
+    {
+      "name": "insurance-renewal-preparer",
+      "kind": "agent",
+      "purpose": "Prepares renewal submissions and loss data for the broker.",
+      "skills": [
+        "insurance-renewal-submission"
+      ]
+    },
+    {
+      "name": "coi-tracker",
+      "kind": "agent",
+      "purpose": "Tracks certificates of insurance and chases vendors for missing or expiring ones.",
+      "skills": [
+        "certificate-of-insurance-tracking"
+      ]
+    },
+    {
+      "name": "pitch-deck-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews investor decks for story, clarity, metrics consistency and missing sections.",
+      "skills": [
+        "investor-pitch-deck"
+      ]
+    },
+    {
+      "name": "data-room-organizer",
+      "kind": "agent",
+      "purpose": "Builds and audits investor data rooms against a standard index.",
+      "skills": [
+        "investor-data-room",
+        "diligence-request-tracker"
+      ]
+    },
+    {
+      "name": "term-sheet-analyst",
+      "kind": "agent",
+      "purpose": "Explains and compares term sheets and models dilution for founder and counsel review.",
+      "skills": [
+        "term-sheet-review",
+        "dilution-waterfall-analysis",
+        "safe-convertible-mechanics"
+      ]
+    },
+    {
+      "name": "investor-update-writer",
+      "kind": "agent",
+      "purpose": "Drafts investor updates from metrics and team notes.",
+      "skills": [
+        "investor-update-letter",
+        "saas-metrics-definitions"
+      ]
+    },
+    {
+      "name": "diligence-responder",
+      "kind": "agent",
+      "purpose": "Drafts responses to diligence requests with data room references.",
+      "skills": [
+        "diligence-request-tracker",
+        "financial-due-diligence-checklist"
+      ]
+    },
+    {
+      "name": "esg-data-collector",
+      "kind": "agent",
+      "purpose": "Collects ESG metrics from owners using templates and flags missing or inconsistent data.",
+      "skills": [
+        "esg-data-collection"
+      ]
+    },
+    {
+      "name": "ghg-inventory-calculator",
+      "kind": "agent",
+      "purpose": "Calculates scope 1-3 GHG inventories from activity data and documents factors used.",
+      "skills": [
+        "ghg-emissions-accounting"
+      ]
+    },
+    {
+      "name": "esg-disclosure-drafter",
+      "kind": "agent",
+      "purpose": "Drafts ESG disclosures mapped to the chosen frameworks with data references.",
+      "skills": [
+        "sustainability-report-drafting",
+        "esg-framework-mapping"
+      ]
+    },
+    {
+      "name": "esg-materiality-analyst",
+      "kind": "agent",
+      "purpose": "Runs double materiality assessments and drafts the materiality matrix and rationale.",
+      "skills": [
+        "esg-materiality-assessment"
+      ]
+    },
+    {
+      "name": "expense-report-auditor",
+      "kind": "agent",
+      "purpose": "Audits expense reports against policy and returns flagged items with reasons.",
+      "skills": [
+        "expense-report-audit",
+        "expense-policy-drafting"
+      ]
+    },
+    {
+      "name": "card-reconciler",
+      "kind": "agent",
+      "purpose": "Reconciles corporate card transactions to receipts and coding and lists missing receipts.",
+      "skills": [
+        "corporate-card-reconciliation"
+      ]
+    },
+    {
+      "name": "intercompany-reconciler",
+      "kind": "agent",
+      "purpose": "Reconciles intercompany balances across entities and proposes true-up entries.",
+      "skills": [
+        "intercompany-reconciliation",
+        "fx-translation-remeasurement"
+      ]
+    },
+    {
+      "name": "consolidation-preparer",
+      "kind": "agent",
+      "purpose": "Prepares consolidation workpapers and eliminations for group reporting.",
+      "skills": [
+        "consolidation-eliminations",
+        "intercompany-reconciliation"
+      ]
+    },
+    {
+      "name": "ethics-case-triager",
+      "kind": "agent",
+      "purpose": "Triages speak-up and ethics reports, classifies them and routes to the right investigator with confidentiality preserved.",
+      "skills": [
+        "whistleblower-procedure",
+        "workplace-investigation-notes"
+      ]
+    },
+    {
+      "name": "conflict-disclosure-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews conflict of interest and gifts disclosures and recommends mitigations.",
+      "skills": [
+        "conflict-of-interest-disclosures",
+        "gifts-hospitality-register"
+      ]
+    },
+    {
+      "name": "investigation-notes-organizer",
+      "kind": "agent",
+      "purpose": "Organises workplace investigation notes into a neutral chronology and findings draft for HR and counsel.",
+      "skills": [
+        "workplace-investigation-notes"
+      ]
+    },
+    {
+      "name": "integration-planner",
+      "kind": "agent",
+      "purpose": "Builds post-merger integration plans and day-one checklists across workstreams.",
+      "skills": [
+        "post-merger-integration-plan"
+      ]
+    }
+  ]
+}

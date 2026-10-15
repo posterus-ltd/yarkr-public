@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "firehydrant": {
+      "command": "npx",
+      "args": ["-y", "firehydrant-mcp", "start", "--api-key", "${FIREHYDRANT_API_KEY}"]
+    }
+  }
+}

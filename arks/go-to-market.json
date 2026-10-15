@@ -1,0 +1,2621 @@
+{
+  "domain": "go-to-market",
+  "arks": [
+    {
+      "name": "prd-writing",
+      "type": "skill",
+      "topic": "PRD writing",
+      "description": "For product managers who write specs: PRD structure, testable requirements, success metrics, scope cut lines and a review checklist so agents draft and critique PRDs engineers can build from.",
+      "items": [
+        {
+          "package": "prd-structure",
+          "required": true
+        },
+        {
+          "package": "prd-requirements-writing",
+          "required": true
+        },
+        {
+          "package": "prd-success-metrics",
+          "required": true
+        },
+        {
+          "package": "prd-scope-non-goals",
+          "required": false
+        },
+        {
+          "package": "prd-review-checklist",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "product-roadmapping",
+      "type": "skill",
+      "topic": "product roadmaps",
+      "description": "For product leads planning and sharing roadmaps: Now/Next/Later boards, outcome themes, dependency mapping and audience-specific roadmap versions.",
+      "items": [
+        {
+          "package": "roadmap-now-next-later",
+          "required": true
+        },
+        {
+          "package": "roadmap-outcome-themes",
+          "required": true
+        },
+        {
+          "package": "roadmap-dependency-mapping",
+          "required": false
+        },
+        {
+          "package": "roadmap-stakeholder-comms",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "product-discovery",
+      "type": "skill",
+      "topic": "product discovery",
+      "description": "For product trios doing continuous discovery: opportunity solution trees, assumption mapping, cheap discovery experiments and jobs-to-be-done framing.",
+      "items": [
+        {
+          "package": "opportunity-solution-tree",
+          "required": true
+        },
+        {
+          "package": "assumption-mapping",
+          "required": true
+        },
+        {
+          "package": "discovery-experiment-design",
+          "required": true
+        },
+        {
+          "package": "jobs-to-be-done",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "feature-prioritisation",
+      "type": "skill",
+      "topic": "feature prioritisation",
+      "description": "For PMs ranking a backlog: RICE scoring, Kano analysis, opportunity sizing and a trade-off memo that explains what was cut and why.",
+      "items": [
+        {
+          "package": "rice-scoring",
+          "required": true
+        },
+        {
+          "package": "kano-analysis",
+          "required": false
+        },
+        {
+          "package": "prioritisation-tradeoff-memo",
+          "required": true
+        },
+        {
+          "package": "assumption-mapping",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "product-strategy",
+      "type": "skill",
+      "topic": "product strategy and metrics",
+      "description": "For product leaders setting direction: vision narratives, strategy kernels with real trade-offs, north star and KPI trees, precise metric definitions and outcome-based OKRs.",
+      "items": [
+        {
+          "package": "product-vision-narrative",
+          "required": true
+        },
+        {
+          "package": "product-strategy-kernel",
+          "required": true
+        },
+        {
+          "package": "north-star-metric",
+          "required": true
+        },
+        {
+          "package": "product-kpi-tree",
+          "required": false
+        },
+        {
+          "package": "metric-definition-spec",
+          "required": false
+        },
+        {
+          "package": "product-okr-writing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "user-stories",
+      "type": "skill",
+      "topic": "user stories and backlog",
+      "description": "For PMs and product owners: well-formed user stories, Given/When/Then acceptance criteria, story splitting and backlog refinement routines.",
+      "items": [
+        {
+          "package": "user-story-writing",
+          "required": true
+        },
+        {
+          "package": "pm-acceptance-criteria",
+          "required": true
+        },
+        {
+          "package": "story-splitting",
+          "required": true
+        },
+        {
+          "package": "backlog-refinement",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "product-launch",
+      "type": "skill",
+      "topic": "product launches",
+      "description": "For PMs and PMMs shipping features: launch tiering, a cross-functional launch checklist, customer release notes and post-launch reviews.",
+      "items": [
+        {
+          "package": "launch-tiering",
+          "required": true
+        },
+        {
+          "package": "product-launch-checklist",
+          "required": true
+        },
+        {
+          "package": "customer-release-notes",
+          "required": false
+        },
+        {
+          "package": "product-launch-retro",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "user-interviews",
+      "type": "skill",
+      "topic": "user interviews",
+      "description": "For PMs, designers and researchers running interviews: research plans, recruiting screeners, interview guides, moderation technique and synthesis.",
+      "items": [
+        {
+          "package": "research-plan",
+          "required": true
+        },
+        {
+          "package": "research-recruiting-screener",
+          "required": false
+        },
+        {
+          "package": "interview-guide-writing",
+          "required": true
+        },
+        {
+          "package": "interview-moderation",
+          "required": true
+        },
+        {
+          "package": "interview-synthesis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "research-synthesis",
+      "type": "skill",
+      "topic": "research synthesis",
+      "description": "For researchers turning raw notes into decisions: affinity mapping, insight statements, personas, journey maps and a findable research repository.",
+      "items": [
+        {
+          "package": "affinity-mapping",
+          "required": true
+        },
+        {
+          "package": "insight-statement-writing",
+          "required": true
+        },
+        {
+          "package": "persona-building",
+          "required": false
+        },
+        {
+          "package": "customer-journey-mapping",
+          "required": false
+        },
+        {
+          "package": "research-repository",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "usability-testing",
+      "type": "skill",
+      "topic": "usability testing",
+      "description": "For designers and researchers testing interfaces: test plans, task writing, prototype scripts, heuristic evaluation and severity-rated findings reports.",
+      "items": [
+        {
+          "package": "usability-test-plan",
+          "required": true
+        },
+        {
+          "package": "usability-task-writing",
+          "required": true
+        },
+        {
+          "package": "prototype-test-script",
+          "required": false
+        },
+        {
+          "package": "ux-heuristic-evaluation",
+          "required": false
+        },
+        {
+          "package": "usability-findings-report",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "research-surveys",
+      "type": "skill",
+      "topic": "research surveys",
+      "description": "For teams running user and customer surveys: unbiased question design, sampling plans, NPS/CSAT setup and coding open-text answers.",
+      "items": [
+        {
+          "package": "research-survey-design",
+          "required": true
+        },
+        {
+          "package": "survey-sampling-plan",
+          "required": false
+        },
+        {
+          "package": "nps-csat-survey",
+          "required": false
+        },
+        {
+          "package": "open-text-coding",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "ux-flows-ia",
+      "type": "skill",
+      "topic": "UX flows and information architecture",
+      "description": "For product designers structuring features: user flows, information architecture, card sorting and annotated wireframe specs.",
+      "items": [
+        {
+          "package": "user-flow-mapping",
+          "required": true
+        },
+        {
+          "package": "ux-information-architecture",
+          "required": true
+        },
+        {
+          "package": "card-sorting",
+          "required": false
+        },
+        {
+          "package": "wireframe-spec",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "ui-visual-design",
+      "type": "skill",
+      "topic": "UI visual design",
+      "description": "For designers and design-minded engineers: visual hierarchy, type scales, colour palettes with contrast-checked pairs and layout grids.",
+      "items": [
+        {
+          "package": "ui-visual-hierarchy",
+          "required": true
+        },
+        {
+          "package": "ui-typography-scale",
+          "required": true
+        },
+        {
+          "package": "ui-color-palette",
+          "required": true
+        },
+        {
+          "package": "ui-layout-grid",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ux-writing",
+      "type": "skill",
+      "topic": "UX writing",
+      "description": "For content designers and PMs writing interface text: microcopy, error messages, empty states and product voice and tone.",
+      "items": [
+        {
+          "package": "microcopy-writing",
+          "required": true
+        },
+        {
+          "package": "error-message-copy",
+          "required": true
+        },
+        {
+          "package": "empty-state-copy",
+          "required": false
+        },
+        {
+          "package": "ux-voice-tone",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "design-critique-handoff",
+      "type": "skill",
+      "topic": "design critique and handoff",
+      "description": "For design teams: structured critiques, developer handoff specs, design QA of built UI and tidy Figma files.",
+      "items": [
+        {
+          "package": "design-critique",
+          "required": true
+        },
+        {
+          "package": "design-handoff-spec",
+          "required": true
+        },
+        {
+          "package": "design-qa-checklist",
+          "required": false
+        },
+        {
+          "package": "figma-file-hygiene",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "product-onboarding-ux",
+      "type": "skill",
+      "topic": "product onboarding UX",
+      "description": "For PMs and designers improving first-run experience: onboarding flow design, activation milestones, product tours and empty states.",
+      "items": [
+        {
+          "package": "onboarding-flow-design",
+          "required": true
+        },
+        {
+          "package": "activation-milestones",
+          "required": true
+        },
+        {
+          "package": "product-tour-copy",
+          "required": false
+        },
+        {
+          "package": "empty-state-copy",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "design-systems",
+      "type": "skill",
+      "topic": "design systems",
+      "description": "For design-system teams: token taxonomy, component specs and docs, variant matrices, a contribution model, adoption audits and versioning with deprecation.",
+      "items": [
+        {
+          "package": "ds-token-taxonomy",
+          "required": true
+        },
+        {
+          "package": "ds-component-spec",
+          "required": true
+        },
+        {
+          "package": "ds-variant-matrix",
+          "required": false
+        },
+        {
+          "package": "ds-component-docs",
+          "required": true
+        },
+        {
+          "package": "ds-contribution-model",
+          "required": false
+        },
+        {
+          "package": "ds-adoption-audit",
+          "required": false
+        },
+        {
+          "package": "ds-versioning-deprecation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "conversion-copywriting",
+      "type": "skill",
+      "topic": "conversion copywriting",
+      "description": "For marketers and founders writing pages that convert: landing page structure, headlines, CTAs, value propositions and voice-of-customer language.",
+      "items": [
+        {
+          "package": "landing-page-copy",
+          "required": true
+        },
+        {
+          "package": "headline-formulas",
+          "required": true
+        },
+        {
+          "package": "cta-copy",
+          "required": false
+        },
+        {
+          "package": "value-proposition-canvas",
+          "required": false
+        },
+        {
+          "package": "voice-of-customer-mining",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "brand-voice",
+      "type": "skill",
+      "topic": "brand voice",
+      "description": "For marketing and content teams keeping copy on-brand: voice guide, tone matrix, marketing style guide and a voice-editing pass.",
+      "items": [
+        {
+          "package": "brand-voice-guide",
+          "required": true
+        },
+        {
+          "package": "tone-matrix",
+          "required": false
+        },
+        {
+          "package": "marketing-style-guide",
+          "required": true
+        },
+        {
+          "package": "brand-voice-edit",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "brand-strategy",
+      "type": "skill",
+      "topic": "brand strategy",
+      "description": "For brand and marketing leads: positioning statements, messaging house, naming, brand guidelines and brand consistency audits.",
+      "items": [
+        {
+          "package": "brand-positioning-statement",
+          "required": true
+        },
+        {
+          "package": "brand-messaging-house",
+          "required": true
+        },
+        {
+          "package": "brand-naming",
+          "required": false
+        },
+        {
+          "package": "brand-guidelines-doc",
+          "required": false
+        },
+        {
+          "package": "brand-audit",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "positioning-messaging",
+      "type": "skill",
+      "topic": "positioning and messaging",
+      "description": "For product marketers: competitive positioning, persona messaging frameworks, value proposition canvases and competitor battlecards.",
+      "items": [
+        {
+          "package": "positioning-canvas",
+          "required": true
+        },
+        {
+          "package": "messaging-framework",
+          "required": true
+        },
+        {
+          "package": "persona-messaging-matrix",
+          "required": false
+        },
+        {
+          "package": "value-proposition-canvas",
+          "required": false
+        },
+        {
+          "package": "competitive-battlecard",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "content-strategy",
+      "type": "skill",
+      "topic": "content strategy",
+      "description": "For content leads planning programs: content pillars, editorial calendars, content audits, lead magnet ideas and content briefs writers can execute.",
+      "items": [
+        {
+          "package": "content-pillars",
+          "required": true
+        },
+        {
+          "package": "editorial-calendar",
+          "required": true
+        },
+        {
+          "package": "content-audit",
+          "required": false
+        },
+        {
+          "package": "content-brief-writing",
+          "required": true
+        },
+        {
+          "package": "lead-magnet-ideation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "content-writing",
+      "type": "skill",
+      "topic": "content writing",
+      "description": "For content marketers producing articles and long-form assets: outlines, sourced long-form drafts, opinion pieces, whitepapers, editing passes and repurposing.",
+      "items": [
+        {
+          "package": "blog-post-outline",
+          "required": true
+        },
+        {
+          "package": "long-form-article",
+          "required": true
+        },
+        {
+          "package": "content-editing-pass",
+          "required": true
+        },
+        {
+          "package": "opinion-piece-structure",
+          "required": false
+        },
+        {
+          "package": "whitepaper-writing",
+          "required": false
+        },
+        {
+          "package": "content-repurposing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "customer-stories",
+      "type": "skill",
+      "topic": "customer case studies",
+      "description": "For PMMs and customer marketers: case-study interviews, written case studies with metrics, and testimonial collection with consent.",
+      "items": [
+        {
+          "package": "case-study-interview",
+          "required": true
+        },
+        {
+          "package": "customer-case-study",
+          "required": true
+        },
+        {
+          "package": "testimonial-collection",
+          "required": false
+        },
+        {
+          "package": "voice-of-customer-mining",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "video-podcast-marketing",
+      "type": "skill",
+      "topic": "video and podcast marketing",
+      "description": "For marketers making video and audio: explainer scripts, short-form hooks, YouTube metadata and podcast episode planning.",
+      "items": [
+        {
+          "package": "video-script-marketing",
+          "required": true
+        },
+        {
+          "package": "short-form-video-hooks",
+          "required": true
+        },
+        {
+          "package": "youtube-seo-metadata",
+          "required": false
+        },
+        {
+          "package": "podcast-episode-planning",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "seo-keyword-research",
+      "type": "skill",
+      "topic": "SEO keyword research",
+      "description": "For SEOs and content teams: keyword research, search-intent mapping, SERP-overlap clustering and SERP analysis to set content angles.",
+      "items": [
+        {
+          "package": "seo-keyword-research",
+          "required": true
+        },
+        {
+          "package": "search-intent-mapping",
+          "required": true
+        },
+        {
+          "package": "keyword-clustering",
+          "required": true
+        },
+        {
+          "package": "serp-analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "on-page-seo",
+      "type": "skill",
+      "topic": "on-page and AI search SEO",
+      "description": "For SEOs and site owners: title and meta writing, on-page audits, internal linking, structured data and making pages citable by AI assistants and AI overviews.",
+      "items": [
+        {
+          "package": "seo-title-meta",
+          "required": true
+        },
+        {
+          "package": "on-page-seo-audit",
+          "required": true
+        },
+        {
+          "package": "internal-linking-plan",
+          "required": false
+        },
+        {
+          "package": "seo-structured-data",
+          "required": false
+        },
+        {
+          "package": "answer-engine-optimisation",
+          "required": true
+        },
+        {
+          "package": "ai-search-visibility-audit",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "technical-seo",
+      "type": "skill",
+      "topic": "technical SEO",
+      "description": "For technical SEOs and web teams: crawl and indexation audits, site migrations, international hreflang and programmatic page sets.",
+      "items": [
+        {
+          "package": "technical-seo-audit",
+          "required": true
+        },
+        {
+          "package": "crawl-indexation-check",
+          "required": true
+        },
+        {
+          "package": "seo-site-migration",
+          "required": false
+        },
+        {
+          "package": "hreflang-international-seo",
+          "required": false
+        },
+        {
+          "package": "programmatic-seo-pages",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "link-building",
+      "type": "skill",
+      "topic": "link building and digital PR",
+      "description": "For SEO and PR teams earning authority: link prospecting and outreach, data-led digital PR with original research, and backlink audits.",
+      "items": [
+        {
+          "package": "link-building-outreach",
+          "required": true
+        },
+        {
+          "package": "digital-pr-campaigns",
+          "required": true
+        },
+        {
+          "package": "original-research-report",
+          "required": false
+        },
+        {
+          "package": "backlink-audit",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "local-seo",
+      "type": "skill",
+      "topic": "local SEO",
+      "description": "For local businesses and agencies: Google Business Profile optimisation, consistent citations, ethical review generation and unique location pages.",
+      "items": [
+        {
+          "package": "local-seo-gbp",
+          "required": true
+        },
+        {
+          "package": "local-citations",
+          "required": true
+        },
+        {
+          "package": "review-generation",
+          "required": false
+        },
+        {
+          "package": "local-landing-pages",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "social-media-content",
+      "type": "skill",
+      "topic": "social media content",
+      "description": "For social media managers: platform-native posts, content calendars, format adaptation and performance reporting.",
+      "items": [
+        {
+          "package": "social-post-writing",
+          "required": true
+        },
+        {
+          "package": "social-content-calendar",
+          "required": true
+        },
+        {
+          "package": "platform-native-formats",
+          "required": true
+        },
+        {
+          "package": "social-media-reporting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "linkedin-thought-leadership",
+      "type": "skill",
+      "topic": "LinkedIn and founder-led marketing",
+      "description": "For B2B founders, executives and their ghostwriters: voice-matched ghostwriting, LinkedIn posts, personal brand and company page building.",
+      "items": [
+        {
+          "package": "founder-ghostwriting",
+          "required": true
+        },
+        {
+          "package": "linkedin-post-writing",
+          "required": true
+        },
+        {
+          "package": "personal-brand-linkedin",
+          "required": true
+        },
+        {
+          "package": "linkedin-company-page",
+          "required": false
+        },
+        {
+          "package": "opinion-piece-structure",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "social-listening-moderation",
+      "type": "skill",
+      "topic": "social listening and moderation",
+      "description": "For community and social teams: listening queries, reply and moderation rules, flare-up response and reporting.",
+      "items": [
+        {
+          "package": "social-listening",
+          "required": true
+        },
+        {
+          "package": "social-reply-moderation",
+          "required": true
+        },
+        {
+          "package": "social-crisis-response",
+          "required": true
+        },
+        {
+          "package": "social-media-reporting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "email-marketing",
+      "type": "skill",
+      "topic": "email marketing",
+      "description": "For email marketers: campaign briefs, newsletters, subject lines, pre-send QA and deliverability hygiene.",
+      "items": [
+        {
+          "package": "email-campaign-brief",
+          "required": true
+        },
+        {
+          "package": "email-newsletter-writing",
+          "required": true
+        },
+        {
+          "package": "email-subject-lines",
+          "required": true
+        },
+        {
+          "package": "email-qa-checklist",
+          "required": false
+        },
+        {
+          "package": "email-deliverability",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "lifecycle-marketing",
+      "type": "skill",
+      "topic": "lifecycle marketing",
+      "description": "For lifecycle and CRM marketers: journey maps, trigger rules, segmentation, onboarding sequences and win-back flows.",
+      "items": [
+        {
+          "package": "lifecycle-journey-mapping",
+          "required": true
+        },
+        {
+          "package": "lifecycle-trigger-design",
+          "required": true
+        },
+        {
+          "package": "email-segmentation",
+          "required": false
+        },
+        {
+          "package": "onboarding-email-sequence",
+          "required": true
+        },
+        {
+          "package": "winback-sequence",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "google-ads",
+      "type": "skill",
+      "topic": "Google Ads",
+      "description": "For PPC managers: Search campaign structure, responsive search ad copy, negative keyword mining and account audits.",
+      "items": [
+        {
+          "package": "google-search-campaigns",
+          "required": true
+        },
+        {
+          "package": "rsa-ad-copy",
+          "required": true
+        },
+        {
+          "package": "negative-keyword-mining",
+          "required": true
+        },
+        {
+          "package": "google-ads-audit",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "paid-social-ads",
+      "type": "skill",
+      "topic": "paid social ads",
+      "description": "For paid social marketers: Meta campaign structure, creative briefs, structured creative testing and LinkedIn Ads for B2B.",
+      "items": [
+        {
+          "package": "meta-ads-structure",
+          "required": true
+        },
+        {
+          "package": "paid-social-creative-brief",
+          "required": true
+        },
+        {
+          "package": "ad-creative-testing",
+          "required": true
+        },
+        {
+          "package": "linkedin-ads-b2b",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "marketing-measurement",
+      "type": "skill",
+      "topic": "marketing measurement",
+      "description": "For growth and paid media leads: UTM conventions, attribution model choice, CAC/ROAS reporting and incrementality tests.",
+      "items": [
+        {
+          "package": "utm-tracking-plan",
+          "required": true
+        },
+        {
+          "package": "marketing-attribution",
+          "required": true
+        },
+        {
+          "package": "paid-media-reporting",
+          "required": true
+        },
+        {
+          "package": "incrementality-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "press-relations",
+      "type": "skill",
+      "topic": "press and media relations",
+      "description": "For PR and comms teams: press releases, media pitches, targeted media lists, press kits, executive announcements and spokesperson prep.",
+      "items": [
+        {
+          "package": "press-release-writing",
+          "required": true
+        },
+        {
+          "package": "media-pitch",
+          "required": true
+        },
+        {
+          "package": "media-list-building",
+          "required": false
+        },
+        {
+          "package": "press-kit",
+          "required": false
+        },
+        {
+          "package": "exec-announcement-writing",
+          "required": false
+        },
+        {
+          "package": "media-training-prep",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "crisis-communications",
+      "type": "skill",
+      "topic": "crisis communications",
+      "description": "For comms leads handling sensitive issues: holding statements, crisis plans, stakeholder Q&A and social flare-up response, for human approval.",
+      "items": [
+        {
+          "package": "crisis-holding-statement",
+          "required": true
+        },
+        {
+          "package": "crisis-comms-plan",
+          "required": true
+        },
+        {
+          "package": "stakeholder-qa-prep",
+          "required": true
+        },
+        {
+          "package": "social-crisis-response",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "sales-prospecting",
+      "type": "skill",
+      "topic": "sales prospecting",
+      "description": "For SDRs and founders doing outbound: ICP definition, account research, prospect list building and buying-signal triggers.",
+      "items": [
+        {
+          "package": "icp-definition",
+          "required": true
+        },
+        {
+          "package": "account-research",
+          "required": true
+        },
+        {
+          "package": "prospect-list-building",
+          "required": false
+        },
+        {
+          "package": "buying-signal-triggers",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "outbound-outreach",
+      "type": "skill",
+      "topic": "outbound outreach",
+      "description": "For SDRs and AEs: cold emails, multi-touch sequences, cold call scripts, LinkedIn social selling and objection handling.",
+      "items": [
+        {
+          "package": "cold-email-writing",
+          "required": true
+        },
+        {
+          "package": "outbound-sequence-design",
+          "required": true
+        },
+        {
+          "package": "cold-call-script",
+          "required": false
+        },
+        {
+          "package": "social-selling",
+          "required": false
+        },
+        {
+          "package": "objection-handling",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "sales-discovery",
+      "type": "skill",
+      "topic": "sales discovery",
+      "description": "For account executives: discovery call prep, a discovery question bank, MEDDPICC qualification and CRM-ready call notes.",
+      "items": [
+        {
+          "package": "discovery-call-prep",
+          "required": true
+        },
+        {
+          "package": "discovery-question-bank",
+          "required": true
+        },
+        {
+          "package": "meddpicc-qualification",
+          "required": true
+        },
+        {
+          "package": "sales-call-notes",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "sales-proposals",
+      "type": "skill",
+      "topic": "sales proposals and negotiation",
+      "description": "For AEs closing deals: proposals, customer ROI business cases, good/better/best quotes, mutual action plans, negotiation prep and discount guardrails.",
+      "items": [
+        {
+          "package": "sales-proposal-writing",
+          "required": true
+        },
+        {
+          "package": "business-case-roi",
+          "required": true
+        },
+        {
+          "package": "quote-pricing-options",
+          "required": false
+        },
+        {
+          "package": "mutual-action-plan",
+          "required": true
+        },
+        {
+          "package": "negotiation-prep",
+          "required": true
+        },
+        {
+          "package": "discount-guardrails",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "rfp-responses",
+      "type": "skill",
+      "topic": "RFP responses",
+      "description": "For bid and proposal teams: go/no-go decisions, compliance matrices, an answer library, executive summaries and security questionnaire drafts flagged for sign-off.",
+      "items": [
+        {
+          "package": "rfp-go-no-go",
+          "required": true
+        },
+        {
+          "package": "rfp-compliance-matrix",
+          "required": true
+        },
+        {
+          "package": "rfp-answer-library",
+          "required": true
+        },
+        {
+          "package": "rfp-executive-summary",
+          "required": false
+        },
+        {
+          "package": "rfp-security-questionnaire",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "pipeline-management",
+      "type": "skill",
+      "topic": "CRM hygiene, pipeline and forecasting",
+      "description": "For RevOps and sales managers: CRM data standards, stage definitions, dedupe and enrichment, weekly pipeline reviews, deal risk scoring and forecast calls.",
+      "items": [
+        {
+          "package": "crm-data-standards",
+          "required": true
+        },
+        {
+          "package": "pipeline-stage-definitions",
+          "required": true
+        },
+        {
+          "package": "crm-dedupe-enrichment",
+          "required": false
+        },
+        {
+          "package": "pipeline-review",
+          "required": true
+        },
+        {
+          "package": "deal-risk-scoring",
+          "required": false
+        },
+        {
+          "package": "sales-forecasting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "lead-management",
+      "type": "skill",
+      "topic": "lead management",
+      "description": "For marketing ops and RevOps: lead scoring, routing rules, MQL/SQL definitions and the marketing-sales handoff SLA.",
+      "items": [
+        {
+          "package": "lead-scoring-model",
+          "required": true
+        },
+        {
+          "package": "lead-routing-rules",
+          "required": true
+        },
+        {
+          "package": "mql-sql-definitions",
+          "required": true
+        },
+        {
+          "package": "pql-definition",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "account-management",
+      "type": "skill",
+      "topic": "account management",
+      "description": "For account managers and CSMs growing accounts: key account plans, stakeholder maps, expansion mapping and QBRs.",
+      "items": [
+        {
+          "package": "key-account-plan",
+          "required": true
+        },
+        {
+          "package": "stakeholder-mapping",
+          "required": true
+        },
+        {
+          "package": "expansion-opportunity-mapping",
+          "required": true
+        },
+        {
+          "package": "qbr-deck",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "sales-enablement",
+      "type": "skill",
+      "topic": "sales enablement and coaching",
+      "description": "For enablement teams and sales managers: sales playbooks, demo scripts, talk tracks, new-rep ramp plans, call review scorecards and role-play scenarios.",
+      "items": [
+        {
+          "package": "sales-playbook",
+          "required": true
+        },
+        {
+          "package": "demo-script",
+          "required": true
+        },
+        {
+          "package": "talk-track-writing",
+          "required": false
+        },
+        {
+          "package": "sales-onboarding-ramp",
+          "required": false
+        },
+        {
+          "package": "call-review-scorecard",
+          "required": true
+        },
+        {
+          "package": "sales-roleplay-scenarios",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "customer-onboarding",
+      "type": "skill",
+      "topic": "customer onboarding",
+      "description": "For CSMs and onboarding specialists: onboarding plans, kickoff agendas, success plans and time-to-value milestones.",
+      "items": [
+        {
+          "package": "customer-onboarding-plan",
+          "required": true
+        },
+        {
+          "package": "kickoff-call-agenda",
+          "required": true
+        },
+        {
+          "package": "customer-success-plan",
+          "required": true
+        },
+        {
+          "package": "time-to-value-milestones",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "churn-retention",
+      "type": "skill",
+      "topic": "churn and retention",
+      "description": "For customer success teams: health score design, churn risk signals, save plays and renewal playbooks.",
+      "items": [
+        {
+          "package": "customer-health-score",
+          "required": true
+        },
+        {
+          "package": "churn-risk-signals",
+          "required": true
+        },
+        {
+          "package": "churn-save-play",
+          "required": true
+        },
+        {
+          "package": "renewal-playbook",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "voice-of-customer",
+      "type": "skill",
+      "topic": "voice of the customer",
+      "description": "For CS, support and product teams: feedback tagging taxonomy, VoC reports, feature request intake and customer advisory boards.",
+      "items": [
+        {
+          "package": "feedback-tagging-taxonomy",
+          "required": true
+        },
+        {
+          "package": "voc-report",
+          "required": true
+        },
+        {
+          "package": "feature-request-intake",
+          "required": true
+        },
+        {
+          "package": "customer-advisory-board",
+          "required": false
+        },
+        {
+          "package": "open-text-coding",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "support-triage",
+      "type": "skill",
+      "topic": "support triage",
+      "description": "For support leads and agents: ticket triage rules, priorities and SLAs, escalation handoffs and turning tickets into bug reports.",
+      "items": [
+        {
+          "package": "ticket-triage-rules",
+          "required": true
+        },
+        {
+          "package": "ticket-priority-sla",
+          "required": true
+        },
+        {
+          "package": "support-escalation-handoff",
+          "required": true
+        },
+        {
+          "package": "ticket-to-bug-report",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "support-replies",
+      "type": "skill",
+      "topic": "support replies and macros",
+      "description": "For support agents: empathetic replies, macro writing, policy explanations and macro library audits.",
+      "items": [
+        {
+          "package": "support-tone-empathy",
+          "required": true
+        },
+        {
+          "package": "support-macro-writing",
+          "required": true
+        },
+        {
+          "package": "policy-explanation-replies",
+          "required": false
+        },
+        {
+          "package": "macro-library-audit",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "knowledge-base",
+      "type": "skill",
+      "topic": "help center and knowledge base",
+      "description": "For support and docs teams: help article writing, KB taxonomy, gap analysis from tickets and content maintenance.",
+      "items": [
+        {
+          "package": "kb-article-writing",
+          "required": true
+        },
+        {
+          "package": "kb-taxonomy",
+          "required": true
+        },
+        {
+          "package": "kb-gap-analysis",
+          "required": true
+        },
+        {
+          "package": "kb-maintenance",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "support-operations",
+      "type": "skill",
+      "topic": "support operations",
+      "description": "For support managers: QA scorecards, metrics reviews, capacity planning and low-CSAT driver analysis.",
+      "items": [
+        {
+          "package": "support-qa-scorecard",
+          "required": true
+        },
+        {
+          "package": "support-metrics-review",
+          "required": true
+        },
+        {
+          "package": "support-capacity-planning",
+          "required": false
+        },
+        {
+          "package": "csat-driver-analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "community-building",
+      "type": "skill",
+      "topic": "community building",
+      "description": "For community managers: community strategy, guidelines, member onboarding, ambassador programs and health metrics.",
+      "items": [
+        {
+          "package": "community-strategy",
+          "required": true
+        },
+        {
+          "package": "community-guidelines",
+          "required": true
+        },
+        {
+          "package": "community-onboarding",
+          "required": false
+        },
+        {
+          "package": "ambassador-program",
+          "required": false
+        },
+        {
+          "package": "community-health-metrics",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "developer-relations",
+      "type": "skill",
+      "topic": "developer relations",
+      "description": "For DevRel teams: strategy tied to adoption, tutorials, conference talk proposals, developer newsletters and impact metrics.",
+      "items": [
+        {
+          "package": "devrel-strategy",
+          "required": true
+        },
+        {
+          "package": "developer-tutorial-content",
+          "required": true
+        },
+        {
+          "package": "conference-talk-proposal",
+          "required": false
+        },
+        {
+          "package": "developer-newsletter",
+          "required": false
+        },
+        {
+          "package": "devrel-metrics",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "saas-pricing",
+      "type": "skill",
+      "topic": "SaaS pricing and packaging",
+      "description": "For founders, PMs and PMMs setting prices: pricing models, value metrics, packaging tiers, willingness-to-pay research, price changes and pricing page copy.",
+      "items": [
+        {
+          "package": "saas-pricing-model",
+          "required": true
+        },
+        {
+          "package": "value-metric-selection",
+          "required": true
+        },
+        {
+          "package": "packaging-tiers",
+          "required": true
+        },
+        {
+          "package": "willingness-to-pay-research",
+          "required": false
+        },
+        {
+          "package": "price-change-rollout",
+          "required": false
+        },
+        {
+          "package": "pricing-page-copy",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "product-led-growth",
+      "type": "skill",
+      "topic": "product-led growth and loops",
+      "description": "For PLG teams: freemium limits, product-qualified leads, in-product upgrade prompts, trial conversion, referral programs and viral loops.",
+      "items": [
+        {
+          "package": "freemium-limits-design",
+          "required": true
+        },
+        {
+          "package": "pql-definition",
+          "required": true
+        },
+        {
+          "package": "self-serve-upgrade-prompts",
+          "required": true
+        },
+        {
+          "package": "trial-conversion",
+          "required": false
+        },
+        {
+          "package": "referral-program-design",
+          "required": false
+        },
+        {
+          "package": "viral-loop-mapping",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "growth-experiments",
+      "type": "skill",
+      "topic": "growth experiments",
+      "description": "For growth teams: experiment hypotheses, ICE-ranked backlogs, readouts with decisions and growth models to find leverage.",
+      "items": [
+        {
+          "package": "growth-experiment-design",
+          "required": true
+        },
+        {
+          "package": "experiment-backlog-ice",
+          "required": true
+        },
+        {
+          "package": "experiment-readout",
+          "required": true
+        },
+        {
+          "package": "growth-model",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "conversion-optimisation",
+      "type": "skill",
+      "topic": "conversion rate optimisation",
+      "description": "For CRO and growth marketers: page audits, signup and checkout flow optimisation, funnel drop-off diagnosis and CTA testing.",
+      "items": [
+        {
+          "package": "cro-page-audit",
+          "required": true
+        },
+        {
+          "package": "signup-flow-optimisation",
+          "required": true
+        },
+        {
+          "package": "funnel-drop-off-diagnosis",
+          "required": true
+        },
+        {
+          "package": "cta-copy",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "partnerships",
+      "type": "skill",
+      "topic": "partnerships",
+      "description": "For partnership managers: partner program design, ideal partner profiles, partner pitches, co-marketing and enablement kits.",
+      "items": [
+        {
+          "package": "partner-program-design",
+          "required": true
+        },
+        {
+          "package": "partner-ideal-profile",
+          "required": true
+        },
+        {
+          "package": "partner-pitch",
+          "required": false
+        },
+        {
+          "package": "co-marketing-plan",
+          "required": false
+        },
+        {
+          "package": "partner-enablement-kit",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "affiliate-creator-marketing",
+      "type": "skill",
+      "topic": "affiliate and creator marketing",
+      "description": "For marketers working with affiliates and creators: program design, creator outreach, influencer briefs with disclosure rules and marketplace listings.",
+      "items": [
+        {
+          "package": "affiliate-program-design",
+          "required": true
+        },
+        {
+          "package": "creator-outreach",
+          "required": true
+        },
+        {
+          "package": "influencer-brief",
+          "required": true
+        },
+        {
+          "package": "integration-marketplace-listing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "events-webinars",
+      "type": "skill",
+      "topic": "events and webinars",
+      "description": "For field and event marketers: event strategy, run of show, promotion plans, tradeshow booths, webinar planning and scripts, and post-event follow-up.",
+      "items": [
+        {
+          "package": "event-strategy",
+          "required": true
+        },
+        {
+          "package": "event-run-of-show",
+          "required": true
+        },
+        {
+          "package": "event-promotion-plan",
+          "required": true
+        },
+        {
+          "package": "tradeshow-booth-plan",
+          "required": false
+        },
+        {
+          "package": "webinar-planning",
+          "required": false
+        },
+        {
+          "package": "webinar-script",
+          "required": false
+        },
+        {
+          "package": "event-followup",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "market-research",
+      "type": "skill",
+      "topic": "market research",
+      "description": "For founders, strategists and PMMs: TAM/SAM/SOM sizing, landscape scans, competitor teardowns and trend briefs.",
+      "items": [
+        {
+          "package": "market-sizing-tam",
+          "required": true
+        },
+        {
+          "package": "market-landscape-scan",
+          "required": true
+        },
+        {
+          "package": "competitor-teardown",
+          "required": true
+        },
+        {
+          "package": "industry-trend-brief",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "competitive-intelligence",
+      "type": "skill",
+      "topic": "competitive intelligence",
+      "description": "For PMMs and sales leaders: competitor teardowns, ongoing monitoring, battlecards and win/loss insight.",
+      "items": [
+        {
+          "package": "competitor-teardown",
+          "required": true
+        },
+        {
+          "package": "competitor-monitoring",
+          "required": true
+        },
+        {
+          "package": "competitive-battlecard",
+          "required": true
+        },
+        {
+          "package": "win-loss-analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "market-segmentation",
+      "type": "skill",
+      "topic": "segmentation and ICP",
+      "description": "For GTM teams choosing who to serve: market segmentation, ICP definition, personas and B2B buyer journey maps.",
+      "items": [
+        {
+          "package": "market-segmentation",
+          "required": true
+        },
+        {
+          "package": "icp-definition",
+          "required": true
+        },
+        {
+          "package": "persona-building",
+          "required": false
+        },
+        {
+          "package": "buyer-journey-map",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "gtm-strategy",
+      "type": "skill",
+      "topic": "go-to-market strategy",
+      "description": "For founders and GTM leaders: go-to-market plans, motion choice (PLG, sales-led, partner-led), channel selection and quarterly marketing plans.",
+      "items": [
+        {
+          "package": "gtm-strategy-plan",
+          "required": true
+        },
+        {
+          "package": "gtm-motion-choice",
+          "required": true
+        },
+        {
+          "package": "marketing-channel-selection",
+          "required": true
+        },
+        {
+          "package": "quarterly-marketing-plan",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "campaign-planning",
+      "type": "skill",
+      "topic": "campaign planning",
+      "description": "For marketing teams running campaigns: campaign briefs, integrated plans, UTM tracking and retrospectives.",
+      "items": [
+        {
+          "package": "campaign-brief",
+          "required": true
+        },
+        {
+          "package": "integrated-campaign-plan",
+          "required": true
+        },
+        {
+          "package": "utm-tracking-plan",
+          "required": false
+        },
+        {
+          "package": "campaign-retro",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "account-based-marketing",
+      "type": "skill",
+      "topic": "account-based marketing",
+      "description": "For B2B marketers and sales partners: ABM account selection, tiered plays, personalisation and stakeholder mapping.",
+      "items": [
+        {
+          "package": "abm-account-selection",
+          "required": true
+        },
+        {
+          "package": "abm-plays",
+          "required": true
+        },
+        {
+          "package": "abm-personalisation",
+          "required": true
+        },
+        {
+          "package": "stakeholder-mapping",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "pm-spec-agents",
+      "type": "agent",
+      "topic": "PM spec agents",
+      "description": "For product managers: agents that draft PRDs, review them for gaps, split epics into stories and write customer release notes.",
+      "items": [
+        {
+          "package": "prd-drafter",
+          "required": true
+        },
+        {
+          "package": "prd-reviewer",
+          "required": true
+        },
+        {
+          "package": "story-splitter",
+          "required": true
+        },
+        {
+          "package": "product-update-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "product-planning-agents",
+      "type": "agent",
+      "topic": "product planning agents",
+      "description": "For product leads: agents that draft strategy and north star, plan discovery cycles, score and rank backlogs, build roadmaps and maintain product metrics.",
+      "items": [
+        {
+          "package": "product-strategist",
+          "required": true
+        },
+        {
+          "package": "discovery-planner",
+          "required": true
+        },
+        {
+          "package": "prioritisation-analyst",
+          "required": true
+        },
+        {
+          "package": "roadmap-planner",
+          "required": true
+        },
+        {
+          "package": "product-metrics-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "user-research-agents",
+      "type": "agent",
+      "topic": "user research agents",
+      "description": "For researchers and PMs: agents that plan studies, synthesise interviews, extract jobs-to-be-done, write usability reports, build surveys and build personas and journeys.",
+      "items": [
+        {
+          "package": "research-planner",
+          "required": true
+        },
+        {
+          "package": "research-synthesizer",
+          "required": true
+        },
+        {
+          "package": "usability-report-writer",
+          "required": true
+        },
+        {
+          "package": "jtbd-analyst",
+          "required": false
+        },
+        {
+          "package": "survey-builder",
+          "required": false
+        },
+        {
+          "package": "persona-journey-builder",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ux-design-agents",
+      "type": "agent",
+      "topic": "UX design agents",
+      "description": "For product designers: agents that design flows and IA, critique screens, write interface copy, design onboarding and check handoff.",
+      "items": [
+        {
+          "package": "ux-flow-designer",
+          "required": true
+        },
+        {
+          "package": "design-critic",
+          "required": true
+        },
+        {
+          "package": "ux-copy-writer",
+          "required": true
+        },
+        {
+          "package": "design-handoff-checker",
+          "required": false
+        },
+        {
+          "package": "onboarding-designer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "design-system-agents",
+      "type": "agent",
+      "topic": "design system agents",
+      "description": "For design-system teams: agents that write component specs, audit tokens and variants, measure adoption and review contributions.",
+      "items": [
+        {
+          "package": "ds-component-spec-writer",
+          "required": true
+        },
+        {
+          "package": "ds-token-auditor",
+          "required": true
+        },
+        {
+          "package": "ds-adoption-auditor",
+          "required": false
+        },
+        {
+          "package": "ds-contribution-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "copywriting-agents",
+      "type": "agent",
+      "topic": "copywriting agents",
+      "description": "For marketers: agents that write landing page copy, critique conversion copy, edit to brand voice and generate names.",
+      "items": [
+        {
+          "package": "landing-page-copywriter",
+          "required": true
+        },
+        {
+          "package": "conversion-copy-critic",
+          "required": true
+        },
+        {
+          "package": "brand-voice-editor",
+          "required": true
+        },
+        {
+          "package": "naming-generator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "brand-agents",
+      "type": "agent",
+      "topic": "brand agents",
+      "description": "For brand teams: agents that draft positioning and messaging houses, write brand guidelines, check voice and screen names.",
+      "items": [
+        {
+          "package": "brand-strategist",
+          "required": true
+        },
+        {
+          "package": "brand-guidelines-writer",
+          "required": true
+        },
+        {
+          "package": "brand-voice-editor",
+          "required": false
+        },
+        {
+          "package": "naming-generator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "product-marketing-agents",
+      "type": "agent",
+      "topic": "product marketing agents",
+      "description": "For PMMs: agents that run positioning, write persona messaging, coordinate launches and build battlecards.",
+      "items": [
+        {
+          "package": "positioning-strategist",
+          "required": true
+        },
+        {
+          "package": "messaging-framework-writer",
+          "required": true
+        },
+        {
+          "package": "launch-coordinator",
+          "required": true
+        },
+        {
+          "package": "battlecard-builder",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "content-marketing-agents",
+      "type": "agent",
+      "topic": "content marketing agents",
+      "description": "For content teams: agents that plan content strategy, write and edit blog posts, repurpose content and write case studies.",
+      "items": [
+        {
+          "package": "content-strategist",
+          "required": true
+        },
+        {
+          "package": "blog-post-writer",
+          "required": true
+        },
+        {
+          "package": "marketing-content-editor",
+          "required": true
+        },
+        {
+          "package": "content-repurposer",
+          "required": false
+        },
+        {
+          "package": "case-study-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "seo-agents",
+      "type": "agent",
+      "topic": "SEO agents",
+      "description": "For SEOs: agents that research keywords, write SEO briefs, audit on-page and technical SEO and optimise for AI search.",
+      "items": [
+        {
+          "package": "keyword-researcher",
+          "required": true
+        },
+        {
+          "package": "seo-brief-writer",
+          "required": true
+        },
+        {
+          "package": "on-page-seo-auditor",
+          "required": true
+        },
+        {
+          "package": "technical-seo-auditor",
+          "required": false
+        },
+        {
+          "package": "ai-search-optimizer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "social-media-agents",
+      "type": "agent",
+      "topic": "social media agents",
+      "description": "For social teams: agents that plan calendars, write platform-native posts, draft replies and write social reports.",
+      "items": [
+        {
+          "package": "social-calendar-planner",
+          "required": true
+        },
+        {
+          "package": "social-post-writer",
+          "required": true
+        },
+        {
+          "package": "social-reply-drafter",
+          "required": false
+        },
+        {
+          "package": "social-report-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "email-lifecycle-agents",
+      "type": "agent",
+      "topic": "email and lifecycle agents",
+      "description": "For lifecycle marketers: agents that design journeys, write emails, edit newsletters and QA sends before they go out.",
+      "items": [
+        {
+          "package": "lifecycle-journey-designer",
+          "required": true
+        },
+        {
+          "package": "email-copywriter",
+          "required": true
+        },
+        {
+          "package": "email-qa-checker",
+          "required": true
+        },
+        {
+          "package": "newsletter-editor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "paid-ads-agents",
+      "type": "agent",
+      "topic": "paid ads agents",
+      "description": "For paid media teams: agents that build search campaigns, audit ad accounts, brief paid social creative and report on spend.",
+      "items": [
+        {
+          "package": "search-ads-builder",
+          "required": true
+        },
+        {
+          "package": "ad-account-auditor",
+          "required": true
+        },
+        {
+          "package": "paid-social-creative-strategist",
+          "required": false
+        },
+        {
+          "package": "paid-media-reporter",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "pr-comms-agents",
+      "type": "agent",
+      "topic": "PR and comms agents",
+      "description": "For comms teams: agents that write press releases and pitches, draft crisis responses for approval and write executive comms.",
+      "items": [
+        {
+          "package": "press-release-writer",
+          "required": true
+        },
+        {
+          "package": "media-pitch-writer",
+          "required": true
+        },
+        {
+          "package": "crisis-comms-advisor",
+          "required": false
+        },
+        {
+          "package": "exec-comms-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "sales-prospecting-agents",
+      "type": "agent",
+      "topic": "sales prospecting agents",
+      "description": "For SDR teams: agents that research accounts, build ICP lists, write cold emails and design outbound sequences.",
+      "items": [
+        {
+          "package": "account-researcher",
+          "required": true
+        },
+        {
+          "package": "icp-list-builder",
+          "required": true
+        },
+        {
+          "package": "cold-email-writer",
+          "required": true
+        },
+        {
+          "package": "outbound-sequence-builder",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "sales-deal-agents",
+      "type": "agent",
+      "topic": "sales deal agents",
+      "description": "For AEs: agents that prep discovery calls, summarise calls, qualify deals, draft proposals and prepare negotiations.",
+      "items": [
+        {
+          "package": "discovery-call-prepper",
+          "required": true
+        },
+        {
+          "package": "sales-call-summarizer",
+          "required": true
+        },
+        {
+          "package": "deal-qualifier",
+          "required": true
+        },
+        {
+          "package": "sales-proposal-drafter",
+          "required": false
+        },
+        {
+          "package": "negotiation-coach",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "rfp-agents",
+      "type": "agent",
+      "topic": "RFP agents",
+      "description": "For bid teams: agents that analyse RFPs, draft answers from the library, draft security questionnaires for review and check the full response.",
+      "items": [
+        {
+          "package": "rfp-analyst",
+          "required": true
+        },
+        {
+          "package": "rfp-answer-drafter",
+          "required": true
+        },
+        {
+          "package": "rfp-response-reviewer",
+          "required": true
+        },
+        {
+          "package": "security-questionnaire-drafter",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "revops-agents",
+      "type": "agent",
+      "topic": "revenue operations agents",
+      "description": "For RevOps: agents that audit CRM hygiene, review pipeline, build forecasts, design lead management and analyse win/loss.",
+      "items": [
+        {
+          "package": "crm-hygiene-auditor",
+          "required": true
+        },
+        {
+          "package": "pipeline-reviewer",
+          "required": true
+        },
+        {
+          "package": "forecast-analyst",
+          "required": true
+        },
+        {
+          "package": "lead-management-designer",
+          "required": false
+        },
+        {
+          "package": "win-loss-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "sales-enablement-agents",
+      "type": "agent",
+      "topic": "sales enablement agents",
+      "description": "For enablement teams: agents that build battlecards, write playbooks and demo scripts, coach calls and design rep ramp plans.",
+      "items": [
+        {
+          "package": "battlecard-builder",
+          "required": true
+        },
+        {
+          "package": "sales-playbook-writer",
+          "required": true
+        },
+        {
+          "package": "sales-call-coach",
+          "required": true
+        },
+        {
+          "package": "sales-onboarding-designer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "customer-success-agents",
+      "type": "agent",
+      "topic": "customer success agents",
+      "description": "For CSMs: agents that plan onboarding, investigate churn risk, build QBRs and prepare renewals.",
+      "items": [
+        {
+          "package": "cs-onboarding-planner",
+          "required": true
+        },
+        {
+          "package": "churn-risk-investigator",
+          "required": true
+        },
+        {
+          "package": "qbr-builder",
+          "required": true
+        },
+        {
+          "package": "renewal-prepper",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "support-agents",
+      "type": "agent",
+      "topic": "support agents",
+      "description": "For support teams: agents that triage tickets, draft replies, summarise escalations into bug reports and review conversation quality.",
+      "items": [
+        {
+          "package": "support-ticket-triager",
+          "required": true
+        },
+        {
+          "package": "support-reply-drafter",
+          "required": true
+        },
+        {
+          "package": "escalation-summarizer",
+          "required": true
+        },
+        {
+          "package": "support-qa-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "knowledge-base-agents",
+      "type": "agent",
+      "topic": "knowledge base agents",
+      "description": "For support content owners: agents that write help articles, find KB gaps from tickets and write and audit macros.",
+      "items": [
+        {
+          "package": "kb-article-writer",
+          "required": true
+        },
+        {
+          "package": "kb-gap-finder",
+          "required": true
+        },
+        {
+          "package": "support-macro-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "voice-of-customer-agents",
+      "type": "agent",
+      "topic": "voice of customer agents",
+      "description": "For CS and product ops: agents that tag feedback, analyse NPS verbatims, dedupe feature requests and write VoC reports.",
+      "items": [
+        {
+          "package": "feedback-tagger",
+          "required": true
+        },
+        {
+          "package": "voc-report-writer",
+          "required": true
+        },
+        {
+          "package": "feature-request-deduper",
+          "required": false
+        },
+        {
+          "package": "nps-verbatim-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "community-agents",
+      "type": "agent",
+      "topic": "community agents",
+      "description": "For community and DevRel teams: agents that moderate threads, write community digests, run programs and plan developer content.",
+      "items": [
+        {
+          "package": "community-moderator",
+          "required": true
+        },
+        {
+          "package": "community-digest-writer",
+          "required": true
+        },
+        {
+          "package": "community-program-manager",
+          "required": false
+        },
+        {
+          "package": "devrel-content-planner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "pricing-agents",
+      "type": "agent",
+      "topic": "pricing agents",
+      "description": "For pricing owners: agents that recommend models and packaging, design WTP studies, plan price changes and tune self-serve conversion.",
+      "items": [
+        {
+          "package": "pricing-strategist",
+          "required": true
+        },
+        {
+          "package": "wtp-study-designer",
+          "required": true
+        },
+        {
+          "package": "price-change-planner",
+          "required": false
+        },
+        {
+          "package": "plg-conversion-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "growth-agents",
+      "type": "agent",
+      "topic": "growth agents",
+      "description": "For growth teams: agents that design experiments, write readouts, audit pages for CRO and diagnose funnel leaks.",
+      "items": [
+        {
+          "package": "growth-experiment-designer",
+          "required": true
+        },
+        {
+          "package": "experiment-readout-writer",
+          "required": true
+        },
+        {
+          "package": "cro-auditor",
+          "required": true
+        },
+        {
+          "package": "funnel-diagnostician",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "market-research-agents",
+      "type": "agent",
+      "topic": "market research agents",
+      "description": "For strategy and PMM teams: agents that size markets, analyse competitors, research trends and segment markets.",
+      "items": [
+        {
+          "package": "market-sizer",
+          "required": true
+        },
+        {
+          "package": "competitor-analyst",
+          "required": true
+        },
+        {
+          "package": "industry-trend-researcher",
+          "required": false
+        },
+        {
+          "package": "segmentation-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "gtm-planning-agents",
+      "type": "agent",
+      "topic": "GTM planning agents",
+      "description": "For GTM leaders: agents that write go-to-market plans, quarterly marketing plans, campaign briefs and ABM programs.",
+      "items": [
+        {
+          "package": "gtm-planner",
+          "required": true
+        },
+        {
+          "package": "marketing-plan-builder",
+          "required": true
+        },
+        {
+          "package": "campaign-brief-writer",
+          "required": true
+        },
+        {
+          "package": "abm-strategist",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "partnerships-agents",
+      "type": "agent",
+      "topic": "partnerships agents",
+      "description": "For partnership teams: agents that find and score partners, write pitches, build enablement kits and run creator and affiliate programs.",
+      "items": [
+        {
+          "package": "partner-researcher",
+          "required": true
+        },
+        {
+          "package": "partner-pitch-writer",
+          "required": true
+        },
+        {
+          "package": "partner-enablement-builder",
+          "required": false
+        },
+        {
+          "package": "creator-program-manager",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "events-agents",
+      "type": "agent",
+      "topic": "events and webinar agents",
+      "description": "For event marketers: agents that plan events and run of show, plan promotion and follow-up and produce webinars.",
+      "items": [
+        {
+          "package": "marketing-event-planner",
+          "required": true
+        },
+        {
+          "package": "event-promo-planner",
+          "required": true
+        },
+        {
+          "package": "webinar-producer",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

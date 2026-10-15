@@ -1,0 +1,1807 @@
+{
+  "domain": "languages",
+  "packages": [
+    {
+      "name": "python-idioms",
+      "kind": "skill",
+      "purpose": "Write idiomatic modern Python (3.10+): comprehensions, unpacking, dataclasses, context managers, pattern matching and the stdlib before third-party code."
+    },
+    {
+      "name": "python-typing",
+      "kind": "skill",
+      "purpose": "Annotate Python with precise types: generics, Protocols, TypedDict, ParamSpec, overloads, and fixing mypy/pyright errors without Any or casts."
+    },
+    {
+      "name": "python-error-handling",
+      "kind": "skill",
+      "purpose": "Design Python exception hierarchies, chain exceptions with raise-from, use ExceptionGroup/except*, and avoid bare excepts and swallowed errors."
+    },
+    {
+      "name": "python-dataclasses-pydantic",
+      "kind": "skill",
+      "purpose": "Choose between dataclasses, attrs and Pydantic v2 for data models; validators, frozen models, serialization and performance trade-offs."
+    },
+    {
+      "name": "python-stdlib-essentials",
+      "kind": "skill",
+      "purpose": "Reach for the right stdlib module (pathlib, itertools, functools, collections, contextlib, logging, enum) with concrete usage patterns and pitfalls."
+    },
+    {
+      "name": "python-mypy-strict",
+      "kind": "skill",
+      "purpose": "Adopt mypy or pyright in strict mode incrementally: per-module config, baseline files, stub packages and silencing nothing without a reason comment."
+    },
+    {
+      "name": "python-protocols-generics",
+      "kind": "skill",
+      "purpose": "Model structural typing with Protocols, TypeVar bounds, variance, PEP 695 generic syntax and Self, with examples of when each applies."
+    },
+    {
+      "name": "python-typed-apis",
+      "kind": "skill",
+      "purpose": "Publish typed Python libraries: py.typed marker, stub files, typing public APIs for downstream users and testing types with assert_type."
+    },
+    {
+      "name": "python-pyproject",
+      "kind": "skill",
+      "purpose": "Write pyproject.toml correctly: PEP 621 metadata, build backends (hatchling, setuptools, flit), optional dependencies and entry points."
+    },
+    {
+      "name": "python-uv-workflow",
+      "kind": "skill",
+      "purpose": "Manage Python projects with uv: init, add, lock, sync, run, Python version pinning, workspaces and replacing pip/pip-tools/virtualenv."
+    },
+    {
+      "name": "python-wheel-publishing",
+      "kind": "skill",
+      "purpose": "Build sdists and wheels, verify them with twine check, and publish to PyPI with trusted publishing from CI; handle version bumps."
+    },
+    {
+      "name": "python-native-wheels",
+      "kind": "skill",
+      "purpose": "Build binary wheels for C/Rust extensions with cibuildwheel and maturin across manylinux, macOS and Windows."
+    },
+    {
+      "name": "pytest-fixtures",
+      "kind": "skill",
+      "purpose": "Structure pytest fixtures: scopes, factories, conftest layering, yield teardown, and avoiding hidden fixture coupling."
+    },
+    {
+      "name": "pytest-parametrize",
+      "kind": "skill",
+      "purpose": "Use pytest.mark.parametrize, ids and indirect parametrisation to cover cases in tables instead of copy-pasted tests."
+    },
+    {
+      "name": "python-mocking",
+      "kind": "skill",
+      "purpose": "Mock in Python correctly: patch where looked up, autospec, monkeypatch, fakes over mocks, and asserting calls without over-specifying."
+    },
+    {
+      "name": "python-hypothesis",
+      "kind": "skill",
+      "purpose": "Write property-based tests with Hypothesis: strategies, composite strategies, stateful testing and shrinking failures to minimal examples."
+    },
+    {
+      "name": "pytest-coverage-ci",
+      "kind": "skill",
+      "purpose": "Configure pytest-cov, coverage thresholds, xdist parallelism and flaky-test quarantine for Python CI runs."
+    },
+    {
+      "name": "python-asyncio",
+      "kind": "skill",
+      "purpose": "Write correct asyncio code: TaskGroup, structured cancellation, timeouts, async context managers and never blocking the event loop."
+    },
+    {
+      "name": "python-threading-multiprocessing",
+      "kind": "skill",
+      "purpose": "Pick threads, processes or concurrent.futures for Python workloads; GIL implications, free-threaded 3.13 builds and shared-state pitfalls."
+    },
+    {
+      "name": "python-async-testing",
+      "kind": "skill",
+      "purpose": "Test async Python with pytest-asyncio or anyio: event loop fixtures, mocking awaitables and detecting leaked tasks."
+    },
+    {
+      "name": "python-anyio-trio",
+      "kind": "skill",
+      "purpose": "Use AnyIO/Trio structured concurrency: nurseries/task groups, cancel scopes, memory channels and backend-agnostic libraries."
+    },
+    {
+      "name": "python-profiling",
+      "kind": "skill",
+      "purpose": "Profile Python with cProfile, py-spy, scalene and memray; read flame graphs and find the real hotspot before optimising."
+    },
+    {
+      "name": "python-optimization-patterns",
+      "kind": "skill",
+      "purpose": "Speed up Python: better algorithms and data structures, avoiding attribute lookups in hot loops, vectorising with NumPy, caching and slots."
+    },
+    {
+      "name": "python-native-extensions",
+      "kind": "skill",
+      "purpose": "Move Python hot paths to native code with Cython, PyO3/maturin or cffi, including GIL release and packaging the result."
+    },
+    {
+      "name": "ruff-config",
+      "kind": "skill",
+      "purpose": "Configure Ruff as linter and formatter: rule selection, per-file ignores, replacing flake8/isort/black and rolling rules out gradually."
+    },
+    {
+      "name": "python-pre-commit",
+      "kind": "skill",
+      "purpose": "Set up pre-commit hooks for Python repos (ruff, mypy, end-of-file, secrets checks) and keep them fast and reproducible in CI."
+    },
+    {
+      "name": "python-project-layout",
+      "kind": "skill",
+      "purpose": "Lay out Python projects: src layout, package boundaries, __init__ exports, config files and where tests, scripts and docs go."
+    },
+    {
+      "name": "python-cli-typer",
+      "kind": "skill",
+      "purpose": "Build Python CLIs with Typer or Click: commands, options, config files, rich output, exit codes and testing with CliRunner."
+    },
+    {
+      "name": "js-modern-idioms",
+      "kind": "skill",
+      "purpose": "Write modern JavaScript (ES2022+): modules, destructuring, optional chaining, immutable updates, iterators and avoiding legacy patterns."
+    },
+    {
+      "name": "js-async-patterns",
+      "kind": "skill",
+      "purpose": "Handle JS async correctly: promises, async/await, Promise.all/allSettled/any, AbortController cancellation and unhandled rejection pitfalls."
+    },
+    {
+      "name": "js-esm-cjs-interop",
+      "kind": "skill",
+      "purpose": "Resolve ESM vs CommonJS issues: package.json type/exports, dual packages, import maps, __dirname replacements and loader errors."
+    },
+    {
+      "name": "js-error-handling",
+      "kind": "skill",
+      "purpose": "Throw and handle errors in JavaScript: Error subclasses, cause, async error propagation and consistent error shapes across modules."
+    },
+    {
+      "name": "nodejs-runtime-apis",
+      "kind": "skill",
+      "purpose": "Use Node.js built-ins well: fs/promises, streams and pipeline, worker_threads, child_process, events and the built-in test runner."
+    },
+    {
+      "name": "nodejs-streams",
+      "kind": "skill",
+      "purpose": "Build Node streams and pipelines with backpressure, Readable.from, async iteration and web streams interop without memory blowups."
+    },
+    {
+      "name": "nodejs-performance",
+      "kind": "skill",
+      "purpose": "Diagnose Node.js performance: event loop lag, --prof and clinic.js flame graphs, heap snapshots, and offloading CPU work."
+    },
+    {
+      "name": "nodejs-version-upgrade",
+      "kind": "skill",
+      "purpose": "Upgrade Node.js major versions: read release notes, fix removed/deprecated APIs, OpenSSL and ESM changes, and update .nvmrc/engines/CI."
+    },
+    {
+      "name": "nodejs-config-env",
+      "kind": "skill",
+      "purpose": "Load Node configuration safely: --env-file, validated config objects, secrets from env, and failing fast on missing values."
+    },
+    {
+      "name": "npm-package-publishing",
+      "kind": "skill",
+      "purpose": "Publish npm packages: exports maps, files whitelist, types, provenance, semver discipline, prerelease tags and npm publish from CI."
+    },
+    {
+      "name": "js-package-managers",
+      "kind": "skill",
+      "purpose": "Work with npm, pnpm, Yarn and Bun: lockfiles, workspaces, overrides/resolutions, peer dependency conflicts and reproducible installs."
+    },
+    {
+      "name": "js-bundling-libraries",
+      "kind": "skill",
+      "purpose": "Bundle JS/TS libraries with tsup, Rollup or esbuild: dual ESM/CJS output, tree-shaking, sideEffects and source maps."
+    },
+    {
+      "name": "js-dependency-hygiene",
+      "kind": "skill",
+      "purpose": "Keep JS dependency trees healthy: dedupe, find unused deps with knip, audit, and decide when to vendor or replace a package."
+    },
+    {
+      "name": "vitest-patterns",
+      "kind": "skill",
+      "purpose": "Write unit tests with Vitest: structure, mocking modules with vi.mock, fake timers, snapshot discipline and coverage with v8."
+    },
+    {
+      "name": "jest-patterns",
+      "kind": "skill",
+      "purpose": "Write and maintain Jest tests: module mocking, timers, async tests, setup files and migrating slow Jest suites to faster configs."
+    },
+    {
+      "name": "node-test-runner",
+      "kind": "skill",
+      "purpose": "Use the built-in node:test runner and assert module for dependency-free tests, mocking and coverage in Node projects."
+    },
+    {
+      "name": "js-test-doubles",
+      "kind": "skill",
+      "purpose": "Choose fakes, stubs and spies in JS tests; mock at network boundaries with msw instead of mocking internals."
+    },
+    {
+      "name": "ts-strict-mode",
+      "kind": "skill",
+      "purpose": "Write TypeScript under strict settings: strictNullChecks, noUncheckedIndexedAccess, exactOptionalPropertyTypes, and fixing errors without any."
+    },
+    {
+      "name": "ts-narrowing-unions",
+      "kind": "skill",
+      "purpose": "Model domain states with discriminated unions, exhaustive switches with never, type guards, assertion functions and satisfies."
+    },
+    {
+      "name": "ts-generics",
+      "kind": "skill",
+      "purpose": "Write TypeScript generics that infer well: constraints, defaults, const type parameters and avoiding over-generic signatures."
+    },
+    {
+      "name": "ts-runtime-validation",
+      "kind": "skill",
+      "purpose": "Validate untrusted data at TS boundaries with Zod/Valibot and derive static types from schemas instead of casting."
+    },
+    {
+      "name": "ts-conditional-mapped-types",
+      "kind": "skill",
+      "purpose": "Build conditional, mapped and template literal types, infer, and key remapping, with readable helper types and tests."
+    },
+    {
+      "name": "ts-type-testing",
+      "kind": "skill",
+      "purpose": "Test types with expectTypeOf, tsd or @ts-expect-error so complex type utilities stay correct across refactors."
+    },
+    {
+      "name": "ts-branded-types",
+      "kind": "skill",
+      "purpose": "Use branded/nominal types and opaque IDs to prevent mixing up primitives like UserId and OrderId."
+    },
+    {
+      "name": "ts-type-performance",
+      "kind": "skill",
+      "purpose": "Diagnose slow TypeScript type-checking: --extendedDiagnostics, generateTrace, and simplifying deep recursive or union-heavy types."
+    },
+    {
+      "name": "tsconfig-setup",
+      "kind": "skill",
+      "purpose": "Configure tsconfig.json for apps vs libraries: module/moduleResolution (NodeNext, Bundler), target, paths, and isolatedModules."
+    },
+    {
+      "name": "ts-project-references",
+      "kind": "skill",
+      "purpose": "Use TypeScript project references and composite builds in monorepos for incremental type-checking and clean package boundaries."
+    },
+    {
+      "name": "ts-declaration-publishing",
+      "kind": "skill",
+      "purpose": "Ship .d.ts for packages: declaration maps, types/exports conditions, checking with arethetypeswrong and publint."
+    },
+    {
+      "name": "ts-linting",
+      "kind": "skill",
+      "purpose": "Configure typescript-eslint (flat config) or Biome with type-aware rules, and roll strict lint rules out without blocking the team."
+    },
+    {
+      "name": "ts-library-api-design",
+      "kind": "skill",
+      "purpose": "Design public TypeScript library APIs: overload vs union signatures, options objects, inference-friendly generics and non-breaking evolution."
+    },
+    {
+      "name": "go-idioms",
+      "kind": "skill",
+      "purpose": "Write idiomatic Go: small interfaces at the consumer, zero values, early returns, naming, package design and avoiding Java-style abstractions."
+    },
+    {
+      "name": "go-error-handling",
+      "kind": "skill",
+      "purpose": "Handle Go errors: wrapping with %w, errors.Is/As, sentinel vs typed errors, and adding context without stutter."
+    },
+    {
+      "name": "go-generics",
+      "kind": "skill",
+      "purpose": "Use Go generics where they help: type parameters, constraints, generic data structures, and when interfaces are still the better fit."
+    },
+    {
+      "name": "go-project-layout",
+      "kind": "skill",
+      "purpose": "Structure Go modules: cmd/ and internal/, package boundaries, avoiding cyclic imports and keeping main thin."
+    },
+    {
+      "name": "go-goroutines-channels",
+      "kind": "skill",
+      "purpose": "Use goroutines and channels safely: ownership, closing rules, select with timeouts, worker pools and preventing goroutine leaks."
+    },
+    {
+      "name": "go-context",
+      "kind": "skill",
+      "purpose": "Propagate context.Context for cancellation and deadlines through Go call chains; what belongs in context values and what never does."
+    },
+    {
+      "name": "go-sync-primitives",
+      "kind": "skill",
+      "purpose": "Use sync.Mutex, RWMutex, Once, WaitGroup, errgroup and atomics correctly, and find races with -race."
+    },
+    {
+      "name": "go-table-tests",
+      "kind": "skill",
+      "purpose": "Write table-driven Go tests with subtests, t.Parallel, t.Cleanup, golden files and testify-free assertions."
+    },
+    {
+      "name": "go-fuzzing",
+      "kind": "skill",
+      "purpose": "Add native Go fuzz tests: seed corpus, fuzz targets for parsers/decoders and turning crashes into regression tests."
+    },
+    {
+      "name": "go-test-doubles",
+      "kind": "skill",
+      "purpose": "Fake dependencies in Go via small interfaces, httptest servers and in-memory implementations instead of heavy mocking frameworks."
+    },
+    {
+      "name": "go-benchmarks",
+      "kind": "skill",
+      "purpose": "Write Go benchmarks with b.Loop/b.N, ReportAllocs and benchstat comparisons that are statistically meaningful."
+    },
+    {
+      "name": "go-modules",
+      "kind": "skill",
+      "purpose": "Manage Go modules: go.mod/go.sum, replace and exclude, major version suffixes, workspaces (go.work) and private module proxies."
+    },
+    {
+      "name": "go-linting",
+      "kind": "skill",
+      "purpose": "Configure golangci-lint (v2) with a sensible rule set, plus go vet and staticcheck, and fix findings idiomatically."
+    },
+    {
+      "name": "go-build-release",
+      "kind": "skill",
+      "purpose": "Build and release Go binaries: cross-compilation, ldflags version stamping, trimpath, CGO decisions and GoReleaser."
+    },
+    {
+      "name": "go-version-upgrade",
+      "kind": "skill",
+      "purpose": "Upgrade Go toolchain versions: toolchain directive, loopvar semantics changes, deprecated APIs and adopting new stdlib packages."
+    },
+    {
+      "name": "go-pprof",
+      "kind": "skill",
+      "purpose": "Profile Go programs with pprof (CPU, heap, goroutine, block, mutex), read flame graphs and trace with go tool trace."
+    },
+    {
+      "name": "go-memory-allocation",
+      "kind": "skill",
+      "purpose": "Reduce Go allocations and GC pressure: escape analysis, preallocation, sync.Pool, avoiding interface boxing, and GOGC/GOMEMLIMIT tuning."
+    },
+    {
+      "name": "go-cli-apps",
+      "kind": "skill",
+      "purpose": "Build Go command-line tools with cobra or the flag package: subcommands, config precedence, signal handling and testable main."
+    },
+    {
+      "name": "rust-ownership-borrowing",
+      "kind": "skill",
+      "purpose": "Resolve Rust borrow checker errors by restructuring ownership: borrows vs clones, lifetimes, Rc/Arc, interior mutability and splitting borrows."
+    },
+    {
+      "name": "rust-error-handling",
+      "kind": "skill",
+      "purpose": "Handle Rust errors with Result, ?, thiserror for libraries and anyhow for apps, and never unwrap in library code paths."
+    },
+    {
+      "name": "rust-traits-generics",
+      "kind": "skill",
+      "purpose": "Design Rust APIs with traits and generics: trait objects vs generics, associated types, blanket impls and the newtype pattern."
+    },
+    {
+      "name": "rust-idioms",
+      "kind": "skill",
+      "purpose": "Write idiomatic Rust: iterators over index loops, Option combinators, From/Into conversions, builder patterns and clippy-clean code."
+    },
+    {
+      "name": "rust-tokio",
+      "kind": "skill",
+      "purpose": "Build async Rust with Tokio: runtime setup, spawning, select!, JoinSet, cancellation safety and avoiding blocking in async."
+    },
+    {
+      "name": "rust-async-traits-pinning",
+      "kind": "skill",
+      "purpose": "Handle async Rust advanced cases: async fn in traits, Pin, Send bounds on futures, and Stream processing."
+    },
+    {
+      "name": "rust-sync-concurrency",
+      "kind": "skill",
+      "purpose": "Share state across Rust threads with Arc, Mutex, RwLock, channels, rayon parallel iterators and atomics."
+    },
+    {
+      "name": "cargo-workspaces",
+      "kind": "skill",
+      "purpose": "Organise Cargo workspaces: shared dependencies, features design, build profiles and crate boundaries."
+    },
+    {
+      "name": "rust-testing",
+      "kind": "skill",
+      "purpose": "Test Rust code: unit tests in modules, integration tests, doctests, proptest, insta snapshots and cargo-nextest."
+    },
+    {
+      "name": "rust-crate-publishing",
+      "kind": "skill",
+      "purpose": "Publish crates to crates.io: metadata, semver checks with cargo-semver-checks, MSRV policy, docs.rs and feature flags."
+    },
+    {
+      "name": "rust-clippy-lints",
+      "kind": "skill",
+      "purpose": "Configure clippy and rustfmt for a project, choose lint groups, and use cargo-deny for license and advisory checks."
+    },
+    {
+      "name": "rust-unsafe",
+      "kind": "skill",
+      "purpose": "Write and review unsafe Rust: documenting safety invariants, minimising unsafe scope, and checking with Miri."
+    },
+    {
+      "name": "rust-ffi",
+      "kind": "skill",
+      "purpose": "Bridge Rust and C/C++: bindgen, cbindgen, repr(C), ownership across FFI, and exposing safe wrappers."
+    },
+    {
+      "name": "rust-performance",
+      "kind": "skill",
+      "purpose": "Optimise Rust: profiling with perf/flamegraph, criterion benchmarks, avoiding allocations and clones, and release profile tuning."
+    },
+    {
+      "name": "rust-cli-apps",
+      "kind": "skill",
+      "purpose": "Build Rust command-line tools with clap derive, anyhow error reports, config loading, colored output and assert_cmd tests."
+    },
+    {
+      "name": "rust-release-distribution",
+      "kind": "skill",
+      "purpose": "Distribute Rust binaries: cross-compiling with cross/cargo-zigbuild, cargo-dist releases, static linking and install scripts."
+    },
+    {
+      "name": "java-modern-features",
+      "kind": "skill",
+      "purpose": "Use modern Java (17-21+): records, sealed interfaces, pattern matching for switch, text blocks, var and the enhanced Stream API."
+    },
+    {
+      "name": "java-idioms",
+      "kind": "skill",
+      "purpose": "Write idiomatic Java: immutability, Optional used correctly, equals/hashCode contracts, builder vs records, and effective exception handling."
+    },
+    {
+      "name": "java-collections-streams",
+      "kind": "skill",
+      "purpose": "Choose Java collections and write readable streams: collectors, avoiding side effects, and when a loop beats a stream."
+    },
+    {
+      "name": "maven-builds",
+      "kind": "skill",
+      "purpose": "Maintain Maven builds: dependency management/BOMs, plugins, profiles, reproducible builds and resolving dependency conflicts."
+    },
+    {
+      "name": "gradle-builds",
+      "kind": "skill",
+      "purpose": "Maintain Gradle builds with the Kotlin DSL: version catalogs, convention plugins, configuration cache and build performance."
+    },
+    {
+      "name": "java-modules-packaging",
+      "kind": "skill",
+      "purpose": "Package JVM apps: JPMS modules, jlink runtime images, jpackage, shaded/fat jars and multi-release jars."
+    },
+    {
+      "name": "java-virtual-threads",
+      "kind": "skill",
+      "purpose": "Adopt Java virtual threads and structured concurrency: when they help, pinning pitfalls, and migrating thread-pool code."
+    },
+    {
+      "name": "java-concurrency-utilities",
+      "kind": "skill",
+      "purpose": "Use java.util.concurrent correctly: executors, CompletableFuture, concurrent collections, locks and the Java memory model."
+    },
+    {
+      "name": "junit5-patterns",
+      "kind": "skill",
+      "purpose": "Write JUnit 5 tests: nested and parameterised tests, extensions, assertions with AssertJ, and test lifecycle."
+    },
+    {
+      "name": "mockito-patterns",
+      "kind": "skill",
+      "purpose": "Use Mockito judiciously: stubbing, argument captors, strict stubs, and preferring fakes for owned interfaces."
+    },
+    {
+      "name": "testcontainers-java",
+      "kind": "skill",
+      "purpose": "Write JVM integration tests with Testcontainers: databases, brokers, reusable containers and CI configuration."
+    },
+    {
+      "name": "jvm-gc-tuning",
+      "kind": "skill",
+      "purpose": "Choose and tune JVM garbage collectors (G1, ZGC, Shenandoah), size heaps for containers and read GC logs."
+    },
+    {
+      "name": "jvm-profiling",
+      "kind": "skill",
+      "purpose": "Profile JVM apps with JFR, JDK Mission Control and async-profiler; analyse heap dumps and thread dumps."
+    },
+    {
+      "name": "jmh-benchmarks",
+      "kind": "skill",
+      "purpose": "Write correct JMH microbenchmarks avoiding dead-code elimination and constant folding, and interpret results."
+    },
+    {
+      "name": "kotlin-idioms",
+      "kind": "skill",
+      "purpose": "Write idiomatic Kotlin: null safety, data and sealed classes, extension functions, scope functions used sparingly, and collections APIs."
+    },
+    {
+      "name": "kotlin-coroutines",
+      "kind": "skill",
+      "purpose": "Use Kotlin coroutines with structured concurrency: scopes, dispatchers, cancellation, exception handling and SupervisorJob."
+    },
+    {
+      "name": "kotlin-flow",
+      "kind": "skill",
+      "purpose": "Model streams with Kotlin Flow: cold vs hot, StateFlow/SharedFlow, operators, backpressure and testing with Turbine."
+    },
+    {
+      "name": "kotlin-multiplatform",
+      "kind": "skill",
+      "purpose": "Structure Kotlin Multiplatform projects: source sets, expect/actual, shared business logic and Gradle setup."
+    },
+    {
+      "name": "kotlin-testing",
+      "kind": "skill",
+      "purpose": "Test Kotlin with kotest or JUnit 5, MockK, and runTest for coroutines with virtual time."
+    },
+    {
+      "name": "kotlin-gradle-setup",
+      "kind": "skill",
+      "purpose": "Configure Kotlin builds with Gradle Kotlin DSL: compiler options, K2, KSP vs kapt, explicit API mode and detekt/ktlint."
+    },
+    {
+      "name": "csharp-modern-features",
+      "kind": "skill",
+      "purpose": "Use modern C# (10-13): records, pattern matching, required members, primary constructors, collection expressions and file-scoped types."
+    },
+    {
+      "name": "csharp-nullable-reference-types",
+      "kind": "skill",
+      "purpose": "Enable and fix nullable reference types in C#: annotations, attributes like NotNullWhen, and gradual rollout per project."
+    },
+    {
+      "name": "csharp-linq",
+      "kind": "skill",
+      "purpose": "Write clear and efficient LINQ: deferred execution, multiple enumeration pitfalls, and when to drop to loops."
+    },
+    {
+      "name": "dotnet-async-await",
+      "kind": "skill",
+      "purpose": "Write correct async C#: Task vs ValueTask, ConfigureAwait, cancellation tokens, avoiding sync-over-async and async void."
+    },
+    {
+      "name": "dotnet-cli-sdk",
+      "kind": "skill",
+      "purpose": "Use the dotnet CLI and SDK-style projects: Directory.Build.props, central package management, global.json and multi-targeting."
+    },
+    {
+      "name": "dotnet-analyzers",
+      "kind": "skill",
+      "purpose": "Configure .NET analyzers and .editorconfig severities, treat warnings as errors selectively and write simple Roslyn analyzers."
+    },
+    {
+      "name": "dotnet-nuget-publishing",
+      "kind": "skill",
+      "purpose": "Package and publish NuGet libraries: metadata, SourceLink, deterministic builds, symbol packages and versioning."
+    },
+    {
+      "name": "dotnet-testing",
+      "kind": "skill",
+      "purpose": "Test .NET code with xUnit or NUnit, FluentAssertions alternatives, NSubstitute/Moq, and WebApplicationFactory integration tests."
+    },
+    {
+      "name": "dotnet-performance",
+      "kind": "skill",
+      "purpose": "Optimise .NET code: Span<T>, ArrayPool, avoiding allocations and boxing, BenchmarkDotNet, and dotnet-trace/dotnet-counters."
+    },
+    {
+      "name": "dotnet-memory-diagnostics",
+      "kind": "skill",
+      "purpose": "Diagnose .NET memory issues with dotnet-dump, dotnet-gcdump and GC modes, and find leaks via retention paths."
+    },
+    {
+      "name": "c-memory-safety",
+      "kind": "skill",
+      "purpose": "Write memory-safe C: ownership conventions, bounds checking, safe string handling, avoiding UB and integer overflow pitfalls."
+    },
+    {
+      "name": "c-sanitizers-analysis",
+      "kind": "skill",
+      "purpose": "Find C/C++ bugs with ASan, UBSan, MSan, TSan, Valgrind and static analysers (clang-tidy, cppcheck, scan-build)."
+    },
+    {
+      "name": "c-build-systems",
+      "kind": "skill",
+      "purpose": "Build C projects with Make, CMake or Meson: warnings flags, cross-compilation, pkg-config and reproducible builds."
+    },
+    {
+      "name": "c-api-design",
+      "kind": "skill",
+      "purpose": "Design C library APIs: opaque types, error codes, ABI stability, header hygiene and versioned symbols."
+    },
+    {
+      "name": "c-fuzzing",
+      "kind": "skill",
+      "purpose": "Fuzz C/C++ code with libFuzzer and AFL++: harnesses, corpora, sanitizer builds and CI integration."
+    },
+    {
+      "name": "c-embedded-patterns",
+      "kind": "skill",
+      "purpose": "Write embedded C for microcontrollers: volatile and memory-mapped registers, ISRs, fixed-size allocation, bit manipulation and timing constraints."
+    },
+    {
+      "name": "misra-c-guidelines",
+      "kind": "skill",
+      "purpose": "Apply MISRA C:2023 and CERT C rules pragmatically: common violations, deviation records and checker configuration."
+    },
+    {
+      "name": "c-embedded-unit-testing",
+      "kind": "skill",
+      "purpose": "Unit test embedded C off-target with Unity/CMock or Ceedling, hardware abstraction seams and host builds."
+    },
+    {
+      "name": "modern-cpp-idioms",
+      "kind": "skill",
+      "purpose": "Write modern C++ (17/20/23): RAII, smart pointers, value semantics, move semantics, std::optional/variant/expected and ranges."
+    },
+    {
+      "name": "cpp-templates-concepts",
+      "kind": "skill",
+      "purpose": "Write C++ templates with concepts and constraints, constexpr programming, and readable compile errors."
+    },
+    {
+      "name": "cpp-concurrency",
+      "kind": "skill",
+      "purpose": "Use C++ threads, atomics, memory orders, std::jthread and stop tokens, and avoid data races and deadlocks."
+    },
+    {
+      "name": "cmake-modern",
+      "kind": "skill",
+      "purpose": "Write target-based modern CMake: target_link_libraries scopes, presets, find_package, install/export and toolchain files."
+    },
+    {
+      "name": "cpp-package-managers",
+      "kind": "skill",
+      "purpose": "Manage C++ dependencies with vcpkg or Conan: manifests, triplets/profiles, binary caching and CMake integration."
+    },
+    {
+      "name": "cpp-testing",
+      "kind": "skill",
+      "purpose": "Test C++ with GoogleTest or Catch2: fixtures, parameterised tests, mocking with gMock and running with CTest."
+    },
+    {
+      "name": "cpp-performance",
+      "kind": "skill",
+      "purpose": "Optimise C++: cache-friendly layouts, avoiding copies, allocation strategies, perf and VTune profiling, and Google Benchmark."
+    },
+    {
+      "name": "swift-idioms",
+      "kind": "skill",
+      "purpose": "Write idiomatic Swift: value types, protocols with extensions, optionals, enums with associated values, and access control."
+    },
+    {
+      "name": "swift-concurrency",
+      "kind": "skill",
+      "purpose": "Use Swift concurrency: async/await, actors, Sendable, MainActor, task groups and cancellation under Swift 6 strict checking."
+    },
+    {
+      "name": "swift-package-manager",
+      "kind": "skill",
+      "purpose": "Build Swift packages with SwiftPM: Package.swift, targets, products, plugins, resources and binary targets."
+    },
+    {
+      "name": "swift-testing",
+      "kind": "skill",
+      "purpose": "Test Swift with Swift Testing (@Test, #expect, parameterised tests) and XCTest, including async tests."
+    },
+    {
+      "name": "swift-memory-management",
+      "kind": "skill",
+      "purpose": "Manage Swift memory with ARC: retain cycles, weak/unowned captures, value vs reference semantics and Instruments leaks."
+    },
+    {
+      "name": "ruby-idioms",
+      "kind": "skill",
+      "purpose": "Write idiomatic Ruby: blocks and enumerables, keyword args, frozen strings, modules vs inheritance and avoiding monkey patches."
+    },
+    {
+      "name": "ruby-gems-bundler",
+      "kind": "skill",
+      "purpose": "Build and publish Ruby gems and manage Bundler: gemspec, Gemfile.lock, version constraints and gem release flow."
+    },
+    {
+      "name": "rspec-patterns",
+      "kind": "skill",
+      "purpose": "Write RSpec tests: let vs let!, contexts, shared examples, verifying doubles and avoiding slow factories."
+    },
+    {
+      "name": "rubocop-config",
+      "kind": "skill",
+      "purpose": "Configure RuboCop and Standard: enabled cops, todo files for gradual adoption and autocorrect safety."
+    },
+    {
+      "name": "ruby-typing",
+      "kind": "skill",
+      "purpose": "Add types to Ruby with RBS, Steep or Sorbet: signatures, gradual strictness and CI checks."
+    },
+    {
+      "name": "php-modern-features",
+      "kind": "skill",
+      "purpose": "Write modern PHP (8.1-8.4): enums, readonly properties, match, named args, first-class callables and strict_types."
+    },
+    {
+      "name": "php-composer",
+      "kind": "skill",
+      "purpose": "Manage PHP dependencies with Composer: autoloading (PSR-4), version constraints, scripts and publishing to Packagist."
+    },
+    {
+      "name": "php-static-analysis",
+      "kind": "skill",
+      "purpose": "Run PHPStan or Psalm at increasing levels with baselines, generics in docblocks and fixing reported errors."
+    },
+    {
+      "name": "phpunit-patterns",
+      "kind": "skill",
+      "purpose": "Write PHPUnit or Pest tests: data providers, test doubles, and fast database tests."
+    },
+    {
+      "name": "elixir-idioms",
+      "kind": "skill",
+      "purpose": "Write idiomatic Elixir: pattern matching, pipelines, with, structs and protocols, and tagged tuples for errors."
+    },
+    {
+      "name": "elixir-otp",
+      "kind": "skill",
+      "purpose": "Build OTP apps in Elixir: GenServer, Supervisor trees, Registry, Task.Supervisor and let-it-crash design."
+    },
+    {
+      "name": "exunit-patterns",
+      "kind": "skill",
+      "purpose": "Test Elixir with ExUnit: async tests, setup, Mox for behaviours, doctests and property tests with StreamData."
+    },
+    {
+      "name": "elixir-mix-tooling",
+      "kind": "skill",
+      "purpose": "Use Mix: project config, releases, Credo, Dialyzer typespecs and Hex publishing."
+    },
+    {
+      "name": "erlang-otp-design",
+      "kind": "skill",
+      "purpose": "Design Erlang/OTP systems: gen_server, gen_statem, supervisors, applications and releases with rebar3."
+    },
+    {
+      "name": "erlang-beam-debugging",
+      "kind": "skill",
+      "purpose": "Debug and observe BEAM systems: observer, recon, tracing with dbg, mailbox growth and process leaks."
+    },
+    {
+      "name": "erlang-testing",
+      "kind": "skill",
+      "purpose": "Test Erlang with EUnit, Common Test and PropEr."
+    },
+    {
+      "name": "scala3-features",
+      "kind": "skill",
+      "purpose": "Write Scala 3: enums, givens/using, extension methods, opaque types, union types and new syntax."
+    },
+    {
+      "name": "scala-effects",
+      "kind": "skill",
+      "purpose": "Write effectful Scala with Cats Effect or ZIO: IO, resources, fibers, error channels and testing."
+    },
+    {
+      "name": "scala-sbt",
+      "kind": "skill",
+      "purpose": "Maintain sbt builds: multi-project setup, cross-building, plugins and dependency resolution; mill basics."
+    },
+    {
+      "name": "haskell-idioms",
+      "kind": "skill",
+      "purpose": "Write idiomatic Haskell: algebraic data types, typeclasses, Maybe/Either, laziness pitfalls and records."
+    },
+    {
+      "name": "haskell-cabal-stack",
+      "kind": "skill",
+      "purpose": "Build Haskell projects with cabal or stack: package config, GHC versions, HLS setup and dependency bounds."
+    },
+    {
+      "name": "haskell-effects-mtl",
+      "kind": "skill",
+      "purpose": "Structure Haskell apps with monad transformers, mtl-style classes or ReaderT IO, and handle exceptions."
+    },
+    {
+      "name": "haskell-testing",
+      "kind": "skill",
+      "purpose": "Test Haskell with hspec, QuickCheck and tasty."
+    },
+    {
+      "name": "ocaml-idioms",
+      "kind": "skill",
+      "purpose": "Write idiomatic OCaml: variants, modules and functors, Result-based errors and OCaml 5 effects/domains basics."
+    },
+    {
+      "name": "ocaml-dune-opam",
+      "kind": "skill",
+      "purpose": "Build OCaml with dune and manage dependencies with opam: switches, libraries, ppx and publishing."
+    },
+    {
+      "name": "ocaml-testing",
+      "kind": "skill",
+      "purpose": "Test OCaml with Alcotest, ppx_expect/ppx_inline_test and QCheck."
+    },
+    {
+      "name": "clojure-idioms",
+      "kind": "skill",
+      "purpose": "Write idiomatic Clojure: immutable data, seq functions, threading macros, namespaces and spec/malli validation."
+    },
+    {
+      "name": "clojure-repl-workflow",
+      "kind": "skill",
+      "purpose": "Work REPL-first in Clojure: deps.edn, aliases, reloaded workflow, rich comments and tools.build."
+    },
+    {
+      "name": "clojure-testing",
+      "kind": "skill",
+      "purpose": "Test Clojure with clojure.test, test.check generative tests and Kaocha runner."
+    },
+    {
+      "name": "dart-idioms",
+      "kind": "skill",
+      "purpose": "Write idiomatic Dart 3: sound null safety, records, patterns, sealed classes and extension types."
+    },
+    {
+      "name": "dart-async",
+      "kind": "skill",
+      "purpose": "Use Dart futures, streams and isolates correctly, including error handling and cancellation."
+    },
+    {
+      "name": "dart-packages-testing",
+      "kind": "skill",
+      "purpose": "Build and publish Dart packages with pub, analysis_options lints and package:test."
+    },
+    {
+      "name": "lua-idioms",
+      "kind": "skill",
+      "purpose": "Write idiomatic Lua: tables as structures, metatables, modules, closures and coroutines; differences across 5.1/5.4/LuaJIT."
+    },
+    {
+      "name": "lua-embedding",
+      "kind": "skill",
+      "purpose": "Embed Lua in a host program via the C API: stack discipline, userdata, sandboxing and error handling."
+    },
+    {
+      "name": "lua-tooling-testing",
+      "kind": "skill",
+      "purpose": "Use LuaRocks, luacheck/selene, StyLua and busted for Lua packaging, linting and tests."
+    },
+    {
+      "name": "r-language-idioms",
+      "kind": "skill",
+      "purpose": "Write idiomatic R: vectorisation, functions and environments, S3/R6 classes, and avoiding growing objects in loops."
+    },
+    {
+      "name": "r-package-development",
+      "kind": "skill",
+      "purpose": "Build R packages with devtools, usethis, roxygen2, testthat and R CMD check, and prepare CRAN submissions."
+    },
+    {
+      "name": "r-performance",
+      "kind": "skill",
+      "purpose": "Speed up R code: profvis, vectorising, data.table, and moving hot loops to C++ via Rcpp."
+    },
+    {
+      "name": "julia-idioms",
+      "kind": "skill",
+      "purpose": "Write idiomatic Julia: multiple dispatch, type stability, abstract types, broadcasting and avoiding global variables."
+    },
+    {
+      "name": "julia-performance",
+      "kind": "skill",
+      "purpose": "Make Julia fast: @code_warntype, allocations, BenchmarkTools, StaticArrays, threads and TTFX/precompilation."
+    },
+    {
+      "name": "julia-packages",
+      "kind": "skill",
+      "purpose": "Create Julia packages with Pkg: environments, Project.toml compat, testing and registering via the General registry."
+    },
+    {
+      "name": "zig-idioms",
+      "kind": "skill",
+      "purpose": "Write Zig: explicit allocators, error unions and try/catch, comptime, defer/errdefer and slices."
+    },
+    {
+      "name": "zig-build-system",
+      "kind": "skill",
+      "purpose": "Use build.zig and build.zig.zon: steps, modules, dependencies, cross-compilation and using zig cc for C projects."
+    },
+    {
+      "name": "zig-c-interop",
+      "kind": "skill",
+      "purpose": "Call C from Zig and expose Zig to C: @cImport, extern structs, ABI and translating C headers."
+    },
+    {
+      "name": "bash-strict-scripting",
+      "kind": "skill",
+      "purpose": "Write robust Bash: set -euo pipefail caveats, quoting, arrays, traps for cleanup, mktemp and argument parsing."
+    },
+    {
+      "name": "posix-shell-portability",
+      "kind": "skill",
+      "purpose": "Write portable POSIX sh scripts that run on dash, busybox and macOS; avoid bashisms and GNU/BSD tool differences."
+    },
+    {
+      "name": "shellcheck-fixes",
+      "kind": "skill",
+      "purpose": "Run ShellCheck and fix each warning class correctly (SC2086 quoting, SC2046, SC2155...) rather than disabling it."
+    },
+    {
+      "name": "shell-testing",
+      "kind": "skill",
+      "purpose": "Test shell scripts with bats-core or shellspec: fixtures, stubbing commands and CI runs."
+    },
+    {
+      "name": "shell-text-processing",
+      "kind": "skill",
+      "purpose": "Process text in the shell with grep, sed, awk, cut, sort, xargs and jq safely and portably."
+    },
+    {
+      "name": "powershell-idioms",
+      "kind": "skill",
+      "purpose": "Write idiomatic PowerShell 7: pipelines with objects, approved verbs, advanced functions, parameter validation and error handling."
+    },
+    {
+      "name": "powershell-modules",
+      "kind": "skill",
+      "purpose": "Package PowerShell modules: manifests, exported functions, PSScriptAnalyzer, and publishing to the PowerShell Gallery."
+    },
+    {
+      "name": "pester-testing",
+      "kind": "skill",
+      "purpose": "Test PowerShell with Pester 5: Describe/It, mocking commands, TestDrive and CI runs."
+    },
+    {
+      "name": "powershell-cross-platform",
+      "kind": "skill",
+      "purpose": "Write PowerShell that runs on Windows, Linux and macOS: path handling, encodings, and Windows PowerShell 5.1 differences."
+    },
+    {
+      "name": "wasm-rust-toolchain",
+      "kind": "skill",
+      "purpose": "Compile Rust to WebAssembly with wasm-bindgen and wasm-pack, size-optimise binaries and call from JS."
+    },
+    {
+      "name": "wasm-component-model",
+      "kind": "skill",
+      "purpose": "Build WASI 0.2 components: WIT interfaces, cargo-component, composing components and running in wasmtime."
+    },
+    {
+      "name": "wasm-emscripten",
+      "kind": "skill",
+      "purpose": "Compile C/C++ to WebAssembly with Emscripten: exports, memory, filesystem emulation and JS glue."
+    },
+    {
+      "name": "wasm-js-interop",
+      "kind": "skill",
+      "purpose": "Load and call WebAssembly from JS: instantiateStreaming, memory sharing, passing strings/buffers and performance pitfalls."
+    },
+    {
+      "name": "solidity-patterns",
+      "kind": "skill",
+      "purpose": "Write Solidity 0.8+: checks-effects-interactions, custom errors, events, access control and upgradeable proxy patterns."
+    },
+    {
+      "name": "solidity-security-checklist",
+      "kind": "skill",
+      "purpose": "Defensive Solidity review checklist: reentrancy, access control, oracle manipulation, integer and rounding issues, unchecked calls."
+    },
+    {
+      "name": "foundry-testing",
+      "kind": "skill",
+      "purpose": "Test Solidity with Foundry: forge tests, fuzz and invariant tests, fork tests and cheatcodes."
+    },
+    {
+      "name": "solidity-gas-optimization",
+      "kind": "skill",
+      "purpose": "Reduce Solidity gas costs: storage packing, calldata, immutables, unchecked blocks where safe and gas snapshots."
+    },
+    {
+      "name": "solidity-static-analysis",
+      "kind": "skill",
+      "purpose": "Run Slither and solhint on contracts and triage findings into real issues vs false positives."
+    },
+    {
+      "name": "python-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Python diffs for correctness, idiom, typing gaps and error handling, returning findings ranked by severity with suggested fixes.",
+      "skills": [
+        "python-idioms",
+        "python-typing",
+        "python-error-handling"
+      ]
+    },
+    {
+      "name": "python-type-annotator",
+      "kind": "agent",
+      "purpose": "Adds and tightens type annotations on untyped Python modules until mypy/pyright strict passes, without changing behaviour.",
+      "skills": [
+        "python-typing",
+        "python-mypy-strict",
+        "python-protocols-generics"
+      ]
+    },
+    {
+      "name": "python-test-writer",
+      "kind": "agent",
+      "purpose": "Writes pytest suites for a Python module: fixtures, parametrised cases, edge cases and mocks at boundaries, then runs them to green.",
+      "skills": [
+        "pytest-fixtures",
+        "pytest-parametrize",
+        "python-mocking"
+      ]
+    },
+    {
+      "name": "python-version-upgrader",
+      "kind": "agent",
+      "purpose": "Upgrades a codebase to a newer Python version: runs pyupgrade-style rewrites, fixes removed APIs and deprecations, and updates CI matrices.",
+      "skills": [
+        "python-idioms",
+        "python-pyproject"
+      ]
+    },
+    {
+      "name": "python-dependency-auditor",
+      "kind": "agent",
+      "purpose": "Audits Python dependencies in pyproject/lock files for unused, unpinned, outdated or conflicting packages and proposes a cleanup plan.",
+      "skills": [
+        "python-uv-workflow",
+        "python-pyproject"
+      ]
+    },
+    {
+      "name": "python-perf-investigator",
+      "kind": "agent",
+      "purpose": "Profiles a slow Python path, identifies the hotspot with evidence and proposes measured optimisations with before/after numbers.",
+      "skills": [
+        "python-profiling",
+        "python-optimization-patterns"
+      ]
+    },
+    {
+      "name": "python-async-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews asyncio code for blocking calls, unawaited coroutines, lost tasks, cancellation bugs and missing timeouts.",
+      "skills": [
+        "python-asyncio",
+        "python-async-testing"
+      ]
+    },
+    {
+      "name": "python-packaging-fixer",
+      "kind": "agent",
+      "purpose": "Migrates setup.py/requirements.txt projects to pyproject.toml and uv, and fixes broken builds, metadata and publishing workflows.",
+      "skills": [
+        "python-pyproject",
+        "python-uv-workflow",
+        "python-wheel-publishing"
+      ]
+    },
+    {
+      "name": "python-flaky-test-hunter",
+      "kind": "agent",
+      "purpose": "Finds and fixes flaky pytest tests: order dependence, shared state, time and randomness, async leaks; reports root cause per test.",
+      "skills": [
+        "pytest-fixtures",
+        "python-async-testing"
+      ]
+    },
+    {
+      "name": "python-refactorer",
+      "kind": "agent",
+      "purpose": "Performs behaviour-preserving Python refactors (extract function, split modules, replace dict soup with dataclasses) with tests run at each step.",
+      "skills": [
+        "python-idioms",
+        "python-dataclasses-pydantic"
+      ]
+    },
+    {
+      "name": "javascript-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews JavaScript diffs for async bugs, error handling gaps, mutation hazards and outdated idioms, with ranked findings and fixes.",
+      "skills": [
+        "js-modern-idioms",
+        "js-async-patterns",
+        "js-error-handling"
+      ]
+    },
+    {
+      "name": "node-upgrade-planner",
+      "kind": "agent",
+      "purpose": "Plans and executes a Node.js major upgrade: inventories breaking changes affecting the repo, updates deps and CI, and verifies with tests.",
+      "skills": [
+        "nodejs-version-upgrade",
+        "js-package-managers"
+      ]
+    },
+    {
+      "name": "esm-migrator",
+      "kind": "agent",
+      "purpose": "Migrates a CommonJS Node package or app to ESM, updating imports, package.json exports, tooling configs and tests.",
+      "skills": [
+        "js-esm-cjs-interop",
+        "npm-package-publishing"
+      ]
+    },
+    {
+      "name": "js-dependency-pruner",
+      "kind": "agent",
+      "purpose": "Finds unused, duplicated and heavy JS dependencies and prepares a PR removing or replacing them, with bundle/install size deltas.",
+      "skills": [
+        "js-dependency-hygiene",
+        "js-package-managers"
+      ]
+    },
+    {
+      "name": "js-test-writer",
+      "kind": "agent",
+      "purpose": "Writes Vitest/Jest unit tests for a JS/TS module with boundary mocks and edge cases, then runs them until green.",
+      "skills": [
+        "vitest-patterns",
+        "js-test-doubles"
+      ]
+    },
+    {
+      "name": "node-memory-leak-investigator",
+      "kind": "agent",
+      "purpose": "Investigates Node.js memory growth with heap snapshots and allocation timelines, names the retaining path and proposes a fix.",
+      "skills": [
+        "nodejs-performance"
+      ]
+    },
+    {
+      "name": "typescript-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews TypeScript diffs for unsound types, any/as escapes, missing narrowing and unvalidated external data, with concrete type-level fixes.",
+      "skills": [
+        "ts-strict-mode",
+        "ts-narrowing-unions",
+        "ts-runtime-validation"
+      ]
+    },
+    {
+      "name": "ts-type-designer",
+      "kind": "agent",
+      "purpose": "Designs types for a module or API from requirements: unions for states, branded IDs and generics, delivered with type tests.",
+      "skills": [
+        "ts-narrowing-unions",
+        "ts-branded-types",
+        "ts-type-testing"
+      ]
+    },
+    {
+      "name": "js-to-ts-migrator",
+      "kind": "agent",
+      "purpose": "Migrates JavaScript files to TypeScript incrementally: allowJs/checkJs staging, renames, inferred then explicit types, keeping builds green.",
+      "skills": [
+        "tsconfig-setup",
+        "ts-strict-mode"
+      ]
+    },
+    {
+      "name": "ts-strictness-ratcheter",
+      "kind": "agent",
+      "purpose": "Turns on stricter tsconfig flags one at a time, fixes the resulting errors file by file and records remaining suppressions.",
+      "skills": [
+        "ts-strict-mode",
+        "tsconfig-setup"
+      ]
+    },
+    {
+      "name": "ts-build-doctor",
+      "kind": "agent",
+      "purpose": "Diagnoses broken or slow TypeScript builds and type publishing: module resolution errors, missing types, slow tsc, bad exports.",
+      "skills": [
+        "tsconfig-setup",
+        "ts-type-performance",
+        "ts-declaration-publishing"
+      ]
+    },
+    {
+      "name": "go-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Go diffs for unidiomatic code, ignored or poorly wrapped errors, goroutine leaks and misuse of context, ranked by severity.",
+      "skills": [
+        "go-idioms",
+        "go-error-handling",
+        "go-context"
+      ]
+    },
+    {
+      "name": "go-concurrency-auditor",
+      "kind": "agent",
+      "purpose": "Audits Go concurrency: data races, leaked goroutines, deadlocks, unbounded channels; runs -race and reports each issue with a fix.",
+      "skills": [
+        "go-goroutines-channels",
+        "go-sync-primitives",
+        "go-context"
+      ]
+    },
+    {
+      "name": "go-test-writer",
+      "kind": "agent",
+      "purpose": "Writes table-driven Go tests and fuzz targets for a package using interface fakes, then runs go test -race until green.",
+      "skills": [
+        "go-table-tests",
+        "go-test-doubles",
+        "go-fuzzing"
+      ]
+    },
+    {
+      "name": "go-perf-tuner",
+      "kind": "agent",
+      "purpose": "Profiles a Go hot path with pprof and benchmarks, applies allocation and algorithm fixes, and reports benchstat deltas.",
+      "skills": [
+        "go-pprof",
+        "go-memory-allocation",
+        "go-benchmarks"
+      ]
+    },
+    {
+      "name": "go-module-upgrader",
+      "kind": "agent",
+      "purpose": "Upgrades Go toolchain and module dependencies, resolves breaking API changes and keeps go.sum and CI consistent.",
+      "skills": [
+        "go-modules",
+        "go-version-upgrade"
+      ]
+    },
+    {
+      "name": "rust-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Rust diffs for unnecessary clones, unwraps, unsound unsafe, poor error types and non-idiomatic APIs, ranked by severity.",
+      "skills": [
+        "rust-idioms",
+        "rust-error-handling",
+        "rust-ownership-borrowing"
+      ]
+    },
+    {
+      "name": "rust-unsafe-auditor",
+      "kind": "agent",
+      "purpose": "Audits unsafe blocks and FFI boundaries in a Rust crate, checks each safety invariant, runs Miri and reports unsound code.",
+      "skills": [
+        "rust-unsafe",
+        "rust-ffi"
+      ]
+    },
+    {
+      "name": "rust-borrow-fixer",
+      "kind": "agent",
+      "purpose": "Takes a failing Rust build with borrow checker or lifetime errors and restructures the code to compile without gratuitous cloning.",
+      "skills": [
+        "rust-ownership-borrowing",
+        "rust-traits-generics"
+      ]
+    },
+    {
+      "name": "c-to-rust-porter",
+      "kind": "agent",
+      "purpose": "Ports a C module to safe Rust incrementally behind an FFI boundary, with differential tests against the original.",
+      "skills": [
+        "rust-ffi",
+        "rust-unsafe",
+        "rust-testing"
+      ]
+    },
+    {
+      "name": "rust-async-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews async Rust for blocking calls in async, cancellation-unsafe code in select!, missing Send bounds and task leaks.",
+      "skills": [
+        "rust-tokio",
+        "rust-async-traits-pinning"
+      ]
+    },
+    {
+      "name": "java-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Java diffs for null handling, resource leaks, concurrency bugs, exception misuse and outdated idioms, ranked by severity.",
+      "skills": [
+        "java-idioms",
+        "java-modern-features",
+        "java-concurrency-utilities"
+      ]
+    },
+    {
+      "name": "java-version-upgrader",
+      "kind": "agent",
+      "purpose": "Upgrades a project between Java LTS versions (8/11/17/21/25): fixes removed APIs, javax-to-jakarta moves, build plugins and CI.",
+      "skills": [
+        "java-modern-features",
+        "maven-builds",
+        "gradle-builds"
+      ]
+    },
+    {
+      "name": "jvm-build-doctor",
+      "kind": "agent",
+      "purpose": "Fixes broken or slow Maven/Gradle builds: dependency conflicts, plugin errors, cache misses, and reports what changed.",
+      "skills": [
+        "maven-builds",
+        "gradle-builds"
+      ]
+    },
+    {
+      "name": "java-test-writer",
+      "kind": "agent",
+      "purpose": "Writes JUnit 5 tests with AssertJ and minimal Mockito for a Java class, including edge cases, then runs the build until green.",
+      "skills": [
+        "junit5-patterns",
+        "mockito-patterns"
+      ]
+    },
+    {
+      "name": "jvm-perf-analyst",
+      "kind": "agent",
+      "purpose": "Analyses JFR recordings, GC logs and thread/heap dumps from a JVM service and reports the bottleneck with a tuning or code fix.",
+      "skills": [
+        "jvm-profiling",
+        "jvm-gc-tuning"
+      ]
+    },
+    {
+      "name": "java-to-kotlin-converter",
+      "kind": "agent",
+      "purpose": "Converts Java classes to idiomatic Kotlin (not literal translations), fixing platform types and nullability, with tests kept green.",
+      "skills": [
+        "kotlin-idioms",
+        "java-idioms"
+      ]
+    },
+    {
+      "name": "kotlin-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Kotlin diffs for nullability abuse (!!), coroutine scope leaks, blocking calls on wrong dispatchers and unidiomatic code.",
+      "skills": [
+        "kotlin-idioms",
+        "kotlin-coroutines",
+        "kotlin-flow"
+      ]
+    },
+    {
+      "name": "rxjava-to-coroutines-migrator",
+      "kind": "agent",
+      "purpose": "Migrates RxJava or callback-based code to Kotlin coroutines and Flow, preserving threading and error semantics.",
+      "skills": [
+        "kotlin-coroutines",
+        "kotlin-flow"
+      ]
+    },
+    {
+      "name": "csharp-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews C# diffs for null-safety gaps, async misuse, disposal leaks, LINQ inefficiencies and outdated patterns, ranked by severity.",
+      "skills": [
+        "csharp-modern-features",
+        "csharp-nullable-reference-types",
+        "dotnet-async-await"
+      ]
+    },
+    {
+      "name": "dotnet-framework-migrator",
+      "kind": "agent",
+      "purpose": "Plans and executes migration from .NET Framework to modern .NET: project conversion, API replacements, unsupported dependencies and tests.",
+      "skills": [
+        "dotnet-cli-sdk",
+        "csharp-modern-features"
+      ]
+    },
+    {
+      "name": "dotnet-version-upgrader",
+      "kind": "agent",
+      "purpose": "Upgrades between modern .NET versions: TFM changes, breaking changes, package updates and analyzer fixes, verified by build and tests.",
+      "skills": [
+        "dotnet-cli-sdk",
+        "dotnet-analyzers"
+      ]
+    },
+    {
+      "name": "dotnet-test-writer",
+      "kind": "agent",
+      "purpose": "Writes xUnit tests for C# classes with NSubstitute fakes and integration tests via WebApplicationFactory, then runs them to green.",
+      "skills": [
+        "dotnet-testing"
+      ]
+    },
+    {
+      "name": "dotnet-perf-analyst",
+      "kind": "agent",
+      "purpose": "Measures a slow .NET path with BenchmarkDotNet and dotnet-trace, then applies allocation and async fixes with before/after numbers.",
+      "skills": [
+        "dotnet-performance",
+        "dotnet-memory-diagnostics"
+      ]
+    },
+    {
+      "name": "c-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews C diffs for buffer overflows, use-after-free, leaks, undefined behaviour and unchecked return values, citing exact lines.",
+      "skills": [
+        "c-memory-safety",
+        "c-api-design"
+      ]
+    },
+    {
+      "name": "c-sanitizer-triager",
+      "kind": "agent",
+      "purpose": "Runs a C/C++ test suite under sanitizers and fuzzers, deduplicates the findings and reports root cause and fix for each.",
+      "skills": [
+        "c-sanitizers-analysis",
+        "c-fuzzing"
+      ]
+    },
+    {
+      "name": "c-build-modernizer",
+      "kind": "agent",
+      "purpose": "Migrates handwritten Makefiles or autotools builds to CMake or Meson with warnings, sanitizer and test targets.",
+      "skills": [
+        "c-build-systems",
+        "cmake-modern"
+      ]
+    },
+    {
+      "name": "cpp-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews C++ diffs for lifetime bugs, dangling references, ownership confusion, UB and needless copies, ranked by severity.",
+      "skills": [
+        "modern-cpp-idioms",
+        "cpp-concurrency"
+      ]
+    },
+    {
+      "name": "cpp-modernizer",
+      "kind": "agent",
+      "purpose": "Modernises legacy C++ (C++98/03 style) to C++17/20: smart pointers, RAII, range-for, auto, removing manual new/delete with tests green.",
+      "skills": [
+        "modern-cpp-idioms",
+        "cpp-templates-concepts"
+      ]
+    },
+    {
+      "name": "cmake-build-doctor",
+      "kind": "agent",
+      "purpose": "Diagnoses CMake configure/build/link failures and dependency issues, and restructures CMakeLists toward target-based style.",
+      "skills": [
+        "cmake-modern",
+        "cpp-package-managers"
+      ]
+    },
+    {
+      "name": "cpp-test-writer",
+      "kind": "agent",
+      "purpose": "Writes GoogleTest or Catch2 tests for a C++ class or module and wires them into CTest.",
+      "skills": [
+        "cpp-testing"
+      ]
+    },
+    {
+      "name": "swift6-migrator",
+      "kind": "agent",
+      "purpose": "Migrates a Swift module to Swift 6 language mode: enables strict concurrency checking, fixes Sendable and isolation errors incrementally.",
+      "skills": [
+        "swift-concurrency",
+        "swift-idioms"
+      ]
+    },
+    {
+      "name": "swift-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Swift diffs for retain cycles, force unwraps, data races and isolation mistakes, and unidiomatic code.",
+      "skills": [
+        "swift-idioms",
+        "swift-memory-management",
+        "swift-concurrency"
+      ]
+    },
+    {
+      "name": "xctest-to-swift-testing-migrator",
+      "kind": "agent",
+      "purpose": "Converts XCTest suites to Swift Testing with parameterised tests and #expect, keeping coverage equal.",
+      "skills": [
+        "swift-testing"
+      ]
+    },
+    {
+      "name": "ruby-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Ruby diffs for N+1-prone enumerations, nil errors, metaprogramming misuse and unidiomatic code, ranked by severity.",
+      "skills": [
+        "ruby-idioms",
+        "rubocop-config"
+      ]
+    },
+    {
+      "name": "ruby-version-upgrader",
+      "kind": "agent",
+      "purpose": "Upgrades Ruby versions: keyword argument changes, removed stdlib gems, frozen strings and Bundler updates, verified by the test suite.",
+      "skills": [
+        "ruby-idioms",
+        "ruby-gems-bundler"
+      ]
+    },
+    {
+      "name": "rspec-test-writer",
+      "kind": "agent",
+      "purpose": "Writes RSpec specs for Ruby classes with verifying doubles and focused contexts, then runs them to green.",
+      "skills": [
+        "rspec-patterns"
+      ]
+    },
+    {
+      "name": "php-version-upgrader",
+      "kind": "agent",
+      "purpose": "Upgrades PHP codebases across versions (7.x to 8.x): uses Rector rules, fixes deprecations and type errors, verified by tests and PHPStan.",
+      "skills": [
+        "php-modern-features",
+        "php-static-analysis"
+      ]
+    },
+    {
+      "name": "php-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews PHP diffs for type looseness, injection-prone string handling, missing strict_types and outdated patterns.",
+      "skills": [
+        "php-modern-features",
+        "php-static-analysis"
+      ]
+    },
+    {
+      "name": "phpstan-level-raiser",
+      "kind": "agent",
+      "purpose": "Raises the PHPStan level step by step, fixing errors and shrinking the baseline, and reports what remains.",
+      "skills": [
+        "php-static-analysis"
+      ]
+    },
+    {
+      "name": "elixir-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Elixir diffs for process design issues, unsupervised processes, bottleneck GenServers and unidiomatic code.",
+      "skills": [
+        "elixir-idioms",
+        "elixir-otp"
+      ]
+    },
+    {
+      "name": "beam-process-debugger",
+      "kind": "agent",
+      "purpose": "Investigates BEAM production issues (mailbox growth, memory, scheduler load) from observer/recon output and proposes fixes.",
+      "skills": [
+        "erlang-beam-debugging",
+        "elixir-otp"
+      ]
+    },
+    {
+      "name": "elixir-test-writer",
+      "kind": "agent",
+      "purpose": "Writes ExUnit tests with Mox and StreamData properties for an Elixir module, then runs mix test until green.",
+      "skills": [
+        "exunit-patterns"
+      ]
+    },
+    {
+      "name": "scala3-migrator",
+      "kind": "agent",
+      "purpose": "Migrates Scala 2.13 projects to Scala 3: implicits to givens, macros, cross-building and compiler flag fixes.",
+      "skills": [
+        "scala3-features",
+        "scala-sbt"
+      ]
+    },
+    {
+      "name": "scala-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Scala diffs for unsafe effects, implicit confusion, partial functions and needless complexity.",
+      "skills": [
+        "scala3-features",
+        "scala-effects"
+      ]
+    },
+    {
+      "name": "sbt-build-doctor",
+      "kind": "agent",
+      "purpose": "Fixes slow or broken sbt builds: eviction conflicts, cross-version issues and plugin errors.",
+      "skills": [
+        "scala-sbt"
+      ]
+    },
+    {
+      "name": "haskell-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Haskell diffs for partial functions, space leaks from laziness, orphan instances and over-complex types.",
+      "skills": [
+        "haskell-idioms",
+        "haskell-effects-mtl"
+      ]
+    },
+    {
+      "name": "ocaml-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews OCaml diffs for non-exhaustive matches, exception misuse, module interface leaks and unidiomatic code.",
+      "skills": [
+        "ocaml-idioms"
+      ]
+    },
+    {
+      "name": "clojure-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Clojure diffs for laziness bugs, reflection warnings, global state and unclear data shapes.",
+      "skills": [
+        "clojure-idioms"
+      ]
+    },
+    {
+      "name": "r-package-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews an R package for R CMD check issues, documentation gaps, test coverage and CRAN policy problems.",
+      "skills": [
+        "r-package-development",
+        "r-language-idioms"
+      ]
+    },
+    {
+      "name": "r-script-to-package-converter",
+      "kind": "agent",
+      "purpose": "Turns a folder of R scripts into a documented, tested R package with functions extracted from script code.",
+      "skills": [
+        "r-package-development"
+      ]
+    },
+    {
+      "name": "r-performance-tuner",
+      "kind": "agent",
+      "purpose": "Profiles slow R code with profvis and rewrites hot spots with vectorisation, data.table or Rcpp, reporting timings.",
+      "skills": [
+        "r-performance"
+      ]
+    },
+    {
+      "name": "shell-script-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews shell scripts for quoting bugs, unsafe rm/eval, missing error handling and portability issues, with ShellCheck evidence.",
+      "skills": [
+        "bash-strict-scripting",
+        "shellcheck-fixes",
+        "posix-shell-portability"
+      ]
+    },
+    {
+      "name": "shell-script-hardener",
+      "kind": "agent",
+      "purpose": "Rewrites fragile shell scripts into strict, ShellCheck-clean versions with traps, argument parsing and bats tests.",
+      "skills": [
+        "bash-strict-scripting",
+        "shell-testing"
+      ]
+    },
+    {
+      "name": "shell-to-python-converter",
+      "kind": "agent",
+      "purpose": "Converts shell scripts that have outgrown Bash into Python CLIs with equivalent behaviour and tests.",
+      "skills": [
+        "bash-strict-scripting",
+        "python-cli-typer"
+      ]
+    },
+    {
+      "name": "powershell-script-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews PowerShell scripts for error handling gaps, unapproved verbs, unsafe Invoke-Expression and non-portable code, using PSScriptAnalyzer.",
+      "skills": [
+        "powershell-idioms",
+        "powershell-modules"
+      ]
+    },
+    {
+      "name": "powershell-module-builder",
+      "kind": "agent",
+      "purpose": "Turns loose PowerShell scripts into a structured module with manifest, Pester tests and analyzer-clean code.",
+      "skills": [
+        "powershell-modules",
+        "pester-testing"
+      ]
+    },
+    {
+      "name": "ps51-to-ps7-migrator",
+      "kind": "agent",
+      "purpose": "Migrates Windows PowerShell 5.1 scripts to PowerShell 7, replacing removed cmdlets and fixing encoding and compatibility issues.",
+      "skills": [
+        "powershell-cross-platform",
+        "powershell-idioms"
+      ]
+    },
+    {
+      "name": "wasm-build-engineer",
+      "kind": "agent",
+      "purpose": "Sets up a WebAssembly build for an existing Rust or C/C++ library, exposes a JS/TS API and measures binary size and speed.",
+      "skills": [
+        "wasm-rust-toolchain",
+        "wasm-emscripten",
+        "wasm-js-interop"
+      ]
+    },
+    {
+      "name": "wasm-size-optimizer",
+      "kind": "agent",
+      "purpose": "Shrinks WebAssembly binaries with wasm-opt, LTO, panic/alloc settings and twiggy analysis, reporting size deltas.",
+      "skills": [
+        "wasm-rust-toolchain"
+      ]
+    },
+    {
+      "name": "wasi-component-builder",
+      "kind": "agent",
+      "purpose": "Builds WASI 0.2 components from a WIT interface definition and tests them in wasmtime.",
+      "skills": [
+        "wasm-component-model"
+      ]
+    },
+    {
+      "name": "solidity-security-reviewer",
+      "kind": "agent",
+      "purpose": "Performs a defensive pre-audit review of the team's own Solidity contracts against a vulnerability checklist and reports findings with severity.",
+      "skills": [
+        "solidity-security-checklist",
+        "solidity-static-analysis"
+      ]
+    },
+    {
+      "name": "foundry-test-writer",
+      "kind": "agent",
+      "purpose": "Writes Foundry unit, fuzz and invariant tests for a contract to cover state transitions and edge cases.",
+      "skills": [
+        "foundry-testing"
+      ]
+    },
+    {
+      "name": "solidity-gas-optimizer",
+      "kind": "agent",
+      "purpose": "Optimises gas use in a contract with gas snapshots before and after, without changing behaviour or weakening safety.",
+      "skills": [
+        "solidity-gas-optimization",
+        "foundry-testing"
+      ]
+    },
+    {
+      "name": "polyglot-port-planner",
+      "kind": "agent",
+      "purpose": "Plans a port of a module between programming languages: maps idioms, libraries and types, and defines a differential test strategy."
+    },
+    {
+      "name": "language-idiom-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews code written by developers new to a language and flags idioms carried over from their previous language, with idiomatic rewrites."
+    },
+    {
+      "name": "type-checker-adopter",
+      "kind": "agent",
+      "purpose": "Introduces gradual static typing to a dynamic-language repo (Python, Ruby, JS) with config, baselines and a ratchet plan.",
+      "skills": [
+        "python-mypy-strict",
+        "ruby-typing",
+        "ts-strict-mode"
+      ]
+    }
+  ]
+}

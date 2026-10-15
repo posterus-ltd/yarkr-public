@@ -1,0 +1,2257 @@
+{
+  "domain": "engineering-practice",
+  "arks": [
+    {
+      "name": "testing-strategy",
+      "type": "skill",
+      "topic": "test strategy",
+      "description": "For tech leads and QA owners: plan what to test at which level, rank risks, read coverage honestly and write a test strategy doc agents can follow.",
+      "items": [
+        {
+          "package": "test-strategy-doc",
+          "required": true
+        },
+        {
+          "package": "test-pyramid-planning",
+          "required": true
+        },
+        {
+          "package": "risk-based-test-selection",
+          "required": true
+        },
+        {
+          "package": "test-coverage-analysis",
+          "required": false
+        },
+        {
+          "package": "test-environments-planning",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "tdd",
+      "type": "skill",
+      "topic": "test-driven development",
+      "description": "For developers practising TDD: red-green-refactor discipline, test lists, step sizing and outside-in design so agents write tests before code.",
+      "items": [
+        {
+          "package": "tdd-red-green-refactor",
+          "required": true
+        },
+        {
+          "package": "tdd-test-list",
+          "required": true
+        },
+        {
+          "package": "tdd-triangulation",
+          "required": true
+        },
+        {
+          "package": "tdd-outside-in",
+          "required": false
+        },
+        {
+          "package": "test-naming-conventions",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "property-based-testing",
+      "type": "skill",
+      "topic": "property-based testing",
+      "description": "For developers adding property-based tests: finding good properties, writing generators that shrink well, stateful model tests and pinning failures.",
+      "items": [
+        {
+          "package": "pbt-property-design",
+          "required": true
+        },
+        {
+          "package": "pbt-generators-shrinking",
+          "required": true
+        },
+        {
+          "package": "pbt-failure-replay",
+          "required": true
+        },
+        {
+          "package": "pbt-stateful-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "playwright-e2e",
+      "type": "skill",
+      "topic": "Playwright end-to-end testing",
+      "description": "For teams testing web apps with Playwright: resilient locators, auth fixtures, visual checks, trace debugging and sharded CI runs.",
+      "items": [
+        {
+          "package": "playwright-test-authoring",
+          "required": true
+        },
+        {
+          "package": "playwright-locators",
+          "required": true
+        },
+        {
+          "package": "playwright-auth-fixtures",
+          "required": true
+        },
+        {
+          "package": "playwright-trace-debugging",
+          "required": true
+        },
+        {
+          "package": "playwright-visual-regression",
+          "required": false
+        },
+        {
+          "package": "playwright-ci-sharding",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cypress-e2e",
+      "type": "skill",
+      "topic": "Cypress end-to-end testing",
+      "description": "For teams on Cypress: retry-safe tests, custom commands, network stubbing, component tests and parallel CI.",
+      "items": [
+        {
+          "package": "cypress-test-authoring",
+          "required": true
+        },
+        {
+          "package": "cypress-custom-commands",
+          "required": true
+        },
+        {
+          "package": "cypress-network-stubbing",
+          "required": true
+        },
+        {
+          "package": "cypress-component-testing",
+          "required": false
+        },
+        {
+          "package": "cypress-ci-parallel",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "integration-testing",
+      "type": "skill",
+      "topic": "integration testing",
+      "description": "For backend developers: integration tests with real databases and brokers via Testcontainers, isolated test data, contract tests and stubbed third parties.",
+      "items": [
+        {
+          "package": "integration-test-boundaries",
+          "required": true
+        },
+        {
+          "package": "testcontainers-patterns",
+          "required": true
+        },
+        {
+          "package": "test-db-isolation",
+          "required": true
+        },
+        {
+          "package": "consumer-contract-testing",
+          "required": false
+        },
+        {
+          "package": "service-virtualization",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "unit-testing",
+      "type": "skill",
+      "topic": "unit test design",
+      "description": "For any developer writing unit tests: clear structure, the right test double, readable names, parameterised cases and spotting test smells.",
+      "items": [
+        {
+          "package": "unit-test-structure",
+          "required": true
+        },
+        {
+          "package": "test-doubles-guide",
+          "required": true
+        },
+        {
+          "package": "test-naming-conventions",
+          "required": true
+        },
+        {
+          "package": "parameterized-test-design",
+          "required": true
+        },
+        {
+          "package": "test-smell-detection",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "mutation-testing",
+      "type": "skill",
+      "topic": "mutation testing",
+      "description": "For teams who want tests that really check behaviour: incremental mutation testing setup, survivor triage and coverage reports read critically.",
+      "items": [
+        {
+          "package": "mutation-testing-setup",
+          "required": true
+        },
+        {
+          "package": "mutation-survivor-analysis",
+          "required": true
+        },
+        {
+          "package": "test-coverage-analysis",
+          "required": true
+        },
+        {
+          "package": "test-smell-detection",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "flaky-tests",
+      "type": "skill",
+      "topic": "flaky test management",
+      "description": "For teams fighting unreliable CI: detecting and classifying flaky tests, quarantining them with owners and fixing nondeterminism at the source.",
+      "items": [
+        {
+          "package": "flaky-test-triage",
+          "required": true
+        },
+        {
+          "package": "test-determinism-fixes",
+          "required": true
+        },
+        {
+          "package": "test-quarantine-workflow",
+          "required": true
+        },
+        {
+          "package": "test-parallelization",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "load-testing",
+      "type": "skill",
+      "topic": "load and performance testing",
+      "description": "For engineers validating capacity: planning load, stress and soak tests, writing k6 scripts, analysing results and benchmarking fairly.",
+      "items": [
+        {
+          "package": "load-test-planning",
+          "required": true
+        },
+        {
+          "package": "k6-load-scripts",
+          "required": true
+        },
+        {
+          "package": "load-test-analysis",
+          "required": true
+        },
+        {
+          "package": "benchmark-methodology",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "test-suite-speed",
+      "type": "skill",
+      "topic": "fast test suites",
+      "description": "For teams whose tests are too slow: profiling the suite, safe parallelism, test impact analysis and timing-based CI sharding.",
+      "items": [
+        {
+          "package": "test-suite-profiling",
+          "required": true
+        },
+        {
+          "package": "test-parallelization",
+          "required": true
+        },
+        {
+          "package": "test-impact-analysis",
+          "required": true
+        },
+        {
+          "package": "ci-test-sharding",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "qa-test-design",
+      "type": "skill",
+      "topic": "QA test design",
+      "description": "For QA engineers and developers: deriving test cases with classic techniques, exploratory charters, criteria-to-test mapping and solid bug reports.",
+      "items": [
+        {
+          "package": "test-case-design-techniques",
+          "required": true
+        },
+        {
+          "package": "exploratory-testing-charters",
+          "required": true
+        },
+        {
+          "package": "acceptance-criteria-to-tests",
+          "required": true
+        },
+        {
+          "package": "bug-report-writing",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "bdd-gherkin",
+      "type": "skill",
+      "topic": "behaviour-driven development",
+      "description": "For teams using BDD: example mapping, declarative Gherkin scenarios, maintainable step definitions and living documentation.",
+      "items": [
+        {
+          "package": "bdd-example-mapping",
+          "required": true
+        },
+        {
+          "package": "gherkin-scenario-writing",
+          "required": true
+        },
+        {
+          "package": "cucumber-step-definitions",
+          "required": true
+        },
+        {
+          "package": "living-documentation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "snapshot-testing",
+      "type": "skill",
+      "topic": "snapshot and approval testing",
+      "description": "For developers testing complex outputs: snapshot hygiene, golden files and approval-test workflows that catch real changes without rubber-stamping updates.",
+      "items": [
+        {
+          "package": "snapshot-test-hygiene",
+          "required": true
+        },
+        {
+          "package": "golden-file-testing",
+          "required": true
+        },
+        {
+          "package": "approval-testing-workflow",
+          "required": true
+        },
+        {
+          "package": "characterization-tests",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "test-data",
+      "type": "skill",
+      "topic": "test data",
+      "description": "For developers tired of brittle fixtures: test data builders, factories with traits, shared dataset management and synthetic data instead of production copies.",
+      "items": [
+        {
+          "package": "test-data-builders",
+          "required": true
+        },
+        {
+          "package": "fixture-factories",
+          "required": true
+        },
+        {
+          "package": "test-data-management",
+          "required": true
+        },
+        {
+          "package": "synthetic-test-data",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "code-review",
+      "type": "skill",
+      "topic": "code review",
+      "description": "For reviewers and teams: multi-pass review checklists, risk-based review depth, kind actionable comments, a written review policy and sensible CODEOWNERS.",
+      "items": [
+        {
+          "package": "code-review-checklist",
+          "required": true
+        },
+        {
+          "package": "review-comment-writing",
+          "required": true
+        },
+        {
+          "package": "review-risk-triage",
+          "required": true
+        },
+        {
+          "package": "team-review-guidelines",
+          "required": false
+        },
+        {
+          "package": "codeowners-design",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "pull-requests",
+      "type": "skill",
+      "topic": "pull request authoring",
+      "description": "For developers opening PRs: self-review, clear descriptions, small split changes, stacked PRs and good commit messages.",
+      "items": [
+        {
+          "package": "pr-description-writing",
+          "required": true
+        },
+        {
+          "package": "pr-size-splitting",
+          "required": true
+        },
+        {
+          "package": "self-review-before-pr",
+          "required": true
+        },
+        {
+          "package": "commit-message-writing",
+          "required": true
+        },
+        {
+          "package": "stacked-prs",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "refactoring",
+      "type": "skill",
+      "topic": "refactoring",
+      "description": "For developers improving existing code: recognising smells, applying named refactorings in safe steps and changing interfaces with parallel change.",
+      "items": [
+        {
+          "package": "refactoring-catalog",
+          "required": true
+        },
+        {
+          "package": "code-smell-detection",
+          "required": true
+        },
+        {
+          "package": "safe-refactor-steps",
+          "required": true
+        },
+        {
+          "package": "parallel-change",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "legacy-code",
+      "type": "skill",
+      "topic": "working with legacy code",
+      "description": "For developers changing untested legacy code: mapping the system, finding seams, pinning behaviour with characterization tests and removing dead code.",
+      "items": [
+        {
+          "package": "characterization-tests",
+          "required": true
+        },
+        {
+          "package": "seam-finding",
+          "required": true
+        },
+        {
+          "package": "legacy-code-mapping",
+          "required": true
+        },
+        {
+          "package": "dead-code-removal",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "legacy-modernisation",
+      "type": "skill",
+      "topic": "legacy modernisation",
+      "description": "For architects replacing legacy systems: assessing options, strangler-fig and branch-by-abstraction migrations, monolith decomposition and parity verification.",
+      "items": [
+        {
+          "package": "modernisation-assessment",
+          "required": true
+        },
+        {
+          "package": "strangler-fig-migration",
+          "required": true
+        },
+        {
+          "package": "branch-by-abstraction",
+          "required": true
+        },
+        {
+          "package": "feature-parity-verification",
+          "required": true
+        },
+        {
+          "package": "monolith-decomposition",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "large-scale-changes",
+      "type": "skill",
+      "topic": "large-scale code changes",
+      "description": "For platform and infra teams making repo-wide changes: codemods, structural search-and-replace, renames at scale and owner-sharded rollouts.",
+      "items": [
+        {
+          "package": "codemod-authoring",
+          "required": true
+        },
+        {
+          "package": "ast-grep-rewrites",
+          "required": true
+        },
+        {
+          "package": "rename-at-scale",
+          "required": true
+        },
+        {
+          "package": "lsc-rollout-planning",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "tech-debt",
+      "type": "skill",
+      "topic": "technical debt management",
+      "description": "For tech leads managing debt: a debt register, churn-times-complexity hotspots, interest-based prioritisation and paydown proposals leadership will fund.",
+      "items": [
+        {
+          "package": "tech-debt-inventory",
+          "required": true
+        },
+        {
+          "package": "complexity-hotspot-analysis",
+          "required": true
+        },
+        {
+          "package": "tech-debt-prioritization",
+          "required": true
+        },
+        {
+          "package": "debt-paydown-proposals",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "domain-driven-design",
+      "type": "skill",
+      "topic": "domain-driven design",
+      "description": "For teams modelling complex domains: bounded contexts, aggregates, ubiquitous language, context maps and event storming.",
+      "items": [
+        {
+          "package": "ddd-bounded-contexts",
+          "required": true
+        },
+        {
+          "package": "ddd-aggregates",
+          "required": true
+        },
+        {
+          "package": "ddd-ubiquitous-language",
+          "required": true
+        },
+        {
+          "package": "ddd-context-mapping",
+          "required": true
+        },
+        {
+          "package": "event-storming",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "architecture-decisions",
+      "type": "skill",
+      "topic": "architecture decision records",
+      "description": "For teams recording architecture decisions: ADR writing and lifecycle, trade-off matrices and a short set of architecture principles.",
+      "items": [
+        {
+          "package": "adr-writing",
+          "required": true
+        },
+        {
+          "package": "adr-lifecycle",
+          "required": true
+        },
+        {
+          "package": "tradeoff-analysis-matrix",
+          "required": true
+        },
+        {
+          "package": "architecture-principles",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "design-docs",
+      "type": "skill",
+      "topic": "design docs and RFCs",
+      "description": "For engineers proposing significant changes: design doc structure, a lightweight RFC process, rigorous doc review and option comparison.",
+      "items": [
+        {
+          "package": "design-doc-writing",
+          "required": true
+        },
+        {
+          "package": "design-doc-review",
+          "required": true
+        },
+        {
+          "package": "rfc-process",
+          "required": true
+        },
+        {
+          "package": "tradeoff-analysis-matrix",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "system-design",
+      "type": "skill",
+      "topic": "system design",
+      "description": "For engineers designing scalable systems: a design framework, capacity estimates, scaling and caching patterns and consistency choices.",
+      "items": [
+        {
+          "package": "system-design-framework",
+          "required": true
+        },
+        {
+          "package": "capacity-estimation",
+          "required": true
+        },
+        {
+          "package": "scalability-patterns",
+          "required": true
+        },
+        {
+          "package": "data-consistency-patterns",
+          "required": true
+        },
+        {
+          "package": "caching-strategy-design",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "event-driven-architecture",
+      "type": "skill",
+      "topic": "event-driven architecture",
+      "description": "For teams building on events and messages: event design, schema versioning, outbox, idempotent consumers, sagas and CQRS/event sourcing.",
+      "items": [
+        {
+          "package": "event-driven-design",
+          "required": true
+        },
+        {
+          "package": "event-schema-versioning",
+          "required": true
+        },
+        {
+          "package": "transactional-outbox",
+          "required": true
+        },
+        {
+          "package": "idempotent-consumers",
+          "required": true
+        },
+        {
+          "package": "saga-patterns",
+          "required": false
+        },
+        {
+          "package": "cqrs-event-sourcing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "modular-architecture",
+      "type": "skill",
+      "topic": "modular architecture",
+      "description": "For teams keeping a codebase modular: hexagonal architecture, modular monoliths, enforced dependency rules, fitness functions and coupling metrics.",
+      "items": [
+        {
+          "package": "hexagonal-architecture",
+          "required": true
+        },
+        {
+          "package": "modular-monolith-design",
+          "required": true
+        },
+        {
+          "package": "dependency-rule-enforcement",
+          "required": true
+        },
+        {
+          "package": "architecture-fitness-functions",
+          "required": false
+        },
+        {
+          "package": "coupling-cohesion-metrics",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "microservices-design",
+      "type": "skill",
+      "topic": "microservice design",
+      "description": "For teams splitting or running services: boundary design, communication styles, distributed failure modes and resilience patterns.",
+      "items": [
+        {
+          "package": "service-boundary-design",
+          "required": true
+        },
+        {
+          "package": "inter-service-communication",
+          "required": true
+        },
+        {
+          "package": "distributed-failure-modes",
+          "required": true
+        },
+        {
+          "package": "resilience-patterns",
+          "required": true
+        },
+        {
+          "package": "monolith-decomposition",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "architecture-docs",
+      "type": "skill",
+      "topic": "architecture documentation",
+      "description": "For architects and leads documenting systems: C4 diagrams, diagrams as code, arc42 and a readable one-page architecture overview.",
+      "items": [
+        {
+          "package": "c4-model-diagrams",
+          "required": true
+        },
+        {
+          "package": "diagrams-as-code",
+          "required": true
+        },
+        {
+          "package": "architecture-overview-writing",
+          "required": true
+        },
+        {
+          "package": "arc42-documentation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "git-workflows",
+      "type": "skill",
+      "topic": "git workflows",
+      "description": "For teams agreeing how they use git: branching models, trunk-based development, Conventional Commits, rebasing and commit messages.",
+      "items": [
+        {
+          "package": "git-branching-strategy",
+          "required": true
+        },
+        {
+          "package": "trunk-based-development",
+          "required": true
+        },
+        {
+          "package": "commit-message-writing",
+          "required": true
+        },
+        {
+          "package": "git-rebase-workflow",
+          "required": true
+        },
+        {
+          "package": "conventional-commits",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "git-power-tools",
+      "type": "skill",
+      "topic": "advanced git",
+      "description": "For developers who want git to stop being scary: bisect, reflog recovery, conflict resolution, history rewriting, worktrees and large files.",
+      "items": [
+        {
+          "package": "git-bisect-debugging",
+          "required": true
+        },
+        {
+          "package": "git-reflog-recovery",
+          "required": true
+        },
+        {
+          "package": "git-conflict-resolution",
+          "required": true
+        },
+        {
+          "package": "git-history-rewriting",
+          "required": true
+        },
+        {
+          "package": "git-worktrees",
+          "required": false
+        },
+        {
+          "package": "git-large-files",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "monorepo",
+      "type": "skill",
+      "topic": "monorepo management",
+      "description": "For teams running monorepos: layout and dependency rules, affected-only builds, versioning, repo consolidation and Nx/Turborepo or Bazel setup.",
+      "items": [
+        {
+          "package": "monorepo-structure",
+          "required": true
+        },
+        {
+          "package": "monorepo-affected-builds",
+          "required": true
+        },
+        {
+          "package": "monorepo-versioning",
+          "required": true
+        },
+        {
+          "package": "monorepo-migration",
+          "required": false
+        },
+        {
+          "package": "nx-turborepo-pipelines",
+          "required": false
+        },
+        {
+          "package": "bazel-build-basics",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "technical-writing",
+      "type": "skill",
+      "topic": "technical writing",
+      "description": "For engineers who write docs: clear style, Diátaxis organisation, information architecture, editing passes and plain-language rewrites.",
+      "items": [
+        {
+          "package": "tech-writing-style",
+          "required": true
+        },
+        {
+          "package": "diataxis-framework",
+          "required": true
+        },
+        {
+          "package": "docs-editing-pass",
+          "required": true
+        },
+        {
+          "package": "docs-information-architecture",
+          "required": false
+        },
+        {
+          "package": "plain-language-rewrite",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "project-docs",
+      "type": "skill",
+      "topic": "project documentation",
+      "description": "For maintainers of any repo: READMEs, contributing guides, quickstarts, troubleshooting guides and useful code comments.",
+      "items": [
+        {
+          "package": "readme-writing",
+          "required": true
+        },
+        {
+          "package": "contributing-guide-writing",
+          "required": true
+        },
+        {
+          "package": "quickstart-tutorial-writing",
+          "required": true
+        },
+        {
+          "package": "troubleshooting-guide-writing",
+          "required": false
+        },
+        {
+          "package": "code-comment-standards",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "api-documentation",
+      "type": "skill",
+      "topic": "API documentation",
+      "description": "For teams documenting APIs and SDKs: complete reference docs, tested examples, task guides, SDK docs and API changelogs.",
+      "items": [
+        {
+          "package": "api-reference-docs-writing",
+          "required": true
+        },
+        {
+          "package": "api-docs-examples",
+          "required": true
+        },
+        {
+          "package": "api-guides-writing",
+          "required": true
+        },
+        {
+          "package": "sdk-docs-writing",
+          "required": false
+        },
+        {
+          "package": "api-changelog-writing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "docs-as-code",
+      "type": "skill",
+      "topic": "docs as code",
+      "description": "For teams keeping docs in the repo: PR-reviewed docs pipelines, static docs sites, prose linting, link checking and versioned docs.",
+      "items": [
+        {
+          "package": "docs-as-code-pipeline",
+          "required": true
+        },
+        {
+          "package": "docs-site-generators",
+          "required": true
+        },
+        {
+          "package": "docs-prose-linting",
+          "required": true
+        },
+        {
+          "package": "docs-link-checking",
+          "required": true
+        },
+        {
+          "package": "docs-versioning",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "debugging",
+      "type": "skill",
+      "topic": "debugging",
+      "description": "For developers chasing bugs: hypothesis-driven debugging, minimal repros, targeted logging, debugger techniques and git bisect.",
+      "items": [
+        {
+          "package": "debugging-scientific-method",
+          "required": true
+        },
+        {
+          "package": "minimal-repro-building",
+          "required": true
+        },
+        {
+          "package": "log-driven-debugging",
+          "required": true
+        },
+        {
+          "package": "debugger-techniques",
+          "required": false
+        },
+        {
+          "package": "git-bisect-debugging",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "hard-bug-hunting",
+      "type": "skill",
+      "topic": "hard-to-reproduce bugs",
+      "description": "For senior engineers on the nastiest bugs: race conditions, intermittent failures, production-only issues and crash dumps.",
+      "items": [
+        {
+          "package": "race-condition-debugging",
+          "required": true
+        },
+        {
+          "package": "intermittent-failure-diagnosis",
+          "required": true
+        },
+        {
+          "package": "production-bug-forensics",
+          "required": true
+        },
+        {
+          "package": "crash-dump-triage",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "performance-profiling",
+      "type": "skill",
+      "topic": "performance profiling",
+      "description": "For engineers making code faster: CPU flame graphs, memory leak hunting, latency analysis, benchmarks, regression detection and an optimisation playbook.",
+      "items": [
+        {
+          "package": "cpu-profiling-flamegraphs",
+          "required": true
+        },
+        {
+          "package": "memory-profiling-leaks",
+          "required": true
+        },
+        {
+          "package": "perf-optimization-playbook",
+          "required": true
+        },
+        {
+          "package": "latency-analysis",
+          "required": true
+        },
+        {
+          "package": "benchmark-methodology",
+          "required": false
+        },
+        {
+          "package": "perf-regression-detection",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dependency-upgrades",
+      "type": "skill",
+      "topic": "dependency upgrades",
+      "description": "For teams keeping dependencies current: upgrade planning, breaking-change triage, lockfile hygiene, update-bot config and major framework upgrades.",
+      "items": [
+        {
+          "package": "dependency-upgrade-planning",
+          "required": true
+        },
+        {
+          "package": "breaking-change-triage",
+          "required": true
+        },
+        {
+          "package": "framework-upgrade-playbook",
+          "required": true
+        },
+        {
+          "package": "lockfile-hygiene",
+          "required": false
+        },
+        {
+          "package": "dep-update-bot-config",
+          "required": false
+        },
+        {
+          "package": "deprecation-cleanup",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "oss-maintenance",
+      "type": "skill",
+      "topic": "open source maintenance",
+      "description": "For open source maintainers: issue triage, contributor onboarding, governance docs and protecting maintainer time.",
+      "items": [
+        {
+          "package": "oss-issue-triage",
+          "required": true
+        },
+        {
+          "package": "oss-contributor-onboarding",
+          "required": true
+        },
+        {
+          "package": "oss-maintainer-sustainability",
+          "required": true
+        },
+        {
+          "package": "oss-governance-docs",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "oss-project-setup",
+      "type": "skill",
+      "topic": "open source project setup",
+      "description": "For anyone publishing a new open source project: license choice, community files, issue and PR templates, README and versioning policy.",
+      "items": [
+        {
+          "package": "oss-repo-scaffolding",
+          "required": true
+        },
+        {
+          "package": "oss-license-selection",
+          "required": true
+        },
+        {
+          "package": "issue-pr-templates",
+          "required": true
+        },
+        {
+          "package": "readme-writing",
+          "required": false
+        },
+        {
+          "package": "semver-policy",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "release-management",
+      "type": "skill",
+      "topic": "release management",
+      "description": "For release owners: checklist-driven releases, release branches and backports, hotfixes and fixed-cadence release trains.",
+      "items": [
+        {
+          "package": "release-checklist",
+          "required": true
+        },
+        {
+          "package": "release-branching",
+          "required": true
+        },
+        {
+          "package": "hotfix-process",
+          "required": true
+        },
+        {
+          "package": "release-train-planning",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "changelogs-versioning",
+      "type": "skill",
+      "topic": "changelogs and versioning",
+      "description": "For library and product teams: semver policy, human changelogs, automated versioning, release notes and deprecation policy.",
+      "items": [
+        {
+          "package": "semver-policy",
+          "required": true
+        },
+        {
+          "package": "changelog-writing",
+          "required": true
+        },
+        {
+          "package": "release-notes-writing",
+          "required": true
+        },
+        {
+          "package": "changelog-automation",
+          "required": false
+        },
+        {
+          "package": "deprecation-policy",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "codebase-onboarding",
+      "type": "skill",
+      "topic": "codebase onboarding",
+      "description": "For engineers joining a codebase and the people onboarding them: codebase tours, architecture discovery, onboarding guides and domain glossaries.",
+      "items": [
+        {
+          "package": "codebase-tour-mapping",
+          "required": true
+        },
+        {
+          "package": "architecture-discovery",
+          "required": true
+        },
+        {
+          "package": "onboarding-doc-writing",
+          "required": true
+        },
+        {
+          "package": "domain-glossary-building",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "code-archaeology",
+      "type": "skill",
+      "topic": "code archaeology",
+      "description": "For developers who need to understand why code exists before changing it: git history digging, call-graph and data-flow tracing and ownership mapping.",
+      "items": [
+        {
+          "package": "git-history-archaeology",
+          "required": true
+        },
+        {
+          "package": "call-graph-tracing",
+          "required": true
+        },
+        {
+          "package": "data-flow-tracing",
+          "required": true
+        },
+        {
+          "package": "code-ownership-mapping",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "engineering-one-on-ones",
+      "type": "skill",
+      "topic": "engineering 1:1s",
+      "description": "For engineering managers: 1:1 preparation, SBI feedback, career conversations against a ladder and effective delegation.",
+      "items": [
+        {
+          "package": "eng-one-on-one-prep",
+          "required": true
+        },
+        {
+          "package": "eng-feedback-delivery",
+          "required": true
+        },
+        {
+          "package": "eng-career-conversations",
+          "required": true
+        },
+        {
+          "package": "eng-delegation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "estimation-planning",
+      "type": "skill",
+      "topic": "estimation and sprint planning",
+      "description": "For teams planning delivery: range estimates, vertical story splitting, sprint planning and Monte Carlo forecasts instead of guesses.",
+      "items": [
+        {
+          "package": "eng-estimation-techniques",
+          "required": true
+        },
+        {
+          "package": "story-splitting",
+          "required": true
+        },
+        {
+          "package": "eng-sprint-planning",
+          "required": true
+        },
+        {
+          "package": "monte-carlo-forecasting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "engineering-metrics",
+      "type": "skill",
+      "topic": "engineering delivery metrics",
+      "description": "For engineering leaders measuring delivery: DORA metrics, PR cycle time, flow metrics and developer experience surveys, read without gaming.",
+      "items": [
+        {
+          "package": "eng-dora-metrics",
+          "required": true
+        },
+        {
+          "package": "pr-cycle-time-analysis",
+          "required": true
+        },
+        {
+          "package": "flow-metrics",
+          "required": true
+        },
+        {
+          "package": "devex-surveys",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "engineering-planning",
+      "type": "skill",
+      "topic": "engineering roadmaps and updates",
+      "description": "For engineering leads: quarterly planning with capacity splits, technical roadmaps, project kickoff docs and crisp status updates.",
+      "items": [
+        {
+          "package": "quarterly-eng-planning",
+          "required": true
+        },
+        {
+          "package": "technical-roadmap-writing",
+          "required": true
+        },
+        {
+          "package": "project-kickoff-docs",
+          "required": true
+        },
+        {
+          "package": "eng-status-updates",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "team-rituals",
+      "type": "skill",
+      "topic": "engineering team rituals",
+      "description": "For engineering managers and team leads: retrospectives that lead to change, useful standups, working agreements and team health checks.",
+      "items": [
+        {
+          "package": "eng-retrospectives",
+          "required": true
+        },
+        {
+          "package": "team-working-agreements",
+          "required": true
+        },
+        {
+          "package": "standup-formats",
+          "required": true
+        },
+        {
+          "package": "team-health-checks",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "developer-environment",
+      "type": "skill",
+      "topic": "local developer environment",
+      "description": "For teams that want one-command setup: bootstrap scripts, devcontainers or Nix shells, task runners and fast pre-commit hooks.",
+      "items": [
+        {
+          "package": "dev-environment-setup",
+          "required": true
+        },
+        {
+          "package": "devcontainer-setup",
+          "required": true
+        },
+        {
+          "package": "task-runner-design",
+          "required": true
+        },
+        {
+          "package": "precommit-hook-setup",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "code-quality-gates",
+      "type": "skill",
+      "topic": "code quality gates",
+      "description": "For teams raising the code quality floor: linter strategy, baselined static analysis, complexity limits and fast merge gates.",
+      "items": [
+        {
+          "package": "linter-config-strategy",
+          "required": true
+        },
+        {
+          "package": "static-analysis-adoption",
+          "required": true
+        },
+        {
+          "package": "ci-quality-gates",
+          "required": true
+        },
+        {
+          "package": "code-complexity-limits",
+          "required": false
+        },
+        {
+          "package": "precommit-hook-setup",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "feature-flags",
+      "type": "skill",
+      "topic": "feature flag practice",
+      "description": "For teams shipping behind flags: flag lifecycle and ownership, progressive rollouts with kill switches, flag cleanup and trunk-based development.",
+      "items": [
+        {
+          "package": "feature-flag-lifecycle",
+          "required": true
+        },
+        {
+          "package": "progressive-rollouts",
+          "required": true
+        },
+        {
+          "package": "flag-debt-cleanup",
+          "required": true
+        },
+        {
+          "package": "trunk-based-development",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "error-handling-design",
+      "type": "skill",
+      "topic": "error handling design",
+      "description": "For developers designing robust code paths: error types and propagation, helpful error messages, retries with backoff and defensive checks at boundaries.",
+      "items": [
+        {
+          "package": "error-handling-patterns",
+          "required": true
+        },
+        {
+          "package": "error-message-writing",
+          "required": true
+        },
+        {
+          "package": "retry-backoff-design",
+          "required": true
+        },
+        {
+          "package": "defensive-programming",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "clean-code",
+      "type": "skill",
+      "topic": "readable code",
+      "description": "For developers who want code others can read: intent-revealing names, small functions, simple design, lower cognitive complexity and smell detection.",
+      "items": [
+        {
+          "package": "naming-conventions",
+          "required": true
+        },
+        {
+          "package": "function-design",
+          "required": true
+        },
+        {
+          "package": "simple-design-rules",
+          "required": true
+        },
+        {
+          "package": "cognitive-complexity-reduction",
+          "required": true
+        },
+        {
+          "package": "code-smell-detection",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "technical-specs",
+      "type": "skill",
+      "topic": "engineering specs",
+      "description": "For engineers turning product asks into buildable work: technical specs, testable acceptance criteria, edge-case enumeration and spec review.",
+      "items": [
+        {
+          "package": "technical-spec-writing",
+          "required": true
+        },
+        {
+          "package": "acceptance-criteria-writing",
+          "required": true
+        },
+        {
+          "package": "edge-case-enumeration",
+          "required": true
+        },
+        {
+          "package": "spec-review",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "engineering-standards",
+      "type": "skill",
+      "topic": "engineering standards",
+      "description": "For staff engineers and heads of engineering: a lean style guide, an engineering handbook, a technology radar and architecture principles.",
+      "items": [
+        {
+          "package": "coding-style-guide-writing",
+          "required": true
+        },
+        {
+          "package": "engineering-handbook",
+          "required": true
+        },
+        {
+          "package": "tech-radar",
+          "required": true
+        },
+        {
+          "package": "architecture-principles",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "agentic-coding",
+      "type": "skill",
+      "topic": "working with coding agents",
+      "description": "For developers working with AI coding agents: project instruction files, precise task briefs, verification loops and reviewing AI-generated diffs.",
+      "items": [
+        {
+          "package": "agents-md-authoring",
+          "required": true
+        },
+        {
+          "package": "agentic-task-briefs",
+          "required": true
+        },
+        {
+          "package": "agentic-verification-loop",
+          "required": true
+        },
+        {
+          "package": "ai-generated-code-review",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "test-writing-agents",
+      "type": "agent",
+      "topic": "automated test writing",
+      "description": "For teams growing test coverage: agents that write unit, integration and property-based tests and the test data builders they need.",
+      "items": [
+        {
+          "package": "unit-test-writer-agent",
+          "required": true
+        },
+        {
+          "package": "integration-test-writer-agent",
+          "required": true
+        },
+        {
+          "package": "property-test-writer-agent",
+          "required": false
+        },
+        {
+          "package": "test-data-builder-agent",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "e2e-testing-agents",
+      "type": "agent",
+      "topic": "end-to-end test automation",
+      "description": "For web teams: agents that map critical journeys, generate Playwright tests, triage e2e failures and migrate Cypress suites.",
+      "items": [
+        {
+          "package": "playwright-test-generator",
+          "required": true
+        },
+        {
+          "package": "e2e-failure-triager",
+          "required": true
+        },
+        {
+          "package": "e2e-flow-mapper",
+          "required": true
+        },
+        {
+          "package": "cypress-to-playwright-migrator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "tdd-pair-agents",
+      "type": "agent",
+      "topic": "TDD pairing",
+      "description": "For developers who want strict TDD with agents: separate test-first, minimal-implementation and refactor agents that keep each other honest.",
+      "items": [
+        {
+          "package": "tdd-test-first-agent",
+          "required": true
+        },
+        {
+          "package": "tdd-implementer-agent",
+          "required": true
+        },
+        {
+          "package": "tdd-refactor-agent",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "code-review-agents",
+      "type": "agent",
+      "topic": "automated code review",
+      "description": "For teams adding agent reviewers: correctness, readability and test-adequacy reviewers, a PR risk assessor and a summary writer that merges their findings.",
+      "items": [
+        {
+          "package": "diff-correctness-reviewer",
+          "required": true
+        },
+        {
+          "package": "readability-reviewer",
+          "required": true
+        },
+        {
+          "package": "test-adequacy-reviewer",
+          "required": true
+        },
+        {
+          "package": "pr-risk-assessor",
+          "required": false
+        },
+        {
+          "package": "review-summary-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "pull-request-agents",
+      "type": "agent",
+      "topic": "pull request workflow",
+      "description": "For developers shipping PRs: agents that write commit messages and PR descriptions, split big branches and work through review feedback.",
+      "items": [
+        {
+          "package": "pr-description-writer-agent",
+          "required": true
+        },
+        {
+          "package": "commit-message-agent",
+          "required": true
+        },
+        {
+          "package": "pr-splitter-agent",
+          "required": true
+        },
+        {
+          "package": "review-feedback-resolver",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "refactoring-agents",
+      "type": "agent",
+      "topic": "agent-assisted refactoring",
+      "description": "For teams cleaning up code: agents that scan for smells, plan safe refactorings, execute them step by step and hunt dead code.",
+      "items": [
+        {
+          "package": "code-smell-scanner",
+          "required": true
+        },
+        {
+          "package": "refactoring-planner",
+          "required": true
+        },
+        {
+          "package": "refactoring-executor",
+          "required": true
+        },
+        {
+          "package": "dead-code-hunter",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "legacy-modernisation-agents",
+      "type": "agent",
+      "topic": "legacy modernisation",
+      "description": "For teams taking on legacy systems: agents that map the system, write characterization tests, assess modernisation options and plan strangler migrations.",
+      "items": [
+        {
+          "package": "legacy-system-mapper",
+          "required": true
+        },
+        {
+          "package": "characterization-test-agent",
+          "required": true
+        },
+        {
+          "package": "modernisation-assessor",
+          "required": true
+        },
+        {
+          "package": "strangler-migration-planner",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "architecture-review-agents",
+      "type": "agent",
+      "topic": "architecture review",
+      "description": "For architects and tech leads: agents that review architecture against principles, critique design docs, draft ADRs and analyse trade-offs.",
+      "items": [
+        {
+          "package": "architecture-reviewer",
+          "required": true
+        },
+        {
+          "package": "design-doc-reviewer",
+          "required": true
+        },
+        {
+          "package": "adr-author-agent",
+          "required": true
+        },
+        {
+          "package": "tradeoff-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ddd-modeling-agents",
+      "type": "agent",
+      "topic": "domain modelling",
+      "description": "For teams applying DDD: agents that propose bounded contexts and context maps, model aggregates and facilitate event storming in text.",
+      "items": [
+        {
+          "package": "domain-modeler",
+          "required": true
+        },
+        {
+          "package": "bounded-context-mapper",
+          "required": true
+        },
+        {
+          "package": "event-storming-facilitator",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "system-design-agents",
+      "type": "agent",
+      "topic": "system design",
+      "description": "For engineers designing new systems: agents that draft the design, estimate capacity, analyse failure modes and advise on consistency.",
+      "items": [
+        {
+          "package": "system-design-planner",
+          "required": true
+        },
+        {
+          "package": "capacity-estimator",
+          "required": true
+        },
+        {
+          "package": "failure-mode-analyst",
+          "required": true
+        },
+        {
+          "package": "consistency-advisor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "debugging-agents",
+      "type": "agent",
+      "topic": "agent-assisted debugging",
+      "description": "For developers fixing bugs: agents that reproduce the bug, investigate root cause, bisect regressions and verify the fix.",
+      "items": [
+        {
+          "package": "bug-reproducer",
+          "required": true
+        },
+        {
+          "package": "bug-root-cause-investigator",
+          "required": true
+        },
+        {
+          "package": "fix-verifier",
+          "required": true
+        },
+        {
+          "package": "git-bisect-runner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "performance-agents",
+      "type": "agent",
+      "topic": "performance investigation",
+      "description": "For engineers chasing slowness: agents that analyse profiles, run sound benchmarks, track down regressions and optimise hot paths.",
+      "items": [
+        {
+          "package": "profiling-analyst",
+          "required": true
+        },
+        {
+          "package": "perf-regression-investigator",
+          "required": true
+        },
+        {
+          "package": "hot-path-optimizer",
+          "required": true
+        },
+        {
+          "package": "benchmark-runner-agent",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dependency-upgrade-agents",
+      "type": "agent",
+      "topic": "dependency upgrades",
+      "description": "For teams behind on dependencies: agents that plan batched upgrades, find breaking changes that affect you and carry out the upgrade.",
+      "items": [
+        {
+          "package": "dependency-upgrade-planner",
+          "required": true
+        },
+        {
+          "package": "breaking-change-analyst",
+          "required": true
+        },
+        {
+          "package": "upgrade-executor",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "docs-agents",
+      "type": "agent",
+      "topic": "documentation writing",
+      "description": "For teams with thin or stale docs: agents that write and edit pages, overhaul READMEs and audit docs for gaps.",
+      "items": [
+        {
+          "package": "docs-writer-agent",
+          "required": true
+        },
+        {
+          "package": "docs-editor-agent",
+          "required": true
+        },
+        {
+          "package": "docs-gap-auditor",
+          "required": true
+        },
+        {
+          "package": "readme-writer-agent",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "api-docs-agents",
+      "type": "agent",
+      "topic": "API documentation",
+      "description": "For API teams: agents that fill reference gaps, generate runnable examples and catch drift between docs and implementation.",
+      "items": [
+        {
+          "package": "api-reference-writer",
+          "required": true
+        },
+        {
+          "package": "api-example-generator",
+          "required": true
+        },
+        {
+          "package": "api-docs-drift-checker",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "release-agents",
+      "type": "agent",
+      "topic": "release automation",
+      "description": "For release owners: agents that draft release notes, curate the changelog, check release readiness and handle backports.",
+      "items": [
+        {
+          "package": "release-notes-writer-agent",
+          "required": true
+        },
+        {
+          "package": "changelog-curator",
+          "required": true
+        },
+        {
+          "package": "release-readiness-checker",
+          "required": true
+        },
+        {
+          "package": "backport-agent",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "oss-maintainer-agents",
+      "type": "agent",
+      "topic": "open source maintenance",
+      "description": "For open source maintainers: agents that triage issues, give first-pass reviews to contributors and sweep stale issues politely.",
+      "items": [
+        {
+          "package": "oss-issue-triager",
+          "required": true
+        },
+        {
+          "package": "oss-pr-first-reviewer",
+          "required": true
+        },
+        {
+          "package": "oss-stale-sweeper",
+          "required": true
+        },
+        {
+          "package": "changelog-curator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "codebase-onboarding-agents",
+      "type": "agent",
+      "topic": "codebase onboarding",
+      "description": "For new joiners and their teams: agents that explore a repo, answer questions about it, draw its architecture and write the onboarding guide.",
+      "items": [
+        {
+          "package": "codebase-explorer",
+          "required": true
+        },
+        {
+          "package": "codebase-question-answerer",
+          "required": true
+        },
+        {
+          "package": "onboarding-guide-writer",
+          "required": true
+        },
+        {
+          "package": "architecture-diagrammer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "monorepo-agents",
+      "type": "agent",
+      "topic": "monorepo upkeep",
+      "description": "For monorepo owners: agents that audit internal dependencies, work out the scope of a change and plan repo consolidation.",
+      "items": [
+        {
+          "package": "monorepo-dependency-auditor",
+          "required": true
+        },
+        {
+          "package": "affected-scope-analyzer",
+          "required": true
+        },
+        {
+          "package": "monorepo-migration-planner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "git-agents",
+      "type": "agent",
+      "topic": "git housekeeping",
+      "description": "For developers and repo owners: agents that resolve merge conflicts, tidy branch history before merge and clean up stale branches.",
+      "items": [
+        {
+          "package": "merge-conflict-resolver",
+          "required": true
+        },
+        {
+          "package": "git-history-cleaner",
+          "required": true
+        },
+        {
+          "package": "branch-hygiene-agent",
+          "required": true
+        },
+        {
+          "package": "commit-message-agent",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "tech-debt-agents",
+      "type": "agent",
+      "topic": "technical debt",
+      "description": "For tech leads: agents that audit a codebase into a debt register, scan hotspots and turn findings into a funded paydown plan.",
+      "items": [
+        {
+          "package": "tech-debt-auditor",
+          "required": true
+        },
+        {
+          "package": "debt-paydown-planner",
+          "required": true
+        },
+        {
+          "package": "code-smell-scanner",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "engineering-manager-agents",
+      "type": "agent",
+      "topic": "engineering management support",
+      "description": "For engineering managers: agents that prepare 1:1s, propose sprint plans, estimate work and write weekly status updates.",
+      "items": [
+        {
+          "package": "one-on-one-prep-agent",
+          "required": true
+        },
+        {
+          "package": "sprint-planning-assistant",
+          "required": true
+        },
+        {
+          "package": "eng-status-reporter",
+          "required": true
+        },
+        {
+          "package": "estimation-assistant",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "engineering-insights-agents",
+      "type": "agent",
+      "topic": "delivery insights",
+      "description": "For engineering leaders: agents that compute DORA and flow metrics, forecast delivery dates and analyse developer experience surveys.",
+      "items": [
+        {
+          "package": "delivery-metrics-analyst",
+          "required": true
+        },
+        {
+          "package": "delivery-forecaster",
+          "required": true
+        },
+        {
+          "package": "devex-survey-analyst",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "developer-experience-agents",
+      "type": "agent",
+      "topic": "developer experience",
+      "description": "For platform and DX teams: agents that fix broken dev setups, audit the inner loop for friction and speed up CI.",
+      "items": [
+        {
+          "package": "dev-env-doctor",
+          "required": true
+        },
+        {
+          "package": "dx-friction-auditor",
+          "required": true
+        },
+        {
+          "package": "ci-speedup-agent",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "large-scale-change-agents",
+      "type": "agent",
+      "topic": "large-scale changes",
+      "description": "For teams making codebase-wide changes: agents that write and test codemods and roll changes out across owners.",
+      "items": [
+        {
+          "package": "codemod-writer-agent",
+          "required": true
+        },
+        {
+          "package": "lsc-rollout-coordinator",
+          "required": true
+        },
+        {
+          "package": "upgrade-executor",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "test-quality-agents",
+      "type": "agent",
+      "topic": "test suite quality",
+      "description": "For teams who distrust their tests: agents that find coverage gaps, kill surviving mutants, review test smells and fix flaky tests.",
+      "items": [
+        {
+          "package": "test-gap-finder",
+          "required": true
+        },
+        {
+          "package": "flaky-test-investigator",
+          "required": true
+        },
+        {
+          "package": "test-smell-reviewer",
+          "required": true
+        },
+        {
+          "package": "mutation-survivor-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "spec-agents",
+      "type": "agent",
+      "topic": "engineering specs",
+      "description": "For engineers and PM-engineer pairs: agents that turn briefs into specs, write acceptance criteria and review specs for gaps before work starts.",
+      "items": [
+        {
+          "package": "spec-writer-agent",
+          "required": true
+        },
+        {
+          "package": "acceptance-criteria-agent",
+          "required": true
+        },
+        {
+          "package": "spec-reviewer-agent",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "qa-agents",
+      "type": "agent",
+      "topic": "QA support",
+      "description": "For QA engineers: agents that write test plans and exploratory charters, select regression tests and turn observations into bug reports.",
+      "items": [
+        {
+          "package": "test-plan-writer",
+          "required": true
+        },
+        {
+          "package": "exploratory-test-planner",
+          "required": true
+        },
+        {
+          "package": "regression-test-selector",
+          "required": true
+        },
+        {
+          "package": "bug-report-writer-agent",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "event-driven-agents",
+      "type": "agent",
+      "topic": "event-driven systems",
+      "description": "For teams on event-driven architectures: agents that map event flows, review schema changes and design sagas.",
+      "items": [
+        {
+          "package": "event-flow-mapper",
+          "required": true
+        },
+        {
+          "package": "event-schema-reviewer",
+          "required": true
+        },
+        {
+          "package": "saga-designer",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "agentic-coding-agents",
+      "type": "agent",
+      "topic": "coding-agent workflow",
+      "description": "For developers using coding agents daily: agents that plan implementations, maintain AGENTS.md/CLAUDE.md and verify AI-written diffs.",
+      "items": [
+        {
+          "package": "implementation-planner",
+          "required": true
+        },
+        {
+          "package": "agents-md-maintainer",
+          "required": true
+        },
+        {
+          "package": "ai-diff-verifier",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2473 @@
+{
+  "domain": "security",
+  "arks": [
+    {
+      "name": "owasp-top10-defense",
+      "type": "skill",
+      "topic": "owasp top 10",
+      "description": "For web developers and appsec engineers: concrete prevention and fix patterns for the OWASP Top 10 risks, from injection to broken access control and SSRF.",
+      "items": [
+        {
+          "package": "owasp-injection-prevention",
+          "required": true
+        },
+        {
+          "package": "owasp-access-control-checks",
+          "required": true
+        },
+        {
+          "package": "xss-output-encoding",
+          "required": true
+        },
+        {
+          "package": "owasp-ssrf-prevention",
+          "required": true
+        },
+        {
+          "package": "owasp-security-misconfig",
+          "required": false
+        },
+        {
+          "package": "insecure-design-patterns",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "web-input-security",
+      "type": "skill",
+      "topic": "web input handling security",
+      "description": "For backend and full-stack developers: validate input, encode output and safely handle forms, uploads and serialized data so agents stop introducing input-handling bugs.",
+      "items": [
+        {
+          "package": "input-validation-allowlists",
+          "required": true
+        },
+        {
+          "package": "xss-output-encoding",
+          "required": true
+        },
+        {
+          "package": "csrf-defenses",
+          "required": true
+        },
+        {
+          "package": "file-upload-hardening",
+          "required": false
+        },
+        {
+          "package": "unsafe-deserialization-prevention",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "api-security",
+      "type": "skill",
+      "topic": "api security",
+      "description": "For API teams: OWASP API Top 10 checks for object-level authorization, mass assignment, abuse limits and GraphQL hardening, plus an authorized testing checklist.",
+      "items": [
+        {
+          "package": "api-bola-checks",
+          "required": true
+        },
+        {
+          "package": "api-mass-assignment-prevention",
+          "required": true
+        },
+        {
+          "package": "api-abuse-rate-limiting",
+          "required": true
+        },
+        {
+          "package": "graphql-security-hardening",
+          "required": false
+        },
+        {
+          "package": "api-security-test-checklist",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "secure-code-review",
+      "type": "skill",
+      "topic": "secure code review",
+      "description": "For engineers reviewing pull requests: a risk-ordered secure review checklist, taint tracing, auth logic and crypto misuse checks, and a clear way to write findings.",
+      "items": [
+        {
+          "package": "secure-review-checklist",
+          "required": true
+        },
+        {
+          "package": "taint-flow-tracing",
+          "required": true
+        },
+        {
+          "package": "auth-logic-review",
+          "required": true
+        },
+        {
+          "package": "crypto-misuse-detection",
+          "required": false
+        },
+        {
+          "package": "security-finding-writeup",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "sast-pipeline",
+      "type": "skill",
+      "topic": "static application security testing",
+      "description": "For appsec and platform teams: write Semgrep and CodeQL rules, triage SAST noise and gate pull requests on results with baselines and exceptions.",
+      "items": [
+        {
+          "package": "semgrep-rule-authoring",
+          "required": true
+        },
+        {
+          "package": "codeql-query-basics",
+          "required": false
+        },
+        {
+          "package": "sast-false-positive-triage",
+          "required": true
+        },
+        {
+          "package": "sast-ci-gating",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "dast-scanning",
+      "type": "skill",
+      "topic": "dynamic application security testing",
+      "description": "For teams scanning their own or authorized staging apps: configure DAST scope and auth, run OWASP ZAP baseline and authenticated scans, and triage the findings.",
+      "items": [
+        {
+          "package": "dast-scope-configuration",
+          "required": true
+        },
+        {
+          "package": "zap-baseline-scanning",
+          "required": true
+        },
+        {
+          "package": "dast-findings-triage",
+          "required": true
+        },
+        {
+          "package": "security-finding-writeup",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "browser-security-headers",
+      "type": "skill",
+      "topic": "browser security controls",
+      "description": "For frontend and platform engineers: set security headers, a tight Content Security Policy, safe cookies, sane CORS and Subresource Integrity for third-party scripts.",
+      "items": [
+        {
+          "package": "security-headers-config",
+          "required": true
+        },
+        {
+          "package": "content-security-policy",
+          "required": true
+        },
+        {
+          "package": "cookie-security-attributes",
+          "required": true
+        },
+        {
+          "package": "cors-policy-review",
+          "required": true
+        },
+        {
+          "package": "subresource-integrity",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "authentication-hardening",
+      "type": "skill",
+      "topic": "authentication security",
+      "description": "For teams owning login: modern password hashing, MFA and passkey review, session hardening, safe account recovery and credential-stuffing defence.",
+      "items": [
+        {
+          "package": "password-storage-hashing",
+          "required": true
+        },
+        {
+          "package": "session-management-hardening",
+          "required": true
+        },
+        {
+          "package": "mfa-implementation-review",
+          "required": true
+        },
+        {
+          "package": "account-recovery-security",
+          "required": true
+        },
+        {
+          "package": "credential-stuffing-defense",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "authorization-design",
+      "type": "skill",
+      "topic": "application authorization",
+      "description": "For developers designing permissions: RBAC/ABAC models, access-control checks, tenant isolation and an automated authorization test matrix.",
+      "items": [
+        {
+          "package": "rbac-abac-design",
+          "required": true
+        },
+        {
+          "package": "owasp-access-control-checks",
+          "required": true
+        },
+        {
+          "package": "tenant-isolation-checks",
+          "required": true
+        },
+        {
+          "package": "authz-test-matrix",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "oauth-oidc-security",
+      "type": "skill",
+      "topic": "oauth and oidc security review",
+      "description": "For engineers integrating OAuth/OIDC: review flows for PKCE, state and redirect URI flaws, validate JWTs safely, and store tokens securely.",
+      "items": [
+        {
+          "package": "oauth-flow-security-review",
+          "required": true
+        },
+        {
+          "package": "jwt-validation-hardening",
+          "required": true
+        },
+        {
+          "package": "token-storage-security",
+          "required": true
+        },
+        {
+          "package": "sso-saml-security",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "threat-modeling",
+      "type": "skill",
+      "topic": "threat modeling",
+      "description": "For engineering and security teams: run STRIDE sessions with data flow diagrams, attack trees and abuse cases, and track mitigations to closure.",
+      "items": [
+        {
+          "package": "stride-threat-modeling",
+          "required": true
+        },
+        {
+          "package": "security-data-flow-diagrams",
+          "required": true
+        },
+        {
+          "package": "attack-tree-analysis",
+          "required": false
+        },
+        {
+          "package": "threat-model-tracking",
+          "required": true
+        },
+        {
+          "package": "abuse-case-writing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "secure-sdlc",
+      "type": "skill",
+      "topic": "secure software development lifecycle",
+      "description": "For engineering leaders and appsec teams: define security requirements from ASVS, review designs early, set proportionate SDLC gates and build a champions network.",
+      "items": [
+        {
+          "package": "security-requirements-definition",
+          "required": true
+        },
+        {
+          "package": "secure-design-review",
+          "required": true
+        },
+        {
+          "package": "sdlc-security-gates",
+          "required": true
+        },
+        {
+          "package": "asvs-verification",
+          "required": false
+        },
+        {
+          "package": "security-champions-program",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-app-security",
+      "type": "skill",
+      "topic": "llm application security",
+      "description": "For teams shipping LLM features and agents: defend against prompt injection, handle model output as untrusted, scope agent tool permissions and review against the OWASP LLM Top 10.",
+      "items": [
+        {
+          "package": "llm-prompt-injection-defense",
+          "required": true
+        },
+        {
+          "package": "llm-output-handling-security",
+          "required": true
+        },
+        {
+          "package": "agent-tool-permission-scoping",
+          "required": true
+        },
+        {
+          "package": "owasp-llm-top10-review",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "secrets-management",
+      "type": "skill",
+      "topic": "secrets management",
+      "description": "For developers and platform teams: use a secrets manager with short-lived credentials, keep secrets out of code and CI, and rotate them without downtime.",
+      "items": [
+        {
+          "package": "secrets-vault-patterns",
+          "required": true
+        },
+        {
+          "package": "app-secret-hygiene",
+          "required": true
+        },
+        {
+          "package": "ci-secrets-handling",
+          "required": true
+        },
+        {
+          "package": "secret-rotation-runbooks",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "secret-leak-prevention",
+      "type": "skill",
+      "topic": "secret leak prevention and response",
+      "description": "For repo owners and security teams: block secrets before commit, scan repos continuously, and respond to a leak by revoking, rotating and purging history.",
+      "items": [
+        {
+          "package": "secret-scanning-setup",
+          "required": true
+        },
+        {
+          "package": "pre-commit-secret-hooks",
+          "required": true
+        },
+        {
+          "package": "leaked-secret-response",
+          "required": true
+        },
+        {
+          "package": "git-history-secret-purge",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "software-supply-chain",
+      "type": "skill",
+      "topic": "software supply chain security",
+      "description": "For build and release engineers: generate SBOMs, pin dependencies, sign artifacts with Sigstore, emit SLSA provenance and block dependency confusion.",
+      "items": [
+        {
+          "package": "sbom-generation",
+          "required": true
+        },
+        {
+          "package": "dependency-pinning-lockfiles",
+          "required": true
+        },
+        {
+          "package": "sigstore-artifact-signing",
+          "required": true
+        },
+        {
+          "package": "slsa-build-provenance",
+          "required": true
+        },
+        {
+          "package": "dependency-confusion-defense",
+          "required": false
+        },
+        {
+          "package": "new-dependency-vetting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dependency-vulnerabilities",
+      "type": "skill",
+      "topic": "dependency vulnerability management",
+      "description": "For developers drowning in Dependabot alerts: scan with osv-scanner, check reachability, triage what matters and publish VEX for what does not.",
+      "items": [
+        {
+          "package": "dependency-vuln-triage",
+          "required": true
+        },
+        {
+          "package": "vuln-reachability-analysis",
+          "required": true
+        },
+        {
+          "package": "osv-scanner-usage",
+          "required": true
+        },
+        {
+          "package": "vex-statements",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "github-repo-security",
+      "type": "skill",
+      "topic": "source repository security",
+      "description": "For GitHub org admins: audit org and repo security settings, enforce branch protection and signed commits, and lock down Actions workflows.",
+      "items": [
+        {
+          "package": "repo-security-settings-audit",
+          "required": true
+        },
+        {
+          "package": "branch-protection-hardening",
+          "required": true
+        },
+        {
+          "package": "github-actions-security",
+          "required": true
+        },
+        {
+          "package": "secret-scanning-setup",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cicd-pipeline-security",
+      "type": "skill",
+      "topic": "ci/cd pipeline security",
+      "description": "For platform teams: harden pipelines with least-privilege tokens, OIDC cloud federation, isolated runners and safe secret handling.",
+      "items": [
+        {
+          "package": "github-actions-security",
+          "required": true
+        },
+        {
+          "package": "ci-oidc-cloud-federation",
+          "required": true
+        },
+        {
+          "package": "ci-secrets-handling",
+          "required": true
+        },
+        {
+          "package": "build-runner-hardening",
+          "required": true
+        },
+        {
+          "package": "sigstore-artifact-signing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aws-security-posture",
+      "type": "skill",
+      "topic": "aws security posture",
+      "description": "For AWS account owners: least-privilege IAM, S3 exposure checks, CloudTrail monitoring and triage of Security Hub and GuardDuty findings.",
+      "items": [
+        {
+          "package": "aws-iam-least-privilege",
+          "required": true
+        },
+        {
+          "package": "aws-s3-exposure-review",
+          "required": true
+        },
+        {
+          "package": "aws-cloudtrail-monitoring",
+          "required": true
+        },
+        {
+          "package": "aws-security-hub-triage",
+          "required": true
+        },
+        {
+          "package": "aws-guardduty-response",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "gcp-security-posture",
+      "type": "skill",
+      "topic": "gcp security posture",
+      "description": "For GCP project owners: clean up IAM bindings and service account keys, apply org policy guardrails and triage Security Command Center findings.",
+      "items": [
+        {
+          "package": "gcp-iam-review",
+          "required": true
+        },
+        {
+          "package": "gcp-org-policy-guardrails",
+          "required": true
+        },
+        {
+          "package": "gcp-scc-findings-triage",
+          "required": true
+        },
+        {
+          "package": "workload-identity-federation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "azure-security-posture",
+      "type": "skill",
+      "topic": "azure security posture",
+      "description": "For Azure administrators: review RBAC, design Conditional Access, enforce security baselines with Azure Policy and work Defender for Cloud recommendations.",
+      "items": [
+        {
+          "package": "azure-rbac-review",
+          "required": true
+        },
+        {
+          "package": "entra-conditional-access",
+          "required": true
+        },
+        {
+          "package": "azure-policy-baselines",
+          "required": true
+        },
+        {
+          "package": "defender-for-cloud-triage",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "multi-cloud-posture",
+      "type": "skill",
+      "topic": "cloud security posture management",
+      "description": "For security teams covering several clouds: run posture scanners, map CIS benchmarks, find internet exposure and confirm logging coverage.",
+      "items": [
+        {
+          "package": "cloud-misconfig-scanning",
+          "required": true
+        },
+        {
+          "package": "cis-benchmark-mapping",
+          "required": true
+        },
+        {
+          "package": "cloud-network-exposure-review",
+          "required": true
+        },
+        {
+          "package": "cloud-security-logging-coverage",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "cloud-iam-governance",
+      "type": "skill",
+      "topic": "cloud iam governance",
+      "description": "For cloud platform and identity teams: run access reviews, govern cross-account trust, replace keys with workload identity and design break-glass access.",
+      "items": [
+        {
+          "package": "iam-access-review-process",
+          "required": true
+        },
+        {
+          "package": "cross-account-access-review",
+          "required": true
+        },
+        {
+          "package": "workload-identity-federation",
+          "required": true
+        },
+        {
+          "package": "break-glass-access",
+          "required": true
+        },
+        {
+          "package": "privileged-access-management",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "workforce-identity-security",
+      "type": "skill",
+      "topic": "workforce identity and access",
+      "description": "For IT and identity teams: automate joiner-mover-leaver, secure SSO and SCIM, run privileged access and Conditional Access policies.",
+      "items": [
+        {
+          "package": "joiner-mover-leaver-controls",
+          "required": true
+        },
+        {
+          "package": "sso-saml-security",
+          "required": true
+        },
+        {
+          "package": "scim-provisioning-security",
+          "required": true
+        },
+        {
+          "package": "privileged-access-management",
+          "required": true
+        },
+        {
+          "package": "entra-conditional-access",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "iac-security",
+      "type": "skill",
+      "topic": "infrastructure as code security",
+      "description": "For infra engineers: scan Terraform and manifests for misconfigurations, block bad changes with policy as code and keep secrets out of state.",
+      "items": [
+        {
+          "package": "iac-security-scanning",
+          "required": true
+        },
+        {
+          "package": "policy-as-code-guardrails",
+          "required": true
+        },
+        {
+          "package": "iac-secret-detection",
+          "required": true
+        },
+        {
+          "package": "cis-benchmark-mapping",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "container-image-security",
+      "type": "skill",
+      "topic": "container image security",
+      "description": "For teams building images: hardened Dockerfiles, minimal bases, CI image scanning and signature verification at deploy.",
+      "items": [
+        {
+          "package": "dockerfile-hardening",
+          "required": true
+        },
+        {
+          "package": "container-image-scanning",
+          "required": true
+        },
+        {
+          "package": "minimal-base-images",
+          "required": true
+        },
+        {
+          "package": "sigstore-artifact-signing",
+          "required": false
+        },
+        {
+          "package": "sbom-generation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kubernetes-hardening",
+      "type": "skill",
+      "topic": "kubernetes security hardening",
+      "description": "For cluster operators: lock down RBAC, enforce Pod Security Standards and admission policies, default-deny networking and protect secrets.",
+      "items": [
+        {
+          "package": "k8s-rbac-hardening",
+          "required": true
+        },
+        {
+          "package": "pod-security-standards",
+          "required": true
+        },
+        {
+          "package": "k8s-network-policies",
+          "required": true
+        },
+        {
+          "package": "k8s-admission-policies",
+          "required": true
+        },
+        {
+          "package": "k8s-secrets-protection",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kubernetes-runtime-security",
+      "type": "skill",
+      "topic": "kubernetes runtime security",
+      "description": "For platform and detection teams: detect suspicious container behaviour with Falco, analyse audit logs and reduce container escape paths.",
+      "items": [
+        {
+          "package": "falco-runtime-rules",
+          "required": true
+        },
+        {
+          "package": "k8s-audit-log-analysis",
+          "required": true
+        },
+        {
+          "package": "container-escape-mitigation",
+          "required": true
+        },
+        {
+          "package": "pod-security-standards",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "linux-host-hardening",
+      "type": "skill",
+      "topic": "linux server hardening",
+      "description": "For sysadmins and SREs: harden Linux hosts against CIS benchmarks, lock down SSH, add auditd rules and keep patching on schedule.",
+      "items": [
+        {
+          "package": "linux-cis-hardening",
+          "required": true
+        },
+        {
+          "package": "ssh-hardening",
+          "required": true
+        },
+        {
+          "package": "linux-auditd-rules",
+          "required": true
+        },
+        {
+          "package": "patch-rollout-rings",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "endpoint-security",
+      "type": "skill",
+      "topic": "endpoint security",
+      "description": "For IT and security teams managing laptops and servers: apply Windows and macOS baselines, deploy and tune EDR and remove shared admin passwords.",
+      "items": [
+        {
+          "package": "windows-hardening-baselines",
+          "required": true
+        },
+        {
+          "package": "macos-hardening-baselines",
+          "required": true
+        },
+        {
+          "package": "edr-deployment-tuning",
+          "required": true
+        },
+        {
+          "package": "laps-credential-hygiene",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "active-directory-security",
+      "type": "skill",
+      "topic": "active directory security",
+      "description": "For Windows admins and defenders: implement AD tiering, audit privileged groups, detect Kerberos abuse and roll out LAPS.",
+      "items": [
+        {
+          "package": "ad-tiering-model",
+          "required": true
+        },
+        {
+          "package": "ad-privileged-group-audit",
+          "required": true
+        },
+        {
+          "package": "kerberos-attack-detection",
+          "required": true
+        },
+        {
+          "package": "laps-credential-hygiene",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "network-security",
+      "type": "skill",
+      "topic": "network security",
+      "description": "For network and cloud engineers: review firewall rules, design segmentation, harden TLS and move to zero-trust access.",
+      "items": [
+        {
+          "package": "firewall-rule-review",
+          "required": true
+        },
+        {
+          "package": "network-segmentation-design",
+          "required": true
+        },
+        {
+          "package": "tls-configuration-hardening",
+          "required": true
+        },
+        {
+          "package": "zero-trust-access-design",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "edge-protection",
+      "type": "skill",
+      "topic": "waf, ddos and bot defense",
+      "description": "For teams running internet-facing services: tune WAF rules, plan DDoS resilience, stop abusive bots and set API rate limits.",
+      "items": [
+        {
+          "package": "waf-rule-tuning",
+          "required": true
+        },
+        {
+          "package": "ddos-resilience-planning",
+          "required": true
+        },
+        {
+          "package": "bot-traffic-defense",
+          "required": true
+        },
+        {
+          "package": "api-abuse-rate-limiting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "pentest-engagement-management",
+      "type": "skill",
+      "topic": "authorized penetration test management",
+      "description": "For security consultants and internal red teams running authorized engagements: scope and rules of engagement, test plans, evidence handling, reporting and retests.",
+      "items": [
+        {
+          "package": "pentest-scoping-roe",
+          "required": true
+        },
+        {
+          "package": "pentest-test-plan",
+          "required": true
+        },
+        {
+          "package": "pentest-evidence-handling",
+          "required": true
+        },
+        {
+          "package": "pentest-report-writing",
+          "required": true
+        },
+        {
+          "package": "pentest-retest-verification",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "web-app-pentest-methodology",
+      "type": "skill",
+      "topic": "authorized web application testing",
+      "description": "For testers on authorized web engagements: choose WSTG test cases, test authorization and business logic, and score findings with CVSS.",
+      "items": [
+        {
+          "package": "owasp-wstg-test-cases",
+          "required": true
+        },
+        {
+          "package": "authz-test-matrix",
+          "required": true
+        },
+        {
+          "package": "business-logic-testing",
+          "required": true
+        },
+        {
+          "package": "cvss-severity-scoring",
+          "required": true
+        },
+        {
+          "package": "security-finding-writeup",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "vulnerability-disclosure-program",
+      "type": "skill",
+      "topic": "vulnerability disclosure and bug bounty",
+      "description": "For companies receiving external reports: write a VDP with safe harbour, publish security.txt, triage reports and communicate well with researchers.",
+      "items": [
+        {
+          "package": "vdp-policy-writing",
+          "required": true
+        },
+        {
+          "package": "security-txt-setup",
+          "required": true
+        },
+        {
+          "package": "bug-bounty-report-triage",
+          "required": true
+        },
+        {
+          "package": "researcher-communication",
+          "required": true
+        },
+        {
+          "package": "cvss-severity-scoring",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "incident-response",
+      "type": "skill",
+      "topic": "security incident response",
+      "description": "For security and on-call teams: write IR playbooks, triage incidents, preserve evidence, draft communications and run blameless reviews.",
+      "items": [
+        {
+          "package": "ir-playbook-authoring",
+          "required": true
+        },
+        {
+          "package": "security-incident-triage",
+          "required": true
+        },
+        {
+          "package": "forensic-evidence-preservation",
+          "required": true
+        },
+        {
+          "package": "security-incident-comms",
+          "required": false
+        },
+        {
+          "package": "security-post-incident-review",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "cloud-incident-response",
+      "type": "skill",
+      "topic": "cloud incident response",
+      "description": "For cloud security responders: scope compromised credentials with audit logs, contain safely without destroying evidence and rebuild the attacker timeline.",
+      "items": [
+        {
+          "package": "cloud-credential-compromise-response",
+          "required": true
+        },
+        {
+          "package": "cloud-log-forensics",
+          "required": true
+        },
+        {
+          "package": "cloud-containment-actions",
+          "required": true
+        },
+        {
+          "package": "aws-guardduty-response",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ransomware-readiness",
+      "type": "skill",
+      "topic": "ransomware readiness",
+      "description": "For IT and security leads: verify immutable restorable backups, prepare a ransomware playbook and exercise it with tabletops.",
+      "items": [
+        {
+          "package": "ransomware-response-playbook",
+          "required": true
+        },
+        {
+          "package": "immutable-backup-verification",
+          "required": true
+        },
+        {
+          "package": "security-tabletop-exercises",
+          "required": true
+        },
+        {
+          "package": "network-segmentation-design",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "digital-forensics",
+      "type": "skill",
+      "topic": "digital forensics and investigation",
+      "description": "For incident responders: preserve and track evidence, triage memory images, analyse Windows artifacts and build timelines.",
+      "items": [
+        {
+          "package": "chain-of-custody",
+          "required": true
+        },
+        {
+          "package": "memory-forensics-triage",
+          "required": true
+        },
+        {
+          "package": "windows-artifact-analysis",
+          "required": true
+        },
+        {
+          "package": "forensic-timeline-analysis",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "phishing-defense",
+      "type": "skill",
+      "topic": "phishing and email security",
+      "description": "For SOC and IT teams: analyse reported phishing, purge malicious mail, run the user-report queue and enforce SPF, DKIM and DMARC.",
+      "items": [
+        {
+          "package": "phishing-email-analysis",
+          "required": true
+        },
+        {
+          "package": "mailbox-purge-response",
+          "required": true
+        },
+        {
+          "package": "user-reported-phish-triage",
+          "required": true
+        },
+        {
+          "package": "email-auth-spf-dkim-dmarc",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "detection-engineering",
+      "type": "skill",
+      "topic": "detection engineering",
+      "description": "For detection engineers: write Sigma rules, manage detections as code, validate them in a lab, map ATT&CK coverage and tune noisy alerts.",
+      "items": [
+        {
+          "package": "sigma-rule-authoring",
+          "required": true
+        },
+        {
+          "package": "detection-as-code",
+          "required": true
+        },
+        {
+          "package": "detection-validation-testing",
+          "required": true
+        },
+        {
+          "package": "mitre-attack-mapping",
+          "required": true
+        },
+        {
+          "package": "alert-tuning",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "siem-detection-queries",
+      "type": "skill",
+      "topic": "siem query languages",
+      "description": "For SOC analysts and detection engineers: write detections and investigations in Splunk SPL, Sentinel KQL and Elastic EQL, and onboard log sources cleanly.",
+      "items": [
+        {
+          "package": "splunk-spl-detections",
+          "required": true
+        },
+        {
+          "package": "kql-sentinel-detections",
+          "required": true
+        },
+        {
+          "package": "elastic-security-detections",
+          "required": true
+        },
+        {
+          "package": "siem-log-onboarding",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "threat-hunting",
+      "type": "skill",
+      "topic": "threat hunting",
+      "description": "For threat hunters: run hypothesis-driven hunts, keep an ATT&CK-tagged query library and turn successful hunts into detections.",
+      "items": [
+        {
+          "package": "hypothesis-threat-hunting",
+          "required": true
+        },
+        {
+          "package": "hunt-query-library",
+          "required": true
+        },
+        {
+          "package": "hunt-findings-reporting",
+          "required": true
+        },
+        {
+          "package": "mitre-attack-mapping",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "soc-operations",
+      "type": "skill",
+      "topic": "security operations center",
+      "description": "For SOC leads and analysts: triage runbooks, alert enrichment, SOAR playbooks with approval gates and clean shift handovers.",
+      "items": [
+        {
+          "package": "alert-triage-runbooks",
+          "required": true
+        },
+        {
+          "package": "alert-enrichment",
+          "required": true
+        },
+        {
+          "package": "soar-playbook-design",
+          "required": true
+        },
+        {
+          "package": "soc-shift-handover",
+          "required": false
+        },
+        {
+          "package": "alert-tuning",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "threat-intelligence",
+      "type": "skill",
+      "topic": "cyber threat intelligence",
+      "description": "For CTI analysts: manage IOCs, consume STIX/TAXII feeds, write intel reports and turn adversary behaviour into detections.",
+      "items": [
+        {
+          "package": "ioc-management",
+          "required": true
+        },
+        {
+          "package": "stix-taxii-feeds",
+          "required": true
+        },
+        {
+          "package": "threat-intel-reporting",
+          "required": true
+        },
+        {
+          "package": "intel-driven-detection",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "malware-triage",
+      "type": "skill",
+      "topic": "defensive malware triage",
+      "description": "For defenders handling suspicious files in an isolated lab: static triage, sandbox report reading and YARA rules for detection.",
+      "items": [
+        {
+          "package": "static-malware-triage",
+          "required": true
+        },
+        {
+          "package": "sandbox-report-interpretation",
+          "required": true
+        },
+        {
+          "package": "yara-rule-authoring",
+          "required": true
+        },
+        {
+          "package": "ioc-management",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "vulnerability-management",
+      "type": "skill",
+      "topic": "vulnerability management program",
+      "description": "For vuln management owners: run authenticated scans, prioritise with EPSS and track CISA KEV, set SLAs, handle exceptions and report metrics.",
+      "items": [
+        {
+          "package": "vuln-scanner-operations",
+          "required": true
+        },
+        {
+          "package": "cvss-epss-prioritization",
+          "required": true
+        },
+        {
+          "package": "kev-catalog-tracking",
+          "required": true
+        },
+        {
+          "package": "vuln-sla-policy",
+          "required": true
+        },
+        {
+          "package": "vuln-exception-process",
+          "required": false
+        },
+        {
+          "package": "vuln-metrics-reporting",
+          "required": false
+        },
+        {
+          "package": "asset-inventory-security",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "soc2-compliance",
+      "type": "skill",
+      "topic": "soc 2 compliance engineering",
+      "description": "For startups and compliance owners preparing SOC 2: map controls, find gaps, automate evidence, draft policies and answer auditor requests.",
+      "items": [
+        {
+          "package": "soc2-control-mapping",
+          "required": true
+        },
+        {
+          "package": "soc2-readiness-gap-analysis",
+          "required": true
+        },
+        {
+          "package": "soc2-evidence-collection",
+          "required": true
+        },
+        {
+          "package": "audit-request-response",
+          "required": true
+        },
+        {
+          "package": "infosec-policy-drafting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "iso27001-compliance",
+      "type": "skill",
+      "topic": "iso 27001 isms",
+      "description": "For teams implementing ISO 27001:2022: scope the ISMS, keep a risk register, implement Annex A controls, maintain the SoA and run internal audits.",
+      "items": [
+        {
+          "package": "iso27001-isms-scoping",
+          "required": true
+        },
+        {
+          "package": "security-risk-register",
+          "required": true
+        },
+        {
+          "package": "iso27001-annex-a-controls",
+          "required": true
+        },
+        {
+          "package": "statement-of-applicability",
+          "required": true
+        },
+        {
+          "package": "iso27001-internal-audit",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "pci-dss-compliance",
+      "type": "skill",
+      "topic": "pci dss compliance",
+      "description": "For teams handling card payments: map cardholder data flows, shrink scope, pick the right SAQ and collect PCI DSS v4.0 evidence.",
+      "items": [
+        {
+          "package": "pci-cardholder-data-flows",
+          "required": true
+        },
+        {
+          "package": "pci-scope-reduction",
+          "required": true
+        },
+        {
+          "package": "pci-saq-selection",
+          "required": true
+        },
+        {
+          "package": "pci-control-evidence",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "hipaa-security",
+      "type": "skill",
+      "topic": "hipaa security safeguards",
+      "description": "For health-tech engineering teams: inventory PHI, implement Security Rule technical safeguards and draft the risk analysis for compliance sign-off.",
+      "items": [
+        {
+          "package": "phi-data-inventory",
+          "required": true
+        },
+        {
+          "package": "hipaa-technical-safeguards",
+          "required": true
+        },
+        {
+          "package": "hipaa-risk-analysis",
+          "required": true
+        },
+        {
+          "package": "baa-security-review",
+          "required": false
+        },
+        {
+          "package": "security-audit-logging",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "gdpr-technical-measures",
+      "type": "skill",
+      "topic": "gdpr technical measures",
+      "description": "For engineers supporting GDPR: build RoPA from data maps, draft DPIAs for DPO review, implement DSARs, retention and deletion, and pseudonymisation.",
+      "items": [
+        {
+          "package": "gdpr-ropa-data-mapping",
+          "required": true
+        },
+        {
+          "package": "dsar-handling",
+          "required": true
+        },
+        {
+          "package": "gdpr-retention-deletion",
+          "required": true
+        },
+        {
+          "package": "dpia-drafting",
+          "required": false
+        },
+        {
+          "package": "pseudonymization-techniques",
+          "required": false
+        },
+        {
+          "package": "cross-border-transfer-measures",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "privacy-engineering",
+      "type": "skill",
+      "topic": "privacy engineering",
+      "description": "For product engineers: discover PII, minimise collection, apply privacy by design and LINDDUN, keep PII out of logs and record consent properly.",
+      "items": [
+        {
+          "package": "pii-discovery-classification",
+          "required": true
+        },
+        {
+          "package": "data-minimization-review",
+          "required": true
+        },
+        {
+          "package": "privacy-by-design-review",
+          "required": true
+        },
+        {
+          "package": "linddun-privacy-threats",
+          "required": false
+        },
+        {
+          "package": "pii-safe-logging",
+          "required": true
+        },
+        {
+          "package": "consent-records-design",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "applied-cryptography",
+      "type": "skill",
+      "topic": "applied cryptography",
+      "description": "For developers using crypto: pick the right primitives, encrypt with AEAD and envelope encryption, manage keys in KMS and use secure randomness.",
+      "items": [
+        {
+          "package": "crypto-algorithm-selection",
+          "required": true
+        },
+        {
+          "package": "aead-encryption-patterns",
+          "required": true
+        },
+        {
+          "package": "kms-key-management",
+          "required": true
+        },
+        {
+          "package": "secure-randomness",
+          "required": true
+        },
+        {
+          "package": "crypto-misuse-detection",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "pki-and-tls",
+      "type": "skill",
+      "topic": "pki and certificate management",
+      "description": "For platform teams: automate certificate lifecycle, design an internal PKI, run mTLS between services and harden TLS settings.",
+      "items": [
+        {
+          "package": "tls-certificate-lifecycle",
+          "required": true
+        },
+        {
+          "package": "internal-pki-design",
+          "required": true
+        },
+        {
+          "package": "mtls-service-auth",
+          "required": true
+        },
+        {
+          "package": "tls-configuration-hardening",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "post-quantum-readiness",
+      "type": "skill",
+      "topic": "post-quantum cryptography readiness",
+      "description": "For security architects: inventory cryptography, plan a post-quantum migration with hybrid ML-KEM and fix crypto agility gaps.",
+      "items": [
+        {
+          "package": "crypto-inventory",
+          "required": true
+        },
+        {
+          "package": "pqc-migration-planning",
+          "required": true
+        },
+        {
+          "package": "crypto-algorithm-selection",
+          "required": true
+        },
+        {
+          "package": "tls-certificate-lifecycle",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "security-awareness",
+      "type": "skill",
+      "topic": "security awareness program",
+      "description": "For security and people teams: build a role-based awareness curriculum, run approved phishing simulations, secure-coding training and fair metrics.",
+      "items": [
+        {
+          "package": "security-awareness-curriculum",
+          "required": true
+        },
+        {
+          "package": "phishing-simulation-program",
+          "required": true
+        },
+        {
+          "package": "secure-coding-training",
+          "required": false
+        },
+        {
+          "package": "awareness-metrics",
+          "required": true
+        },
+        {
+          "package": "security-champions-program",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "security-logging",
+      "type": "skill",
+      "topic": "security logging and audit trails",
+      "description": "For backend and platform engineers: design audit logs, a shared security event taxonomy, tamper-evident storage and PII-safe logging.",
+      "items": [
+        {
+          "package": "security-audit-logging",
+          "required": true
+        },
+        {
+          "package": "security-event-taxonomy",
+          "required": true
+        },
+        {
+          "package": "log-integrity-protection",
+          "required": true
+        },
+        {
+          "package": "pii-safe-logging",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "data-protection",
+      "type": "skill",
+      "topic": "data security and dlp",
+      "description": "For data and security teams: classify data, encrypt databases and fields, design DLP rules and review SaaS sharing and OAuth grants.",
+      "items": [
+        {
+          "package": "data-classification-scheme",
+          "required": true
+        },
+        {
+          "package": "database-encryption-at-rest",
+          "required": true
+        },
+        {
+          "package": "dlp-rule-design",
+          "required": true
+        },
+        {
+          "package": "saas-security-posture",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "mobile-app-security",
+      "type": "skill",
+      "topic": "mobile application security",
+      "description": "For iOS and Android developers: MASVS checks, secure on-device storage, network security config and pinning, and app attestation.",
+      "items": [
+        {
+          "package": "owasp-masvs-checks",
+          "required": true
+        },
+        {
+          "package": "mobile-secure-storage",
+          "required": true
+        },
+        {
+          "package": "mobile-network-security",
+          "required": true
+        },
+        {
+          "package": "mobile-app-integrity",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "third-party-risk",
+      "type": "skill",
+      "topic": "third-party security risk",
+      "description": "For security and procurement teams: assess vendors, read SOC 2 reports critically, and answer customer questionnaires and trust center content accurately.",
+      "items": [
+        {
+          "package": "third-party-security-assessment",
+          "required": true
+        },
+        {
+          "package": "soc2-report-review",
+          "required": true
+        },
+        {
+          "package": "security-questionnaire-response",
+          "required": true
+        },
+        {
+          "package": "trust-center-content",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "security-governance",
+      "type": "skill",
+      "topic": "security program governance",
+      "description": "For CISOs and security leads: assess NIST CSF maturity, plan the roadmap, write policies, run exceptions and report to the board.",
+      "items": [
+        {
+          "package": "nist-csf-assessment",
+          "required": true
+        },
+        {
+          "package": "security-roadmap-planning",
+          "required": true
+        },
+        {
+          "package": "infosec-policy-drafting",
+          "required": true
+        },
+        {
+          "package": "security-exception-process",
+          "required": false
+        },
+        {
+          "package": "security-metrics-reporting",
+          "required": true
+        },
+        {
+          "package": "security-risk-register",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "appsec-review-agents",
+      "type": "agent",
+      "topic": "application security code review",
+      "description": "For teams wanting security review on every PR: subagents that review diffs for exploitable bugs, auth flaws, injection paths, leaked secrets and web hardening gaps.",
+      "items": [
+        {
+          "package": "secure-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "auth-flow-reviewer",
+          "required": true
+        },
+        {
+          "package": "injection-flow-reviewer",
+          "required": true
+        },
+        {
+          "package": "secrets-diff-scanner",
+          "required": false
+        },
+        {
+          "package": "web-hardening-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "threat-modeling-agents",
+      "type": "agent",
+      "topic": "threat modeling",
+      "description": "For teams adopting threat modeling: subagents that build DFDs, facilitate STRIDE sessions, critique existing models and turn threats into tickets.",
+      "items": [
+        {
+          "package": "threat-model-facilitator",
+          "required": true
+        },
+        {
+          "package": "security-dfd-builder",
+          "required": true
+        },
+        {
+          "package": "mitigation-planner",
+          "required": true
+        },
+        {
+          "package": "threat-model-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "secure-design-agents",
+      "type": "agent",
+      "topic": "secure design review",
+      "description": "For architects and tech leads: subagents that review designs before build, write ASVS-based security requirements and plan mitigations.",
+      "items": [
+        {
+          "package": "architecture-security-reviewer",
+          "required": true
+        },
+        {
+          "package": "security-requirements-writer",
+          "required": true
+        },
+        {
+          "package": "mitigation-planner",
+          "required": false
+        },
+        {
+          "package": "threat-model-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "sast-agents",
+      "type": "agent",
+      "topic": "static analysis operations",
+      "description": "For appsec teams running SAST: subagents that triage findings and write Semgrep and CodeQL rules for newly discovered bug patterns.",
+      "items": [
+        {
+          "package": "sast-finding-triager",
+          "required": true
+        },
+        {
+          "package": "semgrep-rule-writer",
+          "required": true
+        },
+        {
+          "package": "codeql-query-writer",
+          "required": false
+        },
+        {
+          "package": "secure-code-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dependency-security-agents",
+      "type": "agent",
+      "topic": "dependency security",
+      "description": "For maintainers: subagents that triage dependency CVEs, vet new packages, audit SBOMs and open minimal security upgrade PRs.",
+      "items": [
+        {
+          "package": "dependency-vuln-triager",
+          "required": true
+        },
+        {
+          "package": "security-upgrade-pr-author",
+          "required": true
+        },
+        {
+          "package": "dependency-vetting-agent",
+          "required": true
+        },
+        {
+          "package": "sbom-auditor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "supply-chain-security-agents",
+      "type": "agent",
+      "topic": "build and release integrity",
+      "description": "For platform teams: subagents that audit CI pipelines, harden GitHub Actions, check repo settings and verify release signatures and provenance.",
+      "items": [
+        {
+          "package": "ci-pipeline-security-auditor",
+          "required": true
+        },
+        {
+          "package": "github-actions-hardener",
+          "required": true
+        },
+        {
+          "package": "release-provenance-verifier",
+          "required": true
+        },
+        {
+          "package": "repo-settings-auditor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "secrets-response-agents",
+      "type": "agent",
+      "topic": "secrets incident handling",
+      "description": "For security and platform teams: subagents that coordinate leaked-secret response, plan zero-downtime rotations, tune secret scanners and catch secrets in diffs.",
+      "items": [
+        {
+          "package": "secret-leak-responder",
+          "required": true
+        },
+        {
+          "package": "secret-rotation-orchestrator",
+          "required": true
+        },
+        {
+          "package": "secret-scanner-tuner",
+          "required": false
+        },
+        {
+          "package": "secrets-diff-scanner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cloud-posture-agents",
+      "type": "agent",
+      "topic": "cloud security posture review",
+      "description": "For cloud security teams: subagents that audit AWS, GCP and Azure environments and draft safe remediations for the findings.",
+      "items": [
+        {
+          "package": "aws-posture-auditor",
+          "required": true
+        },
+        {
+          "package": "gcp-posture-auditor",
+          "required": true
+        },
+        {
+          "package": "azure-posture-auditor",
+          "required": true
+        },
+        {
+          "package": "cloud-exposure-remediator",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "iam-review-agents",
+      "type": "agent",
+      "topic": "identity and access review",
+      "description": "For identity and cloud teams: subagents that review IAM policies, generate least-privilege replacements, analyse trust relationships and prepare access reviews.",
+      "items": [
+        {
+          "package": "iam-policy-reviewer",
+          "required": true
+        },
+        {
+          "package": "least-privilege-policy-generator",
+          "required": true
+        },
+        {
+          "package": "access-review-assistant",
+          "required": true
+        },
+        {
+          "package": "trust-relationship-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kubernetes-security-agents",
+      "type": "agent",
+      "topic": "kubernetes security",
+      "description": "For cluster owners: subagents that review manifests, audit live RBAC, write default-deny network policies and admission policies.",
+      "items": [
+        {
+          "package": "k8s-manifest-security-reviewer",
+          "required": true
+        },
+        {
+          "package": "k8s-rbac-auditor",
+          "required": true
+        },
+        {
+          "package": "network-policy-author",
+          "required": true
+        },
+        {
+          "package": "admission-policy-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "container-iac-security-agents",
+      "type": "agent",
+      "topic": "container and iac security",
+      "description": "For infra teams: subagents that review Dockerfiles and Terraform, triage image scans, fix IaC findings and write policy-as-code guardrails.",
+      "items": [
+        {
+          "package": "dockerfile-security-reviewer",
+          "required": true
+        },
+        {
+          "package": "image-vuln-triager",
+          "required": true
+        },
+        {
+          "package": "terraform-security-reviewer",
+          "required": true
+        },
+        {
+          "package": "iac-misconfig-fixer",
+          "required": false
+        },
+        {
+          "package": "policy-as-code-author",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "pentest-planning-agents",
+      "type": "agent",
+      "topic": "authorized pentest planning",
+      "description": "For security consultants and internal teams: subagents that scope an authorized engagement, draft rules of engagement for sign-off and build the test plan.",
+      "items": [
+        {
+          "package": "pentest-scoping-planner",
+          "required": true
+        },
+        {
+          "package": "roe-drafter",
+          "required": true
+        },
+        {
+          "package": "pentest-test-plan-builder",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "pentest-reporting-agents",
+      "type": "agent",
+      "topic": "pentest reporting",
+      "description": "For testers finishing authorized engagements: subagents that write the report, rate severity consistently, summarise for executives and verify retests.",
+      "items": [
+        {
+          "package": "pentest-report-writer",
+          "required": true
+        },
+        {
+          "package": "finding-severity-rater",
+          "required": true
+        },
+        {
+          "package": "security-exec-summary-writer",
+          "required": true
+        },
+        {
+          "package": "retest-verifier",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "incident-response-agents",
+      "type": "agent",
+      "topic": "security incident response",
+      "description": "For incident responders: subagents that support the incident commander, build timelines, propose containment, draft communications and run the review.",
+      "items": [
+        {
+          "package": "incident-commander-assistant",
+          "required": true
+        },
+        {
+          "package": "ir-timeline-builder",
+          "required": true
+        },
+        {
+          "package": "containment-planner",
+          "required": true
+        },
+        {
+          "package": "incident-comms-drafter",
+          "required": false
+        },
+        {
+          "package": "post-incident-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "forensics-agents",
+      "type": "agent",
+      "topic": "digital forensics",
+      "description": "For DFIR teams: subagents that investigate cloud audit logs, analyse host artifacts and memory, build timelines and keep chain of custody.",
+      "items": [
+        {
+          "package": "cloud-forensics-investigator",
+          "required": true
+        },
+        {
+          "package": "host-forensics-analyst",
+          "required": true
+        },
+        {
+          "package": "evidence-custodian",
+          "required": true
+        },
+        {
+          "package": "ir-timeline-builder",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "detection-engineering-agents",
+      "type": "agent",
+      "topic": "detection engineering",
+      "description": "For detection teams: subagents that write Sigma rules, validate detections in a lab, map ATT&CK coverage and tune noisy alerts.",
+      "items": [
+        {
+          "package": "sigma-rule-writer",
+          "required": true
+        },
+        {
+          "package": "detection-tester",
+          "required": true
+        },
+        {
+          "package": "attack-coverage-mapper",
+          "required": true
+        },
+        {
+          "package": "alert-tuning-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "soc-triage-agents",
+      "type": "agent",
+      "topic": "soc alert triage",
+      "description": "For SOC analysts: subagents that triage alerts and reported phishing, write escalations and design SOAR playbooks for recurring alerts.",
+      "items": [
+        {
+          "package": "soc-alert-triager",
+          "required": true
+        },
+        {
+          "package": "phishing-triage-analyst",
+          "required": true
+        },
+        {
+          "package": "soc-escalation-writer",
+          "required": true
+        },
+        {
+          "package": "soar-playbook-designer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "threat-hunting-agents",
+      "type": "agent",
+      "topic": "threat hunting",
+      "description": "For hunt teams: subagents that propose hypotheses, write hunt queries in SPL/KQL/EQL and write up results as new detections.",
+      "items": [
+        {
+          "package": "hunt-hypothesis-planner",
+          "required": true
+        },
+        {
+          "package": "hunt-query-writer",
+          "required": true
+        },
+        {
+          "package": "hunt-report-writer",
+          "required": true
+        },
+        {
+          "package": "intel-to-detection-translator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "threat-intel-agents",
+      "type": "agent",
+      "topic": "threat intelligence",
+      "description": "For CTI analysts: subagents that summarise threat reports for relevance, extract and normalise IOCs and translate intel into detection work.",
+      "items": [
+        {
+          "package": "threat-intel-summarizer",
+          "required": true
+        },
+        {
+          "package": "ioc-extractor",
+          "required": true
+        },
+        {
+          "package": "intel-to-detection-translator",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "vuln-management-agents",
+      "type": "agent",
+      "topic": "vulnerability management",
+      "description": "For vulnerability management owners: subagents that prioritise findings, track remediation SLAs, review risk acceptances and triage image and dependency vulns.",
+      "items": [
+        {
+          "package": "vuln-prioritizer",
+          "required": true
+        },
+        {
+          "package": "vuln-remediation-tracker",
+          "required": true
+        },
+        {
+          "package": "vuln-exception-reviewer",
+          "required": true
+        },
+        {
+          "package": "dependency-vuln-triager",
+          "required": false
+        },
+        {
+          "package": "image-vuln-triager",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "soc2-agents",
+      "type": "agent",
+      "topic": "soc 2 compliance",
+      "description": "For compliance owners: subagents that assess SOC 2 gaps, collect evidence, draft policies and respond to auditor requests.",
+      "items": [
+        {
+          "package": "soc2-gap-assessor",
+          "required": true
+        },
+        {
+          "package": "soc2-evidence-collector",
+          "required": true
+        },
+        {
+          "package": "auditor-request-responder",
+          "required": true
+        },
+        {
+          "package": "security-policy-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "iso27001-agents",
+      "type": "agent",
+      "topic": "iso 27001 compliance",
+      "description": "For ISMS owners: subagents that plan ISMS scope, curate the risk register, build the Statement of Applicability and run internal audits.",
+      "items": [
+        {
+          "package": "isms-scoping-planner",
+          "required": true
+        },
+        {
+          "package": "security-risk-curator",
+          "required": true
+        },
+        {
+          "package": "soa-builder",
+          "required": true
+        },
+        {
+          "package": "iso-internal-auditor",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "pci-dss-agents",
+      "type": "agent",
+      "topic": "pci dss compliance",
+      "description": "For teams handling card payments: subagents that map cardholder data flows and scope, map PCI DSS v4.0 evidence and review CDE segmentation.",
+      "items": [
+        {
+          "package": "pci-scope-assessor",
+          "required": true
+        },
+        {
+          "package": "pci-evidence-mapper",
+          "required": true
+        },
+        {
+          "package": "cde-network-reviewer",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "hipaa-agents",
+      "type": "agent",
+      "topic": "hipaa security compliance",
+      "description": "For health-tech teams: subagents that map PHI flows, audit technical safeguards and draft the HIPAA risk analysis for compliance-officer sign-off.",
+      "items": [
+        {
+          "package": "hipaa-risk-analyst",
+          "required": true
+        },
+        {
+          "package": "phi-flow-mapper",
+          "required": true
+        },
+        {
+          "package": "hipaa-safeguard-auditor",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "privacy-engineering-agents",
+      "type": "agent",
+      "topic": "privacy engineering",
+      "description": "For privacy and product teams: subagents that map personal data, review code for privacy issues, draft DPIAs for DPO review and run DSAR fulfilment.",
+      "items": [
+        {
+          "package": "pii-data-mapper",
+          "required": true
+        },
+        {
+          "package": "privacy-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "dpia-drafter",
+          "required": true
+        },
+        {
+          "package": "dsar-workflow-assistant",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cryptography-review-agents",
+      "type": "agent",
+      "topic": "cryptography review",
+      "description": "For teams with crypto in code and infra: subagents that review crypto usage, audit KMS keys and TLS endpoints and plan post-quantum migration.",
+      "items": [
+        {
+          "package": "crypto-usage-reviewer",
+          "required": true
+        },
+        {
+          "package": "key-management-auditor",
+          "required": true
+        },
+        {
+          "package": "tls-config-auditor",
+          "required": true
+        },
+        {
+          "package": "pqc-migration-planner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "third-party-risk-agents",
+      "type": "agent",
+      "topic": "vendor and customer security assurance",
+      "description": "For security assurance teams: subagents that assess vendor risk, answer customer security questionnaires and keep trust center content accurate.",
+      "items": [
+        {
+          "package": "vendor-risk-assessor",
+          "required": true
+        },
+        {
+          "package": "security-questionnaire-responder",
+          "required": true
+        },
+        {
+          "package": "trust-center-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-security-agents",
+      "type": "agent",
+      "topic": "llm application security",
+      "description": "For teams shipping LLM apps and agents: subagents that review prompt-injection exposure, audit agent permissions and plan authorized red-team evaluations of your own app.",
+      "items": [
+        {
+          "package": "prompt-injection-reviewer",
+          "required": true
+        },
+        {
+          "package": "agent-permission-auditor",
+          "required": true
+        },
+        {
+          "package": "llm-red-team-planner",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "vulnerability-disclosure-agents",
+      "type": "agent",
+      "topic": "vulnerability disclosure handling",
+      "description": "For teams running a VDP or bug bounty: subagents that triage reports, rate severity, recommend rewards and draft researcher replies.",
+      "items": [
+        {
+          "package": "vuln-report-triager",
+          "required": true
+        },
+        {
+          "package": "researcher-reply-drafter",
+          "required": true
+        },
+        {
+          "package": "bounty-reward-assessor",
+          "required": false
+        },
+        {
+          "package": "finding-severity-rater",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "security-awareness-agents",
+      "type": "agent",
+      "topic": "security awareness",
+      "description": "For security and people teams: subagents that write awareness modules, plan approved phishing simulations and build secure coding labs.",
+      "items": [
+        {
+          "package": "awareness-content-writer",
+          "required": true
+        },
+        {
+          "package": "phishing-sim-planner",
+          "required": true
+        },
+        {
+          "package": "secure-coding-lab-builder",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "security-governance-agents",
+      "type": "agent",
+      "topic": "security governance",
+      "description": "For security leaders: subagents that plan the security roadmap, analyse policy gaps, review exceptions, draft policies and keep the risk register current.",
+      "items": [
+        {
+          "package": "security-roadmap-planner",
+          "required": true
+        },
+        {
+          "package": "policy-gap-analyst",
+          "required": true
+        },
+        {
+          "package": "security-exception-reviewer",
+          "required": true
+        },
+        {
+          "package": "security-policy-writer",
+          "required": false
+        },
+        {
+          "package": "security-risk-curator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "resilience-readiness-agents",
+      "type": "agent",
+      "topic": "ransomware and infrastructure resilience",
+      "description": "For IT security teams: subagents that assess ransomware readiness, design tabletop exercises and audit Active Directory and endpoint baselines.",
+      "items": [
+        {
+          "package": "ransomware-readiness-assessor",
+          "required": true
+        },
+        {
+          "package": "tabletop-designer",
+          "required": true
+        },
+        {
+          "package": "ad-security-auditor",
+          "required": true
+        },
+        {
+          "package": "endpoint-baseline-auditor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "mobile-security-agents",
+      "type": "agent",
+      "topic": "mobile application security review",
+      "description": "For iOS and Android teams: subagents that review apps against MASVS, check the backing API for authorization flaws, and review crypto and secret handling.",
+      "items": [
+        {
+          "package": "mobile-app-security-reviewer",
+          "required": true
+        },
+        {
+          "package": "api-security-reviewer",
+          "required": true
+        },
+        {
+          "package": "crypto-usage-reviewer",
+          "required": false
+        },
+        {
+          "package": "secrets-diff-scanner",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

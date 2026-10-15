@@ -1,0 +1,2041 @@
+{
+  "domain": "languages",
+  "arks": [
+    {
+      "name": "python-core",
+      "type": "skill",
+      "topic": "python idioms",
+      "description": "For Python developers: idioms, typing, error handling, data modelling and stdlib essentials so agents write clean, modern Python 3.10+ code.",
+      "items": [
+        {
+          "package": "python-idioms",
+          "required": true
+        },
+        {
+          "package": "python-typing",
+          "required": true
+        },
+        {
+          "package": "python-error-handling",
+          "required": true
+        },
+        {
+          "package": "python-dataclasses-pydantic",
+          "required": false
+        },
+        {
+          "package": "python-stdlib-essentials",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "python-typing-strict",
+      "type": "skill",
+      "topic": "python static typing",
+      "description": "For teams hardening Python codebases with static types: strict mypy/pyright adoption, Protocols and generics, and shipping typed library APIs.",
+      "items": [
+        {
+          "package": "python-typing",
+          "required": true
+        },
+        {
+          "package": "python-mypy-strict",
+          "required": true
+        },
+        {
+          "package": "python-protocols-generics",
+          "required": true
+        },
+        {
+          "package": "python-typed-apis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "python-packaging",
+      "type": "skill",
+      "topic": "python packaging",
+      "description": "For Python library and app maintainers: pyproject.toml, uv-based dependency management, wheel building and PyPI trusted publishing.",
+      "items": [
+        {
+          "package": "python-pyproject",
+          "required": true
+        },
+        {
+          "package": "python-uv-workflow",
+          "required": true
+        },
+        {
+          "package": "python-wheel-publishing",
+          "required": true
+        },
+        {
+          "package": "python-native-wheels",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "python-testing",
+      "type": "skill",
+      "topic": "python testing",
+      "description": "For Python developers: pytest fixtures, parametrisation, mocking, property-based tests with Hypothesis and coverage in CI so agents write fast, reliable tests.",
+      "items": [
+        {
+          "package": "pytest-fixtures",
+          "required": true
+        },
+        {
+          "package": "pytest-parametrize",
+          "required": true
+        },
+        {
+          "package": "python-mocking",
+          "required": true
+        },
+        {
+          "package": "python-hypothesis",
+          "required": false
+        },
+        {
+          "package": "pytest-coverage-ci",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "python-concurrency",
+      "type": "skill",
+      "topic": "python concurrency",
+      "description": "For Python developers building concurrent services: asyncio and structured concurrency, threads vs processes, free-threading and testing async code.",
+      "items": [
+        {
+          "package": "python-asyncio",
+          "required": true
+        },
+        {
+          "package": "python-threading-multiprocessing",
+          "required": true
+        },
+        {
+          "package": "python-async-testing",
+          "required": true
+        },
+        {
+          "package": "python-anyio-trio",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "python-performance",
+      "type": "skill",
+      "topic": "python performance",
+      "description": "For Python developers chasing speed or memory: profiling with py-spy/scalene/memray, optimisation patterns, and native extensions with Cython or PyO3.",
+      "items": [
+        {
+          "package": "python-profiling",
+          "required": true
+        },
+        {
+          "package": "python-optimization-patterns",
+          "required": true
+        },
+        {
+          "package": "python-native-extensions",
+          "required": false
+        },
+        {
+          "package": "python-threading-multiprocessing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "python-tooling",
+      "type": "skill",
+      "topic": "python developer tooling",
+      "description": "For Python teams standardising a repo: Ruff linting and formatting, pre-commit hooks, src project layout and well-built CLIs.",
+      "items": [
+        {
+          "package": "ruff-config",
+          "required": true
+        },
+        {
+          "package": "python-pre-commit",
+          "required": true
+        },
+        {
+          "package": "python-project-layout",
+          "required": true
+        },
+        {
+          "package": "python-cli-typer",
+          "required": false
+        },
+        {
+          "package": "python-uv-workflow",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "python-review-agents",
+      "type": "agent",
+      "topic": "python code review",
+      "description": "For Python teams: subagents that review diffs for idiom and correctness, audit asyncio code, and refactor safely with tests at each step.",
+      "items": [
+        {
+          "package": "python-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "python-async-reviewer",
+          "required": true
+        },
+        {
+          "package": "python-refactorer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "python-modernization-agents",
+      "type": "agent",
+      "topic": "python modernisation",
+      "description": "For maintainers of older Python codebases: subagents that upgrade Python versions, add strict typing, migrate to pyproject/uv and clean up dependencies.",
+      "items": [
+        {
+          "package": "python-version-upgrader",
+          "required": true
+        },
+        {
+          "package": "python-type-annotator",
+          "required": true
+        },
+        {
+          "package": "python-packaging-fixer",
+          "required": true
+        },
+        {
+          "package": "python-dependency-auditor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "python-test-agents",
+      "type": "agent",
+      "topic": "python test automation",
+      "description": "For Python developers who want more and better tests: subagents that write pytest suites, hunt flaky tests and investigate slow code paths with profiling evidence.",
+      "items": [
+        {
+          "package": "python-test-writer",
+          "required": true
+        },
+        {
+          "package": "python-flaky-test-hunter",
+          "required": true
+        },
+        {
+          "package": "python-perf-investigator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "javascript-core",
+      "type": "skill",
+      "topic": "javascript language",
+      "description": "For JavaScript developers: modern ES2022+ idioms, async patterns with cancellation, ESM/CommonJS interop and disciplined error handling.",
+      "items": [
+        {
+          "package": "js-modern-idioms",
+          "required": true
+        },
+        {
+          "package": "js-async-patterns",
+          "required": true
+        },
+        {
+          "package": "js-esm-cjs-interop",
+          "required": true
+        },
+        {
+          "package": "js-error-handling",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "nodejs-runtime",
+      "type": "skill",
+      "topic": "node.js runtime",
+      "description": "For Node.js backend developers: built-in APIs, streams with backpressure, event-loop performance diagnosis, safe config loading and major version upgrades.",
+      "items": [
+        {
+          "package": "nodejs-runtime-apis",
+          "required": true
+        },
+        {
+          "package": "nodejs-streams",
+          "required": true
+        },
+        {
+          "package": "nodejs-performance",
+          "required": true
+        },
+        {
+          "package": "nodejs-config-env",
+          "required": false
+        },
+        {
+          "package": "nodejs-version-upgrade",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "javascript-packaging",
+      "type": "skill",
+      "topic": "javascript packaging",
+      "description": "For JS/TS library authors and repo maintainers: package managers and workspaces, library bundling, npm publishing with provenance and dependency hygiene.",
+      "items": [
+        {
+          "package": "npm-package-publishing",
+          "required": true
+        },
+        {
+          "package": "js-package-managers",
+          "required": true
+        },
+        {
+          "package": "js-bundling-libraries",
+          "required": true
+        },
+        {
+          "package": "js-dependency-hygiene",
+          "required": false
+        },
+        {
+          "package": "js-esm-cjs-interop",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "javascript-testing",
+      "type": "skill",
+      "topic": "javascript unit testing",
+      "description": "For JS/TS developers: unit testing with Vitest, Jest or node:test, plus test-double discipline and network mocking with msw.",
+      "items": [
+        {
+          "package": "vitest-patterns",
+          "required": true
+        },
+        {
+          "package": "js-test-doubles",
+          "required": true
+        },
+        {
+          "package": "jest-patterns",
+          "required": false
+        },
+        {
+          "package": "node-test-runner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "javascript-review-agents",
+      "type": "agent",
+      "topic": "javascript code review",
+      "description": "For JavaScript teams: subagents that review JS diffs, write missing unit tests and prune unused or duplicated dependencies.",
+      "items": [
+        {
+          "package": "javascript-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "js-test-writer",
+          "required": true
+        },
+        {
+          "package": "js-dependency-pruner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "node-upgrade-agents",
+      "type": "agent",
+      "topic": "node.js upgrades and migration",
+      "description": "For Node.js maintainers: subagents that plan major Node upgrades, migrate CommonJS to ESM and track down memory leaks that upgrades expose.",
+      "items": [
+        {
+          "package": "node-upgrade-planner",
+          "required": true
+        },
+        {
+          "package": "esm-migrator",
+          "required": true
+        },
+        {
+          "package": "node-memory-leak-investigator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "typescript-core",
+      "type": "skill",
+      "topic": "typescript fundamentals",
+      "description": "For TypeScript developers: strict-mode habits, discriminated unions and narrowing, well-inferring generics and runtime validation at boundaries.",
+      "items": [
+        {
+          "package": "ts-strict-mode",
+          "required": true
+        },
+        {
+          "package": "ts-narrowing-unions",
+          "required": true
+        },
+        {
+          "package": "ts-generics",
+          "required": true
+        },
+        {
+          "package": "ts-runtime-validation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "typescript-advanced-types",
+      "type": "skill",
+      "topic": "advanced typescript types",
+      "description": "For TypeScript library and platform authors: conditional and mapped types, branded types, type-level tests and fixing slow type-checking.",
+      "items": [
+        {
+          "package": "ts-conditional-mapped-types",
+          "required": true
+        },
+        {
+          "package": "ts-type-testing",
+          "required": true
+        },
+        {
+          "package": "ts-branded-types",
+          "required": false
+        },
+        {
+          "package": "ts-type-performance",
+          "required": false
+        },
+        {
+          "package": "ts-generics",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "typescript-tooling",
+      "type": "skill",
+      "topic": "typescript build tooling",
+      "description": "For TypeScript teams: tsconfig choices for apps and libraries, project references in monorepos, correct type publishing and type-aware linting.",
+      "items": [
+        {
+          "package": "tsconfig-setup",
+          "required": true
+        },
+        {
+          "package": "ts-project-references",
+          "required": true
+        },
+        {
+          "package": "ts-declaration-publishing",
+          "required": true
+        },
+        {
+          "package": "ts-linting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "typescript-library-authoring",
+      "type": "skill",
+      "topic": "typescript library authoring",
+      "description": "For authors of published TS/JS libraries: public API design, dual ESM/CJS bundling, correct .d.ts publishing and type-level tests.",
+      "items": [
+        {
+          "package": "ts-library-api-design",
+          "required": true
+        },
+        {
+          "package": "ts-declaration-publishing",
+          "required": true
+        },
+        {
+          "package": "js-bundling-libraries",
+          "required": true
+        },
+        {
+          "package": "ts-type-testing",
+          "required": false
+        },
+        {
+          "package": "npm-package-publishing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "typescript-review-agents",
+      "type": "agent",
+      "topic": "typescript code review",
+      "description": "For TypeScript teams: subagents that review diffs for unsound types, design types for new modules, and diagnose broken or slow TS builds.",
+      "items": [
+        {
+          "package": "typescript-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "ts-type-designer",
+          "required": true
+        },
+        {
+          "package": "ts-build-doctor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "typescript-migration-agents",
+      "type": "agent",
+      "topic": "typescript migration",
+      "description": "For teams moving JavaScript to TypeScript or tightening strictness: subagents that migrate files incrementally and ratchet tsconfig flags without breaking builds.",
+      "items": [
+        {
+          "package": "js-to-ts-migrator",
+          "required": true
+        },
+        {
+          "package": "ts-strictness-ratcheter",
+          "required": true
+        },
+        {
+          "package": "ts-build-doctor",
+          "required": false
+        },
+        {
+          "package": "typescript-code-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "go-core",
+      "type": "skill",
+      "topic": "go language",
+      "description": "For Go developers: idiomatic Go, error wrapping, sensible use of generics and module/package layout so agents write code Go reviewers accept.",
+      "items": [
+        {
+          "package": "go-idioms",
+          "required": true
+        },
+        {
+          "package": "go-error-handling",
+          "required": true
+        },
+        {
+          "package": "go-project-layout",
+          "required": true
+        },
+        {
+          "package": "go-generics",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "go-concurrency",
+      "type": "skill",
+      "topic": "go concurrency",
+      "description": "For Go developers building concurrent services: goroutine and channel patterns, context cancellation, sync primitives, errgroup and race detection.",
+      "items": [
+        {
+          "package": "go-goroutines-channels",
+          "required": true
+        },
+        {
+          "package": "go-context",
+          "required": true
+        },
+        {
+          "package": "go-sync-primitives",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "go-testing",
+      "type": "skill",
+      "topic": "go testing",
+      "description": "For Go developers: table-driven tests, interface-based fakes and httptest, native fuzzing and benchmarks compared with benchstat.",
+      "items": [
+        {
+          "package": "go-table-tests",
+          "required": true
+        },
+        {
+          "package": "go-test-doubles",
+          "required": true
+        },
+        {
+          "package": "go-fuzzing",
+          "required": false
+        },
+        {
+          "package": "go-benchmarks",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "go-tooling",
+      "type": "skill",
+      "topic": "go tooling and modules",
+      "description": "For Go maintainers: modules and workspaces, golangci-lint configuration, reproducible cross-platform releases and toolchain upgrades.",
+      "items": [
+        {
+          "package": "go-modules",
+          "required": true
+        },
+        {
+          "package": "go-linting",
+          "required": true
+        },
+        {
+          "package": "go-build-release",
+          "required": true
+        },
+        {
+          "package": "go-version-upgrade",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "go-performance",
+      "type": "skill",
+      "topic": "go performance",
+      "description": "For Go developers optimising services: pprof and execution tracing, allocation and GC tuning, and benchmark-driven changes.",
+      "items": [
+        {
+          "package": "go-pprof",
+          "required": true
+        },
+        {
+          "package": "go-memory-allocation",
+          "required": true
+        },
+        {
+          "package": "go-benchmarks",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "go-cli",
+      "type": "skill",
+      "topic": "go command-line tools",
+      "description": "For developers building CLI tools in Go: cobra/flag interfaces, config and signal handling, tests and cross-platform releases with GoReleaser.",
+      "items": [
+        {
+          "package": "go-cli-apps",
+          "required": true
+        },
+        {
+          "package": "go-build-release",
+          "required": true
+        },
+        {
+          "package": "go-table-tests",
+          "required": false
+        },
+        {
+          "package": "go-context",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "go-review-agents",
+      "type": "agent",
+      "topic": "go code review",
+      "description": "For Go teams: subagents that review diffs for idiom and error handling, audit concurrency for races and leaks, and upgrade toolchains and modules.",
+      "items": [
+        {
+          "package": "go-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "go-concurrency-auditor",
+          "required": true
+        },
+        {
+          "package": "go-module-upgrader",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "go-test-agents",
+      "type": "agent",
+      "topic": "go testing and performance",
+      "description": "For Go developers: subagents that write table-driven tests and fuzz targets, and tune hot paths with pprof and benchstat evidence.",
+      "items": [
+        {
+          "package": "go-test-writer",
+          "required": true
+        },
+        {
+          "package": "go-perf-tuner",
+          "required": true
+        },
+        {
+          "package": "go-concurrency-auditor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "rust-core",
+      "type": "skill",
+      "topic": "rust language",
+      "description": "For Rust developers: ownership and borrowing fixes, error handling with thiserror/anyhow, trait-based API design and clippy-clean idioms.",
+      "items": [
+        {
+          "package": "rust-ownership-borrowing",
+          "required": true
+        },
+        {
+          "package": "rust-error-handling",
+          "required": true
+        },
+        {
+          "package": "rust-idioms",
+          "required": true
+        },
+        {
+          "package": "rust-traits-generics",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "rust-async",
+      "type": "skill",
+      "topic": "rust async and concurrency",
+      "description": "For Rust developers writing concurrent code: Tokio runtime patterns, async traits and pinning, cancellation safety and thread-based parallelism with rayon.",
+      "items": [
+        {
+          "package": "rust-tokio",
+          "required": true
+        },
+        {
+          "package": "rust-async-traits-pinning",
+          "required": true
+        },
+        {
+          "package": "rust-sync-concurrency",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "rust-tooling",
+      "type": "skill",
+      "topic": "rust cargo tooling",
+      "description": "For Rust maintainers: Cargo workspaces and features, testing with nextest/proptest/insta, clippy and cargo-deny, and crate publishing with semver checks.",
+      "items": [
+        {
+          "package": "cargo-workspaces",
+          "required": true
+        },
+        {
+          "package": "rust-testing",
+          "required": true
+        },
+        {
+          "package": "rust-clippy-lints",
+          "required": true
+        },
+        {
+          "package": "rust-crate-publishing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "rust-systems",
+      "type": "skill",
+      "topic": "rust unsafe ffi and performance",
+      "description": "For systems programmers using Rust: unsafe code with documented invariants and Miri, C/C++ FFI with bindgen/cbindgen, and profiling-led optimisation.",
+      "items": [
+        {
+          "package": "rust-unsafe",
+          "required": true
+        },
+        {
+          "package": "rust-ffi",
+          "required": true
+        },
+        {
+          "package": "rust-performance",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "rust-cli",
+      "type": "skill",
+      "topic": "rust command-line tools",
+      "description": "For developers building CLI tools in Rust: clap-based interfaces, user-facing error reporting, CLI testing and cross-platform binary releases.",
+      "items": [
+        {
+          "package": "rust-cli-apps",
+          "required": true
+        },
+        {
+          "package": "rust-release-distribution",
+          "required": true
+        },
+        {
+          "package": "rust-error-handling",
+          "required": false
+        },
+        {
+          "package": "rust-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "rust-review-agents",
+      "type": "agent",
+      "topic": "rust code review",
+      "description": "For Rust teams: subagents that review diffs for idiom and error handling, audit async code for cancellation hazards, and fix borrow checker errors properly.",
+      "items": [
+        {
+          "package": "rust-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "rust-async-reviewer",
+          "required": true
+        },
+        {
+          "package": "rust-borrow-fixer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "rust-porting-agents",
+      "type": "agent",
+      "topic": "porting to rust safely",
+      "description": "For teams moving C code to Rust or hardening unsafe Rust: subagents that port modules behind FFI with differential tests and audit every unsafe block.",
+      "items": [
+        {
+          "package": "c-to-rust-porter",
+          "required": true
+        },
+        {
+          "package": "rust-unsafe-auditor",
+          "required": true
+        },
+        {
+          "package": "rust-borrow-fixer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "java-core",
+      "type": "skill",
+      "topic": "modern java",
+      "description": "For Java developers: modern Java 17-21 features, idiomatic immutability and Optional use, and clear collections and stream code.",
+      "items": [
+        {
+          "package": "java-modern-features",
+          "required": true
+        },
+        {
+          "package": "java-idioms",
+          "required": true
+        },
+        {
+          "package": "java-collections-streams",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "java-build-tooling",
+      "type": "skill",
+      "topic": "jvm build tooling",
+      "description": "For JVM teams: Maven and Gradle builds with BOMs and version catalogs, dependency conflict resolution and application packaging with jlink/jpackage.",
+      "items": [
+        {
+          "package": "maven-builds",
+          "required": true
+        },
+        {
+          "package": "gradle-builds",
+          "required": true
+        },
+        {
+          "package": "java-modules-packaging",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "java-concurrency",
+      "type": "skill",
+      "topic": "java concurrency",
+      "description": "For Java developers writing concurrent code: virtual threads and structured concurrency, CompletableFuture and executors, and memory-model correctness.",
+      "items": [
+        {
+          "package": "java-virtual-threads",
+          "required": true
+        },
+        {
+          "package": "java-concurrency-utilities",
+          "required": true
+        },
+        {
+          "package": "java-modern-features",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "java-testing",
+      "type": "skill",
+      "topic": "java testing",
+      "description": "For Java and JVM developers: JUnit 5 with AssertJ, disciplined Mockito use and Testcontainers-backed integration tests.",
+      "items": [
+        {
+          "package": "junit5-patterns",
+          "required": true
+        },
+        {
+          "package": "mockito-patterns",
+          "required": true
+        },
+        {
+          "package": "testcontainers-java",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "jvm-performance",
+      "type": "skill",
+      "topic": "jvm performance",
+      "description": "For JVM engineers chasing latency or memory: GC selection and container heap sizing, JFR and async-profiler analysis, and JMH benchmarks.",
+      "items": [
+        {
+          "package": "jvm-gc-tuning",
+          "required": true
+        },
+        {
+          "package": "jvm-profiling",
+          "required": true
+        },
+        {
+          "package": "jmh-benchmarks",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "java-review-agents",
+      "type": "agent",
+      "topic": "java code review",
+      "description": "For Java teams: subagents that review diffs for nulls, leaks and concurrency bugs, and write JUnit 5 tests for under-tested classes.",
+      "items": [
+        {
+          "package": "java-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "java-test-writer",
+          "required": true
+        },
+        {
+          "package": "jvm-build-doctor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "java-upgrade-agents",
+      "type": "agent",
+      "topic": "java version upgrades",
+      "description": "For teams stuck on old Java: subagents that move a project between LTS versions, repair Maven/Gradle builds and review the upgraded code.",
+      "items": [
+        {
+          "package": "java-version-upgrader",
+          "required": true
+        },
+        {
+          "package": "jvm-build-doctor",
+          "required": true
+        },
+        {
+          "package": "java-code-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "jvm-performance-agents",
+      "type": "agent",
+      "topic": "jvm performance analysis",
+      "description": "For JVM service owners: subagents that analyse JFR, GC logs and dumps to find bottlenecks, and back fixes with JMH-style evidence.",
+      "items": [
+        {
+          "package": "jvm-perf-analyst",
+          "required": true
+        },
+        {
+          "package": "jvm-build-doctor",
+          "required": false
+        },
+        {
+          "package": "java-code-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kotlin-core",
+      "type": "skill",
+      "topic": "kotlin language",
+      "description": "For Kotlin developers: idiomatic null-safe Kotlin, Gradle and K2 compiler setup with detekt/ktlint, testing with MockK, and Multiplatform project structure.",
+      "items": [
+        {
+          "package": "kotlin-idioms",
+          "required": true
+        },
+        {
+          "package": "kotlin-gradle-setup",
+          "required": true
+        },
+        {
+          "package": "kotlin-testing",
+          "required": true
+        },
+        {
+          "package": "kotlin-multiplatform",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kotlin-coroutines",
+      "type": "skill",
+      "topic": "kotlin coroutines and flow",
+      "description": "For Kotlin developers writing async code: structured concurrency with coroutines, cold and hot Flows, and deterministic tests with runTest and Turbine.",
+      "items": [
+        {
+          "package": "kotlin-coroutines",
+          "required": true
+        },
+        {
+          "package": "kotlin-flow",
+          "required": true
+        },
+        {
+          "package": "kotlin-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kotlin-migration-agents",
+      "type": "agent",
+      "topic": "kotlin adoption",
+      "description": "For JVM teams adopting Kotlin: subagents that convert Java to idiomatic Kotlin, migrate RxJava to coroutines and Flow, and review the result.",
+      "items": [
+        {
+          "package": "java-to-kotlin-converter",
+          "required": true
+        },
+        {
+          "package": "rxjava-to-coroutines-migrator",
+          "required": true
+        },
+        {
+          "package": "kotlin-code-reviewer",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "csharp-core",
+      "type": "skill",
+      "topic": "c# language",
+      "description": "For C# developers: modern C# features, nullable reference types, correct async/await with cancellation, and clean LINQ.",
+      "items": [
+        {
+          "package": "csharp-modern-features",
+          "required": true
+        },
+        {
+          "package": "csharp-nullable-reference-types",
+          "required": true
+        },
+        {
+          "package": "dotnet-async-await",
+          "required": true
+        },
+        {
+          "package": "csharp-linq",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dotnet-tooling",
+      "type": "skill",
+      "topic": ".net sdk tooling",
+      "description": "For .NET teams: SDK-style project setup with central package management, analyzers and editorconfig, testing with xUnit, and NuGet publishing.",
+      "items": [
+        {
+          "package": "dotnet-cli-sdk",
+          "required": true
+        },
+        {
+          "package": "dotnet-analyzers",
+          "required": true
+        },
+        {
+          "package": "dotnet-testing",
+          "required": true
+        },
+        {
+          "package": "dotnet-nuget-publishing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dotnet-performance-tuning",
+      "type": "skill",
+      "topic": ".net performance",
+      "description": "For .NET engineers: allocation-free code with Span and pooling, BenchmarkDotNet measurement, and trace and memory diagnostics.",
+      "items": [
+        {
+          "package": "dotnet-performance",
+          "required": true
+        },
+        {
+          "package": "dotnet-memory-diagnostics",
+          "required": true
+        },
+        {
+          "package": "dotnet-async-await",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dotnet-review-agents",
+      "type": "agent",
+      "topic": "c# code review",
+      "description": "For .NET teams: subagents that review C# diffs, write xUnit tests and analyse performance problems with BenchmarkDotNet and trace evidence.",
+      "items": [
+        {
+          "package": "csharp-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "dotnet-test-writer",
+          "required": true
+        },
+        {
+          "package": "dotnet-perf-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dotnet-upgrade-agents",
+      "type": "agent",
+      "topic": ".net upgrades",
+      "description": "For teams on legacy .NET Framework or older .NET: subagents that migrate to modern .NET, upgrade versions and review the migrated code.",
+      "items": [
+        {
+          "package": "dotnet-framework-migrator",
+          "required": true
+        },
+        {
+          "package": "dotnet-version-upgrader",
+          "required": true
+        },
+        {
+          "package": "csharp-code-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "c-programming",
+      "type": "skill",
+      "topic": "c programming",
+      "description": "For C developers: memory-safety discipline, sanitizers and static analysis, Make/CMake/Meson builds, stable API design and fuzzing.",
+      "items": [
+        {
+          "package": "c-memory-safety",
+          "required": true
+        },
+        {
+          "package": "c-sanitizers-analysis",
+          "required": true
+        },
+        {
+          "package": "c-build-systems",
+          "required": true
+        },
+        {
+          "package": "c-api-design",
+          "required": false
+        },
+        {
+          "package": "c-fuzzing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "c-review-agents",
+      "type": "agent",
+      "topic": "c code safety review",
+      "description": "For C maintainers: subagents that review diffs for memory-safety bugs, triage sanitizer and fuzzer findings, and modernise legacy builds.",
+      "items": [
+        {
+          "package": "c-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "c-sanitizer-triager",
+          "required": true
+        },
+        {
+          "package": "c-build-modernizer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "embedded-c",
+      "type": "skill",
+      "topic": "embedded c",
+      "description": "For firmware engineers writing C for microcontrollers: register and ISR patterns, MISRA/CERT C compliance and off-target unit testing with Unity/CMock.",
+      "items": [
+        {
+          "package": "c-embedded-patterns",
+          "required": true
+        },
+        {
+          "package": "misra-c-guidelines",
+          "required": true
+        },
+        {
+          "package": "c-embedded-unit-testing",
+          "required": true
+        },
+        {
+          "package": "c-memory-safety",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cpp-core",
+      "type": "skill",
+      "topic": "modern c++",
+      "description": "For C++ developers: modern C++17-23 idioms, templates with concepts, safe concurrency and GoogleTest/Catch2 testing.",
+      "items": [
+        {
+          "package": "modern-cpp-idioms",
+          "required": true
+        },
+        {
+          "package": "cpp-templates-concepts",
+          "required": true
+        },
+        {
+          "package": "cpp-concurrency",
+          "required": true
+        },
+        {
+          "package": "cpp-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cpp-build",
+      "type": "skill",
+      "topic": "c++ build and dependencies",
+      "description": "For C++ teams: target-based modern CMake with presets, vcpkg/Conan dependency management, CTest and sanitizer builds.",
+      "items": [
+        {
+          "package": "cmake-modern",
+          "required": true
+        },
+        {
+          "package": "cpp-package-managers",
+          "required": true
+        },
+        {
+          "package": "cpp-testing",
+          "required": false
+        },
+        {
+          "package": "c-sanitizers-analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cpp-performance-tuning",
+      "type": "skill",
+      "topic": "c++ performance",
+      "description": "For C++ engineers optimising latency or throughput: cache-aware data layout, allocation strategies, profiling with perf and microbenchmarks.",
+      "items": [
+        {
+          "package": "cpp-performance",
+          "required": true
+        },
+        {
+          "package": "modern-cpp-idioms",
+          "required": true
+        },
+        {
+          "package": "cpp-concurrency",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cpp-review-agents",
+      "type": "agent",
+      "topic": "c++ code review",
+      "description": "For C++ teams: subagents that review diffs for lifetime and UB bugs, modernise legacy C++, fix CMake builds and add tests.",
+      "items": [
+        {
+          "package": "cpp-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "cpp-modernizer",
+          "required": true
+        },
+        {
+          "package": "cmake-build-doctor",
+          "required": false
+        },
+        {
+          "package": "cpp-test-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "swift-core",
+      "type": "skill",
+      "topic": "swift language",
+      "description": "For Swift developers: idiomatic Swift, ARC memory management, Swift Package Manager and Swift Testing.",
+      "items": [
+        {
+          "package": "swift-idioms",
+          "required": true
+        },
+        {
+          "package": "swift-package-manager",
+          "required": true
+        },
+        {
+          "package": "swift-testing",
+          "required": true
+        },
+        {
+          "package": "swift-memory-management",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "swift-strict-concurrency",
+      "type": "skill",
+      "topic": "swift concurrency",
+      "description": "For Swift developers adopting strict concurrency: async/await, actors, Sendable and MainActor, with tests for async code.",
+      "items": [
+        {
+          "package": "swift-concurrency",
+          "required": true
+        },
+        {
+          "package": "swift-idioms",
+          "required": true
+        },
+        {
+          "package": "swift-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "swift-agents",
+      "type": "agent",
+      "topic": "swift modernisation and review",
+      "description": "For Swift teams: subagents that migrate modules to Swift 6 strict concurrency, convert XCTest to Swift Testing and review diffs for leaks and races.",
+      "items": [
+        {
+          "package": "swift6-migrator",
+          "required": true
+        },
+        {
+          "package": "swift-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "xctest-to-swift-testing-migrator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ruby-core",
+      "type": "skill",
+      "topic": "ruby language",
+      "description": "For Ruby developers: idiomatic Ruby, RSpec testing, RuboCop setup, gem and Bundler management and optional typing with RBS or Sorbet.",
+      "items": [
+        {
+          "package": "ruby-idioms",
+          "required": true
+        },
+        {
+          "package": "rspec-patterns",
+          "required": true
+        },
+        {
+          "package": "rubocop-config",
+          "required": true
+        },
+        {
+          "package": "ruby-gems-bundler",
+          "required": false
+        },
+        {
+          "package": "ruby-typing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ruby-agents",
+      "type": "agent",
+      "topic": "ruby review and upgrades",
+      "description": "For Ruby teams: subagents that review diffs, upgrade Ruby versions safely and write RSpec specs for untested code.",
+      "items": [
+        {
+          "package": "ruby-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "ruby-version-upgrader",
+          "required": true
+        },
+        {
+          "package": "rspec-test-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "php-core",
+      "type": "skill",
+      "topic": "modern php",
+      "description": "For PHP developers: modern PHP 8 features, Composer and autoloading, PHPStan/Psalm static analysis and PHPUnit or Pest testing.",
+      "items": [
+        {
+          "package": "php-modern-features",
+          "required": true
+        },
+        {
+          "package": "php-static-analysis",
+          "required": true
+        },
+        {
+          "package": "php-composer",
+          "required": true
+        },
+        {
+          "package": "phpunit-patterns",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "php-upgrade-agents",
+      "type": "agent",
+      "topic": "php upgrades and quality",
+      "description": "For PHP maintainers: subagents that upgrade PHP versions with Rector, raise PHPStan levels and review diffs for type and safety issues.",
+      "items": [
+        {
+          "package": "php-version-upgrader",
+          "required": true
+        },
+        {
+          "package": "phpstan-level-raiser",
+          "required": true
+        },
+        {
+          "package": "php-code-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "elixir-core",
+      "type": "skill",
+      "topic": "elixir and otp",
+      "description": "For Elixir developers: idiomatic Elixir, OTP supervision design, ExUnit with Mox, and Mix tooling with Credo and Dialyzer.",
+      "items": [
+        {
+          "package": "elixir-idioms",
+          "required": true
+        },
+        {
+          "package": "elixir-otp",
+          "required": true
+        },
+        {
+          "package": "exunit-patterns",
+          "required": true
+        },
+        {
+          "package": "elixir-mix-tooling",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "erlang-otp",
+      "type": "skill",
+      "topic": "erlang otp",
+      "description": "For Erlang and BEAM operators: OTP behaviours and releases with rebar3, EUnit/Common Test/PropEr, and production debugging with recon and tracing.",
+      "items": [
+        {
+          "package": "erlang-otp-design",
+          "required": true
+        },
+        {
+          "package": "erlang-beam-debugging",
+          "required": true
+        },
+        {
+          "package": "erlang-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "elixir-agents",
+      "type": "agent",
+      "topic": "elixir and beam review",
+      "description": "For Elixir and Erlang teams: subagents that review process design, debug BEAM issues from observer/recon data and write ExUnit tests.",
+      "items": [
+        {
+          "package": "elixir-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "beam-process-debugger",
+          "required": true
+        },
+        {
+          "package": "elixir-test-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "scala-core",
+      "type": "skill",
+      "topic": "scala language",
+      "description": "For Scala developers: Scala 3 features, Cats Effect/ZIO effect systems and sbt builds.",
+      "items": [
+        {
+          "package": "scala3-features",
+          "required": true
+        },
+        {
+          "package": "scala-effects",
+          "required": true
+        },
+        {
+          "package": "scala-sbt",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "scala-agents",
+      "type": "agent",
+      "topic": "scala 3 migration and review",
+      "description": "For Scala teams: subagents that migrate Scala 2 to Scala 3, repair sbt builds and review effectful code.",
+      "items": [
+        {
+          "package": "scala3-migrator",
+          "required": true
+        },
+        {
+          "package": "scala-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "sbt-build-doctor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "haskell-core",
+      "type": "skill",
+      "topic": "haskell",
+      "description": "For Haskell developers: idiomatic types and typeclasses, app structure with mtl or ReaderT, cabal/stack builds and QuickCheck testing.",
+      "items": [
+        {
+          "package": "haskell-idioms",
+          "required": true
+        },
+        {
+          "package": "haskell-effects-mtl",
+          "required": true
+        },
+        {
+          "package": "haskell-cabal-stack",
+          "required": true
+        },
+        {
+          "package": "haskell-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ocaml-core",
+      "type": "skill",
+      "topic": "ocaml",
+      "description": "For OCaml developers: idiomatic variants and modules, dune and opam builds, and Alcotest/expect testing.",
+      "items": [
+        {
+          "package": "ocaml-idioms",
+          "required": true
+        },
+        {
+          "package": "ocaml-dune-opam",
+          "required": true
+        },
+        {
+          "package": "ocaml-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "clojure-core",
+      "type": "skill",
+      "topic": "clojure",
+      "description": "For Clojure developers: idiomatic data-oriented Clojure, REPL-driven workflow with deps.edn, and clojure.test/test.check testing.",
+      "items": [
+        {
+          "package": "clojure-idioms",
+          "required": true
+        },
+        {
+          "package": "clojure-repl-workflow",
+          "required": true
+        },
+        {
+          "package": "clojure-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "functional-review-agents",
+      "type": "agent",
+      "topic": "functional language code review",
+      "description": "For teams writing Haskell, OCaml or Clojure: language-specific review subagents that catch partiality, laziness and data-shape bugs.",
+      "items": [
+        {
+          "package": "haskell-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "ocaml-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "clojure-code-reviewer",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "dart-core",
+      "type": "skill",
+      "topic": "dart language",
+      "description": "For Dart developers (Flutter or server): Dart 3 idioms and patterns, futures/streams/isolates, and pub packaging with tests.",
+      "items": [
+        {
+          "package": "dart-idioms",
+          "required": true
+        },
+        {
+          "package": "dart-async",
+          "required": true
+        },
+        {
+          "package": "dart-packages-testing",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "lua-core",
+      "type": "skill",
+      "topic": "lua",
+      "description": "For Lua developers and engine/plugin authors: idiomatic Lua across versions, embedding via the C API, and LuaRocks/busted tooling.",
+      "items": [
+        {
+          "package": "lua-idioms",
+          "required": true
+        },
+        {
+          "package": "lua-embedding",
+          "required": false
+        },
+        {
+          "package": "lua-tooling-testing",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "r-programming",
+      "type": "skill",
+      "topic": "r programming",
+      "description": "For R programmers writing reusable code: R idioms and class systems, package development with devtools/testthat, and Rcpp-backed performance.",
+      "items": [
+        {
+          "package": "r-language-idioms",
+          "required": true
+        },
+        {
+          "package": "r-package-development",
+          "required": true
+        },
+        {
+          "package": "r-performance",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "r-package-agents",
+      "type": "agent",
+      "topic": "r package development",
+      "description": "For R users turning analysis code into maintainable packages: subagents that convert scripts to packages, review for CRAN readiness and tune slow code.",
+      "items": [
+        {
+          "package": "r-script-to-package-converter",
+          "required": true
+        },
+        {
+          "package": "r-package-reviewer",
+          "required": true
+        },
+        {
+          "package": "r-performance-tuner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "julia-core",
+      "type": "skill",
+      "topic": "julia",
+      "description": "For Julia developers: multiple dispatch and type stability, performance tuning with BenchmarkTools, and package environments and registration.",
+      "items": [
+        {
+          "package": "julia-idioms",
+          "required": true
+        },
+        {
+          "package": "julia-performance",
+          "required": true
+        },
+        {
+          "package": "julia-packages",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "zig-core",
+      "type": "skill",
+      "topic": "zig",
+      "description": "For Zig developers: explicit allocator and error-union idioms, comptime, build.zig, cross-compilation and C interop.",
+      "items": [
+        {
+          "package": "zig-idioms",
+          "required": true
+        },
+        {
+          "package": "zig-build-system",
+          "required": true
+        },
+        {
+          "package": "zig-c-interop",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "shell-scripting",
+      "type": "skill",
+      "topic": "bash and shell scripting",
+      "description": "For anyone writing shell scripts: robust Bash, POSIX portability, ShellCheck-clean code, text processing with awk/sed/jq and bats tests.",
+      "items": [
+        {
+          "package": "bash-strict-scripting",
+          "required": true
+        },
+        {
+          "package": "shellcheck-fixes",
+          "required": true
+        },
+        {
+          "package": "posix-shell-portability",
+          "required": true
+        },
+        {
+          "package": "shell-text-processing",
+          "required": false
+        },
+        {
+          "package": "shell-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "shell-script-agents",
+      "type": "agent",
+      "topic": "shell script quality",
+      "description": "For teams with many shell scripts: subagents that review scripts for quoting and safety bugs, harden them with tests, and convert overgrown scripts to Python.",
+      "items": [
+        {
+          "package": "shell-script-reviewer",
+          "required": true
+        },
+        {
+          "package": "shell-script-hardener",
+          "required": true
+        },
+        {
+          "package": "shell-to-python-converter",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "powershell-scripting",
+      "type": "skill",
+      "topic": "powershell scripting",
+      "description": "For Windows admins and automation engineers: idiomatic PowerShell 7, modules with PSScriptAnalyzer, Pester tests and cross-platform scripts.",
+      "items": [
+        {
+          "package": "powershell-idioms",
+          "required": true
+        },
+        {
+          "package": "powershell-modules",
+          "required": true
+        },
+        {
+          "package": "pester-testing",
+          "required": true
+        },
+        {
+          "package": "powershell-cross-platform",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "powershell-agents",
+      "type": "agent",
+      "topic": "powershell automation quality",
+      "description": "For Windows and cross-platform automation teams: subagents that review PowerShell, package scripts into tested modules and migrate 5.1 scripts to 7.",
+      "items": [
+        {
+          "package": "powershell-script-reviewer",
+          "required": true
+        },
+        {
+          "package": "powershell-module-builder",
+          "required": true
+        },
+        {
+          "package": "ps51-to-ps7-migrator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "webassembly",
+      "type": "skill",
+      "topic": "webassembly",
+      "description": "For developers shipping WebAssembly: Rust via wasm-bindgen, C/C++ via Emscripten, WASI components with WIT, and efficient JS interop.",
+      "items": [
+        {
+          "package": "wasm-rust-toolchain",
+          "required": true
+        },
+        {
+          "package": "wasm-js-interop",
+          "required": true
+        },
+        {
+          "package": "wasm-component-model",
+          "required": false
+        },
+        {
+          "package": "wasm-emscripten",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "webassembly-agents",
+      "type": "agent",
+      "topic": "webassembly builds",
+      "description": "For teams bringing native code to the browser or WASI: subagents that set up Wasm builds, shrink binaries and build WIT-based components.",
+      "items": [
+        {
+          "package": "wasm-build-engineer",
+          "required": true
+        },
+        {
+          "package": "wasm-size-optimizer",
+          "required": true
+        },
+        {
+          "package": "wasi-component-builder",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "solidity-core",
+      "type": "skill",
+      "topic": "solidity smart contracts",
+      "description": "For smart contract developers: Solidity 0.8 patterns, Foundry fuzz and invariant testing, gas optimisation and static analysis with Slither.",
+      "items": [
+        {
+          "package": "solidity-patterns",
+          "required": true
+        },
+        {
+          "package": "foundry-testing",
+          "required": true
+        },
+        {
+          "package": "solidity-security-checklist",
+          "required": true
+        },
+        {
+          "package": "solidity-gas-optimization",
+          "required": false
+        },
+        {
+          "package": "solidity-static-analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "solidity-agents",
+      "type": "agent",
+      "topic": "solidity review and testing",
+      "description": "For smart contract teams before an external audit: subagents that review their own contracts defensively, write Foundry invariant tests and optimise gas safely.",
+      "items": [
+        {
+          "package": "solidity-security-reviewer",
+          "required": true
+        },
+        {
+          "package": "foundry-test-writer",
+          "required": true
+        },
+        {
+          "package": "solidity-gas-optimizer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "language-migration-agents",
+      "type": "agent",
+      "topic": "cross-language porting and adoption",
+      "description": "For teams porting code between languages or onboarding to a new one: subagents that plan ports with differential tests, flag carried-over idioms and introduce gradual typing.",
+      "items": [
+        {
+          "package": "polyglot-port-planner",
+          "required": true
+        },
+        {
+          "package": "language-idiom-reviewer",
+          "required": true
+        },
+        {
+          "package": "type-checker-adopter",
+          "required": false
+        },
+        {
+          "package": "c-to-rust-porter",
+          "required": false
+        },
+        {
+          "package": "js-to-ts-migrator",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

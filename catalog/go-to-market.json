@@ -1,0 +1,2718 @@
+{
+  "domain": "go-to-market",
+  "packages": [
+    {
+      "name": "prd-structure",
+      "kind": "skill",
+      "purpose": "Lay out a PRD with problem, users, goals, scope, requirements, risks and open questions in a fixed, skimmable template."
+    },
+    {
+      "name": "prd-requirements-writing",
+      "kind": "skill",
+      "purpose": "Write numbered, testable functional and non-functional requirements with priority (must/should/could) and no solution leakage."
+    },
+    {
+      "name": "prd-success-metrics",
+      "kind": "skill",
+      "purpose": "Define a PRD's primary metric, guardrail metrics, baselines, targets and measurement window before build starts."
+    },
+    {
+      "name": "prd-scope-non-goals",
+      "kind": "skill",
+      "purpose": "Draw explicit in-scope, out-of-scope and non-goal lists plus phased cut lines so a PRD resists scope creep."
+    },
+    {
+      "name": "prd-review-checklist",
+      "kind": "skill",
+      "purpose": "Check a PRD for missing user evidence, vague requirements, unmeasurable goals, unowned risks and unresolved questions."
+    },
+    {
+      "name": "roadmap-now-next-later",
+      "kind": "skill",
+      "purpose": "Build a Now/Next/Later roadmap from a backlog, with confidence levels and the evidence behind each placement."
+    },
+    {
+      "name": "roadmap-outcome-themes",
+      "kind": "skill",
+      "purpose": "Group roadmap items under outcome themes tied to metrics instead of feature lists with dates."
+    },
+    {
+      "name": "roadmap-stakeholder-comms",
+      "kind": "skill",
+      "purpose": "Tailor one roadmap into exec, sales, customer and engineering versions with the right detail and date caveats."
+    },
+    {
+      "name": "roadmap-dependency-mapping",
+      "kind": "skill",
+      "purpose": "Map cross-team dependencies, sequencing constraints and critical path for roadmap items and flag schedule risk."
+    },
+    {
+      "name": "opportunity-solution-tree",
+      "kind": "skill",
+      "purpose": "Build a Teresa Torres-style opportunity solution tree from a desired outcome down to opportunities, solutions and tests."
+    },
+    {
+      "name": "assumption-mapping",
+      "kind": "skill",
+      "purpose": "List desirability, viability, feasibility and usability assumptions behind an idea and rank them by risk and evidence."
+    },
+    {
+      "name": "discovery-experiment-design",
+      "kind": "skill",
+      "purpose": "Design cheap discovery tests (fake door, concierge, prototype test, smoke page) with a pass/fail threshold set in advance."
+    },
+    {
+      "name": "jobs-to-be-done",
+      "kind": "skill",
+      "purpose": "Frame customer needs as JTBD job statements, forces of progress and switching triggers from interview evidence."
+    },
+    {
+      "name": "rice-scoring",
+      "kind": "skill",
+      "purpose": "Score backlog items with RICE (reach, impact, confidence, effort), document each input and rank with sensitivity notes."
+    },
+    {
+      "name": "kano-analysis",
+      "kind": "skill",
+      "purpose": "Run a Kano survey and classify features as basic, performance, delighter or indifferent from the response table."
+    },
+    {
+      "name": "prioritisation-tradeoff-memo",
+      "kind": "skill",
+      "purpose": "Write a one-page memo explaining what was prioritised, what was cut, why, and what would change the decision."
+    },
+    {
+      "name": "product-vision-narrative",
+      "kind": "skill",
+      "purpose": "Write a product vision narrative and a 2-3 year future-state story anchored in customer problems."
+    },
+    {
+      "name": "product-strategy-kernel",
+      "kind": "skill",
+      "purpose": "Draft a product strategy as diagnosis, guiding policy and coherent actions, and test it for real trade-offs."
+    },
+    {
+      "name": "north-star-metric",
+      "kind": "skill",
+      "purpose": "Choose a north star metric and its input metrics, checking it reflects customer value and leads revenue."
+    },
+    {
+      "name": "user-story-writing",
+      "kind": "skill",
+      "purpose": "Write user stories in role/goal/benefit form with clear acceptance criteria and INVEST checks."
+    },
+    {
+      "name": "backlog-refinement",
+      "kind": "skill",
+      "purpose": "Run backlog refinement: dedupe, clarify, estimate-ready check, re-rank, and archive stale items with a reason."
+    },
+    {
+      "name": "pm-acceptance-criteria",
+      "kind": "skill",
+      "purpose": "Write Given/When/Then acceptance criteria covering happy path, edge cases and error states for a story."
+    },
+    {
+      "name": "launch-tiering",
+      "kind": "skill",
+      "purpose": "Classify a release as tier 1/2/3 by customer impact and revenue and set the matching launch activities."
+    },
+    {
+      "name": "product-launch-checklist",
+      "kind": "skill",
+      "purpose": "Run a cross-functional launch checklist: docs, support readiness, sales enablement, pricing, comms, rollback."
+    },
+    {
+      "name": "customer-release-notes",
+      "kind": "skill",
+      "purpose": "Turn shipped changes into customer-facing release notes and product update posts that lead with benefit."
+    },
+    {
+      "name": "product-launch-retro",
+      "kind": "skill",
+      "purpose": "Run a post-launch review comparing launch goals to actual adoption, issues and feedback with follow-up owners."
+    },
+    {
+      "name": "product-kpi-tree",
+      "kind": "skill",
+      "purpose": "Decompose a business goal into a KPI tree of driver metrics product teams can move."
+    },
+    {
+      "name": "metric-definition-spec",
+      "kind": "skill",
+      "purpose": "Write an unambiguous metric definition: formula, filters, grain, owner, source and known caveats."
+    },
+    {
+      "name": "product-okr-writing",
+      "kind": "skill",
+      "purpose": "Write product team OKRs with outcome key results, baselines and targets, avoiding output-as-KR."
+    },
+    {
+      "name": "interview-guide-writing",
+      "kind": "skill",
+      "purpose": "Write a semi-structured interview guide with warm-up, story-based questions, probes and no leading questions."
+    },
+    {
+      "name": "research-recruiting-screener",
+      "kind": "skill",
+      "purpose": "Write a participant screener with qualifying and disqualifying questions and quota targets."
+    },
+    {
+      "name": "interview-moderation",
+      "kind": "skill",
+      "purpose": "Moderate user interviews: probing for past behaviour, staying neutral, handling silence and note-taking roles."
+    },
+    {
+      "name": "interview-synthesis",
+      "kind": "skill",
+      "purpose": "Turn interview notes into tagged observations, patterns across participants and evidence-backed insights."
+    },
+    {
+      "name": "affinity-mapping",
+      "kind": "skill",
+      "purpose": "Cluster research observations bottom-up into themes and name each theme as a user need."
+    },
+    {
+      "name": "insight-statement-writing",
+      "kind": "skill",
+      "purpose": "Write research insights as observation + why it matters + implication, each linked to evidence."
+    },
+    {
+      "name": "persona-building",
+      "kind": "skill",
+      "purpose": "Build evidence-based personas or archetypes from research data, avoiding demographic fluff."
+    },
+    {
+      "name": "customer-journey-mapping",
+      "kind": "skill",
+      "purpose": "Map a customer journey across stages with actions, thoughts, emotions, touchpoints and pain points."
+    },
+    {
+      "name": "usability-test-plan",
+      "kind": "skill",
+      "purpose": "Plan a moderated or unmoderated usability test: goals, tasks, participants, metrics and script."
+    },
+    {
+      "name": "usability-task-writing",
+      "kind": "skill",
+      "purpose": "Write realistic, non-leading usability tasks with success criteria and time limits."
+    },
+    {
+      "name": "usability-findings-report",
+      "kind": "skill",
+      "purpose": "Report usability findings with severity ratings, frequency, clips/quotes and recommended fixes."
+    },
+    {
+      "name": "ux-heuristic-evaluation",
+      "kind": "skill",
+      "purpose": "Evaluate an interface against Nielsen's heuristics and log issues with severity and location."
+    },
+    {
+      "name": "research-survey-design",
+      "kind": "skill",
+      "purpose": "Design a survey: objectives, question types, unbiased wording, scale choice, logic and pilot test."
+    },
+    {
+      "name": "survey-sampling-plan",
+      "kind": "skill",
+      "purpose": "Choose survey sample size, sources and quotas and estimate margin of error and response bias."
+    },
+    {
+      "name": "nps-csat-survey",
+      "kind": "skill",
+      "purpose": "Set up NPS, CSAT and CES surveys: wording, timing, follow-up question and how to read the score."
+    },
+    {
+      "name": "open-text-coding",
+      "kind": "skill",
+      "purpose": "Code open-ended survey and feedback text into a codebook and count themes with example quotes."
+    },
+    {
+      "name": "research-repository",
+      "kind": "skill",
+      "purpose": "Structure a research repository with consistent tags, study pages and atomic insights that stay findable."
+    },
+    {
+      "name": "research-plan",
+      "kind": "skill",
+      "purpose": "Write a research plan: questions, method choice, participants, timeline and how results feed decisions."
+    },
+    {
+      "name": "user-flow-mapping",
+      "kind": "skill",
+      "purpose": "Map user flows with entry points, decisions, system states and error paths for a feature."
+    },
+    {
+      "name": "ux-information-architecture",
+      "kind": "skill",
+      "purpose": "Design navigation and content hierarchy, labeling and sitemap from user mental models."
+    },
+    {
+      "name": "wireframe-spec",
+      "kind": "skill",
+      "purpose": "Describe low-fidelity wireframes screen by screen with layout regions, content priority and annotations."
+    },
+    {
+      "name": "card-sorting",
+      "kind": "skill",
+      "purpose": "Plan and analyse open and closed card sorts to inform navigation labels and grouping."
+    },
+    {
+      "name": "ui-visual-hierarchy",
+      "kind": "skill",
+      "purpose": "Apply size, weight, contrast, spacing and position to make the primary action and content obvious."
+    },
+    {
+      "name": "ui-typography-scale",
+      "kind": "skill",
+      "purpose": "Choose typefaces and a modular type scale with line-heights and roles for headings, body and UI text."
+    },
+    {
+      "name": "ui-color-palette",
+      "kind": "skill",
+      "purpose": "Build a UI colour palette with semantic roles, tint/shade ramps and contrast-checked text pairs."
+    },
+    {
+      "name": "ui-layout-grid",
+      "kind": "skill",
+      "purpose": "Set layout grids, breakpoints and a spacing scale so screens align consistently."
+    },
+    {
+      "name": "microcopy-writing",
+      "kind": "skill",
+      "purpose": "Write button labels, field hints, tooltips and confirmations that are short, specific and action-led."
+    },
+    {
+      "name": "error-message-copy",
+      "kind": "skill",
+      "purpose": "Write error messages that say what happened, why and how to fix it, without blame or jargon."
+    },
+    {
+      "name": "empty-state-copy",
+      "kind": "skill",
+      "purpose": "Write empty, zero-data and first-run states that explain value and give one clear next action."
+    },
+    {
+      "name": "ux-voice-tone",
+      "kind": "skill",
+      "purpose": "Define product voice and how tone shifts across success, error, warning and onboarding moments."
+    },
+    {
+      "name": "design-critique",
+      "kind": "skill",
+      "purpose": "Run structured design critiques against goals and principles with specific, actionable feedback."
+    },
+    {
+      "name": "design-handoff-spec",
+      "kind": "skill",
+      "purpose": "Prepare dev handoff: states, interactions, spacing, assets, responsive rules and edge cases per screen."
+    },
+    {
+      "name": "design-qa-checklist",
+      "kind": "skill",
+      "purpose": "QA a built UI against the design: spacing, type, states, responsiveness and copy, logged as fix tickets."
+    },
+    {
+      "name": "figma-file-hygiene",
+      "kind": "skill",
+      "purpose": "Organise Figma files with page structure, naming, components, status labels and archived explorations."
+    },
+    {
+      "name": "onboarding-flow-design",
+      "kind": "skill",
+      "purpose": "Design product onboarding that gets a new user to first value with minimal steps and progressive disclosure."
+    },
+    {
+      "name": "activation-milestones",
+      "kind": "skill",
+      "purpose": "Define the activation event and setup milestones from retention correlation and instrument them."
+    },
+    {
+      "name": "product-tour-copy",
+      "kind": "skill",
+      "purpose": "Write in-app tours, checklists and tooltips that are skippable, contextual and outcome-focused."
+    },
+    {
+      "name": "prototype-test-script",
+      "kind": "skill",
+      "purpose": "Write a script for testing a clickable prototype, including what is and is not functional."
+    },
+    {
+      "name": "ds-token-taxonomy",
+      "kind": "skill",
+      "purpose": "Name and tier design tokens (primitive, semantic, component) for colour, type, spacing, radius and motion."
+    },
+    {
+      "name": "ds-component-spec",
+      "kind": "skill",
+      "purpose": "Specify a design-system component: anatomy, props/variants, states, behaviour, accessibility notes and do/don't."
+    },
+    {
+      "name": "ds-component-docs",
+      "kind": "skill",
+      "purpose": "Write component documentation pages with usage guidance, examples, content rules and related components."
+    },
+    {
+      "name": "ds-variant-matrix",
+      "kind": "skill",
+      "purpose": "Audit component variants and props to collapse duplicates into a minimal, consistent variant matrix."
+    },
+    {
+      "name": "ds-contribution-model",
+      "kind": "skill",
+      "purpose": "Define how teams propose, review and contribute components to a design system."
+    },
+    {
+      "name": "ds-adoption-audit",
+      "kind": "skill",
+      "purpose": "Audit product screens for design-system coverage, detached components and one-off styles."
+    },
+    {
+      "name": "ds-versioning-deprecation",
+      "kind": "skill",
+      "purpose": "Plan design-system releases, breaking-change notes and deprecation timelines for components and tokens."
+    },
+    {
+      "name": "landing-page-copy",
+      "kind": "skill",
+      "purpose": "Write landing page copy section by section: hero, problem, solution, proof, objections, CTA."
+    },
+    {
+      "name": "headline-formulas",
+      "kind": "skill",
+      "purpose": "Generate and pick headlines using proven patterns tied to the reader's desired outcome."
+    },
+    {
+      "name": "value-proposition-canvas",
+      "kind": "skill",
+      "purpose": "Fill a value proposition canvas mapping customer jobs, pains and gains to product relievers and creators."
+    },
+    {
+      "name": "cta-copy",
+      "kind": "skill",
+      "purpose": "Write calls to action that state the outcome and reduce risk, with variants for testing."
+    },
+    {
+      "name": "voice-of-customer-mining",
+      "kind": "skill",
+      "purpose": "Mine reviews, calls and tickets for exact customer phrases to use in copy and messaging."
+    },
+    {
+      "name": "brand-voice-guide",
+      "kind": "skill",
+      "purpose": "Write a brand voice guide with traits, this-not-that examples and rules for vocabulary and grammar."
+    },
+    {
+      "name": "tone-matrix",
+      "kind": "skill",
+      "purpose": "Build a tone matrix showing how voice adapts by channel, audience and situation."
+    },
+    {
+      "name": "marketing-style-guide",
+      "kind": "skill",
+      "purpose": "Maintain a marketing copy style guide: capitalisation, numbers, product names, banned words, inclusive language."
+    },
+    {
+      "name": "brand-voice-edit",
+      "kind": "skill",
+      "purpose": "Edit a draft to match the brand voice guide and report each change with the rule it applies."
+    },
+    {
+      "name": "brand-positioning-statement",
+      "kind": "skill",
+      "purpose": "Write a brand positioning statement: audience, frame of reference, point of difference, reason to believe."
+    },
+    {
+      "name": "brand-messaging-house",
+      "kind": "skill",
+      "purpose": "Build a messaging house: umbrella promise, pillars, proof points and supporting messages."
+    },
+    {
+      "name": "brand-naming",
+      "kind": "skill",
+      "purpose": "Generate product/brand names from criteria, screen them for meaning, pronunciation and obvious conflicts, and shortlist."
+    },
+    {
+      "name": "brand-guidelines-doc",
+      "kind": "skill",
+      "purpose": "Write brand guidelines covering logo use, colour, typography, imagery, voice and co-branding rules."
+    },
+    {
+      "name": "brand-audit",
+      "kind": "skill",
+      "purpose": "Audit brand consistency across website, product, social and sales materials and list gaps."
+    },
+    {
+      "name": "positioning-canvas",
+      "kind": "skill",
+      "purpose": "Work through competitive alternatives, unique attributes, value, target segment and market category to set positioning."
+    },
+    {
+      "name": "messaging-framework",
+      "kind": "skill",
+      "purpose": "Turn positioning into a messaging framework per persona: headline, value pillars, proof and objections."
+    },
+    {
+      "name": "competitive-battlecard",
+      "kind": "skill",
+      "purpose": "Build a sales battlecard per competitor: where we win, where they win, landmines, traps and responses."
+    },
+    {
+      "name": "persona-messaging-matrix",
+      "kind": "skill",
+      "purpose": "Map each buyer persona to pains, value messages, proof points and preferred channels."
+    },
+    {
+      "name": "content-pillars",
+      "kind": "skill",
+      "purpose": "Define content pillars and topic clusters tied to audience problems and business goals."
+    },
+    {
+      "name": "editorial-calendar",
+      "kind": "skill",
+      "purpose": "Build an editorial calendar with owners, formats, channels, deadlines and distribution steps."
+    },
+    {
+      "name": "content-audit",
+      "kind": "skill",
+      "purpose": "Audit existing content by traffic, conversions and freshness and decide keep, update, merge or prune."
+    },
+    {
+      "name": "content-brief-writing",
+      "kind": "skill",
+      "purpose": "Write a content brief: audience, search intent, angle, outline, sources, internal links and CTA."
+    },
+    {
+      "name": "blog-post-outline",
+      "kind": "skill",
+      "purpose": "Outline a blog post with a hook, scannable H2/H3 structure, examples and a clear takeaway."
+    },
+    {
+      "name": "long-form-article",
+      "kind": "skill",
+      "purpose": "Draft long-form articles with original insight, concrete examples and sourced claims rather than filler."
+    },
+    {
+      "name": "content-editing-pass",
+      "kind": "skill",
+      "purpose": "Edit marketing content for clarity, structure, concision, claims needing sources and brand voice."
+    },
+    {
+      "name": "content-repurposing",
+      "kind": "skill",
+      "purpose": "Turn one source piece into a set of social posts, email, short video scripts and slides."
+    },
+    {
+      "name": "founder-ghostwriting",
+      "kind": "skill",
+      "purpose": "Ghostwrite posts and articles in a founder's voice from a voice sample and interview notes."
+    },
+    {
+      "name": "opinion-piece-structure",
+      "kind": "skill",
+      "purpose": "Structure thought-leadership and op-eds around one contrarian, defensible argument with evidence."
+    },
+    {
+      "name": "original-research-report",
+      "kind": "skill",
+      "purpose": "Plan and write a data-driven industry report from survey or product data with headline stats."
+    },
+    {
+      "name": "customer-case-study",
+      "kind": "skill",
+      "purpose": "Write customer case studies with challenge, solution, measurable results and approved quotes."
+    },
+    {
+      "name": "case-study-interview",
+      "kind": "skill",
+      "purpose": "Run a customer case-study interview that captures before/after metrics and quotable moments."
+    },
+    {
+      "name": "testimonial-collection",
+      "kind": "skill",
+      "purpose": "Request, collect, edit and get approval for testimonials and reviews with consent records."
+    },
+    {
+      "name": "whitepaper-writing",
+      "kind": "skill",
+      "purpose": "Write whitepapers and ebooks with a problem-led structure, evidence and a natural path to the product."
+    },
+    {
+      "name": "lead-magnet-ideation",
+      "kind": "skill",
+      "purpose": "Generate and evaluate gated-content and lead-magnet ideas by audience value and conversion intent."
+    },
+    {
+      "name": "video-script-marketing",
+      "kind": "skill",
+      "purpose": "Write marketing and explainer video scripts with hook, beats, on-screen text and CTA."
+    },
+    {
+      "name": "short-form-video-hooks",
+      "kind": "skill",
+      "purpose": "Write hooks and scripts for TikTok, Reels and Shorts with pattern interrupts in the first seconds."
+    },
+    {
+      "name": "youtube-seo-metadata",
+      "kind": "skill",
+      "purpose": "Write YouTube titles, descriptions, chapters and tags for search and click-through."
+    },
+    {
+      "name": "seo-keyword-research",
+      "kind": "skill",
+      "purpose": "Find and evaluate keywords by volume, difficulty, intent and business value from seed topics."
+    },
+    {
+      "name": "search-intent-mapping",
+      "kind": "skill",
+      "purpose": "Classify keywords by search intent and map each to the right page type and funnel stage."
+    },
+    {
+      "name": "keyword-clustering",
+      "kind": "skill",
+      "purpose": "Cluster keywords by SERP overlap into topics and assign one primary page per cluster to avoid cannibalisation."
+    },
+    {
+      "name": "serp-analysis",
+      "kind": "skill",
+      "purpose": "Analyse a SERP's ranking pages, formats and features to set the content angle and depth needed."
+    },
+    {
+      "name": "seo-title-meta",
+      "kind": "skill",
+      "purpose": "Write title tags and meta descriptions within length limits that match intent and earn clicks."
+    },
+    {
+      "name": "on-page-seo-audit",
+      "kind": "skill",
+      "purpose": "Audit a page for headings, keyword use, content depth, internal links, images and structured data."
+    },
+    {
+      "name": "internal-linking-plan",
+      "kind": "skill",
+      "purpose": "Plan internal links between hub and spoke pages with descriptive anchor text and orphan-page fixes."
+    },
+    {
+      "name": "seo-structured-data",
+      "kind": "skill",
+      "purpose": "Choose and write schema.org JSON-LD (Article, Product, FAQ, Organization) and validate it."
+    },
+    {
+      "name": "technical-seo-audit",
+      "kind": "skill",
+      "purpose": "Audit crawlability, indexation, canonicals, redirects, sitemaps, robots and page experience issues."
+    },
+    {
+      "name": "crawl-indexation-check",
+      "kind": "skill",
+      "purpose": "Diagnose why pages are not indexed using Search Console coverage, crawl logs and canonical signals."
+    },
+    {
+      "name": "seo-site-migration",
+      "kind": "skill",
+      "purpose": "Plan an SEO-safe site migration: URL mapping, redirects, pre/post crawls and traffic monitoring."
+    },
+    {
+      "name": "hreflang-international-seo",
+      "kind": "skill",
+      "purpose": "Set up hreflang, URL structure and localisation for international SEO and fix common errors."
+    },
+    {
+      "name": "link-building-outreach",
+      "kind": "skill",
+      "purpose": "Find relevant link prospects and write personalised outreach that offers real value."
+    },
+    {
+      "name": "digital-pr-campaigns",
+      "kind": "skill",
+      "purpose": "Plan data-led digital PR campaigns that earn coverage and links from publishers."
+    },
+    {
+      "name": "backlink-audit",
+      "kind": "skill",
+      "purpose": "Audit a backlink profile for quality, anchor distribution, lost links and competitor gaps."
+    },
+    {
+      "name": "local-seo-gbp",
+      "kind": "skill",
+      "purpose": "Optimise a Google Business Profile: categories, services, photos, posts and Q&A."
+    },
+    {
+      "name": "local-citations",
+      "kind": "skill",
+      "purpose": "Build and clean consistent NAP citations across directories and data aggregators."
+    },
+    {
+      "name": "review-generation",
+      "kind": "skill",
+      "purpose": "Set up ethical review requests and reply templates for Google and industry review sites."
+    },
+    {
+      "name": "local-landing-pages",
+      "kind": "skill",
+      "purpose": "Create unique location pages with local proof, not doorway-page duplicates."
+    },
+    {
+      "name": "answer-engine-optimisation",
+      "kind": "skill",
+      "purpose": "Structure content so AI assistants and AI overviews can cite it: clear answers, entities, sources."
+    },
+    {
+      "name": "ai-search-visibility-audit",
+      "kind": "skill",
+      "purpose": "Check how a brand appears in AI assistant answers for key queries and list content gaps to fix."
+    },
+    {
+      "name": "programmatic-seo-pages",
+      "kind": "skill",
+      "purpose": "Design templated page sets from a dataset with unique value per page and indexation controls."
+    },
+    {
+      "name": "social-post-writing",
+      "kind": "skill",
+      "purpose": "Write platform-native social posts with a hook, one idea and a clear reason to engage."
+    },
+    {
+      "name": "social-content-calendar",
+      "kind": "skill",
+      "purpose": "Plan a social calendar with content mix, cadence per platform and campaign moments."
+    },
+    {
+      "name": "platform-native-formats",
+      "kind": "skill",
+      "purpose": "Adapt content to each platform's formats, lengths, aspect ratios and norms."
+    },
+    {
+      "name": "linkedin-post-writing",
+      "kind": "skill",
+      "purpose": "Write LinkedIn posts with a strong first line, readable formatting and a discussion prompt."
+    },
+    {
+      "name": "linkedin-company-page",
+      "kind": "skill",
+      "purpose": "Optimise a LinkedIn company page and plan its content and employee amplification."
+    },
+    {
+      "name": "personal-brand-linkedin",
+      "kind": "skill",
+      "purpose": "Build an executive or founder LinkedIn presence: profile, themes, cadence and engagement routine."
+    },
+    {
+      "name": "social-listening",
+      "kind": "skill",
+      "purpose": "Set up social listening queries for brand, competitors and topics and summarise signal weekly."
+    },
+    {
+      "name": "social-reply-moderation",
+      "kind": "skill",
+      "purpose": "Reply to comments and DMs on brand voice and decide when to hide, escalate or take offline."
+    },
+    {
+      "name": "social-crisis-response",
+      "kind": "skill",
+      "purpose": "Respond to a social media flare-up: assess, hold, respond, monitor and debrief."
+    },
+    {
+      "name": "social-media-reporting",
+      "kind": "skill",
+      "purpose": "Report social performance with reach, engagement and conversions tied to goals, not vanity metrics."
+    },
+    {
+      "name": "email-newsletter-writing",
+      "kind": "skill",
+      "purpose": "Write newsletters with a consistent format, one main story and skimmable sections."
+    },
+    {
+      "name": "email-subject-lines",
+      "kind": "skill",
+      "purpose": "Write subject lines and preheaders with variants for testing, avoiding spam triggers."
+    },
+    {
+      "name": "email-campaign-brief",
+      "kind": "skill",
+      "purpose": "Brief an email campaign: audience, goal, message, offer, send plan and success metric."
+    },
+    {
+      "name": "email-deliverability",
+      "kind": "skill",
+      "purpose": "Keep email deliverable: SPF/DKIM/DMARC checks, list hygiene, warm-up and complaint monitoring."
+    },
+    {
+      "name": "lifecycle-journey-mapping",
+      "kind": "skill",
+      "purpose": "Map lifecycle stages and the messages, channels and triggers for each from signup to advocacy."
+    },
+    {
+      "name": "onboarding-email-sequence",
+      "kind": "skill",
+      "purpose": "Write a behaviour-triggered onboarding email sequence that drives activation steps."
+    },
+    {
+      "name": "winback-sequence",
+      "kind": "skill",
+      "purpose": "Design win-back and re-engagement sequences for lapsed users with sunset rules."
+    },
+    {
+      "name": "lifecycle-trigger-design",
+      "kind": "skill",
+      "purpose": "Define event triggers, entry/exit rules, frequency caps and suppression for automated messages."
+    },
+    {
+      "name": "email-segmentation",
+      "kind": "skill",
+      "purpose": "Segment audiences by behaviour, lifecycle stage and firmographics for targeted sends."
+    },
+    {
+      "name": "email-qa-checklist",
+      "kind": "skill",
+      "purpose": "QA emails before send: links, personalisation fallbacks, rendering, compliance footer and seed tests."
+    },
+    {
+      "name": "google-search-campaigns",
+      "kind": "skill",
+      "purpose": "Structure Google Search campaigns, ad groups, match types and bidding for a clear goal."
+    },
+    {
+      "name": "rsa-ad-copy",
+      "kind": "skill",
+      "purpose": "Write responsive search ad headlines and descriptions with pinning rules and asset variety."
+    },
+    {
+      "name": "negative-keyword-mining",
+      "kind": "skill",
+      "purpose": "Mine search term reports for negative keywords and wasted spend."
+    },
+    {
+      "name": "google-ads-audit",
+      "kind": "skill",
+      "purpose": "Audit a Google Ads account for structure, tracking, wasted spend, quality score and bidding issues."
+    },
+    {
+      "name": "meta-ads-structure",
+      "kind": "skill",
+      "purpose": "Structure Meta campaigns, ad sets and audiences for testing and scaling."
+    },
+    {
+      "name": "paid-social-creative-brief",
+      "kind": "skill",
+      "purpose": "Brief paid social creative with angle, hook, format, proof and variations to test."
+    },
+    {
+      "name": "ad-creative-testing",
+      "kind": "skill",
+      "purpose": "Plan structured ad creative tests and read results with enough spend to decide."
+    },
+    {
+      "name": "linkedin-ads-b2b",
+      "kind": "skill",
+      "purpose": "Run LinkedIn Ads for B2B: targeting by firmographics, offers, lead-gen forms and CPL control."
+    },
+    {
+      "name": "utm-tracking-plan",
+      "kind": "skill",
+      "purpose": "Define a UTM naming convention and campaign tracking plan teams can follow consistently."
+    },
+    {
+      "name": "marketing-attribution",
+      "kind": "skill",
+      "purpose": "Choose and explain attribution models and their blind spots for marketing reporting."
+    },
+    {
+      "name": "paid-media-reporting",
+      "kind": "skill",
+      "purpose": "Report paid media with spend, CAC, ROAS and payback by channel and recommend budget shifts."
+    },
+    {
+      "name": "incrementality-testing",
+      "kind": "skill",
+      "purpose": "Design geo-holdout or conversion-lift tests to measure true incremental impact of a channel."
+    },
+    {
+      "name": "press-release-writing",
+      "kind": "skill",
+      "purpose": "Write press releases with news hook, inverted pyramid, quotes and boilerplate."
+    },
+    {
+      "name": "media-pitch",
+      "kind": "skill",
+      "purpose": "Write short, personalised media pitches tied to a journalist's beat and news angle."
+    },
+    {
+      "name": "media-list-building",
+      "kind": "skill",
+      "purpose": "Build targeted media lists by beat, outlet tier and recent coverage."
+    },
+    {
+      "name": "press-kit",
+      "kind": "skill",
+      "purpose": "Assemble a press kit: fact sheet, bios, logos, screenshots and approved boilerplate."
+    },
+    {
+      "name": "crisis-holding-statement",
+      "kind": "skill",
+      "purpose": "Draft a holding statement fast: acknowledge, state facts known, next update time."
+    },
+    {
+      "name": "crisis-comms-plan",
+      "kind": "skill",
+      "purpose": "Write a crisis comms plan: scenarios, roles, approval chain, channels and templates."
+    },
+    {
+      "name": "stakeholder-qa-prep",
+      "kind": "skill",
+      "purpose": "Prepare anticipated questions and answers for media, customers and employees on a sensitive topic."
+    },
+    {
+      "name": "exec-announcement-writing",
+      "kind": "skill",
+      "purpose": "Write executive announcements (reorgs, funding, launches) clear about what changes for whom."
+    },
+    {
+      "name": "media-training-prep",
+      "kind": "skill",
+      "purpose": "Prepare a spokesperson for interviews: key messages, bridging, likely tough questions."
+    },
+    {
+      "name": "icp-definition",
+      "kind": "skill",
+      "purpose": "Define the ideal customer profile from won-deal data: firmographics, technographics, triggers and disqualifiers."
+    },
+    {
+      "name": "account-research",
+      "kind": "skill",
+      "purpose": "Research a target account: priorities, org chart, tech stack, news and a reason to reach out now."
+    },
+    {
+      "name": "prospect-list-building",
+      "kind": "skill",
+      "purpose": "Build prospect lists that match the ICP with the right personas and verified fields."
+    },
+    {
+      "name": "buying-signal-triggers",
+      "kind": "skill",
+      "purpose": "Identify and act on buying signals: funding, hiring, tech changes, leadership moves and intent data."
+    },
+    {
+      "name": "cold-email-writing",
+      "kind": "skill",
+      "purpose": "Write short, relevant cold emails with a specific reason, one ask and no fluff."
+    },
+    {
+      "name": "outbound-sequence-design",
+      "kind": "skill",
+      "purpose": "Design multi-touch outbound sequences across email, phone and social with timing and exit rules."
+    },
+    {
+      "name": "cold-call-script",
+      "kind": "skill",
+      "purpose": "Write cold call openers, permission-based talk tracks and responses to brush-offs."
+    },
+    {
+      "name": "social-selling",
+      "kind": "skill",
+      "purpose": "Use LinkedIn for social selling: profile, engagement before outreach and connection notes."
+    },
+    {
+      "name": "discovery-call-prep",
+      "kind": "skill",
+      "purpose": "Prepare for a discovery call: account context, hypotheses, agenda and questions to ask."
+    },
+    {
+      "name": "discovery-question-bank",
+      "kind": "skill",
+      "purpose": "Use a bank of open discovery questions on pain, impact, process, decision and timeline."
+    },
+    {
+      "name": "meddpicc-qualification",
+      "kind": "skill",
+      "purpose": "Qualify deals with MEDDPICC, scoring each element and listing gaps to close."
+    },
+    {
+      "name": "sales-call-notes",
+      "kind": "skill",
+      "purpose": "Summarise sales calls into pain, impact, stakeholders, next steps and CRM-ready fields."
+    },
+    {
+      "name": "sales-proposal-writing",
+      "kind": "skill",
+      "purpose": "Write sales proposals that restate the customer's problem, solution, outcomes, pricing and next steps."
+    },
+    {
+      "name": "business-case-roi",
+      "kind": "skill",
+      "purpose": "Build a customer business case with ROI, payback and cost-of-inaction using customer inputs."
+    },
+    {
+      "name": "quote-pricing-options",
+      "kind": "skill",
+      "purpose": "Present good/better/best quote options with clear inclusions and anchoring."
+    },
+    {
+      "name": "mutual-action-plan",
+      "kind": "skill",
+      "purpose": "Build a mutual action plan with dated steps, owners on both sides and the go-live goal."
+    },
+    {
+      "name": "rfp-go-no-go",
+      "kind": "skill",
+      "purpose": "Decide whether to bid on an RFP using fit, win probability, effort and strategic value."
+    },
+    {
+      "name": "rfp-compliance-matrix",
+      "kind": "skill",
+      "purpose": "Extract every RFP requirement into a compliance matrix with owner, response and status."
+    },
+    {
+      "name": "rfp-answer-library",
+      "kind": "skill",
+      "purpose": "Maintain a reusable RFP answer library with owners, review dates and tailoring notes."
+    },
+    {
+      "name": "rfp-security-questionnaire",
+      "kind": "skill",
+      "purpose": "Draft answers to customer security questionnaires from approved sources, flagging items for security sign-off."
+    },
+    {
+      "name": "rfp-executive-summary",
+      "kind": "skill",
+      "purpose": "Write an RFP executive summary that answers the buyer's evaluation criteria and win themes."
+    },
+    {
+      "name": "negotiation-prep",
+      "kind": "skill",
+      "purpose": "Prepare a negotiation: BATNA, walk-away, priorities, tradeables and concession plan."
+    },
+    {
+      "name": "objection-handling",
+      "kind": "skill",
+      "purpose": "Handle sales objections with acknowledge, clarify, respond and confirm, per common objection type."
+    },
+    {
+      "name": "discount-guardrails",
+      "kind": "skill",
+      "purpose": "Apply discount approval tiers and give-get rules so concessions trade for value."
+    },
+    {
+      "name": "crm-data-standards",
+      "kind": "skill",
+      "purpose": "Define required CRM fields, picklists, naming and ownership rules and audit compliance."
+    },
+    {
+      "name": "pipeline-stage-definitions",
+      "kind": "skill",
+      "purpose": "Define pipeline stages with entry/exit criteria and probabilities based on buyer actions."
+    },
+    {
+      "name": "crm-dedupe-enrichment",
+      "kind": "skill",
+      "purpose": "Find and merge duplicate CRM records and enrich missing fields safely."
+    },
+    {
+      "name": "pipeline-review",
+      "kind": "skill",
+      "purpose": "Run a weekly pipeline review: stage age, next steps, slipped dates and coverage gaps."
+    },
+    {
+      "name": "sales-forecasting",
+      "kind": "skill",
+      "purpose": "Build commit/best-case forecasts from pipeline and history and explain the call."
+    },
+    {
+      "name": "deal-risk-scoring",
+      "kind": "skill",
+      "purpose": "Score deal risk from activity, stakeholder engagement, stage age and qualification gaps."
+    },
+    {
+      "name": "win-loss-analysis",
+      "kind": "skill",
+      "purpose": "Run win/loss interviews and analysis and turn reasons into product and sales actions."
+    },
+    {
+      "name": "key-account-plan",
+      "kind": "skill",
+      "purpose": "Write a key account plan: whitespace, stakeholders, goals, risks and quarterly plays."
+    },
+    {
+      "name": "expansion-opportunity-mapping",
+      "kind": "skill",
+      "purpose": "Map upsell and cross-sell opportunities from usage, org structure and unmet needs."
+    },
+    {
+      "name": "qbr-deck",
+      "kind": "skill",
+      "purpose": "Build a customer QBR: value delivered against goals, usage, roadmap and next-quarter plan."
+    },
+    {
+      "name": "stakeholder-mapping",
+      "kind": "skill",
+      "purpose": "Map buying committee and account stakeholders by role, influence, sentiment and coverage."
+    },
+    {
+      "name": "lead-scoring-model",
+      "kind": "skill",
+      "purpose": "Design fit and engagement lead scoring with thresholds and a review loop against conversions."
+    },
+    {
+      "name": "lead-routing-rules",
+      "kind": "skill",
+      "purpose": "Define lead routing by territory, segment and round-robin with SLAs and fallbacks."
+    },
+    {
+      "name": "mql-sql-definitions",
+      "kind": "skill",
+      "purpose": "Define MQL, SAL, SQL and opportunity stages and the marketing-sales handoff SLA."
+    },
+    {
+      "name": "sales-playbook",
+      "kind": "skill",
+      "purpose": "Write a sales playbook: ICP, personas, process stages, plays, talk tracks and tools."
+    },
+    {
+      "name": "demo-script",
+      "kind": "skill",
+      "purpose": "Write a demo storyline that follows discovery pain, shows outcomes and avoids feature tours."
+    },
+    {
+      "name": "sales-onboarding-ramp",
+      "kind": "skill",
+      "purpose": "Design a new-rep ramp plan with week-by-week learning, certifications and ramp metrics."
+    },
+    {
+      "name": "call-review-scorecard",
+      "kind": "skill",
+      "purpose": "Score recorded sales calls against a rubric and give specific coaching notes."
+    },
+    {
+      "name": "talk-track-writing",
+      "kind": "skill",
+      "purpose": "Write concise talk tracks for positioning, pricing and competitive moments."
+    },
+    {
+      "name": "sales-roleplay-scenarios",
+      "kind": "skill",
+      "purpose": "Create sales role-play scenarios with buyer persona, hidden objections and scoring guide."
+    },
+    {
+      "name": "customer-onboarding-plan",
+      "kind": "skill",
+      "purpose": "Build a customer onboarding plan with phases, owners, milestones and success criteria."
+    },
+    {
+      "name": "kickoff-call-agenda",
+      "kind": "skill",
+      "purpose": "Run a customer kickoff: goals, roles, timeline, risks and agreed definition of success."
+    },
+    {
+      "name": "customer-success-plan",
+      "kind": "skill",
+      "purpose": "Write a success plan tying the customer's business outcomes to product use and checkpoints."
+    },
+    {
+      "name": "time-to-value-milestones",
+      "kind": "skill",
+      "purpose": "Define and track time-to-first-value and onboarding milestones per segment."
+    },
+    {
+      "name": "customer-health-score",
+      "kind": "skill",
+      "purpose": "Design a customer health score from usage, support, sentiment and commercial signals and validate it."
+    },
+    {
+      "name": "churn-risk-signals",
+      "kind": "skill",
+      "purpose": "Spot churn risk signals and assign the right save play and owner."
+    },
+    {
+      "name": "churn-save-play",
+      "kind": "skill",
+      "purpose": "Run save plays for at-risk accounts: root cause, exec outreach, recovery plan and offer limits."
+    },
+    {
+      "name": "renewal-playbook",
+      "kind": "skill",
+      "purpose": "Run renewals from 120 days out: value review, risks, pricing and paperwork."
+    },
+    {
+      "name": "feedback-tagging-taxonomy",
+      "kind": "skill",
+      "purpose": "Define a feedback tagging taxonomy for tickets, calls and surveys and keep tags consistent."
+    },
+    {
+      "name": "voc-report",
+      "kind": "skill",
+      "purpose": "Write a voice-of-customer report with top themes, frequency, revenue impact and quotes."
+    },
+    {
+      "name": "feature-request-intake",
+      "kind": "skill",
+      "purpose": "Capture, dedupe and link feature requests to accounts and revenue and close the loop with customers."
+    },
+    {
+      "name": "customer-advisory-board",
+      "kind": "skill",
+      "purpose": "Plan a customer advisory board: members, charter, agenda and follow-up."
+    },
+    {
+      "name": "ticket-triage-rules",
+      "kind": "skill",
+      "purpose": "Classify incoming tickets by type, product area, severity and routing queue with clear rules."
+    },
+    {
+      "name": "ticket-priority-sla",
+      "kind": "skill",
+      "purpose": "Set priority levels and SLAs by severity and plan, and flag tickets at risk of breach."
+    },
+    {
+      "name": "support-escalation-handoff",
+      "kind": "skill",
+      "purpose": "Escalate tickets to engineering or tier 2 with reproduction steps, impact and context."
+    },
+    {
+      "name": "ticket-to-bug-report",
+      "kind": "skill",
+      "purpose": "Turn customer tickets into actionable bug reports with steps, expected/actual and affected accounts."
+    },
+    {
+      "name": "support-macro-writing",
+      "kind": "skill",
+      "purpose": "Write support macros that are personalised, accurate and easy to adapt per ticket."
+    },
+    {
+      "name": "support-tone-empathy",
+      "kind": "skill",
+      "purpose": "Write support replies with empathy, ownership and clear next steps, especially for upset customers."
+    },
+    {
+      "name": "policy-explanation-replies",
+      "kind": "skill",
+      "purpose": "Explain refunds, limits and policy decisions to customers fairly with alternatives offered."
+    },
+    {
+      "name": "macro-library-audit",
+      "kind": "skill",
+      "purpose": "Audit a macro library for outdated, duplicate and unused macros and fix them."
+    },
+    {
+      "name": "kb-article-writing",
+      "kind": "skill",
+      "purpose": "Write help center articles: task-oriented titles, steps, screenshots notes and troubleshooting."
+    },
+    {
+      "name": "kb-taxonomy",
+      "kind": "skill",
+      "purpose": "Organise a knowledge base into categories, sections and article types users can navigate."
+    },
+    {
+      "name": "kb-gap-analysis",
+      "kind": "skill",
+      "purpose": "Find knowledge base gaps from ticket drivers and search-with-no-results queries."
+    },
+    {
+      "name": "kb-maintenance",
+      "kind": "skill",
+      "purpose": "Keep help content current: review cycles, release-triggered updates and retiring stale articles."
+    },
+    {
+      "name": "support-qa-scorecard",
+      "kind": "skill",
+      "purpose": "Review support conversations against a QA scorecard and give agents feedback."
+    },
+    {
+      "name": "support-metrics-review",
+      "kind": "skill",
+      "purpose": "Review support metrics (FRT, resolution time, CSAT, backlog, contact rate) and explain movements."
+    },
+    {
+      "name": "support-capacity-planning",
+      "kind": "skill",
+      "purpose": "Forecast ticket volume and plan support staffing and coverage by hour and channel."
+    },
+    {
+      "name": "csat-driver-analysis",
+      "kind": "skill",
+      "purpose": "Analyse low-CSAT conversations to find root causes across product, policy and agent behaviour."
+    },
+    {
+      "name": "community-strategy",
+      "kind": "skill",
+      "purpose": "Define community purpose, members, value exchange, platform and success metrics."
+    },
+    {
+      "name": "community-guidelines",
+      "kind": "skill",
+      "purpose": "Write community guidelines and a moderation policy with escalation steps."
+    },
+    {
+      "name": "community-onboarding",
+      "kind": "skill",
+      "purpose": "Welcome and activate new community members with intros, first actions and rituals."
+    },
+    {
+      "name": "ambassador-program",
+      "kind": "skill",
+      "purpose": "Design a community ambassador/champion program with criteria, perks and expectations."
+    },
+    {
+      "name": "community-health-metrics",
+      "kind": "skill",
+      "purpose": "Track community health: active members, contribution rate, response time and retention."
+    },
+    {
+      "name": "devrel-strategy",
+      "kind": "skill",
+      "purpose": "Set a developer relations strategy: audience, funnel, programs and metrics tied to adoption."
+    },
+    {
+      "name": "conference-talk-proposal",
+      "kind": "skill",
+      "purpose": "Write conference CFP abstracts and talk outlines that get accepted."
+    },
+    {
+      "name": "developer-newsletter",
+      "kind": "skill",
+      "purpose": "Write developer newsletters with release highlights, tutorials and community contributions."
+    },
+    {
+      "name": "devrel-metrics",
+      "kind": "skill",
+      "purpose": "Measure developer relations impact: activation, community contributions and influenced pipeline."
+    },
+    {
+      "name": "developer-tutorial-content",
+      "kind": "skill",
+      "purpose": "Write developer marketing tutorials that solve a real task and lead to a working result."
+    },
+    {
+      "name": "saas-pricing-model",
+      "kind": "skill",
+      "purpose": "Choose a pricing model (seat, usage, tier, hybrid) based on value delivery and buyer."
+    },
+    {
+      "name": "value-metric-selection",
+      "kind": "skill",
+      "purpose": "Pick a value metric that scales with customer value, is predictable and easy to understand."
+    },
+    {
+      "name": "packaging-tiers",
+      "kind": "skill",
+      "purpose": "Design good/better/best packaging with fences, feature allocation and upgrade triggers."
+    },
+    {
+      "name": "willingness-to-pay-research",
+      "kind": "skill",
+      "purpose": "Run Van Westendorp and Gabor-Granger studies and read acceptable price ranges."
+    },
+    {
+      "name": "price-change-rollout",
+      "kind": "skill",
+      "purpose": "Plan a price increase or change: grandfathering, comms, sales handling and churn monitoring."
+    },
+    {
+      "name": "pricing-page-copy",
+      "kind": "skill",
+      "purpose": "Write a pricing page: plan names, feature tables, FAQs and objection-handling copy."
+    },
+    {
+      "name": "freemium-limits-design",
+      "kind": "skill",
+      "purpose": "Set free plan limits that let users reach value while creating upgrade pressure."
+    },
+    {
+      "name": "pql-definition",
+      "kind": "skill",
+      "purpose": "Define product-qualified leads from usage signals and route them to sales or self-serve."
+    },
+    {
+      "name": "self-serve-upgrade-prompts",
+      "kind": "skill",
+      "purpose": "Design in-product upgrade prompts at limit hits and value moments without dark patterns."
+    },
+    {
+      "name": "trial-conversion",
+      "kind": "skill",
+      "purpose": "Improve trial-to-paid conversion with trial length, onboarding, nudges and sales assists."
+    },
+    {
+      "name": "growth-experiment-design",
+      "kind": "skill",
+      "purpose": "Write experiment hypotheses with expected effect, primary metric, guardrails and decision rule."
+    },
+    {
+      "name": "experiment-backlog-ice",
+      "kind": "skill",
+      "purpose": "Maintain a growth experiment backlog prioritised by ICE with learnings logged."
+    },
+    {
+      "name": "experiment-readout",
+      "kind": "skill",
+      "purpose": "Write an experiment readout: result, confidence, learnings and the ship/iterate/kill decision."
+    },
+    {
+      "name": "growth-model",
+      "kind": "skill",
+      "purpose": "Build a growth model of acquisition, activation, retention and monetisation loops to find leverage."
+    },
+    {
+      "name": "cro-page-audit",
+      "kind": "skill",
+      "purpose": "Audit a landing or signup page for clarity, friction, trust and CTA issues and propose test ideas."
+    },
+    {
+      "name": "signup-flow-optimisation",
+      "kind": "skill",
+      "purpose": "Reduce signup and checkout drop-off: fields, steps, social proof and error handling."
+    },
+    {
+      "name": "funnel-drop-off-diagnosis",
+      "kind": "skill",
+      "purpose": "Diagnose where and why users drop out of a funnel by combining analytics with qualitative evidence."
+    },
+    {
+      "name": "referral-program-design",
+      "kind": "skill",
+      "purpose": "Design referral programs: incentive, trigger moment, sharing mechanics and fraud limits."
+    },
+    {
+      "name": "viral-loop-mapping",
+      "kind": "skill",
+      "purpose": "Map viral and content loops, estimate loop coefficients and find steps to improve."
+    },
+    {
+      "name": "partner-program-design",
+      "kind": "skill",
+      "purpose": "Design a partner program: partner types, tiers, benefits, requirements and economics."
+    },
+    {
+      "name": "partner-ideal-profile",
+      "kind": "skill",
+      "purpose": "Define the ideal partner profile and score candidate partners on fit and reach."
+    },
+    {
+      "name": "co-marketing-plan",
+      "kind": "skill",
+      "purpose": "Plan co-marketing with a partner: joint offer, assets, channels, lead sharing and metrics."
+    },
+    {
+      "name": "partner-enablement-kit",
+      "kind": "skill",
+      "purpose": "Build partner enablement: pitch deck, battlecards, deal registration and training."
+    },
+    {
+      "name": "partner-pitch",
+      "kind": "skill",
+      "purpose": "Pitch a partnership with mutual value, proposed motion and a small first step."
+    },
+    {
+      "name": "affiliate-program-design",
+      "kind": "skill",
+      "purpose": "Design affiliate programs: commission structure, cookie window, terms and recruitment."
+    },
+    {
+      "name": "influencer-brief",
+      "kind": "skill",
+      "purpose": "Brief creators and influencers with goals, key messages, disclosure requirements and deliverables."
+    },
+    {
+      "name": "creator-outreach",
+      "kind": "skill",
+      "purpose": "Find relevant creators, assess audience fit and write outreach and collaboration offers."
+    },
+    {
+      "name": "integration-marketplace-listing",
+      "kind": "skill",
+      "purpose": "Write app and integration marketplace listings with use cases, screenshots plan and keywords."
+    },
+    {
+      "name": "event-strategy",
+      "kind": "skill",
+      "purpose": "Decide which events to run, sponsor or attend based on audience, goals and expected pipeline."
+    },
+    {
+      "name": "event-run-of-show",
+      "kind": "skill",
+      "purpose": "Build a minute-by-minute run of show with owners, cues, contingencies and AV notes."
+    },
+    {
+      "name": "event-promotion-plan",
+      "kind": "skill",
+      "purpose": "Plan event promotion across email, social, partners and sales with registration targets."
+    },
+    {
+      "name": "event-followup",
+      "kind": "skill",
+      "purpose": "Follow up after events with segmented messages by attendance and engagement and sales handoff."
+    },
+    {
+      "name": "tradeshow-booth-plan",
+      "kind": "skill",
+      "purpose": "Plan a tradeshow booth: staffing, demo stations, lead capture, scripts and meeting booking."
+    },
+    {
+      "name": "webinar-planning",
+      "kind": "skill",
+      "purpose": "Plan a webinar: topic, speakers, format, platform setup and rehearsal."
+    },
+    {
+      "name": "webinar-script",
+      "kind": "skill",
+      "purpose": "Write a webinar script with opening, segments, polls, Q&A handling and CTA."
+    },
+    {
+      "name": "market-sizing-tam",
+      "kind": "skill",
+      "purpose": "Estimate TAM, SAM and SOM bottom-up and top-down with stated assumptions."
+    },
+    {
+      "name": "market-landscape-scan",
+      "kind": "skill",
+      "purpose": "Map a market landscape: segments, players, business models and trends."
+    },
+    {
+      "name": "competitor-teardown",
+      "kind": "skill",
+      "purpose": "Tear down a competitor's product, pricing, messaging, channels and customers from public sources."
+    },
+    {
+      "name": "industry-trend-brief",
+      "kind": "skill",
+      "purpose": "Write a brief on an industry trend with drivers, evidence and implications for the business."
+    },
+    {
+      "name": "competitor-monitoring",
+      "kind": "skill",
+      "purpose": "Set up ongoing competitor monitoring of releases, pricing, hiring and messaging with a digest."
+    },
+    {
+      "name": "market-segmentation",
+      "kind": "skill",
+      "purpose": "Segment a market by needs, behaviour and firmographics and pick target segments."
+    },
+    {
+      "name": "buyer-journey-map",
+      "kind": "skill",
+      "purpose": "Map the B2B buyer journey and buying committee questions at each stage to content and sales actions."
+    },
+    {
+      "name": "gtm-strategy-plan",
+      "kind": "skill",
+      "purpose": "Write a go-to-market plan: target segment, positioning, motion, channels, pricing and launch milestones."
+    },
+    {
+      "name": "gtm-motion-choice",
+      "kind": "skill",
+      "purpose": "Choose between product-led, sales-led, partner-led or hybrid motions based on ACV and buyer."
+    },
+    {
+      "name": "marketing-channel-selection",
+      "kind": "skill",
+      "purpose": "Evaluate and pick acquisition channels by audience fit, cost, scalability and testability."
+    },
+    {
+      "name": "quarterly-marketing-plan",
+      "kind": "skill",
+      "purpose": "Write a quarterly marketing plan with goals, programs, budget split and pipeline targets."
+    },
+    {
+      "name": "campaign-brief",
+      "kind": "skill",
+      "purpose": "Write an integrated campaign brief: objective, audience, insight, message, channels and KPIs."
+    },
+    {
+      "name": "integrated-campaign-plan",
+      "kind": "skill",
+      "purpose": "Plan an integrated campaign across channels with timeline, assets list and owners."
+    },
+    {
+      "name": "campaign-retro",
+      "kind": "skill",
+      "purpose": "Run a campaign retrospective: results versus goals, what worked, what to change."
+    },
+    {
+      "name": "abm-account-selection",
+      "kind": "skill",
+      "purpose": "Select and tier ABM target accounts with sales using fit and intent data."
+    },
+    {
+      "name": "abm-plays",
+      "kind": "skill",
+      "purpose": "Design ABM plays per tier: personalised content, ads, direct mail, events and sales coordination."
+    },
+    {
+      "name": "abm-personalisation",
+      "kind": "skill",
+      "purpose": "Personalise landing pages, emails and ads by account and industry at the right scale."
+    },
+    {
+      "name": "prd-drafter",
+      "kind": "agent",
+      "purpose": "Drafts a complete PRD from a problem statement, research notes and constraints, marking open questions.",
+      "skills": [
+        "prd-structure",
+        "prd-requirements-writing",
+        "prd-success-metrics",
+        "prd-scope-non-goals"
+      ]
+    },
+    {
+      "name": "prd-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews a PRD and returns blocking gaps, ambiguous requirements and unmeasurable goals with suggested fixes.",
+      "skills": [
+        "prd-review-checklist",
+        "prd-success-metrics"
+      ]
+    },
+    {
+      "name": "roadmap-planner",
+      "kind": "agent",
+      "purpose": "Turns a ranked backlog and strategy into an outcome-themed Now/Next/Later roadmap with dependencies and risks.",
+      "skills": [
+        "roadmap-now-next-later",
+        "roadmap-outcome-themes",
+        "roadmap-dependency-mapping"
+      ]
+    },
+    {
+      "name": "story-splitter",
+      "kind": "agent",
+      "purpose": "Breaks epics into thin, independently shippable user stories with acceptance criteria.",
+      "skills": [
+        "user-story-writing",
+        "story-splitting",
+        "pm-acceptance-criteria"
+      ]
+    },
+    {
+      "name": "product-update-writer",
+      "kind": "agent",
+      "purpose": "Writes customer release notes and changelog-style product update posts from shipped tickets.",
+      "skills": [
+        "customer-release-notes",
+        "microcopy-writing"
+      ]
+    },
+    {
+      "name": "prioritisation-analyst",
+      "kind": "agent",
+      "purpose": "Scores a backlog with RICE, shows sensitivity to uncertain inputs and writes the trade-off memo.",
+      "skills": [
+        "rice-scoring",
+        "prioritisation-tradeoff-memo"
+      ]
+    },
+    {
+      "name": "discovery-planner",
+      "kind": "agent",
+      "purpose": "Plans a discovery cycle: outcome, opportunity tree, riskiest assumptions and the cheapest test for each.",
+      "skills": [
+        "opportunity-solution-tree",
+        "assumption-mapping",
+        "discovery-experiment-design"
+      ]
+    },
+    {
+      "name": "jtbd-analyst",
+      "kind": "agent",
+      "purpose": "Extracts jobs, forces of progress and switching triggers from interview transcripts.",
+      "skills": [
+        "jobs-to-be-done",
+        "interview-synthesis"
+      ]
+    },
+    {
+      "name": "product-strategist",
+      "kind": "agent",
+      "purpose": "Drafts and stress-tests product vision, strategy kernel and north star metric for a product area.",
+      "skills": [
+        "product-vision-narrative",
+        "product-strategy-kernel",
+        "north-star-metric"
+      ]
+    },
+    {
+      "name": "product-metrics-analyst",
+      "kind": "agent",
+      "purpose": "Builds KPI trees and writes precise metric definitions for a product area, flagging ambiguous or unmeasurable metrics.",
+      "skills": [
+        "product-kpi-tree",
+        "metric-definition-spec",
+        "north-star-metric"
+      ]
+    },
+    {
+      "name": "research-planner",
+      "kind": "agent",
+      "purpose": "Writes a research plan, screener and interview guide for a set of research questions.",
+      "skills": [
+        "research-plan",
+        "research-recruiting-screener",
+        "interview-guide-writing"
+      ]
+    },
+    {
+      "name": "research-synthesizer",
+      "kind": "agent",
+      "purpose": "Synthesises interview notes or transcripts into themes, insights and implications with evidence links.",
+      "skills": [
+        "interview-synthesis",
+        "affinity-mapping",
+        "insight-statement-writing"
+      ]
+    },
+    {
+      "name": "usability-report-writer",
+      "kind": "agent",
+      "purpose": "Turns usability session notes into a severity-ranked findings report with recommendations.",
+      "skills": [
+        "usability-findings-report",
+        "ux-heuristic-evaluation"
+      ]
+    },
+    {
+      "name": "survey-builder",
+      "kind": "agent",
+      "purpose": "Designs a survey from research objectives and reviews questions for bias, then codes open-text results.",
+      "skills": [
+        "research-survey-design",
+        "survey-sampling-plan",
+        "open-text-coding"
+      ]
+    },
+    {
+      "name": "persona-journey-builder",
+      "kind": "agent",
+      "purpose": "Builds evidence-based personas and journey maps from research data.",
+      "skills": [
+        "persona-building",
+        "customer-journey-mapping"
+      ]
+    },
+    {
+      "name": "ux-flow-designer",
+      "kind": "agent",
+      "purpose": "Designs user flows, information architecture and annotated wireframe specs for a feature.",
+      "skills": [
+        "user-flow-mapping",
+        "ux-information-architecture",
+        "wireframe-spec"
+      ]
+    },
+    {
+      "name": "design-critic",
+      "kind": "agent",
+      "purpose": "Critiques screens or prototypes against goals, heuristics and visual hierarchy and returns prioritised feedback.",
+      "skills": [
+        "design-critique",
+        "ux-heuristic-evaluation",
+        "ui-visual-hierarchy"
+      ]
+    },
+    {
+      "name": "ux-copy-writer",
+      "kind": "agent",
+      "purpose": "Writes and reviews interface copy: labels, errors, empty states and onboarding text in product voice.",
+      "skills": [
+        "microcopy-writing",
+        "error-message-copy",
+        "empty-state-copy",
+        "ux-voice-tone"
+      ]
+    },
+    {
+      "name": "design-handoff-checker",
+      "kind": "agent",
+      "purpose": "Checks a design is ready for handoff and later QA-checks the build against it.",
+      "skills": [
+        "design-handoff-spec",
+        "design-qa-checklist"
+      ]
+    },
+    {
+      "name": "onboarding-designer",
+      "kind": "agent",
+      "purpose": "Designs a first-run onboarding flow, activation milestones and tour copy for a product.",
+      "skills": [
+        "onboarding-flow-design",
+        "activation-milestones",
+        "product-tour-copy"
+      ]
+    },
+    {
+      "name": "ds-component-spec-writer",
+      "kind": "agent",
+      "purpose": "Writes design-system component specs and documentation pages from designs and usage examples.",
+      "skills": [
+        "ds-component-spec",
+        "ds-component-docs"
+      ]
+    },
+    {
+      "name": "ds-token-auditor",
+      "kind": "agent",
+      "purpose": "Audits design tokens and component variants for naming drift, duplicates and contrast issues.",
+      "skills": [
+        "ds-token-taxonomy",
+        "ds-variant-matrix",
+        "ui-color-palette"
+      ]
+    },
+    {
+      "name": "ds-adoption-auditor",
+      "kind": "agent",
+      "purpose": "Audits product screens for design-system coverage and produces a migration backlog.",
+      "skills": [
+        "ds-adoption-audit",
+        "ds-versioning-deprecation"
+      ]
+    },
+    {
+      "name": "ds-contribution-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews component contribution proposals against the design system's contribution criteria.",
+      "skills": [
+        "ds-contribution-model",
+        "ds-component-spec"
+      ]
+    },
+    {
+      "name": "landing-page-copywriter",
+      "kind": "agent",
+      "purpose": "Writes landing page copy from positioning and customer language, with headline and CTA variants.",
+      "skills": [
+        "landing-page-copy",
+        "headline-formulas",
+        "cta-copy",
+        "voice-of-customer-mining"
+      ]
+    },
+    {
+      "name": "conversion-copy-critic",
+      "kind": "agent",
+      "purpose": "Critiques marketing copy for clarity, specificity, proof and friction and suggests rewrites.",
+      "skills": [
+        "landing-page-copy",
+        "cro-page-audit"
+      ]
+    },
+    {
+      "name": "brand-voice-editor",
+      "kind": "agent",
+      "purpose": "Edits drafts to the brand voice and style guide and lists each change with its rule.",
+      "skills": [
+        "brand-voice-edit",
+        "brand-voice-guide",
+        "marketing-style-guide"
+      ]
+    },
+    {
+      "name": "brand-strategist",
+      "kind": "agent",
+      "purpose": "Drafts brand positioning, messaging house and an audit of brand consistency.",
+      "skills": [
+        "brand-positioning-statement",
+        "brand-messaging-house",
+        "brand-audit"
+      ]
+    },
+    {
+      "name": "naming-generator",
+      "kind": "agent",
+      "purpose": "Generates and screens name candidates for products and features against criteria.",
+      "skills": [
+        "brand-naming"
+      ]
+    },
+    {
+      "name": "brand-guidelines-writer",
+      "kind": "agent",
+      "purpose": "Writes or updates brand guidelines and voice guide from existing assets.",
+      "skills": [
+        "brand-guidelines-doc",
+        "brand-voice-guide",
+        "tone-matrix"
+      ]
+    },
+    {
+      "name": "content-strategist",
+      "kind": "agent",
+      "purpose": "Builds content pillars, editorial calendar and content audit recommendations from goals and data.",
+      "skills": [
+        "content-pillars",
+        "editorial-calendar",
+        "content-audit"
+      ]
+    },
+    {
+      "name": "blog-post-writer",
+      "kind": "agent",
+      "purpose": "Writes blog posts and articles from a content brief with outline, draft and sources.",
+      "skills": [
+        "content-brief-writing",
+        "blog-post-outline",
+        "long-form-article"
+      ]
+    },
+    {
+      "name": "marketing-content-editor",
+      "kind": "agent",
+      "purpose": "Edits marketing drafts for structure, clarity, claims and voice and returns tracked changes.",
+      "skills": [
+        "content-editing-pass",
+        "brand-voice-edit"
+      ]
+    },
+    {
+      "name": "content-repurposer",
+      "kind": "agent",
+      "purpose": "Turns a long piece into social posts, newsletter copy and short video scripts.",
+      "skills": [
+        "content-repurposing",
+        "social-post-writing",
+        "short-form-video-hooks"
+      ]
+    },
+    {
+      "name": "case-study-writer",
+      "kind": "agent",
+      "purpose": "Turns customer interview notes into an approved case study and testimonial snippets.",
+      "skills": [
+        "customer-case-study",
+        "case-study-interview",
+        "testimonial-collection"
+      ]
+    },
+    {
+      "name": "keyword-researcher",
+      "kind": "agent",
+      "purpose": "Produces a clustered keyword map with intent, difficulty and target page for a topic.",
+      "skills": [
+        "seo-keyword-research",
+        "search-intent-mapping",
+        "keyword-clustering"
+      ]
+    },
+    {
+      "name": "seo-brief-writer",
+      "kind": "agent",
+      "purpose": "Writes SEO content briefs from SERP analysis with outline, entities, links and titles.",
+      "skills": [
+        "serp-analysis",
+        "content-brief-writing",
+        "seo-title-meta"
+      ]
+    },
+    {
+      "name": "on-page-seo-auditor",
+      "kind": "agent",
+      "purpose": "Audits pages for on-page SEO issues and returns prioritised fixes with rewritten titles and metas.",
+      "skills": [
+        "on-page-seo-audit",
+        "seo-title-meta",
+        "internal-linking-plan",
+        "seo-structured-data"
+      ]
+    },
+    {
+      "name": "technical-seo-auditor",
+      "kind": "agent",
+      "purpose": "Audits crawl exports and Search Console data for technical SEO issues and ranks fixes by impact.",
+      "skills": [
+        "technical-seo-audit",
+        "crawl-indexation-check",
+        "hreflang-international-seo"
+      ]
+    },
+    {
+      "name": "ai-search-optimizer",
+      "kind": "agent",
+      "purpose": "Checks brand visibility in AI answers and rewrites pages so assistants can cite them.",
+      "skills": [
+        "answer-engine-optimisation",
+        "ai-search-visibility-audit"
+      ]
+    },
+    {
+      "name": "social-calendar-planner",
+      "kind": "agent",
+      "purpose": "Plans a multi-platform social content calendar from campaigns and pillars.",
+      "skills": [
+        "social-content-calendar",
+        "platform-native-formats",
+        "content-pillars"
+      ]
+    },
+    {
+      "name": "social-post-writer",
+      "kind": "agent",
+      "purpose": "Writes platform-native social and LinkedIn posts from a brief or source content.",
+      "skills": [
+        "social-post-writing",
+        "linkedin-post-writing",
+        "platform-native-formats"
+      ]
+    },
+    {
+      "name": "social-reply-drafter",
+      "kind": "agent",
+      "purpose": "Drafts replies to comments and DMs in brand voice and flags items to escalate.",
+      "skills": [
+        "social-reply-moderation",
+        "social-crisis-response"
+      ]
+    },
+    {
+      "name": "social-report-writer",
+      "kind": "agent",
+      "purpose": "Writes social performance and listening reports with insights and next actions.",
+      "skills": [
+        "social-media-reporting",
+        "social-listening"
+      ]
+    },
+    {
+      "name": "lifecycle-journey-designer",
+      "kind": "agent",
+      "purpose": "Designs lifecycle journeys with triggers, segments and message plans from signup to renewal.",
+      "skills": [
+        "lifecycle-journey-mapping",
+        "lifecycle-trigger-design",
+        "email-segmentation"
+      ]
+    },
+    {
+      "name": "email-copywriter",
+      "kind": "agent",
+      "purpose": "Writes campaign, onboarding and win-back emails with subject line variants.",
+      "skills": [
+        "email-subject-lines",
+        "onboarding-email-sequence",
+        "winback-sequence"
+      ]
+    },
+    {
+      "name": "email-qa-checker",
+      "kind": "agent",
+      "purpose": "QA-checks emails and sends for links, personalisation, compliance and deliverability risks.",
+      "skills": [
+        "email-qa-checklist",
+        "email-deliverability"
+      ]
+    },
+    {
+      "name": "newsletter-editor",
+      "kind": "agent",
+      "purpose": "Assembles and edits a recurring newsletter from source links and notes.",
+      "skills": [
+        "email-newsletter-writing",
+        "email-subject-lines"
+      ]
+    },
+    {
+      "name": "search-ads-builder",
+      "kind": "agent",
+      "purpose": "Builds Google Search campaign structures, keywords, negatives and RSA copy for an offer.",
+      "skills": [
+        "google-search-campaigns",
+        "rsa-ad-copy",
+        "negative-keyword-mining"
+      ]
+    },
+    {
+      "name": "ad-account-auditor",
+      "kind": "agent",
+      "purpose": "Audits Google and Meta ad accounts and returns waste, tracking gaps and structural fixes.",
+      "skills": [
+        "google-ads-audit",
+        "meta-ads-structure",
+        "utm-tracking-plan"
+      ]
+    },
+    {
+      "name": "paid-social-creative-strategist",
+      "kind": "agent",
+      "purpose": "Writes paid social creative briefs and test plans with angles and hooks.",
+      "skills": [
+        "paid-social-creative-brief",
+        "ad-creative-testing",
+        "short-form-video-hooks"
+      ]
+    },
+    {
+      "name": "paid-media-reporter",
+      "kind": "agent",
+      "purpose": "Writes paid media performance reports with CAC/ROAS by channel and budget recommendations.",
+      "skills": [
+        "paid-media-reporting",
+        "marketing-attribution",
+        "incrementality-testing"
+      ]
+    },
+    {
+      "name": "press-release-writer",
+      "kind": "agent",
+      "purpose": "Writes press releases and press kit copy from announcement details.",
+      "skills": [
+        "press-release-writing",
+        "press-kit"
+      ]
+    },
+    {
+      "name": "media-pitch-writer",
+      "kind": "agent",
+      "purpose": "Builds a targeted media list and personalised pitches for a story.",
+      "skills": [
+        "media-pitch",
+        "media-list-building"
+      ]
+    },
+    {
+      "name": "crisis-comms-advisor",
+      "kind": "agent",
+      "purpose": "Drafts holding statements, Q&A and a response plan for an unfolding issue, for human approval.",
+      "skills": [
+        "crisis-holding-statement",
+        "crisis-comms-plan",
+        "stakeholder-qa-prep"
+      ]
+    },
+    {
+      "name": "exec-comms-writer",
+      "kind": "agent",
+      "purpose": "Writes executive announcements and spokesperson interview prep notes.",
+      "skills": [
+        "exec-announcement-writing",
+        "media-training-prep"
+      ]
+    },
+    {
+      "name": "account-researcher",
+      "kind": "agent",
+      "purpose": "Researches a target account and its stakeholders and writes a one-page account brief with an outreach angle.",
+      "skills": [
+        "account-research",
+        "buying-signal-triggers",
+        "stakeholder-mapping"
+      ]
+    },
+    {
+      "name": "icp-list-builder",
+      "kind": "agent",
+      "purpose": "Defines ICP criteria and builds a scored prospect list spec from them.",
+      "skills": [
+        "icp-definition",
+        "prospect-list-building"
+      ]
+    },
+    {
+      "name": "cold-email-writer",
+      "kind": "agent",
+      "purpose": "Writes personalised cold emails and follow-ups from account research.",
+      "skills": [
+        "cold-email-writing",
+        "account-research"
+      ]
+    },
+    {
+      "name": "outbound-sequence-builder",
+      "kind": "agent",
+      "purpose": "Designs multi-channel outbound sequences with copy, timing and call scripts.",
+      "skills": [
+        "outbound-sequence-design",
+        "cold-email-writing",
+        "cold-call-script",
+        "social-selling"
+      ]
+    },
+    {
+      "name": "discovery-call-prepper",
+      "kind": "agent",
+      "purpose": "Prepares a discovery call brief with hypotheses, agenda and tailored questions.",
+      "skills": [
+        "discovery-call-prep",
+        "discovery-question-bank",
+        "account-research"
+      ]
+    },
+    {
+      "name": "sales-call-summarizer",
+      "kind": "agent",
+      "purpose": "Summarises call transcripts into CRM-ready notes, MEDDPICC updates and follow-up email.",
+      "skills": [
+        "sales-call-notes",
+        "meddpicc-qualification"
+      ]
+    },
+    {
+      "name": "deal-qualifier",
+      "kind": "agent",
+      "purpose": "Scores an opportunity on MEDDPICC and lists the gaps and actions to close them.",
+      "skills": [
+        "meddpicc-qualification",
+        "deal-risk-scoring"
+      ]
+    },
+    {
+      "name": "sales-proposal-drafter",
+      "kind": "agent",
+      "purpose": "Drafts a sales proposal with business case, pricing options and mutual action plan.",
+      "skills": [
+        "sales-proposal-writing",
+        "business-case-roi",
+        "quote-pricing-options",
+        "mutual-action-plan"
+      ]
+    },
+    {
+      "name": "negotiation-coach",
+      "kind": "agent",
+      "purpose": "Prepares negotiation plans and responses to objections and discount requests.",
+      "skills": [
+        "negotiation-prep",
+        "objection-handling",
+        "discount-guardrails"
+      ]
+    },
+    {
+      "name": "rfp-analyst",
+      "kind": "agent",
+      "purpose": "Reads an RFP, builds the compliance matrix and recommends bid or no-bid.",
+      "skills": [
+        "rfp-go-no-go",
+        "rfp-compliance-matrix"
+      ]
+    },
+    {
+      "name": "rfp-answer-drafter",
+      "kind": "agent",
+      "purpose": "Drafts RFP answers from the answer library, tailored to the buyer and flagged where unsure.",
+      "skills": [
+        "rfp-answer-library",
+        "rfp-executive-summary"
+      ]
+    },
+    {
+      "name": "rfp-response-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews a full RFP response for compliance gaps, consistency and win themes before submission.",
+      "skills": [
+        "rfp-compliance-matrix",
+        "rfp-executive-summary"
+      ]
+    },
+    {
+      "name": "security-questionnaire-drafter",
+      "kind": "agent",
+      "purpose": "Drafts security questionnaire answers from approved policies and flags items for security review.",
+      "skills": [
+        "rfp-security-questionnaire",
+        "rfp-answer-library"
+      ]
+    },
+    {
+      "name": "crm-hygiene-auditor",
+      "kind": "agent",
+      "purpose": "Audits CRM exports for missing fields, duplicates, stale stages and owner gaps and returns a fix list.",
+      "skills": [
+        "crm-data-standards",
+        "crm-dedupe-enrichment",
+        "pipeline-stage-definitions"
+      ]
+    },
+    {
+      "name": "pipeline-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews pipeline exports for stalled, slipped and under-qualified deals ahead of the weekly review.",
+      "skills": [
+        "pipeline-review",
+        "deal-risk-scoring"
+      ]
+    },
+    {
+      "name": "forecast-analyst",
+      "kind": "agent",
+      "purpose": "Builds a commit/best-case forecast from pipeline and history and explains the call.",
+      "skills": [
+        "sales-forecasting",
+        "pipeline-review"
+      ]
+    },
+    {
+      "name": "lead-management-designer",
+      "kind": "agent",
+      "purpose": "Designs lead scoring, routing and MQL/SQL definitions with the handoff SLA.",
+      "skills": [
+        "lead-scoring-model",
+        "lead-routing-rules",
+        "mql-sql-definitions"
+      ]
+    },
+    {
+      "name": "win-loss-analyst",
+      "kind": "agent",
+      "purpose": "Analyses win/loss interviews and CRM reasons and writes product and sales recommendations.",
+      "skills": [
+        "win-loss-analysis",
+        "competitor-teardown"
+      ]
+    },
+    {
+      "name": "battlecard-builder",
+      "kind": "agent",
+      "purpose": "Builds and refreshes competitive battlecards from competitor research and win/loss notes.",
+      "skills": [
+        "competitive-battlecard",
+        "competitor-teardown",
+        "objection-handling"
+      ]
+    },
+    {
+      "name": "sales-playbook-writer",
+      "kind": "agent",
+      "purpose": "Writes sales playbooks, talk tracks and demo scripts for a segment or product.",
+      "skills": [
+        "sales-playbook",
+        "talk-track-writing",
+        "demo-script"
+      ]
+    },
+    {
+      "name": "sales-call-coach",
+      "kind": "agent",
+      "purpose": "Scores call recordings against a rubric and returns specific coaching and role-play drills.",
+      "skills": [
+        "call-review-scorecard",
+        "sales-roleplay-scenarios"
+      ]
+    },
+    {
+      "name": "sales-onboarding-designer",
+      "kind": "agent",
+      "purpose": "Designs a new-rep ramp plan with certifications and role-play scenarios.",
+      "skills": [
+        "sales-onboarding-ramp",
+        "sales-roleplay-scenarios"
+      ]
+    },
+    {
+      "name": "cs-onboarding-planner",
+      "kind": "agent",
+      "purpose": "Builds a customer onboarding and success plan with kickoff agenda and milestones.",
+      "skills": [
+        "customer-onboarding-plan",
+        "kickoff-call-agenda",
+        "customer-success-plan",
+        "time-to-value-milestones"
+      ]
+    },
+    {
+      "name": "churn-risk-investigator",
+      "kind": "agent",
+      "purpose": "Investigates an account's health signals, explains churn risk and recommends a save play.",
+      "skills": [
+        "customer-health-score",
+        "churn-risk-signals",
+        "churn-save-play"
+      ]
+    },
+    {
+      "name": "qbr-builder",
+      "kind": "agent",
+      "purpose": "Builds QBR content from usage data, goals and support history.",
+      "skills": [
+        "qbr-deck",
+        "customer-success-plan"
+      ]
+    },
+    {
+      "name": "renewal-prepper",
+      "kind": "agent",
+      "purpose": "Prepares a renewal brief with value delivered, risks, expansion options and pricing position.",
+      "skills": [
+        "renewal-playbook",
+        "expansion-opportunity-mapping",
+        "key-account-plan"
+      ]
+    },
+    {
+      "name": "support-ticket-triager",
+      "kind": "agent",
+      "purpose": "Classifies and prioritises incoming tickets and routes them with a reason.",
+      "skills": [
+        "ticket-triage-rules",
+        "ticket-priority-sla"
+      ]
+    },
+    {
+      "name": "support-reply-drafter",
+      "kind": "agent",
+      "purpose": "Drafts empathetic, accurate support replies using macros and help articles.",
+      "skills": [
+        "support-tone-empathy",
+        "support-macro-writing",
+        "policy-explanation-replies"
+      ]
+    },
+    {
+      "name": "escalation-summarizer",
+      "kind": "agent",
+      "purpose": "Summarises long ticket threads into an escalation or bug report engineering can act on.",
+      "skills": [
+        "support-escalation-handoff",
+        "ticket-to-bug-report"
+      ]
+    },
+    {
+      "name": "support-qa-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews support conversations against the QA scorecard and analyses low-CSAT drivers.",
+      "skills": [
+        "support-qa-scorecard",
+        "csat-driver-analysis"
+      ]
+    },
+    {
+      "name": "kb-article-writer",
+      "kind": "agent",
+      "purpose": "Writes and updates help center articles from tickets, release notes and product docs.",
+      "skills": [
+        "kb-article-writing",
+        "kb-maintenance"
+      ]
+    },
+    {
+      "name": "kb-gap-finder",
+      "kind": "agent",
+      "purpose": "Finds missing or weak help articles from ticket drivers and failed searches and drafts outlines.",
+      "skills": [
+        "kb-gap-analysis",
+        "kb-taxonomy"
+      ]
+    },
+    {
+      "name": "support-macro-writer",
+      "kind": "agent",
+      "purpose": "Writes new macros and audits the macro library for duplicates and stale content.",
+      "skills": [
+        "support-macro-writing",
+        "macro-library-audit"
+      ]
+    },
+    {
+      "name": "feedback-tagger",
+      "kind": "agent",
+      "purpose": "Tags tickets, survey verbatims and call notes against the feedback taxonomy.",
+      "skills": [
+        "feedback-tagging-taxonomy",
+        "open-text-coding"
+      ]
+    },
+    {
+      "name": "voc-report-writer",
+      "kind": "agent",
+      "purpose": "Writes a periodic voice-of-customer report with themes, revenue impact and quotes.",
+      "skills": [
+        "voc-report",
+        "feedback-tagging-taxonomy"
+      ]
+    },
+    {
+      "name": "feature-request-deduper",
+      "kind": "agent",
+      "purpose": "Dedupes feature requests, links them to accounts and revenue and drafts close-the-loop replies.",
+      "skills": [
+        "feature-request-intake"
+      ]
+    },
+    {
+      "name": "nps-verbatim-analyst",
+      "kind": "agent",
+      "purpose": "Analyses NPS/CSAT scores and verbatims and explains drivers by segment.",
+      "skills": [
+        "nps-csat-survey",
+        "open-text-coding"
+      ]
+    },
+    {
+      "name": "community-moderator",
+      "kind": "agent",
+      "purpose": "Moderates community threads against guidelines and drafts replies or escalations.",
+      "skills": [
+        "community-guidelines",
+        "social-reply-moderation"
+      ]
+    },
+    {
+      "name": "community-digest-writer",
+      "kind": "agent",
+      "purpose": "Writes a weekly community digest of top threads, contributions and unanswered questions.",
+      "skills": [
+        "community-health-metrics",
+        "developer-newsletter"
+      ]
+    },
+    {
+      "name": "community-program-manager",
+      "kind": "agent",
+      "purpose": "Plans community programs: onboarding, ambassadors and health metrics reviews.",
+      "skills": [
+        "community-strategy",
+        "community-onboarding",
+        "ambassador-program"
+      ]
+    },
+    {
+      "name": "devrel-content-planner",
+      "kind": "agent",
+      "purpose": "Plans developer content, tutorials and talk proposals tied to adoption goals.",
+      "skills": [
+        "devrel-strategy",
+        "developer-tutorial-content",
+        "conference-talk-proposal"
+      ]
+    },
+    {
+      "name": "pricing-strategist",
+      "kind": "agent",
+      "purpose": "Recommends pricing model, value metric and packaging from product and customer data.",
+      "skills": [
+        "saas-pricing-model",
+        "value-metric-selection",
+        "packaging-tiers"
+      ]
+    },
+    {
+      "name": "wtp-study-designer",
+      "kind": "agent",
+      "purpose": "Designs willingness-to-pay studies and interprets results into price ranges.",
+      "skills": [
+        "willingness-to-pay-research",
+        "research-survey-design"
+      ]
+    },
+    {
+      "name": "price-change-planner",
+      "kind": "agent",
+      "purpose": "Plans a price change rollout with customer comms, sales FAQs and churn monitoring.",
+      "skills": [
+        "price-change-rollout",
+        "pricing-page-copy"
+      ]
+    },
+    {
+      "name": "plg-conversion-analyst",
+      "kind": "agent",
+      "purpose": "Reviews free plan limits, PQL signals and upgrade prompts to improve self-serve conversion.",
+      "skills": [
+        "freemium-limits-design",
+        "pql-definition",
+        "self-serve-upgrade-prompts",
+        "trial-conversion"
+      ]
+    },
+    {
+      "name": "growth-experiment-designer",
+      "kind": "agent",
+      "purpose": "Turns growth ideas into prioritised experiments with hypotheses and decision rules.",
+      "skills": [
+        "growth-experiment-design",
+        "experiment-backlog-ice"
+      ]
+    },
+    {
+      "name": "experiment-readout-writer",
+      "kind": "agent",
+      "purpose": "Writes experiment readouts from results with a clear ship/iterate/kill call.",
+      "skills": [
+        "experiment-readout"
+      ]
+    },
+    {
+      "name": "cro-auditor",
+      "kind": "agent",
+      "purpose": "Audits landing, signup and checkout pages and returns prioritised CRO test ideas.",
+      "skills": [
+        "cro-page-audit",
+        "signup-flow-optimisation",
+        "landing-page-copy"
+      ]
+    },
+    {
+      "name": "funnel-diagnostician",
+      "kind": "agent",
+      "purpose": "Finds the biggest funnel leaks and builds a growth model to size fixes.",
+      "skills": [
+        "funnel-drop-off-diagnosis",
+        "growth-model"
+      ]
+    },
+    {
+      "name": "market-sizer",
+      "kind": "agent",
+      "purpose": "Estimates TAM/SAM/SOM with transparent assumptions and sources.",
+      "skills": [
+        "market-sizing-tam",
+        "market-segmentation"
+      ]
+    },
+    {
+      "name": "competitor-analyst",
+      "kind": "agent",
+      "purpose": "Produces competitor teardowns and a monitoring digest from public sources.",
+      "skills": [
+        "competitor-teardown",
+        "competitor-monitoring"
+      ]
+    },
+    {
+      "name": "industry-trend-researcher",
+      "kind": "agent",
+      "purpose": "Researches a market landscape and writes trend briefs with implications.",
+      "skills": [
+        "market-landscape-scan",
+        "industry-trend-brief"
+      ]
+    },
+    {
+      "name": "segmentation-analyst",
+      "kind": "agent",
+      "purpose": "Segments a market or customer base and recommends target segments and ICP.",
+      "skills": [
+        "market-segmentation",
+        "icp-definition",
+        "buyer-journey-map"
+      ]
+    },
+    {
+      "name": "gtm-planner",
+      "kind": "agent",
+      "purpose": "Writes a go-to-market plan: segment, motion, channels, pricing and milestones.",
+      "skills": [
+        "gtm-strategy-plan",
+        "gtm-motion-choice",
+        "marketing-channel-selection"
+      ]
+    },
+    {
+      "name": "marketing-plan-builder",
+      "kind": "agent",
+      "purpose": "Builds a quarterly marketing plan with programs, budget split and pipeline targets.",
+      "skills": [
+        "quarterly-marketing-plan",
+        "marketing-channel-selection"
+      ]
+    },
+    {
+      "name": "campaign-brief-writer",
+      "kind": "agent",
+      "purpose": "Writes integrated campaign briefs and plans and runs campaign retros.",
+      "skills": [
+        "campaign-brief",
+        "integrated-campaign-plan",
+        "campaign-retro"
+      ]
+    },
+    {
+      "name": "abm-strategist",
+      "kind": "agent",
+      "purpose": "Selects ABM accounts with sales and designs tiered plays and personalisation.",
+      "skills": [
+        "abm-account-selection",
+        "abm-plays",
+        "abm-personalisation"
+      ]
+    },
+    {
+      "name": "positioning-strategist",
+      "kind": "agent",
+      "purpose": "Runs a positioning exercise and returns positioning, category and differentiation.",
+      "skills": [
+        "positioning-canvas",
+        "value-proposition-canvas"
+      ]
+    },
+    {
+      "name": "messaging-framework-writer",
+      "kind": "agent",
+      "purpose": "Turns positioning into persona messaging frameworks and proof points.",
+      "skills": [
+        "messaging-framework",
+        "persona-messaging-matrix"
+      ]
+    },
+    {
+      "name": "launch-coordinator",
+      "kind": "agent",
+      "purpose": "Tiers a launch and runs the cross-functional launch checklist and post-launch retro.",
+      "skills": [
+        "launch-tiering",
+        "product-launch-checklist",
+        "product-launch-retro"
+      ]
+    },
+    {
+      "name": "partner-researcher",
+      "kind": "agent",
+      "purpose": "Finds and scores candidate partners against the ideal partner profile.",
+      "skills": [
+        "partner-ideal-profile",
+        "partner-program-design"
+      ]
+    },
+    {
+      "name": "partner-pitch-writer",
+      "kind": "agent",
+      "purpose": "Writes partnership pitches and co-marketing proposals.",
+      "skills": [
+        "partner-pitch",
+        "co-marketing-plan"
+      ]
+    },
+    {
+      "name": "partner-enablement-builder",
+      "kind": "agent",
+      "purpose": "Builds partner enablement kits and marketplace listings.",
+      "skills": [
+        "partner-enablement-kit",
+        "integration-marketplace-listing"
+      ]
+    },
+    {
+      "name": "creator-program-manager",
+      "kind": "agent",
+      "purpose": "Plans affiliate and creator programs, outreach and briefs with disclosure rules.",
+      "skills": [
+        "affiliate-program-design",
+        "creator-outreach",
+        "influencer-brief"
+      ]
+    },
+    {
+      "name": "marketing-event-planner",
+      "kind": "agent",
+      "purpose": "Plans marketing events from goals to run of show and booth plan.",
+      "skills": [
+        "event-strategy",
+        "event-run-of-show",
+        "tradeshow-booth-plan"
+      ]
+    },
+    {
+      "name": "event-promo-planner",
+      "kind": "agent",
+      "purpose": "Plans event and webinar promotion and segmented post-event follow-up sequences.",
+      "skills": [
+        "event-promotion-plan",
+        "event-followup"
+      ]
+    },
+    {
+      "name": "webinar-producer",
+      "kind": "agent",
+      "purpose": "Plans a webinar and writes its script, promo and follow-up.",
+      "skills": [
+        "webinar-planning",
+        "webinar-script",
+        "event-promotion-plan"
+      ]
+    }
+  ]
+}

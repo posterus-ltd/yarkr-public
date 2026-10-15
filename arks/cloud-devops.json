@@ -1,0 +1,2417 @@
+{
+  "domain": "cloud-devops",
+  "arks": [
+    {
+      "name": "aws-foundations",
+      "type": "skill",
+      "topic": "aws account and network foundations",
+      "description": "For teams setting up or tidying AWS: CLI habits, Organizations account layout, VPC design, tagging and quota checks so agents build on a sound foundation.",
+      "items": [
+        {
+          "package": "aws-cli-workflows",
+          "required": true
+        },
+        {
+          "package": "aws-account-structure",
+          "required": true
+        },
+        {
+          "package": "aws-vpc-networking",
+          "required": true
+        },
+        {
+          "package": "aws-tagging-standards",
+          "required": false
+        },
+        {
+          "package": "aws-service-quotas",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aws-compute",
+      "type": "skill",
+      "topic": "aws compute and load balancing",
+      "description": "For engineers running workloads on EC2 and ECS/Fargate: launch templates, Auto Scaling, container services and ALB/NLB configuration.",
+      "items": [
+        {
+          "package": "aws-ec2-operations",
+          "required": true
+        },
+        {
+          "package": "aws-ecs-fargate",
+          "required": true
+        },
+        {
+          "package": "aws-elb-config",
+          "required": true
+        },
+        {
+          "package": "aws-autoscaling-groups",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aws-serverless",
+      "type": "skill",
+      "topic": "aws serverless",
+      "description": "For developers building on AWS serverless: Lambda, API Gateway, Step Functions, EventBridge, SQS/SNS and SAM templates.",
+      "items": [
+        {
+          "package": "aws-lambda-dev",
+          "required": true
+        },
+        {
+          "package": "aws-api-gateway",
+          "required": true
+        },
+        {
+          "package": "aws-sqs-sns-patterns",
+          "required": true
+        },
+        {
+          "package": "aws-step-functions",
+          "required": false
+        },
+        {
+          "package": "aws-eventbridge-rules",
+          "required": false
+        },
+        {
+          "package": "aws-sam-templates",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aws-cdk",
+      "type": "skill",
+      "topic": "aws cdk and cloudformation",
+      "description": "For teams defining AWS infrastructure in CDK: TypeScript constructs, assertion tests, CDK Pipelines and the CloudFormation knowledge needed to debug deploys.",
+      "items": [
+        {
+          "package": "aws-cdk-typescript",
+          "required": true
+        },
+        {
+          "package": "aws-cdk-assertions-testing",
+          "required": true
+        },
+        {
+          "package": "aws-cdk-pipelines",
+          "required": false
+        },
+        {
+          "package": "aws-cloudformation-templates",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aws-eks",
+      "type": "skill",
+      "topic": "amazon eks",
+      "description": "For platform teams on EKS: cluster provisioning, pod identity, Karpenter autoscaling, load balancer controller and version upgrades.",
+      "items": [
+        {
+          "package": "aws-eks-cluster-setup",
+          "required": true
+        },
+        {
+          "package": "aws-eks-pod-identity",
+          "required": true
+        },
+        {
+          "package": "aws-eks-karpenter",
+          "required": false
+        },
+        {
+          "package": "aws-load-balancer-controller",
+          "required": false
+        },
+        {
+          "package": "aws-eks-upgrades",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aws-observability",
+      "type": "skill",
+      "topic": "aws cloudwatch and x-ray",
+      "description": "For AWS operators: CloudWatch alarms, Logs Insights queries, dashboards as code and X-Ray/ADOT tracing.",
+      "items": [
+        {
+          "package": "aws-cloudwatch-alarms",
+          "required": true
+        },
+        {
+          "package": "aws-cloudwatch-logs-insights",
+          "required": true
+        },
+        {
+          "package": "aws-cloudwatch-dashboards",
+          "required": false
+        },
+        {
+          "package": "aws-xray-tracing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "gcp-foundations",
+      "type": "skill",
+      "topic": "gcp foundations",
+      "description": "For teams on Google Cloud: gcloud workflows, org/folder/project hierarchy, VPC design, Cloud Logging and label-based billing reports.",
+      "items": [
+        {
+          "package": "gcloud-cli-workflows",
+          "required": true
+        },
+        {
+          "package": "gcp-resource-hierarchy",
+          "required": true
+        },
+        {
+          "package": "gcp-vpc-networking",
+          "required": true
+        },
+        {
+          "package": "gcp-cloud-logging",
+          "required": false
+        },
+        {
+          "package": "gcp-labels-billing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "gcp-serverless",
+      "type": "skill",
+      "topic": "gcp serverless",
+      "description": "For developers building serverless on GCP: Cloud Run, Cloud Functions, Pub/Sub, Eventarc and Cloud Scheduler/Tasks.",
+      "items": [
+        {
+          "package": "gcp-cloud-run",
+          "required": true
+        },
+        {
+          "package": "gcp-pubsub-patterns",
+          "required": true
+        },
+        {
+          "package": "gcp-cloud-functions",
+          "required": false
+        },
+        {
+          "package": "gcp-eventarc",
+          "required": false
+        },
+        {
+          "package": "gcp-scheduler-tasks",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "gke",
+      "type": "skill",
+      "topic": "google kubernetes engine",
+      "description": "For platform teams on GKE: Standard and Autopilot clusters, Workload Identity and upgrade planning with release channels.",
+      "items": [
+        {
+          "package": "gke-cluster-setup",
+          "required": true
+        },
+        {
+          "package": "gke-workload-identity",
+          "required": true
+        },
+        {
+          "package": "gke-autopilot",
+          "required": false
+        },
+        {
+          "package": "gke-upgrades",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "azure-foundations",
+      "type": "skill",
+      "topic": "azure foundations",
+      "description": "For teams on Azure: az CLI workflows, landing zones, VNet design, policy-driven tagging and Azure Monitor alerts.",
+      "items": [
+        {
+          "package": "az-cli-workflows",
+          "required": true
+        },
+        {
+          "package": "azure-landing-zone",
+          "required": true
+        },
+        {
+          "package": "azure-vnet-networking",
+          "required": true
+        },
+        {
+          "package": "azure-resource-tagging",
+          "required": false
+        },
+        {
+          "package": "azure-monitor-alerts",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "azure-app-hosting",
+      "type": "skill",
+      "topic": "azure application hosting",
+      "description": "For developers hosting apps on Azure: App Service, Functions, Container Apps and Front Door in one set.",
+      "items": [
+        {
+          "package": "azure-app-service",
+          "required": true
+        },
+        {
+          "package": "azure-functions-dev",
+          "required": true
+        },
+        {
+          "package": "azure-container-apps",
+          "required": true
+        },
+        {
+          "package": "azure-front-door",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "azure-bicep",
+      "type": "skill",
+      "topic": "azure bicep",
+      "description": "For Azure IaC authors: reusable Bicep modules, what-if deployments, ARM-to-Bicep migration and deployment stacks.",
+      "items": [
+        {
+          "package": "azure-bicep-modules",
+          "required": true
+        },
+        {
+          "package": "azure-bicep-deployments",
+          "required": true
+        },
+        {
+          "package": "arm-to-bicep-migration",
+          "required": false
+        },
+        {
+          "package": "azure-deployment-stacks",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aks",
+      "type": "skill",
+      "topic": "azure kubernetes service",
+      "description": "For platform teams on AKS: cluster setup, networking and ingress choices, Workload ID and upgrade planning.",
+      "items": [
+        {
+          "package": "aks-cluster-setup",
+          "required": true
+        },
+        {
+          "package": "aks-networking",
+          "required": true
+        },
+        {
+          "package": "aks-workload-identity",
+          "required": false
+        },
+        {
+          "package": "aks-upgrades",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cloudflare-workers",
+      "type": "skill",
+      "topic": "cloudflare workers",
+      "description": "For developers building on Cloudflare Workers: handlers, wrangler config, Durable Objects, KV/R2/D1 storage and Queues.",
+      "items": [
+        {
+          "package": "cf-workers-dev",
+          "required": true
+        },
+        {
+          "package": "cf-wrangler-config",
+          "required": true
+        },
+        {
+          "package": "cf-storage-bindings",
+          "required": true
+        },
+        {
+          "package": "cf-durable-objects",
+          "required": false
+        },
+        {
+          "package": "cf-queues",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cloudflare-zone-config",
+      "type": "skill",
+      "topic": "cloudflare dns, caching and protection",
+      "description": "For people managing sites behind Cloudflare: DNS records, cache rules, WAF and rate limiting for your own zones, redirects and Tunnel/Access.",
+      "items": [
+        {
+          "package": "cf-dns-records",
+          "required": true
+        },
+        {
+          "package": "cf-cache-rules",
+          "required": true
+        },
+        {
+          "package": "cf-waf-rules",
+          "required": false
+        },
+        {
+          "package": "cf-redirect-rules",
+          "required": false
+        },
+        {
+          "package": "cf-tunnels-access",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "vercel-netlify",
+      "type": "skill",
+      "topic": "vercel and netlify deployment",
+      "description": "For frontend teams deploying on Vercel or Netlify: deploy config, environment variables, functions and PR preview workflows.",
+      "items": [
+        {
+          "package": "vercel-deployments",
+          "required": true
+        },
+        {
+          "package": "netlify-deploys",
+          "required": true
+        },
+        {
+          "package": "vercel-env-management",
+          "required": false
+        },
+        {
+          "package": "netlify-functions",
+          "required": false
+        },
+        {
+          "package": "preview-deploy-workflows",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "docker-images",
+      "type": "skill",
+      "topic": "docker image building",
+      "description": "For anyone shipping containers: correct Dockerfiles, multi-stage builds, slim images, multi-arch buildx, build caching and image tagging.",
+      "items": [
+        {
+          "package": "dockerfile-authoring",
+          "required": true
+        },
+        {
+          "package": "docker-multistage-builds",
+          "required": true
+        },
+        {
+          "package": "docker-layer-caching",
+          "required": true
+        },
+        {
+          "package": "docker-image-slimming",
+          "required": false
+        },
+        {
+          "package": "docker-buildx-multiarch",
+          "required": false
+        },
+        {
+          "package": "container-image-tagging",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "docker-compose",
+      "type": "skill",
+      "topic": "docker compose and local containers",
+      "description": "For developers using Docker locally: Compose stacks, dev environments with hot reload, networks and volumes, and container troubleshooting.",
+      "items": [
+        {
+          "package": "docker-compose-stacks",
+          "required": true
+        },
+        {
+          "package": "compose-dev-environments",
+          "required": true
+        },
+        {
+          "package": "docker-networking-volumes",
+          "required": false
+        },
+        {
+          "package": "docker-troubleshooting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kubernetes-workloads",
+      "type": "skill",
+      "topic": "kubernetes workloads",
+      "description": "For engineers deploying apps to Kubernetes: Deployments, probes, resource requests, config and secrets, Jobs/CronJobs and StatefulSets.",
+      "items": [
+        {
+          "package": "k8s-deployments",
+          "required": true
+        },
+        {
+          "package": "k8s-probes",
+          "required": true
+        },
+        {
+          "package": "k8s-resource-requests",
+          "required": true
+        },
+        {
+          "package": "k8s-configmaps-secrets",
+          "required": false
+        },
+        {
+          "package": "k8s-jobs-cronjobs",
+          "required": false
+        },
+        {
+          "package": "k8s-statefulsets",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kubernetes-troubleshooting",
+      "type": "skill",
+      "topic": "kubernetes troubleshooting",
+      "description": "For on-call and platform engineers: kubectl diagnosis, CrashLoopBackOff and Pending pods, networking and node problems step by step.",
+      "items": [
+        {
+          "package": "kubectl-debugging",
+          "required": true
+        },
+        {
+          "package": "k8s-crashloop-diagnosis",
+          "required": true
+        },
+        {
+          "package": "k8s-pending-pods",
+          "required": true
+        },
+        {
+          "package": "k8s-networking-debug",
+          "required": false
+        },
+        {
+          "package": "k8s-node-troubleshooting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kubernetes-autoscaling",
+      "type": "skill",
+      "topic": "kubernetes autoscaling",
+      "description": "For teams scaling on Kubernetes: HPA, VPA, Cluster Autoscaler, KEDA event-driven scaling and PodDisruptionBudgets.",
+      "items": [
+        {
+          "package": "k8s-hpa",
+          "required": true
+        },
+        {
+          "package": "k8s-cluster-autoscaler",
+          "required": true
+        },
+        {
+          "package": "k8s-vpa",
+          "required": false
+        },
+        {
+          "package": "keda-autoscaling",
+          "required": false
+        },
+        {
+          "package": "k8s-pod-disruption-budgets",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kubernetes-networking",
+      "type": "skill",
+      "topic": "kubernetes networking and ingress",
+      "description": "For platform engineers: Services and Ingress, Gateway API, NetworkPolicies, cert-manager TLS and external-dns.",
+      "items": [
+        {
+          "package": "k8s-services-ingress",
+          "required": true
+        },
+        {
+          "package": "k8s-gateway-api",
+          "required": true
+        },
+        {
+          "package": "k8s-network-policies",
+          "required": false
+        },
+        {
+          "package": "cert-manager-tls",
+          "required": false
+        },
+        {
+          "package": "external-dns",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kubernetes-operators",
+      "type": "skill",
+      "topic": "kubernetes operators and crds",
+      "description": "For engineers extending Kubernetes: CRD design, Kubebuilder operators, reconcile patterns and admission webhooks/CEL policies.",
+      "items": [
+        {
+          "package": "k8s-crd-design",
+          "required": true
+        },
+        {
+          "package": "kubebuilder-operators",
+          "required": true
+        },
+        {
+          "package": "operator-reconcile-patterns",
+          "required": true
+        },
+        {
+          "package": "k8s-admission-webhooks",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kustomize",
+      "type": "skill",
+      "topic": "kustomize configuration",
+      "description": "For teams managing Kubernetes config with Kustomize: bases and overlays, components and manifest validation in CI.",
+      "items": [
+        {
+          "package": "kustomize-overlays",
+          "required": true
+        },
+        {
+          "package": "kustomize-components",
+          "required": true
+        },
+        {
+          "package": "k8s-manifest-validation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "helm-charts",
+      "type": "skill",
+      "topic": "helm charts",
+      "description": "For chart authors and operators: Helm templates, values API design, chart tests, release operations and helmfile environments.",
+      "items": [
+        {
+          "package": "helm-chart-authoring",
+          "required": true
+        },
+        {
+          "package": "helm-values-design",
+          "required": true
+        },
+        {
+          "package": "helm-chart-testing",
+          "required": true
+        },
+        {
+          "package": "helm-release-ops",
+          "required": false
+        },
+        {
+          "package": "helmfile-environments",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "local-kubernetes-dev",
+      "type": "skill",
+      "topic": "local kubernetes development",
+      "description": "For developers who need Kubernetes on their laptop or in CI: kind and k3s/k3d clusters plus Tilt or Skaffold inner dev loops.",
+      "items": [
+        {
+          "package": "kind-local-clusters",
+          "required": true
+        },
+        {
+          "package": "tilt-dev-loop",
+          "required": true
+        },
+        {
+          "package": "k3s-lightweight-clusters",
+          "required": false
+        },
+        {
+          "package": "skaffold-workflows",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "terraform-core",
+      "type": "skill",
+      "topic": "terraform fundamentals",
+      "description": "For Terraform users: module design, state management, environment layouts, refactoring with moved/import blocks and version pinning.",
+      "items": [
+        {
+          "package": "terraform-module-design",
+          "required": true
+        },
+        {
+          "package": "terraform-state-management",
+          "required": true
+        },
+        {
+          "package": "terraform-environments",
+          "required": true
+        },
+        {
+          "package": "terraform-refactoring",
+          "required": false
+        },
+        {
+          "package": "terraform-provider-versions",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "terraform-testing",
+      "type": "skill",
+      "topic": "terraform testing and linting",
+      "description": "For teams that want confidence in IaC changes: terraform test suites, Terratest, TFLint and critical plan reading.",
+      "items": [
+        {
+          "package": "terraform-native-tests",
+          "required": true
+        },
+        {
+          "package": "terraform-plan-reading",
+          "required": true
+        },
+        {
+          "package": "terratest-suites",
+          "required": false
+        },
+        {
+          "package": "tflint-config",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "terraform-automation",
+      "type": "skill",
+      "topic": "terraform automation at scale",
+      "description": "For teams running Terraform across many stacks: Terragrunt layouts, Atlantis, CI plan/apply pipelines and drift detection.",
+      "items": [
+        {
+          "package": "terraform-ci-pipelines",
+          "required": true
+        },
+        {
+          "package": "terraform-drift-detection",
+          "required": true
+        },
+        {
+          "package": "terragrunt-layouts",
+          "required": false
+        },
+        {
+          "package": "atlantis-workflows",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "opentofu",
+      "type": "skill",
+      "topic": "opentofu",
+      "description": "For teams adopting OpenTofu: migration from Terraform, client-side state encryption, state handling and version management.",
+      "items": [
+        {
+          "package": "opentofu-migration",
+          "required": true
+        },
+        {
+          "package": "opentofu-state-encryption",
+          "required": true
+        },
+        {
+          "package": "terraform-state-management",
+          "required": false
+        },
+        {
+          "package": "terraform-provider-versions",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "pulumi",
+      "type": "skill",
+      "topic": "pulumi infrastructure as code",
+      "description": "For teams using Pulumi: TypeScript and Python programs, stacks/config/ESC, the Automation API and testing with mocks and policies.",
+      "items": [
+        {
+          "package": "pulumi-stacks-config",
+          "required": true
+        },
+        {
+          "package": "pulumi-testing",
+          "required": true
+        },
+        {
+          "package": "pulumi-typescript",
+          "required": false
+        },
+        {
+          "package": "pulumi-python",
+          "required": false
+        },
+        {
+          "package": "pulumi-automation-api",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ansible",
+      "type": "skill",
+      "topic": "ansible configuration management",
+      "description": "For ops engineers using Ansible: idempotent playbooks, roles and collections, dynamic inventory, Molecule tests and Vault secrets.",
+      "items": [
+        {
+          "package": "ansible-playbooks",
+          "required": true
+        },
+        {
+          "package": "ansible-roles",
+          "required": true
+        },
+        {
+          "package": "ansible-inventory",
+          "required": true
+        },
+        {
+          "package": "ansible-molecule-testing",
+          "required": false
+        },
+        {
+          "package": "ansible-vault-usage",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "nix",
+      "type": "skill",
+      "topic": "nix and nixos",
+      "description": "For teams using Nix: flakes, reproducible dev shells, NixOS modules, Nix-built container images and binary caches.",
+      "items": [
+        {
+          "package": "nix-flakes",
+          "required": true
+        },
+        {
+          "package": "nix-devshells",
+          "required": true
+        },
+        {
+          "package": "nixos-modules",
+          "required": false
+        },
+        {
+          "package": "nix-container-images",
+          "required": false
+        },
+        {
+          "package": "nix-binary-cache",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "github-actions",
+      "type": "skill",
+      "topic": "github actions",
+      "description": "For teams on GitHub Actions: workflow authoring, reusable workflows, caching, matrices, OIDC cloud auth and self-hosted runners.",
+      "items": [
+        {
+          "package": "gha-workflow-authoring",
+          "required": true
+        },
+        {
+          "package": "gha-reusable-workflows",
+          "required": true
+        },
+        {
+          "package": "gha-caching",
+          "required": true
+        },
+        {
+          "package": "gha-matrix-builds",
+          "required": false
+        },
+        {
+          "package": "gha-oidc-cloud-auth",
+          "required": false
+        },
+        {
+          "package": "gha-self-hosted-runners",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "gitlab-ci",
+      "type": "skill",
+      "topic": "gitlab ci/cd",
+      "description": "For teams on GitLab: pipeline authoring, shared templates and components, runners and environment-based deploys.",
+      "items": [
+        {
+          "package": "gitlab-ci-pipelines",
+          "required": true
+        },
+        {
+          "package": "gitlab-ci-templates",
+          "required": true
+        },
+        {
+          "package": "gitlab-runners",
+          "required": false
+        },
+        {
+          "package": "gitlab-environments-deploys",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "jenkins",
+      "type": "skill",
+      "topic": "jenkins pipelines",
+      "description": "For teams maintaining Jenkins: declarative Jenkinsfiles, shared libraries, Kubernetes agents and a path to GitHub Actions.",
+      "items": [
+        {
+          "package": "jenkinsfile-declarative",
+          "required": true
+        },
+        {
+          "package": "jenkins-shared-libraries",
+          "required": true
+        },
+        {
+          "package": "jenkins-k8s-agents",
+          "required": false
+        },
+        {
+          "package": "jenkins-to-gha-migration",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ci-performance",
+      "type": "skill",
+      "topic": "ci pipeline performance",
+      "description": "For engineers whose CI is slow or flaky: provider-agnostic caching, test sharding and pipeline health metrics.",
+      "items": [
+        {
+          "package": "ci-build-caching",
+          "required": true
+        },
+        {
+          "package": "ci-test-sharding",
+          "required": true
+        },
+        {
+          "package": "ci-pipeline-metrics",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "progressive-delivery",
+      "type": "skill",
+      "topic": "deployment strategies",
+      "description": "For teams shipping to production: blue-green, canary releases with metric gates, Argo Rollouts and rehearsed rollback procedures.",
+      "items": [
+        {
+          "package": "canary-releases",
+          "required": true
+        },
+        {
+          "package": "blue-green-deploys",
+          "required": true
+        },
+        {
+          "package": "deploy-rollback-procedures",
+          "required": true
+        },
+        {
+          "package": "argo-rollouts",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "argocd",
+      "type": "skill",
+      "topic": "argo cd gitops",
+      "description": "For platform teams using Argo CD: Applications, ApplicationSets, sync waves and hooks, and multi-cluster management.",
+      "items": [
+        {
+          "package": "argocd-applications",
+          "required": true
+        },
+        {
+          "package": "argocd-applicationsets",
+          "required": true
+        },
+        {
+          "package": "argocd-sync-waves",
+          "required": false
+        },
+        {
+          "package": "argocd-multicluster",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "flux",
+      "type": "skill",
+      "topic": "flux gitops",
+      "description": "For platform teams using Flux: bootstrap and repo layout, Kustomizations, HelmReleases and image update automation.",
+      "items": [
+        {
+          "package": "flux-bootstrap",
+          "required": true
+        },
+        {
+          "package": "flux-kustomizations",
+          "required": true
+        },
+        {
+          "package": "flux-helmreleases",
+          "required": true
+        },
+        {
+          "package": "flux-image-automation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "gitops-practices",
+      "type": "skill",
+      "topic": "gitops repository design",
+      "description": "For teams designing a GitOps workflow independent of tool: repo structure, environment promotion and encrypted secrets in Git.",
+      "items": [
+        {
+          "package": "gitops-repo-structure",
+          "required": true
+        },
+        {
+          "package": "gitops-env-promotion",
+          "required": true
+        },
+        {
+          "package": "sops-encrypted-manifests",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "prometheus",
+      "type": "skill",
+      "topic": "prometheus monitoring",
+      "description": "For engineers running Prometheus: PromQL, alerting and recording rules, scrape config, cardinality control and Alertmanager routing.",
+      "items": [
+        {
+          "package": "promql-queries",
+          "required": true
+        },
+        {
+          "package": "prometheus-alert-rules",
+          "required": true
+        },
+        {
+          "package": "prometheus-recording-rules",
+          "required": false
+        },
+        {
+          "package": "prometheus-scrape-config",
+          "required": false
+        },
+        {
+          "package": "prometheus-cardinality",
+          "required": false
+        },
+        {
+          "package": "alertmanager-routing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "grafana",
+      "type": "skill",
+      "topic": "grafana dashboards and alerting",
+      "description": "For teams visualising with Grafana: dashboard design, dashboards as code, unified alerting and Loki LogQL queries.",
+      "items": [
+        {
+          "package": "grafana-dashboards",
+          "required": true
+        },
+        {
+          "package": "grafana-dashboards-as-code",
+          "required": true
+        },
+        {
+          "package": "grafana-alerting",
+          "required": false
+        },
+        {
+          "package": "loki-logql",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "opentelemetry",
+      "type": "skill",
+      "topic": "opentelemetry and tracing",
+      "description": "For teams adopting OpenTelemetry: SDK instrumentation, Collector pipelines, semantic conventions, sampling, context propagation and trace backends.",
+      "items": [
+        {
+          "package": "otel-instrumentation",
+          "required": true
+        },
+        {
+          "package": "otel-collector-config",
+          "required": true
+        },
+        {
+          "package": "otel-context-propagation",
+          "required": true
+        },
+        {
+          "package": "otel-semantic-conventions",
+          "required": false
+        },
+        {
+          "package": "otel-sampling",
+          "required": false
+        },
+        {
+          "package": "trace-backends",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "logging-pipelines",
+      "type": "skill",
+      "topic": "log collection and pipelines",
+      "description": "For teams building logging: a structured logging standard, Fluent Bit or Vector pipelines, LogQL queries and retention tiers.",
+      "items": [
+        {
+          "package": "structured-logging-standards",
+          "required": true
+        },
+        {
+          "package": "fluent-bit-pipelines",
+          "required": true
+        },
+        {
+          "package": "vector-log-pipelines",
+          "required": false
+        },
+        {
+          "package": "loki-logql",
+          "required": false
+        },
+        {
+          "package": "log-retention-tiers",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "slo-engineering",
+      "type": "skill",
+      "topic": "slos and error budgets",
+      "description": "For SRE and service teams: defining SLIs and SLOs, error budget policies, burn-rate alerting and SLOs as code.",
+      "items": [
+        {
+          "package": "slo-definition",
+          "required": true
+        },
+        {
+          "package": "sli-selection",
+          "required": true
+        },
+        {
+          "package": "burn-rate-alerts",
+          "required": true
+        },
+        {
+          "package": "error-budget-policies",
+          "required": false
+        },
+        {
+          "package": "slo-as-code",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "sre-incident-management",
+      "type": "skill",
+      "topic": "operational incident management",
+      "description": "For on-call engineers and incident commanders handling outages: incident command, severity levels, status updates and timeline capture.",
+      "items": [
+        {
+          "package": "sre-incident-command",
+          "required": true
+        },
+        {
+          "package": "sre-severity-levels",
+          "required": true
+        },
+        {
+          "package": "sre-incident-comms",
+          "required": false
+        },
+        {
+          "package": "sre-incident-timeline",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "postmortems",
+      "type": "skill",
+      "topic": "blameless postmortems",
+      "description": "For teams learning from incidents: blameless postmortem writing, review facilitation, tracked action items and incident trend analysis.",
+      "items": [
+        {
+          "package": "sre-postmortem-writing",
+          "required": true
+        },
+        {
+          "package": "postmortem-action-items",
+          "required": true
+        },
+        {
+          "package": "postmortem-facilitation",
+          "required": false
+        },
+        {
+          "package": "incident-trend-analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "on-call",
+      "type": "skill",
+      "topic": "on-call operations",
+      "description": "For teams running on-call: rotation design, runbooks, handoffs, escalation policies and alert noise reduction.",
+      "items": [
+        {
+          "package": "oncall-rotation-design",
+          "required": true
+        },
+        {
+          "package": "ops-runbook-authoring",
+          "required": true
+        },
+        {
+          "package": "oncall-handoff",
+          "required": false
+        },
+        {
+          "package": "escalation-policies",
+          "required": false
+        },
+        {
+          "package": "alert-noise-reduction",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "capacity-planning",
+      "type": "skill",
+      "topic": "capacity planning",
+      "description": "For SREs planning growth: capacity forecasting, load tests to find saturation and data-driven rightsizing.",
+      "items": [
+        {
+          "package": "capacity-forecasting",
+          "required": true
+        },
+        {
+          "package": "load-test-capacity",
+          "required": true
+        },
+        {
+          "package": "resource-rightsizing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "chaos-engineering",
+      "type": "skill",
+      "topic": "chaos engineering",
+      "description": "For reliability teams testing resilience safely: experiment design, Chaos Mesh/Litmus, AWS FIS and game days.",
+      "items": [
+        {
+          "package": "chaos-experiment-design",
+          "required": true
+        },
+        {
+          "package": "game-day-planning",
+          "required": true
+        },
+        {
+          "package": "chaos-mesh-litmus",
+          "required": false
+        },
+        {
+          "package": "aws-fis-experiments",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "production-readiness",
+      "type": "skill",
+      "topic": "production readiness",
+      "description": "For teams launching services: production readiness reviews, health check design and failure-mode analysis before go-live.",
+      "items": [
+        {
+          "package": "production-readiness-review",
+          "required": true
+        },
+        {
+          "package": "failure-mode-analysis",
+          "required": true
+        },
+        {
+          "package": "health-check-design",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "finops-optimization",
+      "type": "skill",
+      "topic": "cloud cost optimisation",
+      "description": "For engineers and FinOps practitioners cutting cloud spend: cost allocation, rightsizing, idle cleanup, commitments and Kubernetes cost allocation.",
+      "items": [
+        {
+          "package": "cloud-cost-allocation",
+          "required": true
+        },
+        {
+          "package": "resource-rightsizing",
+          "required": true
+        },
+        {
+          "package": "idle-resource-cleanup",
+          "required": true
+        },
+        {
+          "package": "commitment-planning",
+          "required": false
+        },
+        {
+          "package": "k8s-cost-allocation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "finops-reporting",
+      "type": "skill",
+      "topic": "cloud cost reporting",
+      "description": "For FinOps and platform teams reporting spend: billing export queries, unit economics, budgets, anomaly detection and cost diffs on PRs.",
+      "items": [
+        {
+          "package": "billing-export-analysis",
+          "required": true
+        },
+        {
+          "package": "cloud-unit-economics",
+          "required": true
+        },
+        {
+          "package": "cloud-budget-alerts",
+          "required": false
+        },
+        {
+          "package": "cost-anomaly-detection",
+          "required": false
+        },
+        {
+          "package": "infracost-estimates",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dns-management",
+      "type": "skill",
+      "topic": "dns management",
+      "description": "For people who own DNS: record design including email auth records, dig-based troubleshooting, DNS as code and provider migrations.",
+      "items": [
+        {
+          "package": "dns-records-design",
+          "required": true
+        },
+        {
+          "package": "dns-troubleshooting",
+          "required": true
+        },
+        {
+          "package": "dns-as-code",
+          "required": false
+        },
+        {
+          "package": "dns-zone-migration",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cdn-caching",
+      "type": "skill",
+      "topic": "cdn caching",
+      "description": "For teams serving through a CDN: cache headers, invalidation strategy, CloudFront configuration and origin shielding.",
+      "items": [
+        {
+          "package": "cdn-cache-headers",
+          "required": true
+        },
+        {
+          "package": "cdn-cache-invalidation",
+          "required": true
+        },
+        {
+          "package": "cloudfront-distributions",
+          "required": false
+        },
+        {
+          "package": "cdn-origin-shielding",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "network-troubleshooting",
+      "type": "skill",
+      "topic": "network troubleshooting",
+      "description": "For engineers chasing connectivity and latency problems: packet captures, TLS diagnosis, load balancer errors and path diagnostics.",
+      "items": [
+        {
+          "package": "packet-capture-triage",
+          "required": true
+        },
+        {
+          "package": "tls-cert-troubleshooting",
+          "required": true
+        },
+        {
+          "package": "load-balancer-debugging",
+          "required": false
+        },
+        {
+          "package": "network-path-diagnostics",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "reverse-proxies",
+      "type": "skill",
+      "topic": "reverse proxies",
+      "description": "For engineers configuring proxies in front of services: NGINX, HAProxy, Envoy and Caddy configuration done right.",
+      "items": [
+        {
+          "package": "nginx-config",
+          "required": true
+        },
+        {
+          "package": "haproxy-config",
+          "required": false
+        },
+        {
+          "package": "envoy-proxy-config",
+          "required": false
+        },
+        {
+          "package": "caddy-server",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "linux-admin",
+      "type": "skill",
+      "topic": "linux server administration",
+      "description": "For people administering Linux servers: systemd units and timers, users and permissions, packages, disks/LVM and journald logs.",
+      "items": [
+        {
+          "package": "systemd-units",
+          "required": true
+        },
+        {
+          "package": "linux-users-permissions",
+          "required": true
+        },
+        {
+          "package": "linux-package-management",
+          "required": true
+        },
+        {
+          "package": "linux-storage-lvm",
+          "required": false
+        },
+        {
+          "package": "linux-log-journald",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "linux-performance",
+      "type": "skill",
+      "topic": "linux performance analysis",
+      "description": "For engineers diagnosing slow hosts: USE-method triage, memory and OOM, disk I/O, eBPF tooling and sysctl tuning.",
+      "items": [
+        {
+          "package": "linux-perf-triage",
+          "required": true
+        },
+        {
+          "package": "linux-memory-oom",
+          "required": true
+        },
+        {
+          "package": "linux-io-diagnosis",
+          "required": false
+        },
+        {
+          "package": "ebpf-observability",
+          "required": false
+        },
+        {
+          "package": "sysctl-tuning",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "serverless-patterns",
+      "type": "skill",
+      "topic": "serverless patterns across clouds",
+      "description": "For teams building serverless on any cloud: Serverless Framework/SST deploys, cold-start tuning, idempotent event handlers and cost modeling.",
+      "items": [
+        {
+          "package": "idempotent-event-handlers",
+          "required": true
+        },
+        {
+          "package": "cold-start-tuning",
+          "required": true
+        },
+        {
+          "package": "serverless-framework",
+          "required": false
+        },
+        {
+          "package": "serverless-cost-modeling",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "service-mesh",
+      "type": "skill",
+      "topic": "service mesh",
+      "description": "For platform teams running a mesh: Istio traffic management and mTLS, Linkerd operations and an adoption plan.",
+      "items": [
+        {
+          "package": "istio-traffic-management",
+          "required": true
+        },
+        {
+          "package": "istio-mtls-config",
+          "required": true
+        },
+        {
+          "package": "linkerd-operations",
+          "required": false
+        },
+        {
+          "package": "mesh-adoption-plan",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "internal-developer-platform",
+      "type": "skill",
+      "topic": "platform engineering",
+      "description": "For platform teams building an internal developer platform: golden paths, Crossplane self-service APIs, ephemeral environments and maturity scorecards.",
+      "items": [
+        {
+          "package": "golden-path-design",
+          "required": true
+        },
+        {
+          "package": "crossplane-compositions",
+          "required": true
+        },
+        {
+          "package": "ephemeral-environments",
+          "required": false
+        },
+        {
+          "package": "platform-scorecards",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "backstage",
+      "type": "skill",
+      "topic": "backstage developer portal",
+      "description": "For teams running Backstage: catalog modelling, Scaffolder software templates and TechDocs.",
+      "items": [
+        {
+          "package": "backstage-catalog",
+          "required": true
+        },
+        {
+          "package": "backstage-software-templates",
+          "required": true
+        },
+        {
+          "package": "backstage-techdocs",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "backups",
+      "type": "skill",
+      "topic": "backup and restore",
+      "description": "For ops teams protecting data: backup policy design, Velero for Kubernetes, restic/Borg for hosts and regular restore drills.",
+      "items": [
+        {
+          "package": "backup-policy-design",
+          "required": true
+        },
+        {
+          "package": "restore-drills",
+          "required": true
+        },
+        {
+          "package": "velero-k8s-backups",
+          "required": false
+        },
+        {
+          "package": "restic-borg-backups",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "disaster-recovery",
+      "type": "skill",
+      "topic": "disaster recovery",
+      "description": "For teams planning for regional or total failure: DR strategy from RTO/RPO, multi-region failover design and DR runbooks.",
+      "items": [
+        {
+          "package": "dr-strategy-rto-rpo",
+          "required": true
+        },
+        {
+          "package": "multi-region-failover",
+          "required": true
+        },
+        {
+          "package": "dr-runbooks",
+          "required": true
+        },
+        {
+          "package": "restore-drills",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "aws-agents",
+      "type": "agent",
+      "topic": "aws review and troubleshooting",
+      "description": "For AWS teams: subagents that review architectures against Well-Architected, review CDK/CloudFormation changes, troubleshoot Lambda and audit tagging.",
+      "items": [
+        {
+          "package": "aws-well-architected-reviewer",
+          "required": true
+        },
+        {
+          "package": "aws-cdk-reviewer",
+          "required": true
+        },
+        {
+          "package": "aws-lambda-troubleshooter",
+          "required": false
+        },
+        {
+          "package": "aws-tagging-auditor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "gcp-agents",
+      "type": "agent",
+      "topic": "gcp review and troubleshooting",
+      "description": "For Google Cloud teams: subagents that review GCP designs, troubleshoot Cloud Run and plan GKE upgrades.",
+      "items": [
+        {
+          "package": "gcp-architecture-reviewer",
+          "required": true
+        },
+        {
+          "package": "cloud-run-troubleshooter",
+          "required": false
+        },
+        {
+          "package": "gke-upgrade-planner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "azure-agents",
+      "type": "agent",
+      "topic": "azure review and troubleshooting",
+      "description": "For Azure teams: subagents that review architectures and Bicep, plan AKS upgrades and troubleshoot Azure Functions.",
+      "items": [
+        {
+          "package": "azure-architecture-reviewer",
+          "required": true
+        },
+        {
+          "package": "azure-bicep-reviewer",
+          "required": true
+        },
+        {
+          "package": "aks-upgrade-planner",
+          "required": false
+        },
+        {
+          "package": "azure-functions-troubleshooter",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cloud-migration-agents",
+      "type": "agent",
+      "topic": "cloud migration",
+      "description": "For teams moving workloads to or between clouds: subagents that inventory the estate, plan waves with the 6 Rs, translate services across providers and write cutover plans.",
+      "items": [
+        {
+          "package": "cloud-migration-planner",
+          "required": true
+        },
+        {
+          "package": "workload-discovery-mapper",
+          "required": true
+        },
+        {
+          "package": "migration-cutover-planner",
+          "required": false
+        },
+        {
+          "package": "cloud-service-translator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "docker-agents",
+      "type": "agent",
+      "topic": "docker and containers",
+      "description": "For developers shipping containers: subagents that review Dockerfiles, slim images, build Compose dev environments and debug builds.",
+      "items": [
+        {
+          "package": "dockerfile-reviewer",
+          "required": true
+        },
+        {
+          "package": "container-image-slimmer",
+          "required": false
+        },
+        {
+          "package": "compose-environment-builder",
+          "required": false
+        },
+        {
+          "package": "docker-build-debugger",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kubernetes-review-agents",
+      "type": "agent",
+      "topic": "kubernetes config review",
+      "description": "For teams changing Kubernetes config: subagents that review manifests and Helm charts, tune resources and refactor into Kustomize.",
+      "items": [
+        {
+          "package": "k8s-manifest-reviewer",
+          "required": true
+        },
+        {
+          "package": "helm-chart-reviewer",
+          "required": true
+        },
+        {
+          "package": "k8s-resource-tuner",
+          "required": false
+        },
+        {
+          "package": "kustomize-refactorer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kubernetes-ops-agents",
+      "type": "agent",
+      "topic": "kubernetes troubleshooting and upgrades",
+      "description": "For on-call and platform engineers: subagents that debug pods, cluster networking and nodes, and plan Kubernetes version upgrades.",
+      "items": [
+        {
+          "package": "k8s-pod-debugger",
+          "required": true
+        },
+        {
+          "package": "k8s-network-debugger",
+          "required": true
+        },
+        {
+          "package": "k8s-node-investigator",
+          "required": false
+        },
+        {
+          "package": "k8s-upgrade-planner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "terraform-review-agents",
+      "type": "agent",
+      "topic": "terraform review",
+      "description": "For teams applying Terraform: subagents that review plans and modules, investigate drift and plan safe state surgery.",
+      "items": [
+        {
+          "package": "terraform-plan-reviewer",
+          "required": true
+        },
+        {
+          "package": "terraform-module-reviewer",
+          "required": true
+        },
+        {
+          "package": "terraform-drift-investigator",
+          "required": false
+        },
+        {
+          "package": "terraform-state-surgeon",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "terraform-authoring-agents",
+      "type": "agent",
+      "topic": "terraform authoring and migration",
+      "description": "For IaC authors: subagents that write new modules, import existing resources, migrate CloudFormation to Terraform and upgrade provider versions.",
+      "items": [
+        {
+          "package": "terraform-module-writer",
+          "required": true
+        },
+        {
+          "package": "terraform-importer",
+          "required": true
+        },
+        {
+          "package": "cfn-to-terraform-migrator",
+          "required": false
+        },
+        {
+          "package": "terraform-provider-upgrader",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "pulumi-agents",
+      "type": "agent",
+      "topic": "pulumi",
+      "description": "For Pulumi users: subagents that review programs, convert Terraform to Pulumi and troubleshoot failed stack updates.",
+      "items": [
+        {
+          "package": "pulumi-program-reviewer",
+          "required": true
+        },
+        {
+          "package": "terraform-to-pulumi-converter",
+          "required": false
+        },
+        {
+          "package": "pulumi-stack-troubleshooter",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ansible-agents",
+      "type": "agent",
+      "topic": "ansible",
+      "description": "For Ansible users: subagents that review playbooks, write tested roles and debug failed runs.",
+      "items": [
+        {
+          "package": "ansible-playbook-reviewer",
+          "required": true
+        },
+        {
+          "package": "ansible-role-writer",
+          "required": true
+        },
+        {
+          "package": "ansible-run-debugger",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "github-actions-agents",
+      "type": "agent",
+      "topic": "github actions",
+      "description": "For teams on GitHub Actions: subagents that write and review workflows, triage failing runs and speed up slow pipelines.",
+      "items": [
+        {
+          "package": "gha-workflow-writer",
+          "required": true
+        },
+        {
+          "package": "gha-workflow-reviewer",
+          "required": true
+        },
+        {
+          "package": "ci-failure-triager",
+          "required": false
+        },
+        {
+          "package": "ci-speed-optimizer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ci-migration-agents",
+      "type": "agent",
+      "topic": "ci platform migration",
+      "description": "For teams switching CI providers: subagents that inventory pipelines and convert Jenkins or GitLab to GitHub Actions, or Actions to GitLab.",
+      "items": [
+        {
+          "package": "ci-pipeline-inventory",
+          "required": true
+        },
+        {
+          "package": "jenkins-to-gha-migrator",
+          "required": false
+        },
+        {
+          "package": "gitlab-to-gha-migrator",
+          "required": false
+        },
+        {
+          "package": "gha-to-gitlab-migrator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "deploy-safety-agents",
+      "type": "agent",
+      "topic": "safe deployments",
+      "description": "For teams releasing to production: subagents that assess deploy risk, analyse canaries and advise on rollbacks.",
+      "items": [
+        {
+          "package": "deploy-risk-assessor",
+          "required": true
+        },
+        {
+          "package": "canary-analysis-agent",
+          "required": true
+        },
+        {
+          "package": "rollback-advisor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "gitops-agents",
+      "type": "agent",
+      "topic": "gitops operations",
+      "description": "For GitOps users: subagents that debug Argo CD and Flux sync failures, review repo layout and plan environment promotions.",
+      "items": [
+        {
+          "package": "argocd-sync-debugger",
+          "required": true
+        },
+        {
+          "package": "flux-reconcile-debugger",
+          "required": false
+        },
+        {
+          "package": "gitops-repo-reviewer",
+          "required": false
+        },
+        {
+          "package": "gitops-promotion-planner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "instrumentation-agents",
+      "type": "agent",
+      "topic": "telemetry instrumentation",
+      "description": "For service teams improving telemetry: subagents that add OpenTelemetry instrumentation and review Collector configs, log statements and metric names.",
+      "items": [
+        {
+          "package": "otel-instrumentation-writer",
+          "required": true
+        },
+        {
+          "package": "otel-collector-reviewer",
+          "required": false
+        },
+        {
+          "package": "log-statement-reviewer",
+          "required": false
+        },
+        {
+          "package": "metrics-naming-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "monitoring-agents",
+      "type": "agent",
+      "topic": "dashboards and alerting",
+      "description": "For teams building monitoring: subagents that build Grafana dashboards, write and review Prometheus alerts and answer questions with PromQL.",
+      "items": [
+        {
+          "package": "grafana-dashboard-builder",
+          "required": true
+        },
+        {
+          "package": "prometheus-alert-writer",
+          "required": true
+        },
+        {
+          "package": "alert-rule-reviewer",
+          "required": false
+        },
+        {
+          "package": "promql-assistant",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "slo-agents",
+      "type": "agent",
+      "topic": "slos and error budgets",
+      "description": "For SRE teams: subagents that design SLOs, generate burn-rate alerts and report error budget status.",
+      "items": [
+        {
+          "package": "slo-designer",
+          "required": true
+        },
+        {
+          "package": "burn-rate-alert-generator",
+          "required": true
+        },
+        {
+          "package": "error-budget-reporter",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "sre-incident-agents",
+      "type": "agent",
+      "topic": "operational incident response",
+      "description": "For on-call teams during outages: subagents that assist the incident commander, investigate likely causes, draft status updates and build the timeline.",
+      "items": [
+        {
+          "package": "sre-incident-commander-assistant",
+          "required": true
+        },
+        {
+          "package": "incident-triage-investigator",
+          "required": true
+        },
+        {
+          "package": "incident-status-writer",
+          "required": false
+        },
+        {
+          "package": "incident-timeline-builder",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "postmortem-agents",
+      "type": "agent",
+      "topic": "postmortems",
+      "description": "For teams learning from incidents: subagents that draft and review blameless postmortems and analyse patterns across incidents.",
+      "items": [
+        {
+          "package": "postmortem-drafter",
+          "required": true
+        },
+        {
+          "package": "postmortem-reviewer",
+          "required": true
+        },
+        {
+          "package": "incident-pattern-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "on-call-agents",
+      "type": "agent",
+      "topic": "on-call support",
+      "description": "For on-call engineers: subagents that write and validate runbooks, summarise shift handoffs and audit alert noise.",
+      "items": [
+        {
+          "package": "ops-runbook-writer",
+          "required": true
+        },
+        {
+          "package": "oncall-handoff-summarizer",
+          "required": true
+        },
+        {
+          "package": "runbook-validator",
+          "required": false
+        },
+        {
+          "package": "alert-noise-auditor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "finops-agents",
+      "type": "agent",
+      "topic": "cloud cost management",
+      "description": "For FinOps and engineering leads: subagents that analyse spend, investigate anomalies, recommend rightsizing and commitments, and review PR cost impact.",
+      "items": [
+        {
+          "package": "cloud-cost-analyst",
+          "required": true
+        },
+        {
+          "package": "cost-anomaly-investigator",
+          "required": true
+        },
+        {
+          "package": "rightsizing-advisor",
+          "required": false
+        },
+        {
+          "package": "commitment-purchase-planner",
+          "required": false
+        },
+        {
+          "package": "infra-cost-pr-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "reliability-review-agents",
+      "type": "agent",
+      "topic": "reliability reviews",
+      "description": "For teams hardening services: subagents that run production readiness reviews, failure-mode analyses, chaos experiment plans and capacity forecasts.",
+      "items": [
+        {
+          "package": "production-readiness-reviewer",
+          "required": true
+        },
+        {
+          "package": "failure-mode-analyst",
+          "required": true
+        },
+        {
+          "package": "chaos-experiment-planner",
+          "required": false
+        },
+        {
+          "package": "infra-capacity-planner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "linux-agents",
+      "type": "agent",
+      "topic": "linux administration",
+      "description": "For Linux admins: subagents that troubleshoot hosts, investigate performance, write systemd units and plan patching waves.",
+      "items": [
+        {
+          "package": "linux-troubleshooter",
+          "required": true
+        },
+        {
+          "package": "linux-perf-investigator",
+          "required": true
+        },
+        {
+          "package": "systemd-unit-writer",
+          "required": false
+        },
+        {
+          "package": "linux-patch-planner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "network-agents",
+      "type": "agent",
+      "topic": "networking, dns and cdn",
+      "description": "For engineers owning network edges: subagents that debug connectivity, review DNS and proxy changes, audit TLS certificates and tune CDN caching.",
+      "items": [
+        {
+          "package": "network-connectivity-debugger",
+          "required": true
+        },
+        {
+          "package": "dns-change-reviewer",
+          "required": true
+        },
+        {
+          "package": "tls-cert-auditor",
+          "required": false
+        },
+        {
+          "package": "proxy-config-reviewer",
+          "required": false
+        },
+        {
+          "package": "cdn-cache-tuner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "platform-engineering-agents",
+      "type": "agent",
+      "topic": "platform engineering",
+      "description": "For platform teams: subagents that scaffold golden-path services, curate the Backstage catalog, audit scorecards and write Crossplane compositions.",
+      "items": [
+        {
+          "package": "golden-path-scaffolder",
+          "required": true
+        },
+        {
+          "package": "backstage-catalog-curator",
+          "required": true
+        },
+        {
+          "package": "platform-scorecard-auditor",
+          "required": false
+        },
+        {
+          "package": "crossplane-composition-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "backup-dr-agents",
+      "type": "agent",
+      "topic": "backup and disaster recovery",
+      "description": "For ops teams proving recoverability: subagents that audit backup coverage, write DR plans, run restore drills and review failover runbooks.",
+      "items": [
+        {
+          "package": "backup-coverage-auditor",
+          "required": true
+        },
+        {
+          "package": "dr-plan-writer",
+          "required": true
+        },
+        {
+          "package": "restore-drill-runner",
+          "required": false
+        },
+        {
+          "package": "failover-runbook-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "serverless-agents",
+      "type": "agent",
+      "topic": "serverless architecture",
+      "description": "For teams building event-driven serverless apps: subagents that review designs, map event flows and cut cold starts.",
+      "items": [
+        {
+          "package": "serverless-architecture-reviewer",
+          "required": true
+        },
+        {
+          "package": "cloud-event-topology-mapper",
+          "required": false
+        },
+        {
+          "package": "cold-start-optimizer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "infra-discovery-agents",
+      "type": "agent",
+      "topic": "infrastructure discovery",
+      "description": "For engineers inheriting or auditing infrastructure: subagents that inventory resources, generate architecture diagrams and diff config across environments.",
+      "items": [
+        {
+          "package": "infra-inventory-mapper",
+          "required": true
+        },
+        {
+          "package": "infra-diagram-generator",
+          "required": true
+        },
+        {
+          "package": "env-config-differ",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "edge-platform-agents",
+      "type": "agent",
+      "topic": "edge and jamstack platforms",
+      "description": "For teams on Cloudflare, Vercel or Netlify: subagents that review Workers, debug failed builds and plan migrations to the edge.",
+      "items": [
+        {
+          "package": "cloudflare-worker-reviewer",
+          "required": true
+        },
+        {
+          "package": "vercel-build-debugger",
+          "required": true
+        },
+        {
+          "package": "edge-migration-planner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "service-mesh-agents",
+      "type": "agent",
+      "topic": "service mesh operations",
+      "description": "For platform teams running Istio or Linkerd: subagents that review mesh policies, debug mesh traffic and plan adoption.",
+      "items": [
+        {
+          "package": "mesh-policy-reviewer",
+          "required": true
+        },
+        {
+          "package": "mesh-traffic-debugger",
+          "required": true
+        },
+        {
+          "package": "mesh-adoption-planner",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

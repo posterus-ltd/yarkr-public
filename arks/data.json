@@ -1,0 +1,2473 @@
+{
+  "domain": "data",
+  "arks": [
+    {
+      "name": "sql-fundamentals",
+      "type": "skill",
+      "topic": "SQL fundamentals",
+      "description": "For engineers and analysts writing SQL daily: joins, window functions, CTEs, NULL semantics and a house style so agents write correct, readable queries.",
+      "items": [
+        {
+          "package": "sql-join-patterns",
+          "required": true
+        },
+        {
+          "package": "sql-window-functions",
+          "required": true
+        },
+        {
+          "package": "sql-ctes-recursive",
+          "required": true
+        },
+        {
+          "package": "sql-null-semantics",
+          "required": true
+        },
+        {
+          "package": "sql-style-guide",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "sql-analytics-patterns",
+      "type": "skill",
+      "topic": "analytical SQL patterns",
+      "description": "For analysts: SQL recipes for cohorts, funnels, sessionisation, gaps-and-islands and deduplication that agents can adapt to any warehouse.",
+      "items": [
+        {
+          "package": "sql-cohort-queries",
+          "required": true
+        },
+        {
+          "package": "sql-funnel-queries",
+          "required": true
+        },
+        {
+          "package": "sql-sessionization",
+          "required": true
+        },
+        {
+          "package": "sql-gaps-and-islands",
+          "required": true
+        },
+        {
+          "package": "sql-deduplication",
+          "required": true
+        },
+        {
+          "package": "sql-window-functions",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "postgres-schema-design",
+      "type": "skill",
+      "topic": "Postgres schema design",
+      "description": "For backend and data engineers designing Postgres schemas: column types, constraints, partitioning and JSONB modelling done right the first time.",
+      "items": [
+        {
+          "package": "pg-data-types",
+          "required": true
+        },
+        {
+          "package": "pg-constraints",
+          "required": true
+        },
+        {
+          "package": "pg-partitioning",
+          "required": true
+        },
+        {
+          "package": "pg-jsonb-modeling",
+          "required": true
+        },
+        {
+          "package": "keys-surrogate-natural",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "postgres-performance",
+      "type": "skill",
+      "topic": "Postgres performance",
+      "description": "For engineers chasing slow Postgres queries: reading EXPLAIN ANALYZE, choosing indexes, fixing planner statistics, vacuum and connection pooling.",
+      "items": [
+        {
+          "package": "pg-explain-analyze",
+          "required": true
+        },
+        {
+          "package": "pg-index-selection",
+          "required": true
+        },
+        {
+          "package": "pg-planner-statistics",
+          "required": true
+        },
+        {
+          "package": "pg-vacuum-bloat",
+          "required": true
+        },
+        {
+          "package": "pg-connection-pooling",
+          "required": false
+        },
+        {
+          "package": "pg-monitoring-queries",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "postgres-operations",
+      "type": "skill",
+      "topic": "Postgres operations",
+      "description": "For DBAs and platform teams running Postgres: backups and PITR, replication, major upgrades, roles and monitoring queries.",
+      "items": [
+        {
+          "package": "pg-backup-restore",
+          "required": true
+        },
+        {
+          "package": "pg-replication",
+          "required": true
+        },
+        {
+          "package": "pg-major-upgrade",
+          "required": true
+        },
+        {
+          "package": "pg-roles-privileges",
+          "required": true
+        },
+        {
+          "package": "pg-monitoring-queries",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "postgres-extensions",
+      "type": "skill",
+      "topic": "Postgres extensions",
+      "description": "For Postgres users who want more from the database: full-text search, trigram fuzzy matching, pg_cron, TimescaleDB and logical decoding.",
+      "items": [
+        {
+          "package": "pg-full-text-search",
+          "required": true
+        },
+        {
+          "package": "pg-trigram-fuzzy-search",
+          "required": true
+        },
+        {
+          "package": "pg-cron-jobs",
+          "required": true
+        },
+        {
+          "package": "pg-timescaledb",
+          "required": true
+        },
+        {
+          "package": "pg-logical-decoding",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "mysql",
+      "type": "skill",
+      "topic": "MySQL",
+      "description": "For teams running MySQL/InnoDB: index design, EXPLAIN, locking and deadlocks, online schema changes and replication.",
+      "items": [
+        {
+          "package": "mysql-indexing",
+          "required": true
+        },
+        {
+          "package": "mysql-explain",
+          "required": true
+        },
+        {
+          "package": "mysql-innodb-locking",
+          "required": true
+        },
+        {
+          "package": "mysql-online-schema-change",
+          "required": true
+        },
+        {
+          "package": "mysql-replication",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "sqlite",
+      "type": "skill",
+      "topic": "SQLite",
+      "description": "For developers embedding SQLite in apps and tools: pragmas, concurrency, FTS5, JSON functions and safe schema migrations.",
+      "items": [
+        {
+          "package": "sqlite-pragmas-config",
+          "required": true
+        },
+        {
+          "package": "sqlite-concurrency",
+          "required": true
+        },
+        {
+          "package": "sqlite-schema-migrations",
+          "required": true
+        },
+        {
+          "package": "sqlite-fts5",
+          "required": false
+        },
+        {
+          "package": "sqlite-json-functions",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "mongodb",
+      "type": "skill",
+      "topic": "MongoDB modelling and querying",
+      "description": "For developers building on MongoDB: document modelling patterns, ESR indexing, aggregation pipelines, schema validation and transactions.",
+      "items": [
+        {
+          "package": "mongo-document-modeling",
+          "required": true
+        },
+        {
+          "package": "mongo-indexing",
+          "required": true
+        },
+        {
+          "package": "mongo-aggregation-pipeline",
+          "required": true
+        },
+        {
+          "package": "mongo-schema-validation",
+          "required": true
+        },
+        {
+          "package": "mongo-transactions",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "mongodb-operations",
+      "type": "skill",
+      "topic": "MongoDB operations",
+      "description": "For teams operating MongoDB at scale: shard key choice, profiling slow operations, transactions and indexing for production load.",
+      "items": [
+        {
+          "package": "mongo-sharding",
+          "required": true
+        },
+        {
+          "package": "mongo-performance-profiling",
+          "required": true
+        },
+        {
+          "package": "mongo-indexing",
+          "required": true
+        },
+        {
+          "package": "mongo-transactions",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "redis",
+      "type": "skill",
+      "topic": "Redis",
+      "description": "For backend engineers using Redis: picking data structures, caching patterns, rate limiters, streams and memory tuning.",
+      "items": [
+        {
+          "package": "redis-data-structures",
+          "required": true
+        },
+        {
+          "package": "redis-caching-patterns",
+          "required": true
+        },
+        {
+          "package": "redis-rate-limiting",
+          "required": true
+        },
+        {
+          "package": "redis-streams",
+          "required": false
+        },
+        {
+          "package": "redis-memory-tuning",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dynamodb",
+      "type": "skill",
+      "topic": "DynamoDB",
+      "description": "For engineers designing DynamoDB tables: access-pattern-first single-table design, GSIs, streams and capacity cost.",
+      "items": [
+        {
+          "package": "dynamodb-access-patterns",
+          "required": true
+        },
+        {
+          "package": "dynamodb-single-table-design",
+          "required": true
+        },
+        {
+          "package": "dynamodb-gsi-design",
+          "required": true
+        },
+        {
+          "package": "dynamodb-streams",
+          "required": false
+        },
+        {
+          "package": "dynamodb-capacity-cost",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cassandra",
+      "type": "skill",
+      "topic": "Cassandra and ScyllaDB",
+      "description": "For teams on Cassandra or ScyllaDB: query-first table modelling, partition sizing, consistency levels and compaction/tombstone hygiene.",
+      "items": [
+        {
+          "package": "cassandra-data-modeling",
+          "required": true
+        },
+        {
+          "package": "cassandra-partition-sizing",
+          "required": true
+        },
+        {
+          "package": "cassandra-consistency-levels",
+          "required": true
+        },
+        {
+          "package": "cassandra-compaction-tombstones",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "graph-databases",
+      "type": "skill",
+      "topic": "graph databases",
+      "description": "For developers using Neo4j or property graphs: graph modelling, Cypher, query tuning and graph data science algorithms.",
+      "items": [
+        {
+          "package": "graph-data-modeling",
+          "required": true
+        },
+        {
+          "package": "neo4j-cypher-queries",
+          "required": true
+        },
+        {
+          "package": "neo4j-performance",
+          "required": true
+        },
+        {
+          "package": "neo4j-graph-algorithms",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "relational-data-modeling",
+      "type": "skill",
+      "topic": "relational data modelling",
+      "description": "For engineers designing application databases: normalisation, ER modelling, key choice, temporal history, soft deletes and multi-tenancy.",
+      "items": [
+        {
+          "package": "relational-normalization",
+          "required": true
+        },
+        {
+          "package": "er-modeling",
+          "required": true
+        },
+        {
+          "package": "keys-surrogate-natural",
+          "required": true
+        },
+        {
+          "package": "temporal-data-modeling",
+          "required": true
+        },
+        {
+          "package": "soft-delete-patterns",
+          "required": false
+        },
+        {
+          "package": "multi-tenant-schema-design",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dimensional-modeling",
+      "type": "skill",
+      "topic": "dimensional modelling",
+      "description": "For analytics engineers modelling a warehouse: star schemas, fact table types, SCDs, conformed dimensions, Data Vault and wide tables.",
+      "items": [
+        {
+          "package": "kimball-star-schema",
+          "required": true
+        },
+        {
+          "package": "fact-table-design",
+          "required": true
+        },
+        {
+          "package": "slowly-changing-dimensions",
+          "required": true
+        },
+        {
+          "package": "conformed-dimensions",
+          "required": true
+        },
+        {
+          "package": "data-vault-modeling",
+          "required": false
+        },
+        {
+          "package": "one-big-table-modeling",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "schema-migrations",
+      "type": "skill",
+      "topic": "database schema migrations",
+      "description": "For teams shipping schema changes to live databases: zero-downtime DDL, expand/contract, backfills, rollback plans and migration tooling.",
+      "items": [
+        {
+          "package": "zero-downtime-migrations",
+          "required": true
+        },
+        {
+          "package": "expand-contract-migrations",
+          "required": true
+        },
+        {
+          "package": "data-backfill-execution",
+          "required": true
+        },
+        {
+          "package": "migration-rollback-planning",
+          "required": true
+        },
+        {
+          "package": "db-migration-tooling",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "query-tuning",
+      "type": "skill",
+      "topic": "query tuning",
+      "description": "For engineers on any SQL engine: reading plans, index design, N+1 detection, keyset pagination and fixing SQL anti-patterns.",
+      "items": [
+        {
+          "package": "query-plan-reading",
+          "required": true
+        },
+        {
+          "package": "index-design-principles",
+          "required": true
+        },
+        {
+          "package": "sql-anti-patterns",
+          "required": true
+        },
+        {
+          "package": "n-plus-one-detection",
+          "required": true
+        },
+        {
+          "package": "keyset-pagination",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dbt-core",
+      "type": "skill",
+      "topic": "dbt fundamentals",
+      "description": "For analytics engineers using dbt: project layering, materialisations, incremental models, tests and contracts, macros and docs.",
+      "items": [
+        {
+          "package": "dbt-project-structure",
+          "required": true
+        },
+        {
+          "package": "dbt-materializations",
+          "required": true
+        },
+        {
+          "package": "dbt-incremental-models",
+          "required": true
+        },
+        {
+          "package": "dbt-tests-contracts",
+          "required": true
+        },
+        {
+          "package": "dbt-macros-jinja",
+          "required": false
+        },
+        {
+          "package": "dbt-docs-exposures",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dbt-advanced",
+      "type": "skill",
+      "topic": "advanced dbt",
+      "description": "For teams scaling dbt: semantic layer metrics, snapshots, slim CI, package management and dbt Mesh multi-project setups.",
+      "items": [
+        {
+          "package": "dbt-slim-ci",
+          "required": true
+        },
+        {
+          "package": "dbt-snapshots",
+          "required": true
+        },
+        {
+          "package": "dbt-semantic-layer",
+          "required": true
+        },
+        {
+          "package": "dbt-package-management",
+          "required": false
+        },
+        {
+          "package": "dbt-mesh",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "airflow",
+      "type": "skill",
+      "topic": "Apache Airflow",
+      "description": "For data engineers writing Airflow DAGs: authoring rules, TaskFlow, deferrable sensors, DAG tests, secrets and safe backfills.",
+      "items": [
+        {
+          "package": "airflow-dag-authoring",
+          "required": true
+        },
+        {
+          "package": "airflow-taskflow-api",
+          "required": true
+        },
+        {
+          "package": "airflow-dag-testing",
+          "required": true
+        },
+        {
+          "package": "airflow-deferrable-sensors",
+          "required": true
+        },
+        {
+          "package": "airflow-connections-secrets",
+          "required": false
+        },
+        {
+          "package": "airflow-backfill-reruns",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dagster",
+      "type": "skill",
+      "topic": "Dagster",
+      "description": "For data engineers on Dagster: software-defined assets, resources and IO managers, partitions, automation and testing.",
+      "items": [
+        {
+          "package": "dagster-assets",
+          "required": true
+        },
+        {
+          "package": "dagster-resources-io",
+          "required": true
+        },
+        {
+          "package": "dagster-partitions",
+          "required": true
+        },
+        {
+          "package": "dagster-automation",
+          "required": true
+        },
+        {
+          "package": "dagster-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "spark",
+      "type": "skill",
+      "topic": "Apache Spark batch",
+      "description": "For engineers writing PySpark batch jobs: idiomatic DataFrame code, partitioning and shuffles, join skew, config tuning and UDF performance.",
+      "items": [
+        {
+          "package": "spark-dataframe-api",
+          "required": true
+        },
+        {
+          "package": "spark-partitioning-shuffle",
+          "required": true
+        },
+        {
+          "package": "spark-joins-skew",
+          "required": true
+        },
+        {
+          "package": "spark-config-tuning",
+          "required": true
+        },
+        {
+          "package": "spark-udf-performance",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "spark-streaming",
+      "type": "skill",
+      "topic": "Spark Structured Streaming",
+      "description": "For engineers running Spark Structured Streaming: watermarks, stateful operations, exactly-once sinks and checkpoint management.",
+      "items": [
+        {
+          "package": "spark-streaming-watermarks",
+          "required": true
+        },
+        {
+          "package": "spark-streaming-state",
+          "required": true
+        },
+        {
+          "package": "spark-streaming-sinks",
+          "required": true
+        },
+        {
+          "package": "spark-streaming-checkpoints",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "kafka",
+      "type": "skill",
+      "topic": "Apache Kafka for developers",
+      "description": "For developers producing and consuming Kafka events: topic and key design, producer and consumer configuration, exactly-once and schema registry.",
+      "items": [
+        {
+          "package": "kafka-topic-design",
+          "required": true
+        },
+        {
+          "package": "kafka-producer-config",
+          "required": true
+        },
+        {
+          "package": "kafka-consumer-groups",
+          "required": true
+        },
+        {
+          "package": "kafka-schema-registry",
+          "required": true
+        },
+        {
+          "package": "kafka-exactly-once",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kafka-operations",
+      "type": "skill",
+      "topic": "Kafka operations",
+      "description": "For platform teams running Kafka: cluster sizing, lag monitoring, retention and compaction, and Kafka Connect pipelines.",
+      "items": [
+        {
+          "package": "kafka-cluster-sizing",
+          "required": true
+        },
+        {
+          "package": "kafka-lag-monitoring",
+          "required": true
+        },
+        {
+          "package": "kafka-retention-compaction",
+          "required": true
+        },
+        {
+          "package": "kafka-connect-pipelines",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "flink",
+      "type": "skill",
+      "topic": "Apache Flink",
+      "description": "For stream processing engineers on Flink: DataStream API, Flink SQL, state and checkpoints, watermarks and deployment tuning.",
+      "items": [
+        {
+          "package": "flink-datastream-api",
+          "required": true
+        },
+        {
+          "package": "flink-sql",
+          "required": true
+        },
+        {
+          "package": "flink-state-checkpoints",
+          "required": true
+        },
+        {
+          "package": "flink-watermarks-windows",
+          "required": true
+        },
+        {
+          "package": "flink-deployment-tuning",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "change-data-capture",
+      "type": "skill",
+      "topic": "change data capture",
+      "description": "For engineers streaming database changes downstream: CDC approaches, Debezium, Postgres logical decoding and the transactional outbox.",
+      "items": [
+        {
+          "package": "cdc-patterns",
+          "required": true
+        },
+        {
+          "package": "debezium-cdc",
+          "required": true
+        },
+        {
+          "package": "transactional-outbox",
+          "required": true
+        },
+        {
+          "package": "pg-logical-decoding",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "snowflake",
+      "type": "skill",
+      "topic": "Snowflake",
+      "description": "For Snowflake users: warehouse sizing, clustering, cost control, RBAC, streams/tasks/dynamic tables and Snowpipe loading.",
+      "items": [
+        {
+          "package": "snowflake-warehouse-sizing",
+          "required": true
+        },
+        {
+          "package": "snowflake-cost-control",
+          "required": true
+        },
+        {
+          "package": "snowflake-rbac",
+          "required": true
+        },
+        {
+          "package": "snowflake-clustering",
+          "required": true
+        },
+        {
+          "package": "snowflake-streams-tasks",
+          "required": false
+        },
+        {
+          "package": "snowflake-snowpipe",
+          "required": false
+        },
+        {
+          "package": "warehouse-cost-attribution",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "bigquery",
+      "type": "skill",
+      "topic": "BigQuery",
+      "description": "For BigQuery users: partitioning and clustering, cost control, BigQuery-specific SQL, nested data and slot reservations.",
+      "items": [
+        {
+          "package": "bigquery-partitioning-clustering",
+          "required": true
+        },
+        {
+          "package": "bigquery-cost-control",
+          "required": true
+        },
+        {
+          "package": "bigquery-sql-patterns",
+          "required": true
+        },
+        {
+          "package": "bigquery-nested-data",
+          "required": true
+        },
+        {
+          "package": "bigquery-slots-reservations",
+          "required": false
+        },
+        {
+          "package": "warehouse-cost-attribution",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "redshift",
+      "type": "skill",
+      "topic": "Amazon Redshift",
+      "description": "For Redshift teams: distribution and sort keys, workload management, Spectrum external tables and routine maintenance.",
+      "items": [
+        {
+          "package": "redshift-dist-sort-keys",
+          "required": true
+        },
+        {
+          "package": "redshift-wlm",
+          "required": true
+        },
+        {
+          "package": "redshift-maintenance",
+          "required": true
+        },
+        {
+          "package": "redshift-spectrum",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "databricks",
+      "type": "skill",
+      "topic": "Databricks",
+      "description": "For data teams on Databricks: Delta tables, Unity Catalog, Workflows and Asset Bundles, SQL warehouses and cluster policies.",
+      "items": [
+        {
+          "package": "delta-lake-tables",
+          "required": true
+        },
+        {
+          "package": "databricks-unity-catalog",
+          "required": true
+        },
+        {
+          "package": "databricks-workflows",
+          "required": true
+        },
+        {
+          "package": "databricks-sql-warehouses",
+          "required": true
+        },
+        {
+          "package": "databricks-cluster-policies",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "duckdb",
+      "type": "skill",
+      "topic": "DuckDB",
+      "description": "For analysts and engineers doing local or embedded analytics: DuckDB on files, remote Parquet on object storage, its SQL extensions and Python interop.",
+      "items": [
+        {
+          "package": "duckdb-local-analytics",
+          "required": true
+        },
+        {
+          "package": "duckdb-remote-files",
+          "required": true
+        },
+        {
+          "package": "duckdb-sql-features",
+          "required": true
+        },
+        {
+          "package": "duckdb-python-integration",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "clickhouse",
+      "type": "skill",
+      "topic": "ClickHouse",
+      "description": "For engineers building real-time analytics on ClickHouse: MergeTree design, materialised views, query tuning and ingestion.",
+      "items": [
+        {
+          "package": "clickhouse-mergetree-design",
+          "required": true
+        },
+        {
+          "package": "clickhouse-materialized-views",
+          "required": true
+        },
+        {
+          "package": "clickhouse-query-tuning",
+          "required": true
+        },
+        {
+          "package": "clickhouse-ingestion",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "lakehouse-table-formats",
+      "type": "skill",
+      "topic": "open table formats",
+      "description": "For data platform engineers building a lakehouse: choosing Iceberg, Delta or Hudi, table maintenance and Parquet layout tuning.",
+      "items": [
+        {
+          "package": "table-format-selection",
+          "required": true
+        },
+        {
+          "package": "iceberg-table-management",
+          "required": true
+        },
+        {
+          "package": "delta-lake-tables",
+          "required": true
+        },
+        {
+          "package": "parquet-layout-tuning",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "warehouse-migration",
+      "type": "skill",
+      "topic": "warehouse migration",
+      "description": "For teams moving off a legacy warehouse: migration planning, SQL dialect translation, data reconciliation and lineage-based impact checks.",
+      "items": [
+        {
+          "package": "warehouse-migration-planning",
+          "required": true
+        },
+        {
+          "package": "sql-dialect-translation",
+          "required": true
+        },
+        {
+          "package": "data-reconciliation",
+          "required": true
+        },
+        {
+          "package": "lineage-impact-analysis",
+          "required": false
+        },
+        {
+          "package": "data-diff-validation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "looker",
+      "type": "skill",
+      "topic": "Looker and LookML",
+      "description": "For Looker developers: LookML modelling, explores and joins without fan-out, PDTs and caching, and access controls.",
+      "items": [
+        {
+          "package": "lookml-modeling",
+          "required": true
+        },
+        {
+          "package": "lookml-explores-joins",
+          "required": true
+        },
+        {
+          "package": "looker-pdts-caching",
+          "required": true
+        },
+        {
+          "package": "looker-access-controls",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "metabase",
+      "type": "skill",
+      "topic": "Metabase",
+      "description": "For teams running self-serve BI on Metabase: models and questions, dashboards, permissions and parameterised SQL.",
+      "items": [
+        {
+          "package": "metabase-models-questions",
+          "required": true
+        },
+        {
+          "package": "metabase-dashboards",
+          "required": true
+        },
+        {
+          "package": "metabase-sql-snippets",
+          "required": true
+        },
+        {
+          "package": "metabase-permissions",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "power-bi",
+      "type": "skill",
+      "topic": "Power BI",
+      "description": "For Power BI developers: star-schema semantic models, DAX measures, Power Query M, performance tuning and row-level security.",
+      "items": [
+        {
+          "package": "power-bi-data-modeling",
+          "required": true
+        },
+        {
+          "package": "dax-measures",
+          "required": true
+        },
+        {
+          "package": "power-query-m",
+          "required": true
+        },
+        {
+          "package": "power-bi-performance",
+          "required": true
+        },
+        {
+          "package": "power-bi-rls",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "tableau",
+      "type": "skill",
+      "topic": "Tableau",
+      "description": "For Tableau authors: calculations and LOD expressions, data source design, dashboard layout and workbook performance.",
+      "items": [
+        {
+          "package": "tableau-calculations-lod",
+          "required": true
+        },
+        {
+          "package": "tableau-data-sources",
+          "required": true
+        },
+        {
+          "package": "tableau-dashboard-design",
+          "required": true
+        },
+        {
+          "package": "tableau-performance",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dashboard-design",
+      "type": "skill",
+      "topic": "dashboard design",
+      "description": "For analysts building dashboards in any BI tool: KPI definitions, layout, chart choice, metric trees and a review checklist.",
+      "items": [
+        {
+          "package": "bi-kpi-definition",
+          "required": true
+        },
+        {
+          "package": "dashboard-layout-principles",
+          "required": true
+        },
+        {
+          "package": "bi-chart-selection",
+          "required": true
+        },
+        {
+          "package": "dashboard-review-checklist",
+          "required": true
+        },
+        {
+          "package": "metric-trees",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "metrics-layer",
+      "type": "skill",
+      "topic": "metrics and semantic layer",
+      "description": "For analytics engineers centralising metric logic: metric specs, dbt Semantic Layer, Cube and metric governance.",
+      "items": [
+        {
+          "package": "metric-definitions-spec",
+          "required": true
+        },
+        {
+          "package": "dbt-semantic-layer",
+          "required": true
+        },
+        {
+          "package": "metric-governance",
+          "required": true
+        },
+        {
+          "package": "cube-semantic-layer",
+          "required": false
+        },
+        {
+          "package": "bi-kpi-definition",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "data-storytelling",
+      "type": "skill",
+      "topic": "analysis communication",
+      "description": "For analysts presenting results: structuring a data story, writing analysis memos, executive metric summaries and picking honest charts.",
+      "items": [
+        {
+          "package": "data-storytelling",
+          "required": true
+        },
+        {
+          "package": "analysis-writeup",
+          "required": true
+        },
+        {
+          "package": "executive-metric-summaries",
+          "required": true
+        },
+        {
+          "package": "bi-chart-selection",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "product-analytics",
+      "type": "skill",
+      "topic": "product analytics",
+      "description": "For product analysts: event taxonomy, tracking plans, funnel and retention analysis and core engagement metrics.",
+      "items": [
+        {
+          "package": "event-taxonomy-design",
+          "required": true
+        },
+        {
+          "package": "analytics-tracking-plan",
+          "required": true
+        },
+        {
+          "package": "funnel-analysis",
+          "required": true
+        },
+        {
+          "package": "retention-analysis",
+          "required": true
+        },
+        {
+          "package": "product-metrics-analysis",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "product-analytics-tools",
+      "type": "skill",
+      "topic": "product analytics tools",
+      "description": "For teams instrumenting and querying product analytics tools: Segment implementation plus Amplitude, Mixpanel and PostHog analysis.",
+      "items": [
+        {
+          "package": "segment-tracking-implementation",
+          "required": true
+        },
+        {
+          "package": "amplitude-analysis",
+          "required": false
+        },
+        {
+          "package": "mixpanel-analysis",
+          "required": false
+        },
+        {
+          "package": "posthog-analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "data-quality",
+      "type": "skill",
+      "topic": "data quality",
+      "description": "For data engineers adding quality checks: quality dimensions, Great Expectations, Soda, data contracts and metric anomaly detection.",
+      "items": [
+        {
+          "package": "data-quality-dimensions",
+          "required": true
+        },
+        {
+          "package": "data-contracts",
+          "required": true
+        },
+        {
+          "package": "great-expectations-suites",
+          "required": false
+        },
+        {
+          "package": "soda-checks",
+          "required": false
+        },
+        {
+          "package": "metric-anomaly-detection",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "data-observability",
+      "type": "skill",
+      "topic": "data observability",
+      "description": "For data platform teams: freshness and SLA monitoring, schema and volume drift detection, lineage impact analysis and incident response.",
+      "items": [
+        {
+          "package": "data-freshness-monitoring",
+          "required": true
+        },
+        {
+          "package": "schema-drift-detection",
+          "required": true
+        },
+        {
+          "package": "data-incident-response",
+          "required": true
+        },
+        {
+          "package": "lineage-impact-analysis",
+          "required": true
+        },
+        {
+          "package": "data-pipeline-slas",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "pandas",
+      "type": "skill",
+      "topic": "pandas",
+      "description": "For Python data practitioners using pandas: idioms, performance, reshaping and joins, time series and file I/O with explicit dtypes.",
+      "items": [
+        {
+          "package": "pandas-idioms",
+          "required": true
+        },
+        {
+          "package": "pandas-performance",
+          "required": true
+        },
+        {
+          "package": "pandas-reshaping",
+          "required": true
+        },
+        {
+          "package": "pandas-time-series",
+          "required": true
+        },
+        {
+          "package": "pandas-io-formats",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "polars",
+      "type": "skill",
+      "topic": "Polars",
+      "description": "For Python users adopting Polars: expressions, the lazy API, migrating from pandas and scanning files with pushdown.",
+      "items": [
+        {
+          "package": "polars-expressions",
+          "required": true
+        },
+        {
+          "package": "polars-lazy-api",
+          "required": true
+        },
+        {
+          "package": "polars-io",
+          "required": true
+        },
+        {
+          "package": "polars-from-pandas",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "notebooks",
+      "type": "skill",
+      "topic": "notebook workflows",
+      "description": "For data scientists working in Jupyter: notebook hygiene, reproducibility, parameterised runs with papermill and moving code into pipelines.",
+      "items": [
+        {
+          "package": "jupyter-notebook-hygiene",
+          "required": true
+        },
+        {
+          "package": "notebook-reproducibility",
+          "required": true
+        },
+        {
+          "package": "notebook-to-pipeline",
+          "required": true
+        },
+        {
+          "package": "papermill-parameterized-runs",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "data-cleaning",
+      "type": "skill",
+      "topic": "data cleaning",
+      "description": "For analysts handed messy data: a cleaning checklist, entity resolution, outliers, missing data and date/unit normalisation.",
+      "items": [
+        {
+          "package": "data-cleaning-checklist",
+          "required": true
+        },
+        {
+          "package": "missing-data-handling",
+          "required": true
+        },
+        {
+          "package": "outlier-handling",
+          "required": true
+        },
+        {
+          "package": "date-parsing-normalization",
+          "required": true
+        },
+        {
+          "package": "entity-resolution",
+          "required": false
+        },
+        {
+          "package": "robust-csv-json-parsing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "exploratory-data-analysis",
+      "type": "skill",
+      "topic": "exploratory data analysis",
+      "description": "For anyone starting on an unfamiliar dataset: an EDA workflow, distribution profiling, correlation analysis and automated profiling reports.",
+      "items": [
+        {
+          "package": "eda-workflow",
+          "required": true
+        },
+        {
+          "package": "distribution-profiling",
+          "required": true
+        },
+        {
+          "package": "correlation-analysis",
+          "required": true
+        },
+        {
+          "package": "data-profiling-reports",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "statistics-foundations",
+      "type": "skill",
+      "topic": "applied statistics",
+      "description": "For analysts who need sound statistics: hypothesis tests, confidence intervals, regression, multiple comparisons, bootstrap and Bayesian basics.",
+      "items": [
+        {
+          "package": "stats-hypothesis-testing",
+          "required": true
+        },
+        {
+          "package": "stats-confidence-intervals",
+          "required": true
+        },
+        {
+          "package": "stats-regression-analysis",
+          "required": true
+        },
+        {
+          "package": "stats-multiple-comparisons",
+          "required": true
+        },
+        {
+          "package": "stats-bootstrap-methods",
+          "required": false
+        },
+        {
+          "package": "stats-bayesian-basics",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ab-testing",
+      "type": "skill",
+      "topic": "A/B test design and analysis",
+      "description": "For product analysts and data scientists running experiments: design and power, analysis, sequential testing, CUPED, SRM checks and common pitfalls.",
+      "items": [
+        {
+          "package": "ab-test-design-power",
+          "required": true
+        },
+        {
+          "package": "ab-test-analysis",
+          "required": true
+        },
+        {
+          "package": "ab-srm-checks",
+          "required": true
+        },
+        {
+          "package": "ab-test-pitfalls",
+          "required": true
+        },
+        {
+          "package": "ab-sequential-testing",
+          "required": false
+        },
+        {
+          "package": "ab-cuped-variance-reduction",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "causal-inference",
+      "type": "skill",
+      "topic": "causal inference",
+      "description": "For analysts estimating impact without a randomised test: difference-in-differences, regression discontinuity, matching, synthetic control and IV.",
+      "items": [
+        {
+          "package": "causal-diff-in-diff",
+          "required": true
+        },
+        {
+          "package": "causal-propensity-matching",
+          "required": true
+        },
+        {
+          "package": "causal-synthetic-control",
+          "required": true
+        },
+        {
+          "package": "causal-regression-discontinuity",
+          "required": false
+        },
+        {
+          "package": "causal-instrumental-variables",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "excel-modeling",
+      "type": "skill",
+      "topic": "Excel modelling",
+      "description": "For analysts building Excel models: modern formulas, pivot tables, Power Query, model structure and error checking.",
+      "items": [
+        {
+          "package": "excel-advanced-formulas",
+          "required": true
+        },
+        {
+          "package": "excel-model-structure",
+          "required": true
+        },
+        {
+          "package": "excel-error-checking",
+          "required": true
+        },
+        {
+          "package": "excel-pivot-tables",
+          "required": false
+        },
+        {
+          "package": "excel-power-query",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "google-sheets",
+      "type": "skill",
+      "topic": "Google Sheets",
+      "description": "For teams running work in Google Sheets: array formulas, the QUERY function, Apps Script automation and data validation.",
+      "items": [
+        {
+          "package": "sheets-array-formulas",
+          "required": true
+        },
+        {
+          "package": "sheets-query-function",
+          "required": true
+        },
+        {
+          "package": "sheets-apps-script",
+          "required": true
+        },
+        {
+          "package": "sheets-data-validation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "elasticsearch",
+      "type": "skill",
+      "topic": "Elasticsearch and OpenSearch",
+      "description": "For engineers running Elasticsearch or OpenSearch: mappings, Query DSL, aggregations, index lifecycle and cluster sizing.",
+      "items": [
+        {
+          "package": "es-mapping-design",
+          "required": true
+        },
+        {
+          "package": "es-query-dsl",
+          "required": true
+        },
+        {
+          "package": "es-aggregations",
+          "required": true
+        },
+        {
+          "package": "es-index-lifecycle",
+          "required": true
+        },
+        {
+          "package": "es-cluster-sizing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "search-relevance",
+      "type": "skill",
+      "topic": "search relevance",
+      "description": "For search engineers improving result quality: analyzers and synonyms, relevance tuning, judgment-based evaluation, query understanding and search analytics.",
+      "items": [
+        {
+          "package": "search-relevance-judgments",
+          "required": true
+        },
+        {
+          "package": "es-relevance-tuning",
+          "required": true
+        },
+        {
+          "package": "es-analyzers-synonyms",
+          "required": true
+        },
+        {
+          "package": "search-query-understanding",
+          "required": true
+        },
+        {
+          "package": "search-analytics",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "geospatial",
+      "type": "skill",
+      "topic": "geospatial data",
+      "description": "For analysts and engineers working with location data: PostGIS, GeoPandas, CRS handling, H3 indexing, geo file formats and raster processing.",
+      "items": [
+        {
+          "package": "postgis-spatial-queries",
+          "required": true
+        },
+        {
+          "package": "geopandas-workflows",
+          "required": true
+        },
+        {
+          "package": "crs-projections",
+          "required": true
+        },
+        {
+          "package": "geospatial-file-formats",
+          "required": true
+        },
+        {
+          "package": "h3-spatial-indexing",
+          "required": false
+        },
+        {
+          "package": "raster-processing-gdal",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "data-governance",
+      "type": "skill",
+      "topic": "data governance and catalogs",
+      "description": "For data governance leads and platform teams: PII classification, ownership, retention schedules, access policies, glossary and catalog ingestion.",
+      "items": [
+        {
+          "package": "data-pii-classification",
+          "required": true
+        },
+        {
+          "package": "data-ownership-model",
+          "required": true
+        },
+        {
+          "package": "data-access-policy-design",
+          "required": true
+        },
+        {
+          "package": "data-retention-schedules",
+          "required": true
+        },
+        {
+          "package": "data-catalog-curation",
+          "required": false
+        },
+        {
+          "package": "business-glossary",
+          "required": false
+        },
+        {
+          "package": "datahub-openmetadata-ingestion",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "data-pipeline-design",
+      "type": "skill",
+      "topic": "batch pipeline design",
+      "description": "For data engineers designing batch pipelines: idempotency, incremental loading, late-arriving data, SLAs and backfill strategy.",
+      "items": [
+        {
+          "package": "idempotent-data-pipelines",
+          "required": true
+        },
+        {
+          "package": "incremental-loading-patterns",
+          "required": true
+        },
+        {
+          "package": "late-arriving-data",
+          "required": true
+        },
+        {
+          "package": "data-backfill-strategy",
+          "required": true
+        },
+        {
+          "package": "data-pipeline-slas",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "data-ingestion",
+      "type": "skill",
+      "topic": "data ingestion and ELT",
+      "description": "For engineers landing source data: Airbyte and Fivetran, REST API extraction, object-storage file ingestion, schema evolution and robust parsing.",
+      "items": [
+        {
+          "package": "api-extraction-patterns",
+          "required": true
+        },
+        {
+          "package": "file-ingestion-object-storage",
+          "required": true
+        },
+        {
+          "package": "ingestion-schema-evolution",
+          "required": true
+        },
+        {
+          "package": "airbyte-connectors",
+          "required": false
+        },
+        {
+          "package": "fivetran-connectors",
+          "required": false
+        },
+        {
+          "package": "avro-schema-evolution",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "data-pipeline-testing",
+      "type": "skill",
+      "topic": "data pipeline testing",
+      "description": "For data engineers testing transformations: pipeline unit tests, SQL unit tests, synthetic fixtures and data-diff validation of changes.",
+      "items": [
+        {
+          "package": "data-pipeline-unit-tests",
+          "required": true
+        },
+        {
+          "package": "sql-unit-testing",
+          "required": true
+        },
+        {
+          "package": "data-diff-validation",
+          "required": true
+        },
+        {
+          "package": "data-test-fixtures",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "sql-review-agents",
+      "type": "agent",
+      "topic": "SQL review",
+      "description": "For teams that review SQL in pull requests: agents that check query correctness, optimise slow queries, explain unfamiliar SQL and write tests for it.",
+      "items": [
+        {
+          "package": "sql-query-reviewer",
+          "required": true
+        },
+        {
+          "package": "sql-query-optimizer",
+          "required": true
+        },
+        {
+          "package": "sql-query-explainer",
+          "required": false
+        },
+        {
+          "package": "sql-test-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "postgres-dba-agents",
+      "type": "agent",
+      "topic": "Postgres DBA",
+      "description": "For teams without a full-time DBA: agents that investigate slow Postgres queries, advise on indexes and vacuum, review schemas and plan upgrades.",
+      "items": [
+        {
+          "package": "pg-slow-query-investigator",
+          "required": true
+        },
+        {
+          "package": "pg-index-advisor",
+          "required": true
+        },
+        {
+          "package": "pg-schema-reviewer",
+          "required": true
+        },
+        {
+          "package": "pg-vacuum-advisor",
+          "required": false
+        },
+        {
+          "package": "pg-upgrade-planner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "schema-migration-agents",
+      "type": "agent",
+      "topic": "schema migrations",
+      "description": "For engineers shipping database changes: agents that write safe migrations, review them for locking and data loss, and plan backfills and rollbacks.",
+      "items": [
+        {
+          "package": "migration-safety-reviewer",
+          "required": true
+        },
+        {
+          "package": "migration-author",
+          "required": true
+        },
+        {
+          "package": "data-backfill-planner",
+          "required": true
+        },
+        {
+          "package": "migration-rollback-planner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "data-modeling-agents",
+      "type": "agent",
+      "topic": "data modelling",
+      "description": "For teams designing new data stores: agents for relational, dimensional and NoSQL modelling plus a reviewer for breaking schema changes.",
+      "items": [
+        {
+          "package": "relational-schema-designer",
+          "required": true
+        },
+        {
+          "package": "dimensional-model-designer",
+          "required": true
+        },
+        {
+          "package": "nosql-access-pattern-modeler",
+          "required": true
+        },
+        {
+          "package": "schema-diff-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dbt-agents",
+      "type": "agent",
+      "topic": "dbt development",
+      "description": "For analytics engineering teams on dbt: agents that write and review models, generate tests and docs, and migrate legacy SQL into dbt.",
+      "items": [
+        {
+          "package": "dbt-model-author",
+          "required": true
+        },
+        {
+          "package": "dbt-model-reviewer",
+          "required": true
+        },
+        {
+          "package": "dbt-test-generator",
+          "required": true
+        },
+        {
+          "package": "dbt-docs-writer",
+          "required": false
+        },
+        {
+          "package": "legacy-sql-to-dbt-migrator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "airflow-agents",
+      "type": "agent",
+      "topic": "Airflow development and operations",
+      "description": "For Airflow teams: agents that write and review DAGs, triage failed task runs and migrate DAGs across Airflow versions.",
+      "items": [
+        {
+          "package": "airflow-dag-author",
+          "required": true
+        },
+        {
+          "package": "airflow-dag-reviewer",
+          "required": true
+        },
+        {
+          "package": "airflow-failure-triager",
+          "required": true
+        },
+        {
+          "package": "airflow-upgrade-migrator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dagster-agents",
+      "type": "agent",
+      "topic": "Dagster development",
+      "description": "For teams building on Dagster or moving to it: agents that author and review assets and port Airflow DAGs to Dagster.",
+      "items": [
+        {
+          "package": "dagster-asset-author",
+          "required": true
+        },
+        {
+          "package": "dagster-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "airflow-to-dagster-migrator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "spark-agents",
+      "type": "agent",
+      "topic": "Spark engineering",
+      "description": "For Spark users: agents that tune slow jobs, review PySpark code, diagnose failures and port pandas code to Spark.",
+      "items": [
+        {
+          "package": "spark-job-tuner",
+          "required": true
+        },
+        {
+          "package": "spark-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "spark-failure-diagnoser",
+          "required": true
+        },
+        {
+          "package": "pandas-to-spark-porter",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "kafka-agents",
+      "type": "agent",
+      "topic": "Kafka engineering",
+      "description": "For teams on Kafka: agents that design topics, review client configs, triage consumer lag and check schema changes for compatibility.",
+      "items": [
+        {
+          "package": "kafka-topic-designer",
+          "required": true
+        },
+        {
+          "package": "kafka-config-reviewer",
+          "required": true
+        },
+        {
+          "package": "kafka-lag-triager",
+          "required": true
+        },
+        {
+          "package": "schema-evolution-checker",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "streaming-pipeline-agents",
+      "type": "agent",
+      "topic": "stream processing design",
+      "description": "For engineers building real-time pipelines: agents that plan streaming architectures, design CDC flows and review Flink jobs.",
+      "items": [
+        {
+          "package": "streaming-architecture-planner",
+          "required": true
+        },
+        {
+          "package": "cdc-pipeline-designer",
+          "required": true
+        },
+        {
+          "package": "flink-job-reviewer",
+          "required": true
+        },
+        {
+          "package": "schema-evolution-checker",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "warehouse-cost-agents",
+      "type": "agent",
+      "topic": "warehouse cost optimisation",
+      "description": "For data platform owners under budget pressure: agents that audit warehouse spend, hunt expensive queries and plan storage cleanup.",
+      "items": [
+        {
+          "package": "warehouse-cost-auditor",
+          "required": true
+        },
+        {
+          "package": "expensive-query-hunter",
+          "required": true
+        },
+        {
+          "package": "warehouse-storage-cleanup-planner",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "snowflake-agents",
+      "type": "agent",
+      "topic": "Snowflake administration",
+      "description": "For Snowflake account owners: agents that tune warehouse settings, review RBAC and build Snowpipe/stream/task pipelines.",
+      "items": [
+        {
+          "package": "snowflake-admin-advisor",
+          "required": true
+        },
+        {
+          "package": "snowflake-rbac-reviewer",
+          "required": true
+        },
+        {
+          "package": "snowflake-pipeline-builder",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "bigquery-agents",
+      "type": "agent",
+      "topic": "BigQuery engineering",
+      "description": "For BigQuery teams: agents that optimise queries for bytes scanned, design partitioned tables and analyse slot usage.",
+      "items": [
+        {
+          "package": "bigquery-query-optimizer",
+          "required": true
+        },
+        {
+          "package": "bigquery-schema-designer",
+          "required": true
+        },
+        {
+          "package": "bigquery-slot-analyst",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "databricks-agents",
+      "type": "agent",
+      "topic": "Databricks platform",
+      "description": "For Databricks teams: agents that tune jobs and clusters, review Unity Catalog governance and maintain Delta tables.",
+      "items": [
+        {
+          "package": "databricks-job-tuner",
+          "required": true
+        },
+        {
+          "package": "unity-catalog-reviewer",
+          "required": true
+        },
+        {
+          "package": "delta-table-maintainer",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "warehouse-migration-agents",
+      "type": "agent",
+      "topic": "warehouse migration",
+      "description": "For teams migrating warehouses: agents that plan migration waves, translate SQL dialects and reconcile data between old and new systems.",
+      "items": [
+        {
+          "package": "warehouse-migration-planner",
+          "required": true
+        },
+        {
+          "package": "sql-dialect-translator",
+          "required": true
+        },
+        {
+          "package": "data-reconciliation-checker",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "bi-dashboard-agents",
+      "type": "agent",
+      "topic": "BI dashboards",
+      "description": "For analytics teams serving stakeholders: agents that spec dashboards, review them, write KPI definitions and explain metric movements.",
+      "items": [
+        {
+          "package": "dashboard-builder",
+          "required": true
+        },
+        {
+          "package": "dashboard-reviewer",
+          "required": true
+        },
+        {
+          "package": "kpi-definition-writer",
+          "required": true
+        },
+        {
+          "package": "metric-movement-investigator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "looker-agents",
+      "type": "agent",
+      "topic": "Looker development",
+      "description": "For Looker teams: agents that write and review LookML and clean up unused Looker content.",
+      "items": [
+        {
+          "package": "lookml-developer",
+          "required": true
+        },
+        {
+          "package": "lookml-reviewer",
+          "required": true
+        },
+        {
+          "package": "looker-content-cleanup",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "power-bi-agents",
+      "type": "agent",
+      "topic": "Power BI development",
+      "description": "For Power BI developers: agents that author DAX measures, review semantic models and tune slow reports.",
+      "items": [
+        {
+          "package": "dax-measure-author",
+          "required": true
+        },
+        {
+          "package": "power-bi-model-reviewer",
+          "required": true
+        },
+        {
+          "package": "power-bi-performance-tuner",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "analytics-agents",
+      "type": "agent",
+      "topic": "ad-hoc analysis",
+      "description": "For analytics teams fielding business questions: agents that scope a question, answer it in SQL, review the analysis and write the findings.",
+      "items": [
+        {
+          "package": "analytics-question-scoper",
+          "required": true
+        },
+        {
+          "package": "sql-analyst",
+          "required": true
+        },
+        {
+          "package": "analysis-reviewer",
+          "required": true
+        },
+        {
+          "package": "analytics-insight-writer",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "product-analytics-agents",
+      "type": "agent",
+      "topic": "product analytics",
+      "description": "For product analytics teams: agents that design tracking plans, audit instrumentation and analyse funnels and retention.",
+      "items": [
+        {
+          "package": "tracking-plan-designer",
+          "required": true
+        },
+        {
+          "package": "event-instrumentation-auditor",
+          "required": true
+        },
+        {
+          "package": "funnel-analyst",
+          "required": true
+        },
+        {
+          "package": "retention-analyst",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "experimentation-agents",
+      "type": "agent",
+      "topic": "A/B experimentation",
+      "description": "For teams running A/B tests: agents that design experiments, analyse results with SRM and variance checks, and review readouts for statistical mistakes.",
+      "items": [
+        {
+          "package": "ab-experiment-designer",
+          "required": true
+        },
+        {
+          "package": "ab-experiment-analyst",
+          "required": true
+        },
+        {
+          "package": "experiment-readout-reviewer",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "statistics-agents",
+      "type": "agent",
+      "topic": "statistical analysis",
+      "description": "For analysts and researchers: agents that pick the right test, review statistical methods, design causal studies and run regression analyses.",
+      "items": [
+        {
+          "package": "statistical-test-selector",
+          "required": true
+        },
+        {
+          "package": "stats-methods-reviewer",
+          "required": true
+        },
+        {
+          "package": "regression-analyst",
+          "required": true
+        },
+        {
+          "package": "causal-study-designer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "data-quality-agents",
+      "type": "agent",
+      "topic": "data quality and reliability",
+      "description": "For data teams owning reliability: agents that profile datasets, write quality checks and data contracts, and triage data incidents.",
+      "items": [
+        {
+          "package": "data-quality-rule-author",
+          "required": true
+        },
+        {
+          "package": "data-incident-triager",
+          "required": true
+        },
+        {
+          "package": "dataset-profiler",
+          "required": true
+        },
+        {
+          "package": "data-contract-writer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "data-governance-agents",
+      "type": "agent",
+      "topic": "data governance",
+      "description": "For governance and platform teams: agents that classify PII columns, document catalog entries, review access requests and draft retention schedules for owner sign-off.",
+      "items": [
+        {
+          "package": "pii-column-classifier",
+          "required": true
+        },
+        {
+          "package": "data-catalog-documenter",
+          "required": true
+        },
+        {
+          "package": "data-access-request-reviewer",
+          "required": true
+        },
+        {
+          "package": "retention-schedule-drafter",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "python-data-agents",
+      "type": "agent",
+      "topic": "Python data wrangling",
+      "description": "For data scientists in pandas and notebooks: agents that clean datasets, review pandas code, refactor notebooks and migrate to Polars.",
+      "items": [
+        {
+          "package": "data-cleaning-agent",
+          "required": true
+        },
+        {
+          "package": "pandas-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "notebook-refactorer",
+          "required": true
+        },
+        {
+          "package": "pandas-to-polars-migrator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "spreadsheet-agents",
+      "type": "agent",
+      "topic": "spreadsheet modelling",
+      "description": "For people who live in Excel and Google Sheets: agents that audit models, build formulas, automate Sheets and move spreadsheet processes into a database.",
+      "items": [
+        {
+          "package": "excel-model-auditor",
+          "required": true
+        },
+        {
+          "package": "excel-formula-builder",
+          "required": true
+        },
+        {
+          "package": "sheets-automation-builder",
+          "required": true
+        },
+        {
+          "package": "spreadsheet-to-database-migrator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "search-agents",
+      "type": "agent",
+      "topic": "search engineering",
+      "description": "For teams running Elasticsearch or OpenSearch: agents that review mappings, tune relevance, triage cluster health and write queries.",
+      "items": [
+        {
+          "package": "es-mapping-reviewer",
+          "required": true
+        },
+        {
+          "package": "search-relevance-tuner",
+          "required": true
+        },
+        {
+          "package": "es-cluster-health-triager",
+          "required": true
+        },
+        {
+          "package": "search-query-builder",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "nosql-agents",
+      "type": "agent",
+      "topic": "NoSQL design and tuning",
+      "description": "For teams on MongoDB, DynamoDB and Redis: agents that review schemas, optimise queries, design tables and audit Redis usage.",
+      "items": [
+        {
+          "package": "mongo-schema-reviewer",
+          "required": true
+        },
+        {
+          "package": "mongo-query-optimizer",
+          "required": true
+        },
+        {
+          "package": "dynamodb-table-designer",
+          "required": true
+        },
+        {
+          "package": "redis-usage-reviewer",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "geospatial-agents",
+      "type": "agent",
+      "topic": "geospatial analysis",
+      "description": "For analysts working with maps and location data: agents that write spatial queries, clean geodata and aggregate locations into spatial summaries.",
+      "items": [
+        {
+          "package": "spatial-query-author",
+          "required": true
+        },
+        {
+          "package": "geodata-cleaner",
+          "required": true
+        },
+        {
+          "package": "location-analytics-analyst",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "data-pipeline-agents",
+      "type": "agent",
+      "topic": "batch pipeline engineering",
+      "description": "For data engineers building pipelines: agents that architect pipelines, build ingestion connectors, review pipeline code and write pipeline tests.",
+      "items": [
+        {
+          "package": "data-pipeline-architect",
+          "required": true
+        },
+        {
+          "package": "ingestion-connector-builder",
+          "required": true
+        },
+        {
+          "package": "data-pipeline-reviewer",
+          "required": true
+        },
+        {
+          "package": "data-pipeline-test-writer",
+          "required": true
+        },
+        {
+          "package": "data-backfill-planner",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

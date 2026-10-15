@@ -1,0 +1,1725 @@
+{
+  "domain": "ai-ml",
+  "packages": [
+    {
+      "name": "prompt-structure-patterns",
+      "kind": "skill",
+      "purpose": "Structure LLM prompts with role, context, task, constraints and output sections, using XML tags or delimiters to separate instructions from data."
+    },
+    {
+      "name": "few-shot-example-design",
+      "kind": "skill",
+      "purpose": "Choose, order and format few-shot examples so they cover edge cases without overfitting the model to surface patterns."
+    },
+    {
+      "name": "chain-of-thought-prompting",
+      "kind": "skill",
+      "purpose": "Decide when to ask for step-by-step reasoning, extended thinking or scratchpads, and how to keep reasoning out of the final answer."
+    },
+    {
+      "name": "system-prompt-authoring",
+      "kind": "skill",
+      "purpose": "Write production system prompts: persona, scope limits, refusal behaviour, tone and tool-use rules, with a checklist for ambiguity and contradictions."
+    },
+    {
+      "name": "prompt-iteration-workflow",
+      "kind": "skill",
+      "purpose": "Iterate on prompts against a fixed test set: version prompts, diff outputs, record failures and stop when the metric plateaus."
+    },
+    {
+      "name": "prompt-templating",
+      "kind": "skill",
+      "purpose": "Manage prompts as versioned templates (Jinja, f-strings, prompt registries) with typed variables, escaping of user input and per-environment overrides."
+    },
+    {
+      "name": "llm-structured-outputs",
+      "kind": "skill",
+      "purpose": "Get reliable JSON from LLMs with JSON Schema, constrained decoding or tool-call outputs, plus validation and repair loops for malformed responses."
+    },
+    {
+      "name": "llm-function-calling",
+      "kind": "skill",
+      "purpose": "Implement function/tool calling end to end: schema definition, parallel calls, result injection, error returns and loop termination."
+    },
+    {
+      "name": "pydantic-llm-validation",
+      "kind": "skill",
+      "purpose": "Validate and coerce LLM outputs with Pydantic or Zod models, including retries with validation errors fed back to the model."
+    },
+    {
+      "name": "llm-classification-prompts",
+      "kind": "skill",
+      "purpose": "Build LLM classifiers and routers: label definitions, abstain classes, confidence elicitation and agreement checks against a labelled sample."
+    },
+    {
+      "name": "claude-api-integration",
+      "kind": "skill",
+      "purpose": "Build on the Anthropic Messages API: model selection, streaming, tool use, prompt caching, extended thinking, batches and error/retry handling."
+    },
+    {
+      "name": "openai-api-integration",
+      "kind": "skill",
+      "purpose": "Build on the OpenAI Responses and Chat Completions APIs: streaming, tools, structured outputs, batch API and rate-limit handling."
+    },
+    {
+      "name": "gemini-api-integration",
+      "kind": "skill",
+      "purpose": "Build on the Gemini API: multimodal inputs, function calling, context caching, safety settings and long-context usage."
+    },
+    {
+      "name": "llm-provider-abstraction",
+      "kind": "skill",
+      "purpose": "Put multiple LLM providers behind one interface (LiteLLM, AI SDK or a thin adapter) with fallbacks, retries and per-provider capability flags."
+    },
+    {
+      "name": "llm-streaming-responses",
+      "kind": "skill",
+      "purpose": "Stream LLM tokens and tool events to clients over SSE or WebSockets, handling partial JSON, cancellation and reconnects."
+    },
+    {
+      "name": "llm-app-architecture",
+      "kind": "skill",
+      "purpose": "Choose an architecture for an LLM feature: single call, chain, router, RAG or agent, with a decision table based on task variability and risk."
+    },
+    {
+      "name": "llm-conversation-state",
+      "kind": "skill",
+      "purpose": "Manage multi-turn conversation state: history truncation, summarisation, context-window budgeting and per-user session storage."
+    },
+    {
+      "name": "llm-error-handling",
+      "kind": "skill",
+      "purpose": "Handle LLM failure modes in production: timeouts, rate limits, refusals, truncation, empty or off-format outputs, with retry and fallback policies."
+    },
+    {
+      "name": "text-to-sql-llm",
+      "kind": "skill",
+      "purpose": "Build text-to-SQL features: schema linking, few-shot query examples, read-only execution sandboxes, result validation and ambiguity clarification."
+    },
+    {
+      "name": "llm-summarization-patterns",
+      "kind": "skill",
+      "purpose": "Summarise long inputs with map-reduce, refine and hierarchical strategies, and check summaries for omissions and unsupported claims."
+    },
+    {
+      "name": "rag-chunking-strategies",
+      "kind": "skill",
+      "purpose": "Pick and tune chunking (fixed, recursive, semantic, structure-aware) with chunk size/overlap experiments measured by retrieval recall."
+    },
+    {
+      "name": "rag-retrieval-pipeline",
+      "kind": "skill",
+      "purpose": "Build the core RAG loop: query embedding, top-k retrieval, context assembly, grounded answer prompt and source citation."
+    },
+    {
+      "name": "rag-hybrid-search",
+      "kind": "skill",
+      "purpose": "Combine BM25 and dense retrieval with reciprocal rank fusion or weighted scoring, and tune the blend on labelled queries."
+    },
+    {
+      "name": "rag-reranking",
+      "kind": "skill",
+      "purpose": "Add cross-encoder or LLM rerankers after first-stage retrieval, choosing candidate counts and measuring latency versus quality."
+    },
+    {
+      "name": "rag-query-transformation",
+      "kind": "skill",
+      "purpose": "Improve retrieval with query rewriting, HyDE, multi-query expansion, decomposition and metadata filter extraction."
+    },
+    {
+      "name": "rag-citation-grounding",
+      "kind": "skill",
+      "purpose": "Make RAG answers cite their sources at claim level and refuse or hedge when the retrieved context does not support an answer."
+    },
+    {
+      "name": "graph-rag",
+      "kind": "skill",
+      "purpose": "Build knowledge-graph-augmented retrieval: entity/relation extraction, community summaries and graph traversal combined with vector search."
+    },
+    {
+      "name": "rag-index-maintenance",
+      "kind": "skill",
+      "purpose": "Keep RAG indexes fresh: incremental ingestion, document versioning, deletions, re-embedding on model change and access-control metadata."
+    },
+    {
+      "name": "contextual-retrieval",
+      "kind": "skill",
+      "purpose": "Prepend document-level context to chunks before embedding and BM25 indexing to reduce retrieval failures on ambiguous chunks."
+    },
+    {
+      "name": "pdf-parsing-for-llms",
+      "kind": "skill",
+      "purpose": "Extract text, layout and tables from PDFs for LLM use with tools like PyMuPDF, pdfplumber, Unstructured or Docling, and pick per document type."
+    },
+    {
+      "name": "ocr-pipelines",
+      "kind": "skill",
+      "purpose": "Run OCR on scans and images (Tesseract, PaddleOCR, cloud OCR or VLMs), with preprocessing, confidence filtering and layout reconstruction."
+    },
+    {
+      "name": "table-extraction-llm",
+      "kind": "skill",
+      "purpose": "Extract tables from documents into structured rows, validating headers, merged cells and numeric columns."
+    },
+    {
+      "name": "llm-document-extraction",
+      "kind": "skill",
+      "purpose": "Extract typed fields from invoices, contracts and forms with an LLM and a schema, adding per-field confidence and human-review routing."
+    },
+    {
+      "name": "embedding-model-selection",
+      "kind": "skill",
+      "purpose": "Choose an embedding model by benchmarking candidates (MTEB-style and on your own queries) on recall, dimension, cost and language coverage."
+    },
+    {
+      "name": "embedding-fine-tuning",
+      "kind": "skill",
+      "purpose": "Fine-tune sentence-embedding models with contrastive pairs and hard negatives using sentence-transformers, and evaluate before and after."
+    },
+    {
+      "name": "vector-db-selection",
+      "kind": "skill",
+      "purpose": "Compare vector databases (pgvector, Qdrant, Weaviate, Pinecone, Milvus, LanceDB) on filtering, scale, hosting and cost for a given workload."
+    },
+    {
+      "name": "vector-index-tuning",
+      "kind": "skill",
+      "purpose": "Tune ANN indexes (HNSW, IVF, PQ): ef/M/nlist parameters, quantisation and recall-versus-latency benchmarks."
+    },
+    {
+      "name": "vector-db-pgvector",
+      "kind": "skill",
+      "purpose": "Use pgvector for embeddings in Postgres: column types, HNSW/IVFFlat indexes, filtered search and hybrid queries with full-text search."
+    },
+    {
+      "name": "vector-db-qdrant",
+      "kind": "skill",
+      "purpose": "Use Qdrant collections, payload filters, named vectors, sparse vectors and quantisation for production semantic search."
+    },
+    {
+      "name": "semantic-dedup-clustering",
+      "kind": "skill",
+      "purpose": "Use embeddings to deduplicate, cluster and topic-label text collections with UMAP/HDBSCAN or k-means."
+    },
+    {
+      "name": "llm-eval-dataset-design",
+      "kind": "skill",
+      "purpose": "Build LLM eval sets: sample real traffic, write edge cases, define expected outputs or rubrics, and split into dev and held-out sets."
+    },
+    {
+      "name": "llm-as-judge",
+      "kind": "skill",
+      "purpose": "Design LLM-as-judge graders: rubric prompts, pairwise versus pointwise scoring, bias controls and calibration against human labels."
+    },
+    {
+      "name": "llm-eval-metrics",
+      "kind": "skill",
+      "purpose": "Choose metrics for LLM tasks: exact match, F1, semantic similarity, pass@k, rubric scores, and report them with confidence intervals."
+    },
+    {
+      "name": "llm-eval-harness",
+      "kind": "skill",
+      "purpose": "Run evals in code with tools like promptfoo, Inspect, OpenAI Evals or pytest, caching outputs and wiring results into CI."
+    },
+    {
+      "name": "llm-regression-testing",
+      "kind": "skill",
+      "purpose": "Gate prompt and model changes on eval regressions: baselines, thresholds, flaky-case handling and diff reports per test case."
+    },
+    {
+      "name": "rag-evaluation",
+      "kind": "skill",
+      "purpose": "Evaluate RAG separately for retrieval (recall@k, MRR) and generation (faithfulness, answer relevance) using Ragas-style metrics and labelled sets."
+    },
+    {
+      "name": "agent-evaluation",
+      "kind": "skill",
+      "purpose": "Evaluate agents on task success, trajectory quality, tool-call correctness, cost and step count using sandboxed task suites."
+    },
+    {
+      "name": "human-eval-annotation",
+      "kind": "skill",
+      "purpose": "Run human evaluation of model outputs: annotation guidelines, side-by-side UIs, inter-rater agreement and sample sizing."
+    },
+    {
+      "name": "llm-error-analysis",
+      "kind": "skill",
+      "purpose": "Read traces and failures to build a failure taxonomy, count categories and pick the fixes with the largest impact."
+    },
+    {
+      "name": "agent-loop-design",
+      "kind": "skill",
+      "purpose": "Design an agent loop: observation, planning, tool calls, stopping conditions, step budgets and when a workflow beats an agent."
+    },
+    {
+      "name": "agent-tool-design",
+      "kind": "skill",
+      "purpose": "Design tools for LLM agents: naming, descriptions, parameter schemas, token-efficient outputs and actionable error messages."
+    },
+    {
+      "name": "agent-planning-patterns",
+      "kind": "skill",
+      "purpose": "Apply planning patterns (plan-and-execute, ReAct, reflection, task decomposition) and choose based on task length and error cost."
+    },
+    {
+      "name": "agent-memory-design",
+      "kind": "skill",
+      "purpose": "Give agents short- and long-term memory: scratchpads, summaries, vector or file-based memory, and rules for what to write and forget."
+    },
+    {
+      "name": "agent-context-engineering",
+      "kind": "skill",
+      "purpose": "Manage what enters an agent context window: retrieval on demand, compaction, tool-result trimming and sub-agent isolation."
+    },
+    {
+      "name": "multi-agent-orchestration",
+      "kind": "skill",
+      "purpose": "Coordinate multiple agents with orchestrator-worker, pipeline or debate patterns, defining hand-offs, shared state and failure handling."
+    },
+    {
+      "name": "agent-human-in-the-loop",
+      "kind": "skill",
+      "purpose": "Add approval gates, interruptible steps and escalation to agents so risky actions wait for human confirmation."
+    },
+    {
+      "name": "agent-sandboxing",
+      "kind": "skill",
+      "purpose": "Run agent tool execution safely: containerised code execution, filesystem and network limits, secrets isolation and audit logs."
+    },
+    {
+      "name": "claude-agent-sdk",
+      "kind": "skill",
+      "purpose": "Build agents with the Claude Agent SDK: query loop, custom tools, MCP servers, permissions, hooks and subagents."
+    },
+    {
+      "name": "openai-agents-sdk",
+      "kind": "skill",
+      "purpose": "Build agents with the OpenAI Agents SDK: agents, handoffs, guardrails, tracing and tool definitions."
+    },
+    {
+      "name": "langgraph-agents",
+      "kind": "skill",
+      "purpose": "Build stateful agent graphs in LangGraph: nodes, conditional edges, checkpointing, interrupts and streaming."
+    },
+    {
+      "name": "agent-skill-authoring",
+      "kind": "skill",
+      "purpose": "Write agent skills (SKILL.md) and subagent definitions: trigger-focused descriptions, concise steps, references and evals."
+    },
+    {
+      "name": "mcp-server-typescript",
+      "kind": "skill",
+      "purpose": "Build MCP servers in TypeScript with the official SDK: tools, resources, prompts, stdio and Streamable HTTP transports."
+    },
+    {
+      "name": "mcp-server-python",
+      "kind": "skill",
+      "purpose": "Build MCP servers in Python with the official SDK/FastMCP: tool decorators, typed inputs, resources and transports."
+    },
+    {
+      "name": "mcp-server-auth",
+      "kind": "skill",
+      "purpose": "Secure remote MCP servers with OAuth 2.1 authorization, token validation, scopes and per-user data isolation."
+    },
+    {
+      "name": "mcp-server-testing",
+      "kind": "skill",
+      "purpose": "Test MCP servers with MCP Inspector, scripted client sessions and contract tests for tool schemas and error results."
+    },
+    {
+      "name": "mcp-tool-schema-design",
+      "kind": "skill",
+      "purpose": "Shape MCP tool lists for agents: few high-level tools, clear descriptions, pagination, response size limits and consistent errors."
+    },
+    {
+      "name": "mcp-client-integration",
+      "kind": "skill",
+      "purpose": "Connect applications to MCP servers as a client: discovery, tool list caching, session lifecycle and mapping MCP tools to an LLM API."
+    },
+    {
+      "name": "langchain-patterns",
+      "kind": "skill",
+      "purpose": "Use LangChain components (runnables, retrievers, output parsers, callbacks) idiomatically and know when to drop to plain SDK calls."
+    },
+    {
+      "name": "llamaindex-patterns",
+      "kind": "skill",
+      "purpose": "Use LlamaIndex for ingestion pipelines, index types, query engines and agents over private data."
+    },
+    {
+      "name": "dspy-programs",
+      "kind": "skill",
+      "purpose": "Write DSPy programs with signatures and modules, and compile them with optimizers against a metric and training examples."
+    },
+    {
+      "name": "vercel-ai-sdk",
+      "kind": "skill",
+      "purpose": "Build LLM features with the Vercel AI SDK: generateText/streamText, tools, structured objects and UI hooks."
+    },
+    {
+      "name": "prompt-injection-defense",
+      "kind": "skill",
+      "purpose": "Defend LLM apps against direct and indirect prompt injection: input isolation, privilege separation, output checks and tool permission limits."
+    },
+    {
+      "name": "llm-output-guardrails",
+      "kind": "skill",
+      "purpose": "Validate LLM outputs before use: PII and secret detection, toxicity and policy classifiers, schema checks and safe fallbacks."
+    },
+    {
+      "name": "llm-content-moderation",
+      "kind": "skill",
+      "purpose": "Moderate user and model content with moderation APIs or classifier models, with thresholds, appeal paths and logging."
+    },
+    {
+      "name": "llm-hallucination-mitigation",
+      "kind": "skill",
+      "purpose": "Reduce hallucinations with grounding, abstention instructions, self-consistency checks and claim verification against sources."
+    },
+    {
+      "name": "ai-red-teaming-methods",
+      "kind": "skill",
+      "purpose": "Plan authorised red-team exercises on LLM systems: harm taxonomy, attack categories, test case generation and findings reporting."
+    },
+    {
+      "name": "llm-safety-evals",
+      "kind": "skill",
+      "purpose": "Measure refusal accuracy, over-refusal, jailbreak robustness and harmful-content rates with curated and generated test suites."
+    },
+    {
+      "name": "llm-tracing",
+      "kind": "skill",
+      "purpose": "Instrument LLM apps with traces of prompts, completions, tool calls, tokens and latency using OpenTelemetry GenAI conventions, Langfuse or similar."
+    },
+    {
+      "name": "llm-production-monitoring",
+      "kind": "skill",
+      "purpose": "Monitor LLM features in production: quality sampling, user feedback signals, drift in inputs, cost and latency dashboards and alerts."
+    },
+    {
+      "name": "llm-prompt-caching",
+      "kind": "skill",
+      "purpose": "Cut cost and latency with provider prompt caching: stable prefixes, cache breakpoints, TTLs and hit-rate measurement."
+    },
+    {
+      "name": "llm-model-routing",
+      "kind": "skill",
+      "purpose": "Route requests between cheap and strong models by difficulty classifiers, cascades or confidence thresholds, measuring quality impact."
+    },
+    {
+      "name": "llm-token-optimization",
+      "kind": "skill",
+      "purpose": "Reduce tokens: trim context, compress tool outputs, shorten prompts, cap output length and estimate cost per request."
+    },
+    {
+      "name": "llm-batch-processing",
+      "kind": "skill",
+      "purpose": "Process large offline LLM workloads with batch APIs, concurrency limits, checkpointing, idempotent retries and cost tracking."
+    },
+    {
+      "name": "llm-latency-optimization",
+      "kind": "skill",
+      "purpose": "Lower LLM latency with streaming, parallel calls, speculative or smaller models, shorter outputs and time-to-first-token measurement."
+    },
+    {
+      "name": "ollama-local-llms",
+      "kind": "skill",
+      "purpose": "Run open-weight models locally with Ollama: model selection, Modelfiles, context settings and the OpenAI-compatible API."
+    },
+    {
+      "name": "llama-cpp-gguf",
+      "kind": "skill",
+      "purpose": "Run and quantise models with llama.cpp: GGUF formats, quantisation levels, GPU offload and server mode."
+    },
+    {
+      "name": "llm-quantization",
+      "kind": "skill",
+      "purpose": "Quantise LLMs (GPTQ, AWQ, bitsandbytes, FP8) and measure accuracy loss against memory and throughput gains."
+    },
+    {
+      "name": "vllm-serving",
+      "kind": "skill",
+      "purpose": "Serve LLMs with vLLM: tensor parallelism, max-model-len, batching, LoRA adapters, prefix caching and OpenAI-compatible endpoints."
+    },
+    {
+      "name": "llm-inference-benchmarking",
+      "kind": "skill",
+      "purpose": "Benchmark LLM serving for throughput, TTFT, inter-token latency and cost per token under realistic concurrency."
+    },
+    {
+      "name": "open-weight-model-selection",
+      "kind": "skill",
+      "purpose": "Choose open-weight models (Llama, Qwen, Mistral, Gemma and others) by licence, size, benchmarks and own-task evals."
+    },
+    {
+      "name": "sglang-tgi-serving",
+      "kind": "skill",
+      "purpose": "Serve LLMs with SGLang or Hugging Face TGI, including structured generation, speculative decoding and deployment settings."
+    },
+    {
+      "name": "llm-finetune-data-prep",
+      "kind": "skill",
+      "purpose": "Prepare instruction and chat fine-tuning data: formatting to chat templates, deduplication, quality filters and train/eval splits."
+    },
+    {
+      "name": "lora-qlora-finetuning",
+      "kind": "skill",
+      "purpose": "Fine-tune LLMs with LoRA/QLoRA via PEFT and TRL: rank, alpha, target modules, learning rates and memory budgeting."
+    },
+    {
+      "name": "llm-finetune-evaluation",
+      "kind": "skill",
+      "purpose": "Evaluate fine-tuned models against the base model and prompting baselines, checking task gains and capability regressions."
+    },
+    {
+      "name": "preference-optimization",
+      "kind": "skill",
+      "purpose": "Train with preference data using DPO, ORPO or KTO, including pair collection, reference models and reward hacking checks."
+    },
+    {
+      "name": "reward-modeling-rlhf",
+      "kind": "skill",
+      "purpose": "Build reward models and RLHF/RLAIF loops (PPO, GRPO), with reward model evaluation and KL control."
+    },
+    {
+      "name": "hosted-finetuning-apis",
+      "kind": "skill",
+      "purpose": "Use hosted fine-tuning services (OpenAI, Bedrock, Vertex, Together) end to end: data upload, job config, eval and deployment."
+    },
+    {
+      "name": "finetune-vs-prompt-decision",
+      "kind": "skill",
+      "purpose": "Decide between prompting, RAG and fine-tuning for a task using data volume, latency, cost and behaviour-change criteria."
+    },
+    {
+      "name": "model-distillation",
+      "kind": "skill",
+      "purpose": "Distil a large model into a smaller one with teacher-generated data, and compare quality, latency and cost."
+    },
+    {
+      "name": "synthetic-data-generation",
+      "kind": "skill",
+      "purpose": "Generate synthetic training and eval data with LLMs: seed diversity, persona/attribute grids, filtering and contamination checks."
+    },
+    {
+      "name": "training-data-curation",
+      "kind": "skill",
+      "purpose": "Curate ML datasets: deduplication, near-duplicate detection, label noise detection, class balance and data cards."
+    },
+    {
+      "name": "data-labeling-guidelines",
+      "kind": "skill",
+      "purpose": "Write labelling guidelines with definitions, decision trees, positive/negative examples and adjudication rules."
+    },
+    {
+      "name": "active-learning",
+      "kind": "skill",
+      "purpose": "Select examples to label with uncertainty, diversity and disagreement sampling to reach target accuracy with fewer labels."
+    },
+    {
+      "name": "weak-supervision",
+      "kind": "skill",
+      "purpose": "Create labels programmatically with labelling functions, LLM labellers and label models, and estimate their accuracy."
+    },
+    {
+      "name": "sklearn-pipelines",
+      "kind": "skill",
+      "purpose": "Build scikit-learn Pipelines and ColumnTransformers so preprocessing is fitted only on training folds and models serialise cleanly."
+    },
+    {
+      "name": "sklearn-model-selection",
+      "kind": "skill",
+      "purpose": "Pick and compare scikit-learn models with baselines, cross-validation and learning curves before tuning."
+    },
+    {
+      "name": "gradient-boosting-models",
+      "kind": "skill",
+      "purpose": "Train XGBoost, LightGBM and CatBoost models: categorical handling, early stopping, key hyperparameters and imbalanced targets."
+    },
+    {
+      "name": "ml-feature-engineering",
+      "kind": "skill",
+      "purpose": "Engineer tabular features: encodings, interactions, aggregates, date and text features, with leakage checks per feature."
+    },
+    {
+      "name": "ml-cross-validation",
+      "kind": "skill",
+      "purpose": "Choose validation schemes (k-fold, stratified, grouped, time-based) that match how the model will be used."
+    },
+    {
+      "name": "ml-classification-metrics",
+      "kind": "skill",
+      "purpose": "Pick and report classification and regression metrics, thresholds, PR/ROC curves and cost-weighted decision points."
+    },
+    {
+      "name": "ml-probability-calibration",
+      "kind": "skill",
+      "purpose": "Check and fix probability calibration with reliability diagrams, Platt scaling and isotonic regression."
+    },
+    {
+      "name": "ml-data-leakage-detection",
+      "kind": "skill",
+      "purpose": "Find target leakage, train-test contamination and temporal leakage in features and splits."
+    },
+    {
+      "name": "ml-imbalanced-data",
+      "kind": "skill",
+      "purpose": "Handle imbalanced classification with resampling, class weights, threshold moving and appropriate metrics."
+    },
+    {
+      "name": "hyperparameter-optimization",
+      "kind": "skill",
+      "purpose": "Tune hyperparameters with Optuna or Ray Tune: search spaces, pruning, budgets and avoiding overfitting the validation set."
+    },
+    {
+      "name": "ml-interpretability",
+      "kind": "skill",
+      "purpose": "Explain models with SHAP, permutation importance, partial dependence and counterfactuals, and communicate caveats."
+    },
+    {
+      "name": "ml-experiment-design",
+      "kind": "skill",
+      "purpose": "Plan ML experiments: hypotheses, baselines, ablations, seeds, compute budget and the result that would change a decision."
+    },
+    {
+      "name": "ml-reproducibility",
+      "kind": "skill",
+      "purpose": "Make training runs reproducible: seeds, determinism flags, pinned environments, data versioning and config capture."
+    },
+    {
+      "name": "ml-anomaly-detection",
+      "kind": "skill",
+      "purpose": "Detect anomalies with isolation forests, autoencoders, statistical baselines and evaluation with scarce labels."
+    },
+    {
+      "name": "ml-clustering",
+      "kind": "skill",
+      "purpose": "Cluster data with k-means, DBSCAN/HDBSCAN and Gaussian mixtures, choosing k and validating clusters for usefulness."
+    },
+    {
+      "name": "pytorch-training-loops",
+      "kind": "skill",
+      "purpose": "Write PyTorch training loops: datasets/dataloaders, optimisers, schedulers, checkpointing, validation and logging."
+    },
+    {
+      "name": "pytorch-debugging",
+      "kind": "skill",
+      "purpose": "Debug PyTorch training: NaNs, exploding gradients, shape errors, device mismatches and loss that does not decrease."
+    },
+    {
+      "name": "pytorch-performance",
+      "kind": "skill",
+      "purpose": "Speed up PyTorch with mixed precision, torch.compile, dataloader tuning, channels-last and the PyTorch profiler."
+    },
+    {
+      "name": "pytorch-lightning",
+      "kind": "skill",
+      "purpose": "Structure training with PyTorch Lightning or Lightning Fabric: modules, callbacks, loggers and multi-GPU strategies."
+    },
+    {
+      "name": "distributed-training",
+      "kind": "skill",
+      "purpose": "Scale training with DDP, FSDP or DeepSpeed ZeRO: sharding choices, gradient accumulation, checkpointing and multi-node launch."
+    },
+    {
+      "name": "gpu-memory-optimization",
+      "kind": "skill",
+      "purpose": "Fit larger models on GPUs with activation checkpointing, gradient accumulation, offloading, 8-bit optimisers and memory profiling."
+    },
+    {
+      "name": "jax-flax-training",
+      "kind": "skill",
+      "purpose": "Train models in JAX with Flax/Optax: pure functions, jit, vmap, pmap/sharding and PRNG handling."
+    },
+    {
+      "name": "hf-transformers-usage",
+      "kind": "skill",
+      "purpose": "Use Hugging Face Transformers: AutoModel/AutoTokenizer, pipelines, Trainer, generation config and Hub model cards."
+    },
+    {
+      "name": "hf-datasets-hub",
+      "kind": "skill",
+      "purpose": "Load, process, stream and publish datasets with Hugging Face datasets and the Hub, including dataset cards."
+    },
+    {
+      "name": "transformer-architecture",
+      "kind": "skill",
+      "purpose": "Understand and modify transformer internals: attention variants, positional encodings, KV cache and parameter counting."
+    },
+    {
+      "name": "cv-image-classification",
+      "kind": "skill",
+      "purpose": "Train image classifiers with transfer learning from pretrained backbones (timm, torchvision), augmentation and class imbalance handling."
+    },
+    {
+      "name": "cv-object-detection",
+      "kind": "skill",
+      "purpose": "Train and evaluate object detectors (YOLO, DETR families): annotation formats, anchors/NMS, mAP and small-object tactics."
+    },
+    {
+      "name": "cv-segmentation",
+      "kind": "skill",
+      "purpose": "Build semantic and instance segmentation with U-Net, Mask R-CNN or SAM-assisted labelling, evaluated with IoU and Dice."
+    },
+    {
+      "name": "cv-data-augmentation",
+      "kind": "skill",
+      "purpose": "Design image augmentation pipelines with Albumentations or torchvision v2 that match deployment conditions."
+    },
+    {
+      "name": "vision-language-models",
+      "kind": "skill",
+      "purpose": "Use vision-language models for captioning, visual QA, document understanding and image classification by prompt, with eval sets."
+    },
+    {
+      "name": "diffusion-image-generation",
+      "kind": "skill",
+      "purpose": "Generate and edit images with diffusion models via diffusers: schedulers, ControlNet, LoRA styles and safety filters."
+    },
+    {
+      "name": "video-understanding",
+      "kind": "skill",
+      "purpose": "Process video for ML: frame sampling, action recognition, tracking and multimodal video QA."
+    },
+    {
+      "name": "nlp-text-classification",
+      "kind": "skill",
+      "purpose": "Build text classifiers from TF-IDF baselines to fine-tuned transformers, with label design and error analysis."
+    },
+    {
+      "name": "nlp-named-entity-recognition",
+      "kind": "skill",
+      "purpose": "Build NER and span extraction with spaCy or transformer token classifiers, including annotation and entity linking."
+    },
+    {
+      "name": "spacy-pipelines",
+      "kind": "skill",
+      "purpose": "Build spaCy pipelines: tokenisation, custom components, rule-based matchers, training configs and packaging."
+    },
+    {
+      "name": "nlp-text-preprocessing",
+      "kind": "skill",
+      "purpose": "Normalise and tokenise multilingual text: Unicode, language detection, sentence splitting and subword tokenisers."
+    },
+    {
+      "name": "topic-modeling",
+      "kind": "skill",
+      "purpose": "Discover topics with BERTopic or LDA, tune granularity and label topics for stakeholders."
+    },
+    {
+      "name": "machine-translation-models",
+      "kind": "skill",
+      "purpose": "Use and evaluate MT models (NLLB, Marian, LLM translation) with BLEU/COMET and domain glossaries."
+    },
+    {
+      "name": "speech-recognition-whisper",
+      "kind": "skill",
+      "purpose": "Transcribe speech with Whisper and faster-whisper: model size choice, chunking, timestamps, language detection and WER evaluation."
+    },
+    {
+      "name": "speaker-diarization",
+      "kind": "skill",
+      "purpose": "Add speaker diarisation with pyannote or cloud APIs and align speakers with transcript segments."
+    },
+    {
+      "name": "text-to-speech",
+      "kind": "skill",
+      "purpose": "Generate speech with TTS models and APIs: voice selection, SSML/prosody control, streaming audio and quality evaluation."
+    },
+    {
+      "name": "voice-agent-pipelines",
+      "kind": "skill",
+      "purpose": "Build real-time voice agents: VAD, streaming ASR, LLM turn-taking, interruption handling and end-to-end latency budgets."
+    },
+    {
+      "name": "audio-classification",
+      "kind": "skill",
+      "purpose": "Classify audio events and keywords with spectrogram features and pretrained audio models such as AST or PANNs."
+    },
+    {
+      "name": "recsys-collaborative-filtering",
+      "kind": "skill",
+      "purpose": "Build collaborative-filtering recommenders with matrix factorisation and implicit-feedback models (ALS, BPR)."
+    },
+    {
+      "name": "recsys-two-tower-retrieval",
+      "kind": "skill",
+      "purpose": "Build two-tower candidate retrieval models with negative sampling and ANN serving."
+    },
+    {
+      "name": "recsys-ranking-models",
+      "kind": "skill",
+      "purpose": "Train ranking models for recommendations (GBDT, deep ranking, learning-to-rank) with feature logging."
+    },
+    {
+      "name": "recsys-evaluation",
+      "kind": "skill",
+      "purpose": "Evaluate recommenders offline (recall@k, NDCG, coverage, novelty) and design online tests that match offline gains."
+    },
+    {
+      "name": "recsys-cold-start",
+      "kind": "skill",
+      "purpose": "Handle cold-start users and items with content features, popularity priors, exploration and bandits."
+    },
+    {
+      "name": "ml-forecasting-baselines",
+      "kind": "skill",
+      "purpose": "Set forecasting baselines (naive, seasonal naive, ETS, ARIMA) with statsforecast before trying ML models."
+    },
+    {
+      "name": "ml-forecasting-gbdt",
+      "kind": "skill",
+      "purpose": "Forecast with gradient boosting on lag and calendar features (mlforecast, skforecast) across many series."
+    },
+    {
+      "name": "neural-forecasting",
+      "kind": "skill",
+      "purpose": "Use neural and foundation forecasting models (N-BEATS, TFT, Chronos, TimesFM) and compare them with baselines."
+    },
+    {
+      "name": "forecast-backtesting",
+      "kind": "skill",
+      "purpose": "Backtest forecasts with rolling-origin evaluation, MASE/sMAPE/quantile loss and hierarchical reconciliation."
+    },
+    {
+      "name": "probabilistic-forecasting",
+      "kind": "skill",
+      "purpose": "Produce prediction intervals and quantile forecasts and check their coverage with conformal or quantile methods."
+    },
+    {
+      "name": "mlflow-tracking",
+      "kind": "skill",
+      "purpose": "Track experiments, models and artefacts with MLflow: runs, params, metrics, model registry and stage transitions."
+    },
+    {
+      "name": "wandb-tracking",
+      "kind": "skill",
+      "purpose": "Log experiments to Weights & Biases: runs, sweeps, artifacts, tables and reports."
+    },
+    {
+      "name": "ml-pipeline-orchestration",
+      "kind": "skill",
+      "purpose": "Build training pipelines with Kubeflow, Metaflow, ZenML or SageMaker Pipelines with cached, parameterised steps."
+    },
+    {
+      "name": "ml-feature-store",
+      "kind": "skill",
+      "purpose": "Use a feature store (Feast, Tecton, Databricks) for offline/online consistency and point-in-time correct training sets."
+    },
+    {
+      "name": "ml-model-registry",
+      "kind": "skill",
+      "purpose": "Manage model versions, lineage, approval and promotion through a model registry with rollback."
+    },
+    {
+      "name": "ml-model-packaging",
+      "kind": "skill",
+      "purpose": "Package models for serving with ONNX, TorchScript or BentoML, pinning preprocessing and dependencies with the model."
+    },
+    {
+      "name": "ml-online-serving",
+      "kind": "skill",
+      "purpose": "Serve models behind low-latency APIs (FastAPI, BentoML, Triton, KServe) with batching, autoscaling and health checks."
+    },
+    {
+      "name": "ml-batch-inference",
+      "kind": "skill",
+      "purpose": "Run batch scoring jobs at scale with Spark, Ray or cloud batch services, with idempotent outputs and monitoring."
+    },
+    {
+      "name": "ml-model-monitoring",
+      "kind": "skill",
+      "purpose": "Monitor deployed models for data drift, prediction drift and performance decay, with alert thresholds and retraining triggers."
+    },
+    {
+      "name": "ml-ci-cd",
+      "kind": "skill",
+      "purpose": "Automate ML CI/CD: data and model tests, training on merge, eval gates and staged rollouts (shadow, canary)."
+    },
+    {
+      "name": "ray-for-ml",
+      "kind": "skill",
+      "purpose": "Scale ML workloads with Ray (Train, Tune, Data, Serve) on a cluster."
+    },
+    {
+      "name": "sagemaker-ml",
+      "kind": "skill",
+      "purpose": "Train, tune and deploy models on Amazon SageMaker: training jobs, endpoints, pipelines and cost controls."
+    },
+    {
+      "name": "vertex-ai-ml",
+      "kind": "skill",
+      "purpose": "Train, deploy and evaluate models on Google Vertex AI, including Model Garden and pipelines."
+    },
+    {
+      "name": "onnx-model-optimization",
+      "kind": "skill",
+      "purpose": "Export models to ONNX and optimise with ONNX Runtime: graph optimisation, quantisation and execution providers."
+    },
+    {
+      "name": "mobile-ml-deployment",
+      "kind": "skill",
+      "purpose": "Deploy models on mobile with Core ML, TensorFlow Lite/LiteRT or ExecuTorch, including conversion and on-device benchmarking."
+    },
+    {
+      "name": "model-compression",
+      "kind": "skill",
+      "purpose": "Shrink models with pruning, quantisation-aware training and distillation, and verify accuracy on target hardware."
+    },
+    {
+      "name": "webgpu-browser-ml",
+      "kind": "skill",
+      "purpose": "Run models in the browser with Transformers.js, ONNX Runtime Web or WebLLM, handling model download size and WebGPU fallbacks."
+    },
+    {
+      "name": "ml-fairness-assessment",
+      "kind": "skill",
+      "purpose": "Assess model fairness across groups with Fairlearn-style metrics, choose fairness criteria and document trade-offs."
+    },
+    {
+      "name": "model-card-writing",
+      "kind": "skill",
+      "purpose": "Write model cards and system cards: intended use, data, evaluation, limitations and ethical considerations."
+    },
+    {
+      "name": "ai-risk-assessment",
+      "kind": "skill",
+      "purpose": "Assess AI system risks and impacts using NIST AI RMF and EU AI Act risk tiers, producing a risk register for review."
+    },
+    {
+      "name": "eu-ai-act-technical-docs",
+      "kind": "skill",
+      "purpose": "Draft EU AI Act technical documentation and transparency notices for engineering teams, flagged for legal sign-off."
+    },
+    {
+      "name": "ai-transparency-disclosure",
+      "kind": "skill",
+      "purpose": "Design user-facing AI disclosures, explanation of AI decisions and opt-outs in product flows."
+    },
+    {
+      "name": "training-data-provenance",
+      "kind": "skill",
+      "purpose": "Track training data provenance, licences and consent, and document dataset composition and known gaps."
+    },
+    {
+      "name": "gpu-environment-setup",
+      "kind": "skill",
+      "purpose": "Set up CUDA, cuDNN, drivers and PyTorch builds that match, inside containers or conda/uv environments."
+    },
+    {
+      "name": "gpu-capacity-planning",
+      "kind": "skill",
+      "purpose": "Estimate GPU memory and count for training and inference from parameter count, precision, batch and sequence length."
+    },
+    {
+      "name": "ml-compute-cost-control",
+      "kind": "skill",
+      "purpose": "Control ML compute spend with spot instances, right-sized GPUs, job preemption handling and utilisation tracking."
+    },
+    {
+      "name": "ml-paper-reading",
+      "kind": "skill",
+      "purpose": "Read ML papers efficiently: extract claims, method, setup and results, and check whether results apply to your setting."
+    },
+    {
+      "name": "ml-paper-implementation",
+      "kind": "skill",
+      "purpose": "Reimplement ML papers from description: match hyperparameters, reproduce a reported number and log deviations."
+    },
+    {
+      "name": "ml-system-design",
+      "kind": "skill",
+      "purpose": "Design end-to-end ML systems: problem framing, data, features, model, serving, feedback loops and failure modes."
+    },
+    {
+      "name": "ai-feature-scoping",
+      "kind": "skill",
+      "purpose": "Scope an AI feature: define the task, success metric, data availability, failure costs and a minimal eval before building."
+    },
+    {
+      "name": "llm-model-selection",
+      "kind": "skill",
+      "purpose": "Pick an LLM for a task by running a small eval across candidate models and weighing quality, latency, cost and context needs."
+    },
+    {
+      "name": "llm-prompt-migration",
+      "kind": "skill",
+      "purpose": "Migrate prompts and integrations to a new model or provider: diff behaviour on an eval set and adjust prompts and parameters."
+    },
+    {
+      "name": "chat-ui-patterns",
+      "kind": "skill",
+      "purpose": "Build chat UIs for LLM apps: streaming render, markdown and code blocks, citations, stop/regenerate, feedback buttons and error states."
+    },
+    {
+      "name": "prompt-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews prompts for ambiguity, conflicting instructions, missing output formats and injection exposure, returning a marked-up revision.",
+      "skills": [
+        "prompt-structure-patterns",
+        "system-prompt-authoring"
+      ]
+    },
+    {
+      "name": "prompt-optimizer",
+      "kind": "agent",
+      "purpose": "Iterates on a prompt against a provided test set, proposing variants and reporting which one wins on the metric and why.",
+      "skills": [
+        "prompt-iteration-workflow",
+        "few-shot-example-design"
+      ]
+    },
+    {
+      "name": "prompt-test-writer",
+      "kind": "agent",
+      "purpose": "Writes test cases and assertions for a prompt, covering typical inputs, edge cases and adversarial inputs.",
+      "skills": [
+        "llm-eval-dataset-design",
+        "llm-eval-harness"
+      ]
+    },
+    {
+      "name": "few-shot-curator",
+      "kind": "agent",
+      "purpose": "Selects and formats few-shot examples from a pool of labelled data to maximise coverage of the task distribution.",
+      "skills": [
+        "few-shot-example-design"
+      ]
+    },
+    {
+      "name": "rag-architect",
+      "kind": "agent",
+      "purpose": "Designs a RAG system for a corpus and query mix: chunking, retrieval, reranking, index and evaluation plan.",
+      "skills": [
+        "rag-retrieval-pipeline",
+        "rag-chunking-strategies",
+        "rag-hybrid-search"
+      ]
+    },
+    {
+      "name": "retrieval-debugger",
+      "kind": "agent",
+      "purpose": "Investigates bad RAG answers by tracing queries to retrieved chunks and classifying failures as retrieval, ranking or generation.",
+      "skills": [
+        "rag-evaluation",
+        "llm-error-analysis"
+      ]
+    },
+    {
+      "name": "chunking-tuner",
+      "kind": "agent",
+      "purpose": "Runs chunk size, overlap and strategy experiments on a corpus and reports the setting with the best retrieval recall.",
+      "skills": [
+        "rag-chunking-strategies",
+        "rag-evaluation"
+      ]
+    },
+    {
+      "name": "rag-eval-runner",
+      "kind": "agent",
+      "purpose": "Builds a labelled query set for a corpus and runs retrieval and faithfulness evals, returning a scored report.",
+      "skills": [
+        "rag-evaluation",
+        "llm-eval-dataset-design"
+      ]
+    },
+    {
+      "name": "eval-dataset-builder",
+      "kind": "agent",
+      "purpose": "Assembles an eval dataset from logs, specs and edge cases, with expected outputs or rubrics and a held-out split.",
+      "skills": [
+        "llm-eval-dataset-design",
+        "synthetic-data-generation"
+      ]
+    },
+    {
+      "name": "llm-judge-designer",
+      "kind": "agent",
+      "purpose": "Writes and calibrates LLM-as-judge rubrics against human labels and reports judge agreement.",
+      "skills": [
+        "llm-as-judge",
+        "human-eval-annotation"
+      ]
+    },
+    {
+      "name": "eval-regression-analyst",
+      "kind": "agent",
+      "purpose": "Compares two eval runs, explains which cases regressed or improved and why, and recommends ship or hold.",
+      "skills": [
+        "llm-regression-testing",
+        "llm-eval-metrics"
+      ]
+    },
+    {
+      "name": "llm-failure-analyst",
+      "kind": "agent",
+      "purpose": "Reads production traces or eval failures, builds a failure taxonomy with counts and proposes targeted fixes.",
+      "skills": [
+        "llm-error-analysis",
+        "llm-tracing"
+      ]
+    },
+    {
+      "name": "agent-architect",
+      "kind": "agent",
+      "purpose": "Designs an agent for a task: loop shape, tools, memory, guardrails, stopping rules and an eval plan, or recommends a workflow instead.",
+      "skills": [
+        "agent-loop-design",
+        "agent-tool-design",
+        "agent-context-engineering"
+      ]
+    },
+    {
+      "name": "agent-tool-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews agent tool definitions for naming, descriptions, schema clarity, output size and error messages.",
+      "skills": [
+        "agent-tool-design",
+        "mcp-tool-schema-design"
+      ]
+    },
+    {
+      "name": "agent-trace-debugger",
+      "kind": "agent",
+      "purpose": "Analyses agent transcripts to find loops, wrong tool choices, lost context and premature stops, with fixes.",
+      "skills": [
+        "agent-evaluation",
+        "agent-context-engineering"
+      ]
+    },
+    {
+      "name": "agent-eval-builder",
+      "kind": "agent",
+      "purpose": "Builds a sandboxed task suite and graders to measure an agent on success rate, cost and trajectory quality.",
+      "skills": [
+        "agent-evaluation",
+        "llm-as-judge"
+      ]
+    },
+    {
+      "name": "mcp-server-scaffolder",
+      "kind": "agent",
+      "purpose": "Scaffolds an MCP server for an API or system in TypeScript or Python, with tools, auth and tests.",
+      "skills": [
+        "mcp-server-typescript",
+        "mcp-server-python",
+        "mcp-tool-schema-design"
+      ]
+    },
+    {
+      "name": "mcp-server-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews MCP server code for tool design, input validation, auth, error handling and response size.",
+      "skills": [
+        "mcp-tool-schema-design",
+        "mcp-server-auth"
+      ]
+    },
+    {
+      "name": "mcp-tool-tester",
+      "kind": "agent",
+      "purpose": "Exercises an MCP server with scripted client sessions and reports schema, error and behaviour issues per tool.",
+      "skills": [
+        "mcp-server-testing"
+      ]
+    },
+    {
+      "name": "agent-skill-writer",
+      "kind": "agent",
+      "purpose": "Writes agent skills and subagent definitions from a workflow description, with trigger-focused descriptions and evals.",
+      "skills": [
+        "agent-skill-authoring"
+      ]
+    },
+    {
+      "name": "llm-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews LLM application code for missing retries, unvalidated outputs, prompt-in-code sprawl and unbounded loops.",
+      "skills": [
+        "llm-error-handling",
+        "llm-structured-outputs"
+      ]
+    },
+    {
+      "name": "prompt-injection-auditor",
+      "kind": "agent",
+      "purpose": "Audits an LLM app for direct and indirect prompt injection paths and over-privileged tools, rating each finding.",
+      "skills": [
+        "prompt-injection-defense",
+        "agent-sandboxing"
+      ]
+    },
+    {
+      "name": "llm-cost-auditor",
+      "kind": "agent",
+      "purpose": "Analyses LLM usage and code to find token waste, missing caching and over-powered model choices, with savings estimates.",
+      "skills": [
+        "llm-token-optimization",
+        "llm-prompt-caching",
+        "llm-model-routing"
+      ]
+    },
+    {
+      "name": "ai-red-team-planner",
+      "kind": "agent",
+      "purpose": "Plans an authorised red-team exercise for an LLM system: scope, harm categories, test cases and reporting format.",
+      "skills": [
+        "ai-red-teaming-methods"
+      ]
+    },
+    {
+      "name": "safety-eval-analyst",
+      "kind": "agent",
+      "purpose": "Runs and interprets safety evals, separating harmful compliance from over-refusal and recommending mitigations.",
+      "skills": [
+        "llm-safety-evals",
+        "llm-output-guardrails"
+      ]
+    },
+    {
+      "name": "guardrail-designer",
+      "kind": "agent",
+      "purpose": "Designs input and output guardrails for an LLM feature, choosing checks, thresholds and fallback behaviour.",
+      "skills": [
+        "llm-output-guardrails",
+        "prompt-injection-defense",
+        "llm-content-moderation"
+      ]
+    },
+    {
+      "name": "finetune-data-preparer",
+      "kind": "agent",
+      "purpose": "Converts raw examples into a clean, deduplicated fine-tuning dataset in the target chat format with an eval split.",
+      "skills": [
+        "llm-finetune-data-prep",
+        "training-data-curation"
+      ]
+    },
+    {
+      "name": "finetune-config-planner",
+      "kind": "agent",
+      "purpose": "Plans a fine-tuning run: method, base model, hyperparameters, hardware and budget, with a go/no-go versus prompting.",
+      "skills": [
+        "lora-qlora-finetuning",
+        "finetune-vs-prompt-decision",
+        "gpu-capacity-planning"
+      ]
+    },
+    {
+      "name": "finetune-eval-analyst",
+      "kind": "agent",
+      "purpose": "Compares a fine-tuned model with its base and prompting baselines and flags task gains and capability regressions.",
+      "skills": [
+        "llm-finetune-evaluation"
+      ]
+    },
+    {
+      "name": "synthetic-data-generator",
+      "kind": "agent",
+      "purpose": "Generates diverse synthetic examples from a spec and seed data, filtering for quality and duplicates.",
+      "skills": [
+        "synthetic-data-generation"
+      ]
+    },
+    {
+      "name": "synthetic-data-auditor",
+      "kind": "agent",
+      "purpose": "Audits a synthetic dataset for diversity, label correctness, leakage of eval data and distribution gaps versus real data.",
+      "skills": [
+        "synthetic-data-generation",
+        "training-data-curation"
+      ]
+    },
+    {
+      "name": "labeling-guideline-writer",
+      "kind": "agent",
+      "purpose": "Writes annotation guidelines with definitions, decision rules and examples from a task description and sample data.",
+      "skills": [
+        "data-labeling-guidelines"
+      ]
+    },
+    {
+      "name": "label-quality-auditor",
+      "kind": "agent",
+      "purpose": "Finds likely label errors and inconsistent annotations in a dataset and reports agreement statistics.",
+      "skills": [
+        "training-data-curation",
+        "human-eval-annotation"
+      ]
+    },
+    {
+      "name": "active-learning-planner",
+      "kind": "agent",
+      "purpose": "Plans labelling rounds with active learning and estimates labels needed to reach a target metric.",
+      "skills": [
+        "active-learning",
+        "weak-supervision"
+      ]
+    },
+    {
+      "name": "tabular-baseline-builder",
+      "kind": "agent",
+      "purpose": "Builds a leak-free baseline model for a tabular dataset with proper validation and a metrics report.",
+      "skills": [
+        "sklearn-pipelines",
+        "gradient-boosting-models",
+        "ml-cross-validation"
+      ]
+    },
+    {
+      "name": "ml-feature-engineer",
+      "kind": "agent",
+      "purpose": "Proposes and tests features for a tabular problem, keeping only those that improve validation metrics without leakage.",
+      "skills": [
+        "ml-feature-engineering",
+        "ml-data-leakage-detection"
+      ]
+    },
+    {
+      "name": "ml-model-evaluator",
+      "kind": "agent",
+      "purpose": "Evaluates a trained model: metrics, calibration, slices, error analysis and a deployment-readiness verdict.",
+      "skills": [
+        "ml-classification-metrics",
+        "ml-probability-calibration",
+        "ml-interpretability"
+      ]
+    },
+    {
+      "name": "ml-leakage-auditor",
+      "kind": "agent",
+      "purpose": "Audits ML code and data splits for target leakage, contamination and temporal leakage.",
+      "skills": [
+        "ml-data-leakage-detection",
+        "ml-cross-validation"
+      ]
+    },
+    {
+      "name": "ml-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews ML training and inference code for correctness, reproducibility, train/serve skew and silent bugs.",
+      "skills": [
+        "ml-reproducibility",
+        "sklearn-pipelines"
+      ]
+    },
+    {
+      "name": "notebook-to-pipeline-refactorer",
+      "kind": "agent",
+      "purpose": "Turns exploratory notebooks into tested, parameterised training and inference modules.",
+      "skills": [
+        "ml-reproducibility",
+        "ml-pipeline-orchestration"
+      ]
+    },
+    {
+      "name": "pytorch-training-debugger",
+      "kind": "agent",
+      "purpose": "Diagnoses failing PyTorch training (NaNs, no convergence, shape and device errors) and proposes minimal fixes.",
+      "skills": [
+        "pytorch-debugging",
+        "pytorch-training-loops"
+      ]
+    },
+    {
+      "name": "pytorch-perf-profiler",
+      "kind": "agent",
+      "purpose": "Profiles PyTorch training or inference and recommends speedups with expected gains.",
+      "skills": [
+        "pytorch-performance",
+        "gpu-memory-optimization"
+      ]
+    },
+    {
+      "name": "training-scale-planner",
+      "kind": "agent",
+      "purpose": "Plans scaling a training job across GPUs and nodes: parallelism strategy, memory budget and launch config.",
+      "skills": [
+        "distributed-training",
+        "gpu-capacity-planning"
+      ]
+    },
+    {
+      "name": "ml-paper-implementer",
+      "kind": "agent",
+      "purpose": "Implements a method from an ML paper, reproduces a reported result and documents deviations.",
+      "skills": [
+        "ml-paper-implementation",
+        "ml-paper-reading"
+      ]
+    },
+    {
+      "name": "ml-paper-summarizer",
+      "kind": "agent",
+      "purpose": "Summarises ML papers into claims, method, evidence, limitations and relevance to a stated project.",
+      "skills": [
+        "ml-paper-reading"
+      ]
+    },
+    {
+      "name": "ml-experiment-planner",
+      "kind": "agent",
+      "purpose": "Designs experiment plans with baselines, ablations, seeds and compute budgets, and the decision each result informs.",
+      "skills": [
+        "ml-experiment-design"
+      ]
+    },
+    {
+      "name": "ml-results-analyst",
+      "kind": "agent",
+      "purpose": "Analyses experiment results across runs, tests whether differences are real and writes up findings.",
+      "skills": [
+        "ml-experiment-design",
+        "mlflow-tracking"
+      ]
+    },
+    {
+      "name": "ml-deployment-planner",
+      "kind": "agent",
+      "purpose": "Plans how to deploy a model: batch versus online, packaging, serving stack, rollout and rollback.",
+      "skills": [
+        "ml-online-serving",
+        "ml-batch-inference",
+        "ml-model-packaging"
+      ]
+    },
+    {
+      "name": "model-monitoring-designer",
+      "kind": "agent",
+      "purpose": "Designs monitoring for a deployed model: drift metrics, performance proxies, alerts and retraining triggers.",
+      "skills": [
+        "ml-model-monitoring"
+      ]
+    },
+    {
+      "name": "ml-pipeline-builder",
+      "kind": "agent",
+      "purpose": "Builds reproducible training pipelines with tracking, registry integration and CI eval gates.",
+      "skills": [
+        "ml-pipeline-orchestration",
+        "ml-ci-cd",
+        "ml-model-registry"
+      ]
+    },
+    {
+      "name": "llm-serving-tuner",
+      "kind": "agent",
+      "purpose": "Tunes LLM serving configs (batch size, parallelism, quantisation, caching) to hit latency and throughput targets.",
+      "skills": [
+        "vllm-serving",
+        "llm-inference-benchmarking",
+        "llm-quantization"
+      ]
+    },
+    {
+      "name": "inference-optimizer",
+      "kind": "agent",
+      "purpose": "Optimises model inference latency and cost through export, quantisation, batching and hardware choice.",
+      "skills": [
+        "onnx-model-optimization",
+        "model-compression"
+      ]
+    },
+    {
+      "name": "model-router-designer",
+      "kind": "agent",
+      "purpose": "Designs a model routing or cascade strategy and estimates cost and quality impact from eval data.",
+      "skills": [
+        "llm-model-routing",
+        "llm-eval-metrics"
+      ]
+    },
+    {
+      "name": "cv-pipeline-builder",
+      "kind": "agent",
+      "purpose": "Builds computer vision training pipelines for classification, detection or segmentation from a labelled dataset.",
+      "skills": [
+        "cv-image-classification",
+        "cv-object-detection",
+        "cv-data-augmentation"
+      ]
+    },
+    {
+      "name": "cv-error-analyst",
+      "kind": "agent",
+      "purpose": "Analyses vision model errors by class, size, lighting and other slices and proposes data or model fixes.",
+      "skills": [
+        "cv-object-detection",
+        "cv-segmentation"
+      ]
+    },
+    {
+      "name": "vlm-task-designer",
+      "kind": "agent",
+      "purpose": "Designs prompts and evals for using vision-language models on image or document tasks instead of training a model.",
+      "skills": [
+        "vision-language-models",
+        "llm-eval-dataset-design"
+      ]
+    },
+    {
+      "name": "nlp-model-builder",
+      "kind": "agent",
+      "purpose": "Builds text classification or NER models from baseline to fine-tuned transformer, with error analysis.",
+      "skills": [
+        "nlp-text-classification",
+        "nlp-named-entity-recognition",
+        "hf-transformers-usage"
+      ]
+    },
+    {
+      "name": "llm-vs-classifier-advisor",
+      "kind": "agent",
+      "purpose": "Compares an LLM prompt against a trained classifier for an NLP task on cost, latency and accuracy, and recommends one.",
+      "skills": [
+        "llm-classification-prompts",
+        "nlp-text-classification"
+      ]
+    },
+    {
+      "name": "voice-agent-architect",
+      "kind": "agent",
+      "purpose": "Designs real-time voice agent stacks with ASR, LLM and TTS choices and an end-to-end latency budget.",
+      "skills": [
+        "voice-agent-pipelines",
+        "speech-recognition-whisper",
+        "text-to-speech"
+      ]
+    },
+    {
+      "name": "asr-eval-analyst",
+      "kind": "agent",
+      "purpose": "Evaluates speech recognition output (WER, per-speaker and per-accent errors) and recommends model or pipeline changes.",
+      "skills": [
+        "speech-recognition-whisper",
+        "speaker-diarization"
+      ]
+    },
+    {
+      "name": "recsys-architect",
+      "kind": "agent",
+      "purpose": "Designs recommender systems with retrieval, ranking and re-ranking stages, data needs and evaluation plan.",
+      "skills": [
+        "recsys-two-tower-retrieval",
+        "recsys-ranking-models",
+        "recsys-evaluation"
+      ]
+    },
+    {
+      "name": "recsys-offline-evaluator",
+      "kind": "agent",
+      "purpose": "Runs offline evaluation of recommenders and checks for popularity bias, leakage and metric mismatch with business goals.",
+      "skills": [
+        "recsys-evaluation"
+      ]
+    },
+    {
+      "name": "forecasting-modeler",
+      "kind": "agent",
+      "purpose": "Builds forecasts for one or many series, starting with baselines and adding ML models only if they win in backtests.",
+      "skills": [
+        "ml-forecasting-baselines",
+        "ml-forecasting-gbdt",
+        "forecast-backtesting"
+      ]
+    },
+    {
+      "name": "forecast-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews forecasting work for leakage, weak baselines, wrong backtests and miscalibrated intervals.",
+      "skills": [
+        "forecast-backtesting",
+        "probabilistic-forecasting"
+      ]
+    },
+    {
+      "name": "ml-bias-auditor",
+      "kind": "agent",
+      "purpose": "Audits a model for performance and outcome disparities across groups and reports findings with mitigation options.",
+      "skills": [
+        "ml-fairness-assessment"
+      ]
+    },
+    {
+      "name": "model-card-writer",
+      "kind": "agent",
+      "purpose": "Drafts model and system cards from code, data and eval results, listing gaps that need owner input.",
+      "skills": [
+        "model-card-writing",
+        "training-data-provenance"
+      ]
+    },
+    {
+      "name": "ai-impact-assessor",
+      "kind": "agent",
+      "purpose": "Drafts AI risk and impact assessments using NIST AI RMF and EU AI Act categories for review by accountable owners.",
+      "skills": [
+        "ai-risk-assessment",
+        "eu-ai-act-technical-docs"
+      ]
+    },
+    {
+      "name": "llm-trace-analyst",
+      "kind": "agent",
+      "purpose": "Reviews LLM production traces to spot quality, latency and cost anomalies and summarise top issues.",
+      "skills": [
+        "llm-tracing",
+        "llm-production-monitoring"
+      ]
+    },
+    {
+      "name": "user-feedback-triager",
+      "kind": "agent",
+      "purpose": "Clusters user feedback and thumbs-down events on an LLM feature into issue categories with example traces.",
+      "skills": [
+        "llm-error-analysis",
+        "semantic-dedup-clustering"
+      ]
+    },
+    {
+      "name": "ai-feature-scoper",
+      "kind": "agent",
+      "purpose": "Turns an AI feature idea into a scoped spec with task definition, success metric, data needs, risks and a first eval.",
+      "skills": [
+        "ai-feature-scoping",
+        "llm-app-architecture"
+      ]
+    },
+    {
+      "name": "llm-selection-advisor",
+      "kind": "agent",
+      "purpose": "Runs a candidate-model bake-off on a task sample and recommends a model with cost and latency trade-offs.",
+      "skills": [
+        "llm-model-selection",
+        "llm-eval-harness"
+      ]
+    },
+    {
+      "name": "ai-build-vs-buy-analyst",
+      "kind": "agent",
+      "purpose": "Compares building, fine-tuning or buying an AI capability on cost, risk and time to value.",
+      "skills": [
+        "finetune-vs-prompt-decision",
+        "ai-feature-scoping"
+      ]
+    },
+    {
+      "name": "model-upgrade-migrator",
+      "kind": "agent",
+      "purpose": "Migrates an LLM app to a new model version or provider, running evals before and after and adjusting prompts.",
+      "skills": [
+        "llm-prompt-migration",
+        "llm-regression-testing"
+      ]
+    },
+    {
+      "name": "llm-framework-migrator",
+      "kind": "agent",
+      "purpose": "Migrates LLM code between frameworks (LangChain, LlamaIndex, plain SDKs) while preserving behaviour under evals.",
+      "skills": [
+        "langchain-patterns",
+        "llm-provider-abstraction"
+      ]
+    },
+    {
+      "name": "ml-system-designer",
+      "kind": "agent",
+      "purpose": "Produces ML system designs covering framing, data, model, serving, monitoring and feedback loops.",
+      "skills": [
+        "ml-system-design"
+      ]
+    },
+    {
+      "name": "ml-design-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews ML system designs for weak problem framing, data risks, missing baselines and operational gaps.",
+      "skills": [
+        "ml-system-design",
+        "ml-model-monitoring"
+      ]
+    },
+    {
+      "name": "edge-model-converter",
+      "kind": "agent",
+      "purpose": "Converts and quantises models for mobile or edge targets and verifies accuracy after conversion.",
+      "skills": [
+        "mobile-ml-deployment",
+        "onnx-model-optimization"
+      ]
+    },
+    {
+      "name": "edge-benchmark-runner",
+      "kind": "agent",
+      "purpose": "Benchmarks on-device latency, memory and power for model variants and reports the best fit for target devices.",
+      "skills": [
+        "mobile-ml-deployment",
+        "model-compression"
+      ]
+    },
+    {
+      "name": "document-parser-designer",
+      "kind": "agent",
+      "purpose": "Chooses parsing and OCR tools for a document corpus and designs the ingestion pipeline.",
+      "skills": [
+        "pdf-parsing-for-llms",
+        "ocr-pipelines",
+        "table-extraction-llm"
+      ]
+    },
+    {
+      "name": "extraction-schema-designer",
+      "kind": "agent",
+      "purpose": "Designs extraction schemas and prompts for document field extraction with confidence and review routing.",
+      "skills": [
+        "llm-document-extraction",
+        "llm-structured-outputs"
+      ]
+    },
+    {
+      "name": "extraction-qa-checker",
+      "kind": "agent",
+      "purpose": "Checks extracted document data against sources, measuring field accuracy and listing systematic errors.",
+      "skills": [
+        "llm-document-extraction",
+        "llm-eval-metrics"
+      ]
+    },
+    {
+      "name": "vector-search-tuner",
+      "kind": "agent",
+      "purpose": "Benchmarks embedding models and ANN index settings on a query set and recommends a configuration.",
+      "skills": [
+        "embedding-model-selection",
+        "vector-index-tuning"
+      ]
+    },
+    {
+      "name": "local-llm-setup-agent",
+      "kind": "agent",
+      "purpose": "Sets up a local LLM stack sized to the hardware, choosing model, quantisation and runtime, and verifies it works.",
+      "skills": [
+        "ollama-local-llms",
+        "llama-cpp-gguf",
+        "open-weight-model-selection"
+      ]
+    },
+    {
+      "name": "ml-gpu-cost-analyst",
+      "kind": "agent",
+      "purpose": "Analyses ML compute usage and recommends GPU right-sizing, spot use and scheduling changes with savings estimates.",
+      "skills": [
+        "ml-compute-cost-control",
+        "gpu-capacity-planning"
+      ]
+    },
+    {
+      "name": "hf-model-publisher",
+      "kind": "agent",
+      "purpose": "Prepares models and datasets for publishing on the Hugging Face Hub with cards, licences and eval results.",
+      "skills": [
+        "hf-datasets-hub",
+        "model-card-writing"
+      ]
+    }
+  ]
+}

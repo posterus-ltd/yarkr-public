@@ -1,0 +1,2185 @@
+{
+  "domain": "verticals-productivity",
+  "packages": [
+    {
+      "name": "soap-note-drafting",
+      "kind": "skill",
+      "purpose": "Draft SOAP progress notes from clinician-supplied encounter details, flagging missing elements for clinician review and sign-off."
+    },
+    {
+      "name": "discharge-summary-drafting",
+      "kind": "skill",
+      "purpose": "Assemble discharge summaries (diagnoses, hospital course, meds, follow-up) from source notes, marking every unverified item for clinician sign-off."
+    },
+    {
+      "name": "clinical-handoff-sbar",
+      "kind": "skill",
+      "purpose": "Structure shift handoffs and escalation calls in SBAR / I-PASS format with explicit pending items and contingencies."
+    },
+    {
+      "name": "medication-list-reconciliation",
+      "kind": "skill",
+      "purpose": "Compare medication lists across sources, surface discrepancies (dose, frequency, duplicates, omissions) as a pharmacist/clinician review checklist."
+    },
+    {
+      "name": "clinical-abbreviation-hygiene",
+      "kind": "skill",
+      "purpose": "Detect error-prone and do-not-use abbreviations (ISMP/Joint Commission lists) in clinical text and suggest unambiguous replacements."
+    },
+    {
+      "name": "icd10-coding-support",
+      "kind": "skill",
+      "purpose": "Suggest candidate ICD-10-CM codes from documentation with specificity notes and guideline references, for certified coder verification."
+    },
+    {
+      "name": "cpt-coding-support",
+      "kind": "skill",
+      "purpose": "Suggest candidate CPT/HCPCS codes and modifiers from procedure and E/M documentation, with the documentation elements each relies on."
+    },
+    {
+      "name": "coding-documentation-gap-check",
+      "kind": "skill",
+      "purpose": "Find documentation gaps that block accurate coding (laterality, acuity, linkage) and draft compliant, non-leading provider queries."
+    },
+    {
+      "name": "hcc-risk-adjustment-review",
+      "kind": "skill",
+      "purpose": "Review encounter notes for HCC risk-adjustment support (MEAT criteria) and list conditions lacking adequate documentation."
+    },
+    {
+      "name": "patient-leaflet-plain-language",
+      "kind": "skill",
+      "purpose": "Rewrite clinical information as patient leaflets at a 6th–8th grade reading level with teach-back questions and clinician review markers."
+    },
+    {
+      "name": "health-literacy-readability",
+      "kind": "skill",
+      "purpose": "Score health materials for readability (Flesch-Kincaid, SMOG) and health-literacy issues (jargon, numeracy) and propose fixes."
+    },
+    {
+      "name": "consent-form-plain-language",
+      "kind": "skill",
+      "purpose": "Redraft consent and procedure forms in plain language while preserving required risk disclosures, for legal/clinical approval."
+    },
+    {
+      "name": "discharge-instructions-patient",
+      "kind": "skill",
+      "purpose": "Write patient-facing discharge instructions: meds schedule, warning signs, when to call, follow-up, in plain language."
+    },
+    {
+      "name": "clinical-trial-protocol-drafting",
+      "kind": "skill",
+      "purpose": "Draft clinical trial protocol sections to SPIRIT guidance (objectives, endpoints, eligibility, schedule of assessments) for investigator review."
+    },
+    {
+      "name": "trial-informed-consent-drafting",
+      "kind": "skill",
+      "purpose": "Draft participant informed consent documents covering required ICH-GCP/Common Rule elements in plain language for IRB submission."
+    },
+    {
+      "name": "case-report-form-design",
+      "kind": "skill",
+      "purpose": "Design case report forms aligned to protocol endpoints with CDASH-style field naming, edit checks and completion guidelines."
+    },
+    {
+      "name": "adverse-event-narrative",
+      "kind": "skill",
+      "purpose": "Write adverse event / SAE narratives with MedDRA-style terms, timeline, causality and outcome fields for safety reviewer sign-off."
+    },
+    {
+      "name": "clinical-note-drafter",
+      "kind": "agent",
+      "purpose": "Turns encounter details or transcripts into SOAP notes, discharge summaries and handoffs, returning a draft with every assumption flagged for clinician sign-off.",
+      "skills": [
+        "soap-note-drafting",
+        "discharge-summary-drafting",
+        "clinical-handoff-sbar"
+      ]
+    },
+    {
+      "name": "clinical-doc-quality-auditor",
+      "kind": "agent",
+      "purpose": "Audits clinical notes for completeness, unsafe abbreviations, med-list conflicts and internal contradictions; returns a findings table by severity.",
+      "skills": [
+        "clinical-abbreviation-hygiene",
+        "medication-list-reconciliation"
+      ]
+    },
+    {
+      "name": "patient-materials-writer",
+      "kind": "agent",
+      "purpose": "Produces plain-language patient leaflets and discharge instructions from clinical source text and reports readability scores for each draft.",
+      "skills": [
+        "patient-leaflet-plain-language",
+        "health-literacy-readability",
+        "discharge-instructions-patient"
+      ]
+    },
+    {
+      "name": "medical-coding-assistant",
+      "kind": "agent",
+      "purpose": "Proposes ICD-10-CM and CPT codes for an encounter with documentation evidence per code, leaving final assignment to a certified coder.",
+      "skills": [
+        "icd10-coding-support",
+        "cpt-coding-support"
+      ]
+    },
+    {
+      "name": "cdi-query-drafter",
+      "kind": "agent",
+      "purpose": "Clinical documentation integrity specialist: finds coding-relevant documentation gaps and drafts compliant, non-leading provider queries.",
+      "skills": [
+        "coding-documentation-gap-check",
+        "hcc-risk-adjustment-review"
+      ]
+    },
+    {
+      "name": "coding-audit-sampler",
+      "kind": "agent",
+      "purpose": "Samples coded encounters, re-checks code support against documentation and returns an accuracy report with error categories and education points.",
+      "skills": [
+        "icd10-coding-support",
+        "cpt-coding-support",
+        "hcc-risk-adjustment-review"
+      ]
+    },
+    {
+      "name": "lesson-plan-builder",
+      "kind": "skill",
+      "purpose": "Build lesson plans with objectives, hook, guided/independent practice, checks for understanding and timing, matched to grade and standard."
+    },
+    {
+      "name": "learning-objectives-blooms",
+      "kind": "skill",
+      "purpose": "Write measurable learning objectives using Bloom's taxonomy verbs and align each to an assessment method."
+    },
+    {
+      "name": "differentiated-instruction",
+      "kind": "skill",
+      "purpose": "Adapt a lesson for ELLs, struggling readers, advanced learners and accommodations (scaffolds, extensions, alternate modalities)."
+    },
+    {
+      "name": "unit-plan-backward-design",
+      "kind": "skill",
+      "purpose": "Plan units with Understanding by Design: enduring understandings, essential questions, performance tasks, then lesson sequence."
+    },
+    {
+      "name": "quiz-item-writing",
+      "kind": "skill",
+      "purpose": "Write multiple-choice, short-answer and constructed-response items with plausible distractors and item-writing flaw checks."
+    },
+    {
+      "name": "edu-rubric-design",
+      "kind": "skill",
+      "purpose": "Design analytic and holistic rubrics with observable criteria, level descriptors and student-friendly versions."
+    },
+    {
+      "name": "assessment-alignment-check",
+      "kind": "skill",
+      "purpose": "Check that assessment items cover stated objectives and standards at the intended cognitive level; output a coverage matrix."
+    },
+    {
+      "name": "answer-key-explanations",
+      "kind": "skill",
+      "purpose": "Produce answer keys with worked solutions and explanations of why each distractor is wrong."
+    },
+    {
+      "name": "socratic-tutoring",
+      "kind": "skill",
+      "purpose": "Tutor by questioning: elicit the learner's reasoning, give graduated hints, never hand over the final answer prematurely."
+    },
+    {
+      "name": "worked-example-tutoring",
+      "kind": "skill",
+      "purpose": "Teach with worked examples and faded scaffolding, then paired practice problems that check transfer."
+    },
+    {
+      "name": "misconception-diagnosis",
+      "kind": "skill",
+      "purpose": "Diagnose the misconception behind a wrong answer and pick a targeted explanation or counterexample."
+    },
+    {
+      "name": "practice-problem-generator",
+      "kind": "skill",
+      "purpose": "Generate leveled practice sets with answers, spaced across difficulty and interleaved topics."
+    },
+    {
+      "name": "syllabus-drafting",
+      "kind": "skill",
+      "purpose": "Draft course syllabi: outcomes, schedule, assessment weights, policies and accessibility statements."
+    },
+    {
+      "name": "online-course-module-design",
+      "kind": "skill",
+      "purpose": "Design online/asynchronous modules with chunked content, activities, discussion and Quality Matters-style alignment."
+    },
+    {
+      "name": "discussion-prompt-design",
+      "kind": "skill",
+      "purpose": "Write discussion prompts and seminar questions that require evidence and peer response, with facilitation notes."
+    },
+    {
+      "name": "report-card-comments",
+      "kind": "skill",
+      "purpose": "Write specific, balanced report-card and progress comments from teacher notes and grades without boilerplate."
+    },
+    {
+      "name": "iep-goal-drafting",
+      "kind": "skill",
+      "purpose": "Draft SMART IEP goals and present-level statements from assessment data for review by the special education team."
+    },
+    {
+      "name": "parent-teacher-communication",
+      "kind": "skill",
+      "purpose": "Draft clear, respectful parent/guardian emails and conference notes on progress, concerns and next steps."
+    },
+    {
+      "name": "student-writing-feedback",
+      "kind": "skill",
+      "purpose": "Give rubric-referenced feedback on student writing: strengths, one or two priority fixes, and a revision task."
+    },
+    {
+      "name": "lesson-plan-designer",
+      "kind": "agent",
+      "purpose": "Designs units and lesson plans from a standard or topic and grade level, returning objectives, sequence, materials and differentiation notes.",
+      "skills": [
+        "lesson-plan-builder",
+        "unit-plan-backward-design",
+        "learning-objectives-blooms",
+        "differentiated-instruction"
+      ]
+    },
+    {
+      "name": "assessment-item-writer",
+      "kind": "agent",
+      "purpose": "Writes quizzes and tests aligned to given objectives, with answer keys, rubrics and an item-flaw self-check.",
+      "skills": [
+        "quiz-item-writing",
+        "edu-rubric-design",
+        "answer-key-explanations"
+      ]
+    },
+    {
+      "name": "curriculum-alignment-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews lessons and assessments against standards and objectives and returns a coverage matrix with gaps and misaligned items.",
+      "skills": [
+        "assessment-alignment-check",
+        "learning-objectives-blooms"
+      ]
+    },
+    {
+      "name": "socratic-tutor",
+      "kind": "agent",
+      "purpose": "Tutors a student through a problem with questions and graduated hints, diagnosing misconceptions without giving away answers.",
+      "skills": [
+        "socratic-tutoring",
+        "misconception-diagnosis"
+      ]
+    },
+    {
+      "name": "homework-feedback-grader",
+      "kind": "agent",
+      "purpose": "Grades student work against a rubric and returns scores with specific, actionable feedback per criterion for teacher review.",
+      "skills": [
+        "edu-rubric-design",
+        "student-writing-feedback"
+      ]
+    },
+    {
+      "name": "practice-set-generator",
+      "kind": "agent",
+      "purpose": "Builds leveled, interleaved practice sets with worked solutions targeted at a learner's identified gaps.",
+      "skills": [
+        "practice-problem-generator",
+        "worked-example-tutoring"
+      ]
+    },
+    {
+      "name": "product-attribute-normalization",
+      "kind": "skill",
+      "purpose": "Normalize product attributes (units, sizes, colors, materials) into a consistent schema and flag conflicting values."
+    },
+    {
+      "name": "product-taxonomy-mapping",
+      "kind": "skill",
+      "purpose": "Map products to category taxonomies (Google Product Category, Amazon browse nodes) with confidence and ambiguity notes."
+    },
+    {
+      "name": "product-variant-modeling",
+      "kind": "skill",
+      "purpose": "Model parent/child variants and option axes correctly so listings, inventory and feeds stay consistent."
+    },
+    {
+      "name": "catalog-feed-validation",
+      "kind": "skill",
+      "purpose": "Validate product feeds (Google Merchant Center, Meta, marketplaces) for required fields, GTINs, image rules and policy violations."
+    },
+    {
+      "name": "amazon-listing-optimization",
+      "kind": "skill",
+      "purpose": "Write and optimize Amazon titles, bullets, backend keywords and A+ outlines within category style guides and character limits."
+    },
+    {
+      "name": "etsy-listing-writing",
+      "kind": "skill",
+      "purpose": "Write Etsy titles, tags, descriptions and attributes that fit Etsy search and handmade/vintage policies."
+    },
+    {
+      "name": "ecom-product-description",
+      "kind": "skill",
+      "purpose": "Write benefit-led product descriptions with specs, sizing and care sections from raw supplier data."
+    },
+    {
+      "name": "marketplace-listing-compliance",
+      "kind": "skill",
+      "purpose": "Check listings for restricted claims, prohibited keywords, IP-risky terms and category-specific compliance rules."
+    },
+    {
+      "name": "order-fulfilment-workflow",
+      "kind": "skill",
+      "purpose": "Design pick-pack-ship workflows, SLAs and exception handling for orders across own warehouse, 3PL and dropship."
+    },
+    {
+      "name": "returns-rma-processing",
+      "kind": "skill",
+      "purpose": "Run returns/RMA: eligibility rules, disposition (restock, refurbish, liquidate), refund timing and fraud flags."
+    },
+    {
+      "name": "shipping-rate-selection",
+      "kind": "skill",
+      "purpose": "Choose carriers and services by zone, weight, dimensional weight and delivery promise; compare rate scenarios."
+    },
+    {
+      "name": "order-exception-handling",
+      "kind": "skill",
+      "purpose": "Triage stuck, split, backordered and address-failed orders with resolution playbooks and customer message templates."
+    },
+    {
+      "name": "sku-reorder-planning",
+      "kind": "skill",
+      "purpose": "Compute reorder points and quantities per SKU from sales velocity, lead time and safety stock."
+    },
+    {
+      "name": "stockout-overstock-review",
+      "kind": "skill",
+      "purpose": "Identify stockout risk and slow/overstocked SKUs and recommend markdowns, transfers or purchase changes."
+    },
+    {
+      "name": "multichannel-inventory-sync",
+      "kind": "skill",
+      "purpose": "Plan inventory allocation and buffers across webstore and marketplaces to avoid oversells; audit sync mismatches."
+    },
+    {
+      "name": "inventory-cycle-count",
+      "kind": "skill",
+      "purpose": "Plan ABC cycle counts, reconcile count variances and document root causes for inventory adjustments."
+    },
+    {
+      "name": "catalog-enrichment-agent",
+      "kind": "agent",
+      "purpose": "Enriches raw supplier product data into normalized attributes, categories and variants, returning a feed-ready table with flagged gaps.",
+      "skills": [
+        "product-attribute-normalization",
+        "product-taxonomy-mapping",
+        "product-variant-modeling"
+      ]
+    },
+    {
+      "name": "marketplace-listing-writer",
+      "kind": "agent",
+      "purpose": "Writes marketplace-specific listings (Amazon, Etsy, webstore) from product data and checks them against listing compliance rules.",
+      "skills": [
+        "amazon-listing-optimization",
+        "etsy-listing-writing",
+        "ecom-product-description",
+        "marketplace-listing-compliance"
+      ]
+    },
+    {
+      "name": "catalog-feed-auditor",
+      "kind": "agent",
+      "purpose": "Audits product feeds and live listings for errors, disapprovals and inconsistencies; returns a prioritized fix list by SKU.",
+      "skills": [
+        "catalog-feed-validation",
+        "marketplace-listing-compliance"
+      ]
+    },
+    {
+      "name": "order-exception-triager",
+      "kind": "agent",
+      "purpose": "Triages order exceptions (stuck, backordered, address failures, returns) and returns an action per order plus customer message drafts.",
+      "skills": [
+        "order-exception-handling",
+        "returns-rma-processing"
+      ]
+    },
+    {
+      "name": "inventory-replenishment-planner",
+      "kind": "agent",
+      "purpose": "Builds weekly reorder recommendations per SKU from sales and lead times, flagging stockout and overstock risk.",
+      "skills": [
+        "sku-reorder-planning",
+        "stockout-overstock-review",
+        "multichannel-inventory-sync"
+      ]
+    },
+    {
+      "name": "shipping-cost-analyst",
+      "kind": "agent",
+      "purpose": "Analyzes shipping spend and carrier mix, models dimensional-weight and zone effects, and recommends carrier/service rules.",
+      "skills": [
+        "shipping-rate-selection"
+      ]
+    },
+    {
+      "name": "systematic-literature-search",
+      "kind": "skill",
+      "purpose": "Build reproducible database search strings (PubMed, Scopus, Web of Science) with synonyms, MeSH and a search log."
+    },
+    {
+      "name": "literature-synthesis-matrix",
+      "kind": "skill",
+      "purpose": "Extract studies into a synthesis matrix (design, sample, findings, limitations) and write thematic synthesis, not summaries in series."
+    },
+    {
+      "name": "prisma-screening",
+      "kind": "skill",
+      "purpose": "Run title/abstract and full-text screening against inclusion criteria with reasons, and produce a PRISMA 2020 flow count."
+    },
+    {
+      "name": "citation-management",
+      "kind": "skill",
+      "purpose": "Manage references with Zotero/BibTeX: dedupe, fix metadata, apply citation styles (APA, Vancouver, Chicago) consistently."
+    },
+    {
+      "name": "imrad-paper-drafting",
+      "kind": "skill",
+      "purpose": "Draft research papers in IMRaD structure with section-specific checklists (CONSORT, STROBE, PRISMA as relevant)."
+    },
+    {
+      "name": "academic-abstract-writing",
+      "kind": "skill",
+      "purpose": "Write structured and unstructured abstracts within word limits that state problem, method, key result and implication."
+    },
+    {
+      "name": "academic-style-editing",
+      "kind": "skill",
+      "purpose": "Edit academic prose for clarity, concision, hedging, tense consistency and paragraph flow without changing claims."
+    },
+    {
+      "name": "journal-submission-prep",
+      "kind": "skill",
+      "purpose": "Prepare submissions: journal fit, author guidelines checklist, cover letter, highlights, declarations and file formatting."
+    },
+    {
+      "name": "research-figure-captions",
+      "kind": "skill",
+      "purpose": "Write self-contained figure and table captions stating what is shown, n, units, statistics and abbreviations."
+    },
+    {
+      "name": "specific-aims-page",
+      "kind": "skill",
+      "purpose": "Draft NIH-style Specific Aims pages: gap, hypothesis, aims, expected outcomes and impact on one page."
+    },
+    {
+      "name": "research-proposal-structure",
+      "kind": "skill",
+      "purpose": "Structure research grant proposals (NSF, ERC, Horizon Europe) to funder sections and review criteria."
+    },
+    {
+      "name": "research-budget-justification",
+      "kind": "skill",
+      "purpose": "Write budget justifications that tie personnel, equipment and travel costs to aims and funder rules."
+    },
+    {
+      "name": "data-management-plan",
+      "kind": "skill",
+      "purpose": "Write data management and sharing plans (NIH DMSP, Horizon Europe DMP) covering formats, repositories, FAIR and access."
+    },
+    {
+      "name": "manuscript-peer-review",
+      "kind": "skill",
+      "purpose": "Write constructive peer review reports: summary, major and minor issues, and a justified recommendation."
+    },
+    {
+      "name": "reviewer-response-letter",
+      "kind": "skill",
+      "purpose": "Draft point-by-point responses to reviewers that quote each comment, state the change and give its location."
+    },
+    {
+      "name": "research-methods-critique",
+      "kind": "skill",
+      "purpose": "Critique study design, sampling, confounding, statistics and validity threats and propose concrete remedies."
+    },
+    {
+      "name": "reproducibility-checklist",
+      "kind": "skill",
+      "purpose": "Check a study for reproducibility: data/code availability, preregistration, analysis transparency and reporting completeness."
+    },
+    {
+      "name": "interview-transcript-coding",
+      "kind": "skill",
+      "purpose": "Code qualitative interview transcripts against a codebook, with excerpts, memos and inter-coder agreement notes."
+    },
+    {
+      "name": "thematic-analysis",
+      "kind": "skill",
+      "purpose": "Run reflexive thematic analysis (Braun & Clarke phases) from codes to themes with supporting quotes."
+    },
+    {
+      "name": "qualitative-codebook-development",
+      "kind": "skill",
+      "purpose": "Develop and refine qualitative codebooks: code definitions, inclusion/exclusion rules and examples."
+    },
+    {
+      "name": "qualitative-memo-writing",
+      "kind": "skill",
+      "purpose": "Write analytic memos linking codes, emerging themes and researcher reflexivity for an audit trail."
+    },
+    {
+      "name": "literature-searcher",
+      "kind": "agent",
+      "purpose": "Designs and documents database searches for a research question and returns search strings, sources and a search log.",
+      "skills": [
+        "systematic-literature-search",
+        "citation-management"
+      ]
+    },
+    {
+      "name": "paper-screener",
+      "kind": "agent",
+      "purpose": "Screens records against inclusion/exclusion criteria, recording decisions with reasons and PRISMA counts.",
+      "skills": [
+        "prisma-screening"
+      ]
+    },
+    {
+      "name": "evidence-synthesizer",
+      "kind": "agent",
+      "purpose": "Extracts included studies into a synthesis matrix and writes a thematic synthesis with strength-of-evidence notes.",
+      "skills": [
+        "literature-synthesis-matrix",
+        "research-methods-critique"
+      ]
+    },
+    {
+      "name": "citation-verifier",
+      "kind": "agent",
+      "purpose": "Checks every in-text citation against the reference list and source metadata, flagging missing, mismatched or unsupported citations.",
+      "skills": [
+        "citation-management"
+      ]
+    },
+    {
+      "name": "manuscript-drafter",
+      "kind": "agent",
+      "purpose": "Drafts manuscript sections and abstracts in IMRaD form from results and notes, applying the relevant reporting checklist.",
+      "skills": [
+        "imrad-paper-drafting",
+        "academic-abstract-writing",
+        "research-figure-captions"
+      ]
+    },
+    {
+      "name": "academic-copyeditor",
+      "kind": "agent",
+      "purpose": "Copyedits academic manuscripts for clarity, consistency and style while preserving claims; returns tracked-change style edits.",
+      "skills": [
+        "academic-style-editing",
+        "citation-management"
+      ]
+    },
+    {
+      "name": "journal-submission-checker",
+      "kind": "agent",
+      "purpose": "Checks a manuscript package against a target journal's author guidelines and returns a pass/fail checklist with fixes.",
+      "skills": [
+        "journal-submission-prep"
+      ]
+    },
+    {
+      "name": "reviewer-response-drafter",
+      "kind": "agent",
+      "purpose": "Turns reviewer comments and a revised manuscript into a point-by-point response letter, flagging comments not yet addressed.",
+      "skills": [
+        "reviewer-response-letter"
+      ]
+    },
+    {
+      "name": "methods-peer-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews a manuscript's design and methods and writes a structured referee report with major/minor issues.",
+      "skills": [
+        "manuscript-peer-review",
+        "research-methods-critique"
+      ]
+    },
+    {
+      "name": "reproducibility-auditor",
+      "kind": "agent",
+      "purpose": "Audits a paper and its materials for reproducibility gaps and returns a checklist with required fixes.",
+      "skills": [
+        "reproducibility-checklist"
+      ]
+    },
+    {
+      "name": "research-statistics-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews reported statistics for appropriate tests, effect sizes, multiple-comparison handling and reporting errors.",
+      "skills": [
+        "research-methods-critique"
+      ]
+    },
+    {
+      "name": "news-story-structure",
+      "kind": "skill",
+      "purpose": "Write news stories in inverted-pyramid or narrative structure with nut graf, attribution and context."
+    },
+    {
+      "name": "news-headline-writing",
+      "kind": "skill",
+      "purpose": "Write accurate news headlines, decks and SEO headlines that match the story without overclaiming."
+    },
+    {
+      "name": "ap-style-editing",
+      "kind": "skill",
+      "purpose": "Copyedit news copy to AP style (numbers, titles, dates, abbreviations) and house style."
+    },
+    {
+      "name": "news-lede-writing",
+      "kind": "skill",
+      "purpose": "Write hard, soft and delayed ledes and choose the right one for the story type."
+    },
+    {
+      "name": "claim-verification",
+      "kind": "skill",
+      "purpose": "Break copy into checkable claims, trace each to primary sources and record a verdict with evidence."
+    },
+    {
+      "name": "source-attribution-check",
+      "kind": "skill",
+      "purpose": "Check attribution, anonymous-source handling and quote accuracy against notes or recordings."
+    },
+    {
+      "name": "image-provenance-check",
+      "kind": "skill",
+      "purpose": "Verify images and video: reverse search, metadata, geolocation and chronolocation checklists."
+    },
+    {
+      "name": "public-records-requests",
+      "kind": "skill",
+      "purpose": "Draft FOIA / public records requests with precise scope, fee waivers and appeal templates."
+    },
+    {
+      "name": "document-trove-analysis",
+      "kind": "skill",
+      "purpose": "Triage large document sets for stories: indexing, entity extraction, timelines and lead lists."
+    },
+    {
+      "name": "data-journalism-story",
+      "kind": "skill",
+      "purpose": "Turn a dataset into a story: question, cleaning log, findings checked with a second method, and caveats."
+    },
+    {
+      "name": "journalism-interview-prep",
+      "kind": "skill",
+      "purpose": "Prepare interview plans: background research, question order, follow-ups and on-/off-record ground rules."
+    },
+    {
+      "name": "news-story-writer",
+      "kind": "agent",
+      "purpose": "Drafts news stories from reporter notes and documents with lede, nut graf and attribution, flagging unverified facts.",
+      "skills": [
+        "news-story-structure",
+        "news-lede-writing"
+      ]
+    },
+    {
+      "name": "news-copy-editor",
+      "kind": "agent",
+      "purpose": "Copyedits stories for AP/house style, clarity, accuracy flags and headline fit; returns edits plus headline options.",
+      "skills": [
+        "ap-style-editing",
+        "news-headline-writing"
+      ]
+    },
+    {
+      "name": "news-fact-checker",
+      "kind": "agent",
+      "purpose": "Extracts claims from a story, verifies each against sources and returns a claim table with verdicts and evidence links.",
+      "skills": [
+        "claim-verification",
+        "source-attribution-check",
+        "image-provenance-check"
+      ]
+    },
+    {
+      "name": "investigative-docs-analyst",
+      "kind": "agent",
+      "purpose": "Works through document troves and records to build timelines, entity maps and story leads with source citations.",
+      "skills": [
+        "document-trove-analysis",
+        "public-records-requests",
+        "data-journalism-story"
+      ]
+    },
+    {
+      "name": "sequence-alignment-workflows",
+      "kind": "skill",
+      "purpose": "Run read alignment (BWA, minimap2, STAR) with QC (FastQC, MultiQC), sorting, dedup and alignment-metric checks."
+    },
+    {
+      "name": "variant-calling-pipeline",
+      "kind": "skill",
+      "purpose": "Call and filter variants (GATK best practices, bcftools) and annotate them (VEP, ANNOVAR) with QC metrics."
+    },
+    {
+      "name": "rnaseq-differential-expression",
+      "kind": "skill",
+      "purpose": "Run bulk RNA-seq differential expression (DESeq2, edgeR) with design formulas, normalization and diagnostics."
+    },
+    {
+      "name": "single-cell-rnaseq-analysis",
+      "kind": "skill",
+      "purpose": "Analyze scRNA-seq with Scanpy/Seurat: QC, normalization, integration, clustering and marker annotation."
+    },
+    {
+      "name": "nextflow-pipeline-authoring",
+      "kind": "skill",
+      "purpose": "Write Nextflow DSL2 pipelines and nf-core modules with containers, configs and resumable runs."
+    },
+    {
+      "name": "snakemake-workflow-authoring",
+      "kind": "skill",
+      "purpose": "Write Snakemake workflows with wildcards, conda/container envs, cluster profiles and reproducible configs."
+    },
+    {
+      "name": "genomic-file-formats",
+      "kind": "skill",
+      "purpose": "Work with FASTQ, BAM/CRAM, VCF, BED, GTF correctly: coordinates, indexing, validation and conversions."
+    },
+    {
+      "name": "bioconductor-analysis",
+      "kind": "skill",
+      "purpose": "Use Bioconductor objects (SummarizedExperiment, GenomicRanges) and packages idiomatically in R analyses."
+    },
+    {
+      "name": "lab-protocol-writing",
+      "kind": "skill",
+      "purpose": "Write step-by-step lab protocols (protocols.io style) with materials, critical steps, timings and safety notes."
+    },
+    {
+      "name": "eln-entry-writing",
+      "kind": "skill",
+      "purpose": "Write electronic lab notebook entries: aim, methods deviations, raw-data links, observations and conclusions."
+    },
+    {
+      "name": "reagent-solution-calculations",
+      "kind": "skill",
+      "purpose": "Calculate molarity, dilutions, serial dilutions, buffer recipes and master mixes with unit checks."
+    },
+    {
+      "name": "experiment-design-replicates",
+      "kind": "skill",
+      "purpose": "Plan wet-lab experiments: controls, biological vs technical replicates, randomization and power considerations."
+    },
+    {
+      "name": "bioinformatics-pipeline-builder",
+      "kind": "agent",
+      "purpose": "Builds Nextflow or Snakemake pipelines for a sequencing analysis, with containers, configs and test data runs.",
+      "skills": [
+        "nextflow-pipeline-authoring",
+        "snakemake-workflow-authoring",
+        "genomic-file-formats"
+      ]
+    },
+    {
+      "name": "rnaseq-analyst",
+      "kind": "agent",
+      "purpose": "Runs bulk or single-cell RNA-seq analyses end to end and returns results, diagnostic plots and a methods paragraph.",
+      "skills": [
+        "rnaseq-differential-expression",
+        "single-cell-rnaseq-analysis",
+        "bioconductor-analysis"
+      ]
+    },
+    {
+      "name": "genomics-qc-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews alignment and variant-calling outputs and QC reports, flagging sample swaps, contamination and low-quality runs.",
+      "skills": [
+        "sequence-alignment-workflows",
+        "variant-calling-pipeline",
+        "genomic-file-formats"
+      ]
+    },
+    {
+      "name": "lab-protocol-writer",
+      "kind": "agent",
+      "purpose": "Turns rough bench notes into clean, reproducible protocols and ELN entries with calculated reagent tables.",
+      "skills": [
+        "lab-protocol-writing",
+        "eln-entry-writing",
+        "reagent-solution-calculations"
+      ]
+    },
+    {
+      "name": "experiment-design-planner",
+      "kind": "agent",
+      "purpose": "Plans a wet-lab experiment with controls, replicates, randomization and a sample layout, and lists confounders.",
+      "skills": [
+        "experiment-design-replicates"
+      ]
+    },
+    {
+      "name": "rdkit-cheminformatics",
+      "kind": "skill",
+      "purpose": "Use RDKit for SMILES parsing, sanitization, substructure search, fingerprints and similarity."
+    },
+    {
+      "name": "molecular-descriptor-calc",
+      "kind": "skill",
+      "purpose": "Compute molecular descriptors and drug-likeness filters (Lipinski, PAINS) and explain each result."
+    },
+    {
+      "name": "quantum-chem-input-prep",
+      "kind": "skill",
+      "purpose": "Prepare and sanity-check Gaussian/ORCA/Psi4 inputs: method, basis set, charge, multiplicity and convergence settings."
+    },
+    {
+      "name": "chemical-structure-formats",
+      "kind": "skill",
+      "purpose": "Convert and validate SMILES, InChI, MOL/SDF and XYZ, preserving stereochemistry and charges."
+    },
+    {
+      "name": "stoichiometry-calculations",
+      "kind": "skill",
+      "purpose": "Balance equations and do stoichiometry: limiting reagent, theoretical yield, equivalents, with unit checks."
+    },
+    {
+      "name": "reaction-yield-analysis",
+      "kind": "skill",
+      "purpose": "Compute yields, conversion and purity-corrected yields and summarize reaction optimization runs."
+    },
+    {
+      "name": "chemical-safety-sds-review",
+      "kind": "skill",
+      "purpose": "Summarize SDS hazards, PPE, incompatibilities and waste handling for a procedure; flag items for EHS review."
+    },
+    {
+      "name": "chemistry-calc-checker",
+      "kind": "agent",
+      "purpose": "Re-derives stoichiometry, concentration and yield calculations in a procedure or notebook and reports every discrepancy.",
+      "skills": [
+        "stoichiometry-calculations",
+        "reagent-solution-calculations",
+        "reaction-yield-analysis"
+      ]
+    },
+    {
+      "name": "unit-consistency-check",
+      "kind": "skill",
+      "purpose": "Check calculations for dimensional and unit consistency (SI/imperial) and catch conversion errors."
+    },
+    {
+      "name": "engineering-calc-sheet",
+      "kind": "skill",
+      "purpose": "Lay out engineering calculation sheets: inputs, assumptions, references, formulas, results and checker sign-off."
+    },
+    {
+      "name": "uncertainty-propagation",
+      "kind": "skill",
+      "purpose": "Propagate measurement uncertainty (GUM, Monte Carlo) and report results with sensible significant figures."
+    },
+    {
+      "name": "beam-stress-calculations",
+      "kind": "skill",
+      "purpose": "Compute beam reactions, bending, shear and deflection with standard cases and code-check references."
+    },
+    {
+      "name": "heat-transfer-calculations",
+      "kind": "skill",
+      "purpose": "Solve conduction, convection and radiation problems and size simple heat exchangers (LMTD, NTU)."
+    },
+    {
+      "name": "pipe-flow-calculations",
+      "kind": "skill",
+      "purpose": "Compute pipe pressure drop (Darcy-Weisbach, Moody), pump head and flow regimes."
+    },
+    {
+      "name": "fatigue-safety-factor",
+      "kind": "skill",
+      "purpose": "Assess fatigue life and safety factors (S-N curves, Goodman, Miner's rule) for cyclic loading."
+    },
+    {
+      "name": "circuit-analysis-calculations",
+      "kind": "skill",
+      "purpose": "Analyze DC/AC circuits (nodal, mesh, phasors), compute power, and verify with simulation-ready netlists."
+    },
+    {
+      "name": "cable-sizing-calculations",
+      "kind": "skill",
+      "purpose": "Size cables and protection by current capacity, derating and voltage drop against the applicable wiring code."
+    },
+    {
+      "name": "analog-filter-design",
+      "kind": "skill",
+      "purpose": "Design passive/active filters (Butterworth, Chebyshev) and compute component values and responses."
+    },
+    {
+      "name": "dimensional-analysis",
+      "kind": "skill",
+      "purpose": "Use Buckingham Pi and scaling laws to reduce problems, check formulas and plan scale models."
+    },
+    {
+      "name": "numerical-ode-solving",
+      "kind": "skill",
+      "purpose": "Set up and solve ODE/PDE models with SciPy, picking solvers, step sizes and convergence checks."
+    },
+    {
+      "name": "engineering-calc-checker",
+      "kind": "agent",
+      "purpose": "Independently checks an engineering calculation sheet: units, assumptions, formulas and arithmetic; returns findings and a checked/not-checked verdict.",
+      "skills": [
+        "engineering-calc-sheet",
+        "unit-consistency-check",
+        "uncertainty-propagation"
+      ]
+    },
+    {
+      "name": "mechanical-calc-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews mechanical and thermal-fluid calculations (stress, deflection, fatigue, heat transfer, pipe flow) against stated codes and assumptions.",
+      "skills": [
+        "beam-stress-calculations",
+        "fatigue-safety-factor",
+        "heat-transfer-calculations",
+        "pipe-flow-calculations"
+      ]
+    },
+    {
+      "name": "electrical-calc-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews electrical calculations (circuits, cable sizing, voltage drop, filters) and flags unsafe or non-compliant results for engineer sign-off.",
+      "skills": [
+        "circuit-analysis-calculations",
+        "cable-sizing-calculations",
+        "analog-filter-design"
+      ]
+    },
+    {
+      "name": "inbox-triage-rules",
+      "kind": "skill",
+      "purpose": "Triage an inbox into act/delegate/defer/archive with rules and filters, and reach inbox zero sustainably."
+    },
+    {
+      "name": "inbox-reply-drafting",
+      "kind": "skill",
+      "purpose": "Draft concise email replies in the user's voice: answer first, clear asks, appropriate tone."
+    },
+    {
+      "name": "email-thread-summary",
+      "kind": "skill",
+      "purpose": "Summarize long email threads into decisions, open questions, owners and deadlines."
+    },
+    {
+      "name": "follow-up-tracking",
+      "kind": "skill",
+      "purpose": "Track waiting-for items and sent asks, and draft polite follow-ups at the right time."
+    },
+    {
+      "name": "meeting-agenda-builder",
+      "kind": "skill",
+      "purpose": "Build agendas with outcomes, timeboxes, pre-reads and owners; recommend cancelling when async fits better."
+    },
+    {
+      "name": "meeting-notes-to-actions",
+      "kind": "skill",
+      "purpose": "Turn meeting notes or transcripts into decisions, action items with owners/dates, and open questions."
+    },
+    {
+      "name": "meeting-recap-email",
+      "kind": "skill",
+      "purpose": "Write short post-meeting recap emails with decisions, actions and next meeting."
+    },
+    {
+      "name": "meeting-decision-log",
+      "kind": "skill",
+      "purpose": "Keep a running decision log: decision, context, alternatives, owner, date, revisit trigger."
+    },
+    {
+      "name": "gtd-capture-clarify",
+      "kind": "skill",
+      "purpose": "Process captured items GTD-style: is it actionable, next physical action, project, someday or reference."
+    },
+    {
+      "name": "gtd-weekly-review",
+      "kind": "skill",
+      "purpose": "Run a GTD weekly review: empty inboxes, review projects, waiting-for, calendar and someday/maybe."
+    },
+    {
+      "name": "next-action-lists",
+      "kind": "skill",
+      "purpose": "Organize next actions by context, energy and time available and pick what to do now."
+    },
+    {
+      "name": "personal-project-outline",
+      "kind": "skill",
+      "purpose": "Plan a personal project: outcome, milestones, next actions and natural-planning brainstorm."
+    },
+    {
+      "name": "zettelkasten-notes",
+      "kind": "skill",
+      "purpose": "Write atomic, linked permanent notes from reading and ideas, with backlinks and index notes."
+    },
+    {
+      "name": "para-note-organization",
+      "kind": "skill",
+      "purpose": "Organize notes and files with PARA (Projects, Areas, Resources, Archives) and keep it maintained."
+    },
+    {
+      "name": "note-summarization",
+      "kind": "skill",
+      "purpose": "Progressively summarize notes and highlights into layered, skimmable summaries."
+    },
+    {
+      "name": "daily-journal-notes",
+      "kind": "skill",
+      "purpose": "Run daily notes: log, reflections, tasks rolled forward, and periodic reviews from journal entries."
+    },
+    {
+      "name": "time-blocking",
+      "kind": "skill",
+      "purpose": "Plan the week into time blocks for deep work, shallow work and buffers, and replan when days slip."
+    },
+    {
+      "name": "daily-planning",
+      "kind": "skill",
+      "purpose": "Make a realistic daily plan: top three priorities, calendar fit, and an end-of-day shutdown."
+    },
+    {
+      "name": "priority-matrix",
+      "kind": "skill",
+      "purpose": "Prioritize tasks with Eisenhower, impact/effort and must/should/could and say what to drop."
+    },
+    {
+      "name": "personal-goal-okrs",
+      "kind": "skill",
+      "purpose": "Set personal goals or OKRs with measurable key results and quarterly check-ins."
+    },
+    {
+      "name": "inbox-triager",
+      "kind": "agent",
+      "purpose": "Triages an inbox snapshot into actions, drafts replies for quick ones and returns a waiting-for list.",
+      "skills": [
+        "inbox-triage-rules",
+        "inbox-reply-drafting",
+        "email-thread-summary",
+        "follow-up-tracking"
+      ]
+    },
+    {
+      "name": "meeting-prep-briefer",
+      "kind": "agent",
+      "purpose": "Prepares a meeting brief: agenda, attendee context, open threads and decisions needed.",
+      "skills": [
+        "meeting-agenda-builder",
+        "email-thread-summary"
+      ]
+    },
+    {
+      "name": "meeting-notes-taker",
+      "kind": "agent",
+      "purpose": "Turns a meeting transcript into notes, a decision log entry, action items and a recap email draft.",
+      "skills": [
+        "meeting-notes-to-actions",
+        "meeting-recap-email",
+        "meeting-decision-log"
+      ]
+    },
+    {
+      "name": "gtd-inbox-processor",
+      "kind": "agent",
+      "purpose": "Processes a raw capture list into next actions, projects, waiting-fors and someday items per GTD.",
+      "skills": [
+        "gtd-capture-clarify",
+        "next-action-lists",
+        "personal-project-outline"
+      ]
+    },
+    {
+      "name": "weekly-review-coach",
+      "kind": "agent",
+      "purpose": "Guides a weekly review, checks goals and projects for stalled items and proposes next week's priorities and time blocks.",
+      "skills": [
+        "gtd-weekly-review",
+        "personal-goal-okrs",
+        "time-blocking"
+      ]
+    },
+    {
+      "name": "daily-plan-agent",
+      "kind": "agent",
+      "purpose": "Builds today's plan from tasks and calendar, picks top priorities and time blocks, and replans when things change.",
+      "skills": [
+        "daily-planning",
+        "priority-matrix",
+        "time-blocking"
+      ]
+    },
+    {
+      "name": "story-structure-outline",
+      "kind": "skill",
+      "purpose": "Outline novels and stories with three-act, Save the Cat or Story Circle structure and check pacing per beat."
+    },
+    {
+      "name": "character-development",
+      "kind": "skill",
+      "purpose": "Build characters with want/need, wound, arc and voice, and check arc consistency across the draft."
+    },
+    {
+      "name": "dialogue-craft",
+      "kind": "skill",
+      "purpose": "Write and revise dialogue for subtext, distinct voices, tags and beats, cutting on-the-nose exposition."
+    },
+    {
+      "name": "scene-writing",
+      "kind": "skill",
+      "purpose": "Write scenes with goal, conflict, outcome and sequel, grounded in POV and sensory detail."
+    },
+    {
+      "name": "pov-tense-consistency",
+      "kind": "skill",
+      "purpose": "Check point of view and tense consistency, head-hopping and narrative distance across a manuscript."
+    },
+    {
+      "name": "developmental-editing",
+      "kind": "skill",
+      "purpose": "Give developmental edits: premise, structure, stakes, character arcs and pacing, as an editorial letter."
+    },
+    {
+      "name": "fiction-line-editing",
+      "kind": "skill",
+      "purpose": "Line edit prose for rhythm, word choice, repetition, filtering and clarity while keeping the author's voice."
+    },
+    {
+      "name": "copyediting-style-sheet",
+      "kind": "skill",
+      "purpose": "Copyedit to Chicago Manual of Style and build a style sheet of names, spellings and conventions."
+    },
+    {
+      "name": "manuscript-continuity-check",
+      "kind": "skill",
+      "purpose": "Track timeline, character details, places and objects and report continuity errors with locations."
+    },
+    {
+      "name": "screenplay-format",
+      "kind": "skill",
+      "purpose": "Format screenplays to industry standard (sluglines, action, dialogue, transitions) and Fountain markup."
+    },
+    {
+      "name": "screenplay-beat-sheet",
+      "kind": "skill",
+      "purpose": "Build beat sheets and step outlines for features, pilots and episodes with page targets."
+    },
+    {
+      "name": "logline-synopsis-writing",
+      "kind": "skill",
+      "purpose": "Write loglines, one-page synopses and treatments for scripts and novels."
+    },
+    {
+      "name": "script-coverage",
+      "kind": "skill",
+      "purpose": "Write script coverage: logline, synopsis, comments on premise, structure, character, dialogue, and a recommend/consider/pass."
+    },
+    {
+      "name": "query-letter-writing",
+      "kind": "skill",
+      "purpose": "Write literary agent query letters with hook, stakes, comps and bio, per agent submission guidelines."
+    },
+    {
+      "name": "book-blurb-writing",
+      "kind": "skill",
+      "purpose": "Write back-cover and retailer blurbs that sell genre, hook and stakes without spoilers."
+    },
+    {
+      "name": "self-publishing-prep",
+      "kind": "skill",
+      "purpose": "Prepare a book for self-publishing: metadata, categories/keywords, front/back matter and file specs (KDP, IngramSpark)."
+    },
+    {
+      "name": "developmental-editor",
+      "kind": "agent",
+      "purpose": "Reads a full manuscript and returns an editorial letter on structure, character, stakes and pacing with prioritized revisions.",
+      "skills": [
+        "developmental-editing",
+        "story-structure-outline",
+        "character-development"
+      ]
+    },
+    {
+      "name": "fiction-line-editor",
+      "kind": "agent",
+      "purpose": "Line edits chapters for prose quality and voice, returning suggested edits with brief rationale.",
+      "skills": [
+        "fiction-line-editing",
+        "dialogue-craft",
+        "pov-tense-consistency"
+      ]
+    },
+    {
+      "name": "continuity-checker",
+      "kind": "agent",
+      "purpose": "Builds a story bible from a manuscript and reports continuity, timeline and style-sheet errors with locations.",
+      "skills": [
+        "manuscript-continuity-check",
+        "copyediting-style-sheet"
+      ]
+    },
+    {
+      "name": "beta-reader",
+      "kind": "agent",
+      "purpose": "Reads as a target-genre reader and reports engagement, confusion points, predictability and where it dragged.",
+      "skills": [
+        "story-structure-outline",
+        "scene-writing"
+      ]
+    },
+    {
+      "name": "script-coverage-reader",
+      "kind": "agent",
+      "purpose": "Reads screenplays and writes industry-style coverage with a recommend/consider/pass verdict.",
+      "skills": [
+        "script-coverage",
+        "screenplay-beat-sheet",
+        "logline-synopsis-writing"
+      ]
+    },
+    {
+      "name": "screenplay-doctor",
+      "kind": "agent",
+      "purpose": "Polishes screenplay drafts: format fixes, scene tightening and dialogue punch-ups, returned as revised pages with notes.",
+      "skills": [
+        "screenplay-format",
+        "dialogue-craft",
+        "scene-writing"
+      ]
+    },
+    {
+      "name": "translation-qa-check",
+      "kind": "skill",
+      "purpose": "QA translations for omissions, mistranslations, numbers, tags, terminology and punctuation against the source."
+    },
+    {
+      "name": "translation-termbase",
+      "kind": "skill",
+      "purpose": "Build and apply termbases/glossaries (TBX/CSV) with approved, forbidden and context-specific terms."
+    },
+    {
+      "name": "mqm-error-annotation",
+      "kind": "skill",
+      "purpose": "Annotate translation errors with the MQM typology and severity and compute a quality score."
+    },
+    {
+      "name": "translation-style-guide",
+      "kind": "skill",
+      "purpose": "Write per-locale translation style guides: tone, formality, formats, brand terms and dos and don'ts."
+    },
+    {
+      "name": "localization-string-review",
+      "kind": "skill",
+      "purpose": "Review UI strings for translatability: concatenation, placeholders, plurals, gender and context notes."
+    },
+    {
+      "name": "locale-format-check",
+      "kind": "skill",
+      "purpose": "Check dates, numbers, currencies, addresses and names against locale conventions (CLDR)."
+    },
+    {
+      "name": "transcreation-marketing",
+      "kind": "skill",
+      "purpose": "Transcreate marketing copy per market, preserving intent and adapting idioms, references and claims."
+    },
+    {
+      "name": "pseudo-localization-review",
+      "kind": "skill",
+      "purpose": "Use pseudo-localization output to find truncation, hard-coded strings and encoding issues in screenshots/strings."
+    },
+    {
+      "name": "document-translator",
+      "kind": "agent",
+      "purpose": "Translates documents with a termbase and style guide, preserving formatting, and returns translator notes on ambiguities.",
+      "skills": [
+        "translation-termbase",
+        "translation-style-guide"
+      ]
+    },
+    {
+      "name": "translation-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews a translation against its source and returns MQM-annotated errors, a quality score and corrected segments.",
+      "skills": [
+        "translation-qa-check",
+        "mqm-error-annotation",
+        "translation-termbase"
+      ]
+    },
+    {
+      "name": "terminology-extractor",
+      "kind": "agent",
+      "purpose": "Extracts candidate terms from source content and proposes a bilingual termbase with definitions and usage notes.",
+      "skills": [
+        "translation-termbase"
+      ]
+    },
+    {
+      "name": "localization-qa-agent",
+      "kind": "agent",
+      "purpose": "Checks localized UI strings and screenshots for placeholders, plurals, truncation and locale-format errors.",
+      "skills": [
+        "localization-string-review",
+        "locale-format-check",
+        "pseudo-localization-review"
+      ]
+    },
+    {
+      "name": "grant-need-statement",
+      "kind": "skill",
+      "purpose": "Write grant need statements backed by local data, beneficiaries and the gap the program fills."
+    },
+    {
+      "name": "logic-model-builder",
+      "kind": "skill",
+      "purpose": "Build logic models / theories of change: inputs, activities, outputs, outcomes and indicators."
+    },
+    {
+      "name": "grant-budget-narrative",
+      "kind": "skill",
+      "purpose": "Write program budgets and budget narratives that match the proposal and funder cost rules."
+    },
+    {
+      "name": "funder-prospect-research",
+      "kind": "skill",
+      "purpose": "Research funders' priorities, eligibility, giving history (990s) and fit, and rank prospects."
+    },
+    {
+      "name": "grant-report-writing",
+      "kind": "skill",
+      "purpose": "Write interim and final grant reports against promised outcomes with data, stories and variances explained."
+    },
+    {
+      "name": "grant-compliance-checklist",
+      "kind": "skill",
+      "purpose": "Check a grant application against the RFP: eligibility, required sections, page limits, attachments and deadlines."
+    },
+    {
+      "name": "donor-appeal-writing",
+      "kind": "skill",
+      "purpose": "Write donor appeal letters and emails with a story, a specific ask and a clear response device."
+    },
+    {
+      "name": "donor-stewardship",
+      "kind": "skill",
+      "purpose": "Plan donor stewardship: thank-you timing, impact updates and segmented touchpoints by gift level."
+    },
+    {
+      "name": "nonprofit-impact-measurement",
+      "kind": "skill",
+      "purpose": "Define outcome indicators, data collection and simple impact dashboards for programs."
+    },
+    {
+      "name": "volunteer-program-management",
+      "kind": "skill",
+      "purpose": "Design volunteer roles, recruitment, onboarding, scheduling and retention practices."
+    },
+    {
+      "name": "grant-prospect-researcher",
+      "kind": "agent",
+      "purpose": "Researches and ranks funders for a program, returning fit rationale, deadlines and ask ranges.",
+      "skills": [
+        "funder-prospect-research"
+      ]
+    },
+    {
+      "name": "grant-proposal-writer",
+      "kind": "agent",
+      "purpose": "Drafts full grant proposals from program info: need, logic model, evaluation plan and budget narrative.",
+      "skills": [
+        "grant-need-statement",
+        "logic-model-builder",
+        "grant-budget-narrative"
+      ]
+    },
+    {
+      "name": "grant-compliance-checker",
+      "kind": "agent",
+      "purpose": "Checks a proposal against the funder RFP and returns a requirement-by-requirement compliance table with gaps.",
+      "skills": [
+        "grant-compliance-checklist"
+      ]
+    },
+    {
+      "name": "grant-report-writer",
+      "kind": "agent",
+      "purpose": "Writes funder reports from program data, comparing outcomes to commitments and explaining variances.",
+      "skills": [
+        "grant-report-writing",
+        "nonprofit-impact-measurement"
+      ]
+    },
+    {
+      "name": "eight-d-problem-solving",
+      "kind": "skill",
+      "purpose": "Run 8D / root-cause investigations with 5 Whys and Ishikawa, containment, verified root cause and permanent corrective action."
+    },
+    {
+      "name": "process-fmea",
+      "kind": "skill",
+      "purpose": "Build process and design FMEAs (AIAG-VDA): failure modes, effects, causes, controls and action priority."
+    },
+    {
+      "name": "spc-control-charts",
+      "kind": "skill",
+      "purpose": "Choose and interpret SPC charts (X-bar/R, I-MR, p, u), apply Western Electric rules and compute Cp/Cpk."
+    },
+    {
+      "name": "ncr-capa-writing",
+      "kind": "skill",
+      "purpose": "Write nonconformance reports and CAPAs with problem statement, containment, root cause and effectiveness checks."
+    },
+    {
+      "name": "manufacturing-value-stream-map",
+      "kind": "skill",
+      "purpose": "Map current and future-state value streams with cycle times, inventory and lead-time ladders."
+    },
+    {
+      "name": "oee-calculation",
+      "kind": "skill",
+      "purpose": "Calculate OEE (availability, performance, quality), find loss categories and prioritize improvements."
+    },
+    {
+      "name": "kaizen-event-planning",
+      "kind": "skill",
+      "purpose": "Plan and run kaizen events: scope, baseline data, team, daily agenda and sustainment plan."
+    },
+    {
+      "name": "standard-work-instructions",
+      "kind": "skill",
+      "purpose": "Write standard work and visual work instructions with key points, reasons, safety and quality checks."
+    },
+    {
+      "name": "mrp-planning",
+      "kind": "skill",
+      "purpose": "Run MRP logic: BOM explosion, netting, lot sizing and lead-time offsetting, and explain exceptions."
+    },
+    {
+      "name": "production-capacity-planning",
+      "kind": "skill",
+      "purpose": "Plan production capacity (RCCP, CRP), find bottlenecks and evaluate overtime or shift options."
+    },
+    {
+      "name": "bom-management",
+      "kind": "skill",
+      "purpose": "Structure and validate BOMs (multi-level, phantoms, alternates) and manage engineering change impacts."
+    },
+    {
+      "name": "production-scheduling",
+      "kind": "skill",
+      "purpose": "Build production schedules with sequencing rules, changeover minimization and finite capacity."
+    },
+    {
+      "name": "manufacturing-8d-investigator",
+      "kind": "agent",
+      "purpose": "Leads an 8D investigation from a defect report, building fishbone and 5-Whys, and returns verified root cause and CAPA draft.",
+      "skills": [
+        "eight-d-problem-solving",
+        "ncr-capa-writing"
+      ]
+    },
+    {
+      "name": "fmea-facilitator",
+      "kind": "agent",
+      "purpose": "Builds or reviews a process/design FMEA, challenging severity/occurrence/detection ratings and proposing actions.",
+      "skills": [
+        "process-fmea"
+      ]
+    },
+    {
+      "name": "spc-analyst",
+      "kind": "agent",
+      "purpose": "Analyzes process data with SPC, flags out-of-control signals and capability problems, and suggests next investigations.",
+      "skills": [
+        "spc-control-charts"
+      ]
+    },
+    {
+      "name": "lean-improvement-coach",
+      "kind": "agent",
+      "purpose": "Analyzes a line's OEE and value stream, identifies top wastes and plans a kaizen with standard work outputs.",
+      "skills": [
+        "oee-calculation",
+        "manufacturing-value-stream-map",
+        "kaizen-event-planning",
+        "standard-work-instructions"
+      ]
+    },
+    {
+      "name": "production-planner",
+      "kind": "agent",
+      "purpose": "Builds MRP-driven production and capacity plans and returns a schedule with bottlenecks and material shortages.",
+      "skills": [
+        "mrp-planning",
+        "production-capacity-planning",
+        "production-scheduling",
+        "bom-management"
+      ]
+    },
+    {
+      "name": "sales-operations-planning",
+      "kind": "skill",
+      "purpose": "Run S&OP cycles: demand review, supply review, gap scenarios and executive decision pack."
+    },
+    {
+      "name": "safety-stock-calculation",
+      "kind": "skill",
+      "purpose": "Calculate safety stock from demand and lead-time variability and service-level targets."
+    },
+    {
+      "name": "supplier-lead-time-analysis",
+      "kind": "skill",
+      "purpose": "Analyze supplier lead times and on-time-in-full performance and their effect on plans."
+    },
+    {
+      "name": "supply-risk-assessment",
+      "kind": "skill",
+      "purpose": "Map supply risks (single source, geography, capacity) and plan mitigations and dual sourcing."
+    },
+    {
+      "name": "freight-mode-selection",
+      "kind": "skill",
+      "purpose": "Choose parcel, LTL, FTL, intermodal, ocean or air by cost, transit time and service needs."
+    },
+    {
+      "name": "route-planning-logistics",
+      "kind": "skill",
+      "purpose": "Plan delivery routes and loads with time windows, capacities and stop sequencing."
+    },
+    {
+      "name": "incoterms-selection",
+      "kind": "skill",
+      "purpose": "Pick Incoterms 2020 and explain risk/cost transfer, insurance and documentation per term."
+    },
+    {
+      "name": "customs-documentation",
+      "kind": "skill",
+      "purpose": "Prepare commercial invoices, packing lists and HS classification candidates for broker review."
+    },
+    {
+      "name": "warehouse-slotting",
+      "kind": "skill",
+      "purpose": "Slot SKUs by velocity, cube and affinity and compute travel savings."
+    },
+    {
+      "name": "pick-path-optimization",
+      "kind": "skill",
+      "purpose": "Design picking methods (batch, zone, wave) and pick paths to cut travel and errors."
+    },
+    {
+      "name": "receiving-putaway",
+      "kind": "skill",
+      "purpose": "Design receiving, inspection and putaway processes with ASN matching and discrepancy handling."
+    },
+    {
+      "name": "demand-supply-planner",
+      "kind": "agent",
+      "purpose": "Prepares the S&OP pack: demand vs supply gaps, safety stock changes and scenarios with recommended decisions.",
+      "skills": [
+        "sales-operations-planning",
+        "safety-stock-calculation",
+        "supplier-lead-time-analysis"
+      ]
+    },
+    {
+      "name": "supply-risk-monitor",
+      "kind": "agent",
+      "purpose": "Assesses supplier and lane risk from performance data and news, scores exposure and proposes mitigations.",
+      "skills": [
+        "supply-risk-assessment",
+        "supplier-lead-time-analysis"
+      ]
+    },
+    {
+      "name": "logistics-optimizer",
+      "kind": "agent",
+      "purpose": "Recommends freight modes, routes and loads for a shipment plan and estimates cost and service trade-offs.",
+      "skills": [
+        "freight-mode-selection",
+        "route-planning-logistics"
+      ]
+    },
+    {
+      "name": "trade-docs-preparer",
+      "kind": "agent",
+      "purpose": "Prepares export/import document drafts and Incoterm guidance for a shipment, flagging items for customs broker review.",
+      "skills": [
+        "customs-documentation",
+        "incoterms-selection"
+      ]
+    },
+    {
+      "name": "warehouse-layout-analyst",
+      "kind": "agent",
+      "purpose": "Analyzes order and SKU data to recommend slotting, picking methods and receiving flow changes with estimated savings.",
+      "skills": [
+        "warehouse-slotting",
+        "pick-path-optimization",
+        "receiving-putaway"
+      ]
+    },
+    {
+      "name": "building-energy-audit",
+      "kind": "skill",
+      "purpose": "Run ASHRAE Level 1/2 style building energy audits: end-use breakdown, measures, savings and payback."
+    },
+    {
+      "name": "utility-bill-analysis",
+      "kind": "skill",
+      "purpose": "Analyze utility bills and interval data: tariffs, demand charges, anomalies and billing errors."
+    },
+    {
+      "name": "energy-baseline-regression",
+      "kind": "skill",
+      "purpose": "Build weather-normalized energy baselines (degree days, IPMVP) to verify savings."
+    },
+    {
+      "name": "solar-pv-sizing",
+      "kind": "skill",
+      "purpose": "Size solar PV systems from load, roof and irradiance (PVWatts-style) and estimate yield and payback."
+    },
+    {
+      "name": "battery-storage-sizing",
+      "kind": "skill",
+      "purpose": "Size battery storage for peak shaving, backup or self-consumption from load profiles."
+    },
+    {
+      "name": "load-profile-analysis",
+      "kind": "skill",
+      "purpose": "Analyze load profiles: peaks, base load, load factor and shifting opportunities."
+    },
+    {
+      "name": "energy-audit-analyst",
+      "kind": "agent",
+      "purpose": "Analyzes a building's bills and data, produces an audit with ranked efficiency measures and savings estimates.",
+      "skills": [
+        "building-energy-audit",
+        "utility-bill-analysis",
+        "energy-baseline-regression"
+      ]
+    },
+    {
+      "name": "solar-storage-sizer",
+      "kind": "agent",
+      "purpose": "Sizes solar and battery systems from load data and site info and returns yield, savings and payback scenarios.",
+      "skills": [
+        "solar-pv-sizing",
+        "battery-storage-sizing",
+        "load-profile-analysis"
+      ]
+    },
+    {
+      "name": "energy-savings-verifier",
+      "kind": "agent",
+      "purpose": "Verifies claimed energy savings with IPMVP-style weather-normalized baselines and returns a measurement and verification report.",
+      "skills": [
+        "energy-baseline-regression",
+        "utility-bill-analysis"
+      ]
+    },
+    {
+      "name": "crop-rotation-planning",
+      "kind": "skill",
+      "purpose": "Plan crop rotations and planting calendars by field, climate and market constraints."
+    },
+    {
+      "name": "soil-test-interpretation",
+      "kind": "skill",
+      "purpose": "Interpret soil tests and build nutrient/fertilizer recommendations with agronomist review notes."
+    },
+    {
+      "name": "irrigation-scheduling",
+      "kind": "skill",
+      "purpose": "Schedule irrigation from ET, soil moisture and crop coefficients."
+    },
+    {
+      "name": "integrated-pest-management",
+      "kind": "skill",
+      "purpose": "Plan IPM: scouting, thresholds, cultural/biological controls, and label-compliant chemical options."
+    },
+    {
+      "name": "livestock-feed-ration",
+      "kind": "skill",
+      "purpose": "Balance livestock rations against nutrient requirements and feed costs for nutritionist review."
+    },
+    {
+      "name": "crop-plan-advisor",
+      "kind": "agent",
+      "purpose": "Builds a season plan per field: rotation, planting dates, fertility and irrigation schedule, with assumptions listed.",
+      "skills": [
+        "crop-rotation-planning",
+        "soil-test-interpretation",
+        "irrigation-scheduling"
+      ]
+    },
+    {
+      "name": "pest-scouting-advisor",
+      "kind": "agent",
+      "purpose": "Turns scouting reports into IPM recommendations with thresholds and label-compliant options for agronomist sign-off.",
+      "skills": [
+        "integrated-pest-management"
+      ]
+    },
+    {
+      "name": "livestock-nutrition-assistant",
+      "kind": "agent",
+      "purpose": "Formulates and costs livestock rations from feed analyses and animal requirements for nutritionist review.",
+      "skills": [
+        "livestock-feed-ration"
+      ]
+    },
+    {
+      "name": "property-listing-writing",
+      "kind": "skill",
+      "purpose": "Write property listings that are accurate, fair-housing compliant and highlight features buyers search for."
+    },
+    {
+      "name": "comparable-market-analysis",
+      "kind": "skill",
+      "purpose": "Build CMAs: select and adjust comps, reconcile to a price range and explain adjustments."
+    },
+    {
+      "name": "rental-property-analysis",
+      "kind": "skill",
+      "purpose": "Analyze rental deals: NOI, cap rate, cash-on-cash, DSCR and sensitivity to rent and rate."
+    },
+    {
+      "name": "commercial-lease-abstraction",
+      "kind": "skill",
+      "purpose": "Abstract leases into key terms: rent schedule, escalations, options, CAM, obligations and critical dates."
+    },
+    {
+      "name": "tenant-communication",
+      "kind": "skill",
+      "purpose": "Draft tenant notices and responses (rent, maintenance, renewals) that are clear and jurisdiction-aware, for manager review."
+    },
+    {
+      "name": "maintenance-request-triage",
+      "kind": "skill",
+      "purpose": "Triage maintenance requests by urgency, habitability and cost, and assign vendor work orders."
+    },
+    {
+      "name": "rent-roll-review",
+      "kind": "skill",
+      "purpose": "Review rent rolls for vacancies, delinquencies, below-market rents and lease expiry concentration."
+    },
+    {
+      "name": "real-estate-listing-writer",
+      "kind": "agent",
+      "purpose": "Writes property listings and social copy from property data and photos notes, checking fair-housing language.",
+      "skills": [
+        "property-listing-writing"
+      ]
+    },
+    {
+      "name": "cma-analyst",
+      "kind": "agent",
+      "purpose": "Builds a comparable market analysis with adjusted comps and a price recommendation range.",
+      "skills": [
+        "comparable-market-analysis",
+        "rental-property-analysis"
+      ]
+    },
+    {
+      "name": "lease-abstractor",
+      "kind": "agent",
+      "purpose": "Abstracts leases into a structured summary with critical dates and flags unusual clauses for attorney review.",
+      "skills": [
+        "commercial-lease-abstraction"
+      ]
+    },
+    {
+      "name": "tenant-request-triager",
+      "kind": "agent",
+      "purpose": "Triages incoming tenant requests, drafts responses and creates prioritized work orders.",
+      "skills": [
+        "maintenance-request-triage",
+        "tenant-communication"
+      ]
+    },
+    {
+      "name": "travel-itinerary-builder",
+      "kind": "skill",
+      "purpose": "Build day-by-day itineraries with realistic transit times, opening hours, bookings and backups."
+    },
+    {
+      "name": "travel-budget-planner",
+      "kind": "skill",
+      "purpose": "Estimate trip budgets by category and compare options for flights, stays and passes."
+    },
+    {
+      "name": "travel-entry-requirements",
+      "kind": "skill",
+      "purpose": "Check visa, passport validity and entry requirements and point to official sources to confirm."
+    },
+    {
+      "name": "trip-packing-list",
+      "kind": "skill",
+      "purpose": "Build packing lists from destination, weather, activities and luggage limits."
+    },
+    {
+      "name": "guest-review-response",
+      "kind": "skill",
+      "purpose": "Respond to guest reviews on OTAs and Google: acknowledge, address specifics, invite back, without defensiveness."
+    },
+    {
+      "name": "hotel-revenue-management",
+      "kind": "skill",
+      "purpose": "Set room rates and restrictions from pace, pickup, competitor rates and events."
+    },
+    {
+      "name": "menu-costing",
+      "kind": "skill",
+      "purpose": "Cost recipes and menus, compute plate cost and food-cost percentage and suggest price points."
+    },
+    {
+      "name": "hospitality-sop-writing",
+      "kind": "skill",
+      "purpose": "Write front desk, housekeeping and F&B SOPs and checklists for consistent service."
+    },
+    {
+      "name": "trip-planner",
+      "kind": "agent",
+      "purpose": "Plans a trip end to end: itinerary, budget, entry requirements and packing list, with booking checklist.",
+      "skills": [
+        "travel-itinerary-builder",
+        "travel-budget-planner",
+        "travel-entry-requirements",
+        "trip-packing-list"
+      ]
+    },
+    {
+      "name": "guest-review-responder",
+      "kind": "agent",
+      "purpose": "Drafts personalized responses to a batch of guest reviews and summarizes recurring issues for operations.",
+      "skills": [
+        "guest-review-response"
+      ]
+    },
+    {
+      "name": "hotel-revenue-analyst",
+      "kind": "agent",
+      "purpose": "Analyzes pace and comp-set data and recommends rate and restriction changes for the next 90 days.",
+      "skills": [
+        "hotel-revenue-management"
+      ]
+    },
+    {
+      "name": "menu-cost-analyst",
+      "kind": "agent",
+      "purpose": "Costs menus from recipes and supplier prices and recommends price or portion changes to hit food-cost targets.",
+      "skills": [
+        "menu-costing"
+      ]
+    },
+    {
+      "name": "game-design-document",
+      "kind": "skill",
+      "purpose": "Write game design documents and one-pagers: pillars, core loop, mechanics, progression and scope."
+    },
+    {
+      "name": "game-balance-tuning",
+      "kind": "skill",
+      "purpose": "Balance game economies and combat with spreadsheets and simulation: curves, sinks/faucets, DPS and win rates."
+    },
+    {
+      "name": "level-design-principles",
+      "kind": "skill",
+      "purpose": "Design and critique levels for flow, pacing, readability, guidance and difficulty ramps."
+    },
+    {
+      "name": "narrative-quest-design",
+      "kind": "skill",
+      "purpose": "Design quests and branching narrative with dialogue trees, state tracking and player agency."
+    },
+    {
+      "name": "playtest-analysis",
+      "kind": "skill",
+      "purpose": "Plan playtests and turn observations and telemetry into prioritized design issues."
+    },
+    {
+      "name": "unity-csharp-gameplay",
+      "kind": "skill",
+      "purpose": "Write Unity gameplay code: MonoBehaviour lifecycle, ScriptableObjects, input system and prefabs done right."
+    },
+    {
+      "name": "unity-performance",
+      "kind": "skill",
+      "purpose": "Profile and optimize Unity games: GC allocations, draw calls, batching, physics and mobile settings."
+    },
+    {
+      "name": "unity-project-structure",
+      "kind": "skill",
+      "purpose": "Organize Unity projects: assemblies, addressables, scenes, version control (Git LFS) and build pipelines."
+    },
+    {
+      "name": "godot-gdscript-patterns",
+      "kind": "skill",
+      "purpose": "Write idiomatic GDScript: typed code, signals, autoloads and node lifecycle."
+    },
+    {
+      "name": "godot-scene-architecture",
+      "kind": "skill",
+      "purpose": "Structure Godot scenes and resources for composition, reuse and clean dependencies."
+    },
+    {
+      "name": "godot-export-builds",
+      "kind": "skill",
+      "purpose": "Configure Godot export presets, platform settings and CI builds."
+    },
+    {
+      "name": "unreal-blueprints",
+      "kind": "skill",
+      "purpose": "Build maintainable Unreal Blueprints: interfaces, event dispatchers, avoiding tick and spaghetti graphs."
+    },
+    {
+      "name": "unreal-cpp-gameplay",
+      "kind": "skill",
+      "purpose": "Write Unreal C++ gameplay: UCLASS/UPROPERTY, Gameplay Framework, GAS basics and Blueprint exposure."
+    },
+    {
+      "name": "unreal-performance",
+      "kind": "skill",
+      "purpose": "Profile Unreal projects with Unreal Insights and stat commands; fix GPU, CPU and memory bottlenecks."
+    },
+    {
+      "name": "game-design-doc-writer",
+      "kind": "agent",
+      "purpose": "Turns a game concept into a GDD with pillars, core loop, mechanics and a scoped feature list.",
+      "skills": [
+        "game-design-document",
+        "narrative-quest-design"
+      ]
+    },
+    {
+      "name": "game-balance-analyst",
+      "kind": "agent",
+      "purpose": "Models and tunes a game's economy or combat numbers and returns recommended values with simulation results.",
+      "skills": [
+        "game-balance-tuning",
+        "playtest-analysis"
+      ]
+    },
+    {
+      "name": "level-design-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews level layouts or descriptions for flow, pacing, readability and difficulty and returns annotated feedback.",
+      "skills": [
+        "level-design-principles",
+        "playtest-analysis"
+      ]
+    },
+    {
+      "name": "unity-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Unity C# and project setup for lifecycle bugs, allocations and structure problems.",
+      "skills": [
+        "unity-csharp-gameplay",
+        "unity-performance",
+        "unity-project-structure"
+      ]
+    },
+    {
+      "name": "godot-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Godot projects for GDScript idioms, scene architecture and export configuration issues.",
+      "skills": [
+        "godot-gdscript-patterns",
+        "godot-scene-architecture",
+        "godot-export-builds"
+      ]
+    },
+    {
+      "name": "unreal-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Unreal C++ and Blueprints for framework misuse, tick abuse and performance problems.",
+      "skills": [
+        "unreal-cpp-gameplay",
+        "unreal-blueprints",
+        "unreal-performance"
+      ]
+    },
+    {
+      "name": "video-script-writing",
+      "kind": "skill",
+      "purpose": "Write video scripts (YouTube, explainer, corporate) with hook, structure, B-roll cues and timing."
+    },
+    {
+      "name": "shot-list-storyboard",
+      "kind": "skill",
+      "purpose": "Build shot lists and storyboards with framing, movement, audio and setup order for efficient shoots."
+    },
+    {
+      "name": "video-editing-workflow",
+      "kind": "skill",
+      "purpose": "Plan edit workflows: ingest, proxies, assembly to fine cut, color and audio passes, export specs."
+    },
+    {
+      "name": "ffmpeg-video-transcoding",
+      "kind": "skill",
+      "purpose": "Use ffmpeg for transcoding, trimming, concatenation, scaling, audio extraction and delivery specs."
+    },
+    {
+      "name": "podcast-episode-planning",
+      "kind": "skill",
+      "purpose": "Plan podcast episodes: format, segments, guest research, question flow and run sheet."
+    },
+    {
+      "name": "podcast-show-notes",
+      "kind": "skill",
+      "purpose": "Write show notes, chapter markers, titles and episode descriptions from transcripts."
+    },
+    {
+      "name": "audio-cleanup-workflow",
+      "kind": "skill",
+      "purpose": "Clean dialogue audio: noise reduction, EQ, de-essing, compression with a repeatable chain."
+    },
+    {
+      "name": "loudness-normalization",
+      "kind": "skill",
+      "purpose": "Normalize to loudness targets (EBU R128, -16/-14 LUFS, true peak) for each platform."
+    },
+    {
+      "name": "subtitle-srt-vtt",
+      "kind": "skill",
+      "purpose": "Create and fix SRT/VTT subtitles: timing, line length, reading speed and segmentation rules."
+    },
+    {
+      "name": "caption-accessibility",
+      "kind": "skill",
+      "purpose": "Write accessible captions and audio descriptions (speaker IDs, sound cues) to WCAG/FCC guidance."
+    },
+    {
+      "name": "transcript-cleanup",
+      "kind": "skill",
+      "purpose": "Clean transcripts: speaker labels, verbatim vs clean read, timestamps and filler removal."
+    },
+    {
+      "name": "video-scriptwriter",
+      "kind": "agent",
+      "purpose": "Writes video scripts and shot lists from a brief, with timing and B-roll cues.",
+      "skills": [
+        "video-script-writing",
+        "shot-list-storyboard"
+      ]
+    },
+    {
+      "name": "post-production-assistant",
+      "kind": "agent",
+      "purpose": "Plans the edit and produces ffmpeg commands and loudness-compliant export settings for each delivery target.",
+      "skills": [
+        "video-editing-workflow",
+        "ffmpeg-video-transcoding",
+        "loudness-normalization"
+      ]
+    },
+    {
+      "name": "subtitle-editor",
+      "kind": "agent",
+      "purpose": "Creates or fixes subtitles from transcripts, enforcing reading speed, line length and accessibility caption rules.",
+      "skills": [
+        "subtitle-srt-vtt",
+        "caption-accessibility",
+        "transcript-cleanup"
+      ]
+    },
+    {
+      "name": "podcast-producer",
+      "kind": "agent",
+      "purpose": "Plans episodes, preps guest questions and writes show notes and chapters from transcripts.",
+      "skills": [
+        "podcast-episode-planning",
+        "podcast-show-notes",
+        "transcript-cleanup"
+      ]
+    },
+    {
+      "name": "policy-brief-writing",
+      "kind": "skill",
+      "purpose": "Write policy briefs: problem, evidence, options with trade-offs and a recommendation, for decision-makers."
+    },
+    {
+      "name": "regulatory-impact-assessment",
+      "kind": "skill",
+      "purpose": "Draft regulatory impact assessments: baseline, options, costs/benefits, affected groups and uncertainty."
+    },
+    {
+      "name": "public-comment-analysis",
+      "kind": "skill",
+      "purpose": "Code and summarize public consultation comments into themes, counts and representative quotes."
+    },
+    {
+      "name": "legislative-bill-summary",
+      "kind": "skill",
+      "purpose": "Summarize bills and regulations: what changes, who is affected, effective dates and open questions."
+    },
+    {
+      "name": "plain-language-government",
+      "kind": "skill",
+      "purpose": "Rewrite government content to plain-language standards (plainlanguage.gov, GOV.UK style)."
+    },
+    {
+      "name": "foia-response-drafting",
+      "kind": "skill",
+      "purpose": "Draft public records/FOIA response letters with search description, exemptions cited and appeal rights, for counsel review."
+    },
+    {
+      "name": "public-service-design",
+      "kind": "skill",
+      "purpose": "Apply service design to public services: user journeys, pain points and service standard assessments."
+    },
+    {
+      "name": "policy-brief-writer",
+      "kind": "agent",
+      "purpose": "Drafts policy briefs and option analyses from evidence packs with trade-off tables and a recommendation.",
+      "skills": [
+        "policy-brief-writing",
+        "legislative-bill-summary"
+      ]
+    },
+    {
+      "name": "public-comment-analyzer",
+      "kind": "agent",
+      "purpose": "Processes large sets of consultation comments into a coded theme report with counts and quotes.",
+      "skills": [
+        "public-comment-analysis"
+      ]
+    },
+    {
+      "name": "regulatory-impact-analyst",
+      "kind": "agent",
+      "purpose": "Builds a regulatory impact assessment for a proposal, quantifying options where data allows and listing assumptions.",
+      "skills": [
+        "regulatory-impact-assessment"
+      ]
+    },
+    {
+      "name": "plain-language-rewriter",
+      "kind": "agent",
+      "purpose": "Rewrites government letters, forms and web pages in plain language and reports readability before and after.",
+      "skills": [
+        "plain-language-government",
+        "health-literacy-readability"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2257 @@
+{
+  "domain": "ai-ml",
+  "arks": [
+    {
+      "name": "prompt-engineering",
+      "type": "skill",
+      "topic": "prompt engineering",
+      "description": "For developers writing LLM prompts: skills for structuring prompts, writing system prompts, designing few-shot examples and eliciting reasoning so outputs are consistent.",
+      "items": [
+        {
+          "package": "prompt-structure-patterns",
+          "required": true
+        },
+        {
+          "package": "system-prompt-authoring",
+          "required": true
+        },
+        {
+          "package": "few-shot-example-design",
+          "required": true
+        },
+        {
+          "package": "chain-of-thought-prompting",
+          "required": false
+        },
+        {
+          "package": "prompt-iteration-workflow",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "prompt-ops",
+      "type": "skill",
+      "topic": "prompt management and iteration",
+      "description": "For teams running prompts in production: versioned templates, a test-set iteration workflow and regression gates so prompt changes ship safely.",
+      "items": [
+        {
+          "package": "prompt-templating",
+          "required": true
+        },
+        {
+          "package": "prompt-iteration-workflow",
+          "required": true
+        },
+        {
+          "package": "llm-regression-testing",
+          "required": true
+        },
+        {
+          "package": "llm-eval-harness",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-structured-output",
+      "type": "skill",
+      "topic": "structured LLM outputs",
+      "description": "For developers who need machine-readable LLM output: JSON Schema outputs, function calling, Pydantic/Zod validation with repair loops, and LLM classifiers.",
+      "items": [
+        {
+          "package": "llm-structured-outputs",
+          "required": true
+        },
+        {
+          "package": "pydantic-llm-validation",
+          "required": true
+        },
+        {
+          "package": "llm-function-calling",
+          "required": true
+        },
+        {
+          "package": "llm-classification-prompts",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "claude-app-building",
+      "type": "skill",
+      "topic": "building on the Claude API",
+      "description": "For developers building on Anthropic models: Messages API usage, prompt caching, streaming, tool use and the Claude Agent SDK.",
+      "items": [
+        {
+          "package": "claude-api-integration",
+          "required": true
+        },
+        {
+          "package": "llm-prompt-caching",
+          "required": true
+        },
+        {
+          "package": "llm-streaming-responses",
+          "required": false
+        },
+        {
+          "package": "llm-function-calling",
+          "required": false
+        },
+        {
+          "package": "claude-agent-sdk",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "openai-app-building",
+      "type": "skill",
+      "topic": "building on the OpenAI API",
+      "description": "For developers building on OpenAI models: Responses API, structured outputs, tools, batch processing and the Agents SDK.",
+      "items": [
+        {
+          "package": "openai-api-integration",
+          "required": true
+        },
+        {
+          "package": "llm-structured-outputs",
+          "required": true
+        },
+        {
+          "package": "llm-batch-processing",
+          "required": false
+        },
+        {
+          "package": "openai-agents-sdk",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "multi-provider-llm",
+      "type": "skill",
+      "topic": "multi-provider LLM integration",
+      "description": "For teams using several model vendors: a provider abstraction with fallbacks, model selection evals, prompt migration between models, and Claude, OpenAI and Gemini integration notes.",
+      "items": [
+        {
+          "package": "llm-provider-abstraction",
+          "required": true
+        },
+        {
+          "package": "llm-model-selection",
+          "required": true
+        },
+        {
+          "package": "llm-prompt-migration",
+          "required": true
+        },
+        {
+          "package": "claude-api-integration",
+          "required": false
+        },
+        {
+          "package": "openai-api-integration",
+          "required": false
+        },
+        {
+          "package": "gemini-api-integration",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-app-foundations",
+      "type": "skill",
+      "topic": "LLM application architecture",
+      "description": "For engineers starting an LLM feature: choosing the architecture, managing conversation state, handling failure modes and streaming responses.",
+      "items": [
+        {
+          "package": "llm-app-architecture",
+          "required": true
+        },
+        {
+          "package": "llm-error-handling",
+          "required": true
+        },
+        {
+          "package": "llm-conversation-state",
+          "required": true
+        },
+        {
+          "package": "llm-streaming-responses",
+          "required": false
+        },
+        {
+          "package": "llm-structured-outputs",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-chat-apps",
+      "type": "skill",
+      "topic": "chat application building",
+      "description": "For developers building chat assistants: chat UI patterns, streaming, conversation memory and the Vercel AI SDK.",
+      "items": [
+        {
+          "package": "chat-ui-patterns",
+          "required": true
+        },
+        {
+          "package": "llm-streaming-responses",
+          "required": true
+        },
+        {
+          "package": "llm-conversation-state",
+          "required": true
+        },
+        {
+          "package": "vercel-ai-sdk",
+          "required": false
+        },
+        {
+          "package": "system-prompt-authoring",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "text-to-sql",
+      "type": "skill",
+      "topic": "text-to-SQL with LLMs",
+      "description": "For teams adding natural-language querying over databases: text-to-SQL design, structured output, evaluation and error handling.",
+      "items": [
+        {
+          "package": "text-to-sql-llm",
+          "required": true
+        },
+        {
+          "package": "llm-eval-dataset-design",
+          "required": true
+        },
+        {
+          "package": "llm-structured-outputs",
+          "required": false
+        },
+        {
+          "package": "llm-error-handling",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-summarization",
+      "type": "skill",
+      "topic": "LLM summarisation",
+      "description": "For developers summarising long documents and threads: map-reduce and refine strategies, hallucination checks, token budgeting and evals.",
+      "items": [
+        {
+          "package": "llm-summarization-patterns",
+          "required": true
+        },
+        {
+          "package": "llm-hallucination-mitigation",
+          "required": true
+        },
+        {
+          "package": "llm-token-optimization",
+          "required": false
+        },
+        {
+          "package": "llm-as-judge",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "rag-fundamentals",
+      "type": "skill",
+      "topic": "retrieval-augmented generation basics",
+      "description": "For developers building their first RAG system: chunking, retrieval, citation and grounding, embedding choice and evaluation.",
+      "items": [
+        {
+          "package": "rag-retrieval-pipeline",
+          "required": true
+        },
+        {
+          "package": "rag-chunking-strategies",
+          "required": true
+        },
+        {
+          "package": "rag-citation-grounding",
+          "required": true
+        },
+        {
+          "package": "embedding-model-selection",
+          "required": false
+        },
+        {
+          "package": "rag-evaluation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "rag-advanced",
+      "type": "skill",
+      "topic": "advanced RAG retrieval",
+      "description": "For teams whose RAG quality has plateaued: hybrid search, reranking, query transformation, contextual retrieval, graph RAG and index maintenance.",
+      "items": [
+        {
+          "package": "rag-hybrid-search",
+          "required": true
+        },
+        {
+          "package": "rag-reranking",
+          "required": true
+        },
+        {
+          "package": "rag-query-transformation",
+          "required": true
+        },
+        {
+          "package": "contextual-retrieval",
+          "required": false
+        },
+        {
+          "package": "graph-rag",
+          "required": false
+        },
+        {
+          "package": "rag-index-maintenance",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "document-ingestion",
+      "type": "skill",
+      "topic": "document parsing for LLMs",
+      "description": "For teams feeding PDFs, scans and office documents to LLMs: parsing, OCR, table extraction and chunking that respects document structure.",
+      "items": [
+        {
+          "package": "pdf-parsing-for-llms",
+          "required": true
+        },
+        {
+          "package": "ocr-pipelines",
+          "required": true
+        },
+        {
+          "package": "table-extraction-llm",
+          "required": true
+        },
+        {
+          "package": "rag-chunking-strategies",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "document-extraction",
+      "type": "skill",
+      "topic": "LLM document data extraction",
+      "description": "For developers extracting fields from invoices, contracts and forms: schema-driven LLM extraction, validation, OCR and accuracy evaluation.",
+      "items": [
+        {
+          "package": "llm-document-extraction",
+          "required": true
+        },
+        {
+          "package": "pydantic-llm-validation",
+          "required": true
+        },
+        {
+          "package": "ocr-pipelines",
+          "required": false
+        },
+        {
+          "package": "vision-language-models",
+          "required": false
+        },
+        {
+          "package": "llm-eval-metrics",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "embeddings",
+      "type": "skill",
+      "topic": "text embeddings",
+      "description": "For engineers working with embeddings: model selection, fine-tuning with hard negatives, deduplication and clustering of text.",
+      "items": [
+        {
+          "package": "embedding-model-selection",
+          "required": true
+        },
+        {
+          "package": "embedding-fine-tuning",
+          "required": true
+        },
+        {
+          "package": "semantic-dedup-clustering",
+          "required": false
+        },
+        {
+          "package": "hf-transformers-usage",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "vector-databases",
+      "type": "skill",
+      "topic": "vector databases",
+      "description": "For developers storing and searching embeddings: choosing a vector DB, tuning ANN indexes, and using pgvector or Qdrant in production.",
+      "items": [
+        {
+          "package": "vector-db-selection",
+          "required": true
+        },
+        {
+          "package": "vector-index-tuning",
+          "required": true
+        },
+        {
+          "package": "vector-db-pgvector",
+          "required": false
+        },
+        {
+          "package": "vector-db-qdrant",
+          "required": false
+        },
+        {
+          "package": "rag-hybrid-search",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-evals",
+      "type": "skill",
+      "topic": "LLM evaluation",
+      "description": "For teams that need to measure LLM quality: eval dataset design, metrics, LLM-as-judge, error analysis and an eval harness in CI.",
+      "items": [
+        {
+          "package": "llm-eval-dataset-design",
+          "required": true
+        },
+        {
+          "package": "llm-as-judge",
+          "required": true
+        },
+        {
+          "package": "llm-eval-metrics",
+          "required": true
+        },
+        {
+          "package": "llm-error-analysis",
+          "required": true
+        },
+        {
+          "package": "llm-eval-harness",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "rag-evals",
+      "type": "skill",
+      "topic": "RAG evaluation",
+      "description": "For RAG builders who need numbers: retrieval and faithfulness metrics, labelled query sets, judges and failure analysis.",
+      "items": [
+        {
+          "package": "rag-evaluation",
+          "required": true
+        },
+        {
+          "package": "llm-eval-dataset-design",
+          "required": true
+        },
+        {
+          "package": "llm-as-judge",
+          "required": false
+        },
+        {
+          "package": "llm-error-analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "agent-design",
+      "type": "skill",
+      "topic": "LLM agent design",
+      "description": "For engineers building LLM agents: agent loops, tool design, planning patterns, context engineering, memory and sandboxed tool execution.",
+      "items": [
+        {
+          "package": "agent-loop-design",
+          "required": true
+        },
+        {
+          "package": "agent-tool-design",
+          "required": true
+        },
+        {
+          "package": "agent-context-engineering",
+          "required": true
+        },
+        {
+          "package": "agent-planning-patterns",
+          "required": false
+        },
+        {
+          "package": "agent-memory-design",
+          "required": false
+        },
+        {
+          "package": "agent-sandboxing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "multi-agent-systems",
+      "type": "skill",
+      "topic": "multi-agent orchestration",
+      "description": "For builders of systems with several cooperating agents: orchestration patterns, context isolation, human approval gates and evaluation.",
+      "items": [
+        {
+          "package": "multi-agent-orchestration",
+          "required": true
+        },
+        {
+          "package": "agent-context-engineering",
+          "required": true
+        },
+        {
+          "package": "agent-human-in-the-loop",
+          "required": false
+        },
+        {
+          "package": "agent-evaluation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "agent-sdks",
+      "type": "skill",
+      "topic": "agent SDKs and frameworks",
+      "description": "For developers choosing an agent framework: the Claude Agent SDK, OpenAI Agents SDK and LangGraph, with shared loop-design guidance.",
+      "items": [
+        {
+          "package": "agent-loop-design",
+          "required": true
+        },
+        {
+          "package": "claude-agent-sdk",
+          "required": false
+        },
+        {
+          "package": "openai-agents-sdk",
+          "required": false
+        },
+        {
+          "package": "langgraph-agents",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "agent-skills-authoring",
+      "type": "skill",
+      "topic": "authoring agent skills and subagents",
+      "description": "For people extending coding agents: writing SKILL.md skills and subagent definitions, designing their tools and evaluating them.",
+      "items": [
+        {
+          "package": "agent-skill-authoring",
+          "required": true
+        },
+        {
+          "package": "agent-tool-design",
+          "required": true
+        },
+        {
+          "package": "agent-context-engineering",
+          "required": false
+        },
+        {
+          "package": "agent-evaluation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "mcp-server-development",
+      "type": "skill",
+      "topic": "building MCP servers",
+      "description": "For developers exposing APIs to agents: building MCP servers in TypeScript or Python, tool schema design, OAuth for remote servers, client integration and testing.",
+      "items": [
+        {
+          "package": "mcp-tool-schema-design",
+          "required": true
+        },
+        {
+          "package": "mcp-server-testing",
+          "required": true
+        },
+        {
+          "package": "mcp-server-typescript",
+          "required": false
+        },
+        {
+          "package": "mcp-server-python",
+          "required": false
+        },
+        {
+          "package": "mcp-server-auth",
+          "required": false
+        },
+        {
+          "package": "mcp-client-integration",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "langchain-langgraph",
+      "type": "skill",
+      "topic": "LangChain and LangGraph",
+      "description": "For developers on the LangChain stack: idiomatic LangChain components and LangGraph stateful agents with tracing.",
+      "items": [
+        {
+          "package": "langchain-patterns",
+          "required": true
+        },
+        {
+          "package": "langgraph-agents",
+          "required": true
+        },
+        {
+          "package": "llm-tracing",
+          "required": false
+        },
+        {
+          "package": "rag-retrieval-pipeline",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llamaindex",
+      "type": "skill",
+      "topic": "LlamaIndex",
+      "description": "For developers building data-heavy LLM apps with LlamaIndex: ingestion, indexes, query engines and evaluation.",
+      "items": [
+        {
+          "package": "llamaindex-patterns",
+          "required": true
+        },
+        {
+          "package": "rag-retrieval-pipeline",
+          "required": true
+        },
+        {
+          "package": "pdf-parsing-for-llms",
+          "required": false
+        },
+        {
+          "package": "rag-evaluation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "dspy",
+      "type": "skill",
+      "topic": "DSPy prompt programming",
+      "description": "For teams optimising prompts programmatically: DSPy signatures, modules and optimizers driven by metrics and eval sets.",
+      "items": [
+        {
+          "package": "dspy-programs",
+          "required": true
+        },
+        {
+          "package": "llm-eval-metrics",
+          "required": true
+        },
+        {
+          "package": "llm-eval-dataset-design",
+          "required": false
+        },
+        {
+          "package": "few-shot-example-design",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-guardrails",
+      "type": "skill",
+      "topic": "LLM guardrails",
+      "description": "For teams shipping user-facing LLM features: prompt injection defence, output validation, content moderation and hallucination mitigation.",
+      "items": [
+        {
+          "package": "prompt-injection-defense",
+          "required": true
+        },
+        {
+          "package": "llm-output-guardrails",
+          "required": true
+        },
+        {
+          "package": "llm-content-moderation",
+          "required": true
+        },
+        {
+          "package": "llm-hallucination-mitigation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ai-red-teaming",
+      "type": "skill",
+      "topic": "authorised LLM red teaming",
+      "description": "For safety and security teams testing their own LLM systems: red-team planning, safety evals, injection testing and synthetic attack data.",
+      "items": [
+        {
+          "package": "ai-red-teaming-methods",
+          "required": true
+        },
+        {
+          "package": "llm-safety-evals",
+          "required": true
+        },
+        {
+          "package": "prompt-injection-defense",
+          "required": false
+        },
+        {
+          "package": "synthetic-data-generation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-observability",
+      "type": "skill",
+      "topic": "LLM observability",
+      "description": "For engineers running LLM features: tracing, production monitoring, error analysis and feedback clustering.",
+      "items": [
+        {
+          "package": "llm-tracing",
+          "required": true
+        },
+        {
+          "package": "llm-production-monitoring",
+          "required": true
+        },
+        {
+          "package": "llm-error-analysis",
+          "required": true
+        },
+        {
+          "package": "semantic-dedup-clustering",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-cost-optimization",
+      "type": "skill",
+      "topic": "LLM cost reduction",
+      "description": "For teams facing large LLM bills or slow responses: prompt caching, model routing, token trimming, latency tactics and batch APIs, with regression checks on quality.",
+      "items": [
+        {
+          "package": "llm-prompt-caching",
+          "required": true
+        },
+        {
+          "package": "llm-model-routing",
+          "required": true
+        },
+        {
+          "package": "llm-token-optimization",
+          "required": true
+        },
+        {
+          "package": "llm-latency-optimization",
+          "required": false
+        },
+        {
+          "package": "llm-batch-processing",
+          "required": false
+        },
+        {
+          "package": "llm-regression-testing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "local-llms",
+      "type": "skill",
+      "topic": "running LLMs locally",
+      "description": "For developers running open-weight models on their own machines: Ollama, llama.cpp, quantisation and model choice.",
+      "items": [
+        {
+          "package": "ollama-local-llms",
+          "required": true
+        },
+        {
+          "package": "llama-cpp-gguf",
+          "required": true
+        },
+        {
+          "package": "open-weight-model-selection",
+          "required": true
+        },
+        {
+          "package": "llm-quantization",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-serving",
+      "type": "skill",
+      "topic": "self-hosted LLM serving",
+      "description": "For platform teams serving open models: vLLM, SGLang/TGI, quantisation, benchmarking and GPU sizing.",
+      "items": [
+        {
+          "package": "vllm-serving",
+          "required": true
+        },
+        {
+          "package": "llm-inference-benchmarking",
+          "required": true
+        },
+        {
+          "package": "sglang-tgi-serving",
+          "required": false
+        },
+        {
+          "package": "llm-quantization",
+          "required": false
+        },
+        {
+          "package": "gpu-capacity-planning",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-fine-tuning",
+      "type": "skill",
+      "topic": "LLM fine-tuning",
+      "description": "For ML engineers fine-tuning LLMs: deciding whether to fine-tune, data preparation, LoRA/QLoRA training and evaluation against baselines.",
+      "items": [
+        {
+          "package": "finetune-vs-prompt-decision",
+          "required": true
+        },
+        {
+          "package": "llm-finetune-data-prep",
+          "required": true
+        },
+        {
+          "package": "lora-qlora-finetuning",
+          "required": true
+        },
+        {
+          "package": "llm-finetune-evaluation",
+          "required": true
+        },
+        {
+          "package": "hosted-finetuning-apis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-alignment-training",
+      "type": "skill",
+      "topic": "preference tuning and RLHF",
+      "description": "For researchers and ML engineers aligning models: DPO/ORPO/KTO, reward modelling, RLHF/RLAIF and distillation.",
+      "items": [
+        {
+          "package": "preference-optimization",
+          "required": true
+        },
+        {
+          "package": "reward-modeling-rlhf",
+          "required": true
+        },
+        {
+          "package": "llm-finetune-evaluation",
+          "required": false
+        },
+        {
+          "package": "model-distillation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "synthetic-data",
+      "type": "skill",
+      "topic": "synthetic data for ML",
+      "description": "For teams short on training or eval data: LLM-generated synthetic data, curation, deduplication and weak supervision.",
+      "items": [
+        {
+          "package": "synthetic-data-generation",
+          "required": true
+        },
+        {
+          "package": "training-data-curation",
+          "required": true
+        },
+        {
+          "package": "semantic-dedup-clustering",
+          "required": false
+        },
+        {
+          "package": "weak-supervision",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "data-labeling",
+      "type": "skill",
+      "topic": "data labelling for ML",
+      "description": "For teams building labelled datasets: annotation guidelines, active learning, weak supervision and label quality checks.",
+      "items": [
+        {
+          "package": "data-labeling-guidelines",
+          "required": true
+        },
+        {
+          "package": "active-learning",
+          "required": true
+        },
+        {
+          "package": "weak-supervision",
+          "required": false
+        },
+        {
+          "package": "training-data-curation",
+          "required": false
+        },
+        {
+          "package": "human-eval-annotation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "sklearn-modeling",
+      "type": "skill",
+      "topic": "scikit-learn modelling",
+      "description": "For data scientists using scikit-learn: leak-free pipelines, model selection, cross-validation and metrics.",
+      "items": [
+        {
+          "package": "sklearn-pipelines",
+          "required": true
+        },
+        {
+          "package": "sklearn-model-selection",
+          "required": true
+        },
+        {
+          "package": "ml-cross-validation",
+          "required": true
+        },
+        {
+          "package": "ml-classification-metrics",
+          "required": false
+        },
+        {
+          "package": "ml-data-leakage-detection",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "tabular-ml",
+      "type": "skill",
+      "topic": "tabular machine learning",
+      "description": "For practitioners building models on tabular data: gradient boosting, feature engineering, imbalanced targets, tuning and calibration.",
+      "items": [
+        {
+          "package": "gradient-boosting-models",
+          "required": true
+        },
+        {
+          "package": "ml-feature-engineering",
+          "required": true
+        },
+        {
+          "package": "ml-imbalanced-data",
+          "required": false
+        },
+        {
+          "package": "hyperparameter-optimization",
+          "required": false
+        },
+        {
+          "package": "ml-probability-calibration",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ml-model-evaluation",
+      "type": "skill",
+      "topic": "evaluating classical ML models",
+      "description": "For data scientists validating models before release: validation schemes, metrics and thresholds, calibration, leakage checks and interpretability.",
+      "items": [
+        {
+          "package": "ml-cross-validation",
+          "required": true
+        },
+        {
+          "package": "ml-classification-metrics",
+          "required": true
+        },
+        {
+          "package": "ml-data-leakage-detection",
+          "required": true
+        },
+        {
+          "package": "ml-probability-calibration",
+          "required": false
+        },
+        {
+          "package": "ml-interpretability",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "unsupervised-ml",
+      "type": "skill",
+      "topic": "unsupervised learning",
+      "description": "For practitioners exploring unlabelled data: clustering, anomaly detection, embedding-based grouping and topic discovery.",
+      "items": [
+        {
+          "package": "ml-clustering",
+          "required": true
+        },
+        {
+          "package": "ml-anomaly-detection",
+          "required": true
+        },
+        {
+          "package": "semantic-dedup-clustering",
+          "required": false
+        },
+        {
+          "package": "topic-modeling",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "pytorch-training",
+      "type": "skill",
+      "topic": "PyTorch training",
+      "description": "For deep learning engineers: PyTorch training loops, debugging, performance tuning and Lightning structure, plus CUDA environment setup.",
+      "items": [
+        {
+          "package": "pytorch-training-loops",
+          "required": true
+        },
+        {
+          "package": "pytorch-debugging",
+          "required": true
+        },
+        {
+          "package": "pytorch-performance",
+          "required": true
+        },
+        {
+          "package": "pytorch-lightning",
+          "required": false
+        },
+        {
+          "package": "ml-reproducibility",
+          "required": false
+        },
+        {
+          "package": "gpu-environment-setup",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "large-scale-training",
+      "type": "skill",
+      "topic": "distributed and large-model training",
+      "description": "For engineers training models that outgrow one GPU: DDP/FSDP/DeepSpeed, memory optimisation, capacity planning and Ray.",
+      "items": [
+        {
+          "package": "distributed-training",
+          "required": true
+        },
+        {
+          "package": "gpu-memory-optimization",
+          "required": true
+        },
+        {
+          "package": "gpu-capacity-planning",
+          "required": true
+        },
+        {
+          "package": "ray-for-ml",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "jax",
+      "type": "skill",
+      "topic": "JAX and Flax",
+      "description": "For researchers and engineers using JAX: Flax/Optax training, sharding and transformer internals.",
+      "items": [
+        {
+          "package": "jax-flax-training",
+          "required": true
+        },
+        {
+          "package": "transformer-architecture",
+          "required": false
+        },
+        {
+          "package": "ml-reproducibility",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "hugging-face",
+      "type": "skill",
+      "topic": "Hugging Face ecosystem",
+      "description": "For practitioners using the Hugging Face stack: Transformers, datasets and the Hub, LoRA fine-tuning and model cards.",
+      "items": [
+        {
+          "package": "hf-transformers-usage",
+          "required": true
+        },
+        {
+          "package": "hf-datasets-hub",
+          "required": true
+        },
+        {
+          "package": "lora-qlora-finetuning",
+          "required": false
+        },
+        {
+          "package": "model-card-writing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "computer-vision",
+      "type": "skill",
+      "topic": "computer vision models",
+      "description": "For engineers training vision models: image classification, object detection, segmentation and augmentation.",
+      "items": [
+        {
+          "package": "cv-image-classification",
+          "required": true
+        },
+        {
+          "package": "cv-object-detection",
+          "required": true
+        },
+        {
+          "package": "cv-segmentation",
+          "required": true
+        },
+        {
+          "package": "cv-data-augmentation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "multimodal-vision",
+      "type": "skill",
+      "topic": "vision-language and generative imaging",
+      "description": "For builders of multimodal features: vision-language models, diffusion image generation and video understanding.",
+      "items": [
+        {
+          "package": "vision-language-models",
+          "required": true
+        },
+        {
+          "package": "diffusion-image-generation",
+          "required": true
+        },
+        {
+          "package": "video-understanding",
+          "required": false
+        },
+        {
+          "package": "llm-eval-dataset-design",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "nlp",
+      "type": "skill",
+      "topic": "natural language processing",
+      "description": "For NLP engineers: text preprocessing, classification, NER, spaCy pipelines, topic modelling and machine translation models.",
+      "items": [
+        {
+          "package": "nlp-text-preprocessing",
+          "required": true
+        },
+        {
+          "package": "nlp-text-classification",
+          "required": true
+        },
+        {
+          "package": "nlp-named-entity-recognition",
+          "required": true
+        },
+        {
+          "package": "spacy-pipelines",
+          "required": false
+        },
+        {
+          "package": "topic-modeling",
+          "required": false
+        },
+        {
+          "package": "machine-translation-models",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "speech-ai",
+      "type": "skill",
+      "topic": "speech recognition and synthesis",
+      "description": "For developers working with audio: Whisper transcription, diarisation, text-to-speech and audio classification.",
+      "items": [
+        {
+          "package": "speech-recognition-whisper",
+          "required": true
+        },
+        {
+          "package": "speaker-diarization",
+          "required": true
+        },
+        {
+          "package": "text-to-speech",
+          "required": true
+        },
+        {
+          "package": "audio-classification",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "voice-agents",
+      "type": "skill",
+      "topic": "real-time voice agents",
+      "description": "For teams building voice assistants: streaming ASR/LLM/TTS pipelines, turn-taking and latency budgets.",
+      "items": [
+        {
+          "package": "voice-agent-pipelines",
+          "required": true
+        },
+        {
+          "package": "speech-recognition-whisper",
+          "required": true
+        },
+        {
+          "package": "text-to-speech",
+          "required": true
+        },
+        {
+          "package": "llm-latency-optimization",
+          "required": false
+        },
+        {
+          "package": "agent-tool-design",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "recommender-systems",
+      "type": "skill",
+      "topic": "recommender systems",
+      "description": "For engineers building recommendations: collaborative filtering, two-tower retrieval, ranking, cold start and evaluation.",
+      "items": [
+        {
+          "package": "recsys-collaborative-filtering",
+          "required": true
+        },
+        {
+          "package": "recsys-two-tower-retrieval",
+          "required": true
+        },
+        {
+          "package": "recsys-ranking-models",
+          "required": true
+        },
+        {
+          "package": "recsys-evaluation",
+          "required": true
+        },
+        {
+          "package": "recsys-cold-start",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ml-forecasting",
+      "type": "skill",
+      "topic": "time-series forecasting with ML",
+      "description": "For practitioners forecasting demand, load or traffic: baselines, gradient boosting and neural models, backtesting and intervals.",
+      "items": [
+        {
+          "package": "ml-forecasting-baselines",
+          "required": true
+        },
+        {
+          "package": "forecast-backtesting",
+          "required": true
+        },
+        {
+          "package": "ml-forecasting-gbdt",
+          "required": false
+        },
+        {
+          "package": "neural-forecasting",
+          "required": false
+        },
+        {
+          "package": "probabilistic-forecasting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "mlops-tracking",
+      "type": "skill",
+      "topic": "experiment tracking and model registry",
+      "description": "For ML teams organising their runs: MLflow or W&B tracking, a model registry and reproducibility practices.",
+      "items": [
+        {
+          "package": "mlflow-tracking",
+          "required": true
+        },
+        {
+          "package": "ml-model-registry",
+          "required": true
+        },
+        {
+          "package": "wandb-tracking",
+          "required": false
+        },
+        {
+          "package": "ml-reproducibility",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ml-pipelines",
+      "type": "skill",
+      "topic": "ML training pipelines",
+      "description": "For ML engineers productionising training: pipeline orchestration, feature stores, CI/CD with eval gates and Ray.",
+      "items": [
+        {
+          "package": "ml-pipeline-orchestration",
+          "required": true
+        },
+        {
+          "package": "ml-ci-cd",
+          "required": true
+        },
+        {
+          "package": "ml-feature-store",
+          "required": false
+        },
+        {
+          "package": "ray-for-ml",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "model-deployment",
+      "type": "skill",
+      "topic": "deploying ML models",
+      "description": "For engineers putting models in production: packaging, online serving, batch inference and monitoring.",
+      "items": [
+        {
+          "package": "ml-model-packaging",
+          "required": true
+        },
+        {
+          "package": "ml-online-serving",
+          "required": true
+        },
+        {
+          "package": "ml-batch-inference",
+          "required": true
+        },
+        {
+          "package": "ml-model-monitoring",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cloud-ml-platforms",
+      "type": "skill",
+      "topic": "managed cloud ML platforms",
+      "description": "For teams on managed ML platforms: SageMaker and Vertex AI training, deployment, pipelines and cost control.",
+      "items": [
+        {
+          "package": "sagemaker-ml",
+          "required": true
+        },
+        {
+          "package": "vertex-ai-ml",
+          "required": true
+        },
+        {
+          "package": "ml-compute-cost-control",
+          "required": false
+        },
+        {
+          "package": "hosted-finetuning-apis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "edge-ml",
+      "type": "skill",
+      "topic": "on-device and edge ML",
+      "description": "For engineers shipping models to phones, browsers and edge devices: ONNX optimisation, mobile runtimes, compression and in-browser inference.",
+      "items": [
+        {
+          "package": "onnx-model-optimization",
+          "required": true
+        },
+        {
+          "package": "mobile-ml-deployment",
+          "required": true
+        },
+        {
+          "package": "model-compression",
+          "required": true
+        },
+        {
+          "package": "webgpu-browser-ml",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "responsible-ai",
+      "type": "skill",
+      "topic": "responsible AI practice",
+      "description": "For teams documenting and checking AI systems: fairness assessment, model cards, data provenance and user-facing AI disclosures.",
+      "items": [
+        {
+          "package": "ml-fairness-assessment",
+          "required": true
+        },
+        {
+          "package": "model-card-writing",
+          "required": true
+        },
+        {
+          "package": "training-data-provenance",
+          "required": false
+        },
+        {
+          "package": "ai-transparency-disclosure",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ai-governance",
+      "type": "skill",
+      "topic": "AI risk and regulatory documentation",
+      "description": "For engineering leads preparing AI governance artefacts: risk assessments, EU AI Act technical documentation and model cards, drafted for legal review.",
+      "items": [
+        {
+          "package": "ai-risk-assessment",
+          "required": true
+        },
+        {
+          "package": "eu-ai-act-technical-docs",
+          "required": true
+        },
+        {
+          "package": "model-card-writing",
+          "required": false
+        },
+        {
+          "package": "training-data-provenance",
+          "required": false
+        },
+        {
+          "package": "llm-safety-evals",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ml-research-practice",
+      "type": "skill",
+      "topic": "applied ML research",
+      "description": "For researchers and engineers turning papers into results: reading papers, reimplementation, experiment design and transformer internals.",
+      "items": [
+        {
+          "package": "ml-paper-reading",
+          "required": true
+        },
+        {
+          "package": "ml-paper-implementation",
+          "required": true
+        },
+        {
+          "package": "ml-experiment-design",
+          "required": true
+        },
+        {
+          "package": "transformer-architecture",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ml-system-design",
+      "type": "skill",
+      "topic": "ML system design",
+      "description": "For engineers designing ML-powered products end to end: system design, AI feature scoping, architecture choice and monitoring.",
+      "items": [
+        {
+          "package": "ml-system-design",
+          "required": true
+        },
+        {
+          "package": "ai-feature-scoping",
+          "required": true
+        },
+        {
+          "package": "llm-app-architecture",
+          "required": false
+        },
+        {
+          "package": "ml-model-monitoring",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "prompt-engineering-agents",
+      "type": "agent",
+      "topic": "prompt engineering",
+      "description": "For teams writing many prompts: agents that review prompts, optimise them against a test set, curate few-shot examples and write prompt tests.",
+      "items": [
+        {
+          "package": "prompt-reviewer",
+          "required": true
+        },
+        {
+          "package": "prompt-optimizer",
+          "required": true
+        },
+        {
+          "package": "prompt-test-writer",
+          "required": false
+        },
+        {
+          "package": "few-shot-curator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "rag-builder-agents",
+      "type": "agent",
+      "topic": "building RAG systems",
+      "description": "For developers building RAG: agents that design the pipeline, tune chunking, debug bad retrievals and run RAG evals.",
+      "items": [
+        {
+          "package": "rag-architect",
+          "required": true
+        },
+        {
+          "package": "retrieval-debugger",
+          "required": true
+        },
+        {
+          "package": "chunking-tuner",
+          "required": false
+        },
+        {
+          "package": "rag-eval-runner",
+          "required": false
+        },
+        {
+          "package": "vector-search-tuner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-eval-agents",
+      "type": "agent",
+      "topic": "LLM evaluation",
+      "description": "For teams standing up LLM evals: agents that build datasets, design and calibrate judges, compare runs and analyse failures.",
+      "items": [
+        {
+          "package": "eval-dataset-builder",
+          "required": true
+        },
+        {
+          "package": "llm-judge-designer",
+          "required": true
+        },
+        {
+          "package": "eval-regression-analyst",
+          "required": true
+        },
+        {
+          "package": "llm-failure-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "agent-builder-agents",
+      "type": "agent",
+      "topic": "designing LLM agents",
+      "description": "For engineers building agents: agents that design agent architectures, review tool definitions, debug transcripts and build agent evals.",
+      "items": [
+        {
+          "package": "agent-architect",
+          "required": true
+        },
+        {
+          "package": "agent-tool-reviewer",
+          "required": true
+        },
+        {
+          "package": "agent-trace-debugger",
+          "required": true
+        },
+        {
+          "package": "agent-eval-builder",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "mcp-builder-agents",
+      "type": "agent",
+      "topic": "building MCP servers",
+      "description": "For developers exposing systems over MCP: agents that scaffold servers, review them and test every tool with scripted sessions.",
+      "items": [
+        {
+          "package": "mcp-server-scaffolder",
+          "required": true
+        },
+        {
+          "package": "mcp-server-reviewer",
+          "required": true
+        },
+        {
+          "package": "mcp-tool-tester",
+          "required": true
+        },
+        {
+          "package": "agent-tool-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "agent-extension-agents",
+      "type": "agent",
+      "topic": "extending coding agents",
+      "description": "For people customising coding agents: agents that write skills and subagents, review their tool use and build evals for them.",
+      "items": [
+        {
+          "package": "agent-skill-writer",
+          "required": true
+        },
+        {
+          "package": "agent-eval-builder",
+          "required": true
+        },
+        {
+          "package": "agent-tool-reviewer",
+          "required": false
+        },
+        {
+          "package": "prompt-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-app-review-agents",
+      "type": "agent",
+      "topic": "reviewing LLM application code",
+      "description": "For reviewers of LLM-powered code: agents that check LLM code quality, prompt injection exposure, prompts and token cost.",
+      "items": [
+        {
+          "package": "llm-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "prompt-injection-auditor",
+          "required": true
+        },
+        {
+          "package": "llm-cost-auditor",
+          "required": false
+        },
+        {
+          "package": "prompt-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-safety-agents",
+      "type": "agent",
+      "topic": "LLM safety testing",
+      "description": "For safety teams testing their own LLM products under authorisation: agents that plan red-team exercises, design guardrails and analyse safety evals.",
+      "items": [
+        {
+          "package": "ai-red-team-planner",
+          "required": true
+        },
+        {
+          "package": "safety-eval-analyst",
+          "required": true
+        },
+        {
+          "package": "guardrail-designer",
+          "required": true
+        },
+        {
+          "package": "prompt-injection-auditor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "fine-tuning-agents",
+      "type": "agent",
+      "topic": "LLM fine-tuning",
+      "description": "For ML engineers fine-tuning LLMs: agents that prepare data, plan training runs and evaluate the result against baselines.",
+      "items": [
+        {
+          "package": "finetune-data-preparer",
+          "required": true
+        },
+        {
+          "package": "finetune-config-planner",
+          "required": true
+        },
+        {
+          "package": "finetune-eval-analyst",
+          "required": true
+        },
+        {
+          "package": "ai-build-vs-buy-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "synthetic-data-agents",
+      "type": "agent",
+      "topic": "synthetic data",
+      "description": "For teams generating training or eval data: agents that generate synthetic examples, audit them and build eval sets from them.",
+      "items": [
+        {
+          "package": "synthetic-data-generator",
+          "required": true
+        },
+        {
+          "package": "synthetic-data-auditor",
+          "required": true
+        },
+        {
+          "package": "eval-dataset-builder",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "data-labeling-agents",
+      "type": "agent",
+      "topic": "data labelling",
+      "description": "For teams building labelled datasets: agents that write annotation guidelines, audit label quality and plan active-learning rounds.",
+      "items": [
+        {
+          "package": "labeling-guideline-writer",
+          "required": true
+        },
+        {
+          "package": "label-quality-auditor",
+          "required": true
+        },
+        {
+          "package": "active-learning-planner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "tabular-ml-agents",
+      "type": "agent",
+      "topic": "tabular modelling",
+      "description": "For data scientists on tabular problems: agents that build leak-free baselines, engineer features and evaluate models for release.",
+      "items": [
+        {
+          "package": "tabular-baseline-builder",
+          "required": true
+        },
+        {
+          "package": "ml-feature-engineer",
+          "required": true
+        },
+        {
+          "package": "ml-model-evaluator",
+          "required": true
+        },
+        {
+          "package": "ml-leakage-auditor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ml-code-review-agents",
+      "type": "agent",
+      "topic": "reviewing ML code",
+      "description": "For ML teams reviewing pull requests: agents that review ML code, hunt data leakage and refactor notebooks into pipelines.",
+      "items": [
+        {
+          "package": "ml-code-reviewer",
+          "required": true
+        },
+        {
+          "package": "ml-leakage-auditor",
+          "required": true
+        },
+        {
+          "package": "notebook-to-pipeline-refactorer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "deep-learning-agents",
+      "type": "agent",
+      "topic": "deep learning training",
+      "description": "For deep learning engineers: agents that debug failing training, profile performance and plan multi-GPU scaling.",
+      "items": [
+        {
+          "package": "pytorch-training-debugger",
+          "required": true
+        },
+        {
+          "package": "pytorch-perf-profiler",
+          "required": true
+        },
+        {
+          "package": "training-scale-planner",
+          "required": false
+        },
+        {
+          "package": "ml-gpu-cost-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ml-research-agents",
+      "type": "agent",
+      "topic": "applied ML research",
+      "description": "For researchers: agents that summarise papers, implement methods, plan experiments and analyse results.",
+      "items": [
+        {
+          "package": "ml-paper-summarizer",
+          "required": true
+        },
+        {
+          "package": "ml-paper-implementer",
+          "required": true
+        },
+        {
+          "package": "ml-experiment-planner",
+          "required": true
+        },
+        {
+          "package": "ml-results-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "mlops-agents",
+      "type": "agent",
+      "topic": "MLOps",
+      "description": "For ML platform engineers: agents that plan deployments, build training pipelines and design model monitoring.",
+      "items": [
+        {
+          "package": "ml-deployment-planner",
+          "required": true
+        },
+        {
+          "package": "ml-pipeline-builder",
+          "required": true
+        },
+        {
+          "package": "model-monitoring-designer",
+          "required": true
+        },
+        {
+          "package": "notebook-to-pipeline-refactorer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "model-serving-agents",
+      "type": "agent",
+      "topic": "model inference optimisation",
+      "description": "For teams serving models at scale: agents that tune LLM serving, optimise inference and set up local LLM stacks.",
+      "items": [
+        {
+          "package": "llm-serving-tuner",
+          "required": true
+        },
+        {
+          "package": "inference-optimizer",
+          "required": true
+        },
+        {
+          "package": "local-llm-setup-agent",
+          "required": false
+        },
+        {
+          "package": "ml-gpu-cost-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-cost-agents",
+      "type": "agent",
+      "topic": "LLM cost and model choice",
+      "description": "For teams controlling LLM spend: agents that audit cost, design model routing and run model bake-offs.",
+      "items": [
+        {
+          "package": "llm-cost-auditor",
+          "required": true
+        },
+        {
+          "package": "model-router-designer",
+          "required": true
+        },
+        {
+          "package": "llm-selection-advisor",
+          "required": true
+        },
+        {
+          "package": "llm-trace-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "computer-vision-agents",
+      "type": "agent",
+      "topic": "computer vision",
+      "description": "For vision engineers: agents that build training pipelines, analyse model errors and design VLM-based alternatives.",
+      "items": [
+        {
+          "package": "cv-pipeline-builder",
+          "required": true
+        },
+        {
+          "package": "cv-error-analyst",
+          "required": true
+        },
+        {
+          "package": "vlm-task-designer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "nlp-agents",
+      "type": "agent",
+      "topic": "NLP model building",
+      "description": "For NLP teams: agents that build text classifiers and NER models, compare LLMs against trained classifiers and write labelling guidelines.",
+      "items": [
+        {
+          "package": "nlp-model-builder",
+          "required": true
+        },
+        {
+          "package": "llm-vs-classifier-advisor",
+          "required": true
+        },
+        {
+          "package": "labeling-guideline-writer",
+          "required": false
+        },
+        {
+          "package": "label-quality-auditor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "speech-agents",
+      "type": "agent",
+      "topic": "speech and voice",
+      "description": "For teams building speech features: agents that design voice agent stacks and evaluate ASR quality, plus a transcript debugger for agent behaviour.",
+      "items": [
+        {
+          "package": "voice-agent-architect",
+          "required": true
+        },
+        {
+          "package": "asr-eval-analyst",
+          "required": true
+        },
+        {
+          "package": "agent-trace-debugger",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "recsys-agents",
+      "type": "agent",
+      "topic": "recommender systems",
+      "description": "For recommendation teams: agents that design recommender architectures and run rigorous offline evaluations.",
+      "items": [
+        {
+          "package": "recsys-architect",
+          "required": true
+        },
+        {
+          "package": "recsys-offline-evaluator",
+          "required": true
+        },
+        {
+          "package": "ml-experiment-planner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "forecasting-agents",
+      "type": "agent",
+      "topic": "forecasting",
+      "description": "For teams that forecast demand or load: agents that build baseline-first forecasts and review forecasting work for common mistakes.",
+      "items": [
+        {
+          "package": "forecasting-modeler",
+          "required": true
+        },
+        {
+          "package": "forecast-reviewer",
+          "required": true
+        },
+        {
+          "package": "ml-leakage-auditor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "responsible-ai-agents",
+      "type": "agent",
+      "topic": "responsible AI",
+      "description": "For teams documenting and checking AI systems: agents that audit bias, draft model cards and draft AI impact assessments for owner review.",
+      "items": [
+        {
+          "package": "ml-bias-auditor",
+          "required": true
+        },
+        {
+          "package": "model-card-writer",
+          "required": true
+        },
+        {
+          "package": "ai-impact-assessor",
+          "required": true
+        },
+        {
+          "package": "safety-eval-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-observability-agents",
+      "type": "agent",
+      "topic": "LLM production quality",
+      "description": "For teams running LLM features: agents that analyse traces, triage user feedback and turn failures into prioritised fixes.",
+      "items": [
+        {
+          "package": "llm-trace-analyst",
+          "required": true
+        },
+        {
+          "package": "user-feedback-triager",
+          "required": true
+        },
+        {
+          "package": "llm-failure-analyst",
+          "required": true
+        },
+        {
+          "package": "eval-dataset-builder",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ai-feature-planning-agents",
+      "type": "agent",
+      "topic": "planning AI features",
+      "description": "For product engineers planning AI features: agents that scope the feature, pick a model, weigh build versus buy, and write and review the ML system design.",
+      "items": [
+        {
+          "package": "ai-feature-scoper",
+          "required": true
+        },
+        {
+          "package": "llm-selection-advisor",
+          "required": true
+        },
+        {
+          "package": "ai-build-vs-buy-analyst",
+          "required": false
+        },
+        {
+          "package": "ml-system-designer",
+          "required": false
+        },
+        {
+          "package": "ml-design-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "llm-migration-agents",
+      "type": "agent",
+      "topic": "migrating LLM apps",
+      "description": "For teams moving to a new model, provider or framework: agents that migrate prompts and code and check behaviour with regression evals.",
+      "items": [
+        {
+          "package": "model-upgrade-migrator",
+          "required": true
+        },
+        {
+          "package": "llm-framework-migrator",
+          "required": true
+        },
+        {
+          "package": "eval-regression-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "edge-ml-agents",
+      "type": "agent",
+      "topic": "edge ML deployment",
+      "description": "For engineers shipping models to devices: agents that convert and quantise models, benchmark on-device and optimise inference.",
+      "items": [
+        {
+          "package": "edge-model-converter",
+          "required": true
+        },
+        {
+          "package": "edge-benchmark-runner",
+          "required": true
+        },
+        {
+          "package": "inference-optimizer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "document-ai-agents",
+      "type": "agent",
+      "topic": "document AI",
+      "description": "For teams automating document processing: agents that design parsing pipelines, extraction schemas and accuracy checks.",
+      "items": [
+        {
+          "package": "document-parser-designer",
+          "required": true
+        },
+        {
+          "package": "extraction-schema-designer",
+          "required": true
+        },
+        {
+          "package": "extraction-qa-checker",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "open-model-agents",
+      "type": "agent",
+      "topic": "working with open-weight models",
+      "description": "For teams adopting open-weight models: agents that set up local stacks, plan fine-tunes, tune serving and publish models and datasets to the Hugging Face Hub.",
+      "items": [
+        {
+          "package": "local-llm-setup-agent",
+          "required": true
+        },
+        {
+          "package": "llm-serving-tuner",
+          "required": true
+        },
+        {
+          "package": "finetune-config-planner",
+          "required": false
+        },
+        {
+          "package": "hf-model-publisher",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

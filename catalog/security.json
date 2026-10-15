@@ -1,0 +1,2345 @@
+{
+  "domain": "security",
+  "packages": [
+    {
+      "name": "owasp-injection-prevention",
+      "kind": "skill",
+      "purpose": "Find and fix SQL, NoSQL, OS command and LDAP injection with parameterised queries, safe APIs and allowlisted inputs."
+    },
+    {
+      "name": "owasp-access-control-checks",
+      "kind": "skill",
+      "purpose": "Check every route and object access for missing authorization, IDOR and privilege escalation, with fixes per framework."
+    },
+    {
+      "name": "owasp-ssrf-prevention",
+      "kind": "skill",
+      "purpose": "Prevent server-side request forgery with URL allowlists, egress controls, metadata-endpoint blocking and redirect handling."
+    },
+    {
+      "name": "owasp-security-misconfig",
+      "kind": "skill",
+      "purpose": "Audit app and framework config for debug modes, default credentials, verbose errors and exposed admin endpoints."
+    },
+    {
+      "name": "insecure-design-patterns",
+      "kind": "skill",
+      "purpose": "Spot insecure design (missing rate limits, trust in client state, unsafe workflows) and replace it with secure patterns."
+    },
+    {
+      "name": "xss-output-encoding",
+      "kind": "skill",
+      "purpose": "Prevent reflected, stored and DOM XSS with context-aware output encoding, safe templating and sanitiser use."
+    },
+    {
+      "name": "input-validation-allowlists",
+      "kind": "skill",
+      "purpose": "Design server-side input validation with schemas, allowlists, canonicalisation and size limits."
+    },
+    {
+      "name": "csrf-defenses",
+      "kind": "skill",
+      "purpose": "Implement and verify CSRF protection with synchronizer tokens, SameSite cookies and origin checks."
+    },
+    {
+      "name": "file-upload-hardening",
+      "kind": "skill",
+      "purpose": "Harden file uploads: type checks, size limits, storage outside webroot, malware scanning and safe serving."
+    },
+    {
+      "name": "unsafe-deserialization-prevention",
+      "kind": "skill",
+      "purpose": "Detect unsafe deserialization (pickle, Java, YAML, PHP) and migrate to safe formats and type-restricted parsers."
+    },
+    {
+      "name": "api-bola-checks",
+      "kind": "skill",
+      "purpose": "Test and fix broken object-level and function-level authorization in REST and GraphQL APIs (OWASP API Top 10)."
+    },
+    {
+      "name": "api-mass-assignment-prevention",
+      "kind": "skill",
+      "purpose": "Prevent mass assignment and excessive data exposure with explicit DTOs, field allowlists and response filtering."
+    },
+    {
+      "name": "api-abuse-rate-limiting",
+      "kind": "skill",
+      "purpose": "Design rate limits, quotas and resource caps that stop API abuse, enumeration and resource exhaustion."
+    },
+    {
+      "name": "api-security-test-checklist",
+      "kind": "skill",
+      "purpose": "Run an authorized API security checklist covering authn, authz, input handling, rate limits and data exposure."
+    },
+    {
+      "name": "graphql-security-hardening",
+      "kind": "skill",
+      "purpose": "Harden GraphQL endpoints: query depth/cost limits, introspection policy, field-level authz and batching abuse."
+    },
+    {
+      "name": "secure-review-checklist",
+      "kind": "skill",
+      "purpose": "Language-agnostic secure code review checklist ordered by risk: authn, authz, input, output, crypto, secrets, logging."
+    },
+    {
+      "name": "taint-flow-tracing",
+      "kind": "skill",
+      "purpose": "Trace untrusted input from sources to dangerous sinks through a codebase to confirm or rule out exploitable flows."
+    },
+    {
+      "name": "auth-logic-review",
+      "kind": "skill",
+      "purpose": "Review login, session, password reset and permission logic for bypasses, race conditions and missing checks."
+    },
+    {
+      "name": "crypto-misuse-detection",
+      "kind": "skill",
+      "purpose": "Detect cryptographic misuse in code: ECB, static IVs, weak hashes, homemade crypto, bad randomness, disabled TLS checks."
+    },
+    {
+      "name": "security-finding-writeup",
+      "kind": "skill",
+      "purpose": "Write security findings with impact, evidence, reproduction steps for the owner, severity and a concrete fix."
+    },
+    {
+      "name": "semgrep-rule-authoring",
+      "kind": "skill",
+      "purpose": "Write, test and tune Semgrep rules for project-specific vulnerable patterns, with autofix where safe."
+    },
+    {
+      "name": "codeql-query-basics",
+      "kind": "skill",
+      "purpose": "Write and run CodeQL queries for data-flow vulnerabilities and wire them into code scanning."
+    },
+    {
+      "name": "sast-false-positive-triage",
+      "kind": "skill",
+      "purpose": "Triage SAST results: confirm reachability, mark false positives with justification and tune rules to cut noise."
+    },
+    {
+      "name": "sast-ci-gating",
+      "kind": "skill",
+      "purpose": "Gate pull requests on SAST results with baselines, severity thresholds and a clear exception path."
+    },
+    {
+      "name": "zap-baseline-scanning",
+      "kind": "skill",
+      "purpose": "Run OWASP ZAP baseline and authenticated scans against owned or authorized staging targets and read the results."
+    },
+    {
+      "name": "dast-scope-configuration",
+      "kind": "skill",
+      "purpose": "Configure DAST scope, authentication, exclusions and rate limits so scans stay inside the authorized target."
+    },
+    {
+      "name": "dast-findings-triage",
+      "kind": "skill",
+      "purpose": "Validate DAST findings, remove duplicates and false positives, and hand confirmed issues to owners."
+    },
+    {
+      "name": "security-headers-config",
+      "kind": "skill",
+      "purpose": "Set and verify HTTP security headers (HSTS, X-Content-Type-Options, Referrer-Policy, Permissions-Policy, frame options)."
+    },
+    {
+      "name": "content-security-policy",
+      "kind": "skill",
+      "purpose": "Design, deploy in report-only, and tighten a Content Security Policy with nonces or hashes and violation reporting."
+    },
+    {
+      "name": "cookie-security-attributes",
+      "kind": "skill",
+      "purpose": "Set Secure, HttpOnly, SameSite and prefix attributes correctly for session and auth cookies."
+    },
+    {
+      "name": "cors-policy-review",
+      "kind": "skill",
+      "purpose": "Review CORS configuration for wildcard origins, reflected origins with credentials and overly broad preflight rules."
+    },
+    {
+      "name": "subresource-integrity",
+      "kind": "skill",
+      "purpose": "Apply Subresource Integrity and pinning for third-party scripts and assess third-party script risk."
+    },
+    {
+      "name": "password-storage-hashing",
+      "kind": "skill",
+      "purpose": "Store passwords with Argon2id, scrypt or bcrypt at correct parameters and migrate legacy hashes on login."
+    },
+    {
+      "name": "mfa-implementation-review",
+      "kind": "skill",
+      "purpose": "Review MFA (TOTP, WebAuthn/passkeys, SMS fallback) enrolment, recovery and bypass paths."
+    },
+    {
+      "name": "session-management-hardening",
+      "kind": "skill",
+      "purpose": "Harden session handling: ID entropy, rotation on login, idle/absolute timeouts, revocation and fixation defence."
+    },
+    {
+      "name": "account-recovery-security",
+      "kind": "skill",
+      "purpose": "Secure password reset and account recovery flows against takeover: token design, expiry, enumeration and notifications."
+    },
+    {
+      "name": "credential-stuffing-defense",
+      "kind": "skill",
+      "purpose": "Defend login endpoints against credential stuffing with breached-password checks, throttling and bot signals."
+    },
+    {
+      "name": "rbac-abac-design",
+      "kind": "skill",
+      "purpose": "Design role- and attribute-based authorization models with clear permissions, inheritance and audit."
+    },
+    {
+      "name": "tenant-isolation-checks",
+      "kind": "skill",
+      "purpose": "Verify multi-tenant isolation at query, cache, storage and background-job layers with tests."
+    },
+    {
+      "name": "authz-test-matrix",
+      "kind": "skill",
+      "purpose": "Build a role-by-endpoint authorization test matrix and automate positive and negative access tests."
+    },
+    {
+      "name": "oauth-flow-security-review",
+      "kind": "skill",
+      "purpose": "Review OAuth 2.x/OIDC flows for PKCE, state/nonce, redirect URI validation, token leakage and scope creep."
+    },
+    {
+      "name": "jwt-validation-hardening",
+      "kind": "skill",
+      "purpose": "Validate JWTs safely: algorithm pinning, key rotation via JWKS, audience/issuer/expiry checks and revocation strategy."
+    },
+    {
+      "name": "token-storage-security",
+      "kind": "skill",
+      "purpose": "Choose secure storage for access/refresh tokens in browsers, mobile apps and services, with rotation."
+    },
+    {
+      "name": "stride-threat-modeling",
+      "kind": "skill",
+      "purpose": "Run a STRIDE threat model per component and trust boundary and record threats with mitigations."
+    },
+    {
+      "name": "security-data-flow-diagrams",
+      "kind": "skill",
+      "purpose": "Draw data flow diagrams with trust boundaries, data stores and external entities for threat modeling."
+    },
+    {
+      "name": "attack-tree-analysis",
+      "kind": "skill",
+      "purpose": "Build attack trees for high-value assets to find the cheapest attack paths and the controls that cut them."
+    },
+    {
+      "name": "threat-model-tracking",
+      "kind": "skill",
+      "purpose": "Turn threat model output into tracked mitigations, owners and review triggers when the design changes."
+    },
+    {
+      "name": "abuse-case-writing",
+      "kind": "skill",
+      "purpose": "Write abuse and misuse cases next to user stories, with acceptance criteria that tests can check."
+    },
+    {
+      "name": "linddun-privacy-threats",
+      "kind": "skill",
+      "purpose": "Apply LINDDUN to find privacy threats (linkability, identifiability, disclosure, unawareness) in a design."
+    },
+    {
+      "name": "llm-prompt-injection-defense",
+      "kind": "skill",
+      "purpose": "Defend LLM apps against direct and indirect prompt injection with input isolation, privilege separation and output checks."
+    },
+    {
+      "name": "llm-output-handling-security",
+      "kind": "skill",
+      "purpose": "Treat LLM output as untrusted: encode, validate and sandbox it before rendering, executing or calling tools."
+    },
+    {
+      "name": "agent-tool-permission-scoping",
+      "kind": "skill",
+      "purpose": "Scope AI agent tool permissions, credentials and approvals to least privilege with human checkpoints for risky actions."
+    },
+    {
+      "name": "owasp-llm-top10-review",
+      "kind": "skill",
+      "purpose": "Review an LLM application against the OWASP Top 10 for LLM applications and record gaps and fixes."
+    },
+    {
+      "name": "secrets-vault-patterns",
+      "kind": "skill",
+      "purpose": "Use a secrets manager (Vault, AWS Secrets Manager, GCP Secret Manager) with short-lived, scoped credentials."
+    },
+    {
+      "name": "secret-rotation-runbooks",
+      "kind": "skill",
+      "purpose": "Write and run secret rotation runbooks for API keys, DB credentials and certificates without downtime."
+    },
+    {
+      "name": "ci-secrets-handling",
+      "kind": "skill",
+      "purpose": "Keep secrets safe in CI: masked variables, environment protection, OIDC instead of long-lived keys, no secrets in logs."
+    },
+    {
+      "name": "app-secret-hygiene",
+      "kind": "skill",
+      "purpose": "Remove hard-coded secrets from code and config, load them at runtime and keep them out of logs and errors."
+    },
+    {
+      "name": "secret-scanning-setup",
+      "kind": "skill",
+      "purpose": "Set up secret scanning (gitleaks, trufflehog, GitHub push protection) in repos and CI with tuned allowlists."
+    },
+    {
+      "name": "leaked-secret-response",
+      "kind": "skill",
+      "purpose": "Respond to a leaked credential: revoke, rotate, check usage logs for abuse and record the incident."
+    },
+    {
+      "name": "git-history-secret-purge",
+      "kind": "skill",
+      "purpose": "Purge secrets from git history with git-filter-repo, coordinate force-pushes and invalidate caches and forks."
+    },
+    {
+      "name": "pre-commit-secret-hooks",
+      "kind": "skill",
+      "purpose": "Add pre-commit hooks that block secrets and keys before they reach the repository."
+    },
+    {
+      "name": "sbom-generation",
+      "kind": "skill",
+      "purpose": "Generate and publish SBOMs (CycloneDX, SPDX) for builds and container images and keep them current."
+    },
+    {
+      "name": "dependency-pinning-lockfiles",
+      "kind": "skill",
+      "purpose": "Pin dependencies with lockfiles and hashes, review lockfile diffs and avoid floating versions in production."
+    },
+    {
+      "name": "slsa-build-provenance",
+      "kind": "skill",
+      "purpose": "Produce and verify SLSA build provenance attestations for release artifacts."
+    },
+    {
+      "name": "sigstore-artifact-signing",
+      "kind": "skill",
+      "purpose": "Sign and verify artifacts and container images with Sigstore cosign, keyless signing and policy enforcement."
+    },
+    {
+      "name": "dependency-confusion-defense",
+      "kind": "skill",
+      "purpose": "Prevent dependency confusion and typosquatting with scoped registries, namespace reservation and install policies."
+    },
+    {
+      "name": "new-dependency-vetting",
+      "kind": "skill",
+      "purpose": "Vet a new open-source dependency for maintenance, security history, permissions and install scripts before adoption."
+    },
+    {
+      "name": "dependency-vuln-triage",
+      "kind": "skill",
+      "purpose": "Triage dependency CVE alerts: affected versions, reachability, exploitability and upgrade path."
+    },
+    {
+      "name": "vuln-reachability-analysis",
+      "kind": "skill",
+      "purpose": "Determine whether vulnerable dependency code is actually reachable from the application before prioritising."
+    },
+    {
+      "name": "vex-statements",
+      "kind": "skill",
+      "purpose": "Write VEX statements (OpenVEX, CSAF) to document not-affected and fixed status for published vulnerabilities."
+    },
+    {
+      "name": "osv-scanner-usage",
+      "kind": "skill",
+      "purpose": "Scan projects and lockfiles with osv-scanner and interpret results across ecosystems."
+    },
+    {
+      "name": "branch-protection-hardening",
+      "kind": "skill",
+      "purpose": "Configure branch and tag protection, required reviews, signed commits and status checks for critical repos."
+    },
+    {
+      "name": "github-actions-security",
+      "kind": "skill",
+      "purpose": "Harden GitHub Actions: pinned action SHAs, minimal GITHUB_TOKEN permissions, pull_request_target and injection pitfalls."
+    },
+    {
+      "name": "repo-security-settings-audit",
+      "kind": "skill",
+      "purpose": "Audit organisation and repo security settings: 2FA, outside collaborators, deploy keys, webhooks, apps."
+    },
+    {
+      "name": "ci-oidc-cloud-federation",
+      "kind": "skill",
+      "purpose": "Replace static cloud keys in CI with OIDC federation and tightly scoped trust conditions."
+    },
+    {
+      "name": "build-runner-hardening",
+      "kind": "skill",
+      "purpose": "Harden self-hosted CI runners: ephemeral runners, isolation, network egress limits and credential scoping."
+    },
+    {
+      "name": "aws-iam-least-privilege",
+      "kind": "skill",
+      "purpose": "Write least-privilege AWS IAM policies using Access Analyzer, condition keys and permission boundaries."
+    },
+    {
+      "name": "aws-security-hub-triage",
+      "kind": "skill",
+      "purpose": "Triage AWS Security Hub and Config findings by risk and route fixes to owners."
+    },
+    {
+      "name": "aws-s3-exposure-review",
+      "kind": "skill",
+      "purpose": "Find and fix public or cross-account S3 exposure with Block Public Access, bucket policies and access points."
+    },
+    {
+      "name": "aws-guardduty-response",
+      "kind": "skill",
+      "purpose": "Investigate and respond to GuardDuty findings with standard containment steps per finding type."
+    },
+    {
+      "name": "aws-cloudtrail-monitoring",
+      "kind": "skill",
+      "purpose": "Configure organisation CloudTrail, protect the logs and alert on high-risk API calls."
+    },
+    {
+      "name": "gcp-iam-review",
+      "kind": "skill",
+      "purpose": "Review GCP IAM bindings for primitive roles, service account key sprawl and inherited over-permission."
+    },
+    {
+      "name": "gcp-scc-findings-triage",
+      "kind": "skill",
+      "purpose": "Triage Google Security Command Center findings and map them to remediation."
+    },
+    {
+      "name": "gcp-org-policy-guardrails",
+      "kind": "skill",
+      "purpose": "Apply GCP organisation policy constraints and VPC Service Controls as preventive security guardrails."
+    },
+    {
+      "name": "azure-rbac-review",
+      "kind": "skill",
+      "purpose": "Review Azure RBAC assignments, management group inheritance and privileged roles."
+    },
+    {
+      "name": "defender-for-cloud-triage",
+      "kind": "skill",
+      "purpose": "Triage Microsoft Defender for Cloud recommendations and alerts and improve secure score sensibly."
+    },
+    {
+      "name": "entra-conditional-access",
+      "kind": "skill",
+      "purpose": "Design Entra ID Conditional Access policies for MFA, device compliance, legacy auth blocking and break-glass accounts."
+    },
+    {
+      "name": "azure-policy-baselines",
+      "kind": "skill",
+      "purpose": "Enforce Azure security baselines with Azure Policy initiatives and remediation tasks."
+    },
+    {
+      "name": "cloud-misconfig-scanning",
+      "kind": "skill",
+      "purpose": "Run cloud posture scanners (Prowler, ScoutSuite) on owned accounts and turn results into a prioritised fix list."
+    },
+    {
+      "name": "cis-benchmark-mapping",
+      "kind": "skill",
+      "purpose": "Map CIS Benchmark controls for cloud, OS and Kubernetes to checks, exceptions and evidence."
+    },
+    {
+      "name": "cloud-network-exposure-review",
+      "kind": "skill",
+      "purpose": "Find internet-exposed cloud resources: open security groups, public IPs, load balancers and management ports."
+    },
+    {
+      "name": "cloud-security-logging-coverage",
+      "kind": "skill",
+      "purpose": "Check that audit, flow, DNS and data-access logs are on, centralised and retained for investigations."
+    },
+    {
+      "name": "iam-access-review-process",
+      "kind": "skill",
+      "purpose": "Run periodic user and service access reviews with clear owners, evidence and revocation follow-up."
+    },
+    {
+      "name": "cross-account-access-review",
+      "kind": "skill",
+      "purpose": "Review cross-account and third-party trust relationships, external IDs and confused-deputy risks."
+    },
+    {
+      "name": "workload-identity-federation",
+      "kind": "skill",
+      "purpose": "Replace service account keys with workload identity federation across clouds and Kubernetes."
+    },
+    {
+      "name": "break-glass-access",
+      "kind": "skill",
+      "purpose": "Design emergency break-glass accounts with monitoring, sealed credentials and post-use review."
+    },
+    {
+      "name": "joiner-mover-leaver-controls",
+      "kind": "skill",
+      "purpose": "Define joiner, mover and leaver access controls and automate deprovisioning across SaaS and cloud."
+    },
+    {
+      "name": "privileged-access-management",
+      "kind": "skill",
+      "purpose": "Implement just-in-time privileged access, session recording and approval flows for admin roles."
+    },
+    {
+      "name": "sso-saml-security",
+      "kind": "skill",
+      "purpose": "Configure SSO (SAML, OIDC) securely: signature validation, assertion lifetimes, IdP-initiated risks and enforcement."
+    },
+    {
+      "name": "scim-provisioning-security",
+      "kind": "skill",
+      "purpose": "Secure SCIM provisioning: token scope, attribute mapping, deprovisioning reliability and audit."
+    },
+    {
+      "name": "iac-security-scanning",
+      "kind": "skill",
+      "purpose": "Scan Terraform, CloudFormation and Kubernetes manifests with Checkov, tfsec/Trivy and fix high-risk misconfigurations."
+    },
+    {
+      "name": "policy-as-code-guardrails",
+      "kind": "skill",
+      "purpose": "Write OPA/Rego or Conftest policies that block insecure infrastructure changes in CI."
+    },
+    {
+      "name": "iac-secret-detection",
+      "kind": "skill",
+      "purpose": "Keep secrets out of IaC code, variables and state files, and protect remote state access."
+    },
+    {
+      "name": "dockerfile-hardening",
+      "kind": "skill",
+      "purpose": "Harden Dockerfiles: non-root user, minimal base, multi-stage builds, no secrets in layers, pinned digests."
+    },
+    {
+      "name": "container-image-scanning",
+      "kind": "skill",
+      "purpose": "Scan container images with Trivy or Grype in CI and registries and set fix-or-accept policies."
+    },
+    {
+      "name": "minimal-base-images",
+      "kind": "skill",
+      "purpose": "Move services to distroless or minimal base images and handle debugging and CA certificates."
+    },
+    {
+      "name": "k8s-rbac-hardening",
+      "kind": "skill",
+      "purpose": "Harden Kubernetes RBAC: no cluster-admin sprawl, scoped service accounts, disabled token automount."
+    },
+    {
+      "name": "pod-security-standards",
+      "kind": "skill",
+      "purpose": "Apply Pod Security Standards (restricted) and securityContext settings to workloads."
+    },
+    {
+      "name": "k8s-network-policies",
+      "kind": "skill",
+      "purpose": "Write default-deny Kubernetes NetworkPolicies and allow only required pod and egress traffic."
+    },
+    {
+      "name": "k8s-admission-policies",
+      "kind": "skill",
+      "purpose": "Enforce security rules at admission with Kyverno, Gatekeeper or ValidatingAdmissionPolicy."
+    },
+    {
+      "name": "k8s-secrets-protection",
+      "kind": "skill",
+      "purpose": "Protect Kubernetes secrets with encryption at rest, external secret operators and access limits."
+    },
+    {
+      "name": "falco-runtime-rules",
+      "kind": "skill",
+      "purpose": "Write and tune Falco rules to detect suspicious container and host behaviour at runtime."
+    },
+    {
+      "name": "k8s-audit-log-analysis",
+      "kind": "skill",
+      "purpose": "Enable and analyse Kubernetes audit logs to spot risky API activity and privilege misuse."
+    },
+    {
+      "name": "container-escape-mitigation",
+      "kind": "skill",
+      "purpose": "Reduce container escape risk: drop capabilities, seccomp/AppArmor profiles, no privileged or hostPath mounts."
+    },
+    {
+      "name": "linux-cis-hardening",
+      "kind": "skill",
+      "purpose": "Harden Linux hosts against CIS benchmarks with automated checks and documented exceptions."
+    },
+    {
+      "name": "ssh-hardening",
+      "kind": "skill",
+      "purpose": "Harden SSH: key-only auth, certificate-based access, restricted ciphers, bastion or SSO-backed access."
+    },
+    {
+      "name": "linux-auditd-rules",
+      "kind": "skill",
+      "purpose": "Configure auditd rules for security-relevant events and forward them to a SIEM."
+    },
+    {
+      "name": "windows-hardening-baselines",
+      "kind": "skill",
+      "purpose": "Apply Windows security baselines (Microsoft/CIS) via GPO or Intune and check compliance."
+    },
+    {
+      "name": "macos-hardening-baselines",
+      "kind": "skill",
+      "purpose": "Apply macOS security baselines (mSCP) via MDM: FileVault, Gatekeeper, firewall and updates."
+    },
+    {
+      "name": "edr-deployment-tuning",
+      "kind": "skill",
+      "purpose": "Roll out EDR, verify coverage, tune exclusions safely and route alerts to the SOC."
+    },
+    {
+      "name": "firewall-rule-review",
+      "kind": "skill",
+      "purpose": "Review firewall and security group rules for overly broad access, stale rules and shadowed entries."
+    },
+    {
+      "name": "network-segmentation-design",
+      "kind": "skill",
+      "purpose": "Design network segmentation and micro-segmentation around sensitive zones with clear allowed flows."
+    },
+    {
+      "name": "tls-configuration-hardening",
+      "kind": "skill",
+      "purpose": "Configure TLS servers and clients securely: versions, cipher suites, HSTS, OCSP stapling and verification."
+    },
+    {
+      "name": "zero-trust-access-design",
+      "kind": "skill",
+      "purpose": "Design zero-trust access: identity-aware proxies, device posture and per-app access instead of flat VPNs."
+    },
+    {
+      "name": "waf-rule-tuning",
+      "kind": "skill",
+      "purpose": "Deploy and tune WAF rules (OWASP CRS, managed rules) with logging-only rollout and false-positive handling."
+    },
+    {
+      "name": "ddos-resilience-planning",
+      "kind": "skill",
+      "purpose": "Plan DDoS resilience: edge protection, rate limits, autoscaling limits and a response runbook."
+    },
+    {
+      "name": "bot-traffic-defense",
+      "kind": "skill",
+      "purpose": "Detect and mitigate abusive bots on signup, login and checkout with layered signals and challenges."
+    },
+    {
+      "name": "ad-tiering-model",
+      "kind": "skill",
+      "purpose": "Implement an Active Directory admin tiering model to contain credential theft."
+    },
+    {
+      "name": "ad-privileged-group-audit",
+      "kind": "skill",
+      "purpose": "Audit Active Directory privileged groups, delegations and stale admin accounts."
+    },
+    {
+      "name": "kerberos-attack-detection",
+      "kind": "skill",
+      "purpose": "Detect Kerberoasting, AS-REP roasting and golden ticket activity from Windows event logs."
+    },
+    {
+      "name": "laps-credential-hygiene",
+      "kind": "skill",
+      "purpose": "Deploy Windows LAPS and remove shared local admin passwords across the fleet."
+    },
+    {
+      "name": "pentest-scoping-roe",
+      "kind": "skill",
+      "purpose": "Scope an authorized penetration test and draft rules of engagement: targets, windows, contacts, limits and sign-off."
+    },
+    {
+      "name": "pentest-test-plan",
+      "kind": "skill",
+      "purpose": "Build a test plan for an authorized engagement mapped to OWASP WSTG/PTES phases and the agreed scope."
+    },
+    {
+      "name": "pentest-evidence-handling",
+      "kind": "skill",
+      "purpose": "Collect, label, store and destroy engagement evidence and client data securely per the contract."
+    },
+    {
+      "name": "pentest-report-writing",
+      "kind": "skill",
+      "purpose": "Write a penetration test report: executive summary, methodology, findings with severity and remediation."
+    },
+    {
+      "name": "pentest-retest-verification",
+      "kind": "skill",
+      "purpose": "Plan and document retests that verify remediation of previously reported findings."
+    },
+    {
+      "name": "owasp-wstg-test-cases",
+      "kind": "skill",
+      "purpose": "Select and run OWASP Web Security Testing Guide test cases relevant to an authorized web app engagement."
+    },
+    {
+      "name": "business-logic-testing",
+      "kind": "skill",
+      "purpose": "Test business logic for workflow bypass, price manipulation and race conditions in authorized environments."
+    },
+    {
+      "name": "cvss-severity-scoring",
+      "kind": "skill",
+      "purpose": "Score vulnerabilities with CVSS v3.1/v4.0 consistently and explain environmental adjustments."
+    },
+    {
+      "name": "vdp-policy-writing",
+      "kind": "skill",
+      "purpose": "Write a vulnerability disclosure policy with scope, safe harbour, reporting channel and response timelines."
+    },
+    {
+      "name": "bug-bounty-report-triage",
+      "kind": "skill",
+      "purpose": "Triage incoming vulnerability reports: validate, de-duplicate, rate severity and route to engineering."
+    },
+    {
+      "name": "security-txt-setup",
+      "kind": "skill",
+      "purpose": "Publish and maintain security.txt and a security contact so researchers can report issues."
+    },
+    {
+      "name": "researcher-communication",
+      "kind": "skill",
+      "purpose": "Communicate with security researchers: acknowledgements, status updates, disputes, rewards and disclosure."
+    },
+    {
+      "name": "ir-playbook-authoring",
+      "kind": "skill",
+      "purpose": "Write incident response playbooks per scenario with triggers, roles, decision points and containment steps."
+    },
+    {
+      "name": "security-incident-triage",
+      "kind": "skill",
+      "purpose": "Classify security incidents by severity and type, decide escalation and open the right playbook."
+    },
+    {
+      "name": "forensic-evidence-preservation",
+      "kind": "skill",
+      "purpose": "Preserve volatile and persistent evidence correctly before containment changes the system."
+    },
+    {
+      "name": "security-incident-comms",
+      "kind": "skill",
+      "purpose": "Draft internal, customer and regulator communications for security incidents, for legal review."
+    },
+    {
+      "name": "security-post-incident-review",
+      "kind": "skill",
+      "purpose": "Run a blameless post-incident review for a security incident and track control improvements."
+    },
+    {
+      "name": "cloud-credential-compromise-response",
+      "kind": "skill",
+      "purpose": "Respond to compromised cloud credentials: scope with audit logs, revoke sessions, rotate and hunt for persistence."
+    },
+    {
+      "name": "cloud-log-forensics",
+      "kind": "skill",
+      "purpose": "Investigate incidents with CloudTrail, GCP audit logs and Azure activity logs, building a timeline of actor actions."
+    },
+    {
+      "name": "cloud-containment-actions",
+      "kind": "skill",
+      "purpose": "Contain cloud incidents safely: isolate instances, quarantine roles, snapshot disks and preserve evidence."
+    },
+    {
+      "name": "ransomware-response-playbook",
+      "kind": "skill",
+      "purpose": "Respond to ransomware: isolation, scope assessment, backup integrity checks, recovery order and reporting duties."
+    },
+    {
+      "name": "immutable-backup-verification",
+      "kind": "skill",
+      "purpose": "Verify backups are immutable, isolated and restorable within RTO, with regular restore tests."
+    },
+    {
+      "name": "security-tabletop-exercises",
+      "kind": "skill",
+      "purpose": "Design and run security tabletop exercises with realistic injects and tracked lessons learned."
+    },
+    {
+      "name": "memory-forensics-triage",
+      "kind": "skill",
+      "purpose": "Triage memory images with Volatility to find malicious processes, injections and network connections."
+    },
+    {
+      "name": "forensic-timeline-analysis",
+      "kind": "skill",
+      "purpose": "Build super-timelines from disk, log and artifact sources to reconstruct attacker activity."
+    },
+    {
+      "name": "chain-of-custody",
+      "kind": "skill",
+      "purpose": "Maintain chain of custody for digital evidence with hashing, logging and access control."
+    },
+    {
+      "name": "windows-artifact-analysis",
+      "kind": "skill",
+      "purpose": "Analyse Windows artifacts (event logs, prefetch, registry, amcache, shellbags) during investigations."
+    },
+    {
+      "name": "phishing-email-analysis",
+      "kind": "skill",
+      "purpose": "Analyse reported phishing emails: headers, links, attachments in a sandbox, and extract indicators."
+    },
+    {
+      "name": "mailbox-purge-response",
+      "kind": "skill",
+      "purpose": "Search and purge malicious emails across mailboxes and block senders, URLs and attachments."
+    },
+    {
+      "name": "email-auth-spf-dkim-dmarc",
+      "kind": "skill",
+      "purpose": "Configure SPF, DKIM and DMARC (towards p=reject), read aggregate reports and fix alignment issues."
+    },
+    {
+      "name": "user-reported-phish-triage",
+      "kind": "skill",
+      "purpose": "Run the user-reported phishing queue: auto-triage, verdicts, feedback to reporters and metrics."
+    },
+    {
+      "name": "sigma-rule-authoring",
+      "kind": "skill",
+      "purpose": "Write, test and convert Sigma detection rules for common SIEM backends."
+    },
+    {
+      "name": "detection-as-code",
+      "kind": "skill",
+      "purpose": "Manage detections as code with version control, review, tests and CI deployment to the SIEM."
+    },
+    {
+      "name": "detection-validation-testing",
+      "kind": "skill",
+      "purpose": "Validate detections in a lab with Atomic Red Team or replayed logs and record coverage results."
+    },
+    {
+      "name": "mitre-attack-mapping",
+      "kind": "skill",
+      "purpose": "Map detections, controls and incidents to MITRE ATT&CK techniques and find coverage gaps."
+    },
+    {
+      "name": "alert-tuning",
+      "kind": "skill",
+      "purpose": "Tune noisy alerts with allowlists, thresholds and enrichment without losing true positives."
+    },
+    {
+      "name": "splunk-spl-detections",
+      "kind": "skill",
+      "purpose": "Write Splunk SPL searches and correlation rules for security detections and investigations."
+    },
+    {
+      "name": "kql-sentinel-detections",
+      "kind": "skill",
+      "purpose": "Write KQL analytics rules and hunting queries for Microsoft Sentinel and Defender."
+    },
+    {
+      "name": "elastic-security-detections",
+      "kind": "skill",
+      "purpose": "Write Elastic Security detection rules with EQL and ES|QL and manage exceptions."
+    },
+    {
+      "name": "siem-log-onboarding",
+      "kind": "skill",
+      "purpose": "Onboard log sources to a SIEM with parsing, normalisation (ECS/OCSF/CIM), health checks and retention."
+    },
+    {
+      "name": "hypothesis-threat-hunting",
+      "kind": "skill",
+      "purpose": "Run hypothesis-driven threat hunts: form a hypothesis, pick data, query, and decide outcomes."
+    },
+    {
+      "name": "hunt-query-library",
+      "kind": "skill",
+      "purpose": "Maintain a reusable library of hunt queries tagged by ATT&CK technique and data source."
+    },
+    {
+      "name": "hunt-findings-reporting",
+      "kind": "skill",
+      "purpose": "Report hunt results and turn successful hunts into new detections."
+    },
+    {
+      "name": "alert-triage-runbooks",
+      "kind": "skill",
+      "purpose": "Write SOC alert triage runbooks with checks, enrichment steps, verdict criteria and escalation."
+    },
+    {
+      "name": "soar-playbook-design",
+      "kind": "skill",
+      "purpose": "Design SOAR automation playbooks for enrichment and containment with human approval gates."
+    },
+    {
+      "name": "soc-shift-handover",
+      "kind": "skill",
+      "purpose": "Run SOC shift handovers with open cases, watch items and pending actions recorded consistently."
+    },
+    {
+      "name": "alert-enrichment",
+      "kind": "skill",
+      "purpose": "Enrich alerts with asset, identity, threat intel and history context to speed triage."
+    },
+    {
+      "name": "ioc-management",
+      "kind": "skill",
+      "purpose": "Manage indicators of compromise: ingest, de-duplicate, age out and push to blocking and detection tools."
+    },
+    {
+      "name": "threat-intel-reporting",
+      "kind": "skill",
+      "purpose": "Write threat intelligence reports for technical and executive audiences with confidence levels."
+    },
+    {
+      "name": "stix-taxii-feeds",
+      "kind": "skill",
+      "purpose": "Consume and share threat intel via STIX 2.1 and TAXII feeds and a TIP."
+    },
+    {
+      "name": "intel-driven-detection",
+      "kind": "skill",
+      "purpose": "Turn threat intel about adversary behaviour into prioritised detections and hunts."
+    },
+    {
+      "name": "yara-rule-authoring",
+      "kind": "skill",
+      "purpose": "Write and test YARA rules for file and memory scanning with low false positives."
+    },
+    {
+      "name": "static-malware-triage",
+      "kind": "skill",
+      "purpose": "Safely triage suspicious files with static analysis (hashes, strings, PE metadata) in an isolated lab."
+    },
+    {
+      "name": "sandbox-report-interpretation",
+      "kind": "skill",
+      "purpose": "Read malware sandbox reports and extract behaviours and indicators for defenders."
+    },
+    {
+      "name": "vuln-scanner-operations",
+      "kind": "skill",
+      "purpose": "Run authenticated vulnerability scans across owned assets, manage coverage and scanner credentials."
+    },
+    {
+      "name": "cvss-epss-prioritization",
+      "kind": "skill",
+      "purpose": "Prioritise vulnerabilities with CVSS, EPSS, CISA KEV and asset criticality instead of raw severity."
+    },
+    {
+      "name": "vuln-sla-policy",
+      "kind": "skill",
+      "purpose": "Define remediation SLAs by risk tier and measure compliance."
+    },
+    {
+      "name": "vuln-exception-process",
+      "kind": "skill",
+      "purpose": "Run a risk acceptance and exception process with compensating controls and expiry dates."
+    },
+    {
+      "name": "vuln-metrics-reporting",
+      "kind": "skill",
+      "purpose": "Report vulnerability management metrics: MTTR, SLA compliance, backlog age and coverage."
+    },
+    {
+      "name": "patch-rollout-rings",
+      "kind": "skill",
+      "purpose": "Roll out security patches in rings with canaries, rollback plans and emergency patch paths."
+    },
+    {
+      "name": "kev-catalog-tracking",
+      "kind": "skill",
+      "purpose": "Track CISA Known Exploited Vulnerabilities against the asset inventory and drive fast remediation."
+    },
+    {
+      "name": "asset-inventory-security",
+      "kind": "skill",
+      "purpose": "Build and keep the security asset inventory accurate: discovery, ownership and criticality."
+    },
+    {
+      "name": "soc2-control-mapping",
+      "kind": "skill",
+      "purpose": "Map SOC 2 Trust Services Criteria to concrete technical and process controls in your environment."
+    },
+    {
+      "name": "soc2-evidence-collection",
+      "kind": "skill",
+      "purpose": "Collect and organise SOC 2 evidence continuously with automation and clear ownership."
+    },
+    {
+      "name": "soc2-readiness-gap-analysis",
+      "kind": "skill",
+      "purpose": "Assess SOC 2 readiness, list control gaps and plan remediation before the audit window."
+    },
+    {
+      "name": "audit-request-response",
+      "kind": "skill",
+      "purpose": "Respond to auditor requests (PBC lists) with complete, consistent evidence and narratives."
+    },
+    {
+      "name": "infosec-policy-drafting",
+      "kind": "skill",
+      "purpose": "Draft information security policies (access control, acceptable use, change management) for management approval."
+    },
+    {
+      "name": "iso27001-isms-scoping",
+      "kind": "skill",
+      "purpose": "Define ISMS scope, context, interested parties and boundaries for ISO 27001."
+    },
+    {
+      "name": "iso27001-annex-a-controls",
+      "kind": "skill",
+      "purpose": "Implement and evidence ISO 27001:2022 Annex A controls proportionate to risk."
+    },
+    {
+      "name": "statement-of-applicability",
+      "kind": "skill",
+      "purpose": "Build and maintain the ISO 27001 Statement of Applicability with justifications."
+    },
+    {
+      "name": "iso27001-internal-audit",
+      "kind": "skill",
+      "purpose": "Plan and run ISO 27001 internal audits and manage nonconformities and corrective actions."
+    },
+    {
+      "name": "security-risk-register",
+      "kind": "skill",
+      "purpose": "Maintain a security risk register: identify, rate, treat and review risks with owners."
+    },
+    {
+      "name": "pci-scope-reduction",
+      "kind": "skill",
+      "purpose": "Reduce PCI DSS scope with segmentation, tokenisation and hosted payment pages."
+    },
+    {
+      "name": "pci-cardholder-data-flows",
+      "kind": "skill",
+      "purpose": "Map cardholder data flows and the CDE for PCI DSS v4.0 assessments."
+    },
+    {
+      "name": "pci-saq-selection",
+      "kind": "skill",
+      "purpose": "Pick the right PCI SAQ type and prepare the supporting evidence."
+    },
+    {
+      "name": "pci-control-evidence",
+      "kind": "skill",
+      "purpose": "Collect evidence for PCI DSS v4.0 requirements, including targeted risk analyses."
+    },
+    {
+      "name": "hipaa-technical-safeguards",
+      "kind": "skill",
+      "purpose": "Implement HIPAA Security Rule technical safeguards: access control, audit, integrity and transmission security."
+    },
+    {
+      "name": "phi-data-inventory",
+      "kind": "skill",
+      "purpose": "Inventory where PHI is created, stored and sent, including vendors and backups."
+    },
+    {
+      "name": "hipaa-risk-analysis",
+      "kind": "skill",
+      "purpose": "Draft a HIPAA security risk analysis with threats, likelihood, impact and a risk management plan, for compliance sign-off."
+    },
+    {
+      "name": "baa-security-review",
+      "kind": "skill",
+      "purpose": "Review security terms in business associate agreements as a drafting aid for counsel."
+    },
+    {
+      "name": "gdpr-ropa-data-mapping",
+      "kind": "skill",
+      "purpose": "Build GDPR records of processing activities from system data maps."
+    },
+    {
+      "name": "dpia-drafting",
+      "kind": "skill",
+      "purpose": "Draft data protection impact assessments for high-risk processing, for DPO and legal review."
+    },
+    {
+      "name": "dsar-handling",
+      "kind": "skill",
+      "purpose": "Implement data subject access, export and erasure requests across systems with identity verification."
+    },
+    {
+      "name": "gdpr-retention-deletion",
+      "kind": "skill",
+      "purpose": "Implement retention schedules and verifiable deletion across databases, logs and backups."
+    },
+    {
+      "name": "pseudonymization-techniques",
+      "kind": "skill",
+      "purpose": "Apply pseudonymisation, tokenisation and anonymisation techniques and assess re-identification risk."
+    },
+    {
+      "name": "cross-border-transfer-measures",
+      "kind": "skill",
+      "purpose": "Document technical measures (encryption, key location, access controls) supporting international data transfers."
+    },
+    {
+      "name": "pii-discovery-classification",
+      "kind": "skill",
+      "purpose": "Discover and classify PII in databases, logs and object storage with scanners and tagging."
+    },
+    {
+      "name": "data-minimization-review",
+      "kind": "skill",
+      "purpose": "Review features and schemas to collect, keep and expose only the personal data needed."
+    },
+    {
+      "name": "privacy-by-design-review",
+      "kind": "skill",
+      "purpose": "Review a design for privacy by default: purpose limits, access, retention and user controls."
+    },
+    {
+      "name": "consent-records-design",
+      "kind": "skill",
+      "purpose": "Design consent capture and records that are auditable, versioned and enforced downstream."
+    },
+    {
+      "name": "pii-safe-logging",
+      "kind": "skill",
+      "purpose": "Keep personal data and secrets out of logs with redaction, structured fields and tests."
+    },
+    {
+      "name": "crypto-algorithm-selection",
+      "kind": "skill",
+      "purpose": "Choose modern cryptographic primitives and libraries (libsodium, Tink) for each use case."
+    },
+    {
+      "name": "aead-encryption-patterns",
+      "kind": "skill",
+      "purpose": "Encrypt data with AEAD (AES-GCM, ChaCha20-Poly1305) correctly: nonces, associated data, envelope encryption."
+    },
+    {
+      "name": "kms-key-management",
+      "kind": "skill",
+      "purpose": "Manage keys with cloud KMS/HSM: key hierarchy, rotation, access policy and audit."
+    },
+    {
+      "name": "secure-randomness",
+      "kind": "skill",
+      "purpose": "Use cryptographically secure randomness for tokens, IDs and nonces in each language."
+    },
+    {
+      "name": "tls-certificate-lifecycle",
+      "kind": "skill",
+      "purpose": "Automate TLS certificate issuance and renewal (ACME), inventory certificates and alert before expiry."
+    },
+    {
+      "name": "internal-pki-design",
+      "kind": "skill",
+      "purpose": "Design an internal PKI: root/intermediate hierarchy, issuance policy, revocation and short-lived certs."
+    },
+    {
+      "name": "mtls-service-auth",
+      "kind": "skill",
+      "purpose": "Authenticate services with mutual TLS and SPIFFE identities, including rotation and trust bundles."
+    },
+    {
+      "name": "crypto-inventory",
+      "kind": "skill",
+      "purpose": "Inventory cryptographic algorithms, keys and certificates in use across code and infrastructure."
+    },
+    {
+      "name": "pqc-migration-planning",
+      "kind": "skill",
+      "purpose": "Plan post-quantum migration: prioritise by data lifetime, adopt hybrid ML-KEM and track standards."
+    },
+    {
+      "name": "security-awareness-curriculum",
+      "kind": "skill",
+      "purpose": "Build a role-based security awareness curriculum with short modules and measurable outcomes."
+    },
+    {
+      "name": "phishing-simulation-program",
+      "kind": "skill",
+      "purpose": "Run an approved internal phishing simulation program with HR/legal sign-off, fair metrics and follow-up training."
+    },
+    {
+      "name": "secure-coding-training",
+      "kind": "skill",
+      "purpose": "Create secure coding training exercises from real vulnerability classes in the team stack."
+    },
+    {
+      "name": "security-champions-program",
+      "kind": "skill",
+      "purpose": "Start and run a security champions program across engineering teams."
+    },
+    {
+      "name": "awareness-metrics",
+      "kind": "skill",
+      "purpose": "Measure awareness outcomes: reporting rates, time-to-report and repeat clickers, without blame."
+    },
+    {
+      "name": "security-requirements-definition",
+      "kind": "skill",
+      "purpose": "Write security requirements from ASVS levels and risk for new features and systems."
+    },
+    {
+      "name": "secure-design-review",
+      "kind": "skill",
+      "purpose": "Review architecture designs for security before build: trust boundaries, authn/z, data protection and failure modes."
+    },
+    {
+      "name": "sdlc-security-gates",
+      "kind": "skill",
+      "purpose": "Define proportionate security gates across the SDLC without blocking delivery unnecessarily."
+    },
+    {
+      "name": "asvs-verification",
+      "kind": "skill",
+      "purpose": "Verify an application against OWASP ASVS requirements and record pass/fail evidence."
+    },
+    {
+      "name": "security-audit-logging",
+      "kind": "skill",
+      "purpose": "Design audit logs for security events: who did what, when, from where, with tamper resistance."
+    },
+    {
+      "name": "log-integrity-protection",
+      "kind": "skill",
+      "purpose": "Protect log integrity with write-once storage, signing and separation of duties."
+    },
+    {
+      "name": "security-event-taxonomy",
+      "kind": "skill",
+      "purpose": "Define a consistent security event taxonomy and fields so detections work across services."
+    },
+    {
+      "name": "data-classification-scheme",
+      "kind": "skill",
+      "purpose": "Define a data classification scheme with handling rules and apply labels to systems."
+    },
+    {
+      "name": "dlp-rule-design",
+      "kind": "skill",
+      "purpose": "Design DLP rules for email, endpoints and SaaS with low false positives and clear user messaging."
+    },
+    {
+      "name": "database-encryption-at-rest",
+      "kind": "skill",
+      "purpose": "Enable and verify database encryption at rest and field-level encryption for sensitive columns."
+    },
+    {
+      "name": "saas-security-posture",
+      "kind": "skill",
+      "purpose": "Review SaaS app security settings (Google Workspace, M365, Slack) and OAuth app grants."
+    },
+    {
+      "name": "owasp-masvs-checks",
+      "kind": "skill",
+      "purpose": "Check mobile apps against OWASP MASVS for storage, crypto, auth, network and platform interaction."
+    },
+    {
+      "name": "mobile-secure-storage",
+      "kind": "skill",
+      "purpose": "Store secrets and tokens on mobile with Keychain/Keystore and avoid leaking data to backups and logs."
+    },
+    {
+      "name": "mobile-network-security",
+      "kind": "skill",
+      "purpose": "Configure mobile network security: ATS, network security config and certificate pinning trade-offs."
+    },
+    {
+      "name": "mobile-app-integrity",
+      "kind": "skill",
+      "purpose": "Use app attestation (App Attest, Play Integrity) and tamper detection to protect backend APIs."
+    },
+    {
+      "name": "third-party-security-assessment",
+      "kind": "skill",
+      "purpose": "Assess vendor security from questionnaires, SOC 2 reports and pen test summaries, and tier by risk."
+    },
+    {
+      "name": "security-questionnaire-response",
+      "kind": "skill",
+      "purpose": "Answer customer security questionnaires (SIG, CAIQ) accurately from a maintained answer library."
+    },
+    {
+      "name": "soc2-report-review",
+      "kind": "skill",
+      "purpose": "Read a vendor SOC 2 report: scope, exceptions, complementary user entity controls and bridge letters."
+    },
+    {
+      "name": "trust-center-content",
+      "kind": "skill",
+      "purpose": "Write public trust center and security overview pages that are accurate and evidence-backed."
+    },
+    {
+      "name": "security-exception-process",
+      "kind": "skill",
+      "purpose": "Run a security policy exception process with risk rating, approvals and expiry."
+    },
+    {
+      "name": "security-metrics-reporting",
+      "kind": "skill",
+      "purpose": "Report security posture to leadership and boards with a small set of trend metrics tied to risk."
+    },
+    {
+      "name": "security-roadmap-planning",
+      "kind": "skill",
+      "purpose": "Plan a security program roadmap from risk assessment, maturity model (e.g. NIST CSF) and capacity."
+    },
+    {
+      "name": "nist-csf-assessment",
+      "kind": "skill",
+      "purpose": "Assess maturity against NIST CSF 2.0 functions and set target profiles."
+    },
+    {
+      "name": "secure-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews diffs for exploitable security bugs, ranks them by severity and proposes concrete fixes.",
+      "skills": [
+        "secure-review-checklist",
+        "taint-flow-tracing",
+        "security-finding-writeup"
+      ]
+    },
+    {
+      "name": "auth-flow-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews authentication, session and authorization code paths for bypasses and missing checks.",
+      "skills": [
+        "auth-logic-review",
+        "session-management-hardening",
+        "owasp-access-control-checks"
+      ]
+    },
+    {
+      "name": "injection-flow-reviewer",
+      "kind": "agent",
+      "purpose": "Traces untrusted input to SQL, shell, template and deserialization sinks and reports confirmed injection risks.",
+      "skills": [
+        "taint-flow-tracing",
+        "owasp-injection-prevention",
+        "unsafe-deserialization-prevention"
+      ]
+    },
+    {
+      "name": "secrets-diff-scanner",
+      "kind": "agent",
+      "purpose": "Scans changes for hard-coded secrets and keys and tells the author how to remove and rotate them.",
+      "skills": [
+        "app-secret-hygiene",
+        "leaked-secret-response"
+      ]
+    },
+    {
+      "name": "web-hardening-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews web app config for missing security headers, CSP, cookie flags and CORS mistakes and writes the fixes.",
+      "skills": [
+        "security-headers-config",
+        "content-security-policy",
+        "cookie-security-attributes",
+        "cors-policy-review"
+      ]
+    },
+    {
+      "name": "threat-model-facilitator",
+      "kind": "agent",
+      "purpose": "Runs a STRIDE threat modeling session from a design doc and produces a threat register with mitigations.",
+      "skills": [
+        "stride-threat-modeling",
+        "security-data-flow-diagrams",
+        "threat-model-tracking"
+      ]
+    },
+    {
+      "name": "security-dfd-builder",
+      "kind": "agent",
+      "purpose": "Builds data flow diagrams with trust boundaries from code, infra and docs as threat modeling input.",
+      "skills": [
+        "security-data-flow-diagrams"
+      ]
+    },
+    {
+      "name": "mitigation-planner",
+      "kind": "agent",
+      "purpose": "Turns a threat register into prioritised, owned mitigation tickets with acceptance criteria.",
+      "skills": [
+        "threat-model-tracking",
+        "abuse-case-writing"
+      ]
+    },
+    {
+      "name": "threat-model-reviewer",
+      "kind": "agent",
+      "purpose": "Critiques an existing threat model for missing assets, boundaries and threats and flags stale sections.",
+      "skills": [
+        "stride-threat-modeling",
+        "attack-tree-analysis"
+      ]
+    },
+    {
+      "name": "sast-finding-triager",
+      "kind": "agent",
+      "purpose": "Triages SAST findings for reachability and exploitability and labels each true or false positive with reasoning.",
+      "skills": [
+        "sast-false-positive-triage",
+        "taint-flow-tracing"
+      ]
+    },
+    {
+      "name": "semgrep-rule-writer",
+      "kind": "agent",
+      "purpose": "Writes and tests Semgrep rules that catch a reported vulnerable pattern across the codebase.",
+      "skills": [
+        "semgrep-rule-authoring"
+      ]
+    },
+    {
+      "name": "codeql-query-writer",
+      "kind": "agent",
+      "purpose": "Writes CodeQL data-flow queries for project-specific sources and sinks and validates them on known cases.",
+      "skills": [
+        "codeql-query-basics"
+      ]
+    },
+    {
+      "name": "dependency-vuln-triager",
+      "kind": "agent",
+      "purpose": "Triages dependency vulnerability alerts with reachability and exploitability and recommends upgrade, patch or VEX.",
+      "skills": [
+        "dependency-vuln-triage",
+        "vuln-reachability-analysis",
+        "vex-statements"
+      ]
+    },
+    {
+      "name": "security-upgrade-pr-author",
+      "kind": "agent",
+      "purpose": "Prepares minimal dependency upgrade PRs for vulnerable packages with changelog risk notes and test results.",
+      "skills": [
+        "dependency-vuln-triage",
+        "dependency-pinning-lockfiles"
+      ]
+    },
+    {
+      "name": "sbom-auditor",
+      "kind": "agent",
+      "purpose": "Audits SBOMs for completeness, known-vulnerable components and unexpected or unvetted dependencies.",
+      "skills": [
+        "sbom-generation",
+        "osv-scanner-usage"
+      ]
+    },
+    {
+      "name": "dependency-vetting-agent",
+      "kind": "agent",
+      "purpose": "Evaluates a proposed new dependency for security and maintenance risk and returns adopt, adopt-with-conditions or reject.",
+      "skills": [
+        "new-dependency-vetting",
+        "dependency-confusion-defense"
+      ]
+    },
+    {
+      "name": "ci-pipeline-security-auditor",
+      "kind": "agent",
+      "purpose": "Audits CI/CD workflows for injection, over-privileged tokens, unpinned actions and secret exposure.",
+      "skills": [
+        "github-actions-security",
+        "ci-secrets-handling",
+        "build-runner-hardening"
+      ]
+    },
+    {
+      "name": "github-actions-hardener",
+      "kind": "agent",
+      "purpose": "Rewrites GitHub Actions workflows to pin SHAs, minimise permissions and remove script-injection risks.",
+      "skills": [
+        "github-actions-security",
+        "ci-oidc-cloud-federation"
+      ]
+    },
+    {
+      "name": "release-provenance-verifier",
+      "kind": "agent",
+      "purpose": "Checks that releases carry valid signatures and SLSA provenance and reports gaps in the release process.",
+      "skills": [
+        "slsa-build-provenance",
+        "sigstore-artifact-signing"
+      ]
+    },
+    {
+      "name": "repo-settings-auditor",
+      "kind": "agent",
+      "purpose": "Audits GitHub org and repo security settings and returns a prioritised hardening checklist.",
+      "skills": [
+        "repo-security-settings-audit",
+        "branch-protection-hardening"
+      ]
+    },
+    {
+      "name": "aws-posture-auditor",
+      "kind": "agent",
+      "purpose": "Reviews AWS accounts and findings for high-risk misconfigurations and returns a ranked remediation plan.",
+      "skills": [
+        "aws-security-hub-triage",
+        "aws-s3-exposure-review",
+        "aws-cloudtrail-monitoring"
+      ]
+    },
+    {
+      "name": "gcp-posture-auditor",
+      "kind": "agent",
+      "purpose": "Reviews GCP projects and SCC findings for IAM, network and data exposure risks.",
+      "skills": [
+        "gcp-iam-review",
+        "gcp-scc-findings-triage",
+        "gcp-org-policy-guardrails"
+      ]
+    },
+    {
+      "name": "azure-posture-auditor",
+      "kind": "agent",
+      "purpose": "Reviews Azure subscriptions and Defender for Cloud output for identity, network and data risks.",
+      "skills": [
+        "azure-rbac-review",
+        "defender-for-cloud-triage",
+        "azure-policy-baselines"
+      ]
+    },
+    {
+      "name": "cloud-exposure-remediator",
+      "kind": "agent",
+      "purpose": "Takes cloud posture findings and drafts safe IaC or console fixes with rollback notes.",
+      "skills": [
+        "cloud-network-exposure-review",
+        "cloud-misconfig-scanning"
+      ]
+    },
+    {
+      "name": "iam-policy-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews IAM policies and role bindings for wildcards, privilege escalation paths and missing conditions.",
+      "skills": [
+        "aws-iam-least-privilege",
+        "gcp-iam-review",
+        "azure-rbac-review"
+      ]
+    },
+    {
+      "name": "least-privilege-policy-generator",
+      "kind": "agent",
+      "purpose": "Generates least-privilege policies from observed access logs and the stated need, with conditions.",
+      "skills": [
+        "aws-iam-least-privilege",
+        "workload-identity-federation"
+      ]
+    },
+    {
+      "name": "access-review-assistant",
+      "kind": "agent",
+      "purpose": "Prepares access review packets per owner, flags dormant and excessive access, and tracks revocations.",
+      "skills": [
+        "iam-access-review-process",
+        "joiner-mover-leaver-controls"
+      ]
+    },
+    {
+      "name": "trust-relationship-analyst",
+      "kind": "agent",
+      "purpose": "Maps cross-account, federated and third-party trust relationships and flags confused-deputy and over-broad trust.",
+      "skills": [
+        "cross-account-access-review",
+        "workload-identity-federation"
+      ]
+    },
+    {
+      "name": "k8s-manifest-security-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Kubernetes manifests and Helm charts for securityContext, RBAC, network and secret issues.",
+      "skills": [
+        "pod-security-standards",
+        "k8s-rbac-hardening",
+        "container-escape-mitigation"
+      ]
+    },
+    {
+      "name": "k8s-rbac-auditor",
+      "kind": "agent",
+      "purpose": "Audits live cluster RBAC for over-privileged subjects and risky verbs and proposes scoped roles.",
+      "skills": [
+        "k8s-rbac-hardening",
+        "k8s-audit-log-analysis"
+      ]
+    },
+    {
+      "name": "network-policy-author",
+      "kind": "agent",
+      "purpose": "Writes default-deny NetworkPolicies from observed service traffic and documents each allowed flow.",
+      "skills": [
+        "k8s-network-policies"
+      ]
+    },
+    {
+      "name": "admission-policy-writer",
+      "kind": "agent",
+      "purpose": "Writes Kyverno or Gatekeeper policies that enforce the cluster security baseline with tests.",
+      "skills": [
+        "k8s-admission-policies",
+        "pod-security-standards"
+      ]
+    },
+    {
+      "name": "dockerfile-security-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Dockerfiles and builds for root users, secrets in layers, unpinned bases and bloat.",
+      "skills": [
+        "dockerfile-hardening",
+        "minimal-base-images"
+      ]
+    },
+    {
+      "name": "image-vuln-triager",
+      "kind": "agent",
+      "purpose": "Triages container image scan results, separates base-image from app issues and proposes rebuild or upgrade.",
+      "skills": [
+        "container-image-scanning",
+        "dependency-vuln-triage"
+      ]
+    },
+    {
+      "name": "terraform-security-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Terraform plans and modules for insecure resources and exposed state before apply.",
+      "skills": [
+        "iac-security-scanning",
+        "iac-secret-detection"
+      ]
+    },
+    {
+      "name": "iac-misconfig-fixer",
+      "kind": "agent",
+      "purpose": "Fixes IaC scanner findings with minimal diffs and explains each change and its blast radius.",
+      "skills": [
+        "iac-security-scanning",
+        "cloud-network-exposure-review"
+      ]
+    },
+    {
+      "name": "policy-as-code-author",
+      "kind": "agent",
+      "purpose": "Writes OPA/Conftest policies from security standards with test fixtures for CI.",
+      "skills": [
+        "policy-as-code-guardrails",
+        "cis-benchmark-mapping"
+      ]
+    },
+    {
+      "name": "pentest-scoping-planner",
+      "kind": "agent",
+      "purpose": "Turns an authorized engagement request into a scope, target list, test windows and assumptions for client sign-off.",
+      "skills": [
+        "pentest-scoping-roe"
+      ]
+    },
+    {
+      "name": "roe-drafter",
+      "kind": "agent",
+      "purpose": "Drafts rules of engagement and authorization letters for client and legal review before any testing begins.",
+      "skills": [
+        "pentest-scoping-roe",
+        "pentest-evidence-handling"
+      ]
+    },
+    {
+      "name": "pentest-test-plan-builder",
+      "kind": "agent",
+      "purpose": "Builds a phase-by-phase test plan for an authorized engagement mapped to WSTG cases and scope limits.",
+      "skills": [
+        "pentest-test-plan",
+        "owasp-wstg-test-cases"
+      ]
+    },
+    {
+      "name": "pentest-report-writer",
+      "kind": "agent",
+      "purpose": "Turns authorized engagement notes and evidence into a structured, client-ready penetration test report.",
+      "skills": [
+        "pentest-report-writing",
+        "security-finding-writeup"
+      ]
+    },
+    {
+      "name": "finding-severity-rater",
+      "kind": "agent",
+      "purpose": "Scores findings with CVSS and context, explains the rating and keeps severity consistent across a report.",
+      "skills": [
+        "cvss-severity-scoring"
+      ]
+    },
+    {
+      "name": "retest-verifier",
+      "kind": "agent",
+      "purpose": "Plans retests for remediated findings, records evidence and states fixed, partially fixed or not fixed.",
+      "skills": [
+        "pentest-retest-verification"
+      ]
+    },
+    {
+      "name": "security-exec-summary-writer",
+      "kind": "agent",
+      "purpose": "Writes executive summaries of security assessments for non-technical leaders with risk and next steps.",
+      "skills": [
+        "pentest-report-writing",
+        "security-metrics-reporting"
+      ]
+    },
+    {
+      "name": "incident-commander-assistant",
+      "kind": "agent",
+      "purpose": "Supports the incident commander: tracks actions, decisions and owners and keeps the incident doc current.",
+      "skills": [
+        "security-incident-triage",
+        "ir-playbook-authoring"
+      ]
+    },
+    {
+      "name": "ir-timeline-builder",
+      "kind": "agent",
+      "purpose": "Builds an incident timeline from logs, alerts and notes with sources and confidence for each event.",
+      "skills": [
+        "forensic-timeline-analysis",
+        "cloud-log-forensics"
+      ]
+    },
+    {
+      "name": "containment-planner",
+      "kind": "agent",
+      "purpose": "Proposes containment options with impact and evidence-loss trade-offs for the incident lead to approve.",
+      "skills": [
+        "cloud-containment-actions",
+        "forensic-evidence-preservation"
+      ]
+    },
+    {
+      "name": "incident-comms-drafter",
+      "kind": "agent",
+      "purpose": "Drafts status updates, customer notices and regulator notifications for legal and leadership approval.",
+      "skills": [
+        "security-incident-comms"
+      ]
+    },
+    {
+      "name": "post-incident-reviewer",
+      "kind": "agent",
+      "purpose": "Facilitates a blameless security post-incident review and returns root causes and control improvements.",
+      "skills": [
+        "security-post-incident-review"
+      ]
+    },
+    {
+      "name": "cloud-forensics-investigator",
+      "kind": "agent",
+      "purpose": "Investigates cloud audit logs to scope a compromise and lists attacker actions, persistence and affected resources.",
+      "skills": [
+        "cloud-log-forensics",
+        "cloud-credential-compromise-response"
+      ]
+    },
+    {
+      "name": "host-forensics-analyst",
+      "kind": "agent",
+      "purpose": "Analyses collected host artifacts and memory images to identify malicious activity and indicators.",
+      "skills": [
+        "windows-artifact-analysis",
+        "memory-forensics-triage",
+        "forensic-timeline-analysis"
+      ]
+    },
+    {
+      "name": "evidence-custodian",
+      "kind": "agent",
+      "purpose": "Logs evidence acquisition, hashing and transfers and keeps the chain-of-custody record complete.",
+      "skills": [
+        "chain-of-custody",
+        "forensic-evidence-preservation"
+      ]
+    },
+    {
+      "name": "sigma-rule-writer",
+      "kind": "agent",
+      "purpose": "Writes Sigma rules from a described behaviour or ATT&CK technique, with test cases and false-positive notes.",
+      "skills": [
+        "sigma-rule-authoring",
+        "mitre-attack-mapping"
+      ]
+    },
+    {
+      "name": "detection-tester",
+      "kind": "agent",
+      "purpose": "Designs lab validation for detections and reports which fire, which miss and why.",
+      "skills": [
+        "detection-validation-testing",
+        "detection-as-code"
+      ]
+    },
+    {
+      "name": "attack-coverage-mapper",
+      "kind": "agent",
+      "purpose": "Maps the detection library to ATT&CK and returns a coverage heatmap with prioritised gaps.",
+      "skills": [
+        "mitre-attack-mapping"
+      ]
+    },
+    {
+      "name": "alert-tuning-analyst",
+      "kind": "agent",
+      "purpose": "Analyses alert volume and outcomes and proposes tuning that cuts noise while keeping true positives.",
+      "skills": [
+        "alert-tuning",
+        "alert-enrichment"
+      ]
+    },
+    {
+      "name": "soc-alert-triager",
+      "kind": "agent",
+      "purpose": "Triages a security alert with enrichment, gives a verdict with evidence and recommends close or escalate.",
+      "skills": [
+        "alert-triage-runbooks",
+        "alert-enrichment"
+      ]
+    },
+    {
+      "name": "phishing-triage-analyst",
+      "kind": "agent",
+      "purpose": "Analyses a reported email, gives a verdict, extracts indicators and lists response actions.",
+      "skills": [
+        "phishing-email-analysis",
+        "mailbox-purge-response"
+      ]
+    },
+    {
+      "name": "soc-escalation-writer",
+      "kind": "agent",
+      "purpose": "Writes escalation notes and case summaries for tier-2 and incident responders.",
+      "skills": [
+        "alert-triage-runbooks",
+        "soc-shift-handover"
+      ]
+    },
+    {
+      "name": "soar-playbook-designer",
+      "kind": "agent",
+      "purpose": "Designs SOAR playbooks for a recurring alert type with enrichment, decisions and approval gates.",
+      "skills": [
+        "soar-playbook-design"
+      ]
+    },
+    {
+      "name": "hunt-hypothesis-planner",
+      "kind": "agent",
+      "purpose": "Proposes threat hunt hypotheses from intel and environment and lists required data sources.",
+      "skills": [
+        "hypothesis-threat-hunting",
+        "intel-driven-detection"
+      ]
+    },
+    {
+      "name": "hunt-query-writer",
+      "kind": "agent",
+      "purpose": "Writes hunt queries in SPL, KQL or EQL for a hypothesis and explains expected benign results.",
+      "skills": [
+        "hunt-query-library",
+        "splunk-spl-detections",
+        "kql-sentinel-detections"
+      ]
+    },
+    {
+      "name": "hunt-report-writer",
+      "kind": "agent",
+      "purpose": "Writes up hunt results and proposes detections from confirmed patterns.",
+      "skills": [
+        "hunt-findings-reporting"
+      ]
+    },
+    {
+      "name": "threat-intel-summarizer",
+      "kind": "agent",
+      "purpose": "Summarises threat reports into relevance for your environment, TTPs and recommended actions.",
+      "skills": [
+        "threat-intel-reporting",
+        "mitre-attack-mapping"
+      ]
+    },
+    {
+      "name": "ioc-extractor",
+      "kind": "agent",
+      "purpose": "Extracts, normalises and de-duplicates indicators from reports and outputs STIX or CSV.",
+      "skills": [
+        "ioc-management",
+        "stix-taxii-feeds"
+      ]
+    },
+    {
+      "name": "intel-to-detection-translator",
+      "kind": "agent",
+      "purpose": "Turns adversary behaviour from intel into detection and hunt backlog items.",
+      "skills": [
+        "intel-driven-detection",
+        "sigma-rule-authoring"
+      ]
+    },
+    {
+      "name": "vuln-prioritizer",
+      "kind": "agent",
+      "purpose": "Ranks open vulnerabilities by exploitability, exposure and asset criticality and returns a fix-first list.",
+      "skills": [
+        "cvss-epss-prioritization",
+        "kev-catalog-tracking",
+        "asset-inventory-security"
+      ]
+    },
+    {
+      "name": "vuln-remediation-tracker",
+      "kind": "agent",
+      "purpose": "Tracks remediation against SLAs, chases owners and flags overdue and recurring vulnerabilities.",
+      "skills": [
+        "vuln-sla-policy",
+        "vuln-metrics-reporting"
+      ]
+    },
+    {
+      "name": "vuln-exception-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews risk acceptance requests for compensating controls and sensible expiry and recommends approve or reject.",
+      "skills": [
+        "vuln-exception-process"
+      ]
+    },
+    {
+      "name": "soc2-gap-assessor",
+      "kind": "agent",
+      "purpose": "Assesses an environment against SOC 2 criteria and returns gaps, owners and a remediation plan.",
+      "skills": [
+        "soc2-readiness-gap-analysis",
+        "soc2-control-mapping"
+      ]
+    },
+    {
+      "name": "soc2-evidence-collector",
+      "kind": "agent",
+      "purpose": "Collects and organises evidence for SOC 2 controls and flags missing or stale items.",
+      "skills": [
+        "soc2-evidence-collection",
+        "audit-request-response"
+      ]
+    },
+    {
+      "name": "security-policy-writer",
+      "kind": "agent",
+      "purpose": "Drafts and updates security policies and standards that match how the company really works, for approval.",
+      "skills": [
+        "infosec-policy-drafting"
+      ]
+    },
+    {
+      "name": "auditor-request-responder",
+      "kind": "agent",
+      "purpose": "Drafts responses to auditor requests with evidence references and consistent narratives.",
+      "skills": [
+        "audit-request-response"
+      ]
+    },
+    {
+      "name": "isms-scoping-planner",
+      "kind": "agent",
+      "purpose": "Plans ISO 27001 ISMS scope, context and risk methodology for a first certification.",
+      "skills": [
+        "iso27001-isms-scoping",
+        "security-risk-register"
+      ]
+    },
+    {
+      "name": "soa-builder",
+      "kind": "agent",
+      "purpose": "Builds the Statement of Applicability from the risk register with control justifications.",
+      "skills": [
+        "statement-of-applicability",
+        "iso27001-annex-a-controls"
+      ]
+    },
+    {
+      "name": "iso-internal-auditor",
+      "kind": "agent",
+      "purpose": "Runs ISO 27001 internal audit checklists against evidence and writes nonconformities.",
+      "skills": [
+        "iso27001-internal-audit"
+      ]
+    },
+    {
+      "name": "security-risk-curator",
+      "kind": "agent",
+      "purpose": "Maintains the security risk register: new risks, rescoring, treatment status and review dates.",
+      "skills": [
+        "security-risk-register"
+      ]
+    },
+    {
+      "name": "pci-scope-assessor",
+      "kind": "agent",
+      "purpose": "Maps cardholder data flows and proposes scope reduction options for PCI DSS.",
+      "skills": [
+        "pci-cardholder-data-flows",
+        "pci-scope-reduction"
+      ]
+    },
+    {
+      "name": "pci-evidence-mapper",
+      "kind": "agent",
+      "purpose": "Maps existing controls and evidence to PCI DSS v4.0 requirements and lists gaps.",
+      "skills": [
+        "pci-control-evidence",
+        "pci-saq-selection"
+      ]
+    },
+    {
+      "name": "cde-network-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews segmentation and firewall rules around the cardholder data environment.",
+      "skills": [
+        "network-segmentation-design",
+        "firewall-rule-review"
+      ]
+    },
+    {
+      "name": "hipaa-risk-analyst",
+      "kind": "agent",
+      "purpose": "Drafts the HIPAA security risk analysis and risk management plan for compliance-officer sign-off.",
+      "skills": [
+        "hipaa-risk-analysis",
+        "phi-data-inventory"
+      ]
+    },
+    {
+      "name": "phi-flow-mapper",
+      "kind": "agent",
+      "purpose": "Maps PHI flows across systems and vendors and flags unprotected stores and transfers.",
+      "skills": [
+        "phi-data-inventory"
+      ]
+    },
+    {
+      "name": "hipaa-safeguard-auditor",
+      "kind": "agent",
+      "purpose": "Audits systems against HIPAA technical safeguards and lists gaps with fixes.",
+      "skills": [
+        "hipaa-technical-safeguards",
+        "security-audit-logging"
+      ]
+    },
+    {
+      "name": "pii-data-mapper",
+      "kind": "agent",
+      "purpose": "Scans schemas and code to map personal data fields, purposes and flows into a data map.",
+      "skills": [
+        "pii-discovery-classification",
+        "gdpr-ropa-data-mapping"
+      ]
+    },
+    {
+      "name": "dpia-drafter",
+      "kind": "agent",
+      "purpose": "Drafts a DPIA from a feature description and data map, for DPO and legal review.",
+      "skills": [
+        "dpia-drafting",
+        "linddun-privacy-threats"
+      ]
+    },
+    {
+      "name": "dsar-workflow-assistant",
+      "kind": "agent",
+      "purpose": "Plans and checks DSAR fulfilment across systems and drafts the response package.",
+      "skills": [
+        "dsar-handling"
+      ]
+    },
+    {
+      "name": "privacy-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews code changes for new personal data collection, logging of PII and retention issues.",
+      "skills": [
+        "data-minimization-review",
+        "pii-safe-logging"
+      ]
+    },
+    {
+      "name": "crypto-usage-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews code for cryptographic misuse and recommends safe library calls.",
+      "skills": [
+        "crypto-misuse-detection",
+        "aead-encryption-patterns",
+        "secure-randomness"
+      ]
+    },
+    {
+      "name": "key-management-auditor",
+      "kind": "agent",
+      "purpose": "Audits KMS keys, policies and rotation and flags over-broad key access.",
+      "skills": [
+        "kms-key-management"
+      ]
+    },
+    {
+      "name": "tls-config-auditor",
+      "kind": "agent",
+      "purpose": "Audits TLS endpoints and certificates for weak config and upcoming expiry.",
+      "skills": [
+        "tls-configuration-hardening",
+        "tls-certificate-lifecycle"
+      ]
+    },
+    {
+      "name": "pqc-migration-planner",
+      "kind": "agent",
+      "purpose": "Builds a crypto inventory and a phased post-quantum migration plan.",
+      "skills": [
+        "crypto-inventory",
+        "pqc-migration-planning"
+      ]
+    },
+    {
+      "name": "vendor-risk-assessor",
+      "kind": "agent",
+      "purpose": "Assesses a vendor from its security documentation and returns a risk tier and follow-up questions.",
+      "skills": [
+        "third-party-security-assessment",
+        "soc2-report-review"
+      ]
+    },
+    {
+      "name": "security-questionnaire-responder",
+      "kind": "agent",
+      "purpose": "Answers customer security questionnaires from the answer library and flags questions needing an owner.",
+      "skills": [
+        "security-questionnaire-response"
+      ]
+    },
+    {
+      "name": "trust-center-writer",
+      "kind": "agent",
+      "purpose": "Writes and updates trust center content from current controls and certifications.",
+      "skills": [
+        "trust-center-content"
+      ]
+    },
+    {
+      "name": "prompt-injection-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews LLM app code and prompts for prompt-injection and unsafe output handling risks.",
+      "skills": [
+        "llm-prompt-injection-defense",
+        "llm-output-handling-security"
+      ]
+    },
+    {
+      "name": "agent-permission-auditor",
+      "kind": "agent",
+      "purpose": "Audits an AI agent configuration for over-broad tools, credentials and missing approvals.",
+      "skills": [
+        "agent-tool-permission-scoping"
+      ]
+    },
+    {
+      "name": "llm-red-team-planner",
+      "kind": "agent",
+      "purpose": "Plans an authorized red-team evaluation of your own LLM app with test categories and success criteria.",
+      "skills": [
+        "owasp-llm-top10-review",
+        "llm-prompt-injection-defense"
+      ]
+    },
+    {
+      "name": "awareness-content-writer",
+      "kind": "agent",
+      "purpose": "Writes short, role-specific security awareness modules and quizzes.",
+      "skills": [
+        "security-awareness-curriculum"
+      ]
+    },
+    {
+      "name": "phishing-sim-planner",
+      "kind": "agent",
+      "purpose": "Plans an approved internal phishing simulation campaign with templates, targeting rules and follow-up training.",
+      "skills": [
+        "phishing-simulation-program",
+        "awareness-metrics"
+      ]
+    },
+    {
+      "name": "secure-coding-lab-builder",
+      "kind": "agent",
+      "purpose": "Builds secure coding exercises from the team stack and recent findings.",
+      "skills": [
+        "secure-coding-training"
+      ]
+    },
+    {
+      "name": "architecture-security-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews architecture docs before build and returns risks, required controls and open questions.",
+      "skills": [
+        "secure-design-review",
+        "stride-threat-modeling"
+      ]
+    },
+    {
+      "name": "security-requirements-writer",
+      "kind": "agent",
+      "purpose": "Writes ASVS-based security requirements and abuse cases for a feature or system.",
+      "skills": [
+        "security-requirements-definition",
+        "abuse-case-writing"
+      ]
+    },
+    {
+      "name": "vuln-report-triager",
+      "kind": "agent",
+      "purpose": "Validates incoming vulnerability reports, de-duplicates them and assigns severity and owner.",
+      "skills": [
+        "bug-bounty-report-triage",
+        "cvss-severity-scoring"
+      ]
+    },
+    {
+      "name": "researcher-reply-drafter",
+      "kind": "agent",
+      "purpose": "Drafts replies to security researchers for acknowledgement, status, disputes and disclosure coordination.",
+      "skills": [
+        "researcher-communication"
+      ]
+    },
+    {
+      "name": "bounty-reward-assessor",
+      "kind": "agent",
+      "purpose": "Recommends bounty amounts from severity, quality and program table with justification.",
+      "skills": [
+        "bug-bounty-report-triage"
+      ]
+    },
+    {
+      "name": "secret-leak-responder",
+      "kind": "agent",
+      "purpose": "Coordinates response to a leaked secret: revocation, rotation, usage review and history clean-up.",
+      "skills": [
+        "leaked-secret-response",
+        "git-history-secret-purge"
+      ]
+    },
+    {
+      "name": "secret-rotation-orchestrator",
+      "kind": "agent",
+      "purpose": "Plans zero-downtime rotation for a credential across all consumers and verifies completion.",
+      "skills": [
+        "secret-rotation-runbooks",
+        "secrets-vault-patterns"
+      ]
+    },
+    {
+      "name": "secret-scanner-tuner",
+      "kind": "agent",
+      "purpose": "Tunes secret scanning rules and allowlists to cut noise without missing real keys.",
+      "skills": [
+        "secret-scanning-setup",
+        "pre-commit-secret-hooks"
+      ]
+    },
+    {
+      "name": "policy-gap-analyst",
+      "kind": "agent",
+      "purpose": "Compares security policies to frameworks and actual practice and lists gaps and contradictions.",
+      "skills": [
+        "infosec-policy-drafting",
+        "nist-csf-assessment"
+      ]
+    },
+    {
+      "name": "security-exception-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews policy exception requests and recommends approval terms and expiry.",
+      "skills": [
+        "security-exception-process"
+      ]
+    },
+    {
+      "name": "security-roadmap-planner",
+      "kind": "agent",
+      "purpose": "Builds a prioritised security roadmap from a maturity assessment and risk register.",
+      "skills": [
+        "security-roadmap-planning",
+        "nist-csf-assessment"
+      ]
+    },
+    {
+      "name": "ransomware-readiness-assessor",
+      "kind": "agent",
+      "purpose": "Assesses ransomware readiness: backups, segmentation, privileged access, EDR coverage, and returns gaps.",
+      "skills": [
+        "immutable-backup-verification",
+        "ransomware-response-playbook",
+        "privileged-access-management"
+      ]
+    },
+    {
+      "name": "tabletop-designer",
+      "kind": "agent",
+      "purpose": "Designs a security tabletop exercise with scenario, injects and evaluation criteria.",
+      "skills": [
+        "security-tabletop-exercises"
+      ]
+    },
+    {
+      "name": "ad-security-auditor",
+      "kind": "agent",
+      "purpose": "Audits Active Directory for privileged group sprawl, delegation risks and tiering gaps.",
+      "skills": [
+        "ad-privileged-group-audit",
+        "ad-tiering-model"
+      ]
+    },
+    {
+      "name": "endpoint-baseline-auditor",
+      "kind": "agent",
+      "purpose": "Checks endpoint fleet compliance against Windows and macOS baselines and EDR coverage.",
+      "skills": [
+        "windows-hardening-baselines",
+        "macos-hardening-baselines",
+        "edr-deployment-tuning"
+      ]
+    },
+    {
+      "name": "mobile-app-security-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews mobile app code and config against MASVS and writes fixes.",
+      "skills": [
+        "owasp-masvs-checks",
+        "mobile-secure-storage",
+        "mobile-network-security"
+      ]
+    },
+    {
+      "name": "api-security-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews API code and specs for authorization, mass assignment and abuse risks.",
+      "skills": [
+        "api-bola-checks",
+        "api-mass-assignment-prevention",
+        "api-abuse-rate-limiting"
+      ]
+    }
+  ]
+}

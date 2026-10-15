@@ -1,0 +1,2531 @@
+{
+  "domain": "data",
+  "packages": [
+    {
+      "name": "sql-join-patterns",
+      "kind": "skill",
+      "purpose": "Choose and write inner, outer, semi, anti and lateral joins correctly, and spot fan-out and accidental cross joins."
+    },
+    {
+      "name": "sql-window-functions",
+      "kind": "skill",
+      "purpose": "Write ROW_NUMBER, RANK, LAG/LEAD, running totals and frame clauses, with dialect differences across Postgres, Snowflake and BigQuery."
+    },
+    {
+      "name": "sql-ctes-recursive",
+      "kind": "skill",
+      "purpose": "Structure queries with CTEs and write recursive CTEs for hierarchies, graphs and date spines without infinite loops."
+    },
+    {
+      "name": "sql-null-semantics",
+      "kind": "skill",
+      "purpose": "Handle NULL in comparisons, aggregates, NOT IN, outer joins and COALESCE so results are not silently wrong."
+    },
+    {
+      "name": "sql-style-guide",
+      "kind": "skill",
+      "purpose": "Format and name SQL consistently (casing, CTE naming, aliasing, trailing commas) and configure sqlfluff to enforce it."
+    },
+    {
+      "name": "sql-cohort-queries",
+      "kind": "skill",
+      "purpose": "Build cohort tables by signup period with retention, revenue and activity per cohort age in plain SQL."
+    },
+    {
+      "name": "sql-funnel-queries",
+      "kind": "skill",
+      "purpose": "Compute ordered, time-bounded conversion funnels per user with step drop-off in SQL."
+    },
+    {
+      "name": "sql-sessionization",
+      "kind": "skill",
+      "purpose": "Group event streams into sessions with inactivity gaps using window functions, including cross-midnight edge cases."
+    },
+    {
+      "name": "sql-gaps-and-islands",
+      "kind": "skill",
+      "purpose": "Solve gaps-and-islands, date spines and missing-period fills for time series data in SQL."
+    },
+    {
+      "name": "sql-deduplication",
+      "kind": "skill",
+      "purpose": "Deduplicate rows deterministically with QUALIFY / ROW_NUMBER and pick a survivor by explicit tie-break rules."
+    },
+    {
+      "name": "pg-data-types",
+      "kind": "skill",
+      "purpose": "Pick Postgres column types (numeric vs float, timestamptz, text vs varchar, uuid, arrays, ranges) and avoid common type traps."
+    },
+    {
+      "name": "pg-constraints",
+      "kind": "skill",
+      "purpose": "Enforce integrity with CHECK, UNIQUE, exclusion, foreign keys and deferrable constraints, and add them without long locks."
+    },
+    {
+      "name": "pg-partitioning",
+      "kind": "skill",
+      "purpose": "Design declarative range/list/hash partitioning, partition pruning and automated partition creation and retention."
+    },
+    {
+      "name": "pg-jsonb-modeling",
+      "kind": "skill",
+      "purpose": "Decide when JSONB fits, index it with GIN and expression indexes, and query it efficiently."
+    },
+    {
+      "name": "pg-explain-analyze",
+      "kind": "skill",
+      "purpose": "Read EXPLAIN (ANALYZE, BUFFERS) output: node types, row estimate errors, loops, buffers and where time is spent."
+    },
+    {
+      "name": "pg-index-selection",
+      "kind": "skill",
+      "purpose": "Choose B-tree, partial, covering, expression, GIN, GiST and BRIN indexes for a given query workload."
+    },
+    {
+      "name": "pg-vacuum-bloat",
+      "kind": "skill",
+      "purpose": "Diagnose table and index bloat, tune autovacuum per table and prevent transaction ID wraparound."
+    },
+    {
+      "name": "pg-planner-statistics",
+      "kind": "skill",
+      "purpose": "Fix bad plans with ANALYZE, extended statistics, default_statistics_target and planner cost settings."
+    },
+    {
+      "name": "pg-connection-pooling",
+      "kind": "skill",
+      "purpose": "Size connections and configure PgBouncer modes, and handle prepared statements and session state under pooling."
+    },
+    {
+      "name": "pg-backup-restore",
+      "kind": "skill",
+      "purpose": "Plan pg_dump, pg_basebackup and PITR with WAL archiving (pgBackRest/WAL-G) and test restores."
+    },
+    {
+      "name": "pg-replication",
+      "kind": "skill",
+      "purpose": "Set up and monitor streaming and logical replication, replication slots and failover."
+    },
+    {
+      "name": "pg-major-upgrade",
+      "kind": "skill",
+      "purpose": "Upgrade Postgres major versions with pg_upgrade or logical replication, with pre-checks and rollback."
+    },
+    {
+      "name": "pg-roles-privileges",
+      "kind": "skill",
+      "purpose": "Design Postgres roles, grants, default privileges and row-level security for least-privilege access."
+    },
+    {
+      "name": "pg-monitoring-queries",
+      "kind": "skill",
+      "purpose": "Use pg_stat_statements, pg_stat_activity and lock views to find slow queries, blockers and long transactions."
+    },
+    {
+      "name": "pg-full-text-search",
+      "kind": "skill",
+      "purpose": "Build Postgres full-text search with tsvector, configurations, ranking and GIN indexes."
+    },
+    {
+      "name": "pg-trigram-fuzzy-search",
+      "kind": "skill",
+      "purpose": "Use pg_trgm for fuzzy matching, similarity search and fast LIKE/ILIKE queries."
+    },
+    {
+      "name": "pg-cron-jobs",
+      "kind": "skill",
+      "purpose": "Schedule in-database jobs with pg_cron and make them observable and idempotent."
+    },
+    {
+      "name": "pg-timescaledb",
+      "kind": "skill",
+      "purpose": "Model time series in TimescaleDB with hypertables, compression, continuous aggregates and retention."
+    },
+    {
+      "name": "pg-logical-decoding",
+      "kind": "skill",
+      "purpose": "Consume Postgres changes via logical decoding (pgoutput, wal2json), and manage publications and slots safely."
+    },
+    {
+      "name": "mysql-indexing",
+      "kind": "skill",
+      "purpose": "Design InnoDB indexes: clustered primary keys, composite index order, covering and prefix indexes."
+    },
+    {
+      "name": "mysql-explain",
+      "kind": "skill",
+      "purpose": "Read MySQL EXPLAIN and EXPLAIN ANALYZE output and fix filesort, temporary tables and full scans."
+    },
+    {
+      "name": "mysql-innodb-locking",
+      "kind": "skill",
+      "purpose": "Understand InnoDB row, gap and next-key locks and isolation levels, and debug deadlocks from SHOW ENGINE INNODB STATUS."
+    },
+    {
+      "name": "mysql-online-schema-change",
+      "kind": "skill",
+      "purpose": "Change large MySQL tables online with ALGORITHM=INSTANT/INPLACE, gh-ost or pt-online-schema-change."
+    },
+    {
+      "name": "mysql-replication",
+      "kind": "skill",
+      "purpose": "Configure MySQL GTID replication, monitor lag and handle replica promotion."
+    },
+    {
+      "name": "sqlite-pragmas-config",
+      "kind": "skill",
+      "purpose": "Configure SQLite for apps: WAL mode, synchronous, foreign_keys, busy_timeout and STRICT tables."
+    },
+    {
+      "name": "sqlite-concurrency",
+      "kind": "skill",
+      "purpose": "Handle SQLite concurrent writers, locking errors and transaction modes in multi-threaded and multi-process apps."
+    },
+    {
+      "name": "sqlite-fts5",
+      "kind": "skill",
+      "purpose": "Add full-text search to SQLite with FTS5 virtual tables, tokenizers and ranking."
+    },
+    {
+      "name": "sqlite-json-functions",
+      "kind": "skill",
+      "purpose": "Store and query JSON in SQLite with json_extract, json_each and generated columns."
+    },
+    {
+      "name": "sqlite-schema-migrations",
+      "kind": "skill",
+      "purpose": "Migrate SQLite schemas given its limited ALTER TABLE, using the 12-step table rebuild and user_version."
+    },
+    {
+      "name": "mongo-document-modeling",
+      "kind": "skill",
+      "purpose": "Model MongoDB documents: embed vs reference, bucket, outlier and computed patterns, sized to access patterns."
+    },
+    {
+      "name": "mongo-indexing",
+      "kind": "skill",
+      "purpose": "Design MongoDB compound indexes with the ESR rule, partial and TTL indexes, and verify with explain()."
+    },
+    {
+      "name": "mongo-aggregation-pipeline",
+      "kind": "skill",
+      "purpose": "Write MongoDB aggregation pipelines ($match, $group, $lookup, $facet) that use indexes and stay within memory limits."
+    },
+    {
+      "name": "mongo-schema-validation",
+      "kind": "skill",
+      "purpose": "Enforce document shape with $jsonSchema validators and evolve schemas with versioned documents."
+    },
+    {
+      "name": "mongo-transactions",
+      "kind": "skill",
+      "purpose": "Use multi-document transactions, read/write concerns and retryable writes correctly."
+    },
+    {
+      "name": "mongo-sharding",
+      "kind": "skill",
+      "purpose": "Choose MongoDB shard keys, avoid jumbo chunks and hot shards, and plan resharding."
+    },
+    {
+      "name": "mongo-performance-profiling",
+      "kind": "skill",
+      "purpose": "Find slow MongoDB operations with the profiler, $currentOp and server metrics, and fix them."
+    },
+    {
+      "name": "redis-data-structures",
+      "kind": "skill",
+      "purpose": "Pick Redis strings, hashes, sets, sorted sets, streams and HyperLogLog for a use case, with key naming conventions."
+    },
+    {
+      "name": "redis-caching-patterns",
+      "kind": "skill",
+      "purpose": "Implement cache-aside, write-through, TTLs, stampede protection and invalidation with Redis."
+    },
+    {
+      "name": "redis-rate-limiting",
+      "kind": "skill",
+      "purpose": "Implement fixed window, sliding window and token bucket rate limiters in Redis with Lua or functions."
+    },
+    {
+      "name": "redis-streams",
+      "kind": "skill",
+      "purpose": "Use Redis Streams with consumer groups, acknowledgements, pending entry recovery and trimming."
+    },
+    {
+      "name": "redis-memory-tuning",
+      "kind": "skill",
+      "purpose": "Analyse Redis memory usage, choose eviction policies and find big and hot keys."
+    },
+    {
+      "name": "dynamodb-single-table-design",
+      "kind": "skill",
+      "purpose": "Design DynamoDB single-table schemas with composite keys and item collections from listed access patterns."
+    },
+    {
+      "name": "dynamodb-access-patterns",
+      "kind": "skill",
+      "purpose": "Enumerate access patterns first and map each to a key condition, GSI or scan-free query."
+    },
+    {
+      "name": "dynamodb-gsi-design",
+      "kind": "skill",
+      "purpose": "Design GSIs and LSIs, sparse indexes and overloading, and avoid hot partitions."
+    },
+    {
+      "name": "dynamodb-streams",
+      "kind": "skill",
+      "purpose": "Process DynamoDB Streams with Lambda for aggregates, fan-out and CDC with idempotent handlers."
+    },
+    {
+      "name": "dynamodb-capacity-cost",
+      "kind": "skill",
+      "purpose": "Choose on-demand vs provisioned capacity, estimate RCU/WCU cost and use TTL to control storage."
+    },
+    {
+      "name": "cassandra-data-modeling",
+      "kind": "skill",
+      "purpose": "Model Cassandra/ScyllaDB tables query-first with partition and clustering keys and denormalised tables."
+    },
+    {
+      "name": "cassandra-partition-sizing",
+      "kind": "skill",
+      "purpose": "Estimate partition size and cell count, and bucket wide partitions to stay within limits."
+    },
+    {
+      "name": "cassandra-consistency-levels",
+      "kind": "skill",
+      "purpose": "Choose read/write consistency levels and replication factors for the needed durability and latency."
+    },
+    {
+      "name": "cassandra-compaction-tombstones",
+      "kind": "skill",
+      "purpose": "Pick compaction strategies and avoid tombstone build-up from deletes and TTLs."
+    },
+    {
+      "name": "neo4j-cypher-queries",
+      "kind": "skill",
+      "purpose": "Write Cypher for pattern matching, variable-length paths, aggregation and MERGE without duplicates."
+    },
+    {
+      "name": "graph-data-modeling",
+      "kind": "skill",
+      "purpose": "Model domains as property graphs: nodes vs relationships vs properties, and supernode avoidance."
+    },
+    {
+      "name": "neo4j-performance",
+      "kind": "skill",
+      "purpose": "Tune Neo4j queries with PROFILE, indexes and constraints, and batch large imports."
+    },
+    {
+      "name": "neo4j-graph-algorithms",
+      "kind": "skill",
+      "purpose": "Run Neo4j GDS algorithms (PageRank, community detection, path finding) and interpret results."
+    },
+    {
+      "name": "relational-normalization",
+      "kind": "skill",
+      "purpose": "Normalise to 3NF/BCNF, recognise when to denormalise, and document the trade-off."
+    },
+    {
+      "name": "er-modeling",
+      "kind": "skill",
+      "purpose": "Turn requirements into entities, relationships and cardinalities, and draw ER diagrams in Mermaid or dbdiagram."
+    },
+    {
+      "name": "keys-surrogate-natural",
+      "kind": "skill",
+      "purpose": "Choose surrogate vs natural keys, UUID vs bigint vs ULID, and enforce business uniqueness."
+    },
+    {
+      "name": "temporal-data-modeling",
+      "kind": "skill",
+      "purpose": "Model history with valid-time and transaction-time columns, audit tables and point-in-time queries."
+    },
+    {
+      "name": "soft-delete-patterns",
+      "kind": "skill",
+      "purpose": "Implement soft deletes, archival tables and uniqueness with deleted rows, and know when not to."
+    },
+    {
+      "name": "multi-tenant-schema-design",
+      "kind": "skill",
+      "purpose": "Pick shared-table, schema-per-tenant or database-per-tenant designs with tenant isolation and indexing."
+    },
+    {
+      "name": "kimball-star-schema",
+      "kind": "skill",
+      "purpose": "Design star schemas with facts, dimensions and declared grain following Kimball practice."
+    },
+    {
+      "name": "slowly-changing-dimensions",
+      "kind": "skill",
+      "purpose": "Implement SCD types 1, 2 and 6 with effective dates, current flags and surrogate keys."
+    },
+    {
+      "name": "fact-table-design",
+      "kind": "skill",
+      "purpose": "Choose transaction, periodic snapshot and accumulating snapshot fact tables and additive measures."
+    },
+    {
+      "name": "conformed-dimensions",
+      "kind": "skill",
+      "purpose": "Build conformed dimensions and a bus matrix so metrics join consistently across domains."
+    },
+    {
+      "name": "data-vault-modeling",
+      "kind": "skill",
+      "purpose": "Model hubs, links and satellites in Data Vault 2.0 and when it beats a star schema."
+    },
+    {
+      "name": "one-big-table-modeling",
+      "kind": "skill",
+      "purpose": "Decide when wide denormalised tables suit BI tools and how to build them from a star schema."
+    },
+    {
+      "name": "zero-downtime-migrations",
+      "kind": "skill",
+      "purpose": "Plan schema changes without downtime: lock-safe DDL, concurrent index builds and deploy ordering."
+    },
+    {
+      "name": "expand-contract-migrations",
+      "kind": "skill",
+      "purpose": "Apply expand/contract (parallel change) for renames, type changes and column splits across app releases."
+    },
+    {
+      "name": "data-backfill-execution",
+      "kind": "skill",
+      "purpose": "Run large backfills in batches with throttling, checkpoints, idempotency and progress tracking."
+    },
+    {
+      "name": "migration-rollback-planning",
+      "kind": "skill",
+      "purpose": "Write rollback and roll-forward plans for each migration step, including data-loss risks."
+    },
+    {
+      "name": "db-migration-tooling",
+      "kind": "skill",
+      "purpose": "Use Flyway, Liquibase, Atlas or sqitch for versioned migrations, checksums and drift detection."
+    },
+    {
+      "name": "query-plan-reading",
+      "kind": "skill",
+      "purpose": "Read query plans across engines (Postgres, MySQL, Snowflake, BigQuery) and find the expensive operator."
+    },
+    {
+      "name": "n-plus-one-detection",
+      "kind": "skill",
+      "purpose": "Detect N+1 queries from ORM logs and query stats and rewrite them as joins or batched loads."
+    },
+    {
+      "name": "index-design-principles",
+      "kind": "skill",
+      "purpose": "Engine-agnostic index design: selectivity, column order, covering, write cost and unused index removal."
+    },
+    {
+      "name": "keyset-pagination",
+      "kind": "skill",
+      "purpose": "Replace OFFSET pagination with keyset/cursor pagination, including multi-column sort keys."
+    },
+    {
+      "name": "sql-anti-patterns",
+      "kind": "skill",
+      "purpose": "Spot and fix SQL anti-patterns: functions on indexed columns, OR chains, SELECT *, implicit casts and correlated subqueries."
+    },
+    {
+      "name": "dbt-project-structure",
+      "kind": "skill",
+      "purpose": "Lay out dbt projects in staging, intermediate and marts layers with naming and folder conventions."
+    },
+    {
+      "name": "dbt-materializations",
+      "kind": "skill",
+      "purpose": "Choose view, table, incremental, ephemeral and materialized-view materializations per model."
+    },
+    {
+      "name": "dbt-incremental-models",
+      "kind": "skill",
+      "purpose": "Build incremental models with unique keys, merge vs insert_overwrite, lookback windows and full-refresh safety."
+    },
+    {
+      "name": "dbt-tests-contracts",
+      "kind": "skill",
+      "purpose": "Add generic, singular and unit tests plus model contracts and constraints in dbt."
+    },
+    {
+      "name": "dbt-macros-jinja",
+      "kind": "skill",
+      "purpose": "Write reusable dbt macros and Jinja, with dispatch for cross-database compatibility."
+    },
+    {
+      "name": "dbt-docs-exposures",
+      "kind": "skill",
+      "purpose": "Document models and columns, define sources, exposures and doc blocks, and keep YAML in sync."
+    },
+    {
+      "name": "dbt-semantic-layer",
+      "kind": "skill",
+      "purpose": "Define semantic models, measures and metrics with MetricFlow and query them consistently."
+    },
+    {
+      "name": "dbt-snapshots",
+      "kind": "skill",
+      "purpose": "Capture slowly changing source data with dbt snapshots using timestamp and check strategies."
+    },
+    {
+      "name": "dbt-slim-ci",
+      "kind": "skill",
+      "purpose": "Run state-aware slim CI with defer and state:modified+ to build only changed models in pull requests."
+    },
+    {
+      "name": "dbt-package-management",
+      "kind": "skill",
+      "purpose": "Use and pin dbt packages (dbt_utils, dbt_expectations) and write a private package."
+    },
+    {
+      "name": "dbt-mesh",
+      "kind": "skill",
+      "purpose": "Split large dbt projects with model access, groups, versions and cross-project refs."
+    },
+    {
+      "name": "airflow-dag-authoring",
+      "kind": "skill",
+      "purpose": "Write Airflow DAGs with sensible schedules, catchup, retries, timeouts and top-level-code hygiene."
+    },
+    {
+      "name": "airflow-taskflow-api",
+      "kind": "skill",
+      "purpose": "Use the TaskFlow API, XCom limits, dynamic task mapping and task groups."
+    },
+    {
+      "name": "airflow-deferrable-sensors",
+      "kind": "skill",
+      "purpose": "Use deferrable operators and sensors and reschedule mode to avoid tying up worker slots."
+    },
+    {
+      "name": "airflow-dag-testing",
+      "kind": "skill",
+      "purpose": "Test DAG integrity, task logic and templates with pytest and dag.test()."
+    },
+    {
+      "name": "airflow-connections-secrets",
+      "kind": "skill",
+      "purpose": "Manage Airflow connections and variables through a secrets backend instead of the metadata DB."
+    },
+    {
+      "name": "airflow-backfill-reruns",
+      "kind": "skill",
+      "purpose": "Run backfills, clear tasks and rerun data intervals safely with idempotent tasks."
+    },
+    {
+      "name": "dagster-assets",
+      "kind": "skill",
+      "purpose": "Model pipelines as Dagster software-defined assets with dependencies, metadata and asset checks."
+    },
+    {
+      "name": "dagster-resources-io",
+      "kind": "skill",
+      "purpose": "Configure Dagster resources and IO managers per environment."
+    },
+    {
+      "name": "dagster-partitions",
+      "kind": "skill",
+      "purpose": "Use time and static partitions, partition mappings and backfills in Dagster."
+    },
+    {
+      "name": "dagster-automation",
+      "kind": "skill",
+      "purpose": "Trigger Dagster runs with schedules, sensors and declarative automation conditions."
+    },
+    {
+      "name": "dagster-testing",
+      "kind": "skill",
+      "purpose": "Unit test Dagster assets and resources with mocked resources and materialize_to_memory."
+    },
+    {
+      "name": "spark-dataframe-api",
+      "kind": "skill",
+      "purpose": "Write idiomatic PySpark DataFrame code with built-in functions instead of collect() and Python loops."
+    },
+    {
+      "name": "spark-partitioning-shuffle",
+      "kind": "skill",
+      "purpose": "Control partition counts, repartition vs coalesce, and shuffle size with AQE."
+    },
+    {
+      "name": "spark-joins-skew",
+      "kind": "skill",
+      "purpose": "Pick broadcast, sort-merge and shuffle-hash joins and fix data skew with salting or AQE skew joins."
+    },
+    {
+      "name": "spark-config-tuning",
+      "kind": "skill",
+      "purpose": "Tune executor memory, cores, spark.sql.shuffle.partitions and dynamic allocation from Spark UI evidence."
+    },
+    {
+      "name": "spark-udf-performance",
+      "kind": "skill",
+      "purpose": "Replace Python UDFs with native functions or vectorised pandas UDFs and measure the gain."
+    },
+    {
+      "name": "spark-streaming-watermarks",
+      "kind": "skill",
+      "purpose": "Use watermarks and event-time windows in Structured Streaming and handle late data."
+    },
+    {
+      "name": "spark-streaming-state",
+      "kind": "skill",
+      "purpose": "Manage stateful streaming operations, state stores (RocksDB) and state size growth."
+    },
+    {
+      "name": "spark-streaming-sinks",
+      "kind": "skill",
+      "purpose": "Write exactly-once streaming sinks with foreachBatch, Delta merges and idempotent writes."
+    },
+    {
+      "name": "spark-streaming-checkpoints",
+      "kind": "skill",
+      "purpose": "Manage checkpoint locations, triggers and safe query restarts after code changes."
+    },
+    {
+      "name": "kafka-topic-design",
+      "kind": "skill",
+      "purpose": "Choose topic granularity, partition counts, keys and naming to preserve ordering and scale consumers."
+    },
+    {
+      "name": "kafka-producer-config",
+      "kind": "skill",
+      "purpose": "Configure producers for durability and throughput: acks, idempotence, batching, compression and retries."
+    },
+    {
+      "name": "kafka-consumer-groups",
+      "kind": "skill",
+      "purpose": "Run consumer groups with correct offset commits, rebalancing strategies and poison-message handling."
+    },
+    {
+      "name": "kafka-exactly-once",
+      "kind": "skill",
+      "purpose": "Achieve exactly-once processing with transactions and read_committed, and know its limits."
+    },
+    {
+      "name": "kafka-schema-registry",
+      "kind": "skill",
+      "purpose": "Use Avro/Protobuf schemas with a schema registry and pick compatibility modes for safe evolution."
+    },
+    {
+      "name": "kafka-connect-pipelines",
+      "kind": "skill",
+      "purpose": "Configure Kafka Connect source and sink connectors, SMTs, dead-letter queues and converters."
+    },
+    {
+      "name": "kafka-cluster-sizing",
+      "kind": "skill",
+      "purpose": "Size Kafka brokers, partitions and replication, and plan for throughput and retention."
+    },
+    {
+      "name": "kafka-lag-monitoring",
+      "kind": "skill",
+      "purpose": "Monitor and alert on consumer lag, under-replicated partitions and broker health."
+    },
+    {
+      "name": "kafka-retention-compaction",
+      "kind": "skill",
+      "purpose": "Configure time/size retention and log compaction for changelog and event topics."
+    },
+    {
+      "name": "debezium-cdc",
+      "kind": "skill",
+      "purpose": "Stream database changes with Debezium: snapshots, connector config, schema changes and ordering."
+    },
+    {
+      "name": "flink-datastream-api",
+      "kind": "skill",
+      "purpose": "Build Flink DataStream jobs with keyed state, process functions and timers."
+    },
+    {
+      "name": "flink-sql",
+      "kind": "skill",
+      "purpose": "Write Flink SQL for streaming joins, windows, temporal joins and upsert sinks."
+    },
+    {
+      "name": "flink-state-checkpoints",
+      "kind": "skill",
+      "purpose": "Configure Flink checkpoints, savepoints, state backends and state TTL."
+    },
+    {
+      "name": "flink-watermarks-windows",
+      "kind": "skill",
+      "purpose": "Define watermark strategies, idle sources and window types in Flink."
+    },
+    {
+      "name": "flink-deployment-tuning",
+      "kind": "skill",
+      "purpose": "Deploy Flink on Kubernetes, size parallelism and fix backpressure."
+    },
+    {
+      "name": "cdc-patterns",
+      "kind": "skill",
+      "purpose": "Choose CDC approaches (log-based, trigger, query-based) and handle deletes, ordering and replays downstream."
+    },
+    {
+      "name": "snowflake-warehouse-sizing",
+      "kind": "skill",
+      "purpose": "Size Snowflake virtual warehouses, multi-cluster settings and auto-suspend for workloads."
+    },
+    {
+      "name": "snowflake-clustering",
+      "kind": "skill",
+      "purpose": "Decide on clustering keys, search optimisation and micro-partition pruning in Snowflake."
+    },
+    {
+      "name": "snowflake-cost-control",
+      "kind": "skill",
+      "purpose": "Track Snowflake credits with ACCOUNT_USAGE, resource monitors and query tagging."
+    },
+    {
+      "name": "snowflake-rbac",
+      "kind": "skill",
+      "purpose": "Design Snowflake role hierarchies, access roles vs functional roles and future grants."
+    },
+    {
+      "name": "snowflake-streams-tasks",
+      "kind": "skill",
+      "purpose": "Build incremental pipelines with Snowflake streams, tasks and dynamic tables."
+    },
+    {
+      "name": "snowflake-snowpipe",
+      "kind": "skill",
+      "purpose": "Load data continuously with Snowpipe and Snowpipe Streaming, and handle load errors."
+    },
+    {
+      "name": "bigquery-partitioning-clustering",
+      "kind": "skill",
+      "purpose": "Partition and cluster BigQuery tables and require partition filters."
+    },
+    {
+      "name": "bigquery-cost-control",
+      "kind": "skill",
+      "purpose": "Estimate and cap BigQuery bytes scanned, use INFORMATION_SCHEMA jobs views and custom quotas."
+    },
+    {
+      "name": "bigquery-sql-patterns",
+      "kind": "skill",
+      "purpose": "Use BigQuery SQL features well: STRUCT/ARRAY, UNNEST, QUALIFY, approximate aggregates and scripting."
+    },
+    {
+      "name": "bigquery-slots-reservations",
+      "kind": "skill",
+      "purpose": "Choose on-demand vs editions/reservations and analyse slot usage."
+    },
+    {
+      "name": "bigquery-nested-data",
+      "kind": "skill",
+      "purpose": "Model nested and repeated fields in BigQuery and query them without row explosion."
+    },
+    {
+      "name": "redshift-dist-sort-keys",
+      "kind": "skill",
+      "purpose": "Choose Redshift distribution styles and sort keys from join and filter patterns."
+    },
+    {
+      "name": "redshift-wlm",
+      "kind": "skill",
+      "purpose": "Configure Redshift workload management, query queues and concurrency scaling."
+    },
+    {
+      "name": "redshift-spectrum",
+      "kind": "skill",
+      "purpose": "Query S3 data with Redshift Spectrum and partitioned external tables."
+    },
+    {
+      "name": "redshift-maintenance",
+      "kind": "skill",
+      "purpose": "Run VACUUM and ANALYZE, monitor table health and use advisor recommendations in Redshift."
+    },
+    {
+      "name": "databricks-unity-catalog",
+      "kind": "skill",
+      "purpose": "Organise catalogs, schemas, grants and lineage in Databricks Unity Catalog."
+    },
+    {
+      "name": "databricks-workflows",
+      "kind": "skill",
+      "purpose": "Build Databricks Jobs/Workflows with task dependencies, job clusters and Asset Bundles."
+    },
+    {
+      "name": "databricks-sql-warehouses",
+      "kind": "skill",
+      "purpose": "Size and tune Databricks SQL warehouses and serverless compute for BI workloads."
+    },
+    {
+      "name": "databricks-cluster-policies",
+      "kind": "skill",
+      "purpose": "Define cluster policies and compute configs to control Databricks spend and standardise runtimes."
+    },
+    {
+      "name": "delta-lake-tables",
+      "kind": "skill",
+      "purpose": "Manage Delta tables: MERGE, OPTIMIZE, Z-ORDER/liquid clustering, VACUUM and time travel."
+    },
+    {
+      "name": "iceberg-table-management",
+      "kind": "skill",
+      "purpose": "Create and maintain Apache Iceberg tables: partition evolution, snapshot expiry and compaction."
+    },
+    {
+      "name": "parquet-layout-tuning",
+      "kind": "skill",
+      "purpose": "Tune Parquet row groups, file sizes, sort order and compression for scan performance."
+    },
+    {
+      "name": "table-format-selection",
+      "kind": "skill",
+      "purpose": "Compare Iceberg, Delta and Hudi on engine support, features and catalog fit, and pick one."
+    },
+    {
+      "name": "duckdb-local-analytics",
+      "kind": "skill",
+      "purpose": "Use DuckDB for fast local analytics on CSV, Parquet and JSON files without a server."
+    },
+    {
+      "name": "duckdb-remote-files",
+      "kind": "skill",
+      "purpose": "Query Parquet and CSV on S3/GCS/HTTP from DuckDB with httpfs and hive partitioning."
+    },
+    {
+      "name": "duckdb-sql-features",
+      "kind": "skill",
+      "purpose": "Use DuckDB-specific SQL: PIVOT, ASOF joins, list/struct functions, COLUMNS() and friendly SQL."
+    },
+    {
+      "name": "duckdb-python-integration",
+      "kind": "skill",
+      "purpose": "Use DuckDB from Python with pandas, Polars and Arrow zero-copy interchange."
+    },
+    {
+      "name": "clickhouse-mergetree-design",
+      "kind": "skill",
+      "purpose": "Design ClickHouse MergeTree tables: ORDER BY, partition key, codecs and engine variants."
+    },
+    {
+      "name": "clickhouse-materialized-views",
+      "kind": "skill",
+      "purpose": "Build ClickHouse materialized views with AggregatingMergeTree and -State/-Merge combinators."
+    },
+    {
+      "name": "clickhouse-query-tuning",
+      "kind": "skill",
+      "purpose": "Speed up ClickHouse queries with primary key usage, skip indexes, PREWHERE and projections."
+    },
+    {
+      "name": "clickhouse-ingestion",
+      "kind": "skill",
+      "purpose": "Ingest into ClickHouse with batched inserts, async inserts and Kafka table engines."
+    },
+    {
+      "name": "warehouse-cost-attribution",
+      "kind": "skill",
+      "purpose": "Attribute warehouse spend to teams, models and dashboards with query tags and usage views."
+    },
+    {
+      "name": "sql-dialect-translation",
+      "kind": "skill",
+      "purpose": "Translate SQL between dialects (Teradata, Oracle, SQL Server, Redshift to Snowflake/BigQuery) with sqlglot and manual fixes."
+    },
+    {
+      "name": "warehouse-migration-planning",
+      "kind": "skill",
+      "purpose": "Plan a warehouse migration: inventory, wave planning, dual-running and decommissioning."
+    },
+    {
+      "name": "data-reconciliation",
+      "kind": "skill",
+      "purpose": "Reconcile datasets across systems with row counts, aggregates, hashes and data-diff tools."
+    },
+    {
+      "name": "lookml-modeling",
+      "kind": "skill",
+      "purpose": "Write LookML views, dimensions, measures and derived tables with DRY refinements and extends."
+    },
+    {
+      "name": "lookml-explores-joins",
+      "kind": "skill",
+      "purpose": "Design Looker explores with correct join relationships to avoid fan-out and symmetric aggregate surprises."
+    },
+    {
+      "name": "looker-pdts-caching",
+      "kind": "skill",
+      "purpose": "Use persistent derived tables, datagroups and aggregate awareness for Looker performance."
+    },
+    {
+      "name": "looker-access-controls",
+      "kind": "skill",
+      "purpose": "Apply Looker access filters, user attributes and model sets for row and field-level access."
+    },
+    {
+      "name": "metabase-models-questions",
+      "kind": "skill",
+      "purpose": "Build Metabase models, questions and metrics that analysts and business users can reuse."
+    },
+    {
+      "name": "metabase-dashboards",
+      "kind": "skill",
+      "purpose": "Build Metabase dashboards with filters, linked cards and click behaviour."
+    },
+    {
+      "name": "metabase-permissions",
+      "kind": "skill",
+      "purpose": "Configure Metabase data and collection permissions and sandboxing."
+    },
+    {
+      "name": "metabase-sql-snippets",
+      "kind": "skill",
+      "purpose": "Write Metabase native queries with variables, field filters and snippets."
+    },
+    {
+      "name": "power-bi-data-modeling",
+      "kind": "skill",
+      "purpose": "Build Power BI star-schema models with relationships, cardinality, filter direction and date tables."
+    },
+    {
+      "name": "dax-measures",
+      "kind": "skill",
+      "purpose": "Write DAX measures with CALCULATE, filter context, time intelligence and variables."
+    },
+    {
+      "name": "power-query-m",
+      "kind": "skill",
+      "purpose": "Shape data in Power Query M with query folding preserved and parameterised sources."
+    },
+    {
+      "name": "power-bi-performance",
+      "kind": "skill",
+      "purpose": "Diagnose slow Power BI reports with Performance Analyzer, DAX Studio and VertiPaq Analyzer."
+    },
+    {
+      "name": "power-bi-rls",
+      "kind": "skill",
+      "purpose": "Implement static and dynamic row-level security in Power BI and test it."
+    },
+    {
+      "name": "tableau-calculations-lod",
+      "kind": "skill",
+      "purpose": "Write Tableau calculated fields, table calculations and FIXED/INCLUDE/EXCLUDE LOD expressions."
+    },
+    {
+      "name": "tableau-data-sources",
+      "kind": "skill",
+      "purpose": "Choose live vs extract, relationships vs joins, and publish certified Tableau data sources."
+    },
+    {
+      "name": "tableau-dashboard-design",
+      "kind": "skill",
+      "purpose": "Lay out Tableau dashboards with actions, containers and device layouts."
+    },
+    {
+      "name": "tableau-performance",
+      "kind": "skill",
+      "purpose": "Speed up Tableau workbooks using the performance recorder, extract tuning and filter design."
+    },
+    {
+      "name": "bi-kpi-definition",
+      "kind": "skill",
+      "purpose": "Define KPIs with formula, grain, filters, owner and caveats so everyone computes them the same way."
+    },
+    {
+      "name": "dashboard-layout-principles",
+      "kind": "skill",
+      "purpose": "Lay out dashboards by question hierarchy: headline numbers, trends, breakdowns and drill paths."
+    },
+    {
+      "name": "metric-trees",
+      "kind": "skill",
+      "purpose": "Decompose a top-level metric into driver trees to explain movements and choose levers."
+    },
+    {
+      "name": "bi-chart-selection",
+      "kind": "skill",
+      "purpose": "Choose chart types for comparison, trend, distribution and composition, and avoid misleading encodings."
+    },
+    {
+      "name": "dashboard-review-checklist",
+      "kind": "skill",
+      "purpose": "Review dashboards for correctness, labelling, filter defaults, load time and audience fit."
+    },
+    {
+      "name": "metric-definitions-spec",
+      "kind": "skill",
+      "purpose": "Write metric definitions as version-controlled YAML specs with dimensions, time grains and tests."
+    },
+    {
+      "name": "cube-semantic-layer",
+      "kind": "skill",
+      "purpose": "Model cubes, measures, joins and pre-aggregations in Cube for a headless semantic layer."
+    },
+    {
+      "name": "metric-governance",
+      "kind": "skill",
+      "purpose": "Run metric certification, ownership, change review and deprecation across BI tools."
+    },
+    {
+      "name": "data-storytelling",
+      "kind": "skill",
+      "purpose": "Structure an analysis as question, answer, evidence and recommendation for a non-technical audience."
+    },
+    {
+      "name": "analysis-writeup",
+      "kind": "skill",
+      "purpose": "Write analysis memos with methodology, assumptions, limitations and reproducible queries attached."
+    },
+    {
+      "name": "executive-metric-summaries",
+      "kind": "skill",
+      "purpose": "Summarise weekly business metrics with movements, drivers and caveats in a few lines."
+    },
+    {
+      "name": "event-taxonomy-design",
+      "kind": "skill",
+      "purpose": "Design event names, properties and object-action conventions for product analytics."
+    },
+    {
+      "name": "analytics-tracking-plan",
+      "kind": "skill",
+      "purpose": "Write and maintain a tracking plan mapping user actions to events, properties and owners."
+    },
+    {
+      "name": "funnel-analysis",
+      "kind": "skill",
+      "purpose": "Analyse conversion funnels: step definitions, time windows, segments and statistical noise."
+    },
+    {
+      "name": "retention-analysis",
+      "kind": "skill",
+      "purpose": "Measure N-day, unbounded and bracket retention, read retention curves and find activation moments."
+    },
+    {
+      "name": "product-metrics-analysis",
+      "kind": "skill",
+      "purpose": "Compute and interpret DAU/MAU, stickiness, feature adoption and engagement depth."
+    },
+    {
+      "name": "amplitude-analysis",
+      "kind": "skill",
+      "purpose": "Build Amplitude charts, cohorts and behavioural segments and avoid identity and timezone pitfalls."
+    },
+    {
+      "name": "mixpanel-analysis",
+      "kind": "skill",
+      "purpose": "Use Mixpanel insights, funnels, flows and JQL-free exports, with identity merge caveats."
+    },
+    {
+      "name": "posthog-analysis",
+      "kind": "skill",
+      "purpose": "Use PostHog insights, HogQL queries, cohorts and feature flag analytics."
+    },
+    {
+      "name": "segment-tracking-implementation",
+      "kind": "skill",
+      "purpose": "Implement Segment identify, track and group calls, protocols and destinations correctly."
+    },
+    {
+      "name": "data-quality-dimensions",
+      "kind": "skill",
+      "purpose": "Assess data on completeness, validity, uniqueness, consistency, timeliness and accuracy, with a check for each."
+    },
+    {
+      "name": "great-expectations-suites",
+      "kind": "skill",
+      "purpose": "Write Great Expectations suites, checkpoints and data docs for pipeline validation."
+    },
+    {
+      "name": "soda-checks",
+      "kind": "skill",
+      "purpose": "Write SodaCL checks for freshness, schema, row counts and validity and run them in pipelines."
+    },
+    {
+      "name": "data-contracts",
+      "kind": "skill",
+      "purpose": "Define producer-consumer data contracts (schema, semantics, SLAs) and enforce them in CI."
+    },
+    {
+      "name": "metric-anomaly-detection",
+      "kind": "skill",
+      "purpose": "Detect anomalies in pipeline and business metrics with seasonal baselines and robust thresholds."
+    },
+    {
+      "name": "data-freshness-monitoring",
+      "kind": "skill",
+      "purpose": "Monitor table freshness and pipeline SLAs and alert before consumers notice."
+    },
+    {
+      "name": "schema-drift-detection",
+      "kind": "skill",
+      "purpose": "Detect upstream schema changes and volume drops and route alerts to owners."
+    },
+    {
+      "name": "data-incident-response",
+      "kind": "skill",
+      "purpose": "Triage data incidents: scope impact, notify consumers, fix, backfill and write the post-incident note."
+    },
+    {
+      "name": "lineage-impact-analysis",
+      "kind": "skill",
+      "purpose": "Use column and table lineage to assess downstream impact before changing or deprecating data."
+    },
+    {
+      "name": "pandas-idioms",
+      "kind": "skill",
+      "purpose": "Write idiomatic pandas: vectorised ops, method chaining, .loc indexing and avoiding SettingWithCopy."
+    },
+    {
+      "name": "pandas-performance",
+      "kind": "skill",
+      "purpose": "Speed up pandas with dtypes, categoricals, Arrow backends, chunking and avoiding apply."
+    },
+    {
+      "name": "pandas-reshaping",
+      "kind": "skill",
+      "purpose": "Reshape data with groupby, pivot_table, melt, stack and merge, with validate= to catch bad joins."
+    },
+    {
+      "name": "pandas-time-series",
+      "kind": "skill",
+      "purpose": "Handle datetimes, timezones, resampling, rolling windows and business calendars in pandas."
+    },
+    {
+      "name": "pandas-io-formats",
+      "kind": "skill",
+      "purpose": "Read and write CSV, Parquet, Excel and SQL in pandas with explicit dtypes and encodings."
+    },
+    {
+      "name": "polars-expressions",
+      "kind": "skill",
+      "purpose": "Write Polars expressions, contexts, window functions and conditional logic."
+    },
+    {
+      "name": "polars-lazy-api",
+      "kind": "skill",
+      "purpose": "Use Polars LazyFrames, query optimisation, streaming execution and explain()."
+    },
+    {
+      "name": "polars-from-pandas",
+      "kind": "skill",
+      "purpose": "Translate pandas code to Polars and know the semantic differences (indexes, nulls, ordering)."
+    },
+    {
+      "name": "polars-io",
+      "kind": "skill",
+      "purpose": "Scan Parquet, CSV and cloud files in Polars with predicate pushdown and hive partitions."
+    },
+    {
+      "name": "jupyter-notebook-hygiene",
+      "kind": "skill",
+      "purpose": "Keep notebooks readable and diffable: execution order, outputs stripping, nbstripout and jupytext."
+    },
+    {
+      "name": "notebook-reproducibility",
+      "kind": "skill",
+      "purpose": "Make notebooks reproducible with pinned environments, seeds, parameter cells and data snapshots."
+    },
+    {
+      "name": "papermill-parameterized-runs",
+      "kind": "skill",
+      "purpose": "Parameterise and schedule notebooks with papermill and collect outputs."
+    },
+    {
+      "name": "notebook-to-pipeline",
+      "kind": "skill",
+      "purpose": "Refactor exploratory notebook code into tested modules and pipeline tasks."
+    },
+    {
+      "name": "data-cleaning-checklist",
+      "kind": "skill",
+      "purpose": "Clean raw datasets step by step: types, whitespace, encodings, units, invalid values and audit logs."
+    },
+    {
+      "name": "entity-resolution",
+      "kind": "skill",
+      "purpose": "Deduplicate and match records with blocking, fuzzy matching and survivorship rules."
+    },
+    {
+      "name": "outlier-handling",
+      "kind": "skill",
+      "purpose": "Detect outliers with IQR, MAD and domain rules and decide whether to cap, flag or drop them."
+    },
+    {
+      "name": "missing-data-handling",
+      "kind": "skill",
+      "purpose": "Classify missingness (MCAR/MAR/MNAR) and choose deletion or imputation strategies."
+    },
+    {
+      "name": "date-parsing-normalization",
+      "kind": "skill",
+      "purpose": "Parse messy dates and timestamps, normalise timezones and units, and flag ambiguous formats."
+    },
+    {
+      "name": "eda-workflow",
+      "kind": "skill",
+      "purpose": "Run exploratory data analysis: shape, types, distributions, relationships and data issues, then a summary."
+    },
+    {
+      "name": "distribution-profiling",
+      "kind": "skill",
+      "purpose": "Profile numeric and categorical distributions, skew, cardinality and heavy tails."
+    },
+    {
+      "name": "correlation-analysis",
+      "kind": "skill",
+      "purpose": "Measure associations with Pearson, Spearman, Cramer's V and mutual information and avoid spurious conclusions."
+    },
+    {
+      "name": "data-profiling-reports",
+      "kind": "skill",
+      "purpose": "Generate profiling reports with ydata-profiling or DuckDB SUMMARIZE and turn them into action items."
+    },
+    {
+      "name": "stats-hypothesis-testing",
+      "kind": "skill",
+      "purpose": "Choose and run t-tests, chi-square, proportion tests and Mann-Whitney with assumptions checked."
+    },
+    {
+      "name": "stats-confidence-intervals",
+      "kind": "skill",
+      "purpose": "Compute and explain confidence intervals for means, proportions and differences."
+    },
+    {
+      "name": "stats-regression-analysis",
+      "kind": "skill",
+      "purpose": "Fit and interpret linear and logistic regression with statsmodels, diagnostics and robust errors."
+    },
+    {
+      "name": "stats-multiple-comparisons",
+      "kind": "skill",
+      "purpose": "Correct for multiple comparisons with Bonferroni, Holm and Benjamini-Hochberg."
+    },
+    {
+      "name": "stats-bootstrap-methods",
+      "kind": "skill",
+      "purpose": "Use bootstrap and permutation tests for metrics without closed-form variance."
+    },
+    {
+      "name": "stats-bayesian-basics",
+      "kind": "skill",
+      "purpose": "Apply Bayesian estimation with conjugate priors and PyMC for rates and means, and report credible intervals."
+    },
+    {
+      "name": "ab-test-design-power",
+      "kind": "skill",
+      "purpose": "Design A/B tests: hypothesis, primary and guardrail metrics, randomisation unit, MDE and sample size."
+    },
+    {
+      "name": "ab-test-analysis",
+      "kind": "skill",
+      "purpose": "Analyse A/B test results with the right test, variance for ratio metrics (delta method) and segment caution."
+    },
+    {
+      "name": "ab-sequential-testing",
+      "kind": "skill",
+      "purpose": "Monitor experiments without peeking bias using sequential tests and always-valid inference."
+    },
+    {
+      "name": "ab-cuped-variance-reduction",
+      "kind": "skill",
+      "purpose": "Reduce experiment variance with CUPED using pre-period covariates."
+    },
+    {
+      "name": "ab-srm-checks",
+      "kind": "skill",
+      "purpose": "Detect sample ratio mismatch and diagnose assignment and logging bugs behind it."
+    },
+    {
+      "name": "ab-test-pitfalls",
+      "kind": "skill",
+      "purpose": "Avoid novelty effects, interference, Simpson's paradox, Twyman's law and metric dilution in experiments."
+    },
+    {
+      "name": "causal-diff-in-diff",
+      "kind": "skill",
+      "purpose": "Estimate effects with difference-in-differences, check parallel trends and use event-study plots."
+    },
+    {
+      "name": "causal-regression-discontinuity",
+      "kind": "skill",
+      "purpose": "Apply regression discontinuity designs and check bandwidth and manipulation."
+    },
+    {
+      "name": "causal-propensity-matching",
+      "kind": "skill",
+      "purpose": "Use propensity score matching and weighting and check covariate balance."
+    },
+    {
+      "name": "causal-synthetic-control",
+      "kind": "skill",
+      "purpose": "Build synthetic controls for single-unit interventions like regional launches."
+    },
+    {
+      "name": "causal-instrumental-variables",
+      "kind": "skill",
+      "purpose": "Use instrumental variables and 2SLS, and test instrument strength."
+    },
+    {
+      "name": "excel-advanced-formulas",
+      "kind": "skill",
+      "purpose": "Use XLOOKUP, INDEX/MATCH, SUMIFS, dynamic arrays, LET and LAMBDA in Excel."
+    },
+    {
+      "name": "excel-pivot-tables",
+      "kind": "skill",
+      "purpose": "Build pivot tables and the Data Model with measures, slicers and grouping."
+    },
+    {
+      "name": "excel-power-query",
+      "kind": "skill",
+      "purpose": "Import, clean and combine data in Excel Power Query with refreshable steps."
+    },
+    {
+      "name": "excel-model-structure",
+      "kind": "skill",
+      "purpose": "Structure spreadsheet models with input, calc and output sheets, named ranges and checks."
+    },
+    {
+      "name": "excel-error-checking",
+      "kind": "skill",
+      "purpose": "Audit workbooks for broken references, hard-coded numbers, inconsistent formulas and circularity."
+    },
+    {
+      "name": "sheets-array-formulas",
+      "kind": "skill",
+      "purpose": "Use ARRAYFORMULA, FILTER, UNIQUE, SORT and IMPORTRANGE in Google Sheets."
+    },
+    {
+      "name": "sheets-query-function",
+      "kind": "skill",
+      "purpose": "Write Google Sheets QUERY function statements for grouping, pivoting and filtering."
+    },
+    {
+      "name": "sheets-apps-script",
+      "kind": "skill",
+      "purpose": "Automate Google Sheets with Apps Script: triggers, custom functions and API calls with quotas in mind."
+    },
+    {
+      "name": "sheets-data-validation",
+      "kind": "skill",
+      "purpose": "Use data validation, protected ranges and conditional formatting to keep shared Sheets clean."
+    },
+    {
+      "name": "es-mapping-design",
+      "kind": "skill",
+      "purpose": "Design Elasticsearch/OpenSearch mappings: field types, keyword vs text, multi-fields and dynamic templates."
+    },
+    {
+      "name": "es-query-dsl",
+      "kind": "skill",
+      "purpose": "Write bool, match, term, range and nested queries in the Query DSL with filter vs query context."
+    },
+    {
+      "name": "es-aggregations",
+      "kind": "skill",
+      "purpose": "Write terms, date histogram, composite and pipeline aggregations and handle approximate counts."
+    },
+    {
+      "name": "es-index-lifecycle",
+      "kind": "skill",
+      "purpose": "Manage index lifecycle (ILM/ISM), rollover, aliases and reindexing without downtime."
+    },
+    {
+      "name": "es-cluster-sizing",
+      "kind": "skill",
+      "purpose": "Size shards, nodes and heap, and diagnose yellow/red cluster health."
+    },
+    {
+      "name": "es-analyzers-synonyms",
+      "kind": "skill",
+      "purpose": "Configure analyzers, tokenizers, stemming and synonym sets for a language and domain."
+    },
+    {
+      "name": "es-relevance-tuning",
+      "kind": "skill",
+      "purpose": "Tune relevance with BM25 parameters, boosts, function_score and field weighting."
+    },
+    {
+      "name": "search-relevance-judgments",
+      "kind": "skill",
+      "purpose": "Build judgment lists and measure search quality with NDCG, MRR and precision@k."
+    },
+    {
+      "name": "search-query-understanding",
+      "kind": "skill",
+      "purpose": "Handle spelling correction, query rewriting, rules and zero-result queries."
+    },
+    {
+      "name": "search-analytics",
+      "kind": "skill",
+      "purpose": "Analyse search logs for top queries, zero results, click-through and reformulations."
+    },
+    {
+      "name": "postgis-spatial-queries",
+      "kind": "skill",
+      "purpose": "Write PostGIS queries with ST_Intersects, ST_DWithin, geography vs geometry and spatial indexes."
+    },
+    {
+      "name": "geopandas-workflows",
+      "kind": "skill",
+      "purpose": "Load, join, buffer and dissolve vector data with GeoPandas and export it."
+    },
+    {
+      "name": "crs-projections",
+      "kind": "skill",
+      "purpose": "Choose coordinate reference systems, reproject correctly and avoid lat/lon order bugs."
+    },
+    {
+      "name": "h3-spatial-indexing",
+      "kind": "skill",
+      "purpose": "Aggregate and join location data with H3 hexagons, S2 cells or geohashes."
+    },
+    {
+      "name": "geospatial-file-formats",
+      "kind": "skill",
+      "purpose": "Work with GeoJSON, GeoParquet, Shapefile and FlatGeobuf, and validate geometries."
+    },
+    {
+      "name": "raster-processing-gdal",
+      "kind": "skill",
+      "purpose": "Process rasters with GDAL and rasterio: reprojection, clipping, tiling and COGs."
+    },
+    {
+      "name": "data-pii-classification",
+      "kind": "skill",
+      "purpose": "Classify columns by sensitivity (PII, financial, health) using naming, sampling and tags."
+    },
+    {
+      "name": "data-catalog-curation",
+      "kind": "skill",
+      "purpose": "Curate catalog entries with descriptions, owners, tags and certified status that people trust."
+    },
+    {
+      "name": "data-ownership-model",
+      "kind": "skill",
+      "purpose": "Assign data owners and stewards per domain and define responsibilities and escalation."
+    },
+    {
+      "name": "data-retention-schedules",
+      "kind": "skill",
+      "purpose": "Define dataset retention schedules and implement deletion and archival in the warehouse."
+    },
+    {
+      "name": "data-access-policy-design",
+      "kind": "skill",
+      "purpose": "Design role-, attribute- and tag-based access policies and column masking for analytics data."
+    },
+    {
+      "name": "business-glossary",
+      "kind": "skill",
+      "purpose": "Build a business glossary of terms linked to tables, metrics and owners."
+    },
+    {
+      "name": "datahub-openmetadata-ingestion",
+      "kind": "skill",
+      "purpose": "Ingest metadata and lineage into DataHub or OpenMetadata from warehouses, dbt and BI tools."
+    },
+    {
+      "name": "idempotent-data-pipelines",
+      "kind": "skill",
+      "purpose": "Make pipeline tasks idempotent and rerunnable with deterministic outputs, overwrite-partitions and merge keys."
+    },
+    {
+      "name": "incremental-loading-patterns",
+      "kind": "skill",
+      "purpose": "Load incrementally with watermarks, CDC or merge, and handle updates and deletes."
+    },
+    {
+      "name": "late-arriving-data",
+      "kind": "skill",
+      "purpose": "Handle late-arriving facts and dimensions with lookback windows and reprocessing."
+    },
+    {
+      "name": "data-pipeline-slas",
+      "kind": "skill",
+      "purpose": "Define pipeline SLAs and SLOs for freshness and completeness and map them to alerts."
+    },
+    {
+      "name": "data-backfill-strategy",
+      "kind": "skill",
+      "purpose": "Plan historical backfills for pipelines: ranges, ordering, resource limits and validation."
+    },
+    {
+      "name": "airbyte-connectors",
+      "kind": "skill",
+      "purpose": "Configure Airbyte connections, sync modes and normalisation, and build low-code connectors."
+    },
+    {
+      "name": "fivetran-connectors",
+      "kind": "skill",
+      "purpose": "Configure Fivetran connectors, schema change handling and MAR cost control."
+    },
+    {
+      "name": "api-extraction-patterns",
+      "kind": "skill",
+      "purpose": "Extract data from REST APIs with pagination, rate limits, incremental cursors and retries."
+    },
+    {
+      "name": "file-ingestion-object-storage",
+      "kind": "skill",
+      "purpose": "Ingest files from S3/GCS with manifests, deduplication and partitioned landing zones."
+    },
+    {
+      "name": "ingestion-schema-evolution",
+      "kind": "skill",
+      "purpose": "Handle new, removed and retyped source columns during ingestion without breaking downstream."
+    },
+    {
+      "name": "avro-schema-evolution",
+      "kind": "skill",
+      "purpose": "Evolve Avro and Protobuf schemas with defaults and compatible field changes."
+    },
+    {
+      "name": "robust-csv-json-parsing",
+      "kind": "skill",
+      "purpose": "Parse messy CSV and JSON: quoting, encodings, delimiters, nested JSON and malformed rows."
+    },
+    {
+      "name": "data-pipeline-unit-tests",
+      "kind": "skill",
+      "purpose": "Unit test transformation logic with small fixture datasets and property checks."
+    },
+    {
+      "name": "data-diff-validation",
+      "kind": "skill",
+      "purpose": "Compare outputs before and after a change with data-diff tooling and summarise differences."
+    },
+    {
+      "name": "data-test-fixtures",
+      "kind": "skill",
+      "purpose": "Generate realistic, privacy-safe synthetic test datasets for pipelines and SQL tests."
+    },
+    {
+      "name": "sql-unit-testing",
+      "kind": "skill",
+      "purpose": "Unit test SQL logic with dbt unit tests, pgTAP or mocked CTE inputs."
+    },
+    {
+      "name": "sql-query-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews SQL changes for correctness: join fan-out, NULL handling, grain and filters, and returns findings by severity.",
+      "skills": [
+        "sql-join-patterns",
+        "sql-null-semantics",
+        "sql-anti-patterns"
+      ]
+    },
+    {
+      "name": "sql-query-optimizer",
+      "kind": "agent",
+      "purpose": "Rewrites a slow query using its plan and schema and returns the faster query with before/after evidence.",
+      "skills": [
+        "query-plan-reading",
+        "index-design-principles",
+        "sql-anti-patterns"
+      ]
+    },
+    {
+      "name": "sql-query-explainer",
+      "kind": "agent",
+      "purpose": "Explains what an unfamiliar SQL query does in plain language, step by step, including its output grain.",
+      "skills": [
+        "sql-ctes-recursive",
+        "sql-window-functions"
+      ]
+    },
+    {
+      "name": "sql-test-writer",
+      "kind": "agent",
+      "purpose": "Writes SQL unit tests and fixture data that pin down the logic of a query or model.",
+      "skills": [
+        "sql-unit-testing",
+        "data-test-fixtures"
+      ]
+    },
+    {
+      "name": "pg-slow-query-investigator",
+      "kind": "agent",
+      "purpose": "Investigates a slow Postgres query from pg_stat_statements and EXPLAIN output and proposes ranked fixes.",
+      "skills": [
+        "pg-explain-analyze",
+        "pg-planner-statistics",
+        "pg-monitoring-queries"
+      ]
+    },
+    {
+      "name": "pg-index-advisor",
+      "kind": "agent",
+      "purpose": "Recommends indexes to add and drop for a Postgres workload, with expected benefit and write cost.",
+      "skills": [
+        "pg-index-selection",
+        "index-design-principles"
+      ]
+    },
+    {
+      "name": "pg-schema-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Postgres DDL for types, constraints, keys and partitioning choices before it ships.",
+      "skills": [
+        "pg-data-types",
+        "pg-constraints",
+        "pg-partitioning"
+      ]
+    },
+    {
+      "name": "pg-vacuum-advisor",
+      "kind": "agent",
+      "purpose": "Diagnoses bloat and autovacuum problems and produces per-table autovacuum settings.",
+      "skills": [
+        "pg-vacuum-bloat"
+      ]
+    },
+    {
+      "name": "pg-upgrade-planner",
+      "kind": "agent",
+      "purpose": "Plans a Postgres major upgrade with pre-checks, method choice, runbook and rollback.",
+      "skills": [
+        "pg-major-upgrade",
+        "pg-replication",
+        "pg-backup-restore"
+      ]
+    },
+    {
+      "name": "migration-safety-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews migration files for locking, table rewrites, data loss and deploy-order risks and blocks unsafe ones.",
+      "skills": [
+        "zero-downtime-migrations",
+        "expand-contract-migrations"
+      ]
+    },
+    {
+      "name": "migration-author",
+      "kind": "agent",
+      "purpose": "Writes a schema change as safe, ordered migrations with expand/contract steps for the project's tool.",
+      "skills": [
+        "expand-contract-migrations",
+        "db-migration-tooling"
+      ]
+    },
+    {
+      "name": "data-backfill-planner",
+      "kind": "agent",
+      "purpose": "Plans large data backfills: batching, throttling, checkpoints, validation queries and rollback.",
+      "skills": [
+        "data-backfill-execution",
+        "data-backfill-strategy"
+      ]
+    },
+    {
+      "name": "migration-rollback-planner",
+      "kind": "agent",
+      "purpose": "Writes rollback and roll-forward plans for a migration sequence and flags irreversible steps.",
+      "skills": [
+        "migration-rollback-planning"
+      ]
+    },
+    {
+      "name": "relational-schema-designer",
+      "kind": "agent",
+      "purpose": "Designs a normalised relational schema from requirements and returns DDL plus an ER diagram.",
+      "skills": [
+        "relational-normalization",
+        "er-modeling",
+        "keys-surrogate-natural"
+      ]
+    },
+    {
+      "name": "dimensional-model-designer",
+      "kind": "agent",
+      "purpose": "Designs star schemas from business processes: grain, facts, dimensions and SCD handling.",
+      "skills": [
+        "kimball-star-schema",
+        "fact-table-design",
+        "slowly-changing-dimensions"
+      ]
+    },
+    {
+      "name": "nosql-access-pattern-modeler",
+      "kind": "agent",
+      "purpose": "Turns listed access patterns into a DynamoDB, MongoDB or Cassandra data model with keys and indexes.",
+      "skills": [
+        "dynamodb-access-patterns",
+        "mongo-document-modeling",
+        "cassandra-data-modeling"
+      ]
+    },
+    {
+      "name": "schema-diff-reviewer",
+      "kind": "agent",
+      "purpose": "Compares two schema versions and reports breaking changes for consumers.",
+      "skills": [
+        "lineage-impact-analysis"
+      ]
+    },
+    {
+      "name": "dbt-model-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews dbt pull requests for layering, materialisation, tests, docs and SQL quality.",
+      "skills": [
+        "dbt-project-structure",
+        "dbt-materializations",
+        "dbt-tests-contracts"
+      ]
+    },
+    {
+      "name": "dbt-model-author",
+      "kind": "agent",
+      "purpose": "Writes new dbt staging, intermediate and mart models following project conventions.",
+      "skills": [
+        "dbt-project-structure",
+        "dbt-incremental-models",
+        "sql-style-guide"
+      ]
+    },
+    {
+      "name": "dbt-test-generator",
+      "kind": "agent",
+      "purpose": "Adds generic, unit and contract tests to dbt models based on their columns and logic.",
+      "skills": [
+        "dbt-tests-contracts"
+      ]
+    },
+    {
+      "name": "dbt-docs-writer",
+      "kind": "agent",
+      "purpose": "Writes dbt model and column descriptions and doc blocks from SQL and upstream sources.",
+      "skills": [
+        "dbt-docs-exposures"
+      ]
+    },
+    {
+      "name": "legacy-sql-to-dbt-migrator",
+      "kind": "agent",
+      "purpose": "Converts stored procedures and scheduled SQL scripts into modular dbt models with tests.",
+      "skills": [
+        "dbt-project-structure",
+        "dbt-materializations"
+      ]
+    },
+    {
+      "name": "airflow-dag-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Airflow DAGs for idempotency, scheduling, retries, top-level code and sensor usage.",
+      "skills": [
+        "airflow-dag-authoring",
+        "airflow-deferrable-sensors",
+        "idempotent-data-pipelines"
+      ]
+    },
+    {
+      "name": "airflow-dag-author",
+      "kind": "agent",
+      "purpose": "Writes Airflow DAGs with TaskFlow, tests and connection handling from a pipeline description.",
+      "skills": [
+        "airflow-dag-authoring",
+        "airflow-taskflow-api",
+        "airflow-dag-testing"
+      ]
+    },
+    {
+      "name": "airflow-failure-triager",
+      "kind": "agent",
+      "purpose": "Triages failed Airflow task runs from logs, classifies the cause and proposes fix or rerun.",
+      "skills": [
+        "airflow-backfill-reruns"
+      ]
+    },
+    {
+      "name": "airflow-upgrade-migrator",
+      "kind": "agent",
+      "purpose": "Migrates DAGs across Airflow major versions, replacing deprecated imports and operators.",
+      "skills": [
+        "airflow-dag-authoring"
+      ]
+    },
+    {
+      "name": "dagster-asset-author",
+      "kind": "agent",
+      "purpose": "Writes Dagster assets, resources, partitions and asset checks from a pipeline spec.",
+      "skills": [
+        "dagster-assets",
+        "dagster-resources-io",
+        "dagster-partitions"
+      ]
+    },
+    {
+      "name": "dagster-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Dagster code for asset design, resource configuration, partitions and testability.",
+      "skills": [
+        "dagster-assets",
+        "dagster-testing"
+      ]
+    },
+    {
+      "name": "airflow-to-dagster-migrator",
+      "kind": "agent",
+      "purpose": "Ports Airflow DAGs to Dagster assets and schedules and lists behaviour differences.",
+      "skills": [
+        "dagster-assets",
+        "dagster-automation",
+        "airflow-dag-authoring"
+      ]
+    },
+    {
+      "name": "spark-job-tuner",
+      "kind": "agent",
+      "purpose": "Tunes a Spark job from Spark UI metrics and event logs and returns config and code changes.",
+      "skills": [
+        "spark-config-tuning",
+        "spark-partitioning-shuffle",
+        "spark-joins-skew"
+      ]
+    },
+    {
+      "name": "spark-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews PySpark code for collect() misuse, UDFs, unnecessary shuffles and caching mistakes.",
+      "skills": [
+        "spark-dataframe-api",
+        "spark-udf-performance"
+      ]
+    },
+    {
+      "name": "spark-failure-diagnoser",
+      "kind": "agent",
+      "purpose": "Diagnoses Spark failures (OOM, lost executors, skew, serialisation) from logs and proposes fixes.",
+      "skills": [
+        "spark-config-tuning",
+        "spark-joins-skew"
+      ]
+    },
+    {
+      "name": "pandas-to-spark-porter",
+      "kind": "agent",
+      "purpose": "Ports pandas code to PySpark or pandas-on-Spark when data outgrows one machine.",
+      "skills": [
+        "spark-dataframe-api",
+        "pandas-idioms"
+      ]
+    },
+    {
+      "name": "kafka-topic-designer",
+      "kind": "agent",
+      "purpose": "Designs Kafka topics, keys, partitions, retention and schemas for a new event flow.",
+      "skills": [
+        "kafka-topic-design",
+        "kafka-retention-compaction",
+        "kafka-schema-registry"
+      ]
+    },
+    {
+      "name": "kafka-config-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews producer, consumer and topic configs for durability, ordering and throughput issues.",
+      "skills": [
+        "kafka-producer-config",
+        "kafka-consumer-groups"
+      ]
+    },
+    {
+      "name": "kafka-lag-triager",
+      "kind": "agent",
+      "purpose": "Triages consumer lag and rebalancing incidents and identifies the bottleneck.",
+      "skills": [
+        "kafka-lag-monitoring",
+        "kafka-consumer-groups"
+      ]
+    },
+    {
+      "name": "schema-evolution-checker",
+      "kind": "agent",
+      "purpose": "Checks proposed Avro/Protobuf/JSON schema changes for compatibility with existing consumers.",
+      "skills": [
+        "avro-schema-evolution",
+        "kafka-schema-registry"
+      ]
+    },
+    {
+      "name": "streaming-architecture-planner",
+      "kind": "agent",
+      "purpose": "Plans streaming pipelines: engine choice, semantics, state, windows and sink guarantees.",
+      "skills": [
+        "flink-watermarks-windows",
+        "kafka-exactly-once",
+        "spark-streaming-watermarks"
+      ]
+    },
+    {
+      "name": "flink-job-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Flink jobs for state growth, watermark setup, checkpointing and backpressure risks.",
+      "skills": [
+        "flink-state-checkpoints",
+        "flink-watermarks-windows"
+      ]
+    },
+    {
+      "name": "cdc-pipeline-designer",
+      "kind": "agent",
+      "purpose": "Designs a CDC pipeline from database to warehouse or topics, covering snapshots, deletes and ordering.",
+      "skills": [
+        "cdc-patterns",
+        "debezium-cdc",
+        "transactional-outbox"
+      ]
+    },
+    {
+      "name": "warehouse-cost-auditor",
+      "kind": "agent",
+      "purpose": "Audits warehouse spend by team, user and query and returns a ranked savings plan.",
+      "skills": [
+        "warehouse-cost-attribution",
+        "snowflake-cost-control",
+        "bigquery-cost-control"
+      ]
+    },
+    {
+      "name": "expensive-query-hunter",
+      "kind": "agent",
+      "purpose": "Finds the most expensive recurring queries and proposes rewrites, clustering or materialisation.",
+      "skills": [
+        "query-plan-reading",
+        "warehouse-cost-attribution"
+      ]
+    },
+    {
+      "name": "warehouse-storage-cleanup-planner",
+      "kind": "agent",
+      "purpose": "Finds unused tables, stale clones and over-retained time travel and plans safe cleanup.",
+      "skills": [
+        "data-retention-schedules",
+        "lineage-impact-analysis"
+      ]
+    },
+    {
+      "name": "snowflake-admin-advisor",
+      "kind": "agent",
+      "purpose": "Advises on Snowflake warehouse sizing, auto-suspend and multi-cluster settings from usage history.",
+      "skills": [
+        "snowflake-warehouse-sizing",
+        "snowflake-cost-control"
+      ]
+    },
+    {
+      "name": "snowflake-rbac-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Snowflake role hierarchies and grants for least privilege and drift.",
+      "skills": [
+        "snowflake-rbac"
+      ]
+    },
+    {
+      "name": "snowflake-pipeline-builder",
+      "kind": "agent",
+      "purpose": "Builds Snowflake ingestion and transformation with Snowpipe, streams, tasks or dynamic tables.",
+      "skills": [
+        "snowflake-snowpipe",
+        "snowflake-streams-tasks"
+      ]
+    },
+    {
+      "name": "bigquery-query-optimizer",
+      "kind": "agent",
+      "purpose": "Rewrites BigQuery queries to scan fewer bytes and use partitions, clustering and approximate functions.",
+      "skills": [
+        "bigquery-partitioning-clustering",
+        "bigquery-sql-patterns"
+      ]
+    },
+    {
+      "name": "bigquery-schema-designer",
+      "kind": "agent",
+      "purpose": "Designs BigQuery tables with partitioning, clustering and nested fields for given queries.",
+      "skills": [
+        "bigquery-partitioning-clustering",
+        "bigquery-nested-data"
+      ]
+    },
+    {
+      "name": "bigquery-slot-analyst",
+      "kind": "agent",
+      "purpose": "Analyses BigQuery slot and job usage and recommends on-demand vs reservations.",
+      "skills": [
+        "bigquery-slots-reservations",
+        "bigquery-cost-control"
+      ]
+    },
+    {
+      "name": "databricks-job-tuner",
+      "kind": "agent",
+      "purpose": "Tunes Databricks jobs and clusters for runtime and cost using job metrics.",
+      "skills": [
+        "databricks-workflows",
+        "databricks-cluster-policies",
+        "spark-config-tuning"
+      ]
+    },
+    {
+      "name": "unity-catalog-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Unity Catalog structure, grants and ownership for governance gaps.",
+      "skills": [
+        "databricks-unity-catalog"
+      ]
+    },
+    {
+      "name": "delta-table-maintainer",
+      "kind": "agent",
+      "purpose": "Plans OPTIMIZE, VACUUM and clustering schedules for Delta tables from table history.",
+      "skills": [
+        "delta-lake-tables"
+      ]
+    },
+    {
+      "name": "warehouse-migration-planner",
+      "kind": "agent",
+      "purpose": "Inventories a legacy warehouse and plans migration waves, dual-running and decommissioning.",
+      "skills": [
+        "warehouse-migration-planning",
+        "lineage-impact-analysis"
+      ]
+    },
+    {
+      "name": "sql-dialect-translator",
+      "kind": "agent",
+      "purpose": "Translates SQL between warehouse dialects and flags semantics that do not translate one-to-one.",
+      "skills": [
+        "sql-dialect-translation"
+      ]
+    },
+    {
+      "name": "data-reconciliation-checker",
+      "kind": "agent",
+      "purpose": "Reconciles source and target datasets and reports mismatches by table, column and key.",
+      "skills": [
+        "data-reconciliation",
+        "data-diff-validation"
+      ]
+    },
+    {
+      "name": "dashboard-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews a dashboard for metric correctness, chart choice, labelling and audience fit.",
+      "skills": [
+        "dashboard-review-checklist",
+        "bi-chart-selection"
+      ]
+    },
+    {
+      "name": "dashboard-builder",
+      "kind": "agent",
+      "purpose": "Turns stakeholder questions into a dashboard spec: metrics, layout, filters and source queries.",
+      "skills": [
+        "dashboard-layout-principles",
+        "bi-kpi-definition"
+      ]
+    },
+    {
+      "name": "kpi-definition-writer",
+      "kind": "agent",
+      "purpose": "Writes precise KPI definitions with formula, grain, exclusions and owner, and spots conflicting versions.",
+      "skills": [
+        "bi-kpi-definition",
+        "metric-definitions-spec"
+      ]
+    },
+    {
+      "name": "metric-movement-investigator",
+      "kind": "agent",
+      "purpose": "Explains why a metric moved by decomposing it into drivers and segments.",
+      "skills": [
+        "metric-trees",
+        "metric-anomaly-detection"
+      ]
+    },
+    {
+      "name": "lookml-developer",
+      "kind": "agent",
+      "purpose": "Writes LookML views, explores and derived tables for new data and questions.",
+      "skills": [
+        "lookml-modeling",
+        "lookml-explores-joins"
+      ]
+    },
+    {
+      "name": "lookml-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews LookML changes for join fan-out, duplicate fields, PDT cost and access rules.",
+      "skills": [
+        "lookml-explores-joins",
+        "looker-pdts-caching",
+        "looker-access-controls"
+      ]
+    },
+    {
+      "name": "looker-content-cleanup",
+      "kind": "agent",
+      "purpose": "Finds unused Looker dashboards, looks and fields and proposes a deprecation plan.",
+      "skills": [
+        "metric-governance"
+      ]
+    },
+    {
+      "name": "dax-measure-author",
+      "kind": "agent",
+      "purpose": "Writes and explains DAX measures for a Power BI model, including time intelligence.",
+      "skills": [
+        "dax-measures",
+        "power-bi-data-modeling"
+      ]
+    },
+    {
+      "name": "power-bi-model-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Power BI semantic models for star-schema shape, relationships, RLS and naming.",
+      "skills": [
+        "power-bi-data-modeling",
+        "power-bi-rls"
+      ]
+    },
+    {
+      "name": "power-bi-performance-tuner",
+      "kind": "agent",
+      "purpose": "Diagnoses slow Power BI reports and returns ranked model, DAX and query-folding fixes.",
+      "skills": [
+        "power-bi-performance",
+        "power-query-m",
+        "dax-measures"
+      ]
+    },
+    {
+      "name": "analytics-question-scoper",
+      "kind": "agent",
+      "purpose": "Turns a vague business question into a precise analysis plan with metrics, population and method.",
+      "skills": [
+        "bi-kpi-definition",
+        "metric-trees"
+      ]
+    },
+    {
+      "name": "sql-analyst",
+      "kind": "agent",
+      "purpose": "Answers an analysis question by writing and running SQL against the warehouse and checking results.",
+      "skills": [
+        "sql-window-functions",
+        "sql-cohort-queries",
+        "sql-join-patterns"
+      ]
+    },
+    {
+      "name": "analysis-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews an analysis for wrong denominators, selection bias, cherry-picking and unsupported claims.",
+      "skills": [
+        "stats-hypothesis-testing",
+        "analysis-writeup"
+      ]
+    },
+    {
+      "name": "analytics-insight-writer",
+      "kind": "agent",
+      "purpose": "Writes the findings memo or summary for stakeholders from analysis results.",
+      "skills": [
+        "data-storytelling",
+        "executive-metric-summaries"
+      ]
+    },
+    {
+      "name": "tracking-plan-designer",
+      "kind": "agent",
+      "purpose": "Designs a tracking plan and event taxonomy for a feature from its user flows.",
+      "skills": [
+        "event-taxonomy-design",
+        "analytics-tracking-plan"
+      ]
+    },
+    {
+      "name": "event-instrumentation-auditor",
+      "kind": "agent",
+      "purpose": "Audits implemented analytics events against the tracking plan and reports gaps and naming drift.",
+      "skills": [
+        "analytics-tracking-plan",
+        "segment-tracking-implementation"
+      ]
+    },
+    {
+      "name": "funnel-analyst",
+      "kind": "agent",
+      "purpose": "Builds and interprets conversion funnels and finds the biggest drop-off and its segments.",
+      "skills": [
+        "funnel-analysis",
+        "sql-funnel-queries"
+      ]
+    },
+    {
+      "name": "retention-analyst",
+      "kind": "agent",
+      "purpose": "Analyses retention cohorts and identifies activation behaviours linked to retention.",
+      "skills": [
+        "retention-analysis",
+        "sql-cohort-queries"
+      ]
+    },
+    {
+      "name": "ab-experiment-designer",
+      "kind": "agent",
+      "purpose": "Designs an A/B test with hypothesis, metrics, randomisation unit, sample size and duration.",
+      "skills": [
+        "ab-test-design-power",
+        "ab-test-pitfalls"
+      ]
+    },
+    {
+      "name": "ab-experiment-analyst",
+      "kind": "agent",
+      "purpose": "Analyses A/B test data and returns effect sizes, intervals, SRM status and a ship recommendation.",
+      "skills": [
+        "ab-test-analysis",
+        "ab-srm-checks",
+        "ab-cuped-variance-reduction"
+      ]
+    },
+    {
+      "name": "experiment-readout-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews experiment readouts for peeking, p-hacking, multiple comparisons and overclaiming.",
+      "skills": [
+        "ab-sequential-testing",
+        "stats-multiple-comparisons",
+        "ab-test-pitfalls"
+      ]
+    },
+    {
+      "name": "statistical-test-selector",
+      "kind": "agent",
+      "purpose": "Picks the appropriate statistical test for a question and data shape and explains the assumptions.",
+      "skills": [
+        "stats-hypothesis-testing",
+        "stats-bootstrap-methods"
+      ]
+    },
+    {
+      "name": "stats-methods-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews statistical methods in an analysis or paper draft for assumption violations and misinterpretation.",
+      "skills": [
+        "stats-hypothesis-testing",
+        "stats-regression-analysis",
+        "stats-multiple-comparisons"
+      ]
+    },
+    {
+      "name": "causal-study-designer",
+      "kind": "agent",
+      "purpose": "Chooses a quasi-experimental design for an observational question and lists threats to validity.",
+      "skills": [
+        "causal-diff-in-diff",
+        "causal-propensity-matching",
+        "causal-synthetic-control"
+      ]
+    },
+    {
+      "name": "regression-analyst",
+      "kind": "agent",
+      "purpose": "Fits, diagnoses and interprets regression models and reports coefficients with honest caveats.",
+      "skills": [
+        "stats-regression-analysis",
+        "stats-confidence-intervals"
+      ]
+    },
+    {
+      "name": "data-quality-rule-author",
+      "kind": "agent",
+      "purpose": "Writes data quality checks (dbt tests, Great Expectations or Soda) for a dataset from its profile and semantics.",
+      "skills": [
+        "data-quality-dimensions",
+        "soda-checks",
+        "great-expectations-suites"
+      ]
+    },
+    {
+      "name": "data-contract-writer",
+      "kind": "agent",
+      "purpose": "Drafts data contracts between producers and consumers with schema, semantics and SLAs.",
+      "skills": [
+        "data-contracts",
+        "data-pipeline-slas"
+      ]
+    },
+    {
+      "name": "data-incident-triager",
+      "kind": "agent",
+      "purpose": "Triages a data incident: scopes affected tables and consumers, finds root cause and drafts comms.",
+      "skills": [
+        "data-incident-response",
+        "lineage-impact-analysis"
+      ]
+    },
+    {
+      "name": "dataset-profiler",
+      "kind": "agent",
+      "purpose": "Profiles a new dataset and returns a report of types, distributions, anomalies and quality issues.",
+      "skills": [
+        "data-profiling-reports",
+        "distribution-profiling",
+        "data-quality-dimensions"
+      ]
+    },
+    {
+      "name": "pii-column-classifier",
+      "kind": "agent",
+      "purpose": "Scans schemas and samples to tag PII and sensitive columns with confidence and evidence.",
+      "skills": [
+        "data-pii-classification"
+      ]
+    },
+    {
+      "name": "data-catalog-documenter",
+      "kind": "agent",
+      "purpose": "Writes catalog descriptions, owners and glossary links for undocumented tables.",
+      "skills": [
+        "data-catalog-curation",
+        "business-glossary"
+      ]
+    },
+    {
+      "name": "data-access-request-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews data access requests against policy and recommends grant, masked grant or denial.",
+      "skills": [
+        "data-access-policy-design",
+        "data-pii-classification"
+      ]
+    },
+    {
+      "name": "retention-schedule-drafter",
+      "kind": "agent",
+      "purpose": "Drafts dataset retention schedules and deletion jobs for review by data owners and legal.",
+      "skills": [
+        "data-retention-schedules",
+        "data-ownership-model"
+      ]
+    },
+    {
+      "name": "data-cleaning-agent",
+      "kind": "agent",
+      "purpose": "Cleans a messy dataset end to end and returns the cleaned data plus a log of every change.",
+      "skills": [
+        "data-cleaning-checklist",
+        "missing-data-handling",
+        "date-parsing-normalization"
+      ]
+    },
+    {
+      "name": "pandas-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews pandas code for slow apply loops, chained assignment, dtype issues and silent join errors.",
+      "skills": [
+        "pandas-idioms",
+        "pandas-performance",
+        "pandas-reshaping"
+      ]
+    },
+    {
+      "name": "notebook-refactorer",
+      "kind": "agent",
+      "purpose": "Refactors an exploratory notebook into clean modules, functions and tests.",
+      "skills": [
+        "notebook-to-pipeline",
+        "jupyter-notebook-hygiene"
+      ]
+    },
+    {
+      "name": "pandas-to-polars-migrator",
+      "kind": "agent",
+      "purpose": "Migrates pandas code to Polars and verifies identical outputs.",
+      "skills": [
+        "polars-from-pandas",
+        "polars-expressions",
+        "polars-lazy-api"
+      ]
+    },
+    {
+      "name": "excel-model-auditor",
+      "kind": "agent",
+      "purpose": "Audits spreadsheet models for formula errors, hard-codes, broken links and structural risk.",
+      "skills": [
+        "excel-error-checking",
+        "excel-model-structure"
+      ]
+    },
+    {
+      "name": "excel-formula-builder",
+      "kind": "agent",
+      "purpose": "Builds and explains Excel or Sheets formulas for a described calculation.",
+      "skills": [
+        "excel-advanced-formulas",
+        "sheets-array-formulas"
+      ]
+    },
+    {
+      "name": "spreadsheet-to-database-migrator",
+      "kind": "agent",
+      "purpose": "Moves a spreadsheet-based process into database tables and SQL with a validation plan.",
+      "skills": [
+        "er-modeling",
+        "data-reconciliation"
+      ]
+    },
+    {
+      "name": "sheets-automation-builder",
+      "kind": "agent",
+      "purpose": "Writes Google Apps Script automations for Sheets workflows with triggers and error handling.",
+      "skills": [
+        "sheets-apps-script"
+      ]
+    },
+    {
+      "name": "es-mapping-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Elasticsearch/OpenSearch mappings and analyzers for the intended queries.",
+      "skills": [
+        "es-mapping-design",
+        "es-analyzers-synonyms"
+      ]
+    },
+    {
+      "name": "search-relevance-tuner",
+      "kind": "agent",
+      "purpose": "Improves search relevance using judgment lists, offline metrics and query tuning.",
+      "skills": [
+        "search-relevance-judgments",
+        "es-relevance-tuning"
+      ]
+    },
+    {
+      "name": "es-cluster-health-triager",
+      "kind": "agent",
+      "purpose": "Triages red/yellow clusters, unassigned shards and heap pressure and proposes fixes.",
+      "skills": [
+        "es-cluster-sizing",
+        "es-index-lifecycle"
+      ]
+    },
+    {
+      "name": "search-query-builder",
+      "kind": "agent",
+      "purpose": "Writes Query DSL and aggregations for described search and analytics needs.",
+      "skills": [
+        "es-query-dsl",
+        "es-aggregations"
+      ]
+    },
+    {
+      "name": "mongo-schema-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews MongoDB schemas and indexes against the application's query patterns.",
+      "skills": [
+        "mongo-document-modeling",
+        "mongo-indexing"
+      ]
+    },
+    {
+      "name": "mongo-query-optimizer",
+      "kind": "agent",
+      "purpose": "Optimises slow MongoDB queries and aggregations using explain output and profiler data.",
+      "skills": [
+        "mongo-aggregation-pipeline",
+        "mongo-performance-profiling"
+      ]
+    },
+    {
+      "name": "dynamodb-table-designer",
+      "kind": "agent",
+      "purpose": "Designs DynamoDB tables and GSIs from access patterns and estimates cost.",
+      "skills": [
+        "dynamodb-single-table-design",
+        "dynamodb-gsi-design",
+        "dynamodb-capacity-cost"
+      ]
+    },
+    {
+      "name": "redis-usage-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Redis usage for key design, TTLs, big keys, blocking commands and eviction risks.",
+      "skills": [
+        "redis-data-structures",
+        "redis-memory-tuning",
+        "redis-caching-patterns"
+      ]
+    },
+    {
+      "name": "spatial-query-author",
+      "kind": "agent",
+      "purpose": "Writes PostGIS or DuckDB spatial queries for described geographic questions.",
+      "skills": [
+        "postgis-spatial-queries",
+        "crs-projections"
+      ]
+    },
+    {
+      "name": "geodata-cleaner",
+      "kind": "agent",
+      "purpose": "Validates and fixes geodata: invalid geometries, wrong CRS, swapped coordinates and duplicates.",
+      "skills": [
+        "geospatial-file-formats",
+        "crs-projections"
+      ]
+    },
+    {
+      "name": "location-analytics-analyst",
+      "kind": "agent",
+      "purpose": "Aggregates location data into H3 cells or regions and produces spatial summaries.",
+      "skills": [
+        "h3-spatial-indexing",
+        "geopandas-workflows"
+      ]
+    },
+    {
+      "name": "data-pipeline-architect",
+      "kind": "agent",
+      "purpose": "Designs batch data pipelines: sources, ingestion mode, layers, orchestration and SLAs.",
+      "skills": [
+        "incremental-loading-patterns",
+        "idempotent-data-pipelines",
+        "data-pipeline-slas"
+      ]
+    },
+    {
+      "name": "ingestion-connector-builder",
+      "kind": "agent",
+      "purpose": "Builds an extraction job for a REST API or file source with pagination, incremental state and retries.",
+      "skills": [
+        "api-extraction-patterns",
+        "ingestion-schema-evolution"
+      ]
+    },
+    {
+      "name": "data-pipeline-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews pipeline code for idempotency, late data handling, error handling and observability.",
+      "skills": [
+        "idempotent-data-pipelines",
+        "late-arriving-data"
+      ]
+    },
+    {
+      "name": "data-pipeline-test-writer",
+      "kind": "agent",
+      "purpose": "Writes unit and data-diff tests for pipeline transformations.",
+      "skills": [
+        "data-pipeline-unit-tests",
+        "data-test-fixtures",
+        "data-diff-validation"
+      ]
+    }
+  ]
+}

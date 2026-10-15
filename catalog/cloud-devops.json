@@ -1,0 +1,2469 @@
+{
+  "domain": "cloud-devops",
+  "packages": [
+    {
+      "name": "aws-cli-workflows",
+      "kind": "skill",
+      "purpose": "Drive the AWS CLI safely: named profiles, SSO login, --query/JMESPath filtering, pagination, dry-runs and region handling."
+    },
+    {
+      "name": "aws-account-structure",
+      "kind": "skill",
+      "purpose": "Design AWS Organizations layouts: OUs, account-per-environment, Control Tower landing zones and SCP placement."
+    },
+    {
+      "name": "aws-vpc-networking",
+      "kind": "skill",
+      "purpose": "Design AWS VPCs: CIDR planning, public/private subnets across AZs, NAT gateways, route tables and VPC endpoints."
+    },
+    {
+      "name": "aws-tagging-standards",
+      "kind": "skill",
+      "purpose": "Define and enforce AWS resource tagging (owner, env, cost-center) with tag policies and Config rules."
+    },
+    {
+      "name": "aws-service-quotas",
+      "kind": "skill",
+      "purpose": "Check, monitor and request increases for AWS service quotas before launches and scale events."
+    },
+    {
+      "name": "aws-ec2-operations",
+      "kind": "skill",
+      "purpose": "Operate EC2 fleets: instance family choice, launch templates, AMI baking, SSM Session Manager access and patching."
+    },
+    {
+      "name": "aws-autoscaling-groups",
+      "kind": "skill",
+      "purpose": "Configure EC2 Auto Scaling groups: target-tracking policies, warm pools, instance refresh and lifecycle hooks."
+    },
+    {
+      "name": "aws-ecs-fargate",
+      "kind": "skill",
+      "purpose": "Deploy containers on ECS/Fargate: task definitions, services, capacity providers, service discovery and rolling deploys."
+    },
+    {
+      "name": "aws-elb-config",
+      "kind": "skill",
+      "purpose": "Configure ALB/NLB: listeners, target groups, health checks, path routing, TLS policies and connection draining."
+    },
+    {
+      "name": "aws-lambda-dev",
+      "kind": "skill",
+      "purpose": "Build AWS Lambda functions: handler structure, layers, env config, memory/timeout sizing, concurrency and packaging."
+    },
+    {
+      "name": "aws-api-gateway",
+      "kind": "skill",
+      "purpose": "Set up API Gateway (HTTP and REST APIs): routes, Lambda/HTTP integrations, authorizers, throttling, stages and custom domains."
+    },
+    {
+      "name": "aws-step-functions",
+      "kind": "skill",
+      "purpose": "Write Step Functions state machines in ASL: retries, catch, Map/Parallel states, SDK integrations and Express vs Standard."
+    },
+    {
+      "name": "aws-eventbridge-rules",
+      "kind": "skill",
+      "purpose": "Route events with EventBridge: event patterns, buses, schedules, archives/replay and cross-account targets."
+    },
+    {
+      "name": "aws-sqs-sns-patterns",
+      "kind": "skill",
+      "purpose": "Use SQS and SNS correctly: fan-out, FIFO ordering, visibility timeouts, DLQs, redrive and batch processing."
+    },
+    {
+      "name": "aws-sam-templates",
+      "kind": "skill",
+      "purpose": "Author AWS SAM templates and use sam build/local invoke/deploy for serverless apps."
+    },
+    {
+      "name": "aws-cdk-typescript",
+      "kind": "skill",
+      "purpose": "Write AWS CDK apps in TypeScript: stacks, L2/L3 constructs, context, environments and cross-stack references."
+    },
+    {
+      "name": "aws-cdk-assertions-testing",
+      "kind": "skill",
+      "purpose": "Test CDK stacks with the assertions module: template matchers, snapshot tests and fine-grained resource checks."
+    },
+    {
+      "name": "aws-cdk-pipelines",
+      "kind": "skill",
+      "purpose": "Build self-mutating CDK Pipelines with stages, waves, manual approvals and cross-account deploy roles."
+    },
+    {
+      "name": "aws-cloudformation-templates",
+      "kind": "skill",
+      "purpose": "Author and debug CloudFormation templates: parameters, conditions, change sets, drift detection and stack rollback errors."
+    },
+    {
+      "name": "aws-eks-cluster-setup",
+      "kind": "skill",
+      "purpose": "Provision EKS clusters with eksctl or Terraform: managed node groups, add-ons, VPC CNI and access entries."
+    },
+    {
+      "name": "aws-eks-pod-identity",
+      "kind": "skill",
+      "purpose": "Give EKS workloads AWS access via EKS Pod Identity or IRSA, with scoped roles and trust policies."
+    },
+    {
+      "name": "aws-eks-karpenter",
+      "kind": "skill",
+      "purpose": "Run Karpenter on EKS: NodePools, EC2NodeClasses, consolidation, spot/on-demand mix and disruption budgets."
+    },
+    {
+      "name": "aws-eks-upgrades",
+      "kind": "skill",
+      "purpose": "Plan EKS version upgrades: deprecated API checks, add-on compatibility, control plane then node group rollout."
+    },
+    {
+      "name": "aws-load-balancer-controller",
+      "kind": "skill",
+      "purpose": "Expose EKS services with the AWS Load Balancer Controller: Ingress/Service annotations, target types and TLS."
+    },
+    {
+      "name": "aws-cloudwatch-alarms",
+      "kind": "skill",
+      "purpose": "Create CloudWatch alarms that matter: metric math, composite alarms, anomaly detection and SNS routing."
+    },
+    {
+      "name": "aws-cloudwatch-logs-insights",
+      "kind": "skill",
+      "purpose": "Query CloudWatch Logs with Logs Insights: parse, filter, stats and common troubleshooting queries."
+    },
+    {
+      "name": "aws-xray-tracing",
+      "kind": "skill",
+      "purpose": "Trace AWS workloads with X-Ray or ADOT: instrumenting Lambda/ECS, service maps and trace sampling rules."
+    },
+    {
+      "name": "aws-cloudwatch-dashboards",
+      "kind": "skill",
+      "purpose": "Build CloudWatch dashboards as code covering golden signals per service."
+    },
+    {
+      "name": "gcloud-cli-workflows",
+      "kind": "skill",
+      "purpose": "Use gcloud effectively: configurations, impersonation, --format/--filter output and project/region switching."
+    },
+    {
+      "name": "gcp-resource-hierarchy",
+      "kind": "skill",
+      "purpose": "Design GCP org/folder/project hierarchy, billing account linkage and org policy placement."
+    },
+    {
+      "name": "gcp-vpc-networking",
+      "kind": "skill",
+      "purpose": "Design GCP VPCs: Shared VPC, subnets and secondary ranges, Cloud NAT, firewall rules and Private Service Connect."
+    },
+    {
+      "name": "gcp-cloud-logging",
+      "kind": "skill",
+      "purpose": "Use Cloud Logging and Monitoring: log queries, log-based metrics, sinks to BigQuery/GCS and alert policies."
+    },
+    {
+      "name": "gcp-labels-billing",
+      "kind": "skill",
+      "purpose": "Apply GCP labels consistently and export billing to BigQuery for per-team cost reporting."
+    },
+    {
+      "name": "gcp-cloud-run",
+      "kind": "skill",
+      "purpose": "Deploy to Cloud Run: services vs jobs, concurrency, min instances, revisions/traffic splitting and VPC egress."
+    },
+    {
+      "name": "gcp-cloud-functions",
+      "kind": "skill",
+      "purpose": "Write Cloud Functions (2nd gen): HTTP and event triggers, runtime config, secrets and retries."
+    },
+    {
+      "name": "gcp-pubsub-patterns",
+      "kind": "skill",
+      "purpose": "Use Pub/Sub well: push vs pull, ordering keys, dead-letter topics, exactly-once delivery and retention."
+    },
+    {
+      "name": "gcp-scheduler-tasks",
+      "kind": "skill",
+      "purpose": "Schedule and queue work with Cloud Scheduler and Cloud Tasks: rate limits, retries and authenticated targets."
+    },
+    {
+      "name": "gcp-eventarc",
+      "kind": "skill",
+      "purpose": "Route GCP events with Eventarc triggers from audit logs, Pub/Sub and direct sources to Cloud Run."
+    },
+    {
+      "name": "gke-cluster-setup",
+      "kind": "skill",
+      "purpose": "Create GKE Standard clusters: regional control planes, node pools, release channels and private clusters."
+    },
+    {
+      "name": "gke-autopilot",
+      "kind": "skill",
+      "purpose": "Run workloads on GKE Autopilot: resource requests, compute classes, spot pods and its constraints."
+    },
+    {
+      "name": "gke-workload-identity",
+      "kind": "skill",
+      "purpose": "Bind Kubernetes service accounts to GCP IAM with GKE Workload Identity Federation."
+    },
+    {
+      "name": "gke-upgrades",
+      "kind": "skill",
+      "purpose": "Plan GKE upgrades: release channels, maintenance windows/exclusions, surge and blue-green node pool upgrades."
+    },
+    {
+      "name": "az-cli-workflows",
+      "kind": "skill",
+      "purpose": "Use the Azure CLI: subscriptions, --query/JMESPath, resource groups, managed identity login and output formats."
+    },
+    {
+      "name": "azure-landing-zone",
+      "kind": "skill",
+      "purpose": "Design Azure landing zones: management groups, subscriptions per workload, Azure Policy assignments and hub-spoke."
+    },
+    {
+      "name": "azure-vnet-networking",
+      "kind": "skill",
+      "purpose": "Design Azure VNets: address spaces, subnets, NSGs, peering, Private Endpoints and Private DNS zones."
+    },
+    {
+      "name": "azure-resource-tagging",
+      "kind": "skill",
+      "purpose": "Enforce Azure tags with Azure Policy (inherit, require, append) for ownership and cost allocation."
+    },
+    {
+      "name": "azure-monitor-alerts",
+      "kind": "skill",
+      "purpose": "Set up Azure Monitor: Log Analytics workspaces, KQL queries, metric and log alerts, action groups."
+    },
+    {
+      "name": "azure-app-service",
+      "kind": "skill",
+      "purpose": "Host apps on Azure App Service: plans, deployment slots, app settings, VNet integration and scaling rules."
+    },
+    {
+      "name": "azure-functions-dev",
+      "kind": "skill",
+      "purpose": "Build Azure Functions: triggers/bindings, hosting plans (Flex Consumption, Premium), durable functions and config."
+    },
+    {
+      "name": "azure-container-apps",
+      "kind": "skill",
+      "purpose": "Deploy to Azure Container Apps: revisions, ingress, Dapr, KEDA scale rules and jobs."
+    },
+    {
+      "name": "azure-front-door",
+      "kind": "skill",
+      "purpose": "Configure Azure Front Door: origins, routing rules, caching, custom domains and WAF policy attachment."
+    },
+    {
+      "name": "azure-bicep-modules",
+      "kind": "skill",
+      "purpose": "Write reusable Bicep modules: parameters, user-defined types, outputs, loops/conditions and registry publishing."
+    },
+    {
+      "name": "azure-bicep-deployments",
+      "kind": "skill",
+      "purpose": "Deploy Bicep safely: scopes, what-if previews, parameter files (.bicepparam) and pipeline integration."
+    },
+    {
+      "name": "arm-to-bicep-migration",
+      "kind": "skill",
+      "purpose": "Decompile ARM JSON to Bicep and clean up the result into idiomatic modules."
+    },
+    {
+      "name": "azure-deployment-stacks",
+      "kind": "skill",
+      "purpose": "Manage Azure resources as deployment stacks with deny settings and unmanaged-resource cleanup."
+    },
+    {
+      "name": "aks-cluster-setup",
+      "kind": "skill",
+      "purpose": "Provision AKS clusters: system/user node pools, Azure CNI overlay, availability zones and managed add-ons."
+    },
+    {
+      "name": "aks-networking",
+      "kind": "skill",
+      "purpose": "Configure AKS networking: CNI choice, ingress (App Gateway for Containers, NGINX), egress and private clusters."
+    },
+    {
+      "name": "aks-workload-identity",
+      "kind": "skill",
+      "purpose": "Give AKS pods Azure access via Microsoft Entra Workload ID and federated credentials."
+    },
+    {
+      "name": "aks-upgrades",
+      "kind": "skill",
+      "purpose": "Plan AKS upgrades: auto-upgrade channels, node image upgrades, max surge and planned maintenance."
+    },
+    {
+      "name": "cf-workers-dev",
+      "kind": "skill",
+      "purpose": "Build Cloudflare Workers: fetch handlers, bindings, environment vars/secrets, local dev and limits."
+    },
+    {
+      "name": "cf-wrangler-config",
+      "kind": "skill",
+      "purpose": "Configure wrangler.toml/jsonc: environments, routes, compatibility dates/flags and deploy commands."
+    },
+    {
+      "name": "cf-durable-objects",
+      "kind": "skill",
+      "purpose": "Use Durable Objects for coordination and state: storage API, alarms, websockets and sharding by ID."
+    },
+    {
+      "name": "cf-storage-bindings",
+      "kind": "skill",
+      "purpose": "Pick and use Cloudflare storage: KV, R2, D1 and Hyperdrive, with consistency and cost trade-offs."
+    },
+    {
+      "name": "cf-queues",
+      "kind": "skill",
+      "purpose": "Process background work with Cloudflare Queues: producers, consumers, batching, retries and DLQs."
+    },
+    {
+      "name": "cf-dns-records",
+      "kind": "skill",
+      "purpose": "Manage Cloudflare DNS: proxied vs DNS-only records, CNAME flattening and zone setup."
+    },
+    {
+      "name": "cf-cache-rules",
+      "kind": "skill",
+      "purpose": "Tune Cloudflare caching: cache rules, edge/browser TTLs, cache keys, tiered cache and purges."
+    },
+    {
+      "name": "cf-waf-rules",
+      "kind": "skill",
+      "purpose": "Configure Cloudflare WAF custom rules, managed rulesets and rate limiting to protect your own sites."
+    },
+    {
+      "name": "cf-tunnels-access",
+      "kind": "skill",
+      "purpose": "Expose internal services via Cloudflare Tunnel and protect them with Cloudflare Access policies."
+    },
+    {
+      "name": "cf-redirect-rules",
+      "kind": "skill",
+      "purpose": "Implement redirects and URL rewrites with Cloudflare redirect/transform rules and bulk redirects."
+    },
+    {
+      "name": "vercel-deployments",
+      "kind": "skill",
+      "purpose": "Deploy on Vercel: project settings, build output, preview vs production, rollbacks and monorepo roots."
+    },
+    {
+      "name": "vercel-env-management",
+      "kind": "skill",
+      "purpose": "Manage Vercel environment variables per environment and pull them locally with the Vercel CLI."
+    },
+    {
+      "name": "netlify-deploys",
+      "kind": "skill",
+      "purpose": "Deploy on Netlify: netlify.toml builds, redirects/headers, deploy contexts and branch deploys."
+    },
+    {
+      "name": "netlify-functions",
+      "kind": "skill",
+      "purpose": "Write Netlify Functions and Edge Functions: handlers, scheduled functions and bundling."
+    },
+    {
+      "name": "preview-deploy-workflows",
+      "kind": "skill",
+      "purpose": "Wire preview deployments into PRs: per-branch URLs, comment bots, protected previews and cleanup."
+    },
+    {
+      "name": "dockerfile-authoring",
+      "kind": "skill",
+      "purpose": "Write correct Dockerfiles: base image choice, non-root users, ENTRYPOINT vs CMD, signals and .dockerignore."
+    },
+    {
+      "name": "docker-multistage-builds",
+      "kind": "skill",
+      "purpose": "Use multi-stage builds to separate build and runtime and produce small final images."
+    },
+    {
+      "name": "docker-image-slimming",
+      "kind": "skill",
+      "purpose": "Shrink images with distroless/alpine/chiselled bases, layer pruning and dive analysis."
+    },
+    {
+      "name": "docker-buildx-multiarch",
+      "kind": "skill",
+      "purpose": "Build multi-arch (amd64/arm64) images with buildx, QEMU or native builders and manifest lists."
+    },
+    {
+      "name": "docker-layer-caching",
+      "kind": "skill",
+      "purpose": "Maximise Docker build cache hits: layer ordering, cache mounts and registry/GHA cache backends."
+    },
+    {
+      "name": "docker-compose-stacks",
+      "kind": "skill",
+      "purpose": "Write Compose files: services, depends_on with healthchecks, profiles, env files and overrides."
+    },
+    {
+      "name": "compose-dev-environments",
+      "kind": "skill",
+      "purpose": "Build local dev environments on Compose: hot reload mounts, seed data and watch mode."
+    },
+    {
+      "name": "docker-networking-volumes",
+      "kind": "skill",
+      "purpose": "Understand Docker networks, port publishing, named volumes vs bind mounts and permissions."
+    },
+    {
+      "name": "docker-troubleshooting",
+      "kind": "skill",
+      "purpose": "Debug containers: exit codes, OOM kills, logs, exec/debug shells, and build failures."
+    },
+    {
+      "name": "container-image-tagging",
+      "kind": "skill",
+      "purpose": "Tag and promote images: immutable digests, semver/sha tags, registry retention and promotion between registries."
+    },
+    {
+      "name": "k8s-deployments",
+      "kind": "skill",
+      "purpose": "Write Deployments: rollout strategy, maxSurge/maxUnavailable, revision history and pod template best practice."
+    },
+    {
+      "name": "k8s-probes",
+      "kind": "skill",
+      "purpose": "Configure liveness, readiness and startup probes correctly and avoid probe-induced outages."
+    },
+    {
+      "name": "k8s-resource-requests",
+      "kind": "skill",
+      "purpose": "Set CPU/memory requests and limits, QoS classes, LimitRanges and ResourceQuotas."
+    },
+    {
+      "name": "k8s-configmaps-secrets",
+      "kind": "skill",
+      "purpose": "Feed config to pods with ConfigMaps and Secrets: env vs mounts, reload strategies and immutability."
+    },
+    {
+      "name": "k8s-jobs-cronjobs",
+      "kind": "skill",
+      "purpose": "Run batch work with Jobs and CronJobs: backoff, parallelism, concurrency policy and TTL cleanup."
+    },
+    {
+      "name": "k8s-statefulsets",
+      "kind": "skill",
+      "purpose": "Run stateful workloads with StatefulSets: stable identities, PVC templates, ordered rollout and storage classes."
+    },
+    {
+      "name": "kubectl-debugging",
+      "kind": "skill",
+      "purpose": "Use kubectl for diagnosis: describe, events, logs --previous, debug ephemeral containers and port-forward."
+    },
+    {
+      "name": "k8s-crashloop-diagnosis",
+      "kind": "skill",
+      "purpose": "Diagnose CrashLoopBackOff, ImagePullBackOff and OOMKilled pods step by step."
+    },
+    {
+      "name": "k8s-pending-pods",
+      "kind": "skill",
+      "purpose": "Resolve Pending pods: scheduling failures, taints/tolerations, affinity, PVC binding and capacity."
+    },
+    {
+      "name": "k8s-networking-debug",
+      "kind": "skill",
+      "purpose": "Debug Kubernetes networking: Service endpoints, DNS resolution, kube-proxy, NetworkPolicy drops and ingress paths."
+    },
+    {
+      "name": "k8s-node-troubleshooting",
+      "kind": "skill",
+      "purpose": "Investigate node problems: NotReady, disk/memory pressure, kubelet logs, evictions and draining."
+    },
+    {
+      "name": "k8s-hpa",
+      "kind": "skill",
+      "purpose": "Configure HorizontalPodAutoscaler on CPU, memory and custom/external metrics with sensible behaviour policies."
+    },
+    {
+      "name": "k8s-vpa",
+      "kind": "skill",
+      "purpose": "Use VerticalPodAutoscaler in recommend or auto mode to right-size requests."
+    },
+    {
+      "name": "k8s-cluster-autoscaler",
+      "kind": "skill",
+      "purpose": "Configure Cluster Autoscaler: node group discovery, scale-down settings and expander choices."
+    },
+    {
+      "name": "keda-autoscaling",
+      "kind": "skill",
+      "purpose": "Scale on event sources with KEDA ScaledObjects/ScaledJobs (queues, Kafka, Prometheus, cron)."
+    },
+    {
+      "name": "k8s-pod-disruption-budgets",
+      "kind": "skill",
+      "purpose": "Protect availability during drains and upgrades with PodDisruptionBudgets and topology spread."
+    },
+    {
+      "name": "k8s-services-ingress",
+      "kind": "skill",
+      "purpose": "Expose workloads with Services and Ingress: types, ingress controllers, TLS and path routing."
+    },
+    {
+      "name": "k8s-gateway-api",
+      "kind": "skill",
+      "purpose": "Use the Gateway API: GatewayClass, Gateway, HTTPRoute, traffic splitting and migration from Ingress."
+    },
+    {
+      "name": "cert-manager-tls",
+      "kind": "skill",
+      "purpose": "Automate TLS with cert-manager: Issuers/ClusterIssuers, ACME DNS-01/HTTP-01 and certificate renewal debugging."
+    },
+    {
+      "name": "external-dns",
+      "kind": "skill",
+      "purpose": "Sync Kubernetes Services/Ingresses to DNS providers with external-dns, ownership TXT records and filters."
+    },
+    {
+      "name": "k8s-crd-design",
+      "kind": "skill",
+      "purpose": "Design CustomResourceDefinitions: spec/status split, versioning, validation schemas and printer columns."
+    },
+    {
+      "name": "kubebuilder-operators",
+      "kind": "skill",
+      "purpose": "Scaffold and build operators with Kubebuilder/controller-runtime: reconcilers, RBAC markers and envtest."
+    },
+    {
+      "name": "operator-reconcile-patterns",
+      "kind": "skill",
+      "purpose": "Apply reconcile-loop patterns: idempotency, finalizers, owner references, conditions and requeue logic."
+    },
+    {
+      "name": "k8s-admission-webhooks",
+      "kind": "skill",
+      "purpose": "Write validating/mutating admission webhooks or ValidatingAdmissionPolicy (CEL) rules."
+    },
+    {
+      "name": "kustomize-overlays",
+      "kind": "skill",
+      "purpose": "Structure Kustomize bases and overlays per environment with patches, generators and namePrefix."
+    },
+    {
+      "name": "kustomize-components",
+      "kind": "skill",
+      "purpose": "Share optional features across overlays with Kustomize components and replacements."
+    },
+    {
+      "name": "k8s-manifest-validation",
+      "kind": "skill",
+      "purpose": "Validate manifests in CI with kubeconform, kube-linter and server-side dry-run."
+    },
+    {
+      "name": "helm-chart-authoring",
+      "kind": "skill",
+      "purpose": "Write Helm charts: templates, helpers, values schema (values.schema.json), dependencies and NOTES."
+    },
+    {
+      "name": "helm-values-design",
+      "kind": "skill",
+      "purpose": "Design a chart values API that is small, documented and stable across versions."
+    },
+    {
+      "name": "helm-chart-testing",
+      "kind": "skill",
+      "purpose": "Test charts with helm lint, chart-testing (ct), helm-unittest and helm template diffs."
+    },
+    {
+      "name": "helm-release-ops",
+      "kind": "skill",
+      "purpose": "Operate Helm releases: upgrade --atomic, rollback, history, diff plugin and stuck release recovery."
+    },
+    {
+      "name": "helmfile-environments",
+      "kind": "skill",
+      "purpose": "Manage many Helm releases across environments declaratively with helmfile."
+    },
+    {
+      "name": "kind-local-clusters",
+      "kind": "skill",
+      "purpose": "Spin up local clusters with kind: multi-node configs, local registries and ingress for testing."
+    },
+    {
+      "name": "k3s-lightweight-clusters",
+      "kind": "skill",
+      "purpose": "Run k3s/k3d for edge, homelab and CI clusters, including embedded components to disable."
+    },
+    {
+      "name": "tilt-dev-loop",
+      "kind": "skill",
+      "purpose": "Build a fast inner dev loop on Kubernetes with Tilt: live update, resource deps and Tiltfile structure."
+    },
+    {
+      "name": "skaffold-workflows",
+      "kind": "skill",
+      "purpose": "Use Skaffold for build/deploy/dev loops with profiles, file sync and port forwarding."
+    },
+    {
+      "name": "terraform-module-design",
+      "kind": "skill",
+      "purpose": "Design Terraform modules: input/output contracts, variable validation, composition over nesting and versioning."
+    },
+    {
+      "name": "terraform-state-management",
+      "kind": "skill",
+      "purpose": "Manage Terraform state: remote backends, locking, state mv/rm, import and splitting large states."
+    },
+    {
+      "name": "terraform-environments",
+      "kind": "skill",
+      "purpose": "Separate environments in Terraform: directory layouts vs workspaces, tfvars and per-env backends."
+    },
+    {
+      "name": "terraform-refactoring",
+      "kind": "skill",
+      "purpose": "Refactor Terraform without destroy/recreate using moved, import and removed blocks."
+    },
+    {
+      "name": "terraform-provider-versions",
+      "kind": "skill",
+      "purpose": "Pin and upgrade Terraform/OpenTofu and provider versions, lock files and breaking-change handling."
+    },
+    {
+      "name": "terraform-native-tests",
+      "kind": "skill",
+      "purpose": "Write terraform test (.tftest.hcl) suites with plan/apply runs, mocks and assertions."
+    },
+    {
+      "name": "terratest-suites",
+      "kind": "skill",
+      "purpose": "Write Terratest integration tests in Go that apply, verify and destroy real infrastructure."
+    },
+    {
+      "name": "tflint-config",
+      "kind": "skill",
+      "purpose": "Configure TFLint with cloud rulesets and custom rules, and run it in CI."
+    },
+    {
+      "name": "terraform-plan-reading",
+      "kind": "skill",
+      "purpose": "Read Terraform plans critically: replacements, forced new attributes, unknowns and dangerous diffs."
+    },
+    {
+      "name": "opentofu-migration",
+      "kind": "skill",
+      "purpose": "Migrate from Terraform to OpenTofu: version compatibility, state, registry and CI changes."
+    },
+    {
+      "name": "opentofu-state-encryption",
+      "kind": "skill",
+      "purpose": "Enable OpenTofu client-side state and plan encryption with key providers and rotation."
+    },
+    {
+      "name": "terragrunt-layouts",
+      "kind": "skill",
+      "purpose": "Organise Terragrunt repos: root config, includes, dependency blocks and DRY backend generation."
+    },
+    {
+      "name": "atlantis-workflows",
+      "kind": "skill",
+      "purpose": "Run Terraform via Atlantis PR automation: repo config, workflows, locking and apply requirements."
+    },
+    {
+      "name": "terraform-ci-pipelines",
+      "kind": "skill",
+      "purpose": "Run Terraform in CI: plan on PR, apply on merge, OIDC cloud auth, plan artifacts and approvals."
+    },
+    {
+      "name": "terraform-drift-detection",
+      "kind": "skill",
+      "purpose": "Detect and reconcile infrastructure drift with scheduled plans and refresh-only runs."
+    },
+    {
+      "name": "pulumi-typescript",
+      "kind": "skill",
+      "purpose": "Write Pulumi programs in TypeScript: resources, Outputs/apply, component resources and providers."
+    },
+    {
+      "name": "pulumi-python",
+      "kind": "skill",
+      "purpose": "Write Pulumi programs in Python: resource options, Output handling, components and packaging."
+    },
+    {
+      "name": "pulumi-stacks-config",
+      "kind": "skill",
+      "purpose": "Manage Pulumi stacks, config and secrets, stack references and ESC environments."
+    },
+    {
+      "name": "pulumi-automation-api",
+      "kind": "skill",
+      "purpose": "Embed Pulumi via the Automation API to drive deployments from code and internal tools."
+    },
+    {
+      "name": "pulumi-testing",
+      "kind": "skill",
+      "purpose": "Test Pulumi programs with unit mocks, property policies (CrossGuard) and integration tests."
+    },
+    {
+      "name": "ansible-playbooks",
+      "kind": "skill",
+      "purpose": "Write idempotent Ansible playbooks: handlers, tags, check/diff mode, become and error handling."
+    },
+    {
+      "name": "ansible-roles",
+      "kind": "skill",
+      "purpose": "Structure Ansible roles and collections: defaults vs vars, argument specs, dependencies and Galaxy."
+    },
+    {
+      "name": "ansible-inventory",
+      "kind": "skill",
+      "purpose": "Manage static and dynamic Ansible inventories (AWS, Azure, GCP), group_vars and host_vars."
+    },
+    {
+      "name": "ansible-molecule-testing",
+      "kind": "skill",
+      "purpose": "Test roles with Molecule scenarios, container drivers and idempotence checks."
+    },
+    {
+      "name": "ansible-vault-usage",
+      "kind": "skill",
+      "purpose": "Keep secrets in Ansible Vault or external lookups, with vault IDs and CI decryption."
+    },
+    {
+      "name": "nix-flakes",
+      "kind": "skill",
+      "purpose": "Write Nix flakes: inputs, outputs, lock updates and per-system packages."
+    },
+    {
+      "name": "nix-devshells",
+      "kind": "skill",
+      "purpose": "Build reproducible project dev shells with Nix (devShells, direnv integration) for teams."
+    },
+    {
+      "name": "nixos-modules",
+      "kind": "skill",
+      "purpose": "Configure NixOS hosts with modules, options, deploy tools and safe rollbacks."
+    },
+    {
+      "name": "nix-container-images",
+      "kind": "skill",
+      "purpose": "Build minimal OCI images with Nix (dockerTools/nix2container)."
+    },
+    {
+      "name": "nix-binary-cache",
+      "kind": "skill",
+      "purpose": "Set up and use Nix binary caches (Cachix, S3, attic) to speed up CI and teams."
+    },
+    {
+      "name": "gha-workflow-authoring",
+      "kind": "skill",
+      "purpose": "Write GitHub Actions workflows: triggers, jobs/needs, expressions, concurrency groups and permissions."
+    },
+    {
+      "name": "gha-reusable-workflows",
+      "kind": "skill",
+      "purpose": "Share CI with reusable workflows and composite actions, inputs/secrets passing and versioning."
+    },
+    {
+      "name": "gha-caching",
+      "kind": "skill",
+      "purpose": "Speed up Actions with actions/cache and setup-* caches, cache keys and restore keys."
+    },
+    {
+      "name": "gha-matrix-builds",
+      "kind": "skill",
+      "purpose": "Use matrix strategies with include/exclude, fail-fast and dynamic matrices from JSON."
+    },
+    {
+      "name": "gha-oidc-cloud-auth",
+      "kind": "skill",
+      "purpose": "Authenticate Actions to AWS/GCP/Azure via OIDC federation instead of long-lived keys."
+    },
+    {
+      "name": "gha-self-hosted-runners",
+      "kind": "skill",
+      "purpose": "Run self-hosted runners and Actions Runner Controller on Kubernetes, with labels and autoscaling."
+    },
+    {
+      "name": "gitlab-ci-pipelines",
+      "kind": "skill",
+      "purpose": "Write .gitlab-ci.yml: stages, needs DAGs, rules, artifacts, caches and parent-child pipelines."
+    },
+    {
+      "name": "gitlab-ci-templates",
+      "kind": "skill",
+      "purpose": "Reuse GitLab CI with include, extends, CI/CD components and the CI catalog."
+    },
+    {
+      "name": "gitlab-runners",
+      "kind": "skill",
+      "purpose": "Register and operate GitLab runners: executors, Kubernetes runner, autoscaling and tags."
+    },
+    {
+      "name": "gitlab-environments-deploys",
+      "kind": "skill",
+      "purpose": "Model deployments in GitLab: environments, review apps, protected environments and deploy approvals."
+    },
+    {
+      "name": "jenkinsfile-declarative",
+      "kind": "skill",
+      "purpose": "Write declarative Jenkinsfiles: stages, agents, post conditions, parallel and credentials binding."
+    },
+    {
+      "name": "jenkins-shared-libraries",
+      "kind": "skill",
+      "purpose": "Build Jenkins shared libraries with vars/ steps, src classes and versioned loading."
+    },
+    {
+      "name": "jenkins-k8s-agents",
+      "kind": "skill",
+      "purpose": "Run ephemeral Jenkins agents on Kubernetes with pod templates."
+    },
+    {
+      "name": "jenkins-to-gha-migration",
+      "kind": "skill",
+      "purpose": "Map Jenkins pipelines to GitHub Actions concepts and migrate incrementally."
+    },
+    {
+      "name": "ci-build-caching",
+      "kind": "skill",
+      "purpose": "Design CI caching across providers: dependency caches, build caches and remote cache servers."
+    },
+    {
+      "name": "ci-pipeline-metrics",
+      "kind": "skill",
+      "purpose": "Measure CI health: duration, queue time, failure rate and flaky-job tracking."
+    },
+    {
+      "name": "blue-green-deploys",
+      "kind": "skill",
+      "purpose": "Run blue-green deployments with traffic switches, smoke checks and instant rollback."
+    },
+    {
+      "name": "canary-releases",
+      "kind": "skill",
+      "purpose": "Run canary releases: traffic steps, metric gates, automated analysis and abort criteria."
+    },
+    {
+      "name": "argo-rollouts",
+      "kind": "skill",
+      "purpose": "Use Argo Rollouts for progressive delivery: canary/blue-green strategies and AnalysisTemplates."
+    },
+    {
+      "name": "deploy-rollback-procedures",
+      "kind": "skill",
+      "purpose": "Define fast, rehearsed rollback procedures for apps, configs and schema-coupled releases."
+    },
+    {
+      "name": "argocd-applications",
+      "kind": "skill",
+      "purpose": "Define Argo CD Applications: sources (Helm, Kustomize), sync policies, prune and self-heal."
+    },
+    {
+      "name": "argocd-applicationsets",
+      "kind": "skill",
+      "purpose": "Generate apps with ApplicationSets: git, cluster, matrix and PR generators."
+    },
+    {
+      "name": "argocd-sync-waves",
+      "kind": "skill",
+      "purpose": "Order and gate syncs with sync waves, hooks and health checks in Argo CD."
+    },
+    {
+      "name": "argocd-multicluster",
+      "kind": "skill",
+      "purpose": "Manage many clusters from Argo CD: cluster secrets, projects, RBAC and app-of-apps."
+    },
+    {
+      "name": "flux-bootstrap",
+      "kind": "skill",
+      "purpose": "Bootstrap Flux on a cluster and lay out the fleet repo for clusters, infra and apps."
+    },
+    {
+      "name": "flux-kustomizations",
+      "kind": "skill",
+      "purpose": "Use Flux Kustomizations: dependsOn, health checks, substitutions and pruning."
+    },
+    {
+      "name": "flux-helmreleases",
+      "kind": "skill",
+      "purpose": "Deploy Helm charts with Flux HelmReleases: sources, values from ConfigMaps, remediation and drift detection."
+    },
+    {
+      "name": "flux-image-automation",
+      "kind": "skill",
+      "purpose": "Automate image updates with Flux image reflector/automation and policy markers."
+    },
+    {
+      "name": "gitops-repo-structure",
+      "kind": "skill",
+      "purpose": "Structure GitOps repos: mono vs poly repo, app vs config repos and per-cluster folders."
+    },
+    {
+      "name": "gitops-env-promotion",
+      "kind": "skill",
+      "purpose": "Promote changes across environments in GitOps via PRs, directories or image tags."
+    },
+    {
+      "name": "sops-encrypted-manifests",
+      "kind": "skill",
+      "purpose": "Keep secrets in Git safely with SOPS (age/KMS) or Sealed Secrets and decrypt in Flux/Argo."
+    },
+    {
+      "name": "promql-queries",
+      "kind": "skill",
+      "purpose": "Write correct PromQL: rate vs irate, aggregation, histogram_quantile, joins and absent() checks."
+    },
+    {
+      "name": "prometheus-alert-rules",
+      "kind": "skill",
+      "purpose": "Write Prometheus alerting rules with good for durations, labels, annotations and runbook links."
+    },
+    {
+      "name": "prometheus-recording-rules",
+      "kind": "skill",
+      "purpose": "Precompute expensive queries with recording rules and naming conventions."
+    },
+    {
+      "name": "prometheus-scrape-config",
+      "kind": "skill",
+      "purpose": "Configure scraping: ServiceMonitors/PodMonitors, relabeling and target discovery."
+    },
+    {
+      "name": "prometheus-cardinality",
+      "kind": "skill",
+      "purpose": "Find and fix high-cardinality metrics and labels that blow up Prometheus memory and cost."
+    },
+    {
+      "name": "alertmanager-routing",
+      "kind": "skill",
+      "purpose": "Route alerts with Alertmanager: routing trees, grouping, inhibition, silences and receivers."
+    },
+    {
+      "name": "grafana-dashboards",
+      "kind": "skill",
+      "purpose": "Design Grafana dashboards: golden signals, variables, panel choice and drill-down links."
+    },
+    {
+      "name": "grafana-dashboards-as-code",
+      "kind": "skill",
+      "purpose": "Manage Grafana dashboards as code with Jsonnet/Grafonnet, Terraform or the Grafana Foundation SDK."
+    },
+    {
+      "name": "grafana-alerting",
+      "kind": "skill",
+      "purpose": "Configure Grafana unified alerting: rules, contact points, notification policies and silences."
+    },
+    {
+      "name": "loki-logql",
+      "kind": "skill",
+      "purpose": "Query logs in Loki with LogQL: stream selectors, parsers, metric queries and label hygiene."
+    },
+    {
+      "name": "otel-instrumentation",
+      "kind": "skill",
+      "purpose": "Instrument services with OpenTelemetry SDKs: auto vs manual spans, metrics and log correlation."
+    },
+    {
+      "name": "otel-collector-config",
+      "kind": "skill",
+      "purpose": "Configure the OpenTelemetry Collector: receivers, processors, exporters, pipelines and deployment modes."
+    },
+    {
+      "name": "otel-semantic-conventions",
+      "kind": "skill",
+      "purpose": "Apply OpenTelemetry semantic conventions for consistent span and metric attributes."
+    },
+    {
+      "name": "otel-sampling",
+      "kind": "skill",
+      "purpose": "Choose tracing sampling: head vs tail sampling, ratios and keeping errors and slow traces."
+    },
+    {
+      "name": "otel-context-propagation",
+      "kind": "skill",
+      "purpose": "Propagate trace context across HTTP, messaging and async boundaries (W3C tracecontext, baggage)."
+    },
+    {
+      "name": "trace-backends",
+      "kind": "skill",
+      "purpose": "Run and query trace backends (Grafana Tempo, Jaeger): storage, TraceQL and trace-to-logs links."
+    },
+    {
+      "name": "structured-logging-standards",
+      "kind": "skill",
+      "purpose": "Define a structured logging standard: JSON fields, levels, correlation IDs and what never to log."
+    },
+    {
+      "name": "fluent-bit-pipelines",
+      "kind": "skill",
+      "purpose": "Ship logs with Fluent Bit: inputs, parsers, filters, Kubernetes metadata and outputs."
+    },
+    {
+      "name": "vector-log-pipelines",
+      "kind": "skill",
+      "purpose": "Build log/metric pipelines with Vector: sources, VRL transforms, sinks and buffering."
+    },
+    {
+      "name": "log-retention-tiers",
+      "kind": "skill",
+      "purpose": "Set log retention and tiering (hot/warm/archive) to balance cost, compliance and debuggability."
+    },
+    {
+      "name": "slo-definition",
+      "kind": "skill",
+      "purpose": "Define SLOs: user journeys, targets, windows and documenting them with stakeholders."
+    },
+    {
+      "name": "sli-selection",
+      "kind": "skill",
+      "purpose": "Pick SLIs that reflect user experience: availability, latency, freshness, correctness and how to measure them."
+    },
+    {
+      "name": "error-budget-policies",
+      "kind": "skill",
+      "purpose": "Write error budget policies that tie budget burn to release and reliability decisions."
+    },
+    {
+      "name": "burn-rate-alerts",
+      "kind": "skill",
+      "purpose": "Alert on SLOs with multi-window, multi-burn-rate alerts instead of raw thresholds."
+    },
+    {
+      "name": "slo-as-code",
+      "kind": "skill",
+      "purpose": "Generate SLO rules and dashboards from specs with Sloth, Pyrra or OpenSLO."
+    },
+    {
+      "name": "sre-incident-command",
+      "kind": "skill",
+      "purpose": "Run an incident as incident commander: roles, declaring severity, coordination and handoffs."
+    },
+    {
+      "name": "sre-incident-comms",
+      "kind": "skill",
+      "purpose": "Write incident status updates for internal channels and status pages at a steady cadence."
+    },
+    {
+      "name": "sre-incident-timeline",
+      "kind": "skill",
+      "purpose": "Capture an accurate incident timeline from chat, alerts and deploy logs during and after the event."
+    },
+    {
+      "name": "sre-severity-levels",
+      "kind": "skill",
+      "purpose": "Define incident severity levels with clear criteria, response expectations and escalation."
+    },
+    {
+      "name": "sre-postmortem-writing",
+      "kind": "skill",
+      "purpose": "Write blameless postmortems: impact, timeline, contributing factors, what went well and action items."
+    },
+    {
+      "name": "postmortem-facilitation",
+      "kind": "skill",
+      "purpose": "Facilitate postmortem reviews that find systemic causes rather than blame."
+    },
+    {
+      "name": "postmortem-action-items",
+      "kind": "skill",
+      "purpose": "Write and track postmortem action items that are specific, owned, prioritised and verified."
+    },
+    {
+      "name": "incident-trend-analysis",
+      "kind": "skill",
+      "purpose": "Analyse incidents over time for recurring causes, MTTR/MTTD trends and investment priorities."
+    },
+    {
+      "name": "oncall-rotation-design",
+      "kind": "skill",
+      "purpose": "Design on-call rotations: follow-the-sun, primary/secondary, load limits and compensation inputs."
+    },
+    {
+      "name": "ops-runbook-authoring",
+      "kind": "skill",
+      "purpose": "Write runbooks an on-call engineer can follow at 3am: symptoms, checks, commands and escalation."
+    },
+    {
+      "name": "oncall-handoff",
+      "kind": "skill",
+      "purpose": "Run on-call handoffs: open issues, ongoing risks, noisy alerts and follow-ups."
+    },
+    {
+      "name": "escalation-policies",
+      "kind": "skill",
+      "purpose": "Configure paging escalation policies and service ownership in tools like PagerDuty or Opsgenie."
+    },
+    {
+      "name": "alert-noise-reduction",
+      "kind": "skill",
+      "purpose": "Cut alert noise: find flapping and non-actionable alerts, tune thresholds and delete what nobody acts on."
+    },
+    {
+      "name": "capacity-forecasting",
+      "kind": "skill",
+      "purpose": "Forecast capacity from growth trends and plan headroom for compute, storage and quotas."
+    },
+    {
+      "name": "load-test-capacity",
+      "kind": "skill",
+      "purpose": "Run capacity load tests with k6 or Locust to find saturation points and validate headroom."
+    },
+    {
+      "name": "resource-rightsizing",
+      "kind": "skill",
+      "purpose": "Right-size VMs, containers and databases from utilisation data without risking saturation."
+    },
+    {
+      "name": "chaos-experiment-design",
+      "kind": "skill",
+      "purpose": "Design chaos experiments: steady-state hypothesis, blast radius, abort conditions and learning capture."
+    },
+    {
+      "name": "chaos-mesh-litmus",
+      "kind": "skill",
+      "purpose": "Run Kubernetes fault injection with Chaos Mesh or LitmusChaos."
+    },
+    {
+      "name": "aws-fis-experiments",
+      "kind": "skill",
+      "purpose": "Run AWS Fault Injection Service experiments with stop conditions and IAM scoping."
+    },
+    {
+      "name": "game-day-planning",
+      "kind": "skill",
+      "purpose": "Plan and run game days: scenarios, roles, observation and follow-up."
+    },
+    {
+      "name": "production-readiness-review",
+      "kind": "skill",
+      "purpose": "Run a production readiness review: observability, scaling, failure modes, runbooks and ownership."
+    },
+    {
+      "name": "health-check-design",
+      "kind": "skill",
+      "purpose": "Design health and readiness endpoints that reflect real dependency state without cascading failure."
+    },
+    {
+      "name": "failure-mode-analysis",
+      "kind": "skill",
+      "purpose": "Analyse failure modes of a service and its dependencies: timeouts, retries, circuit breakers and fallbacks."
+    },
+    {
+      "name": "cloud-cost-allocation",
+      "kind": "skill",
+      "purpose": "Allocate cloud spend to teams with tags/labels, accounts and shared-cost split rules."
+    },
+    {
+      "name": "commitment-planning",
+      "kind": "skill",
+      "purpose": "Plan Savings Plans, Reserved Instances and committed use discounts from usage baselines."
+    },
+    {
+      "name": "idle-resource-cleanup",
+      "kind": "skill",
+      "purpose": "Find and safely remove idle or orphaned resources: unattached volumes, old snapshots, idle LBs and IPs."
+    },
+    {
+      "name": "k8s-cost-allocation",
+      "kind": "skill",
+      "purpose": "Allocate Kubernetes costs per namespace/team with OpenCost or Kubecost and request-based models."
+    },
+    {
+      "name": "cost-anomaly-detection",
+      "kind": "skill",
+      "purpose": "Set up cloud cost anomaly detection and investigate spend spikes to root cause."
+    },
+    {
+      "name": "infracost-estimates",
+      "kind": "skill",
+      "purpose": "Show cost diffs on infrastructure PRs with Infracost and set cost policies."
+    },
+    {
+      "name": "cloud-unit-economics",
+      "kind": "skill",
+      "purpose": "Compute unit costs (per customer, request, tenant) by joining billing with usage metrics."
+    },
+    {
+      "name": "cloud-budget-alerts",
+      "kind": "skill",
+      "purpose": "Set budgets and forecast alerts in AWS, GCP and Azure routed to owning teams."
+    },
+    {
+      "name": "billing-export-analysis",
+      "kind": "skill",
+      "purpose": "Query billing exports (AWS CUR 2.0, GCP BigQuery export, Azure exports, FOCUS) to answer cost questions."
+    },
+    {
+      "name": "dns-records-design",
+      "kind": "skill",
+      "purpose": "Design DNS records: A/AAAA/CNAME/ALIAS, TTL strategy, MX/SPF/DKIM/DMARC and CAA."
+    },
+    {
+      "name": "dns-troubleshooting",
+      "kind": "skill",
+      "purpose": "Troubleshoot DNS with dig: delegation, propagation, caching, split-horizon and resolver issues."
+    },
+    {
+      "name": "dns-as-code",
+      "kind": "skill",
+      "purpose": "Manage DNS zones as code with OctoDNS, DNSControl or Terraform and review changes in PRs."
+    },
+    {
+      "name": "dns-zone-migration",
+      "kind": "skill",
+      "purpose": "Migrate DNS zones between providers with TTL lowering, parallel serving and cutover checks."
+    },
+    {
+      "name": "cdn-cache-headers",
+      "kind": "skill",
+      "purpose": "Set Cache-Control, ETag, Vary and surrogate keys for correct CDN and browser caching."
+    },
+    {
+      "name": "cdn-cache-invalidation",
+      "kind": "skill",
+      "purpose": "Invalidate CDN caches safely: versioned assets, tag-based purges and purge rate limits."
+    },
+    {
+      "name": "cloudfront-distributions",
+      "kind": "skill",
+      "purpose": "Configure CloudFront: origins, behaviours, cache/origin request policies, OAC for S3 and functions."
+    },
+    {
+      "name": "cdn-origin-shielding",
+      "kind": "skill",
+      "purpose": "Protect origins with origin shield, tiered caching and stale-while-revalidate/stale-if-error."
+    },
+    {
+      "name": "packet-capture-triage",
+      "kind": "skill",
+      "purpose": "Capture and read traffic with tcpdump and Wireshark/tshark to diagnose resets, retransmits and handshakes."
+    },
+    {
+      "name": "tls-cert-troubleshooting",
+      "kind": "skill",
+      "purpose": "Diagnose TLS: chain issues, SNI, expiry, cipher mismatches and openssl s_client checks."
+    },
+    {
+      "name": "load-balancer-debugging",
+      "kind": "skill",
+      "purpose": "Debug L4/L7 load balancers: health check failures, 502/504s, idle timeouts and keep-alive mismatches."
+    },
+    {
+      "name": "network-path-diagnostics",
+      "kind": "skill",
+      "purpose": "Trace network paths with mtr, traceroute, MTU/PMTUD checks and latency breakdowns."
+    },
+    {
+      "name": "nginx-config",
+      "kind": "skill",
+      "purpose": "Configure NGINX as reverse proxy: upstreams, timeouts, buffering, headers, rate limiting and TLS."
+    },
+    {
+      "name": "haproxy-config",
+      "kind": "skill",
+      "purpose": "Configure HAProxy: frontends/backends, health checks, stick tables, ACLs and runtime API."
+    },
+    {
+      "name": "envoy-proxy-config",
+      "kind": "skill",
+      "purpose": "Configure Envoy: listeners, clusters, routes, retries/timeouts and admin endpoint debugging."
+    },
+    {
+      "name": "caddy-server",
+      "kind": "skill",
+      "purpose": "Run Caddy with automatic HTTPS, Caddyfile reverse proxies and on-demand TLS."
+    },
+    {
+      "name": "systemd-units",
+      "kind": "skill",
+      "purpose": "Write systemd services and timers: restart policies, dependencies, sandboxing options and journald logs."
+    },
+    {
+      "name": "linux-users-permissions",
+      "kind": "skill",
+      "purpose": "Manage Linux users, groups, sudoers, file permissions and ACLs correctly."
+    },
+    {
+      "name": "linux-package-management",
+      "kind": "skill",
+      "purpose": "Manage packages with apt/dnf, pin versions, unattended upgrades and repository hygiene."
+    },
+    {
+      "name": "linux-storage-lvm",
+      "kind": "skill",
+      "purpose": "Manage disks: partitions, LVM, filesystems, growing volumes online and fstab safety."
+    },
+    {
+      "name": "linux-log-journald",
+      "kind": "skill",
+      "purpose": "Find what happened on a host with journalctl, logrotate and syslog forwarding."
+    },
+    {
+      "name": "linux-perf-triage",
+      "kind": "skill",
+      "purpose": "Triage slow Linux hosts with the USE method: top, vmstat, iostat, pidstat and sar."
+    },
+    {
+      "name": "linux-memory-oom",
+      "kind": "skill",
+      "purpose": "Investigate memory pressure and OOM kills: page cache, cgroups limits, swap and oom_score."
+    },
+    {
+      "name": "linux-io-diagnosis",
+      "kind": "skill",
+      "purpose": "Diagnose disk I/O latency and saturation with iostat, iotop, fio and filesystem tuning."
+    },
+    {
+      "name": "ebpf-observability",
+      "kind": "skill",
+      "purpose": "Use bpftrace and BCC tools to observe syscalls, latency and network events in production."
+    },
+    {
+      "name": "sysctl-tuning",
+      "kind": "skill",
+      "purpose": "Tune kernel parameters (net, vm, fs) with sysctl and measure the effect before persisting."
+    },
+    {
+      "name": "serverless-framework",
+      "kind": "skill",
+      "purpose": "Deploy functions with the Serverless Framework or SST: config, stages, plugins and packaging."
+    },
+    {
+      "name": "cold-start-tuning",
+      "kind": "skill",
+      "purpose": "Reduce serverless cold starts: package size, init work, provisioned concurrency and SnapStart."
+    },
+    {
+      "name": "idempotent-event-handlers",
+      "kind": "skill",
+      "purpose": "Make event-driven handlers idempotent and retry-safe with dedup keys and DLQs."
+    },
+    {
+      "name": "serverless-cost-modeling",
+      "kind": "skill",
+      "purpose": "Model serverless costs (invocations, GB-seconds, requests, egress) against container alternatives."
+    },
+    {
+      "name": "istio-traffic-management",
+      "kind": "skill",
+      "purpose": "Use Istio VirtualServices, DestinationRules and Gateways for routing, retries, timeouts and splits."
+    },
+    {
+      "name": "istio-mtls-config",
+      "kind": "skill",
+      "purpose": "Roll out Istio mTLS with PeerAuthentication modes and authorization policies without breaking traffic."
+    },
+    {
+      "name": "linkerd-operations",
+      "kind": "skill",
+      "purpose": "Install and operate Linkerd: injection, golden metrics, retries/timeouts and upgrades."
+    },
+    {
+      "name": "mesh-adoption-plan",
+      "kind": "skill",
+      "purpose": "Plan service mesh adoption: sidecar vs ambient, rollout order, observability and exit criteria."
+    },
+    {
+      "name": "golden-path-design",
+      "kind": "skill",
+      "purpose": "Design golden paths: opinionated, supported templates for new services from repo to production."
+    },
+    {
+      "name": "crossplane-compositions",
+      "kind": "skill",
+      "purpose": "Build self-service infra APIs with Crossplane XRDs, Compositions and functions."
+    },
+    {
+      "name": "backstage-catalog",
+      "kind": "skill",
+      "purpose": "Model software in the Backstage catalog: entity kinds, ownership, relations and catalog-info.yaml."
+    },
+    {
+      "name": "backstage-software-templates",
+      "kind": "skill",
+      "purpose": "Write Backstage Scaffolder templates with parameters, actions and post-create steps."
+    },
+    {
+      "name": "backstage-techdocs",
+      "kind": "skill",
+      "purpose": "Publish docs-as-code with Backstage TechDocs and MkDocs."
+    },
+    {
+      "name": "platform-scorecards",
+      "kind": "skill",
+      "purpose": "Define service maturity scorecards (ownership, SLOs, runbooks, CI) and track adoption."
+    },
+    {
+      "name": "ephemeral-environments",
+      "kind": "skill",
+      "purpose": "Provision short-lived per-PR environments on Kubernetes or cloud with automatic teardown."
+    },
+    {
+      "name": "backup-policy-design",
+      "kind": "skill",
+      "purpose": "Design backup policies: 3-2-1, schedules, retention, immutability and per-system RPO coverage."
+    },
+    {
+      "name": "velero-k8s-backups",
+      "kind": "skill",
+      "purpose": "Back up and restore Kubernetes resources and volumes with Velero."
+    },
+    {
+      "name": "restic-borg-backups",
+      "kind": "skill",
+      "purpose": "Back up hosts and file systems with restic or BorgBackup, with pruning and integrity checks."
+    },
+    {
+      "name": "restore-drills",
+      "kind": "skill",
+      "purpose": "Run scheduled restore tests that prove backups work and measure restore time."
+    },
+    {
+      "name": "dr-strategy-rto-rpo",
+      "kind": "skill",
+      "purpose": "Pick DR strategies (backup-restore, pilot light, warm standby, active-active) from RTO/RPO targets and cost."
+    },
+    {
+      "name": "multi-region-failover",
+      "kind": "skill",
+      "purpose": "Design multi-region failover: data replication, DNS/global LB failover and split-brain avoidance."
+    },
+    {
+      "name": "dr-runbooks",
+      "kind": "skill",
+      "purpose": "Write disaster recovery runbooks with decision points, ordered steps and verification."
+    },
+    {
+      "name": "aws-well-architected-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews an AWS architecture or IaC against the Well-Architected pillars and returns prioritised findings.",
+      "skills": [
+        "aws-vpc-networking",
+        "aws-account-structure",
+        "aws-elb-config"
+      ]
+    },
+    {
+      "name": "aws-cdk-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews CDK and CloudFormation changes for unsafe replacements, missing tests and construct misuse.",
+      "skills": [
+        "aws-cdk-typescript",
+        "aws-cdk-assertions-testing",
+        "aws-cloudformation-templates"
+      ]
+    },
+    {
+      "name": "aws-lambda-troubleshooter",
+      "kind": "agent",
+      "purpose": "Diagnoses failing or slow Lambda functions from logs, metrics and config and proposes fixes.",
+      "skills": [
+        "aws-lambda-dev",
+        "aws-cloudwatch-logs-insights",
+        "aws-xray-tracing"
+      ]
+    },
+    {
+      "name": "aws-tagging-auditor",
+      "kind": "agent",
+      "purpose": "Audits AWS resources against the tagging standard and produces remediation lists per owner.",
+      "skills": [
+        "aws-tagging-standards",
+        "aws-cli-workflows"
+      ]
+    },
+    {
+      "name": "gcp-architecture-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews GCP designs and Terraform for hierarchy, networking, IAM placement and managed-service fit.",
+      "skills": [
+        "gcp-resource-hierarchy",
+        "gcp-vpc-networking"
+      ]
+    },
+    {
+      "name": "cloud-run-troubleshooter",
+      "kind": "agent",
+      "purpose": "Diagnoses Cloud Run deploy failures, cold starts, 5xx and scaling issues from logs and revisions.",
+      "skills": [
+        "gcp-cloud-run",
+        "gcp-cloud-logging"
+      ]
+    },
+    {
+      "name": "gke-upgrade-planner",
+      "kind": "agent",
+      "purpose": "Plans GKE version upgrades: deprecated APIs, add-on compatibility, maintenance windows and rollout order.",
+      "skills": [
+        "gke-upgrades",
+        "gke-cluster-setup"
+      ]
+    },
+    {
+      "name": "azure-architecture-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Azure designs against the Azure Well-Architected Framework and landing zone conventions.",
+      "skills": [
+        "azure-landing-zone",
+        "azure-vnet-networking"
+      ]
+    },
+    {
+      "name": "azure-bicep-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Bicep changes for module hygiene, what-if risks and parameter handling.",
+      "skills": [
+        "azure-bicep-modules",
+        "azure-bicep-deployments"
+      ]
+    },
+    {
+      "name": "aks-upgrade-planner",
+      "kind": "agent",
+      "purpose": "Plans AKS upgrades with deprecated API checks, node pool surge settings and maintenance windows.",
+      "skills": [
+        "aks-upgrades",
+        "aks-cluster-setup"
+      ]
+    },
+    {
+      "name": "azure-functions-troubleshooter",
+      "kind": "agent",
+      "purpose": "Diagnoses Azure Functions trigger, binding, scaling and cold-start problems from App Insights data.",
+      "skills": [
+        "azure-functions-dev",
+        "azure-monitor-alerts"
+      ]
+    },
+    {
+      "name": "cloud-migration-planner",
+      "kind": "agent",
+      "purpose": "Builds a migration plan per workload using the 6 Rs, with waves, dependencies and risks.",
+      "skills": [
+        "dr-strategy-rto-rpo"
+      ]
+    },
+    {
+      "name": "workload-discovery-mapper",
+      "kind": "agent",
+      "purpose": "Inventories an existing estate (hosts, services, dependencies, data stores) as input to migration planning."
+    },
+    {
+      "name": "migration-cutover-planner",
+      "kind": "agent",
+      "purpose": "Writes minute-by-minute cutover plans with go/no-go checks, data sync steps and rollback.",
+      "skills": [
+        "deploy-rollback-procedures",
+        "dns-zone-migration"
+      ]
+    },
+    {
+      "name": "cloud-service-translator",
+      "kind": "agent",
+      "purpose": "Maps services and configs between AWS, GCP and Azure and flags behavioural differences."
+    },
+    {
+      "name": "dockerfile-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Dockerfiles for size, caching, root users, signal handling and reproducibility.",
+      "skills": [
+        "dockerfile-authoring",
+        "docker-multistage-builds",
+        "docker-layer-caching"
+      ]
+    },
+    {
+      "name": "container-image-slimmer",
+      "kind": "agent",
+      "purpose": "Rewrites a Dockerfile to cut image size and attack surface, and reports before/after sizes.",
+      "skills": [
+        "docker-image-slimming",
+        "docker-multistage-builds"
+      ]
+    },
+    {
+      "name": "compose-environment-builder",
+      "kind": "agent",
+      "purpose": "Creates a Docker Compose dev environment for a repo with services, healthchecks and seed data.",
+      "skills": [
+        "docker-compose-stacks",
+        "compose-dev-environments"
+      ]
+    },
+    {
+      "name": "docker-build-debugger",
+      "kind": "agent",
+      "purpose": "Diagnoses failing or slow Docker builds and container start failures.",
+      "skills": [
+        "docker-troubleshooting",
+        "docker-layer-caching"
+      ]
+    },
+    {
+      "name": "k8s-manifest-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Kubernetes manifests for probes, resources, security context, PDBs and rollout safety.",
+      "skills": [
+        "k8s-deployments",
+        "k8s-probes",
+        "k8s-resource-requests",
+        "k8s-pod-disruption-budgets"
+      ]
+    },
+    {
+      "name": "helm-chart-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Helm charts for template correctness, values API design, schema and test coverage.",
+      "skills": [
+        "helm-chart-authoring",
+        "helm-values-design",
+        "helm-chart-testing"
+      ]
+    },
+    {
+      "name": "k8s-resource-tuner",
+      "kind": "agent",
+      "purpose": "Proposes CPU/memory requests, limits and autoscaling settings from observed usage.",
+      "skills": [
+        "k8s-resource-requests",
+        "k8s-hpa",
+        "k8s-vpa"
+      ]
+    },
+    {
+      "name": "kustomize-refactorer",
+      "kind": "agent",
+      "purpose": "Refactors duplicated manifests into Kustomize bases, overlays and components.",
+      "skills": [
+        "kustomize-overlays",
+        "kustomize-components"
+      ]
+    },
+    {
+      "name": "k8s-pod-debugger",
+      "kind": "agent",
+      "purpose": "Investigates crashing, pending or unready pods and returns root cause with the fix.",
+      "skills": [
+        "kubectl-debugging",
+        "k8s-crashloop-diagnosis",
+        "k8s-pending-pods"
+      ]
+    },
+    {
+      "name": "k8s-network-debugger",
+      "kind": "agent",
+      "purpose": "Traces Kubernetes connectivity failures through DNS, Services, NetworkPolicies and ingress.",
+      "skills": [
+        "k8s-networking-debug",
+        "k8s-services-ingress",
+        "k8s-network-policies"
+      ]
+    },
+    {
+      "name": "k8s-node-investigator",
+      "kind": "agent",
+      "purpose": "Investigates node pressure, NotReady nodes and evictions and recommends remediation.",
+      "skills": [
+        "k8s-node-troubleshooting",
+        "kubectl-debugging"
+      ]
+    },
+    {
+      "name": "k8s-upgrade-planner",
+      "kind": "agent",
+      "purpose": "Plans Kubernetes minor-version upgrades: removed APIs, add-on matrix, PDB readiness and order of operations.",
+      "skills": [
+        "k8s-pod-disruption-budgets",
+        "k8s-manifest-validation"
+      ]
+    },
+    {
+      "name": "terraform-plan-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews terraform plan output for destructive changes, replacements and risky diffs before apply.",
+      "skills": [
+        "terraform-plan-reading",
+        "terraform-state-management"
+      ]
+    },
+    {
+      "name": "terraform-module-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Terraform modules for interface design, validation, versioning and tests.",
+      "skills": [
+        "terraform-module-design",
+        "terraform-native-tests",
+        "tflint-config"
+      ]
+    },
+    {
+      "name": "terraform-drift-investigator",
+      "kind": "agent",
+      "purpose": "Explains drift between state and real infrastructure and proposes code or state fixes.",
+      "skills": [
+        "terraform-drift-detection",
+        "terraform-plan-reading"
+      ]
+    },
+    {
+      "name": "terraform-state-surgeon",
+      "kind": "agent",
+      "purpose": "Plans and scripts safe state operations (mv, import, removed, split) with backups and verification.",
+      "skills": [
+        "terraform-state-management",
+        "terraform-refactoring"
+      ]
+    },
+    {
+      "name": "terraform-module-writer",
+      "kind": "agent",
+      "purpose": "Writes a new Terraform module with variables, validation, outputs, examples and tests.",
+      "skills": [
+        "terraform-module-design",
+        "terraform-native-tests"
+      ]
+    },
+    {
+      "name": "terraform-importer",
+      "kind": "agent",
+      "purpose": "Brings existing cloud resources under Terraform with import blocks and generated config cleanup.",
+      "skills": [
+        "terraform-refactoring",
+        "terraform-state-management"
+      ]
+    },
+    {
+      "name": "cfn-to-terraform-migrator",
+      "kind": "agent",
+      "purpose": "Converts CloudFormation stacks to Terraform and plans a no-downtime handover of ownership.",
+      "skills": [
+        "aws-cloudformation-templates",
+        "terraform-refactoring"
+      ]
+    },
+    {
+      "name": "terraform-provider-upgrader",
+      "kind": "agent",
+      "purpose": "Upgrades Terraform and provider major versions, fixing breaking changes and verifying empty plans.",
+      "skills": [
+        "terraform-provider-versions",
+        "terraform-plan-reading"
+      ]
+    },
+    {
+      "name": "pulumi-program-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Pulumi programs for Output misuse, component design, secrets and stack config.",
+      "skills": [
+        "pulumi-typescript",
+        "pulumi-python",
+        "pulumi-stacks-config"
+      ]
+    },
+    {
+      "name": "terraform-to-pulumi-converter",
+      "kind": "agent",
+      "purpose": "Converts Terraform code to Pulumi and imports existing state without replacement.",
+      "skills": [
+        "pulumi-typescript",
+        "terraform-state-management"
+      ]
+    },
+    {
+      "name": "pulumi-stack-troubleshooter",
+      "kind": "agent",
+      "purpose": "Diagnoses failed Pulumi updates, pending operations and state conflicts.",
+      "skills": [
+        "pulumi-stacks-config"
+      ]
+    },
+    {
+      "name": "ansible-playbook-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Ansible for idempotence, module choice, secrets handling and role structure.",
+      "skills": [
+        "ansible-playbooks",
+        "ansible-roles",
+        "ansible-vault-usage"
+      ]
+    },
+    {
+      "name": "ansible-role-writer",
+      "kind": "agent",
+      "purpose": "Writes Ansible roles with defaults, argument specs, handlers and Molecule tests.",
+      "skills": [
+        "ansible-roles",
+        "ansible-molecule-testing"
+      ]
+    },
+    {
+      "name": "ansible-run-debugger",
+      "kind": "agent",
+      "purpose": "Diagnoses failed Ansible runs: connection, privilege, templating and inventory errors.",
+      "skills": [
+        "ansible-playbooks",
+        "ansible-inventory"
+      ]
+    },
+    {
+      "name": "gha-workflow-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews GitHub Actions workflows for permissions, pinning, caching, concurrency and cost.",
+      "skills": [
+        "gha-workflow-authoring",
+        "gha-caching",
+        "gha-oidc-cloud-auth"
+      ]
+    },
+    {
+      "name": "gha-workflow-writer",
+      "kind": "agent",
+      "purpose": "Writes GitHub Actions workflows for a repo: build, test, release and deploy jobs.",
+      "skills": [
+        "gha-workflow-authoring",
+        "gha-reusable-workflows",
+        "gha-matrix-builds"
+      ]
+    },
+    {
+      "name": "ci-failure-triager",
+      "kind": "agent",
+      "purpose": "Triages failing CI runs: classifies as code, flaky, infra or config, and proposes the fix.",
+      "skills": [
+        "ci-pipeline-metrics",
+        "gha-workflow-authoring"
+      ]
+    },
+    {
+      "name": "ci-speed-optimizer",
+      "kind": "agent",
+      "purpose": "Finds the slowest parts of a CI pipeline and proposes caching, sharding and parallelism changes.",
+      "skills": [
+        "ci-build-caching",
+        "ci-test-sharding",
+        "gha-caching"
+      ]
+    },
+    {
+      "name": "jenkins-to-gha-migrator",
+      "kind": "agent",
+      "purpose": "Converts Jenkinsfiles and shared libraries into GitHub Actions workflows.",
+      "skills": [
+        "jenkins-to-gha-migration",
+        "jenkinsfile-declarative",
+        "gha-reusable-workflows"
+      ]
+    },
+    {
+      "name": "gitlab-to-gha-migrator",
+      "kind": "agent",
+      "purpose": "Converts .gitlab-ci.yml pipelines into GitHub Actions workflows with equivalent semantics.",
+      "skills": [
+        "gitlab-ci-pipelines",
+        "gha-workflow-authoring"
+      ]
+    },
+    {
+      "name": "gha-to-gitlab-migrator",
+      "kind": "agent",
+      "purpose": "Converts GitHub Actions workflows into GitLab CI pipelines and components.",
+      "skills": [
+        "gitlab-ci-pipelines",
+        "gitlab-ci-templates"
+      ]
+    },
+    {
+      "name": "ci-pipeline-inventory",
+      "kind": "agent",
+      "purpose": "Inventories CI pipelines across repos: providers, runners, secrets usage and migration complexity."
+    },
+    {
+      "name": "deploy-risk-assessor",
+      "kind": "agent",
+      "purpose": "Scores a pending deploy by change size, blast radius, test signal and timing, and recommends a strategy.",
+      "skills": [
+        "canary-releases",
+        "deploy-rollback-procedures"
+      ]
+    },
+    {
+      "name": "canary-analysis-agent",
+      "kind": "agent",
+      "purpose": "Compares canary vs baseline metrics during a rollout and recommends promote or abort.",
+      "skills": [
+        "canary-releases",
+        "argo-rollouts",
+        "promql-queries"
+      ]
+    },
+    {
+      "name": "rollback-advisor",
+      "kind": "agent",
+      "purpose": "Decides whether and how to roll back a bad release, including config and schema-coupled cases.",
+      "skills": [
+        "deploy-rollback-procedures",
+        "blue-green-deploys"
+      ]
+    },
+    {
+      "name": "argocd-sync-debugger",
+      "kind": "agent",
+      "purpose": "Diagnoses OutOfSync, Degraded and failed-sync Argo CD apps and proposes fixes.",
+      "skills": [
+        "argocd-applications",
+        "argocd-sync-waves"
+      ]
+    },
+    {
+      "name": "flux-reconcile-debugger",
+      "kind": "agent",
+      "purpose": "Diagnoses failing Flux Kustomizations, HelmReleases and sources.",
+      "skills": [
+        "flux-kustomizations",
+        "flux-helmreleases"
+      ]
+    },
+    {
+      "name": "gitops-repo-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews GitOps repo layout, promotion flow and secret handling against best practice.",
+      "skills": [
+        "gitops-repo-structure",
+        "gitops-env-promotion",
+        "sops-encrypted-manifests"
+      ]
+    },
+    {
+      "name": "gitops-promotion-planner",
+      "kind": "agent",
+      "purpose": "Plans and opens promotion PRs across environments and summarises what changes.",
+      "skills": [
+        "gitops-env-promotion"
+      ]
+    },
+    {
+      "name": "otel-instrumentation-writer",
+      "kind": "agent",
+      "purpose": "Adds OpenTelemetry tracing and metrics to a service following semantic conventions.",
+      "skills": [
+        "otel-instrumentation",
+        "otel-semantic-conventions",
+        "otel-context-propagation"
+      ]
+    },
+    {
+      "name": "otel-collector-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews OpenTelemetry Collector configs for pipeline correctness, sampling, batching and cost.",
+      "skills": [
+        "otel-collector-config",
+        "otel-sampling"
+      ]
+    },
+    {
+      "name": "log-statement-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews code for log quality: structure, levels, correlation IDs and sensitive data leaks.",
+      "skills": [
+        "structured-logging-standards"
+      ]
+    },
+    {
+      "name": "metrics-naming-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews new metrics for naming, units, label cardinality and usefulness.",
+      "skills": [
+        "prometheus-cardinality",
+        "otel-semantic-conventions"
+      ]
+    },
+    {
+      "name": "grafana-dashboard-builder",
+      "kind": "agent",
+      "purpose": "Builds Grafana dashboards for a service from its metrics, as code.",
+      "skills": [
+        "grafana-dashboards",
+        "grafana-dashboards-as-code",
+        "promql-queries"
+      ]
+    },
+    {
+      "name": "prometheus-alert-writer",
+      "kind": "agent",
+      "purpose": "Writes Prometheus alert and recording rules with runbook links and tests.",
+      "skills": [
+        "prometheus-alert-rules",
+        "prometheus-recording-rules",
+        "promql-queries"
+      ]
+    },
+    {
+      "name": "alert-rule-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews alert rules for actionability, thresholds, durations and routing.",
+      "skills": [
+        "prometheus-alert-rules",
+        "alertmanager-routing",
+        "alert-noise-reduction"
+      ]
+    },
+    {
+      "name": "promql-assistant",
+      "kind": "agent",
+      "purpose": "Answers questions about system behaviour by writing and explaining PromQL queries.",
+      "skills": [
+        "promql-queries"
+      ]
+    },
+    {
+      "name": "slo-designer",
+      "kind": "agent",
+      "purpose": "Proposes SLIs and SLOs for a service from its user journeys and existing telemetry.",
+      "skills": [
+        "slo-definition",
+        "sli-selection"
+      ]
+    },
+    {
+      "name": "error-budget-reporter",
+      "kind": "agent",
+      "purpose": "Produces error budget reports per service with burn trends and policy recommendations.",
+      "skills": [
+        "error-budget-policies",
+        "slo-definition"
+      ]
+    },
+    {
+      "name": "burn-rate-alert-generator",
+      "kind": "agent",
+      "purpose": "Generates multi-window burn-rate alerts and dashboards from SLO specs.",
+      "skills": [
+        "burn-rate-alerts",
+        "slo-as-code"
+      ]
+    },
+    {
+      "name": "sre-incident-commander-assistant",
+      "kind": "agent",
+      "purpose": "Supports an incident commander: tracks roles, actions, open questions and next update times.",
+      "skills": [
+        "sre-incident-command",
+        "sre-severity-levels"
+      ]
+    },
+    {
+      "name": "incident-status-writer",
+      "kind": "agent",
+      "purpose": "Drafts internal and status-page incident updates from the current incident state.",
+      "skills": [
+        "sre-incident-comms"
+      ]
+    },
+    {
+      "name": "incident-timeline-builder",
+      "kind": "agent",
+      "purpose": "Builds an incident timeline from chat logs, alerts and deploy history.",
+      "skills": [
+        "sre-incident-timeline"
+      ]
+    },
+    {
+      "name": "incident-triage-investigator",
+      "kind": "agent",
+      "purpose": "Correlates alerts, recent deploys, logs and metrics to propose likely causes during an incident.",
+      "skills": [
+        "promql-queries",
+        "loki-logql",
+        "kubectl-debugging"
+      ]
+    },
+    {
+      "name": "postmortem-drafter",
+      "kind": "agent",
+      "purpose": "Drafts a blameless postmortem from the incident timeline, chat and metrics.",
+      "skills": [
+        "sre-postmortem-writing",
+        "sre-incident-timeline"
+      ]
+    },
+    {
+      "name": "postmortem-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews postmortem drafts for blame, missing contributing factors and weak action items.",
+      "skills": [
+        "sre-postmortem-writing",
+        "postmortem-action-items"
+      ]
+    },
+    {
+      "name": "incident-pattern-analyst",
+      "kind": "agent",
+      "purpose": "Analyses a set of postmortems for recurring causes and recommends reliability investments.",
+      "skills": [
+        "incident-trend-analysis"
+      ]
+    },
+    {
+      "name": "ops-runbook-writer",
+      "kind": "agent",
+      "purpose": "Writes runbooks for alerts and services with diagnostic commands, decision points and escalation.",
+      "skills": [
+        "ops-runbook-authoring"
+      ]
+    },
+    {
+      "name": "runbook-validator",
+      "kind": "agent",
+      "purpose": "Checks runbooks for stale commands, missing steps and broken links against the current system.",
+      "skills": [
+        "ops-runbook-authoring"
+      ]
+    },
+    {
+      "name": "oncall-handoff-summarizer",
+      "kind": "agent",
+      "purpose": "Summarises an on-call shift: pages, open issues, follow-ups and noisy alerts for the next engineer.",
+      "skills": [
+        "oncall-handoff"
+      ]
+    },
+    {
+      "name": "alert-noise-auditor",
+      "kind": "agent",
+      "purpose": "Audits paging history to find noisy, flapping and non-actionable alerts and proposes changes.",
+      "skills": [
+        "alert-noise-reduction",
+        "alertmanager-routing"
+      ]
+    },
+    {
+      "name": "cloud-cost-analyst",
+      "kind": "agent",
+      "purpose": "Answers cloud spend questions from billing exports and explains the top cost drivers.",
+      "skills": [
+        "billing-export-analysis",
+        "cloud-cost-allocation"
+      ]
+    },
+    {
+      "name": "rightsizing-advisor",
+      "kind": "agent",
+      "purpose": "Recommends rightsizing and idle-resource cleanup with savings estimates and risk notes.",
+      "skills": [
+        "resource-rightsizing",
+        "idle-resource-cleanup"
+      ]
+    },
+    {
+      "name": "commitment-purchase-planner",
+      "kind": "agent",
+      "purpose": "Recommends Savings Plan, RI and CUD purchases from usage baselines with coverage targets.",
+      "skills": [
+        "commitment-planning",
+        "billing-export-analysis"
+      ]
+    },
+    {
+      "name": "cost-anomaly-investigator",
+      "kind": "agent",
+      "purpose": "Investigates a cost spike to the responsible service, change and owner.",
+      "skills": [
+        "cost-anomaly-detection",
+        "billing-export-analysis"
+      ]
+    },
+    {
+      "name": "infra-cost-pr-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews infrastructure PRs for cost impact and cheaper equivalent configurations.",
+      "skills": [
+        "infracost-estimates"
+      ]
+    },
+    {
+      "name": "production-readiness-reviewer",
+      "kind": "agent",
+      "purpose": "Runs a production readiness review of a service and returns gaps by severity.",
+      "skills": [
+        "production-readiness-review",
+        "health-check-design",
+        "slo-definition"
+      ]
+    },
+    {
+      "name": "chaos-experiment-planner",
+      "kind": "agent",
+      "purpose": "Designs chaos experiments and game days with hypotheses, blast radius and abort conditions.",
+      "skills": [
+        "chaos-experiment-design",
+        "game-day-planning"
+      ]
+    },
+    {
+      "name": "infra-capacity-planner",
+      "kind": "agent",
+      "purpose": "Forecasts capacity needs from growth data and load tests, and recommends headroom changes.",
+      "skills": [
+        "capacity-forecasting",
+        "load-test-capacity"
+      ]
+    },
+    {
+      "name": "linux-troubleshooter",
+      "kind": "agent",
+      "purpose": "Diagnoses Linux host problems (services, disks, permissions, networking) and gives step-by-step fixes.",
+      "skills": [
+        "systemd-units",
+        "linux-log-journald",
+        "linux-storage-lvm"
+      ]
+    },
+    {
+      "name": "linux-perf-investigator",
+      "kind": "agent",
+      "purpose": "Investigates slow Linux hosts with USE-method checks and eBPF tools and reports the bottleneck.",
+      "skills": [
+        "linux-perf-triage",
+        "linux-memory-oom",
+        "linux-io-diagnosis",
+        "ebpf-observability"
+      ]
+    },
+    {
+      "name": "systemd-unit-writer",
+      "kind": "agent",
+      "purpose": "Writes systemd service and timer units with restart, sandboxing and logging configured.",
+      "skills": [
+        "systemd-units"
+      ]
+    },
+    {
+      "name": "linux-patch-planner",
+      "kind": "agent",
+      "purpose": "Plans OS patching waves with reboot coordination, canaries and verification.",
+      "skills": [
+        "linux-package-management"
+      ]
+    },
+    {
+      "name": "dns-change-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews DNS changes for TTL, conflicts, email auth records and cutover risk.",
+      "skills": [
+        "dns-records-design",
+        "dns-as-code"
+      ]
+    },
+    {
+      "name": "network-connectivity-debugger",
+      "kind": "agent",
+      "purpose": "Diagnoses connectivity failures across DNS, TLS, routing and load balancers.",
+      "skills": [
+        "dns-troubleshooting",
+        "tls-cert-troubleshooting",
+        "network-path-diagnostics",
+        "load-balancer-debugging"
+      ]
+    },
+    {
+      "name": "tls-cert-auditor",
+      "kind": "agent",
+      "purpose": "Inventories TLS certificates across endpoints and flags expiry, weak config and chain problems.",
+      "skills": [
+        "tls-cert-troubleshooting",
+        "cert-manager-tls"
+      ]
+    },
+    {
+      "name": "proxy-config-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews NGINX, HAProxy and Envoy configs for timeouts, headers, buffering and TLS mistakes.",
+      "skills": [
+        "nginx-config",
+        "haproxy-config",
+        "envoy-proxy-config"
+      ]
+    },
+    {
+      "name": "cdn-cache-tuner",
+      "kind": "agent",
+      "purpose": "Analyses cache hit ratios and headers and proposes CDN rule and header changes.",
+      "skills": [
+        "cdn-cache-headers",
+        "cdn-origin-shielding"
+      ]
+    },
+    {
+      "name": "golden-path-scaffolder",
+      "kind": "agent",
+      "purpose": "Scaffolds a new service from the golden path: repo, CI, manifests, dashboards and catalog entry.",
+      "skills": [
+        "golden-path-design",
+        "backstage-software-templates"
+      ]
+    },
+    {
+      "name": "backstage-catalog-curator",
+      "kind": "agent",
+      "purpose": "Finds missing or stale Backstage catalog entries and writes catalog-info.yaml files.",
+      "skills": [
+        "backstage-catalog"
+      ]
+    },
+    {
+      "name": "platform-scorecard-auditor",
+      "kind": "agent",
+      "purpose": "Scores services against platform scorecards and opens remediation tasks per team.",
+      "skills": [
+        "platform-scorecards"
+      ]
+    },
+    {
+      "name": "crossplane-composition-writer",
+      "kind": "agent",
+      "purpose": "Writes Crossplane XRDs and Compositions for a requested self-service resource.",
+      "skills": [
+        "crossplane-compositions"
+      ]
+    },
+    {
+      "name": "backup-coverage-auditor",
+      "kind": "agent",
+      "purpose": "Audits which systems are backed up, how often and whether restores were tested, against RPO targets.",
+      "skills": [
+        "backup-policy-design",
+        "restore-drills"
+      ]
+    },
+    {
+      "name": "dr-plan-writer",
+      "kind": "agent",
+      "purpose": "Writes a disaster recovery plan for a system from its RTO/RPO, architecture and dependencies.",
+      "skills": [
+        "dr-strategy-rto-rpo",
+        "dr-runbooks"
+      ]
+    },
+    {
+      "name": "restore-drill-runner",
+      "kind": "agent",
+      "purpose": "Plans and documents restore drills, recording restore time and gaps.",
+      "skills": [
+        "restore-drills",
+        "velero-k8s-backups"
+      ]
+    },
+    {
+      "name": "failover-runbook-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews failover runbooks for missing steps, data consistency checks and split-brain risks.",
+      "skills": [
+        "multi-region-failover",
+        "dr-runbooks"
+      ]
+    },
+    {
+      "name": "serverless-architecture-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews serverless designs for event flow, idempotency, limits and cost.",
+      "skills": [
+        "idempotent-event-handlers",
+        "serverless-cost-modeling",
+        "aws-sqs-sns-patterns"
+      ]
+    },
+    {
+      "name": "cold-start-optimizer",
+      "kind": "agent",
+      "purpose": "Measures and reduces function cold starts with packaging, init and concurrency changes.",
+      "skills": [
+        "cold-start-tuning"
+      ]
+    },
+    {
+      "name": "cloud-event-topology-mapper",
+      "kind": "agent",
+      "purpose": "Maps event-driven topologies (queues, topics, buses, functions) into a diagram and flags dead ends.",
+      "skills": [
+        "aws-eventbridge-rules",
+        "aws-sqs-sns-patterns"
+      ]
+    },
+    {
+      "name": "infra-inventory-mapper",
+      "kind": "agent",
+      "purpose": "Builds an inventory of infrastructure from IaC and cloud APIs: resources, owners and environments.",
+      "skills": [
+        "aws-cli-workflows",
+        "gcloud-cli-workflows",
+        "az-cli-workflows"
+      ]
+    },
+    {
+      "name": "infra-diagram-generator",
+      "kind": "agent",
+      "purpose": "Generates architecture diagrams (Mermaid/D2) from Terraform, Kubernetes manifests or cloud inventory."
+    },
+    {
+      "name": "env-config-differ",
+      "kind": "agent",
+      "purpose": "Compares configuration across environments (dev/stage/prod) and reports unintended differences.",
+      "skills": [
+        "kustomize-overlays",
+        "terraform-environments"
+      ]
+    },
+    {
+      "name": "cloudflare-worker-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Cloudflare Workers code and wrangler config for limits, bindings and caching mistakes.",
+      "skills": [
+        "cf-workers-dev",
+        "cf-wrangler-config",
+        "cf-storage-bindings"
+      ]
+    },
+    {
+      "name": "vercel-build-debugger",
+      "kind": "agent",
+      "purpose": "Diagnoses failed Vercel and Netlify builds and deploys from build logs and config.",
+      "skills": [
+        "vercel-deployments",
+        "netlify-deploys"
+      ]
+    },
+    {
+      "name": "edge-migration-planner",
+      "kind": "agent",
+      "purpose": "Plans moving routes or apps to edge platforms (Workers, Vercel), listing runtime gaps and steps.",
+      "skills": [
+        "cf-workers-dev",
+        "vercel-deployments"
+      ]
+    },
+    {
+      "name": "mesh-policy-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Istio/Linkerd traffic and mTLS policies for broken routes, retries storms and gaps.",
+      "skills": [
+        "istio-traffic-management",
+        "istio-mtls-config"
+      ]
+    },
+    {
+      "name": "mesh-traffic-debugger",
+      "kind": "agent",
+      "purpose": "Diagnoses 503s, mTLS handshake failures and routing issues inside a service mesh.",
+      "skills": [
+        "istio-traffic-management",
+        "linkerd-operations"
+      ]
+    },
+    {
+      "name": "mesh-adoption-planner",
+      "kind": "agent",
+      "purpose": "Plans phased service mesh adoption and its success criteria.",
+      "skills": [
+        "mesh-adoption-plan"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2345 @@
+{
+  "domain": "business-ops",
+  "arks": [
+    {
+      "name": "bookkeeping",
+      "type": "skill",
+      "topic": "bookkeeping",
+      "description": "For bookkeepers and small-business finance owners: chart of accounts design, journal entries, bank reconciliation, transaction coding and books cleanup so agents keep a clean ledger.",
+      "items": [
+        {
+          "package": "chart-of-accounts-design",
+          "required": true
+        },
+        {
+          "package": "journal-entry-drafting",
+          "required": true
+        },
+        {
+          "package": "bank-reconciliation",
+          "required": true
+        },
+        {
+          "package": "transaction-categorization",
+          "required": true
+        },
+        {
+          "package": "bookkeeping-cleanup",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "month-end-close",
+      "type": "skill",
+      "topic": "month-end close",
+      "description": "For controllers and accounting teams: close checklists, accruals, prepaid schedules, balance sheet reconciliations and flux analysis to run a faster, documented month-end close.",
+      "items": [
+        {
+          "package": "close-checklist-builder",
+          "required": true
+        },
+        {
+          "package": "accrual-calculation",
+          "required": true
+        },
+        {
+          "package": "balance-sheet-reconciliation",
+          "required": true
+        },
+        {
+          "package": "close-flux-analysis",
+          "required": true
+        },
+        {
+          "package": "prepaid-amortization-schedule",
+          "required": false
+        },
+        {
+          "package": "journal-entry-drafting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "accounts-payable",
+      "type": "skill",
+      "topic": "accounts payable",
+      "description": "For AP teams: invoice intake, three-way match, payment run planning, vendor statement reconciliation and duplicate payment detection.",
+      "items": [
+        {
+          "package": "ap-invoice-intake",
+          "required": true
+        },
+        {
+          "package": "three-way-match",
+          "required": true
+        },
+        {
+          "package": "ap-payment-run-planning",
+          "required": true
+        },
+        {
+          "package": "vendor-statement-reconciliation",
+          "required": false
+        },
+        {
+          "package": "duplicate-payment-detection",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "accounts-receivable",
+      "type": "skill",
+      "topic": "accounts receivable and collections",
+      "description": "For AR and credit teams: aging analysis, dunning sequences, cash application, customer credit reviews and bad debt reserves.",
+      "items": [
+        {
+          "package": "ar-aging-analysis",
+          "required": true
+        },
+        {
+          "package": "collections-dunning-sequences",
+          "required": true
+        },
+        {
+          "package": "cash-application",
+          "required": true
+        },
+        {
+          "package": "customer-credit-review",
+          "required": false
+        },
+        {
+          "package": "bad-debt-reserve",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "invoicing",
+      "type": "skill",
+      "topic": "invoicing and billing",
+      "description": "For billing specialists and founders: compliant invoices, credit notes, recurring and milestone billing schedules and e-invoicing/VAT field checks.",
+      "items": [
+        {
+          "package": "invoice-drafting",
+          "required": true
+        },
+        {
+          "package": "credit-note-issuing",
+          "required": true
+        },
+        {
+          "package": "recurring-billing-schedules",
+          "required": true
+        },
+        {
+          "package": "einvoicing-compliance-check",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "revenue-recognition",
+      "type": "skill",
+      "topic": "revenue recognition",
+      "description": "For revenue accountants: ASC 606 / IFRS 15 five-step analysis, SSP allocation, contract modifications and deferred revenue waterfalls, documented for auditors.",
+      "items": [
+        {
+          "package": "asc606-five-step-analysis",
+          "required": true
+        },
+        {
+          "package": "ssp-allocation",
+          "required": true
+        },
+        {
+          "package": "deferred-revenue-waterfall",
+          "required": true
+        },
+        {
+          "package": "contract-modification-accounting",
+          "required": false
+        },
+        {
+          "package": "technical-accounting-memo",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "technical-accounting",
+      "type": "skill",
+      "topic": "technical accounting",
+      "description": "For controllers and technical accounting leads: position memos, accounting policy manuals, stock-based compensation and lease classification, drafted for auditor review.",
+      "items": [
+        {
+          "package": "technical-accounting-memo",
+          "required": true
+        },
+        {
+          "package": "accounting-policy-manual",
+          "required": true
+        },
+        {
+          "package": "stock-comp-expense",
+          "required": true
+        },
+        {
+          "package": "lease-classification",
+          "required": false
+        },
+        {
+          "package": "contract-modification-accounting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "fixed-assets-leases",
+      "type": "skill",
+      "topic": "fixed assets and lease accounting",
+      "description": "For accountants managing long-lived assets: asset registers, depreciation, capex/opex classification and ASC 842 / IFRS 16 lease abstracts and schedules.",
+      "items": [
+        {
+          "package": "fixed-asset-register",
+          "required": true
+        },
+        {
+          "package": "depreciation-schedules",
+          "required": true
+        },
+        {
+          "package": "capex-opex-classification",
+          "required": true
+        },
+        {
+          "package": "lease-classification",
+          "required": true
+        },
+        {
+          "package": "lease-liability-schedule",
+          "required": true
+        },
+        {
+          "package": "lease-abstract-extraction",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "expense-management",
+      "type": "skill",
+      "topic": "expense management",
+      "description": "For finance ops teams: travel and expense policy drafting, expense report audits and corporate card reconciliation.",
+      "items": [
+        {
+          "package": "expense-policy-drafting",
+          "required": true
+        },
+        {
+          "package": "expense-report-audit",
+          "required": true
+        },
+        {
+          "package": "corporate-card-reconciliation",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "multi-entity-consolidation",
+      "type": "skill",
+      "topic": "intercompany and consolidation",
+      "description": "For group accounting teams: intercompany reconciliation, consolidation eliminations, FX translation and transfer pricing documentation inputs.",
+      "items": [
+        {
+          "package": "intercompany-reconciliation",
+          "required": true
+        },
+        {
+          "package": "consolidation-eliminations",
+          "required": true
+        },
+        {
+          "package": "fx-translation-remeasurement",
+          "required": true
+        },
+        {
+          "package": "transfer-pricing-documentation-support",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "financial-statements",
+      "type": "skill",
+      "topic": "financial statement preparation",
+      "description": "For accountants producing financial statements: three primary statements with tie-outs, footnote disclosures and MD&A narrative drafts.",
+      "items": [
+        {
+          "package": "financial-statement-prep",
+          "required": true
+        },
+        {
+          "package": "financial-statement-footnotes",
+          "required": true
+        },
+        {
+          "package": "mdna-narrative-drafting",
+          "required": false
+        },
+        {
+          "package": "balance-sheet-reconciliation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "audit-readiness",
+      "type": "skill",
+      "topic": "audit readiness and internal controls",
+      "description": "For finance teams facing an audit or SOX: PBC list management, lead sheets and support schedules, control narratives and control testing workpapers.",
+      "items": [
+        {
+          "package": "audit-pbc-management",
+          "required": true
+        },
+        {
+          "package": "audit-support-schedules",
+          "required": true
+        },
+        {
+          "package": "sox-control-narratives",
+          "required": true
+        },
+        {
+          "package": "control-testing-workpapers",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "fpa-budgeting",
+      "type": "skill",
+      "topic": "FP&A budgeting and forecasting",
+      "description": "For FP&A analysts: annual budget builds, budget-vs-actual variance analysis, rolling forecasts, headcount plans and sharp variance commentary.",
+      "items": [
+        {
+          "package": "annual-budget-build",
+          "required": true
+        },
+        {
+          "package": "budget-vs-actual-analysis",
+          "required": true
+        },
+        {
+          "package": "rolling-forecast",
+          "required": true
+        },
+        {
+          "package": "headcount-planning",
+          "required": false
+        },
+        {
+          "package": "variance-commentary-writing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "financial-modeling",
+      "type": "skill",
+      "topic": "financial modeling",
+      "description": "For analysts building spreadsheet models: integrated three-statement models, modeling conventions, scenarios and sensitivities, model audits and DCF valuation.",
+      "items": [
+        {
+          "package": "three-statement-model",
+          "required": true
+        },
+        {
+          "package": "model-structure-conventions",
+          "required": true
+        },
+        {
+          "package": "scenario-sensitivity-analysis",
+          "required": true
+        },
+        {
+          "package": "financial-model-audit",
+          "required": false
+        },
+        {
+          "package": "dcf-valuation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "saas-finance-metrics",
+      "type": "skill",
+      "topic": "SaaS finance metrics",
+      "description": "For SaaS finance teams and founders: consistent ARR/MRR, retention and churn definitions, ARR bridges and CAC/LTV unit economics.",
+      "items": [
+        {
+          "package": "saas-metrics-definitions",
+          "required": true
+        },
+        {
+          "package": "arr-bridge-analysis",
+          "required": true
+        },
+        {
+          "package": "unit-economics-cac-ltv",
+          "required": true
+        },
+        {
+          "package": "kpi-dictionary",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "cash-management",
+      "type": "skill",
+      "topic": "cash and treasury management",
+      "description": "For CFOs and treasury owners: 13-week cash flow forecasts, runway analysis, working capital levers and bank account and signatory management.",
+      "items": [
+        {
+          "package": "thirteen-week-cash-flow",
+          "required": true
+        },
+        {
+          "package": "cash-runway-analysis",
+          "required": true
+        },
+        {
+          "package": "working-capital-optimization",
+          "required": false
+        },
+        {
+          "package": "treasury-bank-account-management",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "management-reporting",
+      "type": "skill",
+      "topic": "management reporting",
+      "description": "For finance teams producing monthly reporting: management packs, a KPI dictionary, variance commentary and budget-vs-actual views.",
+      "items": [
+        {
+          "package": "monthly-management-report",
+          "required": true
+        },
+        {
+          "package": "kpi-dictionary",
+          "required": true
+        },
+        {
+          "package": "variance-commentary-writing",
+          "required": true
+        },
+        {
+          "package": "budget-vs-actual-analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "tax-prep-support",
+      "type": "skill",
+      "topic": "tax preparation support",
+      "description": "For finance teams preparing for their tax adviser: document checklists, sales tax nexus screening, VAT/GST return workpapers, 1099 data and provision workpapers, all for professional sign-off.",
+      "items": [
+        {
+          "package": "tax-document-checklist",
+          "required": true
+        },
+        {
+          "package": "sales-tax-nexus-review",
+          "required": true
+        },
+        {
+          "package": "vat-return-prep-support",
+          "required": true
+        },
+        {
+          "package": "contractor-1099-reporting",
+          "required": false
+        },
+        {
+          "package": "tax-provision-workpapers",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "payroll-ops",
+      "type": "skill",
+      "topic": "payroll operations",
+      "description": "For payroll administrators: pre-payroll checklists, payroll reconciliations, fraud-safe change processing, payroll tax calendars and worker classification reviews.",
+      "items": [
+        {
+          "package": "payroll-run-checklist",
+          "required": true
+        },
+        {
+          "package": "payroll-reconciliation",
+          "required": true
+        },
+        {
+          "package": "payroll-change-processing",
+          "required": true
+        },
+        {
+          "package": "payroll-tax-calendar",
+          "required": false
+        },
+        {
+          "package": "worker-classification-review",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "procurement",
+      "type": "skill",
+      "topic": "procurement",
+      "description": "For procurement and ops teams: requisition workflows, policy thresholds, buyer-side RFPs, supplier bid evaluation and purchase order drafting.",
+      "items": [
+        {
+          "package": "purchase-requisition-workflow",
+          "required": true
+        },
+        {
+          "package": "procurement-policy-thresholds",
+          "required": true
+        },
+        {
+          "package": "procurement-rfp-drafting",
+          "required": true
+        },
+        {
+          "package": "supplier-bid-evaluation",
+          "required": true
+        },
+        {
+          "package": "purchase-order-drafting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "supplier-negotiation",
+      "type": "skill",
+      "topic": "supplier negotiation",
+      "description": "For buyers preparing supplier negotiations: negotiation planning with BATNA and concessions, should-cost models and supplier bid comparisons.",
+      "items": [
+        {
+          "package": "procurement-negotiation-planning",
+          "required": true
+        },
+        {
+          "package": "should-cost-analysis",
+          "required": true
+        },
+        {
+          "package": "supplier-bid-evaluation",
+          "required": false
+        },
+        {
+          "package": "contract-renewal-tracking",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "vendor-management",
+      "type": "skill",
+      "topic": "vendor management",
+      "description": "For vendor and third-party managers: onboarding due diligence, risk tiering, performance scorecards and renewal tracking.",
+      "items": [
+        {
+          "package": "vendor-onboarding-due-diligence",
+          "required": true
+        },
+        {
+          "package": "vendor-risk-assessment",
+          "required": true
+        },
+        {
+          "package": "vendor-scorecards",
+          "required": true
+        },
+        {
+          "package": "contract-renewal-tracking",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "spend-management",
+      "type": "skill",
+      "topic": "spend analysis",
+      "description": "For finance and procurement teams cutting costs: spend cube categorisation, SaaS spend audits, renewal tracking and working capital analysis.",
+      "items": [
+        {
+          "package": "spend-cube-categorization",
+          "required": true
+        },
+        {
+          "package": "saas-spend-audit",
+          "required": true
+        },
+        {
+          "package": "contract-renewal-tracking",
+          "required": false
+        },
+        {
+          "package": "working-capital-optimization",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "contract-review",
+      "type": "skill",
+      "topic": "contract review",
+      "description": "For legal ops and business teams reviewing third-party paper: clause review, redlines, risk scoring, playbook application and obligation extraction, with counsel sign-off.",
+      "items": [
+        {
+          "package": "contract-clause-review",
+          "required": true
+        },
+        {
+          "package": "contract-redline-drafting",
+          "required": true
+        },
+        {
+          "package": "legal-playbook-application",
+          "required": true
+        },
+        {
+          "package": "contract-risk-scoring",
+          "required": true
+        },
+        {
+          "package": "contract-obligation-extraction",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "nda-handling",
+      "type": "skill",
+      "topic": "NDAs",
+      "description": "For anyone who drafts or signs NDAs: drafting mutual and one-way NDAs, an incoming-NDA review checklist, redlines and execution prep.",
+      "items": [
+        {
+          "package": "nda-drafting",
+          "required": true
+        },
+        {
+          "package": "nda-review-checklist",
+          "required": true
+        },
+        {
+          "package": "contract-redline-drafting",
+          "required": false
+        },
+        {
+          "package": "signature-execution-checklist",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "commercial-contract-drafting",
+      "type": "skill",
+      "topic": "commercial contract drafting",
+      "description": "For legal and deal teams drafting services deals: MSAs, statements of work, order forms, SLA terms and amendments for counsel review.",
+      "items": [
+        {
+          "package": "msa-drafting",
+          "required": true
+        },
+        {
+          "package": "services-sow-drafting",
+          "required": true
+        },
+        {
+          "package": "order-form-drafting",
+          "required": true
+        },
+        {
+          "package": "sla-terms-drafting",
+          "required": false
+        },
+        {
+          "package": "contract-amendment-drafting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "saas-legal-terms",
+      "type": "skill",
+      "topic": "SaaS legal terms",
+      "description": "For SaaS companies' legal and ops teams: terms of service, DPA review, SLA terms and order forms drafted as review-ready starting points.",
+      "items": [
+        {
+          "package": "terms-of-service-drafting",
+          "required": true
+        },
+        {
+          "package": "dpa-contract-review",
+          "required": true
+        },
+        {
+          "package": "sla-terms-drafting",
+          "required": true
+        },
+        {
+          "package": "order-form-drafting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "contract-lifecycle",
+      "type": "skill",
+      "topic": "contract lifecycle management",
+      "description": "For legal ops teams running a contract repository: metadata standards, obligation extraction, renewal tracking and signature execution checklists.",
+      "items": [
+        {
+          "package": "contract-repository-metadata",
+          "required": true
+        },
+        {
+          "package": "contract-obligation-extraction",
+          "required": true
+        },
+        {
+          "package": "contract-renewal-tracking",
+          "required": true
+        },
+        {
+          "package": "signature-execution-checklist",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "employment-contracts",
+      "type": "skill",
+      "topic": "employment contracts",
+      "description": "For HR and people ops: offer letters, employment agreement reviews, contractor agreements and separation agreements drafted for counsel review.",
+      "items": [
+        {
+          "package": "offer-letter-drafting",
+          "required": true
+        },
+        {
+          "package": "employment-agreement-review",
+          "required": true
+        },
+        {
+          "package": "contractor-agreement-drafting",
+          "required": true
+        },
+        {
+          "package": "separation-agreement-drafting",
+          "required": false
+        },
+        {
+          "package": "worker-classification-review",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "corporate-governance",
+      "type": "skill",
+      "topic": "corporate governance",
+      "description": "For company secretaries and GCs: board resolutions and minutes, delegation of authority, compliance calendars and statutory records.",
+      "items": [
+        {
+          "package": "board-resolution-drafting",
+          "required": true
+        },
+        {
+          "package": "board-minutes-drafting",
+          "required": true
+        },
+        {
+          "package": "corporate-compliance-calendar",
+          "required": true
+        },
+        {
+          "package": "delegation-of-authority-matrix",
+          "required": false
+        },
+        {
+          "package": "corporate-records-maintenance",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "board-materials",
+      "type": "skill",
+      "topic": "board materials",
+      "description": "For CEOs, CFOs and chiefs of staff preparing board meetings: deck structure, financial pack, pre-read memos and agendas.",
+      "items": [
+        {
+          "package": "board-deck-structure",
+          "required": true
+        },
+        {
+          "package": "board-financial-pack",
+          "required": true
+        },
+        {
+          "package": "board-pre-read-memo",
+          "required": true
+        },
+        {
+          "package": "board-meeting-agenda",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "cap-table-equity",
+      "type": "skill",
+      "topic": "cap table and equity administration",
+      "description": "For finance and legal ops at startups: cap table maintenance, equity grant administration, stock comp expense and dilution/waterfall modelling.",
+      "items": [
+        {
+          "package": "cap-table-maintenance",
+          "required": true
+        },
+        {
+          "package": "equity-grant-administration",
+          "required": true
+        },
+        {
+          "package": "dilution-waterfall-analysis",
+          "required": true
+        },
+        {
+          "package": "stock-comp-expense",
+          "required": false
+        },
+        {
+          "package": "board-resolution-drafting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "entity-management",
+      "type": "skill",
+      "topic": "legal entity management",
+      "description": "For teams running multiple legal entities: formation and foreign qualification checklists, compliance calendars, statutory records and intercompany hygiene.",
+      "items": [
+        {
+          "package": "entity-formation-checklist",
+          "required": true
+        },
+        {
+          "package": "corporate-compliance-calendar",
+          "required": true
+        },
+        {
+          "package": "corporate-records-maintenance",
+          "required": true
+        },
+        {
+          "package": "intercompany-reconciliation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "hiring-design",
+      "type": "skill",
+      "topic": "hiring process design",
+      "description": "For hiring managers and recruiters setting up a role: intake, job descriptions, scorecards and interview loop design.",
+      "items": [
+        {
+          "package": "hiring-req-intake",
+          "required": true
+        },
+        {
+          "package": "job-description-writing",
+          "required": true
+        },
+        {
+          "package": "hiring-scorecard-design",
+          "required": true
+        },
+        {
+          "package": "interview-loop-design",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "interviewing",
+      "type": "skill",
+      "topic": "interviewing",
+      "description": "For interviewers and hiring panels: structured behavioural questions, evidence-based feedback and fair debriefs.",
+      "items": [
+        {
+          "package": "behavioral-interview-questions",
+          "required": true
+        },
+        {
+          "package": "interview-feedback-writing",
+          "required": true
+        },
+        {
+          "package": "hiring-debrief-facilitation",
+          "required": true
+        },
+        {
+          "package": "hiring-scorecard-design",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "recruiting-ops",
+      "type": "skill",
+      "topic": "recruiting operations",
+      "description": "For recruiting coordinators and ops: funnel metrics, ATS hygiene, outreach messages, interview scheduling and offer approvals.",
+      "items": [
+        {
+          "package": "recruiting-pipeline-metrics",
+          "required": true
+        },
+        {
+          "package": "ats-hygiene",
+          "required": true
+        },
+        {
+          "package": "interview-scheduling-coordination",
+          "required": true
+        },
+        {
+          "package": "offer-approval-workflow",
+          "required": true
+        },
+        {
+          "package": "candidate-outreach-messages",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "employee-onboarding",
+      "type": "skill",
+      "topic": "employee onboarding",
+      "description": "For people teams and managers: 30-60-90 plans, new-hire checklists, buddy programmes and handbook orientation.",
+      "items": [
+        {
+          "package": "onboarding-plan-30-60-90",
+          "required": true
+        },
+        {
+          "package": "new-hire-checklist",
+          "required": true
+        },
+        {
+          "package": "onboarding-buddy-program",
+          "required": false
+        },
+        {
+          "package": "employee-handbook-drafting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "performance-reviews",
+      "type": "skill",
+      "topic": "performance reviews",
+      "description": "For managers and HR running review cycles: review writing, self-review guidance, calibration, goal setting and performance improvement plans.",
+      "items": [
+        {
+          "package": "performance-review-writing",
+          "required": true
+        },
+        {
+          "package": "review-calibration",
+          "required": true
+        },
+        {
+          "package": "individual-goal-setting",
+          "required": true
+        },
+        {
+          "package": "self-review-guidance",
+          "required": false
+        },
+        {
+          "package": "performance-improvement-plan",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "hr-policies",
+      "type": "skill",
+      "topic": "HR policies",
+      "description": "For HR teams writing policy: handbooks, leave, remote work and code of conduct drafts with jurisdiction flags, plus acknowledgement tracking.",
+      "items": [
+        {
+          "package": "employee-handbook-drafting",
+          "required": true
+        },
+        {
+          "package": "leave-policy-drafting",
+          "required": true
+        },
+        {
+          "package": "remote-work-policy",
+          "required": true
+        },
+        {
+          "package": "code-of-conduct-drafting",
+          "required": true
+        },
+        {
+          "package": "policy-acknowledgement-tracking",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "compensation",
+      "type": "skill",
+      "topic": "compensation",
+      "description": "For total rewards and HR leaders: salary bands, market benchmarking, merit cycles, pay equity analysis and total rewards statements.",
+      "items": [
+        {
+          "package": "salary-band-design",
+          "required": true
+        },
+        {
+          "package": "compensation-benchmarking",
+          "required": true
+        },
+        {
+          "package": "merit-increase-planning",
+          "required": true
+        },
+        {
+          "package": "pay-equity-analysis",
+          "required": false
+        },
+        {
+          "package": "total-rewards-statement",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "benefits-admin",
+      "type": "skill",
+      "topic": "benefits administration",
+      "description": "For benefits and people ops administrators: enrolment operations, plan comparisons at renewal and leave of absence administration.",
+      "items": [
+        {
+          "package": "benefits-enrollment-ops",
+          "required": true
+        },
+        {
+          "package": "benefits-plan-comparison",
+          "required": true
+        },
+        {
+          "package": "leave-of-absence-administration",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "employee-relations",
+      "type": "skill",
+      "topic": "employee relations",
+      "description": "For HR business partners: workplace investigation structure, disciplinary documentation, terminations and separation agreements, with counsel review flags.",
+      "items": [
+        {
+          "package": "workplace-investigation-notes",
+          "required": true
+        },
+        {
+          "package": "disciplinary-documentation",
+          "required": true
+        },
+        {
+          "package": "employee-termination-checklist",
+          "required": true
+        },
+        {
+          "package": "separation-agreement-drafting",
+          "required": false
+        },
+        {
+          "package": "performance-improvement-plan",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "employee-offboarding",
+      "type": "skill",
+      "topic": "employee offboarding",
+      "description": "For people ops: offboarding checklists, termination steps, exit interview analysis and payroll final-pay checks.",
+      "items": [
+        {
+          "package": "offboarding-checklist",
+          "required": true
+        },
+        {
+          "package": "employee-termination-checklist",
+          "required": true
+        },
+        {
+          "package": "exit-interview-analysis",
+          "required": true
+        },
+        {
+          "package": "payroll-change-processing",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "people-analytics",
+      "type": "skill",
+      "topic": "people analytics",
+      "description": "For HR analysts: attrition analysis, engagement survey design and analysis, and workforce planning.",
+      "items": [
+        {
+          "package": "attrition-analysis",
+          "required": true
+        },
+        {
+          "package": "engagement-survey-design",
+          "required": true
+        },
+        {
+          "package": "engagement-survey-analysis",
+          "required": true
+        },
+        {
+          "package": "workforce-planning",
+          "required": true
+        },
+        {
+          "package": "exit-interview-analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "learning-development",
+      "type": "skill",
+      "topic": "learning and development",
+      "description": "For L&D and people leaders: training needs analysis, career ladders and new-manager training programmes.",
+      "items": [
+        {
+          "package": "training-needs-analysis",
+          "required": true
+        },
+        {
+          "package": "career-ladder-design",
+          "required": true
+        },
+        {
+          "package": "manager-training-program",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "sop-writing",
+      "type": "skill",
+      "topic": "SOPs and process documentation",
+      "description": "For operations teams documenting how work gets done: SOPs, work instructions, swimlane process maps, RACI and SOP review cadence.",
+      "items": [
+        {
+          "package": "sop-drafting",
+          "required": true
+        },
+        {
+          "package": "work-instruction-writing",
+          "required": true
+        },
+        {
+          "package": "ops-process-mapping",
+          "required": true
+        },
+        {
+          "package": "raci-matrix",
+          "required": true
+        },
+        {
+          "package": "sop-review-cadence",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "process-improvement",
+      "type": "skill",
+      "topic": "process improvement",
+      "description": "For ops and continuous improvement leads: lean waste analysis, root cause analysis, value stream mapping and process KPIs.",
+      "items": [
+        {
+          "package": "lean-waste-analysis",
+          "required": true
+        },
+        {
+          "package": "ops-root-cause-analysis",
+          "required": true
+        },
+        {
+          "package": "value-stream-mapping",
+          "required": true
+        },
+        {
+          "package": "process-kpi-design",
+          "required": true
+        },
+        {
+          "package": "ops-process-mapping",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "project-management",
+      "type": "skill",
+      "topic": "project management",
+      "description": "For project managers: charters, work breakdown structures, schedules, status reports, RAID logs and closeout.",
+      "items": [
+        {
+          "package": "project-charter",
+          "required": true
+        },
+        {
+          "package": "pm-work-breakdown-structure",
+          "required": true
+        },
+        {
+          "package": "project-schedule-planning",
+          "required": true
+        },
+        {
+          "package": "project-status-report",
+          "required": true
+        },
+        {
+          "package": "raid-log",
+          "required": true
+        },
+        {
+          "package": "project-closeout",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "program-management",
+      "type": "skill",
+      "topic": "program management",
+      "description": "For programme managers running multiple projects: dependency tracking, steering committee packs, benefits realisation and RAID management.",
+      "items": [
+        {
+          "package": "program-dependency-tracking",
+          "required": true
+        },
+        {
+          "package": "steering-committee-pack",
+          "required": true
+        },
+        {
+          "package": "benefits-realization-tracking",
+          "required": true
+        },
+        {
+          "package": "raid-log",
+          "required": false
+        },
+        {
+          "package": "resource-capacity-planning",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "pmo-portfolio",
+      "type": "skill",
+      "topic": "PMO and portfolio management",
+      "description": "For PMO leads: project intake scoring, capacity planning, portfolio-level reporting and RACI clarity.",
+      "items": [
+        {
+          "package": "portfolio-intake-scoring",
+          "required": true
+        },
+        {
+          "package": "resource-capacity-planning",
+          "required": true
+        },
+        {
+          "package": "steering-committee-pack",
+          "required": false
+        },
+        {
+          "package": "raci-matrix",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "change-management",
+      "type": "skill",
+      "topic": "organisational change management",
+      "description": "For leaders rolling out organisational, process or tool changes: impact assessment, stakeholder analysis, communications and adoption tracking.",
+      "items": [
+        {
+          "package": "change-impact-assessment",
+          "required": true
+        },
+        {
+          "package": "change-stakeholder-analysis",
+          "required": true
+        },
+        {
+          "package": "change-communication-plan",
+          "required": true
+        },
+        {
+          "package": "adoption-tracking",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "company-planning",
+      "type": "skill",
+      "topic": "company planning and OKRs",
+      "description": "For chiefs of staff and business ops: company OKRs, annual operating plans, quarterly business reviews and the budget that backs them.",
+      "items": [
+        {
+          "package": "company-okr-drafting",
+          "required": true
+        },
+        {
+          "package": "annual-operating-plan",
+          "required": true
+        },
+        {
+          "package": "quarterly-business-review-pack",
+          "required": true
+        },
+        {
+          "package": "annual-budget-build",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "enterprise-risk",
+      "type": "skill",
+      "topic": "enterprise risk management",
+      "description": "For risk managers and execs: risk registers, scoring matrices, key risk indicators and risk appetite statements.",
+      "items": [
+        {
+          "package": "enterprise-risk-register",
+          "required": true
+        },
+        {
+          "package": "risk-scoring-matrix",
+          "required": true
+        },
+        {
+          "package": "key-risk-indicators",
+          "required": true
+        },
+        {
+          "package": "risk-appetite-statement",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "business-continuity",
+      "type": "skill",
+      "topic": "business continuity",
+      "description": "For ops and risk owners: business impact analysis, continuity plans, crisis communications and tabletop exercises.",
+      "items": [
+        {
+          "package": "business-impact-analysis",
+          "required": true
+        },
+        {
+          "package": "business-continuity-plan",
+          "required": true
+        },
+        {
+          "package": "crisis-communication-plan",
+          "required": true
+        },
+        {
+          "package": "bcp-tabletop-exercise",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "business-insurance",
+      "type": "skill",
+      "topic": "business insurance",
+      "description": "For finance and risk owners managing a company insurance programme: coverage reviews, gap analysis, renewals, certificates of insurance and claims, alongside the broker.",
+      "items": [
+        {
+          "package": "insurance-coverage-review",
+          "required": true
+        },
+        {
+          "package": "coverage-gap-analysis",
+          "required": true
+        },
+        {
+          "package": "insurance-renewal-submission",
+          "required": true
+        },
+        {
+          "package": "certificate-of-insurance-tracking",
+          "required": false
+        },
+        {
+          "package": "insurance-claim-preparation",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ethics-compliance",
+      "type": "skill",
+      "topic": "ethics and compliance programme",
+      "description": "For compliance officers building a corporate ethics programme: anti-bribery policy, whistleblower procedures, conflict of interest disclosures and gifts registers, for counsel review.",
+      "items": [
+        {
+          "package": "anti-bribery-policy",
+          "required": true
+        },
+        {
+          "package": "whistleblower-procedure",
+          "required": true
+        },
+        {
+          "package": "conflict-of-interest-disclosures",
+          "required": true
+        },
+        {
+          "package": "gifts-hospitality-register",
+          "required": false
+        },
+        {
+          "package": "code-of-conduct-drafting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "startup-fundraising",
+      "type": "skill",
+      "topic": "startup fundraising",
+      "description": "For founders raising capital: pitch deck structure, investor pipeline tracking, data rooms, term sheet review and SAFE/convertible mechanics, with counsel sign-off on terms.",
+      "items": [
+        {
+          "package": "investor-pitch-deck",
+          "required": true
+        },
+        {
+          "package": "fundraising-pipeline-tracking",
+          "required": true
+        },
+        {
+          "package": "investor-data-room",
+          "required": true
+        },
+        {
+          "package": "term-sheet-review",
+          "required": true
+        },
+        {
+          "package": "safe-convertible-mechanics",
+          "required": false
+        },
+        {
+          "package": "dilution-waterfall-analysis",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "investor-relations",
+      "type": "skill",
+      "topic": "investor relations",
+      "description": "For founders and IR teams: investor update letters, earnings releases, earnings call scripts and consistent KPI definitions.",
+      "items": [
+        {
+          "package": "investor-update-letter",
+          "required": true
+        },
+        {
+          "package": "earnings-release-drafting",
+          "required": true
+        },
+        {
+          "package": "earnings-call-script",
+          "required": true
+        },
+        {
+          "package": "saas-metrics-definitions",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "due-diligence",
+      "type": "skill",
+      "topic": "M&A due diligence",
+      "description": "For corp dev and finance teams on either side of a deal: financial and legal diligence checklists, request tracking, data rooms and integration planning.",
+      "items": [
+        {
+          "package": "financial-due-diligence-checklist",
+          "required": true
+        },
+        {
+          "package": "legal-due-diligence-checklist",
+          "required": true
+        },
+        {
+          "package": "diligence-request-tracker",
+          "required": true
+        },
+        {
+          "package": "investor-data-room",
+          "required": false
+        },
+        {
+          "package": "post-merger-integration-plan",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "esg-reporting",
+      "type": "skill",
+      "topic": "ESG reporting",
+      "description": "For sustainability and finance teams: GHG Protocol emissions accounting, ESG framework mapping, data collection, double materiality and report drafting.",
+      "items": [
+        {
+          "package": "ghg-emissions-accounting",
+          "required": true
+        },
+        {
+          "package": "esg-framework-mapping",
+          "required": true
+        },
+        {
+          "package": "esg-data-collection",
+          "required": true
+        },
+        {
+          "package": "esg-materiality-assessment",
+          "required": false
+        },
+        {
+          "package": "sustainability-report-drafting",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "bookkeeping-agents",
+      "type": "agent",
+      "topic": "bookkeeping",
+      "description": "For bookkeeping teams: agents that categorise transactions, reconcile bank accounts, review journal entries and run books cleanups.",
+      "items": [
+        {
+          "package": "transaction-categorizer",
+          "required": true
+        },
+        {
+          "package": "bank-reconciler",
+          "required": true
+        },
+        {
+          "package": "journal-entry-reviewer",
+          "required": true
+        },
+        {
+          "package": "books-cleanup-specialist",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "month-end-close-agents",
+      "type": "agent",
+      "topic": "month-end close",
+      "description": "For controllers: agents that coordinate the close checklist, reconcile accounts, prepare accruals and explain flux variances.",
+      "items": [
+        {
+          "package": "close-coordinator",
+          "required": true
+        },
+        {
+          "package": "account-reconciler",
+          "required": true
+        },
+        {
+          "package": "accrual-preparer",
+          "required": true
+        },
+        {
+          "package": "flux-analyst",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "ap-automation-agents",
+      "type": "agent",
+      "topic": "accounts payable",
+      "description": "For AP teams: agents that process invoices, resolve match exceptions, audit for duplicate payments and plan payment runs.",
+      "items": [
+        {
+          "package": "ap-invoice-processor",
+          "required": true
+        },
+        {
+          "package": "match-exception-resolver",
+          "required": true
+        },
+        {
+          "package": "payment-run-planner",
+          "required": true
+        },
+        {
+          "package": "duplicate-payment-auditor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "ar-collections-agents",
+      "type": "agent",
+      "topic": "accounts receivable",
+      "description": "For AR and credit teams: agents that analyse aging, write collection emails, apply cash and review credit limits.",
+      "items": [
+        {
+          "package": "ar-aging-analyst",
+          "required": true
+        },
+        {
+          "package": "collections-writer",
+          "required": true
+        },
+        {
+          "package": "cash-application-matcher",
+          "required": true
+        },
+        {
+          "package": "credit-limit-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "fpa-agents",
+      "type": "agent",
+      "topic": "FP&A",
+      "description": "For FP&A teams: agents that analyse budget variances, update the rolling forecast, write the management report and explain SaaS metrics.",
+      "items": [
+        {
+          "package": "budget-variance-analyst",
+          "required": true
+        },
+        {
+          "package": "forecast-builder",
+          "required": true
+        },
+        {
+          "package": "management-report-writer",
+          "required": true
+        },
+        {
+          "package": "saas-metrics-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "financial-model-agents",
+      "type": "agent",
+      "topic": "financial modeling",
+      "description": "For analysts: agents that build three-statement models, audit spreadsheets, run scenarios and produce valuation views.",
+      "items": [
+        {
+          "package": "financial-model-builder",
+          "required": true
+        },
+        {
+          "package": "financial-model-auditor",
+          "required": true
+        },
+        {
+          "package": "scenario-analyst",
+          "required": true
+        },
+        {
+          "package": "valuation-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "audit-prep-agents",
+      "type": "agent",
+      "topic": "audit preparation",
+      "description": "For finance teams under audit: agents that coordinate PBC requests, test controls, review workpapers and draft technical accounting memos.",
+      "items": [
+        {
+          "package": "pbc-request-coordinator",
+          "required": true
+        },
+        {
+          "package": "sox-control-tester",
+          "required": true
+        },
+        {
+          "package": "audit-workpaper-reviewer",
+          "required": true
+        },
+        {
+          "package": "technical-accounting-advisor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "tax-support-agents",
+      "type": "agent",
+      "topic": "tax preparation support",
+      "description": "For finance teams working with a tax adviser: agents that collect documents, screen sales tax nexus, prepare VAT workpapers and review 1099 data, all for professional sign-off.",
+      "items": [
+        {
+          "package": "tax-document-collector",
+          "required": true
+        },
+        {
+          "package": "sales-tax-nexus-reviewer",
+          "required": true
+        },
+        {
+          "package": "vat-return-preparer",
+          "required": true
+        },
+        {
+          "package": "contractor-1099-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "payroll-agents",
+      "type": "agent",
+      "topic": "payroll operations",
+      "description": "For payroll administrators: agents that check payroll runs, reconcile payroll, verify change requests against fraud and review worker classification.",
+      "items": [
+        {
+          "package": "payroll-run-checker",
+          "required": true
+        },
+        {
+          "package": "payroll-reconciler",
+          "required": true
+        },
+        {
+          "package": "payroll-change-verifier",
+          "required": true
+        },
+        {
+          "package": "worker-classification-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "expense-intercompany-agents",
+      "type": "agent",
+      "topic": "expense and intercompany reconciliation",
+      "description": "For accounting ops teams: agents that audit expense reports, reconcile corporate cards, reconcile intercompany balances and prepare consolidations.",
+      "items": [
+        {
+          "package": "expense-report-auditor",
+          "required": true
+        },
+        {
+          "package": "card-reconciler",
+          "required": true
+        },
+        {
+          "package": "intercompany-reconciler",
+          "required": true
+        },
+        {
+          "package": "consolidation-preparer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "procurement-agents",
+      "type": "agent",
+      "topic": "procurement",
+      "description": "For procurement teams: agents that triage requisitions, write RFPs, evaluate supplier bids and prepare negotiation briefs.",
+      "items": [
+        {
+          "package": "requisition-triager",
+          "required": true
+        },
+        {
+          "package": "procurement-rfp-writer",
+          "required": true
+        },
+        {
+          "package": "supplier-bid-evaluator",
+          "required": true
+        },
+        {
+          "package": "negotiation-prep-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "vendor-management-agents",
+      "type": "agent",
+      "topic": "vendor management",
+      "description": "For vendor managers: agents that review vendor due diligence, score vendor performance, watch renewals and audit SaaS spend.",
+      "items": [
+        {
+          "package": "vendor-due-diligence-reviewer",
+          "required": true
+        },
+        {
+          "package": "vendor-performance-reviewer",
+          "required": true
+        },
+        {
+          "package": "renewal-watchdog",
+          "required": true
+        },
+        {
+          "package": "saas-spend-auditor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "contract-review-agents",
+      "type": "agent",
+      "topic": "contract review",
+      "description": "For legal ops and deal desks: agents that review contracts against a playbook, redline, summarise risk and extract obligations, with counsel sign-off.",
+      "items": [
+        {
+          "package": "contract-reviewer",
+          "required": true
+        },
+        {
+          "package": "contract-redliner",
+          "required": true
+        },
+        {
+          "package": "contract-risk-summarizer",
+          "required": true
+        },
+        {
+          "package": "obligation-extractor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "nda-agents",
+      "type": "agent",
+      "topic": "NDAs",
+      "description": "For teams that handle NDAs daily: agents that triage incoming NDAs, draft new ones and review counterparty paper.",
+      "items": [
+        {
+          "package": "nda-triager",
+          "required": true
+        },
+        {
+          "package": "nda-drafter",
+          "required": true
+        },
+        {
+          "package": "nda-reviewer",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "contract-drafting-agents",
+      "type": "agent",
+      "topic": "commercial contract drafting",
+      "description": "For legal and deal teams: agents that draft MSAs, statements of work, order forms and amendments for counsel review.",
+      "items": [
+        {
+          "package": "msa-drafter",
+          "required": true
+        },
+        {
+          "package": "sow-writer",
+          "required": true
+        },
+        {
+          "package": "order-form-drafter",
+          "required": true
+        },
+        {
+          "package": "contract-amendment-drafter",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "corporate-governance-agents",
+      "type": "agent",
+      "topic": "corporate governance",
+      "description": "For company secretaries: agents that write minutes, draft resolutions, keep the compliance calendar and check approvals against the authority matrix.",
+      "items": [
+        {
+          "package": "board-minutes-writer",
+          "required": true
+        },
+        {
+          "package": "board-resolution-drafter",
+          "required": true
+        },
+        {
+          "package": "corporate-secretary-assistant",
+          "required": true
+        },
+        {
+          "package": "authority-matrix-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "board-pack-agents",
+      "type": "agent",
+      "topic": "board materials",
+      "description": "For CEOs, CFOs and chiefs of staff: agents that build the board deck, prepare the financial pack, write pre-read memos and anticipate director questions.",
+      "items": [
+        {
+          "package": "board-deck-builder",
+          "required": true
+        },
+        {
+          "package": "board-financial-pack-preparer",
+          "required": true
+        },
+        {
+          "package": "board-memo-writer",
+          "required": true
+        },
+        {
+          "package": "board-qa-prepper",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "hiring-agents",
+      "type": "agent",
+      "topic": "hiring",
+      "description": "For hiring managers: agents that write job descriptions, plan interview loops, review interview feedback and synthesise debriefs.",
+      "items": [
+        {
+          "package": "job-description-writer",
+          "required": true
+        },
+        {
+          "package": "interview-loop-planner",
+          "required": true
+        },
+        {
+          "package": "hiring-debrief-synthesizer",
+          "required": true
+        },
+        {
+          "package": "interview-feedback-reviewer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "recruiting-ops-agents",
+      "type": "agent",
+      "topic": "recruiting operations",
+      "description": "For recruiting teams: agents that write candidate outreach, coordinate interview scheduling, analyse the funnel, audit the ATS and prepare offer packets.",
+      "items": [
+        {
+          "package": "recruiting-funnel-analyst",
+          "required": true
+        },
+        {
+          "package": "interview-scheduling-coordinator",
+          "required": true
+        },
+        {
+          "package": "offer-packet-preparer",
+          "required": true
+        },
+        {
+          "package": "candidate-outreach-writer",
+          "required": false
+        },
+        {
+          "package": "ats-hygiene-auditor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "onboarding-agents",
+      "type": "agent",
+      "topic": "employee onboarding",
+      "description": "For people ops: agents that build onboarding plans, coordinate new-hire tasks, answer handbook questions and analyse onboarding feedback.",
+      "items": [
+        {
+          "package": "onboarding-plan-builder",
+          "required": true
+        },
+        {
+          "package": "onboarding-coordinator",
+          "required": true
+        },
+        {
+          "package": "handbook-qa-assistant",
+          "required": true
+        },
+        {
+          "package": "onboarding-feedback-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "performance-review-agents",
+      "type": "agent",
+      "topic": "performance reviews",
+      "description": "For managers and HR during review cycles: agents that draft reviews, prepare calibration, draft PIPs and coach self-reviews.",
+      "items": [
+        {
+          "package": "performance-review-writer",
+          "required": true
+        },
+        {
+          "package": "calibration-analyst",
+          "required": true
+        },
+        {
+          "package": "self-review-coach",
+          "required": true
+        },
+        {
+          "package": "pip-drafter",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "hr-policy-agents",
+      "type": "agent",
+      "topic": "HR policies",
+      "description": "For HR teams: agents that draft policies, maintain the handbook and review policies for consistency and gaps.",
+      "items": [
+        {
+          "package": "hr-policy-drafter",
+          "required": true
+        },
+        {
+          "package": "handbook-maintainer",
+          "required": true
+        },
+        {
+          "package": "policy-consistency-reviewer",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "compensation-agents",
+      "type": "agent",
+      "topic": "compensation",
+      "description": "For total rewards teams: agents that benchmark pay, build salary bands, plan merit cycles and audit pay equity.",
+      "items": [
+        {
+          "package": "comp-benchmark-analyst",
+          "required": true
+        },
+        {
+          "package": "salary-band-builder",
+          "required": true
+        },
+        {
+          "package": "merit-cycle-planner",
+          "required": true
+        },
+        {
+          "package": "pay-equity-auditor",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "people-analytics-agents",
+      "type": "agent",
+      "topic": "people analytics",
+      "description": "For HR analysts and leaders: agents that analyse attrition, engagement surveys and workforce plans.",
+      "items": [
+        {
+          "package": "attrition-risk-analyst",
+          "required": true
+        },
+        {
+          "package": "engagement-survey-analyst",
+          "required": true
+        },
+        {
+          "package": "workforce-planner",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "employee-relations-agents",
+      "type": "agent",
+      "topic": "employee relations and ethics cases",
+      "description": "For HR business partners and compliance officers: agents that triage speak-up reports, organise investigation notes, review conflict disclosures and draft PIPs, with counsel review.",
+      "items": [
+        {
+          "package": "ethics-case-triager",
+          "required": true
+        },
+        {
+          "package": "investigation-notes-organizer",
+          "required": true
+        },
+        {
+          "package": "conflict-disclosure-reviewer",
+          "required": true
+        },
+        {
+          "package": "pip-drafter",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "sop-agents",
+      "type": "agent",
+      "topic": "SOPs and process improvement",
+      "description": "For operations teams: agents that write SOPs, map processes, audit SOP libraries and find process improvements.",
+      "items": [
+        {
+          "package": "sop-writer",
+          "required": true
+        },
+        {
+          "package": "process-mapper",
+          "required": true
+        },
+        {
+          "package": "sop-auditor",
+          "required": true
+        },
+        {
+          "package": "process-improvement-analyst",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "project-management-agents",
+      "type": "agent",
+      "topic": "project management",
+      "description": "For project managers: agents that plan projects, write status reports, keep the RAID log and run closeout.",
+      "items": [
+        {
+          "package": "project-planner",
+          "required": true
+        },
+        {
+          "package": "project-status-writer",
+          "required": true
+        },
+        {
+          "package": "raid-log-keeper",
+          "required": true
+        },
+        {
+          "package": "project-closeout-facilitator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "program-portfolio-agents",
+      "type": "agent",
+      "topic": "program and portfolio management",
+      "description": "For programme managers and PMO leads: agents that track dependencies, build steering packs, prioritise the portfolio and plan capacity.",
+      "items": [
+        {
+          "package": "program-dependency-tracker",
+          "required": true
+        },
+        {
+          "package": "steering-pack-builder",
+          "required": true
+        },
+        {
+          "package": "portfolio-prioritizer",
+          "required": true
+        },
+        {
+          "package": "capacity-planner",
+          "required": false
+        },
+        {
+          "package": "integration-planner",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "risk-continuity-agents",
+      "type": "agent",
+      "topic": "risk management and business continuity",
+      "description": "For risk and ops owners: agents that maintain the risk register, assess new risks, plan business continuity and facilitate tabletop exercises.",
+      "items": [
+        {
+          "package": "risk-register-maintainer",
+          "required": true
+        },
+        {
+          "package": "risk-assessor",
+          "required": true
+        },
+        {
+          "package": "continuity-planner",
+          "required": true
+        },
+        {
+          "package": "tabletop-facilitator",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "insurance-agents",
+      "type": "agent",
+      "topic": "business insurance",
+      "description": "For finance and risk owners: agents that review policies, find coverage gaps, prepare renewal submissions and track certificates of insurance.",
+      "items": [
+        {
+          "package": "insurance-policy-reviewer",
+          "required": true
+        },
+        {
+          "package": "coverage-gap-analyst",
+          "required": true
+        },
+        {
+          "package": "insurance-renewal-preparer",
+          "required": true
+        },
+        {
+          "package": "coi-tracker",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "fundraising-agents",
+      "type": "agent",
+      "topic": "fundraising and investor relations",
+      "description": "For founders and finance leads: agents that review pitch decks, organise data rooms, analyse term sheets, write investor updates and answer diligence requests.",
+      "items": [
+        {
+          "package": "pitch-deck-reviewer",
+          "required": true
+        },
+        {
+          "package": "data-room-organizer",
+          "required": true
+        },
+        {
+          "package": "term-sheet-analyst",
+          "required": true
+        },
+        {
+          "package": "investor-update-writer",
+          "required": false
+        },
+        {
+          "package": "diligence-responder",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "esg-agents",
+      "type": "agent",
+      "topic": "ESG reporting",
+      "description": "For sustainability teams: agents that collect ESG data, calculate GHG inventories, run materiality assessments and draft framework-mapped disclosures.",
+      "items": [
+        {
+          "package": "esg-data-collector",
+          "required": true
+        },
+        {
+          "package": "ghg-inventory-calculator",
+          "required": true
+        },
+        {
+          "package": "esg-disclosure-drafter",
+          "required": true
+        },
+        {
+          "package": "esg-materiality-analyst",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

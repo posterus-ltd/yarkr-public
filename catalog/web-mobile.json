@@ -1,0 +1,2652 @@
+{
+  "domain": "web-mobile",
+  "packages": [
+    {
+      "name": "react-hooks-patterns",
+      "kind": "skill",
+      "purpose": "Write correct useEffect/useMemo/useCallback/custom hooks: dependency arrays, cleanup, avoiding effects for derived state."
+    },
+    {
+      "name": "react-component-design",
+      "kind": "skill",
+      "purpose": "Structure React components: composition over props drilling, controlled vs uncontrolled, compound components, prop API design."
+    },
+    {
+      "name": "react-state-placement",
+      "kind": "skill",
+      "purpose": "Decide where React state lives (local, lifted, context, URL, server cache) and refactor misplaced state."
+    },
+    {
+      "name": "react-render-performance",
+      "kind": "skill",
+      "purpose": "Find and fix wasted React renders with the Profiler, memoization, key usage, list virtualization and context splitting."
+    },
+    {
+      "name": "react-error-boundaries",
+      "kind": "skill",
+      "purpose": "Add error boundaries, Suspense fallbacks and retry UI so React apps fail gracefully per route or widget."
+    },
+    {
+      "name": "react-19-features",
+      "kind": "skill",
+      "purpose": "Use React 19 APIs (use, actions, useOptimistic, useFormStatus, ref as prop) and migrate code off removed legacy APIs."
+    },
+    {
+      "name": "react-testing-library",
+      "kind": "skill",
+      "purpose": "Write React Testing Library tests with accessible queries, user-event, async findBy/waitFor and no implementation-detail assertions."
+    },
+    {
+      "name": "react-msw-mocking",
+      "kind": "skill",
+      "purpose": "Mock HTTP in React tests and Storybook with MSW handlers, per-test overrides and error/latency scenarios."
+    },
+    {
+      "name": "react-hook-testing",
+      "kind": "skill",
+      "purpose": "Test custom React hooks with renderHook, wrapper providers, fake timers and async state transitions."
+    },
+    {
+      "name": "react-vitest-setup",
+      "kind": "skill",
+      "purpose": "Configure Vitest with jsdom/happy-dom, setup files, CSS/asset mocks and coverage for a React project."
+    },
+    {
+      "name": "storybook-interaction-tests",
+      "kind": "skill",
+      "purpose": "Write Storybook stories with play functions and run them as interaction and accessibility tests in CI."
+    },
+    {
+      "name": "react-hook-form-zod",
+      "kind": "skill",
+      "purpose": "Build forms with React Hook Form and Zod resolvers: typed schemas, field arrays, dependent fields, server error mapping."
+    },
+    {
+      "name": "web-form-validation-ux",
+      "kind": "skill",
+      "purpose": "Design validation timing, inline errors, error summaries and submit states that are clear and accessible."
+    },
+    {
+      "name": "react-multi-step-forms",
+      "kind": "skill",
+      "purpose": "Implement multi-step/wizard forms with per-step validation, persisted drafts and back/forward navigation."
+    },
+    {
+      "name": "react-file-input-uploads",
+      "kind": "skill",
+      "purpose": "Build file inputs and drag-and-drop zones in React with previews, progress, cancellation and type/size checks."
+    },
+    {
+      "name": "rr7-loaders-actions",
+      "kind": "skill",
+      "purpose": "Write React Router v7/Remix loaders and actions: typed data, redirects, form submissions, revalidation."
+    },
+    {
+      "name": "rr7-route-modules",
+      "kind": "skill",
+      "purpose": "Structure route modules with nested layouts, meta, links, headers and route config files."
+    },
+    {
+      "name": "rr7-errors-pending-ui",
+      "kind": "skill",
+      "purpose": "Handle route ErrorBoundary, 404s, pending/optimistic UI with useNavigation and useFetcher."
+    },
+    {
+      "name": "remix-to-rr7-upgrade",
+      "kind": "skill",
+      "purpose": "Upgrade a Remix v2 app to React Router v7 framework mode using future flags and codemods."
+    },
+    {
+      "name": "nextjs-app-router-structure",
+      "kind": "skill",
+      "purpose": "Organise Next.js App Router apps: layouts, route groups, parallel/intercepting routes, loading and error files."
+    },
+    {
+      "name": "nextjs-server-components",
+      "kind": "skill",
+      "purpose": "Place the server/client component boundary correctly, pass serialisable props and avoid leaking server code to the client."
+    },
+    {
+      "name": "nextjs-server-actions",
+      "kind": "skill",
+      "purpose": "Write Server Actions with validation, auth checks, revalidatePath/Tag and progressive-enhancement forms."
+    },
+    {
+      "name": "nextjs-caching-revalidation",
+      "kind": "skill",
+      "purpose": "Reason about Next.js fetch cache, full route cache, router cache, use cache and tag-based revalidation."
+    },
+    {
+      "name": "nextjs-middleware-routing",
+      "kind": "skill",
+      "purpose": "Write Next.js request interception (proxy.ts in Next 16, middleware.ts before) for redirects, rewrites, i18n and auth gating."
+    },
+    {
+      "name": "nextjs-route-handlers",
+      "kind": "skill",
+      "purpose": "Build Next.js route handlers for APIs and webhooks with correct caching, streaming and runtime selection."
+    },
+    {
+      "name": "nextjs-image-font-optimization",
+      "kind": "skill",
+      "purpose": "Use next/image and next/font correctly: sizes, priority, remote patterns, font subsetting and layout shift avoidance."
+    },
+    {
+      "name": "nextjs-metadata-seo",
+      "kind": "skill",
+      "purpose": "Generate Next.js metadata, Open Graph images, sitemaps, robots and canonical URLs with the Metadata API."
+    },
+    {
+      "name": "nextjs-bundle-analysis",
+      "kind": "skill",
+      "purpose": "Analyse Next.js bundles, cut client JS with dynamic imports and server components, and track size per route."
+    },
+    {
+      "name": "nextjs-env-config",
+      "kind": "skill",
+      "purpose": "Manage Next.js env vars (NEXT_PUBLIC vs server), runtime config, output modes and self-hosting settings."
+    },
+    {
+      "name": "nextjs-observability",
+      "kind": "skill",
+      "purpose": "Wire Next.js instrumentation.ts, error reporting and logging for server, edge and client errors."
+    },
+    {
+      "name": "vue-composition-api",
+      "kind": "skill",
+      "purpose": "Write Vue 3 script-setup components and composables with typed props/emits, refs vs reactive and watchers."
+    },
+    {
+      "name": "vue-pinia-stores",
+      "kind": "skill",
+      "purpose": "Design Pinia stores (setup syntax), getters, actions, persistence and store composition without global spaghetti."
+    },
+    {
+      "name": "vue-router-patterns",
+      "kind": "skill",
+      "purpose": "Configure Vue Router: nested routes, navigation guards, lazy routes, route meta and typed params."
+    },
+    {
+      "name": "vue-reactivity-pitfalls",
+      "kind": "skill",
+      "purpose": "Avoid Vue reactivity bugs: destructuring loss, shallowRef use, computed side effects, watch deep/immediate."
+    },
+    {
+      "name": "vue-testing-utils",
+      "kind": "skill",
+      "purpose": "Test Vue components with Vue Test Utils and Vitest: mounting with Pinia/router, emitted events, async updates."
+    },
+    {
+      "name": "nuxt-data-fetching",
+      "kind": "skill",
+      "purpose": "Fetch data in Nuxt with useFetch/useAsyncData/$fetch, keys, lazy loading, refresh and payload deduplication."
+    },
+    {
+      "name": "nuxt-server-routes",
+      "kind": "skill",
+      "purpose": "Build Nitro server routes and middleware in Nuxt with validation, H3 utilities and runtime config."
+    },
+    {
+      "name": "nuxt-rendering-modes",
+      "kind": "skill",
+      "purpose": "Choose SSR, SSG, ISR, SWR or SPA per route with routeRules and hybrid rendering."
+    },
+    {
+      "name": "nuxt-modules-config",
+      "kind": "skill",
+      "purpose": "Configure nuxt.config, auto-imports, layers and common modules (image, content, i18n) without conflicts."
+    },
+    {
+      "name": "nuxt-seo-head",
+      "kind": "skill",
+      "purpose": "Manage head tags, useSeoMeta and OG images in Nuxt pages."
+    },
+    {
+      "name": "svelte5-runes",
+      "kind": "skill",
+      "purpose": "Write Svelte 5 components with $state, $derived, $effect, $props and snippets, and convert Svelte 4 syntax."
+    },
+    {
+      "name": "sveltekit-load-functions",
+      "kind": "skill",
+      "purpose": "Write universal vs server load functions, handle dependencies, invalidation and streaming promises."
+    },
+    {
+      "name": "sveltekit-form-actions",
+      "kind": "skill",
+      "purpose": "Build progressive-enhancement forms with SvelteKit form actions, use:enhance and fail() validation."
+    },
+    {
+      "name": "sveltekit-hooks-auth",
+      "kind": "skill",
+      "purpose": "Use SvelteKit hooks (handle, handleFetch, handleError) for sessions, auth guards and request locals."
+    },
+    {
+      "name": "sveltekit-adapters",
+      "kind": "skill",
+      "purpose": "Pick and configure SvelteKit adapters (node, static, vercel, cloudflare) and prerendering options."
+    },
+    {
+      "name": "angular-signals",
+      "kind": "skill",
+      "purpose": "Use Angular signals, computed, effect, input/output functions and toSignal/toObservable interop correctly."
+    },
+    {
+      "name": "angular-standalone-components",
+      "kind": "skill",
+      "purpose": "Build standalone components with new control flow (@if/@for/@defer) and lazy-loaded routes."
+    },
+    {
+      "name": "angular-rxjs-patterns",
+      "kind": "skill",
+      "purpose": "Apply RxJS in Angular: higher-order mapping operators, unsubscription with takeUntilDestroyed, async pipe."
+    },
+    {
+      "name": "angular-dependency-injection",
+      "kind": "skill",
+      "purpose": "Use inject(), providers, injection tokens and environment injectors to structure Angular services."
+    },
+    {
+      "name": "angular-reactive-forms",
+      "kind": "skill",
+      "purpose": "Build typed reactive forms with custom validators, async validators and dynamic form arrays."
+    },
+    {
+      "name": "angular-router-interceptors",
+      "kind": "skill",
+      "purpose": "Write functional route guards, resolvers and HTTP interceptors for auth, errors and retries."
+    },
+    {
+      "name": "astro-islands",
+      "kind": "skill",
+      "purpose": "Use Astro islands and client:* directives to hydrate only what needs interactivity, across React/Vue/Svelte components."
+    },
+    {
+      "name": "astro-content-collections",
+      "kind": "skill",
+      "purpose": "Model Markdown/MDX content with Astro content collections, schemas, loaders and typed queries."
+    },
+    {
+      "name": "astro-view-transitions",
+      "kind": "skill",
+      "purpose": "Add Astro view transitions with persisted state, fallbacks and script re-execution handling."
+    },
+    {
+      "name": "astro-ssr-adapters",
+      "kind": "skill",
+      "purpose": "Configure Astro on-demand rendering, server islands, actions and deployment adapters."
+    },
+    {
+      "name": "solid-signals-stores",
+      "kind": "skill",
+      "purpose": "Use Solid signals, memos, effects and stores with correct tracking scopes and no destructured props."
+    },
+    {
+      "name": "solid-resources-suspense",
+      "kind": "skill",
+      "purpose": "Load async data in Solid with createResource/createAsync, Suspense and ErrorBoundary."
+    },
+    {
+      "name": "solidstart-routing",
+      "kind": "skill",
+      "purpose": "Build SolidStart apps: file routes, server functions, actions and preload."
+    },
+    {
+      "name": "solid-for-react-devs",
+      "kind": "skill",
+      "purpose": "Translate React patterns to Solid and catch React-isms (re-running components, prop destructuring, hooks rules)."
+    },
+    {
+      "name": "htmx-attribute-patterns",
+      "kind": "skill",
+      "purpose": "Use hx-get/post, hx-target, hx-swap, hx-trigger and out-of-band swaps for common UI interactions."
+    },
+    {
+      "name": "htmx-server-partials",
+      "kind": "skill",
+      "purpose": "Structure server templates and endpoints to return htmx fragments, detect HX-Request and send HX-* response headers."
+    },
+    {
+      "name": "htmx-progressive-enhancement",
+      "kind": "skill",
+      "purpose": "Keep htmx pages working without JS: real links/forms, history, focus and loading indicators."
+    },
+    {
+      "name": "alpinejs-interactivity",
+      "kind": "skill",
+      "purpose": "Add local client-side state with Alpine.js alongside htmx without conflicting swaps."
+    },
+    {
+      "name": "tailwind-v4-config",
+      "kind": "skill",
+      "purpose": "Configure Tailwind v4 with CSS-first @theme tokens, plugins, content detection and migration from v3 config."
+    },
+    {
+      "name": "tailwind-utility-patterns",
+      "kind": "skill",
+      "purpose": "Compose Tailwind utilities for layout, spacing and states; use cn/clsx/tailwind-merge and variants cleanly."
+    },
+    {
+      "name": "tailwind-responsive-dark-mode",
+      "kind": "skill",
+      "purpose": "Implement responsive breakpoints, container queries and dark mode (class or media) in Tailwind."
+    },
+    {
+      "name": "tailwind-component-extraction",
+      "kind": "skill",
+      "purpose": "Decide between components, @apply and CVA variants to keep repeated Tailwind class lists maintainable."
+    },
+    {
+      "name": "css-grid-flexbox-layouts",
+      "kind": "skill",
+      "purpose": "Pick grid vs flexbox and build common layouts (sidebar, holy grail, card grids, sticky footer) without hacks."
+    },
+    {
+      "name": "css-container-queries",
+      "kind": "skill",
+      "purpose": "Build components that adapt to their container with container queries and container units."
+    },
+    {
+      "name": "css-custom-properties-theming",
+      "kind": "skill",
+      "purpose": "Implement themes and design tokens with CSS custom properties, light-dark() and fallbacks."
+    },
+    {
+      "name": "css-cascade-layers",
+      "kind": "skill",
+      "purpose": "Control specificity with @layer, :where() and scoping to tame third-party and legacy CSS."
+    },
+    {
+      "name": "css-modern-selectors",
+      "kind": "skill",
+      "purpose": "Use :has(), :is(), nesting and @scope for state-driven styling without extra JS or classes."
+    },
+    {
+      "name": "a11y-semantic-html",
+      "kind": "skill",
+      "purpose": "Choose native HTML elements, landmarks and heading structure before reaching for ARIA."
+    },
+    {
+      "name": "a11y-aria-usage",
+      "kind": "skill",
+      "purpose": "Apply ARIA roles, states and properties correctly; spot redundant or harmful ARIA."
+    },
+    {
+      "name": "a11y-keyboard-focus",
+      "kind": "skill",
+      "purpose": "Ensure full keyboard operability: tab order, focus visibility, focus traps, skip links and route-change focus."
+    },
+    {
+      "name": "a11y-forms-errors",
+      "kind": "skill",
+      "purpose": "Make forms accessible: labels, descriptions, required state, error announcement and error summaries."
+    },
+    {
+      "name": "a11y-color-contrast",
+      "kind": "skill",
+      "purpose": "Check and fix text, non-text and focus-indicator contrast against WCAG 2.2 thresholds."
+    },
+    {
+      "name": "a11y-screen-reader-testing",
+      "kind": "skill",
+      "purpose": "Run manual screen-reader checks with VoiceOver and NVDA plus axe automated scans, and record findings."
+    },
+    {
+      "name": "a11y-dialog-pattern",
+      "kind": "skill",
+      "purpose": "Build modal and non-modal dialogs with <dialog>, inert, focus return and correct labelling."
+    },
+    {
+      "name": "a11y-combobox-pattern",
+      "kind": "skill",
+      "purpose": "Build accessible combobox/autocomplete widgets with active-descendant, listbox semantics and announcements."
+    },
+    {
+      "name": "a11y-menu-tabs-pattern",
+      "kind": "skill",
+      "purpose": "Implement menus, menubuttons, tabs and disclosure widgets with roving tabindex and arrow-key support."
+    },
+    {
+      "name": "a11y-data-tables",
+      "kind": "skill",
+      "purpose": "Mark up sortable, paginated and responsive data tables with headers, captions and sort state."
+    },
+    {
+      "name": "a11y-live-regions",
+      "kind": "skill",
+      "purpose": "Announce async updates, toasts and validation with aria-live regions without over-announcing."
+    },
+    {
+      "name": "cwv-lcp-optimization",
+      "kind": "skill",
+      "purpose": "Diagnose slow LCP (TTFB, resource load delay, render delay) and fix with preloads, priorities and SSR."
+    },
+    {
+      "name": "cwv-inp-optimization",
+      "kind": "skill",
+      "purpose": "Find long tasks hurting INP and fix by yielding, deferring work, and trimming event handlers."
+    },
+    {
+      "name": "cwv-cls-prevention",
+      "kind": "skill",
+      "purpose": "Stop layout shifts from images, ads, fonts and late-injected content with reserved space and size hints."
+    },
+    {
+      "name": "web-image-optimization",
+      "kind": "skill",
+      "purpose": "Serve responsive images with srcset/sizes, AVIF/WebP, lazy loading and fetchpriority."
+    },
+    {
+      "name": "web-font-loading",
+      "kind": "skill",
+      "purpose": "Load web fonts with subsetting, preload, font-display and metric overrides to avoid FOIT and CLS."
+    },
+    {
+      "name": "web-rum-measurement",
+      "kind": "skill",
+      "purpose": "Collect field Web Vitals with the web-vitals library and attribute regressions to pages and releases."
+    },
+    {
+      "name": "bundle-code-splitting",
+      "kind": "skill",
+      "purpose": "Split JS by route and interaction with dynamic import, lazy components and prefetch strategies."
+    },
+    {
+      "name": "bundle-tree-shaking",
+      "kind": "skill",
+      "purpose": "Make libraries and apps tree-shakable: ESM, sideEffects flags, barrel-file pitfalls and import hygiene."
+    },
+    {
+      "name": "bundle-size-budgets",
+      "kind": "skill",
+      "purpose": "Set per-route JS/CSS budgets and enforce them in CI with size-limit or bundler stats."
+    },
+    {
+      "name": "vite-build-tuning",
+      "kind": "skill",
+      "purpose": "Tune Vite builds: manualChunks, dependency pre-bundling, build targets and analysing output."
+    },
+    {
+      "name": "third-party-script-control",
+      "kind": "skill",
+      "purpose": "Audit and load third-party tags with async/defer, facades, Partytown or consent gating."
+    },
+    {
+      "name": "tanstack-query-patterns",
+      "kind": "skill",
+      "purpose": "Use TanStack Query: query keys, staleTime, mutations, invalidation, prefetching and SSR hydration."
+    },
+    {
+      "name": "zustand-store-patterns",
+      "kind": "skill",
+      "purpose": "Design Zustand stores with slices, selectors, middleware and avoiding over-rendering."
+    },
+    {
+      "name": "redux-toolkit-rtk-query",
+      "kind": "skill",
+      "purpose": "Write Redux Toolkit slices and RTK Query endpoints with tag invalidation and typed hooks."
+    },
+    {
+      "name": "optimistic-ui-updates",
+      "kind": "skill",
+      "purpose": "Implement optimistic updates with rollback, conflict handling and pending indicators."
+    },
+    {
+      "name": "pwa-service-worker-caching",
+      "kind": "skill",
+      "purpose": "Write service workers with cache-first/network-first/stale-while-revalidate strategies and safe update flows."
+    },
+    {
+      "name": "pwa-web-app-manifest",
+      "kind": "skill",
+      "purpose": "Author the web app manifest: icons, maskable icons, display modes, shortcuts and install criteria."
+    },
+    {
+      "name": "pwa-offline-first-data",
+      "kind": "skill",
+      "purpose": "Store and sync data offline with IndexedDB, background sync and conflict resolution."
+    },
+    {
+      "name": "pwa-web-push",
+      "kind": "skill",
+      "purpose": "Implement Web Push with VAPID keys, subscription management and iOS home-screen web app constraints."
+    },
+    {
+      "name": "workbox-recipes",
+      "kind": "skill",
+      "purpose": "Use Workbox (precaching, routing, plugins) via Vite/Next plugins instead of hand-rolled service workers."
+    },
+    {
+      "name": "i18n-icu-messages",
+      "kind": "skill",
+      "purpose": "Write ICU MessageFormat strings with plurals, select and nested arguments; avoid string concatenation."
+    },
+    {
+      "name": "i18n-frontend-libraries",
+      "kind": "skill",
+      "purpose": "Set up i18next/react-i18next, FormatJS or vue-i18n with namespaces, lazy loading and type-safe keys."
+    },
+    {
+      "name": "i18n-locale-routing",
+      "kind": "skill",
+      "purpose": "Implement locale detection, URL prefixes/domains, hreflang and locale persistence in web frameworks."
+    },
+    {
+      "name": "i18n-intl-formatting",
+      "kind": "skill",
+      "purpose": "Format dates, numbers, currencies, lists and relative times with the Intl APIs and time zones."
+    },
+    {
+      "name": "i18n-rtl-layout",
+      "kind": "skill",
+      "purpose": "Support right-to-left languages with logical CSS properties, dir handling and mirrored icons."
+    },
+    {
+      "name": "i18n-string-extraction",
+      "kind": "skill",
+      "purpose": "Extract strings, find hard-coded text and sync catalogs with translation platforms in CI."
+    },
+    {
+      "name": "django-models-orm",
+      "kind": "skill",
+      "purpose": "Design Django models, managers, constraints and migrations; write expressive ORM queries."
+    },
+    {
+      "name": "django-views-urls",
+      "kind": "skill",
+      "purpose": "Write function and class-based views, URL patterns, middleware and template rendering idiomatically."
+    },
+    {
+      "name": "django-query-optimization",
+      "kind": "skill",
+      "purpose": "Fix N+1 queries with select_related/prefetch_related, annotations, only/defer and django-debug-toolbar."
+    },
+    {
+      "name": "django-forms-admin",
+      "kind": "skill",
+      "purpose": "Build Django forms/model forms and customise the admin (list views, actions, inlines) safely."
+    },
+    {
+      "name": "django-settings-config",
+      "kind": "skill",
+      "purpose": "Structure Django settings per environment with env vars, secrets, static/media and security settings."
+    },
+    {
+      "name": "django-async-tasks",
+      "kind": "skill",
+      "purpose": "Run background work from Django with Celery or Django tasks, plus async views where they help."
+    },
+    {
+      "name": "drf-serializers",
+      "kind": "skill",
+      "purpose": "Write DRF serializers with nested writes, validation, read/write field splits and performance-aware querysets."
+    },
+    {
+      "name": "drf-viewsets-routers",
+      "kind": "skill",
+      "purpose": "Build DRF viewsets, routers and custom actions with correct queryset scoping."
+    },
+    {
+      "name": "drf-permissions-auth",
+      "kind": "skill",
+      "purpose": "Configure DRF authentication classes and object-level permissions for multi-user APIs."
+    },
+    {
+      "name": "drf-pagination-filtering",
+      "kind": "skill",
+      "purpose": "Add pagination, django-filter, search and ordering to DRF endpoints."
+    },
+    {
+      "name": "drf-api-testing",
+      "kind": "skill",
+      "purpose": "Test DRF endpoints with APIClient/pytest-django: auth, permissions, validation errors."
+    },
+    {
+      "name": "fastapi-routing-dependencies",
+      "kind": "skill",
+      "purpose": "Structure FastAPI apps with APIRouters, dependency injection, lifespan events and settings."
+    },
+    {
+      "name": "fastapi-pydantic-models",
+      "kind": "skill",
+      "purpose": "Define Pydantic v2 request/response models, validators, aliases and OpenAPI-friendly schemas."
+    },
+    {
+      "name": "fastapi-async-sqlalchemy",
+      "kind": "skill",
+      "purpose": "Use async SQLAlchemy 2.0 sessions in FastAPI with per-request scope and Alembic migrations."
+    },
+    {
+      "name": "fastapi-auth-security",
+      "kind": "skill",
+      "purpose": "Implement OAuth2 password/bearer and API-key auth in FastAPI with security dependencies and scopes."
+    },
+    {
+      "name": "fastapi-testing",
+      "kind": "skill",
+      "purpose": "Test FastAPI with TestClient/httpx AsyncClient, dependency overrides and a test database."
+    },
+    {
+      "name": "fastapi-background-work",
+      "kind": "skill",
+      "purpose": "Choose between BackgroundTasks, task queues and streaming responses for long-running work."
+    },
+    {
+      "name": "flask-app-factory-blueprints",
+      "kind": "skill",
+      "purpose": "Structure Flask apps with the application factory, blueprints and config objects."
+    },
+    {
+      "name": "flask-sqlalchemy-patterns",
+      "kind": "skill",
+      "purpose": "Use Flask-SQLAlchemy and Flask-Migrate with sessions, models and query patterns."
+    },
+    {
+      "name": "flask-extensions-config",
+      "kind": "skill",
+      "purpose": "Configure common Flask extensions (Login, WTF, CORS, Limiter) and error handlers correctly."
+    },
+    {
+      "name": "flask-testing",
+      "kind": "skill",
+      "purpose": "Test Flask apps with pytest fixtures, test client, app context and database isolation."
+    },
+    {
+      "name": "rails-active-record",
+      "kind": "skill",
+      "purpose": "Write Active Record models, associations, scopes, validations and callbacks without hidden N+1s."
+    },
+    {
+      "name": "rails-controllers-routing",
+      "kind": "skill",
+      "purpose": "Write RESTful Rails controllers, strong params, routes and concerns."
+    },
+    {
+      "name": "rails-hotwire",
+      "kind": "skill",
+      "purpose": "Build interactive Rails UIs with Turbo Frames, Turbo Streams and Stimulus controllers."
+    },
+    {
+      "name": "rails-safe-migrations",
+      "kind": "skill",
+      "purpose": "Write zero-downtime Rails migrations: concurrent indexes, column backfills, strong_migrations rules."
+    },
+    {
+      "name": "rails-active-job",
+      "kind": "skill",
+      "purpose": "Use Active Job with Sidekiq or Solid Queue: idempotent jobs, retries and scheduling."
+    },
+    {
+      "name": "rails-rspec-testing",
+      "kind": "skill",
+      "purpose": "Write RSpec model, request and system specs with FactoryBot and Capybara."
+    },
+    {
+      "name": "laravel-eloquent",
+      "kind": "skill",
+      "purpose": "Write Eloquent models, relationships, scopes, casts and eager loading without N+1 queries."
+    },
+    {
+      "name": "laravel-routing-controllers",
+      "kind": "skill",
+      "purpose": "Write routes, resource controllers, middleware and API resources in Laravel."
+    },
+    {
+      "name": "laravel-validation-requests",
+      "kind": "skill",
+      "purpose": "Validate input with form requests, custom rules and authorization in Laravel."
+    },
+    {
+      "name": "laravel-queues-jobs",
+      "kind": "skill",
+      "purpose": "Dispatch Laravel jobs, batches and chains with Horizon, retries and unique jobs."
+    },
+    {
+      "name": "laravel-livewire",
+      "kind": "skill",
+      "purpose": "Build Livewire 3 components with properties, actions, validation and Alpine.js interop."
+    },
+    {
+      "name": "laravel-pest-testing",
+      "kind": "skill",
+      "purpose": "Test Laravel apps with Pest: feature tests, factories, fakes and database refresh."
+    },
+    {
+      "name": "spring-boot-rest-controllers",
+      "kind": "skill",
+      "purpose": "Write Spring MVC REST controllers with validation, ProblemDetail errors and DTO mapping."
+    },
+    {
+      "name": "spring-data-jpa",
+      "kind": "skill",
+      "purpose": "Use Spring Data JPA repositories, projections, fetch joins and transactions without lazy-loading traps."
+    },
+    {
+      "name": "spring-security-config",
+      "kind": "skill",
+      "purpose": "Configure Spring Security filter chains, JWT resource servers, method security and CORS."
+    },
+    {
+      "name": "spring-boot-testing",
+      "kind": "skill",
+      "purpose": "Test Spring Boot with @WebMvcTest, @DataJpaTest, Testcontainers and MockMvc."
+    },
+    {
+      "name": "spring-boot-configuration",
+      "kind": "skill",
+      "purpose": "Manage @ConfigurationProperties, profiles and externalised config across environments."
+    },
+    {
+      "name": "spring-boot-actuator",
+      "kind": "skill",
+      "purpose": "Expose Actuator health, metrics and info endpoints safely with Micrometer."
+    },
+    {
+      "name": "express-middleware-patterns",
+      "kind": "skill",
+      "purpose": "Order and write Express middleware for parsing, auth, logging and per-route concerns."
+    },
+    {
+      "name": "express-error-handling",
+      "kind": "skill",
+      "purpose": "Handle async errors in Express with central error middleware, typed errors and consistent responses."
+    },
+    {
+      "name": "express-request-validation",
+      "kind": "skill",
+      "purpose": "Validate Express request bodies, params and queries with Zod or express-validator."
+    },
+    {
+      "name": "express-app-structure",
+      "kind": "skill",
+      "purpose": "Structure Express apps into routers, services and config with graceful shutdown."
+    },
+    {
+      "name": "express-security-middleware",
+      "kind": "skill",
+      "purpose": "Apply helmet, CORS, rate limiting and body size limits to Express apps."
+    },
+    {
+      "name": "nestjs-modules-providers",
+      "kind": "skill",
+      "purpose": "Structure NestJS modules, providers, dynamic modules and configuration."
+    },
+    {
+      "name": "nestjs-guards-interceptors",
+      "kind": "skill",
+      "purpose": "Use NestJS guards, interceptors, pipes and exception filters for cross-cutting concerns."
+    },
+    {
+      "name": "nestjs-dto-validation",
+      "kind": "skill",
+      "purpose": "Validate NestJS DTOs with class-validator/class-transformer or Zod pipes and generate Swagger docs."
+    },
+    {
+      "name": "nestjs-orm-integration",
+      "kind": "skill",
+      "purpose": "Integrate Prisma or TypeORM with NestJS: repositories, transactions and migrations."
+    },
+    {
+      "name": "nestjs-testing",
+      "kind": "skill",
+      "purpose": "Unit and e2e test NestJS apps with TestingModule, provider overrides and supertest."
+    },
+    {
+      "name": "aspnet-minimal-apis",
+      "kind": "skill",
+      "purpose": "Build ASP.NET Core minimal APIs with route groups, filters, typed results and validation."
+    },
+    {
+      "name": "aspnet-ef-core",
+      "kind": "skill",
+      "purpose": "Use EF Core: DbContext lifetime, migrations, tracking vs no-tracking, split queries and concurrency tokens."
+    },
+    {
+      "name": "aspnet-middleware-di",
+      "kind": "skill",
+      "purpose": "Configure ASP.NET Core middleware pipeline, DI lifetimes, options pattern and hosted services."
+    },
+    {
+      "name": "aspnet-identity-auth",
+      "kind": "skill",
+      "purpose": "Set up ASP.NET Core Identity, cookie/JWT auth and policy-based authorization."
+    },
+    {
+      "name": "aspnet-integration-testing",
+      "kind": "skill",
+      "purpose": "Integration test ASP.NET Core with WebApplicationFactory and Testcontainers."
+    },
+    {
+      "name": "phoenix-contexts-ecto",
+      "kind": "skill",
+      "purpose": "Design Phoenix contexts with Ecto schemas, changesets, queries and Multi transactions."
+    },
+    {
+      "name": "phoenix-liveview",
+      "kind": "skill",
+      "purpose": "Build LiveView pages and function components with streams, events, uploads and JS hooks."
+    },
+    {
+      "name": "phoenix-channels-pubsub",
+      "kind": "skill",
+      "purpose": "Use Phoenix Channels, PubSub and Presence for real-time features."
+    },
+    {
+      "name": "phoenix-testing",
+      "kind": "skill",
+      "purpose": "Test Phoenix controllers and LiveViews with ConnCase, LiveViewTest and Ecto sandbox."
+    },
+    {
+      "name": "rest-resource-modeling",
+      "kind": "skill",
+      "purpose": "Model REST resources, URLs, methods and status codes; handle sub-resources and bulk operations."
+    },
+    {
+      "name": "rest-pagination-filtering",
+      "kind": "skill",
+      "purpose": "Implement cursor vs offset pagination, filtering, sorting and sparse fieldsets consistently."
+    },
+    {
+      "name": "rest-error-responses",
+      "kind": "skill",
+      "purpose": "Return RFC 9457 problem+json errors with stable codes, field errors and correlation IDs."
+    },
+    {
+      "name": "rest-api-versioning",
+      "kind": "skill",
+      "purpose": "Choose and apply an API versioning and deprecation strategy (URL, header, date-based) with Sunset headers."
+    },
+    {
+      "name": "rest-idempotency-keys",
+      "kind": "skill",
+      "purpose": "Implement Idempotency-Key handling for POST endpoints with storage, replay and conflict rules."
+    },
+    {
+      "name": "http-caching-headers",
+      "kind": "skill",
+      "purpose": "Set Cache-Control, ETag and conditional requests correctly for APIs and assets."
+    },
+    {
+      "name": "openapi-spec-authoring",
+      "kind": "skill",
+      "purpose": "Write OpenAPI 3.1 specs with reusable components, examples, discriminators and security schemes."
+    },
+    {
+      "name": "openapi-linting",
+      "kind": "skill",
+      "purpose": "Lint OpenAPI specs with Spectral/Redocly rulesets and write custom style rules."
+    },
+    {
+      "name": "openapi-codegen",
+      "kind": "skill",
+      "purpose": "Generate typed clients and server stubs from OpenAPI (openapi-typescript, orval, openapi-generator)."
+    },
+    {
+      "name": "openapi-breaking-changes",
+      "kind": "skill",
+      "purpose": "Detect breaking API changes between spec versions with oasdiff in CI and classify them."
+    },
+    {
+      "name": "graphql-schema-design",
+      "kind": "skill",
+      "purpose": "Design GraphQL schemas: nullability, input types, mutations with payloads, naming and deprecation."
+    },
+    {
+      "name": "graphql-dataloader-resolvers",
+      "kind": "skill",
+      "purpose": "Write resolvers that batch with DataLoader and avoid N+1 queries."
+    },
+    {
+      "name": "graphql-pagination-connections",
+      "kind": "skill",
+      "purpose": "Implement Relay-style cursor connections and filtering arguments."
+    },
+    {
+      "name": "graphql-errors-modeling",
+      "kind": "skill",
+      "purpose": "Model expected errors as result unions vs top-level errors, with extensions codes."
+    },
+    {
+      "name": "graphql-query-limits",
+      "kind": "skill",
+      "purpose": "Protect GraphQL servers with depth/complexity limits, persisted queries and rate limits."
+    },
+    {
+      "name": "graphql-federation",
+      "kind": "skill",
+      "purpose": "Compose subgraphs with Apollo Federation: entities, keys, ownership and schema checks."
+    },
+    {
+      "name": "graphql-client-codegen",
+      "kind": "skill",
+      "purpose": "Generate typed operations and hooks with GraphQL Code Generator and colocated fragments."
+    },
+    {
+      "name": "grpc-protobuf-design",
+      "kind": "skill",
+      "purpose": "Design protobuf messages and services: field numbering, evolution rules, well-known types, AIP conventions."
+    },
+    {
+      "name": "grpc-buf-tooling",
+      "kind": "skill",
+      "purpose": "Use Buf for protobuf lint, breaking-change detection and code generation."
+    },
+    {
+      "name": "grpc-errors-deadlines",
+      "kind": "skill",
+      "purpose": "Use gRPC status codes, rich error details, deadlines and retries correctly."
+    },
+    {
+      "name": "grpc-streaming",
+      "kind": "skill",
+      "purpose": "Implement server, client and bidirectional streaming with flow control and cancellation."
+    },
+    {
+      "name": "grpc-gateway-transcoding",
+      "kind": "skill",
+      "purpose": "Expose gRPC services as REST/JSON with gRPC-Gateway or Connect."
+    },
+    {
+      "name": "webhook-signature-verification",
+      "kind": "skill",
+      "purpose": "Verify webhook HMAC/asymmetric signatures with raw bodies, timestamps and constant-time compare."
+    },
+    {
+      "name": "webhook-idempotent-handlers",
+      "kind": "skill",
+      "purpose": "Write webhook consumers that ack fast, dedupe by event ID, queue work and tolerate out-of-order events."
+    },
+    {
+      "name": "webhook-delivery-design",
+      "kind": "skill",
+      "purpose": "Design outgoing webhooks: event schema, retries with backoff, signing, endpoint management and replay."
+    },
+    {
+      "name": "webhook-local-testing",
+      "kind": "skill",
+      "purpose": "Test webhooks locally with tunnels, provider CLIs and recorded fixture payloads."
+    },
+    {
+      "name": "websocket-server-patterns",
+      "kind": "skill",
+      "purpose": "Build WebSocket servers with auth on connect, heartbeats, backpressure and reconnect protocols."
+    },
+    {
+      "name": "server-sent-events",
+      "kind": "skill",
+      "purpose": "Stream updates with SSE: event IDs, reconnection, proxies and when SSE beats WebSockets."
+    },
+    {
+      "name": "realtime-presence-sync",
+      "kind": "skill",
+      "purpose": "Implement presence, cursors and collaborative state with CRDT/OT libraries like Yjs."
+    },
+    {
+      "name": "realtime-scaling-pubsub",
+      "kind": "skill",
+      "purpose": "Scale realtime connections across instances with Redis pub/sub, sticky sessions and fan-out."
+    },
+    {
+      "name": "trpc-routers-procedures",
+      "kind": "skill",
+      "purpose": "Build tRPC routers with procedures, middleware, context, input validation and React Query integration."
+    },
+    {
+      "name": "zod-api-contracts",
+      "kind": "skill",
+      "purpose": "Define shared Zod schemas for API input/output, infer types and validate at the boundary."
+    },
+    {
+      "name": "ts-rest-contracts",
+      "kind": "skill",
+      "purpose": "Define REST contracts with ts-rest and generate typed clients and OpenAPI."
+    },
+    {
+      "name": "typesafe-api-boundaries",
+      "kind": "skill",
+      "purpose": "Choose between tRPC, ts-rest, GraphQL codegen and OpenAPI codegen for a given team setup."
+    },
+    {
+      "name": "presigned-url-uploads",
+      "kind": "skill",
+      "purpose": "Implement direct-to-S3/GCS/R2 uploads with presigned URLs or POST policies and server-side confirmation."
+    },
+    {
+      "name": "resumable-uploads",
+      "kind": "skill",
+      "purpose": "Implement resumable and multipart uploads with tus or S3 multipart for large files."
+    },
+    {
+      "name": "upload-validation",
+      "kind": "skill",
+      "purpose": "Validate uploads by magic bytes, size and type; strip metadata and route files to malware scanning."
+    },
+    {
+      "name": "image-processing-pipeline",
+      "kind": "skill",
+      "purpose": "Generate thumbnails and responsive variants with sharp or an image CDN, asynchronously."
+    },
+    {
+      "name": "oauth-auth-code-pkce",
+      "kind": "skill",
+      "purpose": "Implement the OAuth 2 authorization code flow with PKCE, state and nonce for web and native apps."
+    },
+    {
+      "name": "oidc-token-validation",
+      "kind": "skill",
+      "purpose": "Validate ID and access tokens: JWKS, issuer, audience, expiry and algorithm pinning."
+    },
+    {
+      "name": "oauth-refresh-rotation",
+      "kind": "skill",
+      "purpose": "Handle refresh tokens with rotation, reuse detection, storage choices and silent re-auth."
+    },
+    {
+      "name": "oauth-client-credentials",
+      "kind": "skill",
+      "purpose": "Use client credentials and token exchange for service-to-service API access."
+    },
+    {
+      "name": "oidc-bff-pattern",
+      "kind": "skill",
+      "purpose": "Implement the backend-for-frontend pattern so SPAs keep tokens server-side with session cookies."
+    },
+    {
+      "name": "web-session-cookies",
+      "kind": "skill",
+      "purpose": "Implement server sessions with secure cookie flags, rotation on login, idle/absolute timeouts and logout."
+    },
+    {
+      "name": "web-csrf-protection",
+      "kind": "skill",
+      "purpose": "Protect cookie-authenticated apps from CSRF with SameSite, tokens and origin checks per framework."
+    },
+    {
+      "name": "web-password-storage",
+      "kind": "skill",
+      "purpose": "Hash passwords with Argon2id/bcrypt, handle rehashing, breached-password checks and login throttling."
+    },
+    {
+      "name": "web-passkeys-webauthn",
+      "kind": "skill",
+      "purpose": "Add passkeys with WebAuthn registration/authentication ceremonies and server libraries."
+    },
+    {
+      "name": "web-totp-mfa",
+      "kind": "skill",
+      "purpose": "Implement TOTP MFA enrolment, verification, recovery codes and remember-device."
+    },
+    {
+      "name": "web-account-recovery",
+      "kind": "skill",
+      "purpose": "Build email verification, password reset and magic-link flows with single-use expiring tokens."
+    },
+    {
+      "name": "authjs-setup",
+      "kind": "skill",
+      "purpose": "Configure Auth.js (NextAuth) with providers, adapters, session strategy and callbacks."
+    },
+    {
+      "name": "clerk-integration",
+      "kind": "skill",
+      "purpose": "Integrate Clerk with middleware, organisations, webhooks syncing users and server-side checks."
+    },
+    {
+      "name": "auth0-integration",
+      "kind": "skill",
+      "purpose": "Integrate Auth0 SDKs for login, API authorization, actions and RBAC claims."
+    },
+    {
+      "name": "keycloak-oidc-setup",
+      "kind": "skill",
+      "purpose": "Configure Keycloak realms and clients and connect apps over OIDC."
+    },
+    {
+      "name": "rbac-implementation",
+      "kind": "skill",
+      "purpose": "Implement role and permission models, assignment, checks in middleware and UI gating."
+    },
+    {
+      "name": "abac-policy-engines",
+      "kind": "skill",
+      "purpose": "Express authorization rules with OpenFGA, Cerbos, Oso or OPA and call them from app code."
+    },
+    {
+      "name": "multi-tenant-isolation",
+      "kind": "skill",
+      "purpose": "Enforce tenant scoping in queries, caches, jobs and file storage to prevent cross-tenant access."
+    },
+    {
+      "name": "api-key-scopes",
+      "kind": "skill",
+      "purpose": "Issue, hash, scope, rotate and revoke API keys for third-party API consumers."
+    },
+    {
+      "name": "stripe-checkout-elements",
+      "kind": "skill",
+      "purpose": "Choose Checkout Sessions vs Payment Element and implement each with server-created intents."
+    },
+    {
+      "name": "stripe-webhook-handling",
+      "kind": "skill",
+      "purpose": "Handle Stripe webhooks: signature checks, event ordering, fulfilment and retry-safe processing."
+    },
+    {
+      "name": "stripe-billing-subscriptions",
+      "kind": "skill",
+      "purpose": "Implement Stripe Billing: prices, trials, proration, dunning, entitlements and the customer portal."
+    },
+    {
+      "name": "stripe-testing",
+      "kind": "skill",
+      "purpose": "Test Stripe integrations with test cards, test clocks, the Stripe CLI and fixture events."
+    },
+    {
+      "name": "stripe-connect-payouts",
+      "kind": "skill",
+      "purpose": "Implement Stripe Connect onboarding, charges types and payouts for marketplaces."
+    },
+    {
+      "name": "payment-state-machine",
+      "kind": "skill",
+      "purpose": "Model orders and payments as a state machine with idempotent transitions and reconciliation."
+    },
+    {
+      "name": "payment-sca-3ds",
+      "kind": "skill",
+      "purpose": "Handle SCA/3-D Secure challenges, authentication-required errors and off-session retries."
+    },
+    {
+      "name": "payment-refunds-disputes",
+      "kind": "skill",
+      "purpose": "Implement refunds, partial refunds and dispute evidence workflows with ledger consistency."
+    },
+    {
+      "name": "wallet-payments-web",
+      "kind": "skill",
+      "purpose": "Add Apple Pay and Google Pay on the web with domain verification and Payment Request API."
+    },
+    {
+      "name": "multi-currency-pricing",
+      "kind": "skill",
+      "purpose": "Store money as minor units, handle currencies, rounding and presentment vs settlement currency."
+    },
+    {
+      "name": "paypal-checkout",
+      "kind": "skill",
+      "purpose": "Integrate PayPal Checkout with server-side order creation, capture and webhooks."
+    },
+    {
+      "name": "storekit2-iap",
+      "kind": "skill",
+      "purpose": "Implement StoreKit 2 products, purchases, transaction listener, subscriptions and restore."
+    },
+    {
+      "name": "play-billing-library",
+      "kind": "skill",
+      "purpose": "Implement Google Play Billing Library purchases, acknowledgement, subscriptions and pending transactions."
+    },
+    {
+      "name": "iap-server-verification",
+      "kind": "skill",
+      "purpose": "Verify purchases server-side with App Store Server API and Play Developer API and handle server notifications."
+    },
+    {
+      "name": "revenuecat-integration",
+      "kind": "skill",
+      "purpose": "Use RevenueCat SDKs for entitlements, offerings and webhook-driven backend state."
+    },
+    {
+      "name": "swiftui-view-composition",
+      "kind": "skill",
+      "purpose": "Compose SwiftUI views, view modifiers and custom containers; keep bodies small and identity stable."
+    },
+    {
+      "name": "swiftui-state-observation",
+      "kind": "skill",
+      "purpose": "Use @State, @Binding, @Observable, @Environment and @Bindable correctly; avoid redundant updates."
+    },
+    {
+      "name": "swiftui-navigation",
+      "kind": "skill",
+      "purpose": "Implement NavigationStack/SplitView with path-driven, deep-linkable navigation and sheets."
+    },
+    {
+      "name": "swiftui-lists-performance",
+      "kind": "skill",
+      "purpose": "Make SwiftUI lists and grids fast: identity, lazy stacks, task cancellation and image loading."
+    },
+    {
+      "name": "swiftui-animations",
+      "kind": "skill",
+      "purpose": "Add SwiftUI animations and transitions with matchedGeometryEffect, phase and keyframe animators."
+    },
+    {
+      "name": "swiftui-previews-testing",
+      "kind": "skill",
+      "purpose": "Write useful #Preview variants and snapshot tests for SwiftUI views."
+    },
+    {
+      "name": "ios-swiftdata",
+      "kind": "skill",
+      "purpose": "Model and query SwiftData (or Core Data) stores with migrations and background contexts."
+    },
+    {
+      "name": "ios-networking",
+      "kind": "skill",
+      "purpose": "Build an async URLSession networking layer with Codable, retries, auth refresh and cancellation."
+    },
+    {
+      "name": "ios-swift-concurrency-ui",
+      "kind": "skill",
+      "purpose": "Apply Swift concurrency in apps: MainActor isolation, Sendable, task lifetimes and strict concurrency warnings."
+    },
+    {
+      "name": "ios-push-notifications",
+      "kind": "skill",
+      "purpose": "Implement APNs registration, notification service extensions, rich and silent notifications."
+    },
+    {
+      "name": "ios-background-tasks",
+      "kind": "skill",
+      "purpose": "Schedule BGTaskScheduler work and handle app lifecycle and scene phases."
+    },
+    {
+      "name": "ios-keychain-storage",
+      "kind": "skill",
+      "purpose": "Store tokens and secrets in the Keychain with correct accessibility classes and sharing groups."
+    },
+    {
+      "name": "ios-code-signing",
+      "kind": "skill",
+      "purpose": "Fix iOS code signing: certificates, provisioning profiles, automatic vs manual signing, CI keychains."
+    },
+    {
+      "name": "ios-testflight-release",
+      "kind": "skill",
+      "purpose": "Ship builds to TestFlight and the App Store: versioning, phased release, metadata and privacy manifests."
+    },
+    {
+      "name": "ios-app-review-guidelines",
+      "kind": "skill",
+      "purpose": "Check an app against App Store Review Guidelines and common rejection reasons before submission."
+    },
+    {
+      "name": "fastlane-ios",
+      "kind": "skill",
+      "purpose": "Automate iOS builds, screenshots and uploads with fastlane match, gym and pilot."
+    },
+    {
+      "name": "ios-xcuitest",
+      "kind": "skill",
+      "purpose": "Write XCUITest UI tests with accessibility identifiers, launch arguments and stable waits."
+    },
+    {
+      "name": "compose-state-hoisting",
+      "kind": "skill",
+      "purpose": "Hoist Compose state, use remember/rememberSaveable and collect flows with lifecycle awareness."
+    },
+    {
+      "name": "compose-layouts-modifiers",
+      "kind": "skill",
+      "purpose": "Build Compose layouts with modifiers order, lazy lists, constraints and custom layouts."
+    },
+    {
+      "name": "compose-navigation",
+      "kind": "skill",
+      "purpose": "Implement type-safe Navigation Compose graphs, deep links and back stack handling."
+    },
+    {
+      "name": "compose-recomposition-performance",
+      "kind": "skill",
+      "purpose": "Reduce Compose recompositions with stability, derivedStateOf, keys and compiler reports."
+    },
+    {
+      "name": "compose-material3-theming",
+      "kind": "skill",
+      "purpose": "Theme Compose apps with Material 3, dynamic color and custom design tokens."
+    },
+    {
+      "name": "compose-ui-testing",
+      "kind": "skill",
+      "purpose": "Write Compose UI tests with semantics matchers, test tags and idling."
+    },
+    {
+      "name": "android-viewmodel-flow",
+      "kind": "skill",
+      "purpose": "Expose UI state from ViewModels with StateFlow, handle one-off events and process death."
+    },
+    {
+      "name": "android-room-database",
+      "kind": "skill",
+      "purpose": "Use Room entities, DAOs, relations, migrations and Flow queries."
+    },
+    {
+      "name": "android-hilt-di",
+      "kind": "skill",
+      "purpose": "Set up Hilt modules, scopes, assisted injection and testing replacements."
+    },
+    {
+      "name": "android-retrofit-networking",
+      "kind": "skill",
+      "purpose": "Build Retrofit/OkHttp networking with kotlinx.serialization, interceptors and auth refresh."
+    },
+    {
+      "name": "android-workmanager",
+      "kind": "skill",
+      "purpose": "Schedule reliable background work with WorkManager constraints, chaining and expedited work."
+    },
+    {
+      "name": "android-runtime-permissions",
+      "kind": "skill",
+      "purpose": "Request runtime permissions with rationale UI and handle denial and Android version differences."
+    },
+    {
+      "name": "android-gradle-config",
+      "kind": "skill",
+      "purpose": "Configure Android Gradle builds: version catalogs, build types, flavors and convention plugins."
+    },
+    {
+      "name": "android-app-signing",
+      "kind": "skill",
+      "purpose": "Manage upload keys, Play App Signing and keystores securely in CI."
+    },
+    {
+      "name": "android-r8-shrinking",
+      "kind": "skill",
+      "purpose": "Configure R8 shrinking and keep rules, and debug release-only crashes from obfuscation."
+    },
+    {
+      "name": "play-console-release",
+      "kind": "skill",
+      "purpose": "Release via Play Console tracks, staged rollouts, policy declarations and target SDK requirements."
+    },
+    {
+      "name": "fastlane-android",
+      "kind": "skill",
+      "purpose": "Automate Android builds and Play uploads with fastlane supply and gradle lanes."
+    },
+    {
+      "name": "rn-expo-router",
+      "kind": "skill",
+      "purpose": "Build navigation with Expo Router: stacks, tabs, modals, typed routes and deep links."
+    },
+    {
+      "name": "rn-list-performance",
+      "kind": "skill",
+      "purpose": "Make React Native lists fast with FlashList/FlatList tuning, memoization and image caching."
+    },
+    {
+      "name": "rn-styling-layout",
+      "kind": "skill",
+      "purpose": "Style RN apps with flexbox, safe areas, platform differences and NativeWind or StyleSheet."
+    },
+    {
+      "name": "rn-native-modules",
+      "kind": "skill",
+      "purpose": "Write native modules and views with Expo Modules API or Turbo Modules for the new architecture."
+    },
+    {
+      "name": "rn-offline-storage",
+      "kind": "skill",
+      "purpose": "Persist data in RN with MMKV, SQLite or WatermelonDB, plus secure storage for tokens."
+    },
+    {
+      "name": "expo-eas-build",
+      "kind": "skill",
+      "purpose": "Configure EAS Build profiles, credentials, environment variables and config plugins."
+    },
+    {
+      "name": "expo-eas-update",
+      "kind": "skill",
+      "purpose": "Ship OTA updates with EAS Update channels, runtime versions and rollbacks."
+    },
+    {
+      "name": "expo-notifications",
+      "kind": "skill",
+      "purpose": "Implement push with expo-notifications: tokens, permissions, channels and handling taps."
+    },
+    {
+      "name": "expo-sdk-upgrades",
+      "kind": "skill",
+      "purpose": "Upgrade Expo SDK and React Native versions, fixing breaking native dependency changes."
+    },
+    {
+      "name": "mobile-deep-links",
+      "kind": "skill",
+      "purpose": "Set up universal links and Android app links with association files and in-app routing."
+    },
+    {
+      "name": "flutter-widget-composition",
+      "kind": "skill",
+      "purpose": "Compose Flutter widgets, keep build methods cheap, use const and keys correctly."
+    },
+    {
+      "name": "flutter-riverpod-state",
+      "kind": "skill",
+      "purpose": "Manage state with Riverpod providers, notifiers, code generation and async values."
+    },
+    {
+      "name": "flutter-bloc-pattern",
+      "kind": "skill",
+      "purpose": "Use flutter_bloc/Cubit with events, states, and bloc testing."
+    },
+    {
+      "name": "flutter-go-router",
+      "kind": "skill",
+      "purpose": "Configure go_router with nested routes, redirects, shell routes and deep links."
+    },
+    {
+      "name": "flutter-platform-channels",
+      "kind": "skill",
+      "purpose": "Call native APIs via method channels or Pigeon with typed messages."
+    },
+    {
+      "name": "flutter-flavors-release",
+      "kind": "skill",
+      "purpose": "Set up Flutter flavors, environment config, obfuscation and store release builds."
+    },
+    {
+      "name": "flutter-widget-testing",
+      "kind": "skill",
+      "purpose": "Write Flutter widget, golden and integration tests."
+    },
+    {
+      "name": "mobile-offline-sync",
+      "kind": "skill",
+      "purpose": "Design offline-first sync for mobile apps: local source of truth, queues, conflict resolution."
+    },
+    {
+      "name": "mobile-push-strategy",
+      "kind": "skill",
+      "purpose": "Plan push notifications: permission timing, categories, payload design and token lifecycle on the backend."
+    },
+    {
+      "name": "mobile-crash-reporting",
+      "kind": "skill",
+      "purpose": "Set up crash reporting with symbol/mapping uploads, breadcrumbs and release health."
+    },
+    {
+      "name": "mobile-accessibility",
+      "kind": "skill",
+      "purpose": "Make mobile apps accessible: VoiceOver/TalkBack labels, dynamic type, touch targets."
+    },
+    {
+      "name": "chrome-mv3-extensions",
+      "kind": "skill",
+      "purpose": "Build Manifest V3 extensions: service worker lifecycle, declarativeNetRequest, offscreen documents."
+    },
+    {
+      "name": "extension-content-scripts",
+      "kind": "skill",
+      "purpose": "Write content scripts with isolated worlds, DOM injection, shadow roots and SPA navigation handling."
+    },
+    {
+      "name": "extension-messaging-storage",
+      "kind": "skill",
+      "purpose": "Pass messages between extension contexts and persist state with chrome.storage safely."
+    },
+    {
+      "name": "extension-permissions",
+      "kind": "skill",
+      "purpose": "Request minimal and optional permissions and host permissions, and justify them for store review."
+    },
+    {
+      "name": "extension-cross-browser",
+      "kind": "skill",
+      "purpose": "Port extensions to Firefox and Safari with WebExtension polyfills and WXT or Plasmo."
+    },
+    {
+      "name": "extension-store-publishing",
+      "kind": "skill",
+      "purpose": "Publish to Chrome Web Store, AMO and Edge Add-ons with listings, privacy disclosures and review fixes."
+    },
+    {
+      "name": "electron-process-ipc",
+      "kind": "skill",
+      "purpose": "Structure Electron main, preload and renderer processes with contextBridge and typed IPC."
+    },
+    {
+      "name": "electron-security-hardening",
+      "kind": "skill",
+      "purpose": "Apply Electron security checklist: context isolation, sandbox, CSP, no nodeIntegration, safe navigation."
+    },
+    {
+      "name": "electron-packaging-signing",
+      "kind": "skill",
+      "purpose": "Package with Electron Forge/electron-builder, code-sign and notarize for macOS and Windows."
+    },
+    {
+      "name": "electron-auto-update",
+      "kind": "skill",
+      "purpose": "Ship auto-updates with update servers, staged rollouts and delta updates."
+    },
+    {
+      "name": "electron-performance",
+      "kind": "skill",
+      "purpose": "Cut Electron startup time and memory: lazy loading, V8 snapshots, process count."
+    },
+    {
+      "name": "tauri-commands-ipc",
+      "kind": "skill",
+      "purpose": "Write Tauri commands, events and channels between Rust and the web frontend with typed payloads."
+    },
+    {
+      "name": "tauri-capabilities",
+      "kind": "skill",
+      "purpose": "Configure Tauri 2 capabilities, permissions and scopes for least privilege."
+    },
+    {
+      "name": "tauri-plugins",
+      "kind": "skill",
+      "purpose": "Use and write Tauri plugins (fs, shell, store, http) and mobile plugin bindings."
+    },
+    {
+      "name": "tauri-bundling-updater",
+      "kind": "skill",
+      "purpose": "Bundle, sign and auto-update Tauri apps across macOS, Windows and Linux."
+    },
+    {
+      "name": "react-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews React/TSX diffs for hook misuse, state placement, accessibility and idiom; returns ranked findings with fixes.",
+      "skills": [
+        "react-hooks-patterns",
+        "react-component-design",
+        "react-state-placement"
+      ]
+    },
+    {
+      "name": "react-perf-investigator",
+      "kind": "agent",
+      "purpose": "Profiles React render behaviour, finds wasted renders and heavy components, and proposes measured fixes.",
+      "skills": [
+        "react-render-performance",
+        "bundle-code-splitting"
+      ]
+    },
+    {
+      "name": "react-test-writer",
+      "kind": "agent",
+      "purpose": "Writes behaviour-focused React Testing Library tests with MSW for components and hooks lacking coverage.",
+      "skills": [
+        "react-testing-library",
+        "react-msw-mocking",
+        "react-hook-testing"
+      ]
+    },
+    {
+      "name": "react-component-refactorer",
+      "kind": "agent",
+      "purpose": "Splits oversized React components, extracts hooks and removes prop drilling without changing behaviour.",
+      "skills": [
+        "react-component-design"
+      ]
+    },
+    {
+      "name": "nextjs-app-router-migrator",
+      "kind": "agent",
+      "purpose": "Migrates Next.js Pages Router routes and data fetching to App Router incrementally, route by route.",
+      "skills": [
+        "nextjs-app-router-structure",
+        "nextjs-server-components"
+      ]
+    },
+    {
+      "name": "nextjs-caching-auditor",
+      "kind": "agent",
+      "purpose": "Audits a Next.js app for stale-data and over-caching bugs and reports what each route caches and why.",
+      "skills": [
+        "nextjs-caching-revalidation"
+      ]
+    },
+    {
+      "name": "nextjs-route-builder",
+      "kind": "agent",
+      "purpose": "Scaffolds Next.js routes with layouts, loading/error states, Server Actions and metadata.",
+      "skills": [
+        "nextjs-app-router-structure",
+        "nextjs-server-actions",
+        "nextjs-metadata-seo"
+      ]
+    },
+    {
+      "name": "nextjs-build-fixer",
+      "kind": "agent",
+      "purpose": "Diagnoses and fixes next build failures: type errors, server/client boundary errors, dynamic usage errors.",
+      "skills": [
+        "nextjs-server-components"
+      ]
+    },
+    {
+      "name": "vue-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Vue SFC diffs for reactivity bugs, composable design, Pinia usage and template issues.",
+      "skills": [
+        "vue-composition-api",
+        "vue-reactivity-pitfalls",
+        "vue-pinia-stores"
+      ]
+    },
+    {
+      "name": "vue3-migrator",
+      "kind": "agent",
+      "purpose": "Migrates Vue 2 and Options API components to Vue 3 script setup, Pinia and Vue Router 4.",
+      "skills": [
+        "vue-composition-api",
+        "vue-pinia-stores"
+      ]
+    },
+    {
+      "name": "nuxt-page-builder",
+      "kind": "agent",
+      "purpose": "Builds Nuxt pages and server routes with correct data fetching, rendering mode and SEO meta.",
+      "skills": [
+        "nuxt-data-fetching",
+        "nuxt-server-routes",
+        "nuxt-seo-head"
+      ]
+    },
+    {
+      "name": "vue-test-writer",
+      "kind": "agent",
+      "purpose": "Writes Vitest + Vue Test Utils tests for components and composables.",
+      "skills": [
+        "vue-testing-utils"
+      ]
+    },
+    {
+      "name": "angular-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Angular diffs for change-detection, subscription leaks, DI misuse and template performance.",
+      "skills": [
+        "angular-signals",
+        "angular-rxjs-patterns",
+        "angular-dependency-injection"
+      ]
+    },
+    {
+      "name": "angular-upgrade-migrator",
+      "kind": "agent",
+      "purpose": "Plans and executes Angular major upgrades with ng update, standalone and control-flow migrations.",
+      "skills": [
+        "angular-standalone-components"
+      ]
+    },
+    {
+      "name": "angular-signals-migrator",
+      "kind": "agent",
+      "purpose": "Converts component state and inputs from RxJS/decorators to signals, keeping observables where they fit.",
+      "skills": [
+        "angular-signals",
+        "angular-rxjs-patterns"
+      ]
+    },
+    {
+      "name": "angular-test-writer",
+      "kind": "agent",
+      "purpose": "Writes Angular component and service tests with TestBed, harnesses and HTTP testing controller.",
+      "skills": [
+        "angular-dependency-injection"
+      ]
+    },
+    {
+      "name": "svelte5-migrator",
+      "kind": "agent",
+      "purpose": "Migrates Svelte 4 components to Svelte 5 runes and snippets, fixing reactivity semantics changes.",
+      "skills": [
+        "svelte5-runes"
+      ]
+    },
+    {
+      "name": "sveltekit-route-builder",
+      "kind": "agent",
+      "purpose": "Builds SvelteKit routes with load functions, form actions and auth guards.",
+      "skills": [
+        "sveltekit-load-functions",
+        "sveltekit-form-actions",
+        "sveltekit-hooks-auth"
+      ]
+    },
+    {
+      "name": "astro-site-builder",
+      "kind": "agent",
+      "purpose": "Builds Astro pages and content collections, hydrating only interactive islands.",
+      "skills": [
+        "astro-islands",
+        "astro-content-collections"
+      ]
+    },
+    {
+      "name": "css-layout-debugger",
+      "kind": "agent",
+      "purpose": "Debugs layout bugs (overflow, stacking, alignment, sizing) and explains the cause and minimal fix.",
+      "skills": [
+        "css-grid-flexbox-layouts",
+        "css-cascade-layers"
+      ]
+    },
+    {
+      "name": "css-to-tailwind-migrator",
+      "kind": "agent",
+      "purpose": "Migrates CSS/SCSS modules to Tailwind utilities component by component, preserving visuals.",
+      "skills": [
+        "tailwind-utility-patterns",
+        "tailwind-v4-config"
+      ]
+    },
+    {
+      "name": "css-dead-code-pruner",
+      "kind": "agent",
+      "purpose": "Finds unused selectors, duplicate rules and orphaned stylesheets and removes them safely.",
+      "skills": [
+        "css-cascade-layers"
+      ]
+    },
+    {
+      "name": "responsive-layout-checker",
+      "kind": "agent",
+      "purpose": "Checks pages at standard breakpoints for overflow, tap-target and reflow issues and reports them.",
+      "skills": [
+        "css-container-queries",
+        "tailwind-responsive-dark-mode"
+      ]
+    },
+    {
+      "name": "web-a11y-auditor",
+      "kind": "agent",
+      "purpose": "Audits pages against WCAG 2.2 AA with axe plus manual checks and returns issues with success criteria and severity.",
+      "skills": [
+        "a11y-semantic-html",
+        "a11y-keyboard-focus",
+        "a11y-color-contrast"
+      ]
+    },
+    {
+      "name": "a11y-component-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews UI component diffs against ARIA Authoring Practices patterns before merge.",
+      "skills": [
+        "a11y-aria-usage",
+        "a11y-dialog-pattern",
+        "a11y-combobox-pattern"
+      ]
+    },
+    {
+      "name": "a11y-remediator",
+      "kind": "agent",
+      "purpose": "Implements fixes for audit findings in code, smallest change first, and re-verifies each.",
+      "skills": [
+        "a11y-semantic-html",
+        "a11y-aria-usage",
+        "a11y-forms-errors"
+      ]
+    },
+    {
+      "name": "a11y-report-writer",
+      "kind": "agent",
+      "purpose": "Turns audit findings into a conformance report or VPAT-style summary with remediation plan.",
+      "skills": [
+        "a11y-screen-reader-testing"
+      ]
+    },
+    {
+      "name": "web-vitals-auditor",
+      "kind": "agent",
+      "purpose": "Audits a page with Lighthouse/trace data and field metrics, ranks LCP/INP/CLS causes and fixes.",
+      "skills": [
+        "cwv-lcp-optimization",
+        "cwv-inp-optimization",
+        "cwv-cls-prevention"
+      ]
+    },
+    {
+      "name": "bundle-size-analyzer",
+      "kind": "agent",
+      "purpose": "Analyses bundle stats, attributes bytes to dependencies and routes, and proposes cuts with estimated savings.",
+      "skills": [
+        "bundle-code-splitting",
+        "bundle-tree-shaking",
+        "bundle-size-budgets"
+      ]
+    },
+    {
+      "name": "web-asset-optimizer",
+      "kind": "agent",
+      "purpose": "Optimises images, fonts and third-party scripts in a codebase with responsive markup and loading hints.",
+      "skills": [
+        "web-image-optimization",
+        "web-font-loading",
+        "third-party-script-control"
+      ]
+    },
+    {
+      "name": "interaction-latency-investigator",
+      "kind": "agent",
+      "purpose": "Investigates slow interactions with performance traces and fixes long tasks on the main thread.",
+      "skills": [
+        "cwv-inp-optimization",
+        "react-render-performance"
+      ]
+    },
+    {
+      "name": "jquery-to-modern-migrator",
+      "kind": "agent",
+      "purpose": "Replaces jQuery code with vanilla DOM APIs or framework components, page by page.",
+      "skills": [
+        "htmx-progressive-enhancement"
+      ]
+    },
+    {
+      "name": "angularjs-migrator",
+      "kind": "agent",
+      "purpose": "Plans and executes AngularJS to Angular or React migration with hybrid bootstrapping and route-by-route moves.",
+      "skills": [
+        "angular-standalone-components"
+      ]
+    },
+    {
+      "name": "react-class-to-hooks-migrator",
+      "kind": "agent",
+      "purpose": "Converts React class components and lifecycle methods to function components and hooks.",
+      "skills": [
+        "react-hooks-patterns"
+      ]
+    },
+    {
+      "name": "cra-to-vite-migrator",
+      "kind": "agent",
+      "purpose": "Migrates Create React App or custom webpack builds to Vite, fixing env vars, aliases and test setup.",
+      "skills": [
+        "vite-build-tuning",
+        "react-vitest-setup"
+      ]
+    },
+    {
+      "name": "ui-component-builder",
+      "kind": "agent",
+      "purpose": "Implements a UI component from a spec or design: typed API, variants, states and accessibility.",
+      "skills": [
+        "react-component-design",
+        "tailwind-component-extraction",
+        "a11y-aria-usage"
+      ]
+    },
+    {
+      "name": "storybook-story-writer",
+      "kind": "agent",
+      "purpose": "Writes Storybook stories covering variants and states, with play-function interaction tests.",
+      "skills": [
+        "storybook-interaction-tests"
+      ]
+    },
+    {
+      "name": "form-builder-agent",
+      "kind": "agent",
+      "purpose": "Builds validated, accessible forms from a field spec with client and server validation.",
+      "skills": [
+        "react-hook-form-zod",
+        "web-form-validation-ux",
+        "a11y-forms-errors"
+      ]
+    },
+    {
+      "name": "django-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Django diffs for ORM misuse, security settings, view logic and migration problems.",
+      "skills": [
+        "django-models-orm",
+        "django-views-urls",
+        "django-query-optimization"
+      ]
+    },
+    {
+      "name": "django-query-optimizer",
+      "kind": "agent",
+      "purpose": "Finds N+1 and slow ORM queries from logs or debug toolbar output and rewrites them.",
+      "skills": [
+        "django-query-optimization"
+      ]
+    },
+    {
+      "name": "django-upgrade-migrator",
+      "kind": "agent",
+      "purpose": "Upgrades Django across major versions: deprecations, django-upgrade, settings and third-party packages.",
+      "skills": [
+        "django-settings-config"
+      ]
+    },
+    {
+      "name": "drf-endpoint-builder",
+      "kind": "agent",
+      "purpose": "Builds DRF endpoints with serializers, permissions, filtering and tests from a resource spec.",
+      "skills": [
+        "drf-serializers",
+        "drf-viewsets-routers",
+        "drf-permissions-auth",
+        "drf-api-testing"
+      ]
+    },
+    {
+      "name": "fastapi-endpoint-builder",
+      "kind": "agent",
+      "purpose": "Builds FastAPI endpoints with Pydantic models, dependencies, DB access and tests from a spec.",
+      "skills": [
+        "fastapi-routing-dependencies",
+        "fastapi-pydantic-models",
+        "fastapi-async-sqlalchemy"
+      ]
+    },
+    {
+      "name": "python-api-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews FastAPI/Flask diffs for blocking calls in async code, validation gaps, auth and error handling.",
+      "skills": [
+        "fastapi-auth-security",
+        "flask-extensions-config"
+      ]
+    },
+    {
+      "name": "flask-to-fastapi-migrator",
+      "kind": "agent",
+      "purpose": "Migrates Flask blueprints to FastAPI routers incrementally while keeping behaviour identical.",
+      "skills": [
+        "flask-app-factory-blueprints",
+        "fastapi-routing-dependencies"
+      ]
+    },
+    {
+      "name": "python-api-test-writer",
+      "kind": "agent",
+      "purpose": "Writes pytest API tests for FastAPI or Flask with fixtures, auth and error cases.",
+      "skills": [
+        "fastapi-testing",
+        "flask-testing"
+      ]
+    },
+    {
+      "name": "rails-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Rails diffs for Active Record misuse, callbacks, security (strong params) and migration safety.",
+      "skills": [
+        "rails-active-record",
+        "rails-controllers-routing",
+        "rails-safe-migrations"
+      ]
+    },
+    {
+      "name": "rails-upgrade-migrator",
+      "kind": "agent",
+      "purpose": "Upgrades Rails across versions with dual boot, deprecation fixes and new framework defaults.",
+      "skills": [
+        "rails-active-record"
+      ]
+    },
+    {
+      "name": "rails-n-plus-one-hunter",
+      "kind": "agent",
+      "purpose": "Finds N+1 queries via Bullet/logs and fixes them with includes, preload and counter caches.",
+      "skills": [
+        "rails-active-record"
+      ]
+    },
+    {
+      "name": "rails-spec-writer",
+      "kind": "agent",
+      "purpose": "Writes RSpec request, model and system specs for untested Rails code.",
+      "skills": [
+        "rails-rspec-testing"
+      ]
+    },
+    {
+      "name": "laravel-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Laravel diffs for Eloquent N+1s, mass assignment, validation and authorization gaps.",
+      "skills": [
+        "laravel-eloquent",
+        "laravel-validation-requests"
+      ]
+    },
+    {
+      "name": "laravel-upgrade-migrator",
+      "kind": "agent",
+      "purpose": "Upgrades Laravel major versions following the upgrade guide and fixes package incompatibilities.",
+      "skills": [
+        "laravel-routing-controllers"
+      ]
+    },
+    {
+      "name": "laravel-feature-scaffolder",
+      "kind": "agent",
+      "purpose": "Scaffolds a feature: migration, model, form request, controller, routes, policy and tests.",
+      "skills": [
+        "laravel-eloquent",
+        "laravel-routing-controllers",
+        "laravel-validation-requests"
+      ]
+    },
+    {
+      "name": "laravel-test-writer",
+      "kind": "agent",
+      "purpose": "Writes Pest feature and unit tests with factories and fakes.",
+      "skills": [
+        "laravel-pest-testing"
+      ]
+    },
+    {
+      "name": "spring-boot-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Spring Boot diffs for transaction boundaries, JPA fetch issues, security config and API errors.",
+      "skills": [
+        "spring-data-jpa",
+        "spring-security-config",
+        "spring-boot-rest-controllers"
+      ]
+    },
+    {
+      "name": "spring-boot3-migrator",
+      "kind": "agent",
+      "purpose": "Migrates Spring Boot 2.x apps to 3.x: Jakarta namespace, Security 6 config, property changes.",
+      "skills": [
+        "spring-security-config",
+        "spring-boot-configuration"
+      ]
+    },
+    {
+      "name": "spring-endpoint-builder",
+      "kind": "agent",
+      "purpose": "Builds REST endpoints with DTOs, validation, service and repository layers and tests.",
+      "skills": [
+        "spring-boot-rest-controllers",
+        "spring-data-jpa"
+      ]
+    },
+    {
+      "name": "spring-test-writer",
+      "kind": "agent",
+      "purpose": "Writes slice and integration tests with Testcontainers for Spring Boot services.",
+      "skills": [
+        "spring-boot-testing"
+      ]
+    },
+    {
+      "name": "node-api-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Express/NestJS diffs for unhandled async errors, validation gaps, auth and blocking work.",
+      "skills": [
+        "express-error-handling",
+        "express-request-validation",
+        "nestjs-guards-interceptors"
+      ]
+    },
+    {
+      "name": "nestjs-feature-builder",
+      "kind": "agent",
+      "purpose": "Builds a NestJS feature module with DTOs, providers, guards, persistence and tests.",
+      "skills": [
+        "nestjs-modules-providers",
+        "nestjs-dto-validation",
+        "nestjs-orm-integration"
+      ]
+    },
+    {
+      "name": "express-hardening-agent",
+      "kind": "agent",
+      "purpose": "Hardens an Express app: error middleware, validation, security headers, limits and graceful shutdown.",
+      "skills": [
+        "express-error-handling",
+        "express-security-middleware",
+        "express-app-structure"
+      ]
+    },
+    {
+      "name": "node-api-test-writer",
+      "kind": "agent",
+      "purpose": "Writes supertest/Vitest API tests covering auth, validation and error responses.",
+      "skills": [
+        "nestjs-testing"
+      ]
+    },
+    {
+      "name": "aspnet-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews ASP.NET Core diffs for DI lifetime bugs, async misuse, auth policies and EF Core pitfalls.",
+      "skills": [
+        "aspnet-middleware-di",
+        "aspnet-ef-core"
+      ]
+    },
+    {
+      "name": "aspnet-endpoint-builder",
+      "kind": "agent",
+      "purpose": "Builds minimal API endpoints with validation, typed results, EF Core data access and tests.",
+      "skills": [
+        "aspnet-minimal-apis",
+        "aspnet-ef-core",
+        "aspnet-integration-testing"
+      ]
+    },
+    {
+      "name": "ef-core-query-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews EF Core LINQ for client evaluation, cartesian explosion, tracking overhead and missing indexes.",
+      "skills": [
+        "aspnet-ef-core"
+      ]
+    },
+    {
+      "name": "aspnet-framework-migrator",
+      "kind": "agent",
+      "purpose": "Plans and performs ASP.NET (Framework) MVC/Web API to ASP.NET Core migration incrementally.",
+      "skills": [
+        "aspnet-middleware-di",
+        "aspnet-identity-auth"
+      ]
+    },
+    {
+      "name": "api-design-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews proposed REST endpoints for resource modelling, status codes, pagination and naming consistency.",
+      "skills": [
+        "rest-resource-modeling",
+        "rest-pagination-filtering",
+        "rest-error-responses"
+      ]
+    },
+    {
+      "name": "openapi-spec-writer",
+      "kind": "agent",
+      "purpose": "Writes or updates an OpenAPI 3.1 spec from existing routes and code, with examples.",
+      "skills": [
+        "openapi-spec-authoring",
+        "openapi-linting"
+      ]
+    },
+    {
+      "name": "api-breaking-change-checker",
+      "kind": "agent",
+      "purpose": "Compares API versions (OpenAPI or proto) and flags breaking changes with migration notes.",
+      "skills": [
+        "openapi-breaking-changes",
+        "grpc-buf-tooling",
+        "rest-api-versioning"
+      ]
+    },
+    {
+      "name": "api-error-consistency-auditor",
+      "kind": "agent",
+      "purpose": "Audits all endpoints for inconsistent error shapes and status codes and proposes a unified format.",
+      "skills": [
+        "rest-error-responses"
+      ]
+    },
+    {
+      "name": "proto-api-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews protobuf/gRPC service definitions for evolution safety, naming and error semantics.",
+      "skills": [
+        "grpc-protobuf-design",
+        "grpc-errors-deadlines"
+      ]
+    },
+    {
+      "name": "graphql-schema-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews GraphQL schema changes for nullability, naming, breaking changes and federation ownership.",
+      "skills": [
+        "graphql-schema-design",
+        "graphql-federation"
+      ]
+    },
+    {
+      "name": "graphql-resolver-builder",
+      "kind": "agent",
+      "purpose": "Implements resolvers with DataLoader batching, pagination and typed error results.",
+      "skills": [
+        "graphql-dataloader-resolvers",
+        "graphql-pagination-connections",
+        "graphql-errors-modeling"
+      ]
+    },
+    {
+      "name": "graphql-performance-auditor",
+      "kind": "agent",
+      "purpose": "Audits GraphQL servers for N+1 resolvers, unbounded queries and missing cost limits.",
+      "skills": [
+        "graphql-dataloader-resolvers",
+        "graphql-query-limits"
+      ]
+    },
+    {
+      "name": "rest-to-graphql-planner",
+      "kind": "agent",
+      "purpose": "Plans a GraphQL layer over existing REST services: schema mapping, data sources and rollout.",
+      "skills": [
+        "graphql-schema-design"
+      ]
+    },
+    {
+      "name": "webhook-handler-builder",
+      "kind": "agent",
+      "purpose": "Builds a webhook endpoint for a given provider with signature checks, dedupe and queued processing.",
+      "skills": [
+        "webhook-signature-verification",
+        "webhook-idempotent-handlers"
+      ]
+    },
+    {
+      "name": "webhook-security-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews webhook senders and receivers for missing signatures, replay, SSRF and secret handling.",
+      "skills": [
+        "webhook-signature-verification",
+        "webhook-delivery-design"
+      ]
+    },
+    {
+      "name": "webhook-consumer-tester",
+      "kind": "agent",
+      "purpose": "Writes tests replaying recorded webhook payloads, duplicates and out-of-order events.",
+      "skills": [
+        "webhook-local-testing",
+        "webhook-idempotent-handlers"
+      ]
+    },
+    {
+      "name": "oauth-flow-implementer",
+      "kind": "agent",
+      "purpose": "Implements OAuth/OIDC login and token handling for a given framework and provider.",
+      "skills": [
+        "oauth-auth-code-pkce",
+        "oidc-token-validation",
+        "oauth-refresh-rotation"
+      ]
+    },
+    {
+      "name": "auth-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews authentication and authorization code for token, session, CSRF and access-control flaws.",
+      "skills": [
+        "web-session-cookies",
+        "web-csrf-protection",
+        "oidc-token-validation",
+        "rbac-implementation"
+      ]
+    },
+    {
+      "name": "session-auth-auditor",
+      "kind": "agent",
+      "purpose": "Audits an app's login, logout, reset and MFA flows end to end and reports gaps with fixes.",
+      "skills": [
+        "web-session-cookies",
+        "web-password-storage",
+        "web-account-recovery"
+      ]
+    },
+    {
+      "name": "passkey-implementer",
+      "kind": "agent",
+      "purpose": "Adds passkey registration and sign-in to an existing auth system with fallback flows.",
+      "skills": [
+        "web-passkeys-webauthn"
+      ]
+    },
+    {
+      "name": "idp-migration-planner",
+      "kind": "agent",
+      "purpose": "Plans moving users from home-grown auth to a hosted IdP (or between IdPs) with password and session migration.",
+      "skills": [
+        "authjs-setup",
+        "auth0-integration",
+        "keycloak-oidc-setup"
+      ]
+    },
+    {
+      "name": "stripe-integration-builder",
+      "kind": "agent",
+      "purpose": "Implements Stripe Checkout or Payment Element flows with server-side intents and fulfilment.",
+      "skills": [
+        "stripe-checkout-elements",
+        "stripe-webhook-handling"
+      ]
+    },
+    {
+      "name": "payment-flow-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews payment code for double charges, missing idempotency, race conditions and rounding errors.",
+      "skills": [
+        "payment-state-machine",
+        "multi-currency-pricing",
+        "rest-idempotency-keys"
+      ]
+    },
+    {
+      "name": "subscription-billing-implementer",
+      "kind": "agent",
+      "purpose": "Implements plans, trials, upgrades/downgrades, dunning and entitlement sync.",
+      "skills": [
+        "stripe-billing-subscriptions",
+        "stripe-webhook-handling"
+      ]
+    },
+    {
+      "name": "payment-test-scenario-writer",
+      "kind": "agent",
+      "purpose": "Writes test scenarios for declines, 3DS, refunds, disputes and webhook retries.",
+      "skills": [
+        "stripe-testing",
+        "payment-sca-3ds",
+        "payment-refunds-disputes"
+      ]
+    },
+    {
+      "name": "swiftui-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews SwiftUI/Swift diffs for state misuse, concurrency issues, performance and accessibility.",
+      "skills": [
+        "swiftui-state-observation",
+        "swiftui-lists-performance",
+        "ios-swift-concurrency-ui"
+      ]
+    },
+    {
+      "name": "uikit-to-swiftui-migrator",
+      "kind": "agent",
+      "purpose": "Migrates UIKit screens to SwiftUI incrementally with hosting controllers and shared models.",
+      "skills": [
+        "swiftui-view-composition",
+        "swiftui-navigation"
+      ]
+    },
+    {
+      "name": "ios-feature-builder",
+      "kind": "agent",
+      "purpose": "Builds an iOS feature from a spec: views, models, networking, persistence and previews.",
+      "skills": [
+        "swiftui-view-composition",
+        "ios-networking",
+        "ios-swiftdata"
+      ]
+    },
+    {
+      "name": "ios-test-writer",
+      "kind": "agent",
+      "purpose": "Writes XCTest/Swift Testing unit tests and XCUITests for iOS features.",
+      "skills": [
+        "ios-xcuitest",
+        "swiftui-previews-testing"
+      ]
+    },
+    {
+      "name": "app-store-submission-checker",
+      "kind": "agent",
+      "purpose": "Checks an iOS build and metadata against review guidelines and privacy requirements before submission.",
+      "skills": [
+        "ios-app-review-guidelines",
+        "ios-testflight-release"
+      ]
+    },
+    {
+      "name": "compose-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Compose/Kotlin diffs for state hoisting, recomposition cost, lifecycle and architecture issues.",
+      "skills": [
+        "compose-state-hoisting",
+        "compose-recomposition-performance",
+        "android-viewmodel-flow"
+      ]
+    },
+    {
+      "name": "views-to-compose-migrator",
+      "kind": "agent",
+      "purpose": "Migrates XML View screens to Compose incrementally with interop and preserved behaviour.",
+      "skills": [
+        "compose-layouts-modifiers",
+        "compose-navigation"
+      ]
+    },
+    {
+      "name": "android-feature-builder",
+      "kind": "agent",
+      "purpose": "Builds an Android feature: Compose UI, ViewModel, repository, Room and Hilt wiring.",
+      "skills": [
+        "android-viewmodel-flow",
+        "android-room-database",
+        "android-hilt-di"
+      ]
+    },
+    {
+      "name": "android-test-writer",
+      "kind": "agent",
+      "purpose": "Writes unit tests for ViewModels/repositories and Compose UI tests.",
+      "skills": [
+        "compose-ui-testing"
+      ]
+    },
+    {
+      "name": "play-release-checker",
+      "kind": "agent",
+      "purpose": "Checks an Android release for target SDK, permissions, R8 crashes and Play policy declarations.",
+      "skills": [
+        "play-console-release",
+        "android-r8-shrinking"
+      ]
+    },
+    {
+      "name": "rn-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews React Native diffs for platform differences, list performance, navigation and native API misuse.",
+      "skills": [
+        "rn-list-performance",
+        "rn-styling-layout",
+        "rn-expo-router"
+      ]
+    },
+    {
+      "name": "rn-upgrade-assistant",
+      "kind": "agent",
+      "purpose": "Upgrades React Native/Expo versions, resolves native dependency breaks and enables the new architecture.",
+      "skills": [
+        "expo-sdk-upgrades",
+        "rn-native-modules"
+      ]
+    },
+    {
+      "name": "rn-perf-investigator",
+      "kind": "agent",
+      "purpose": "Investigates jank, slow startup and memory issues with RN profiling tools and fixes them.",
+      "skills": [
+        "rn-list-performance"
+      ]
+    },
+    {
+      "name": "rn-native-module-builder",
+      "kind": "agent",
+      "purpose": "Builds Expo/Turbo native modules wrapping iOS and Android APIs with typed JS interfaces.",
+      "skills": [
+        "rn-native-modules"
+      ]
+    },
+    {
+      "name": "flutter-code-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews Flutter/Dart diffs for rebuild cost, state management misuse, async gaps and platform issues.",
+      "skills": [
+        "flutter-widget-composition",
+        "flutter-riverpod-state",
+        "flutter-bloc-pattern"
+      ]
+    },
+    {
+      "name": "flutter-screen-builder",
+      "kind": "agent",
+      "purpose": "Builds Flutter screens from a spec with routing, state and responsive layout.",
+      "skills": [
+        "flutter-widget-composition",
+        "flutter-go-router"
+      ]
+    },
+    {
+      "name": "flutter-test-writer",
+      "kind": "agent",
+      "purpose": "Writes widget, golden and integration tests for Flutter features.",
+      "skills": [
+        "flutter-widget-testing"
+      ]
+    },
+    {
+      "name": "flutter-upgrade-migrator",
+      "kind": "agent",
+      "purpose": "Upgrades Flutter SDK and packages, fixing deprecations and breaking API changes.",
+      "skills": [
+        "flutter-platform-channels",
+        "flutter-flavors-release"
+      ]
+    },
+    {
+      "name": "extension-mv3-migrator",
+      "kind": "agent",
+      "purpose": "Migrates Manifest V2 extensions to V3: background to service worker, webRequest to declarativeNetRequest.",
+      "skills": [
+        "chrome-mv3-extensions",
+        "extension-messaging-storage"
+      ]
+    },
+    {
+      "name": "extension-security-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews extensions for over-broad permissions, unsafe content-script messaging and remote code.",
+      "skills": [
+        "extension-permissions",
+        "extension-content-scripts"
+      ]
+    },
+    {
+      "name": "extension-feature-builder",
+      "kind": "agent",
+      "purpose": "Builds extension features across popup, content script and service worker with typed messaging.",
+      "skills": [
+        "chrome-mv3-extensions",
+        "extension-content-scripts",
+        "extension-messaging-storage"
+      ]
+    },
+    {
+      "name": "extension-store-submission-checker",
+      "kind": "agent",
+      "purpose": "Checks listings, permission justifications and privacy disclosures before store submission.",
+      "skills": [
+        "extension-store-publishing",
+        "extension-permissions"
+      ]
+    },
+    {
+      "name": "electron-security-auditor",
+      "kind": "agent",
+      "purpose": "Audits Electron apps against the security checklist and reports risky IPC, navigation and config.",
+      "skills": [
+        "electron-security-hardening",
+        "electron-process-ipc"
+      ]
+    },
+    {
+      "name": "electron-to-tauri-migrator",
+      "kind": "agent",
+      "purpose": "Plans and performs Electron to Tauri migration: IPC mapping, native APIs, capabilities.",
+      "skills": [
+        "electron-process-ipc",
+        "tauri-commands-ipc",
+        "tauri-capabilities"
+      ]
+    },
+    {
+      "name": "desktop-release-builder",
+      "kind": "agent",
+      "purpose": "Sets up packaging, code signing, notarization and auto-update for Electron or Tauri.",
+      "skills": [
+        "electron-packaging-signing",
+        "electron-auto-update",
+        "tauri-bundling-updater"
+      ]
+    },
+    {
+      "name": "tauri-command-builder",
+      "kind": "agent",
+      "purpose": "Implements Tauri commands and plugins with typed frontend bindings and permission scopes.",
+      "skills": [
+        "tauri-commands-ipc",
+        "tauri-plugins"
+      ]
+    },
+    {
+      "name": "pwa-readiness-auditor",
+      "kind": "agent",
+      "purpose": "Audits installability, offline behaviour, manifest and service worker update flow and reports fixes.",
+      "skills": [
+        "pwa-web-app-manifest",
+        "pwa-service-worker-caching"
+      ]
+    },
+    {
+      "name": "service-worker-builder",
+      "kind": "agent",
+      "purpose": "Implements a service worker with Workbox for caching, offline fallback and background sync.",
+      "skills": [
+        "workbox-recipes",
+        "pwa-offline-first-data"
+      ]
+    },
+    {
+      "name": "i18n-string-extractor",
+      "kind": "agent",
+      "purpose": "Finds hard-coded UI strings, moves them to message catalogs with ICU syntax and wires the i18n library.",
+      "skills": [
+        "i18n-string-extraction",
+        "i18n-icu-messages",
+        "i18n-frontend-libraries"
+      ]
+    },
+    {
+      "name": "i18n-locale-qa",
+      "kind": "agent",
+      "purpose": "QAs localised builds for truncation, plural errors, untranslated strings, Intl formatting and RTL layout.",
+      "skills": [
+        "i18n-intl-formatting",
+        "i18n-rtl-layout"
+      ]
+    },
+    {
+      "name": "mobile-crash-triager",
+      "kind": "agent",
+      "purpose": "Groups crash reports by root cause, symbolicates stack traces, and proposes fixes ranked by affected users.",
+      "skills": [
+        "mobile-crash-reporting"
+      ]
+    },
+    {
+      "name": "mobile-a11y-auditor",
+      "kind": "agent",
+      "purpose": "Audits iOS/Android/RN/Flutter screens for screen-reader labels, dynamic type, contrast and touch targets.",
+      "skills": [
+        "mobile-accessibility"
+      ]
+    },
+    {
+      "name": "mobile-deep-link-verifier",
+      "kind": "agent",
+      "purpose": "Verifies universal/app link association files, routing and fallback behaviour across install states.",
+      "skills": [
+        "mobile-deep-links"
+      ]
+    },
+    {
+      "name": "mobile-sync-reviewer",
+      "kind": "agent",
+      "purpose": "Reviews offline sync and push handling code for data loss, conflict and duplicate-delivery bugs.",
+      "skills": [
+        "mobile-offline-sync",
+        "mobile-push-strategy"
+      ]
+    }
+  ]
+}
