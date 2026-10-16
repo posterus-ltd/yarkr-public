@@ -812,6 +812,11 @@
       "purpose": "Set up and structure docs sites with Docusaurus, MkDocs Material or Starlight."
     },
     {
+      "name": "markdown-in-app-docs",
+      "kind": "skill",
+      "purpose": "Ship user docs inside a React SPA at /docs from bundled markdown files, with a GitHub-docs-style sidebar, outline and pager."
+    },
+    {
       "name": "docs-prose-linting",
       "kind": "skill",
       "purpose": "Lint documentation prose with Vale and markdownlint using a house style."

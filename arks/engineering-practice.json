@@ -986,6 +986,10 @@
         {
           "package": "docs-versioning",
           "required": false
+        },
+        {
+          "package": "markdown-in-app-docs",
+          "required": false
         }
       ]
     },
