@@ -2647,6 +2647,11 @@
         "mobile-offline-sync",
         "mobile-push-strategy"
       ]
+    },
+    {
+      "name": "spa-about-page",
+      "kind": "skill",
+      "purpose": "Add an About page to a Vite SPA with the build commit hash, a rollup-plugin-license third-party license list and Impressum, terms and privacy links opening in new tabs."
     }
   ]
 }
