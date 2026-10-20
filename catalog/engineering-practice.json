@@ -634,7 +634,7 @@
     {
       "name": "arc42-documentation",
       "kind": "skill",
-      "purpose": "Document an architecture with the arc42 template, filling only the sections that earn their keep."
+      "purpose": "Keep a lightweight arc42 doc (one markdown file per chapter, Mermaid topology, ADRs) updated with every change."
     },
     {
       "name": "diagrams-as-code",
