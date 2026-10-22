@@ -322,6 +322,11 @@
       "purpose": "Secure remote MCP servers with OAuth 2.1 authorization, token validation, scopes and per-user data isolation."
     },
     {
+      "name": "remote-mcp-server",
+      "kind": "skill",
+      "purpose": "Add a product-hosted remote MCP server: OAuth 2.1 with DCR, PKCE and a consent screen, tools running as the approving user under existing authorization (adapters for Supabase, Postgres RLS, app-layer, Firebase, external IdP)."
+    },
+    {
       "name": "mcp-server-testing",
       "kind": "skill",
       "purpose": "Test MCP servers with MCP Inspector, scripted client sessions and contract tests for tool schemas and error results."

@@ -612,6 +612,10 @@
           "required": false
         },
         {
+          "package": "remote-mcp-server",
+          "required": false
+        },
+        {
           "package": "mcp-client-integration",
           "required": false
         }
