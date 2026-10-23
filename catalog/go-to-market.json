@@ -27,6 +27,21 @@
       "purpose": "Check a PRD for missing user evidence, vague requirements, unmeasurable goals, unowned risks and unresolved questions."
     },
     {
+      "name": "idea-to-prd",
+      "kind": "skill",
+      "purpose": "Turn a rough idea into a PRD: brainstorm extensions, interview the user in short multiple-choice survey rounds, write numbered testable requirements."
+    },
+    {
+      "name": "prd-prototype",
+      "kind": "skill",
+      "purpose": "Build a fully mocked clickable frontend prototype from a PRD and iterate on user feedback, updating prototype and PRD together each round."
+    },
+    {
+      "name": "prototype-to-spec",
+      "kind": "skill",
+      "purpose": "Interview the user on technical feasibility from a PRD and prototype, then write a lightweight arc42 spec folder centred on ADRs, topology and tech stack."
+    },
+    {
       "name": "roadmap-now-next-later",
       "kind": "skill",
       "purpose": "Build a Now/Next/Later roadmap from a backlog, with confidence levels and the evidence behind each placement."

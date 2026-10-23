@@ -30,6 +30,34 @@
       ]
     },
     {
+      "name": "idea-to-spec",
+      "type": "skill",
+      "topic": "idea to PRD, prototype and architecture spec",
+      "description": "For founders, PMs and builders starting something new: agents turn a rough idea into an interviewed PRD, a mocked clickable prototype refined through feedback rounds, and a lightweight arc42 spec with ADRs, topology and tech stack.",
+      "items": [
+        {
+          "package": "idea-to-prd",
+          "required": true
+        },
+        {
+          "package": "prd-prototype",
+          "required": true
+        },
+        {
+          "package": "prototype-to-spec",
+          "required": true
+        },
+        {
+          "package": "arc42-documentation",
+          "required": false
+        },
+        {
+          "package": "prd-review-checklist",
+          "required": false
+        }
+      ]
+    },
+    {
       "name": "product-roadmapping",
       "type": "skill",
       "topic": "product roadmaps",
