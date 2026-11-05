@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "databricks": {
+      "type": "http",
+      "url": "https://${DATABRICKS_HOST}/ai-gateway/mcp-services/system.ai.dbsql?o=${DATABRICKS_WORKSPACE_ID}",
+      "oauth": {
+        "clientId": "https://claude.ai/oauth/claude-code-client-metadata",
+        "callbackPort": 3118
+      }
+    }
+  }
+}

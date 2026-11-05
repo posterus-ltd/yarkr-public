@@ -200,7 +200,7 @@
       "source": {
         "type": "http",
         "url": "https://mcp.apify.com",
-        "docs": "https://docs.apify.com/platform/integrations/mcp",
+        "docs": "https://docs.apify.com/mcp",
         "env": []
       }
     },
@@ -292,9 +292,8 @@
       "source": {
         "type": "http",
         "url": "https://mcp.asana.com/v2/mcp",
-        "docs": "https://developers.asana.com/docs/using-asanas-mcp-server",
-        "env": [],
-        "note": "OAuth; v1 beta https://mcp.asana.com/sse shut down 2026-05-11."
+        "docs": "https://developers.asana.com/docs/connecting-mcp-clients-to-asanas-v2-server",
+        "env": []
       }
     },
     {
@@ -333,7 +332,7 @@
       "source": {
         "type": "http",
         "url": "https://mcp.atlassian.com/v2/mcp",
-        "docs": "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/",
+        "docs": "https://support.atlassian.com/atlassian-ai-gateway/docs/get-started-with-the-atlassian-remote-mcp-server/",
         "env": []
       }
     },
@@ -359,13 +358,10 @@
         "runner": "npx",
         "package": "@auth0/auth0-mcp-server",
         "args": [
-          "-y",
-          "@auth0/auth0-mcp-server",
           "run"
         ],
         "docs": "https://github.com/auth0/auth0-mcp-server",
-        "env": [],
-        "note": "Authenticate first with npx @auth0/auth0-mcp-server init (device flow); credentials stored in OS keychain."
+        "env": []
       }
     },
     {
@@ -467,10 +463,10 @@
       "source": {
         "type": "stdio",
         "runner": "uvx",
-        "package": "awslabs.aws-documentation-mcp-server",
+        "package": "awslabs.aws-documentation-mcp-server@latest",
         "docs": "https://github.com/awslabs/mcp/tree/main/src/aws-documentation-mcp-server",
         "env": [
-          "AWS_DOCUMENTATION_PARTITION (optional: aws or aws-cn)"
+          "AWS_DOCUMENTATION_PARTITION"
         ]
       }
     },
@@ -651,12 +647,12 @@
       "source": {
         "type": "stdio",
         "runner": "npx",
-        "package": "@azure/mcp",
+        "package": "@azure/mcp@latest",
         "args": [
           "server",
           "start"
         ],
-        "docs": "https://github.com/microsoft/mcp/tree/main/servers/Azure.Mcp.Server",
+        "docs": "https://learn.microsoft.com/azure/developer/azure-mcp-server/",
         "env": []
       }
     },
@@ -782,9 +778,8 @@
       "source": {
         "type": "http",
         "url": "https://mcp.box.com",
-        "docs": "https://developer.box.com/guides/box-mcp/remote",
-        "env": [],
-        "note": "OAuth via a Box app (client ID/secret from Box Admin Console)."
+        "docs": "https://developer.box.com/guides/box-mcp/setup",
+        "env": []
       }
     },
     {
@@ -852,12 +847,11 @@
       "official": true,
       "source": {
         "type": "http",
-        "url": "https://mcp.brightdata.com/mcp?token=<API_TOKEN>",
+        "url": "https://mcp.brightdata.com/mcp?token=${BRIGHTDATA_API_TOKEN}",
         "docs": "https://docs.brightdata.com/products/mcp-server/remote/quickstart",
         "env": [
           "BRIGHTDATA_API_TOKEN"
-        ],
-        "note": "SSE variant: https://mcp.brightdata.com/sse?token=... Local: npx -y @brightdata/mcp with API_TOKEN."
+        ]
       }
     },
     {
@@ -867,9 +861,11 @@
       "official": true,
       "source": {
         "type": "http",
-        "url": "https://mcp.browserbase.com/mcp",
-        "docs": "https://github.com/browserbase/mcp-server-browserbase",
-        "env": []
+        "url": "https://mcp.browserbase.com/mcp?browserbaseApiKey=${BROWSERBASE_API_KEY}",
+        "docs": "https://docs.browserbase.com/integrations/mcp/setup",
+        "env": [
+          "BROWSERBASE_API_KEY"
+        ]
       }
     },
     {
@@ -880,7 +876,7 @@
       "source": {
         "type": "http",
         "url": "https://mcp.browserstack.com/mcp",
-        "docs": "https://github.com/browserstack/mcp-server",
+        "docs": "https://www.browserstack.com/docs/browserstack-mcp-server/get-started/remote-mcp-server",
         "env": []
       }
     },
@@ -1030,9 +1026,9 @@
         ],
         "docs": "https://github.com/chroma-core/chroma-mcp",
         "env": [
-          "CHROMA_TENANT",
+          "CHROMA_API_KEY",
           "CHROMA_DATABASE",
-          "CHROMA_API_KEY"
+          "CHROMA_TENANT"
         ]
       }
     },
@@ -1044,7 +1040,7 @@
       "source": {
         "type": "stdio",
         "runner": "npx",
-        "package": "chrome-devtools-mcp",
+        "package": "chrome-devtools-mcp@latest",
         "docs": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
         "env": []
       }
@@ -1106,13 +1102,21 @@
       "official": true,
       "source": {
         "type": "stdio",
-        "runner": "uvx",
+        "runner": "uv",
         "package": "mcp-clickhouse",
+        "args": [
+          "run",
+          "--with",
+          "mcp-clickhouse",
+          "--python",
+          "3.12",
+          "mcp-clickhouse"
+        ],
         "docs": "https://github.com/ClickHouse/mcp-clickhouse",
         "env": [
           "CLICKHOUSE_HOST",
-          "CLICKHOUSE_USER",
-          "CLICKHOUSE_PASSWORD"
+          "CLICKHOUSE_PASSWORD",
+          "CLICKHOUSE_USER"
         ]
       }
     },
@@ -1137,8 +1141,7 @@
         "type": "http",
         "url": "https://mcp.clickup.com/mcp",
         "docs": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
-        "env": [],
-        "note": "OAuth 2.1 + PKCE only; API keys not supported."
+        "env": []
       }
     },
     {
@@ -1209,7 +1212,7 @@
       "source": {
         "type": "http",
         "url": "https://docs.mcp.cloudflare.com/mcp",
-        "docs": "https://github.com/cloudflare/mcp-server-cloudflare",
+        "docs": "https://github.com/cloudflare/mcp-server-cloudflare/tree/main/apps/docs-ai-search",
         "env": []
       }
     },
@@ -1520,9 +1523,12 @@
       "official": true,
       "source": {
         "type": "http",
-        "url": "https://<workspace-hostname>/api/2.0/mcp/sql",
-        "docs": "https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp",
-        "env": []
+        "url": "https://${DATABRICKS_HOST}/ai-gateway/mcp-services/system.ai.dbsql?o=${DATABRICKS_WORKSPACE_ID}",
+        "docs": "https://docs.databricks.com/aws/en/agents/mcp-tools/databricks-sql",
+        "env": [
+          "DATABRICKS_HOST",
+          "DATABRICKS_WORKSPACE_ID"
+        ]
       }
     },
     {
@@ -1532,10 +1538,9 @@
       "official": true,
       "source": {
         "type": "http",
-        "url": "https://mcp.datadoghq.com/api/unstable/mcp-server/mcp",
+        "url": "https://mcp.datadoghq.com/v1/mcp",
         "docs": "https://docs.datadoghq.com/bits_ai/mcp_server/setup/",
-        "env": [],
-        "note": "US1 endpoint; other sites use mcp.us3.datadoghq.com, mcp.us5.datadoghq.com, mcp.datadoghq.eu, mcp.ap1.datadoghq.com, mcp.ap2.datadoghq.com with the same path. OAuth recommended; PAT via Authorization: Bearer also supported."
+        "env": []
       }
     },
     {
@@ -1573,9 +1578,11 @@
       "official": true,
       "source": {
         "type": "http",
-        "url": "https://cloud.getdbt.com/api/ai/v1/mcp/",
+        "url": "https://${DBT_HOST:-cloud.getdbt.com}/api/ai/v1/mcp/",
         "docs": "https://docs.getdbt.com/docs/dbt-ai/setup-remote-mcp",
-        "env": []
+        "env": [
+          "DBT_HOST"
+        ]
       }
     },
     {
@@ -1731,9 +1738,9 @@
         "url": "https://<environment-id>.apps.dynatrace.com/platform-reserved/mcp-gateway/v0.1/servers/dynatrace-mcp/mcp",
         "docs": "https://docs.dynatrace.com/docs/dynatrace-intelligence/dynatrace-mcp",
         "env": [
-          "DT_PLATFORM_TOKEN (Authorization: Bearer header; scopes mcp-gateway:servers:invoke, mcp-gateway:servers:read + tool scopes)"
-        ],
-        "note": "Replaces the deprecated local @dynatrace-oss/dynatrace-mcp-server npm package. OAuth client (authorization code) also supported."
+          "DT_ENVIRONMENT",
+          "DT_PLATFORM_TOKEN"
+        ]
       }
     },
     {
@@ -1744,9 +1751,10 @@
       "source": {
         "type": "http",
         "url": "https://<kibana-url>/api/agent_builder/mcp",
-        "docs": "https://www.elastic.co/docs/solutions/search/agent-builder/mcp-server",
+        "docs": "https://www.elastic.co/docs/explore-analyze/ai-features/agent-builder/mcp-server",
         "env": [
-          "ES_API_KEY"
+          "ES_API_KEY",
+          "KIBANA_URL"
         ]
       }
     },
@@ -1758,9 +1766,8 @@
       "source": {
         "type": "http",
         "url": "https://api.elevenlabs.io/v1/mcp",
-        "docs": "https://github.com/elevenlabs/elevenlabs-mcp",
-        "env": [],
-        "note": "OAuth. The local uvx elevenlabs-mcp server (ELEVENLABS_API_KEY) is marked deprecated in favour of this hosted endpoint."
+        "docs": "https://elevenlabs.io/docs/agents-platform/operate/hosted-mcp",
+        "env": []
       }
     },
     {
@@ -1806,9 +1813,8 @@
       "source": {
         "type": "http",
         "url": "https://mcp.exa.ai/mcp",
-        "docs": "https://exa.ai/docs/reference/exa-mcp",
-        "env": [],
-        "note": "Keyless (rate-limited), OAuth (?login), or x-api-key header with EXA_API_KEY. Local: npx -y exa-mcp-server."
+        "docs": "https://exa.ai/docs/get-started/exa-mcp",
+        "env": []
       }
     },
     {
@@ -1909,7 +1915,7 @@
       "source": {
         "type": "stdio",
         "runner": "npx",
-        "package": "firebase-tools",
+        "package": "firebase-tools@latest",
         "args": [
           "mcp"
         ],
@@ -2094,9 +2100,11 @@
       "official": true,
       "source": {
         "type": "http",
-        "url": "https://gitlab.com/api/v4/mcp",
+        "url": "https://${GITLAB_HOST:-gitlab.com}/api/v4/mcp",
         "docs": "https://docs.gitlab.com/user/model_context_protocol/mcp_server/",
-        "env": []
+        "env": [
+          "GITLAB_HOST"
+        ]
       }
     },
     {
@@ -2314,11 +2322,13 @@
         "runner": "npx",
         "package": "@toolbox-sdk/server",
         "args": [
-          "--prebuilt=<database>",
+          "--prebuilt=${TOOLBOX_PREBUILT:-postgres}",
           "--stdio"
         ],
-        "docs": "https://github.com/googleapis/genai-toolbox",
-        "env": []
+        "docs": "https://mcp-toolbox.dev/documentation/configuration/prebuilt-configs/",
+        "env": [
+          "TOOLBOX_PREBUILT"
+        ]
       }
     },
     {
@@ -2399,10 +2409,9 @@
         "package": "mcp-grafana",
         "docs": "https://github.com/grafana/mcp-grafana",
         "env": [
-          "GRAFANA_URL",
-          "GRAFANA_SERVICE_ACCOUNT_TOKEN"
-        ],
-        "note": "Also published as Docker image grafana/mcp-grafana."
+          "GRAFANA_SERVICE_ACCOUNT_TOKEN",
+          "GRAFANA_URL"
+        ]
       }
     },
     {
@@ -2563,10 +2572,9 @@
       "official": true,
       "source": {
         "type": "http",
-        "url": "https://huggingface.co/mcp",
+        "url": "https://huggingface.co/mcp?login",
         "docs": "https://huggingface.co/docs/hub/en/hf-mcp-server",
-        "env": [],
-        "note": "Sign in or use an HF token; tool selection configured at huggingface.co/settings/mcp."
+        "env": []
       }
     },
     {
@@ -2716,7 +2724,7 @@
       "source": {
         "type": "stdio",
         "runner": "npx",
-        "package": "kubernetes-mcp-server",
+        "package": "kubernetes-mcp-server@latest",
         "docs": "https://github.com/containers/kubernetes-mcp-server",
         "env": []
       }
@@ -3033,10 +3041,9 @@
       "official": true,
       "source": {
         "type": "http",
-        "url": "https://mcp.miro.com",
-        "docs": "https://developers.miro.com/docs/connecting-miro-mcp-to-ai-coding-tools",
-        "env": [],
-        "note": "OAuth 2.1 with DCR; Enterprise requires admin enablement."
+        "url": "https://mcp.miro.com/",
+        "docs": "https://developers.miro.com/docs/connecting-to-miro-mcp",
+        "env": []
       }
     },
     {
@@ -3060,8 +3067,7 @@
         "type": "http",
         "url": "https://mcp.monday.com/mcp",
         "docs": "https://github.com/mondaycom/mcp",
-        "env": [],
-        "note": "OAuth. Local: npx @mondaydotcomorg/monday-api-mcp@latest with MONDAY_TOKEN."
+        "env": []
       }
     },
     {
@@ -3072,12 +3078,13 @@
       "source": {
         "type": "stdio",
         "runner": "npx",
-        "package": "mongodb-mcp-server",
+        "package": "mongodb-mcp-server@latest",
+        "args": [
+          "--readOnly"
+        ],
         "docs": "https://github.com/mongodb-js/mongodb-mcp-server",
         "env": [
-          "MDB_MCP_CONNECTION_STRING",
-          "MDB_MCP_API_CLIENT_ID",
-          "MDB_MCP_API_CLIENT_SECRET"
+          "MDB_MCP_CONNECTION_STRING"
         ]
       }
     },
@@ -3147,10 +3154,11 @@
       "official": true,
       "source": {
         "type": "http",
-        "url": "https://<your-n8n-host>/mcp-server/http",
-        "docs": "https://docs.n8n.io/advanced-ai/accessing-n8n-mcp-server/",
-        "env": [],
-        "note": "Per-instance URL from Settings > Instance-level MCP. OAuth (recommended) or personal access token as Bearer."
+        "url": "https://${N8N_HOST}/mcp-server/http",
+        "docs": "https://docs.n8n.io/connect/connect-to-n8n-mcp-server",
+        "env": [
+          "N8N_HOST"
+        ]
       }
     },
     {
@@ -3190,7 +3198,7 @@
       "official": true,
       "source": {
         "type": "http",
-        "url": "https://netlify-mcp.netlify.app/mcp",
+        "url": "https://mcp.netlify.com/mcp",
         "docs": "https://docs.netlify.com/welcome/build-with-ai/netlify-mcp-server/",
         "env": []
       }
@@ -3204,8 +3212,7 @@
         "type": "http",
         "url": "https://mcp.newrelic.com/mcp/",
         "docs": "https://docs.newrelic.com/docs/agentic-ai/mcp/setup/",
-        "env": [],
-        "note": "EU accounts: https://mcp.eu.newrelic.com/mcp/. OAuth recommended; User API key (NRAK-...) also supported."
+        "env": []
       }
     },
     {
@@ -3453,7 +3460,7 @@
       "source": {
         "type": "http",
         "url": "https://mcp.paypal.com/http",
-        "docs": "https://developer.paypal.com/tools/mcp-server/",
+        "docs": "https://developer.paypal.com/ai-tools/mcp-server",
         "env": []
       }
     },
@@ -3490,9 +3497,8 @@
       "source": {
         "type": "http",
         "url": "https://api.perplexity.ai/mcp",
-        "docs": "https://docs.perplexity.ai/guides/mcp-server",
-        "env": [],
-        "note": "OAuth or API key as Bearer token. Local: npx -y @perplexity-ai/mcp-server with PERPLEXITY_API_KEY."
+        "docs": "https://docs.perplexity.ai/docs/getting-started/integrations/mcp-server",
+        "env": []
       }
     },
     {
@@ -3516,7 +3522,7 @@
         "type": "stdio",
         "runner": "npx",
         "package": "@pinecone-database/mcp",
-        "docs": "https://docs.pinecone.io/guides/operations/mcp-server",
+        "docs": "https://docs.pinecone.io/guides/agents/mcp-server",
         "env": [
           "PINECONE_API_KEY"
         ]
@@ -3574,7 +3580,7 @@
       "source": {
         "type": "http",
         "url": "https://mcp.pscale.dev/mcp/planetscale",
-        "docs": "https://planetscale.com/docs/connect/mcp",
+        "docs": "https://planetscale.com/docs/mcp-server",
         "env": []
       }
     },
@@ -3586,7 +3592,7 @@
       "source": {
         "type": "stdio",
         "runner": "npx",
-        "package": "@playwright/mcp",
+        "package": "@playwright/mcp@latest",
         "docs": "https://github.com/microsoft/playwright-mcp",
         "env": []
       }
@@ -3630,8 +3636,7 @@
         "type": "http",
         "url": "https://mcp.posthog.com/mcp",
         "docs": "https://posthog.com/docs/model-context-protocol",
-        "env": [],
-        "note": "Auth server routes to US/EU automatically. Installer: npx @posthog/wizard mcp add."
+        "env": []
       }
     },
     {
@@ -3714,9 +3719,7 @@
         "type": "http",
         "url": "https://mcp.ai.pulumi.com/mcp",
         "docs": "https://www.pulumi.com/docs/iac/guides/ai-integration/mcp-server/",
-        "env": [
-          "PULUMI_MCP_TOKEN (optional, Authorization: Bearer header for headless use)"
-        ]
+        "env": []
       }
     },
     {
@@ -3730,10 +3733,9 @@
         "package": "mcp-server-qdrant",
         "docs": "https://github.com/qdrant/mcp-server-qdrant",
         "env": [
-          "QDRANT_URL",
-          "QDRANT_API_KEY",
           "COLLECTION_NAME",
-          "EMBEDDING_MODEL"
+          "QDRANT_API_KEY",
+          "QDRANT_URL"
         ]
       }
     },
@@ -3795,16 +3797,15 @@
       "source": {
         "type": "stdio",
         "runner": "uvx",
-        "package": "redis-mcp-server",
+        "package": "redis-mcp-server@latest",
         "args": [
+          "redis-mcp-server",
           "--url",
-          "<redis-url>"
+          "${REDIS_URL}"
         ],
         "docs": "https://github.com/redis/mcp-redis",
         "env": [
-          "REDIS_HOST",
-          "REDIS_PORT",
-          "REDIS_PWD"
+          "REDIS_URL"
         ]
       }
     },
@@ -3818,7 +3819,7 @@
         "url": "https://mcp.render.com/mcp",
         "docs": "https://render.com/docs/mcp-server",
         "env": [
-          "RENDER_API_KEY (Authorization: Bearer header, when not using OAuth)"
+          "RENDER_API_KEY"
         ]
       }
     },
@@ -3989,11 +3990,14 @@
       "purpose": "Semgrep's official hosted MCP server (experimental): scan code with Semgrep rules for security issues and query findings.",
       "official": true,
       "source": {
-        "type": "http",
-        "url": "https://mcp.semgrep.ai/mcp",
-        "docs": "https://github.com/semgrep/mcp",
-        "env": [],
-        "note": "Hosted server marked experimental. The standalone semgrep-mcp PyPI package is deprecated; local MCP now ships in the semgrep binary."
+        "type": "stdio",
+        "runner": "semgrep",
+        "package": "semgrep",
+        "args": [
+          "mcp"
+        ],
+        "docs": "https://github.com/semgrep/semgrep/tree/develop/cli/src/semgrep/mcp",
+        "env": []
       }
     },
     {
@@ -4096,8 +4100,8 @@
       "source": {
         "type": "stdio",
         "runner": "npx",
-        "package": "@shopify/dev-mcp",
-        "docs": "https://shopify.dev/docs/apps/build/devmcp",
+        "package": "@shopify/dev-mcp@latest",
+        "docs": "https://shopify.dev/docs/apps/build/ai-toolkit",
         "env": []
       }
     },
@@ -4202,17 +4206,14 @@
       "source": {
         "type": "stdio",
         "runner": "npx",
-        "package": "snyk",
+        "package": "snyk@latest",
         "args": [
-          "-y",
-          "snyk@latest",
           "mcp",
           "-t",
           "stdio"
         ],
-        "docs": "https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/cline-guide.md",
-        "env": [],
-        "note": "Authenticate with snyk auth (browser) or SNYK_TOKEN."
+        "docs": "https://docs.snyk.io/agent-security/agentic-security-with-snyk-studio/quickstart-guides/cline-guide",
+        "env": []
       }
     },
     {
@@ -4251,8 +4252,8 @@
         ],
         "docs": "https://github.com/SonarSource/sonarqube-mcp-server",
         "env": [
-          "SONARQUBE_TOKEN",
-          "SONARQUBE_ORG (Cloud) or SONARQUBE_URL (Server)"
+          "SONARQUBE_ORG",
+          "SONARQUBE_TOKEN"
         ]
       }
     },
@@ -4400,7 +4401,7 @@
       "source": {
         "type": "http",
         "url": "https://mcp.supabase.com/mcp",
-        "docs": "https://supabase.com/docs/guides/getting-started/mcp",
+        "docs": "https://supabase.com/docs/guides/ai-tools/mcp",
         "env": []
       }
     },
@@ -4443,8 +4444,7 @@
         "type": "http",
         "url": "https://mcp.tavily.com/mcp/",
         "docs": "https://docs.tavily.com/documentation/mcp",
-        "env": [],
-        "note": "OAuth, Authorization header, or ?tavilyApiKey=<TAVILY_API_KEY>. Local: npx -y tavily-mcp with TAVILY_API_KEY."
+        "env": []
       }
     },
     {
@@ -4456,11 +4456,14 @@
         "type": "stdio",
         "runner": "docker",
         "package": "hashicorp/terraform-mcp-server",
+        "args": [
+          "run",
+          "-i",
+          "--rm",
+          "hashicorp/terraform-mcp-server"
+        ],
         "docs": "https://github.com/hashicorp/terraform-mcp-server",
-        "env": [
-          "TFE_TOKEN (optional, for HCP Terraform/TFE)",
-          "TFE_ADDRESS (optional)"
-        ]
+        "env": []
       }
     },
     {
@@ -4512,8 +4515,7 @@
         "type": "http",
         "url": "https://ai.todoist.net/mcp",
         "docs": "https://github.com/Doist/todoist-mcp",
-        "env": [],
-        "note": "OAuth. Local: npx @doist/todoist-mcp with TODOIST_API_KEY (old @doist/todoist-ai is deprecated)."
+        "env": []
       }
     },
     {
@@ -4538,10 +4540,16 @@
         "runner": "npx",
         "package": "@twilio-alpha/mcp",
         "args": [
-          "<ACCOUNT_SID>/<API_KEY>:<API_SECRET>"
+          "${TWILIO_ACCOUNT_SID}/${TWILIO_API_KEY}:${TWILIO_API_SECRET}",
+          "--services",
+          "twilio_api_v2010"
         ],
         "docs": "https://github.com/twilio-labs/mcp",
-        "env": []
+        "env": [
+          "TWILIO_ACCOUNT_SID",
+          "TWILIO_API_KEY",
+          "TWILIO_API_SECRET"
+        ]
       }
     },
     {
@@ -4747,9 +4755,8 @@
       "source": {
         "type": "http",
         "url": "https://mcp.zapier.com/api/v1/connect",
-        "docs": "https://docs.zapier.com/mcp/get-started/connect/other",
-        "env": [],
-        "note": "OAuth for supported clients, or a connection token as Bearer header / ?token= (keep secret)."
+        "docs": "https://docs.zapier.com/mcp/get-started/connect/claude-code",
+        "env": []
       }
     },
     {

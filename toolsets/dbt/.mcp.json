@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "dbt": {
+      "type": "http",
+      "url": "https://${DBT_HOST:-cloud.getdbt.com}/api/ai/v1/mcp/"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "heroku": {
+      "command": "npx",
+      "args": ["-y", "@heroku/mcp-server"],
+      "env": { "HEROKU_API_KEY": "${HEROKU_API_KEY}" }
+    }
+  }
+}

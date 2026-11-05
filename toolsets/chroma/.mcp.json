@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "chroma": {
+      "command": "uvx",
+      "args": ["chroma-mcp", "--client-type", "cloud"],
+      "env": {
+        "CHROMA_TENANT": "${CHROMA_TENANT}",
+        "CHROMA_DATABASE": "${CHROMA_DATABASE}",
+        "CHROMA_API_KEY": "${CHROMA_API_KEY}"
+      }
+    }
+  }
+}

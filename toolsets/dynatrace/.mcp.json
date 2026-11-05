@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "dynatrace": {
+      "type": "http",
+      "url": "${DT_ENVIRONMENT}/platform-reserved/mcp-gateway/v0.1/servers/dynatrace-mcp/mcp",
+      "headers": { "Authorization": "Bearer ${DT_PLATFORM_TOKEN}" }
+    }
+  }
+}

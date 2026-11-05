@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "google-mcp-toolbox": {
+      "command": "npx",
+      "args": ["-y", "@toolbox-sdk/server", "--prebuilt=${TOOLBOX_PREBUILT:-postgres}", "--stdio"]
+    }
+  }
+}
