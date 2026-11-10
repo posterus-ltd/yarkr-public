@@ -2652,6 +2652,26 @@
       "name": "spa-about-page",
       "kind": "skill",
       "purpose": "Add an About page to a Vite SPA with the build commit hash, a rollup-plugin-license third-party license list and Impressum, terms and privacy links opening in new tabs."
+    },
+    {
+      "name": "spa-not-found-page",
+      "kind": "skill",
+      "purpose": "Add a full-page 404 to a React SPA with the requested path, Go back and home actions, noindex, and the same page for guarded routes."
+    },
+    {
+      "name": "spa-error-boundary-page",
+      "kind": "skill",
+      "purpose": "Add a full-page error fallback to a React SPA with Go back and Reload actions, a copyable error details panel and stale-build handling."
+    },
+    {
+      "name": "spa-new-version-prompt",
+      "kind": "skill",
+      "purpose": "Prompt users of a Vite SPA to reload when a new build is deployed, via vite:preloadError and a polled build-time version.json."
+    },
+    {
+      "name": "spa-pwa-install",
+      "kind": "skill",
+      "purpose": "Make a Vite SPA an installable PWA (manifest, icons, prompt-to-update service worker) and show mobile browser users platform-specific install steps."
     }
   ]
 }
