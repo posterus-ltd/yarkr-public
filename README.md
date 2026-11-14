@@ -1,5 +1,9 @@
 # posterus-ltd public ark library
 
+<!-- yarkr:badges:start -->
+[![Indexed on Yarkr](https://api.yarkr.com/functions/v1/api/api/v1/badges/repos/posterus-ltd/yarkr-public/version.svg)](https://yarkr.com/repos?q=posterus-ltd/yarkr-public)
+<!-- yarkr:badges:end -->
+
 Public skills, agents and MCP toolsets for [Yarkr](https://yarkr.com), plus the plan for ~1000 public arks built
 from them. Everything here publishes as `posterus-ltd/<name>`; merging to `main` is publishing.
 
@@ -38,3 +42,19 @@ npx yarkr-cli sync posterus-ltd/<ark>      # public arks need no account
 ```
 
 Toolset READMEs list the environment variables each MCP server needs.
+
+<!-- yarkr:install:start -->
+## Install with Yarkr
+
+This repo is indexed on [Yarkr](https://yarkr.com/repos?q=posterus-ltd/yarkr-public). Add one of its packages to your project with the CLI:
+
+```bash
+npx yarkr-cli add skill:posterus-ltd/yarkr-public/a11y-aria-usage
+```
+
+Or connect your agent over MCP:
+
+```
+https://api.yarkr.com/functions/v1/api/mcp/public
+```
+<!-- yarkr:install:end -->
